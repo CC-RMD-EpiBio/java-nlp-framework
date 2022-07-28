@@ -1,0 +1,40 @@
+# First stab at institution name pieces
+# 2022-05-03
+#
+I00000|federal|<noun>|<base>|||InstitutionEvidence
+I00000|hospitals|<noun>|<base>|||InstitutionEvidence
+I00000|hospital|<noun>|<base>|||InstitutionEvidence
+I00000|fairchild|<noun>|<base>|||InstitutionEvidence
+I00000|foundation|<noun>|<base>|||InstitutionEvidence
+I00000|memorial|<noun>|<base>|||InstitutionEvidence
+I00000|centers|<noun>|<base>|||InstitutionEvidence
+I00000|mercy|<noun>|<base>|||InstitutionEvidence
+I00000|system|<noun>|<base>|||InstitutionEvidence
+I00000|va|<noun>|<base>|||InstitutionEvidence
+I00000|regional|<noun>|<base>|||InstitutionEvidence
+I00000|family|<noun>|<base>|||InstitutionEvidence
+I00000|general|<noun>|<base>|||InstitutionEvidence
+I00000|university|<noun>|<base>|||InstitutionEvidence
+I00000|vamc|<noun>|<base>|||InstitutionEvidence
+I00000|office|<noun>|<base>|||InstitutionEvidence
+I00000|services|<noun>|<base>|||InstitutionEvidence
+I00000|facility|<noun>|<base>|||InstitutionEvidence
+I00000|treatment facility|<noun>|<base>|||InstitutionEvidence
+I00000|kaiser permanente|<noun>|<base>|||InstitutionEvidence
+I00000|department|<noun>|<base>|||InstitutionEvidence
+I00000|clinic|<noun>|<base>|||InstitutionEvidence
+I00000|veterans|<noun>|<base>|||InstitutionEvidence
+I00000|health care|<noun>|<base>|||InstitutionEvidence
+I00000|healthcare|<noun>|<base>|||InstitutionEvidence
+I00000|administration|<noun>|<base>|||InstitutionEvidence
+I00000|benefits|<noun>|<base>|||InstitutionEvidence
+I00000|onecontent|<noun>|<base>|||InstitutionEvidence
+I00000|baptist|<noun>|<base>|||InstitutionEvidence
+I00000|regional|<noun>|<base>|||InstitutionEvidence
+I00000|district|<noun>|<base>|||InstitutionEvidence
+I00000|presbyterian|<noun>|<base>|||InstitutionEvidence
+I00000|associates|<noun>|<base>|||InstitutionEvidence
+I00000|division|<noun>|<base>|||InstitutionEvidence
+I00000|center|<noun>|<base>|||InstitutionEvidence
+I00000|centre|<noun>|<base>|||InstitutionEvidence
+

@@ -1,0 +1,379 @@
+// =================================================
+/**
+ * ReferenceDateAnnotator labels one reference Date from text.
+ * 
+ * 
+ *
+ * This is built directly upon UIMA's implementation of
+ * an annotator - JCasAnnotator_ImplBase.  
+ * 
+ * This class creates annotations that get defined 
+ * from a uima type descriptor found in the
+ * 06_type.descriptor/src/main/resources/com/ciitizen/framework/ReferenceDateModel.xml
+ *
+ * This class refers to annotations that got defined
+ * in the framework-type.descriptors project/repo
+ *
+ * @author  Guy Divita 
+ * @created Jun 1, 2018
+ *
+ * 
+ * 
+
+ */
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.referenceDate;
+
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.regex.Pattern;
+
+import org.apache.commons.lang3.time.DateUtils;
+import org.apache.commons.lang3.tuple.Pair;
+import org.apache.uima.UimaContext;
+import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
+import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import com.ciitizen.framework.PageHeader;
+import com.ciitizen.framework.model.ReferenceDate;
+import com.ciitizen.handlers.DataTypeMatcher;
+import com.ciitizen.handlers.DataTypeMatcher.Match;
+import com.ciitizen.handlers.impl.DefaultDataTypeMatcher;
+import com.ciitizen.util.ConfigUtility;
+
+import gov.va.chir.model.DocumentHeader;
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+import gov.nih.cc.rmd.nlp.framework.utils.framework.uima.VUIMAUtil;
+import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
+
+/**
+ * Reference Date Annotator.
+ */
+public class ReferenceDateAnnotator extends JCasAnnotator_ImplBase  {
+ 
+  private static final Pattern INCLUDE_LABELS = Pattern.compile("created|generated on|date ?of ?service|exam date", Pattern.CASE_INSENSITIVE);
+  private static final Pattern EXCLUDE_LABELS = Pattern.compile("\\b(?:diagnosed|(?<!generated\\s)on)\\b?", Pattern.CASE_INSENSITIVE);
+  
+  private static final DataTypeMatcher DATA_TYPE_MATCHER;
+  static {
+    try {
+      DATA_TYPE_MATCHER= new DefaultDataTypeMatcher();
+    } catch (Exception e) {
+      throw new RuntimeException(e);
+    }
+  }
+  // -----------------------------------------
+  /**
+   * process retrieves lines of the document, labels those that are questions
+   * as QuestionAndAnswer elements.
+   * 
+   * 
+   */
+  // -----------------------------------------
+  public void process(JCas pJCas) throws AnalysisEngineProcessException {
+   
+    try {
+     
+      final String documentText = pJCas.getDocumentText();
+      final List<Annotation> headerSections = UIMAUtil.getAnnotations(pJCas, PageHeader.typeIndexID);
+      Match<LocalDate> refDate = null;
+
+      // Try to find refdate in header first
+      if ( headerSections != null && !headerSections.isEmpty() ) {
+        final Annotation headerSection = headerSections.get(0);
+        // Find a date in this header
+        // Make it the ReferenceDate
+        final String headerText = documentText.substring(headerSection.getBegin(), headerSection.getEnd());
+        final String[] headerLines = headerText.split("\\n");
+        // Check for labeled dates
+        for (final String line : headerLines) {
+          List<Match<Pair<String, LocalDate>>> labeledDates = null;
+          try {
+            labeledDates = DATA_TYPE_MATCHER.getLabeledCompleteDates(line);
+          } catch (Exception e) {}
+          for (final Match<Pair<String, LocalDate>> labeledDate : labeledDates) {
+            final String label = labeledDate.getObject().getLeft().toLowerCase();
+            if (INCLUDE_LABELS.matcher(label).matches() && !EXCLUDE_LABELS.matcher(label).matches()) {
+              refDate = Match.newInstance(labeledDate.getObject().getRight(), labeledDate.getStartIndex(), labeledDate.getEndIndex());
+              break;
+            }
+          }
+        }
+        if (refDate == null) {
+          // check for a date alone on a line
+          for (final String line : headerLines) {
+            final List<Match<LocalDate>> dates = DATA_TYPE_MATCHER.getCompleteDates(line);
+            for (final Match<LocalDate> date : dates) {
+              final String preceedingLine = line.substring(0, date.getStartIndex());
+              if (preceedingLine.trim().length() == 0) {
+                final String succeedingLine = line.substring(date.getEndIndex());
+                if (succeedingLine.trim().length() == 0) {
+                  if (isValidRefDate(date.getObject()))
+                  refDate = date;
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+      // if not found in header try other fallback options
+      if (refDate == null) {
+        // Check for a date in the filename
+        // use zero offsets since the date was not found in the file itself
+        final DocumentHeader dh = VUIMAUtil.getDocumentHeader(pJCas);
+        final String filename = dh.getDocumentName();
+        
+        final List<Match<LocalDate>> datesInFilename = DATA_TYPE_MATCHER.getCompleteDates(filename);
+        if (datesInFilename != null && datesInFilename.size() > 0) {
+          for (final Match<LocalDate> match : datesInFilename) {
+            if (isValidRefDate(match.getObject())) {
+              refDate = Match.newInstance(match.getObject() /*Instant.ofEpochMilli(match.getObject().getTime())
+                  .atZone(ZoneId.systemDefault()).toLocalDate()*/, 0, 0);
+              break;
+            }
+          }
+        }
+        if (refDate == null) {
+          final List<Match<Date>> partialDatesInFilename = DATA_TYPE_MATCHER.getDates(filename);
+          if (partialDatesInFilename != null && partialDatesInFilename.size() > 0) {
+            for (final Match<Date> match : partialDatesInFilename) {
+              if (isValidRefDate(match.getObject())) {
+                refDate = Match.newInstance(Instant.ofEpochMilli(match.getObject().getTime())
+                    .atZone(ZoneId.systemDefault()).toLocalDate(), 0, 0);
+                break;
+              }
+            }
+          }
+        }
+      }
+      if (refDate == null) {
+        // Try for first labeled date in file
+        final List<Match<Pair<String, LocalDate>>> labeledDates = DATA_TYPE_MATCHER.getLabeledCompleteDates(documentText);
+        if (labeledDates != null && labeledDates.size() > 0) {
+          for (final Match<Pair<String, LocalDate>> match : labeledDates) {
+            if (isValidRefDate(match.getObject().getRight())) {
+              refDate = Match.newInstance(match.getObject().getRight(), match.getStartIndex(), match.getEndIndex());
+              break;
+            }
+          }
+        }
+      }
+//      if (refDate == null) {
+//        // Last ditch, try for first date in file with a matching prefix
+//        final List<Match<LocalDate>> dates = DATA_TYPE_MATCHER.getCompleteDates(documentText);
+//        if (dates != null && dates.size() > 0) {
+//          for (final Match<LocalDate> match : dates) {
+//            if (isValidRefDate(match.getObject())) {
+//              if (PREFIX_PATTERN.matcher(documentText.substring(0, match.getStartIndex())).matches()) {
+//                refDate = Match.newInstance(match.getObject(), match.getStartIndex(), match.getEndIndex());
+//                break;
+//              }
+//            }
+//          }
+//        }
+//      }
+
+      String normalizedDate = null;
+      if (refDate == null) {
+        List<Annotation> badRefDates = UIMAUtil.getAnnotations(pJCas, ReferenceDate.typeIndexID);
+        if ( badRefDates != null && !badRefDates.isEmpty() )
+        // clear out any pre-existing reference date annotations
+          for (final Annotation refdateAnn : badRefDates) 
+          refdateAnn.removeFromIndexes();
+        
+        normalizedDate = null;
+      } else {
+        normalizedDate =  dateToString(refDate.getObject());
+        createReferenceDate(pJCas, refDate.getStartIndex(), refDate.getEndIndex(), normalizedDate);
+      }
+      // Optional - useful for setting statement dates in json output
+      addReferenceDateToFrameworkDocumentHeaderObject( pJCas, normalizedDate); // <---- the referenceDate is kept here too.
+
+    } catch (Exception e) {
+      System.err.println("Caught exception: " + e.getMessage());
+      e.printStackTrace();
+      System.err.println("Issue with " + this.getClass().getName() + " " + e.toString());
+      // throw new AnalysisEngineProcessException(e);
+   }
+} // end Method process() ----------------
+
+  /**
+   * Checks if a date is a valid reference date.
+   * 
+   * @param date the date
+   * @return true if the date is a valid reference date, false otherwise
+   */
+  private boolean isValidRefDate(final java.util.Date date) {
+    final java.util.Date now = new java.util.Date();
+    return (ConfigUtility.isValidDate(now, date) && !DateUtils.isSameDay(now, date));
+  }
+
+  /**
+   * Checks if a date is a valid reference date.
+   * 
+   * @param date the date
+   * @return true if the date is a valid reference date, false otherwise
+   */
+  private boolean isValidRefDate(final LocalDate localDate) {
+    final Calendar cal = Calendar.getInstance();
+    cal.set(localDate.get(ChronoField.YEAR),
+        localDate.get(ChronoField.MONTH_OF_YEAR),
+        localDate.get(ChronoField.DAY_OF_MONTH));
+    return isValidRefDate(cal.getTime());
+  }
+
+// =================================================
+  /**
+   * addReferenceDateToFrameworkDocumentHeaderObject 
+   * 
+   * @param pJCas
+   * @param normalizedDate
+  */
+  // ================================================
+  private final void addReferenceDateToFrameworkDocumentHeaderObject(JCas pJCas, String normalizedDate) {
+    
+    
+     DocumentHeader docHeader = VUIMAUtil.getDocumentHeader(pJCas);
+     docHeader.setReferenceDate( normalizedDate);
+    
+  } // end Method addReferenceDateToFrameworkDocumentHeaderObject() 
+  
+
+
+
+// =================================================
+  /**
+   * dateToString
+   * 
+   * @param pDate 
+   * 
+   * @return String   in the form of MM/dd/yyyy
+  */
+  // =================================================
+  private final String dateToString(final LocalDate pDate) {
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+    String normalizedDateString = dtf.format(pDate);
+    
+    return normalizedDateString;
+  } // end Method dateToString() 
+  
+
+
+
+// =================================================
+  /**
+   * createReferenceDate 
+   * 
+   * @param pJCas
+   * @param pDate
+   * @param pNormalizedDate <-- the normalized date created from the text in the document.
+  */
+  // ================================================
+  private final void createReferenceDate(JCas pJCas, int begin, int end, String pNormalizedDate) {
+    
+   
+     ReferenceDate statement = new ReferenceDate(pJCas );
+    
+     statement.setBegin(begin);
+     statement.setEnd(end);
+     statement.setAssertionStatus("true");
+   
+     statement.setEventDate( pNormalizedDate );
+     statement.setStatementDate( pNormalizedDate);
+     statement.setId( this.getClass().getName() + "_" + annotationCtr++);
+     statement.addToIndexes();
+       
+  } // end Method createReferenceDate() -------------
+
+
+
+
+
+
+//----------------------------------
+/**
+ * destroy  (do anything here that needs a close or finalize) 
+* 
+ **/
+// ----------------------------------
+public void destroy() {
+  
+  
+}
+
+
+  //----------------------------------
+  /**
+   *  initialize    This is the standard uima way to pass parameters to an annotator.
+   *                It is cumbersome.  It requires creating a config file with params
+   *                in it, making it difficult to dynamically pass in parameters. 
+   *                
+   *                This method merges the uima way and keeping the ability to dynamically
+   *                pass parameters into the class via - putting all parameters in a string
+   *                array called "args" with each row containing a --key=value format.
+   *                This way, arguments could be directly passed from command line,
+   *                or read from a config file, or dynamically added to that string
+   *                passed in. 
+   *                
+   *                It is important to adhere to the posix style "--" prefix and
+   *                include a "=someValue" to fill in the value to the key. 
+   * 
+   * @param aContext
+   * @throws ResourceInitializationException
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(UimaContext aContext) throws ResourceInitializationException {
+       
+     
+      String[] args = null;
+      try {
+        args                 = (String[]) aContext.getConfigParameterValue("args");  
+
+        initialize(args);
+        
+      } catch (Exception e ) {
+        String msg = "Issue in initializing class " + this.getClass().getName() + " " + e.toString() ;
+        GLog.println(GLog.ERROR_LEVEL, msg);     // <------ use your own logging here
+        throw new ResourceInitializationException();
+      }
+      
+  
+  } // end Method initialize() -------
+  
+  //----------------------------------
+  /**
+   * initialize initializes the class.  Parameters are passed in via a String
+   *                array  with each row containing a --key=value format.
+   *                
+   *                It is important to adhere to the posix style "--" prefix and
+   *                include a "=someValue" to fill in the value to the key. 
+   *               
+   * @param pArgs
+   * @throws  ResourceInitializationException            
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(String[] pArgs) throws ResourceInitializationException {
+      
+  } // end Method initialize() -------
+  
+  
+  // ---------------------------------------
+  // Global Variables
+  // ---------------------------------------
+  protected int annotationCtr = 0;
+ 
+  
+} // end Class ReferenceDateAnnotator() ---------------
+

@@ -1,0 +1,7 @@
+MSH|^~\&|CHARTLINC|SOFTMED|rcvapp|rcvfac|19980226010821||ORU^R01|000000000000000|P|2.2|
+PID||0000000 |00-00-00-0||JONES^JOHN^NMN|||||H||||||||000000000000|
+PV1||||||||||||||||||||||||||||||||||||||||||||19980226||
+OBR|||^|OP|||199802260909|199802262001||||||||||||000000||||||||||||000000|||000|
+ZPD|||JONES, JOHN NMN||CUREALL, CANDIE M|NONE|||||000^Killit^Don^^^^C.R.N.P.||
+OBX|1|FT|""||Date of Visit:   02/26/1998\.br\\.br\DICTATOR IDENTIFICATION:\.br\      Name:            Don Killit, C.R.N.P.\.br\      Office Address:      Bldg.  10     Rm.  0-0000\.br\      Office Telephone:     0000000000\.br\\.br\\.br\NAME AND LOCATION OF CLINIC:\.br\      Pediatric Oncology Clinic, 1H Peds.\.br\\.br\\.br\PURPOSE OF ENCOUNTER:\.br\  This is a test record to pick up \.br\ some pii. \.br\\.br\\.br\END OF REPORT\.br\\.br\\.br\\.br\\.br\Dictated by:\.br\Don Killit, C.R.N.P.  02/26/1998   10:29 P\.br\Institute/Branch: C/PB\.br\Transcribed on:\.br\02/27/1998 12:58 P\.br\\.br\\.br\Signed by:\.br\Don Killit, C.R.N.P. 02/27/1998 11:09||||||S|
+

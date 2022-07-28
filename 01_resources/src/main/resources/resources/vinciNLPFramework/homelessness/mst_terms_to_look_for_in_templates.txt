@@ -1,0 +1,155 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+Wondering if that matters - or if having a flag in the lexicon would help
+to identify the semantics for such terms?
+
+----------------------------------------------------------------------------
+Look these up to see if these are slot values, check boxes, section headings
+----------------------------------------------------------------------------
+evidence of abuse
+reporting of abuse
+abuse cage
+abuse neglect violence
+abuse neglect patient
+domestic abuse neglect
+yes abuse neglect
+abuse neglect assault
+abuse acuity level
+child abuse yes
+sexual abuse yes
+time abuse neglect
+lives alone abuse
+suspected abuse suicide
+sleep abuse neglect
+x time abuse
+neglect nurse abuse
+sexual trauma hepatitis
+sexual trauma assessment
+502 military sexual trauma
+sexual trauma abuse
+
+---------------------------------------
+Look for larger terms from these terms
+---------------------------------------
+suspected abuse neglect
+abuse dsm iv
+abuse in early
+abuse neglect place
+abuse in full
+self abuse neglect
+abuse no coping
+neglect assessment abusesexual dysfunction
+sexual disorder nos
+women's sexual trauma
+track infections sexually
+sex abuse history
+military sexual assault
+loss of interest in sex
+lack of interest in sex
+
+social abuse vana
+abuse 1 staff
+pressure for sexual
+problems in sexual
+emotional or sexual
+lack of sexual
+placed military sexual
+physical sexual verbal
+
+---------------------
+Validate these terms
+---------------------
+suspicion of abuse
+abuse recovery program
+abuse and neglect
+abuse neglect suspected
+symptoms of abuse
+history of abuse
+possible domestic abuse
+abuse h o
+h o abuse
+hx of abuse
+childhood sexual abuse
+found 1y abuse
+abuse by history
+abuse discussed 
+abuse and ptsd
+abuse dependence diagnosis
+sexual abuse history
+abuse related issues
+military sexual abuse
+psychological sexual abuse
+adult sexual abuse
+abuse f history
+
+sexually transmitted diseases
+sexually transmitted disease
+unwanted sexual attention
+sexual dysfunction
+sexual disorder nos
+women's sexual trauma
+track infections sexually
+sex abuse history
+military sexual assault
+loss of interest in sex
+lack of interest in sex
+inappropriate sexual behavior
+problems with sex
+problems with sex drive severe
+problems with sex drive
+problems with sexual arousal
+problems with sexual orgasm severe
+problems with sexual orgasm
+problems with sexual arousal severe
+sexual disorder treatment
+dysfunction loss of sex drive
+sexual transmitted disease
+sexually transmitted dz
+
+anger and depression
+anger and frustration 
+frustration and anger
+anger and resentment
+anxiety and anger
+anger and anxiety
+anger or bitterness 
+issues of anger
+anger control problems
+anger management group
+anger management class 
+anger management classes 
+anger management skills 
+anger management issues
+manage his anger
+deal with anger
+cope with anger
+anger and rage
+anger and stress
+guilt and anger
+issolation and anger
+outbursts of anger
+nightmares and anger
+grief and anger
+poor anger control
+attend anger managment class
+episodes of anger
+

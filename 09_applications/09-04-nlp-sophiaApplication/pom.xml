@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <!-- =================================================== -->
+    <!--          gov.va.vinci.nlp.framework.applications    -->
+    <!-- =================================================== -->
+  <groupId>gov.va.vinci.nlp.framework</groupId>
+  <artifactId>09-04-nlp-sophiaApplication</artifactId>
+  <packaging>jar</packaging>
+  <version>2021.02.0    </version>
+  <name>${project.groupId}: ${project.artifactId}</name>
+
+  <description>framework sophiaApplication builds applications around framework components</description>
+
+    <!-- ======================================================= -->
+    <!--   Parent Pom - look here for global framework settings  -->
+    <!--   including                                             -->
+    <!--      Distribution Managment                             -->
+    <!--      Java versions                                      -->
+    <!--      Plugin Management and plugins                      -->
+    <!--      Dependencies                                       -->
+    <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+   <relativePath>../00-parent</relativePath> 
+  </parent>
+
+
+  <!-- =================================================== -->
+  <!-- SCM                                                 -->
+  <!-- =================================================== -->
+  <scm>
+    <connection>scm:git:http://v3nlp.bmi.utah.edu/gitblit/git/framework/applications.git/</connection>
+    <url>http://v3nlp.bmi.utah.edu/gitblit/git/framework/applications.git/</url>  
+  </scm>
+
+    <!-- =================================================== -->
+    <!-- Dependencies now specified in parent pom            -->
+    <!--    groupId                      artifactId          -->
+    <!--    =======                      ==========          -->
+    <!-- gov.va.vinci.nlp.framework     utils.general        -->
+    <!-- gov.va.vinci.nlp.framework     utils.install        -->
+    <!-- gov.va.vinci.nlp.framework     documentHeader       -->
+    <!-- gov.va.vinci                   flap                 -->
+    <!-- au.com.forward                 logging              -->
+    <!-- =================================================== -->
+    <dependencies>
+      <dependency><groupId>gov.va.vinci.nlp.framework</groupId><artifactId>sophiaPipeline      </artifactId></dependency>
+      <dependency> <groupId>gov.va.vinci.nlp.framework</groupId> <artifactId>sophiaMagic       </artifactId> <version>2014.06.0 </version> </dependency>
+      <dependency> <groupId>org.apache.uima        </groupId> <artifactId>uimaj-core           </artifactId> </dependency> 
+    </dependencies>
+
+
+    <!-- =================================================== -->
+    <!-- Build Phase                                         -->
+    <!-- =================================================== -->
+    <build>
+
+        <!-- =================================================== -->
+        <!-- Build Plugin's                                      -->
+        <!-- =================================================== -->
+        <plugins>
+
+            <!-- ##################################################################### -->
+            <!-- Build an executable jar for main application                          -->
+            <!-- ##################################################################### -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.4</version>
+              <executions>
+
+               <execution>
+                <id>executable_1</id>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                            <mainClass>gov.va.vinci.framework.applications.Sophia</mainClass>
+                        </manifest>
+                     </archive>
+                     <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>${project.artifactId}</finalName>
+                     <outputDirectory>${project.build.directory}/bin</outputDirectory>
+                     <dependencies>
+                       <dependency><groupId>gov.va.vinci.nlp.framework</groupId><artifactId>${project.artifactId}</artifactId></dependency>
+                     </dependencies>
+                  </configuration>
+                  <phase>install</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+               </execution>
+
+               <execution>
+                <id>executable_2</id>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                            <mainClass>gov.va.vinci.framework.applications.SophiaAPIExample</mainClass>
+                        </manifest>
+                     </archive>
+                     <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>SophiaAPIExample</finalName>
+                     <outputDirectory>${project.build.directory}/bin</outputDirectory>
+                     <dependencies>
+                       <dependency><groupId>gov.va.vinci.nlp.framework</groupId><artifactId>${project.artifactId}</artifactId></dependency>
+                     </dependencies>
+                  </configuration>
+                  <phase>install</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+               </execution>
+
+             </executions>
+
+      </plugin>
+     </plugins>
+    </build>
+</project>

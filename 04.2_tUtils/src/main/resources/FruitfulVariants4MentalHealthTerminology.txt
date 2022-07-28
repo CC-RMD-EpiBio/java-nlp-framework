@@ -1,0 +1,98 @@
+FruitfulVariants4MentalHealthTerminology
+========================================
+
+This tool creates fruitful variants for Mental Functioning Terminology.  Fruitful variants 
+are the spelling variants, inflections, derivations, synonyms, acronyms and acronym expansion
+and a combination of these in a mix that was empirically tuned.
+ 
+  This is a component of the MetaMap system, and This is outlined in the paper Effect of Textual 
+Variation on Concept Based Information Retrieval. Proceedings of the AMIA Symposium, 373-377, 1996.
+(See https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/2014/docs/userDoc/references/96_AMIA_TextualVariation.pdf)
+ 
+ 
+An example of one of these starts with the term ocular, which has a derivation of oculus, the
+synonyms eyepiece and and eye.  Getting synonyms of synonyms yields optic, and taking the
+derivation of which yields vision. And so it goes.  Each step incurs a transformation 
+which, when logged from the beginning term to the final variant labeled in the history field. 
+The more the transformations, the less related to the initial term the variant is. There is 
+a formula to compute a cost from the history.
+
+Fruitful variants is a flow component of the Lexical Variant Generation (LVG) tool. This tool 
+pulls the the term from the ontology file (it's in the third field). 
+(see https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/2014/docs/designDoc/UDF/flow/fG.html)   
+
+The output is in the UMLS LRAGR format plus additional information behond the obligitory fields.
+
+The output is in the following format: 
+
+     
+[TermID|variant|pos|infl|Concept Name|Ontology Seed|Category|Sources|SourceIdentifiers|OntologyId|History|cost]
+   
+Where the 
+| Option Name         | Description |
+| ------------------- | ----------- |
+| Concept Name        | is the concept found via traversing through the UMLS hierarchy 
+                        from the point of the concept taken from the ontology, otherwise 
+                        referred to as the ontology seed. |
+|Ontology Seed        | is The entity from the ontology this term is derived from |
+|Category             | is the top level category taken from the ontology.  |
+|Sources              | are the UMLS Sources the concept Name came from if it exists | 
+|Source identifiers   | are the UMLS Concept Identifiers (cui's) that are associated with this concept name |
+|Ontology ID          | is the id of the seed term from the ontology. 
+|History              | is the log of the transformations from ontology seed to this variant concept name |
+|Cost                 | is a numeric calculation derived from the history. | 
+
+Additional Filtering
+--------------------
+
+ | Filter               | LVG's flow component | Notes |
+ | -------------------- | -------------------- | ----- |
+ |  syntatic uninversion |  (-f:S)   | (see https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/2014/docs/designDoc/UDF/flow/fS.html)  |
+ |  remove Nec and NOS     -f:0     (see https://lexsrv3.nlm.nih.gov/LexSysGroup/Projects/lvg/2014/docs/designDoc/UDF/flow/f0.html )  |
+ |  remove parenthetical expressions | | like (Finding) and [D]  | 
+
+Additional Variants generated 
+-----------------------------
+ | Variant Type  | Notes |
+ | ------------- | ----- |
+ | Generate "of" inversions |  | For two word terms. That is, for two words _A_  _B_, generates _A of B_, _A of the b_, _A of a B_, _A of her B_, _A_of his B_ 
+ | Permuted Variants | For two word terms.  It runs all the fruitful variants for each term, permutes them, and filters out those permuted terms which do not appear in the SPECIALIST Lexicon |
+
+More Details 
+------------
+The history and cost are useful evidence indicating how much "drift" has occurred from the seed term to the variant.  The details of the meanings of the history are
+
+ | Operation | Notation | Distance | score |
+ | --------- | -------- | -------- | ----- |
+ | No Operations|n|0 |
+ | Spelling Variant|s|0 |
+ | Inflectional Variant|i|1 |
+ | Uninflectional Variant|b|1 |
+ | Synonym|y|2|
+ | Acronym/Abbreviation|A|2|
+ | Expansion|a|2|
+ | Derivational Variant|d|3|
+ | of inversions|Of|3|
+ | Permuted Variants |  | concatintation of each |sum of them |
+
+   
+
+Usage:
+------
+  [java -jar FruitfulVariants4MentalHealthTerminology [Options] ]
+
+Options:
+-------
+
+  * --inputFile=/path/to/ontologyTerminology.csv
+  * --outputFile= 
+  * --help
+   
+   
+   
+Another Detail:
+---------------
+   This program requires that the path to a current installed version of LVG is in the classpath. 
+    The program looks for a $LVG/data/config/lvg.properties file which has references to all
+    the lvg resource files the tool needs. 
+   

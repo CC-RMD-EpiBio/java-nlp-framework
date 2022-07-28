@@ -1,0 +1,76 @@
+#-------------------------------------------------------------------
+# VTT System Variables:
+#
+# VTT_DIR: the absolute path of the Visual Tagging Tool directory
+# VTT_FILE_DIR: the path of Vtt file directory
+# TAGS_FILE: the path of default tags file
+# USER_NAME: the user name of VTT
+#
+# FILE_DISPLAY_LENGTH: the display length of opened file path shown in the title
+# BASE_FONT_SIZE: the base font size for text and tag
+# ZOOM_FACTOR: the global relative view factor of zoom in/out
+# VTT_FORMAT: SIMPLE_FORMAT, READABLE_FORMAT, FIX_LENGTH_FORMAT
+#
+# MARKUP_OFFSET_SIZE: size of markup offset field in FIX_LENGTH format
+# MARKUP_LENGTH_SIZE: size of markup length field in FIX_LENGTH format
+# MARKUP_TAG_NAME_SIZE: size of markup tagName field in FIX_LENGTH format
+# MARKUP_TAG_CATEGORY_SIZE: size of markup tagCategory field in FIX_LENGTH format
+#-------------------------------------------------------------------
+VTT_DIR=___VTT_DIR___
+VTT_FILE_DIR=data/vtt
+TAGS_FILE=data/config/tags.data
+USER_NAME=___USER_NAME___
+#-----------
+FILEPATH_DISPLAY_LENGTH=50
+BASE_FONT_SIZE=10
+ZOOM_FACTOR=2
+#-----------
+VTT_FORMAT=FIX_LENGTH_FORMAT
+MARKUP_OFFSET_SIZE=7
+MARKUP_LENGTH_SIZE=2
+MARKUP_TAG_NAME_SIZE=15
+MARKUP_TAG_CATEGORY_SIZE=15
+#-------------------------------------------------------------------
+# Select Markup properties:
+#
+# OVERWRITE_SELECT_BOLD: overwrite the bold attribute on select markup
+# OVERWRITE_SELECT_ITALIC: overwrite the italic attribute on select markup
+# OVERWRITE_SELECT_UNDERLINE: overwrite the underline attribute on select markup
+# OVERWRITE_SELECT_FONT: overwrite the font attribute on select markup
+# OVERWRITE_SELECT_SIZE: overwrite the size attribute on select markup
+# OVERWRITE_SELECT_TEXT_COLOR: overwrite the text color on select markup
+# OVERWRITE_SELECT_BACKGROUND_COLOR: overwrite the bg color on select markup
+# USE_TEXT_TAG_FOR_NOT_DISPLAY_SELECT_MARKUP: use textTag for not display select
+#
+# SELECT_BOLD: select markup bold attribute
+# SELECT_ITALIC: select markup italic attribute
+# SELECT_UNDERLINE: select markup underline attribute
+# SELECT_FONT: select markup font attribute
+# SELECT_SIZE: select markup size attribute (+2|14|-2)
+# SELECT_TEXT_COLOR_R: select markup text color-red (0 ~ 255)
+# SELECT_TEXT_COLOR_G: select markup text color-green (0 ~ 255)
+# SELECT_TEXT_COLOR_B: select markup text color-blue (0 ~ 255)
+# SELECT_BACKGROUND_COLOR_R: select markup text color-red (0 ~ 255)
+# SELECT_BACKGROUND_COLOR_G: select markup text color-green (0 ~ 255)
+# SELECT_BACKGROUND_COLOR_B: select markup text color-blue (0 ~ 255)
+#-------------------------------------------------------------------
+OVERWRITE_SELECT_BOLD=false
+OVERWRITE_SELECT_ITALIC=false
+OVERWRITE_SELECT_UNDERLINE=false
+OVERWRITE_SELECT_FONT=false
+OVERWRITE_SELECT_SIZE=true
+OVERWRITE_SELECT_TEXT_COLOR=false
+OVERWRITE_SELECT_BACKGROUND_COLOR=false
+USE_TEXT_TAG_FOR_NOT_DISPLAY_SELECT_MARKUP=false
+#-----------
+SELECT_BOLD=true
+SELECT_ITALIC=false
+SELECT_UNDERLINE=true
+SELECT_FONT=Monospaced
+SELECT_SIZE=+4
+SELECT_TEXT_COLOR_R=0
+SELECT_TEXT_COLOR_G=0
+SELECT_TEXT_COLOR_B=0
+SELECT_BACKGROUND_COLOR_R=255
+SELECT_BACKGROUND_COLOR_G=255
+SELECT_BACKGROUND_COLOR_B=255

@@ -1,0 +1,174 @@
+// =================================================
+/**
+ * MoreDataTypeMatcher has more regex type shape regular expressions
+ * like zip code.
+ *
+ * @author     Guy Divita
+ * @created    Jul 6, 2018
+ * 
+*/
+// =================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.shapes;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import com.ciitizen.handlers.DataTypeMatcher.Match;
+
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+
+public class MoreDataTypeMatcher {
+
+  // =================================================
+  /**
+   * Constructor
+   *
+   * @param pArgs
+   * 
+  **/
+  // =================================================
+  public MoreDataTypeMatcher(String[] pArgs) {
+     initialize( pArgs);
+  }
+
+  // =================================================
+  /**
+   * getZipCodes finds zip codes by regular expression
+   * 
+   * @param pDocText
+   * @return List<Match<String>>
+  */
+  // =================================================
+  public List<Match<String>> getZipCodes(String pDocText) throws Exception {
+   
+    
+    List<Match<String>> returnVal = null;
+    try {
+    Matcher matcher = _pattern.matcher(pDocText);
+   
+    
+   
+    List<Match<String>> matches = new ArrayList<Match<String>>();
+    while (matcher.find()) {
+  
+      
+      String matchedText = pDocText.substring(matcher.start(), matcher.end()) ;
+     
+      Match<String> aMatch = new Match<String>( matchedText, matcher.start(), matcher.end() , "Zipcode");
+      matches.add( aMatch);
+    }
+    
+    if ( !matches.isEmpty())
+      returnVal = matches;
+    } catch (Exception e) {
+      e.printStackTrace();
+      GLog.println(GLog.ERROR_LEVEL, this.getClass(),"getZipCodes", "Issue with getting zip codes " + e.toString());
+      throw e;
+    }
+    return returnVal;
+  } // end Method getZipCodes() 
+  
+//=================================================
+ /**
+  * getNumbers finds zip codes by regular expression
+  * 
+  * @param pDocText
+  * @return List<Match<String>>
+ */
+ // =================================================
+ public List<Match<String>> getNumbers(String pDocText) throws Exception {
+  
+   
+   List<Match<String>> returnVal = null;
+   try {
+   Matcher matcher = _numberPattern.matcher(pDocText);
+  
+   
+  
+   List<Match<String>> matches = new ArrayList<Match<String>>();
+   while (matcher.find()) {
+ 
+     int ct = matcher.groupCount();
+     String subMatch = matcher.group(1);
+     
+     int groupNo = 0;
+     if ( subMatch != null ) 
+       groupNo = 1;
+     try {
+     String matchedText = pDocText.substring(matcher.start(groupNo), matcher.end(groupNo)) ;
+    
+     Match<String> aMatch = new Match<String>( matchedText, matcher.start(groupNo), matcher.end(groupNo) , "Number");
+     matches.add( aMatch);
+     
+     } catch (Exception e) {
+       e.printStackTrace();
+       GLog.println(GLog.ERROR_LEVEL, this.getClass(), "getNumbers", "Issue with number pattern " + e.getMessage());
+     }
+     
+   }
+   
+   if ( !matches.isEmpty())
+     returnVal = matches;
+   } catch (Exception e) {
+     e.printStackTrace();
+     GLog.println(GLog.ERROR_LEVEL, this.getClass(),"getNumbers", "Issue with getting numbers  " + e.toString());
+     throw e;
+   }
+   return returnVal;
+ } // end Method getZipCodes() 
+
+
+  // =================================================
+  /**
+   * initialize 
+   * 
+   * @param pArgs
+  */
+  // =================================================
+  public final void initialize(String[] pArgs) {
+   
+     _pattern = Pattern.compile( zipCodeRegex );
+     _numberPattern = Pattern.compile( numberRegex );
+     
+  } // end Method initialize() 
+  
+  // -----------------------------
+  // Class Variables
+  // ----------------------------
+  private static Pattern _pattern = null;
+  private static Pattern _numberPattern = null;
+  private String zipCodeRegex = "\\d{5}|\\d{5}-\\d{4}";
+  //private String numberRegex = "\\b(\\d{1,4})|\\b(\\d\\.\\d)\\b||";
+  private String numberRegex = 
+      
+                               "\\b(\\d+\\.\\d+)[A-z]{1,4}\\b|" +   // 1.30MG 
+                               "\\b(\\d+)[A-z]{1,4}\\b|" +   // 30MG 
+                               "\\b(\\d+\\.\\d+)[A-z]{1,4}\\/[A-z]{1,4}\b|" + //  1.03mmol/L
+      
+                               "\\b\\${0,1}(\\d+\\.\\d+)\\b|" +           // real $ 1.2
+                               "\\b(\\d{1,2}\\.\\d+)%{0,1}\\b|" +           // real 1.2 %
+                               "\\b(\\d+\\s{0,2}\\.\\d+)\\b|" +         // real 1 .2  
+                               "\\b(\\d+\\s{0,1}\\.\\s{0,1}\\d+)\\b|" +  // real 1 . 2 
+                               "\\b\\${0,1}(\\d{1,3}\\,\\d{3}\\,\\d{3})\\b|\\b\\${0,1}(\\d{1,3}\\,\\d{3})\\b|" +  // integer thousands 1,000,000 
+                               "\\b(\\d{1,2}/\\d)\\b|" +  //  fractions 1/2
+                               "\\s(\\.\\d+)\\b|" +   // real numbers that start with .xxxx
+                               "\\b\\$(\\d+)\\b|" +
+                               "\\b(\\d+)\\b|" + 
+                               "\\b(\\d+\\%)\\b|" +
+                               "\\b(\\d+\\.\\d+)\\b" ;//  3.5-
+                               // --------------------------------- might break these into a separate regex  ----------------
+                              
+  
+                              
+                               // 12/12/08   <---- picking this up
+                               // missing 126/74  because that's blood pressure    
+                               // missing 0.03  in the 03.mg/0.3MG)
+                               // getting too much .3MG  
+                               
+                             
+ 
+  
+
+}

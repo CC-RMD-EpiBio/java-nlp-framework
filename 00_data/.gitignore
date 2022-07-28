@@ -1,0 +1,4 @@
+# Created by https://www.gitignore.io/api/go,osx,java,node,maven,macos,python,gradle,eclipse,windows,perl,vim
+#
+# output
+/testData_*

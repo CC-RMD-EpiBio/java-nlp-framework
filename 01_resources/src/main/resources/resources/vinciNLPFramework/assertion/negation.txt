@@ -1,0 +1,571 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+|absence of|NegationEvidence|pre|
+|absence of a|NegationEvidence|pre|
+|adequate to rule her out|NegationEvidence|pre|
+|adequate to rule him out|NegationEvidence|pre|
+|adequate to rule out|NegationEvidence|pre|
+|adequate to rule the patient out|NegationEvidence|pre|
+|although|NegationEvidence|termin|
+|any other|NegationEvidence|pre|
+|apart from|NegationEvidence|termin|
+|aside from|NegationEvidence|termin|
+|are ruled out|NegationEvidence|post|
+|as a cause for|NegationEvidence|termin|
+|as a cause of|NegationEvidence|termin|
+|as a etiology for|NegationEvidence|termin|
+|as a etiology of|NegationEvidence|termin|
+|as a reason for|NegationEvidence|termin|
+|as a reason of|NegationEvidence|termin|
+|as a secondary cause for|NegationEvidence|termin|
+|as a secondary cause of|NegationEvidence|termin|
+|as a secondary etiology for|NegationEvidence|termin|
+|as a secondary etiology of|NegationEvidence|termin|
+|as a secondary origin for|NegationEvidence|termin|
+|as a secondary origin of|NegationEvidence|termin|
+|as a secondary reason for|NegationEvidence|termin|
+|as a secondary reason of|NegationEvidence|termin|
+|as a secondary source for|NegationEvidence|termin|
+|as a secondary source of|NegationEvidence|termin|
+|as a source for|NegationEvidence|termin|
+|as a source of|NegationEvidence|termin|
+|as an cause for|NegationEvidence|termin|
+|as an cause of|NegationEvidence|termin|
+|as an etiology for|NegationEvidence|termin|
+|as an etiology of|NegationEvidence|termin|
+|as an origin for|NegationEvidence|termin|
+|as an origin of|NegationEvidence|termin|
+|as an reason for|NegationEvidence|termin|
+|as an reason of|NegationEvidence|termin|
+|as an secondary cause for|NegationEvidence|termin|
+|as an secondary cause of|NegationEvidence|termin|
+|as an secondary etiology for|NegationEvidence|termin|
+|as an secondary etiology of|NegationEvidence|termin|
+|as an secondary origin for|NegationEvidence|termin|
+|as an secondary origin of|NegationEvidence|termin|
+|as an secondary reason for|NegationEvidence|termin|
+|as an secondary reason of|NegationEvidence|termin|
+|as an secondary source for|NegationEvidence|termin|
+|as an secondary source of|NegationEvidence|termin|
+|as an source for|NegationEvidence|termin|
+|as an source of|NegationEvidence|termin|
+|as has|NegationEvidence|termin|
+|as needed|ConditionalEvidence|pre|
+|as the cause for|NegationEvidence|termin|
+|as the cause of|NegationEvidence|termin|
+|as the etiology for|NegationEvidence|termin|
+|as the etiology of|NegationEvidence|termin|
+|as the origin for|NegationEvidence|termin|
+|as the origin of|NegationEvidence|termin|
+|as the reason for|NegationEvidence|termin|
+|as the reason of|NegationEvidence|termin|
+|as the secondary cause for|NegationEvidence|termin|
+|as the secondary cause of|NegationEvidence|termin|
+|as the secondary etiology for|NegationEvidence|termin|
+|as the secondary etiology of|NegationEvidence|termin|
+|as the secondary origin for|NegationEvidence|termin|
+|as the secondary origin of|NegationEvidence|termin|
+|as the secondary reason for|NegationEvidence|termin|
+|as the secondary reason of|NegationEvidence|termin|
+|as the secondary source for|NegationEvidence|termin|
+|as the secondary source of|NegationEvidence|termin|
+|as the source for|NegationEvidence|termin|
+|as the source of|NegationEvidence|termin|
+|as well as any|NegationEvidence|pre|
+|aside from|NegationEvidence|termin|
+|aunt|SubjectIsOtherEvidence|pre|
+|aunt's|SubjectIsOtherEvidence|pre|
+|be ruled out|ConditionalEvidence|post|
+|be ruled out for|ConditionalEvidence|pre|
+|because|ConditionalEvidence|termin|
+|being ruled out|ConditionalEvidence|post|
+|brother|SubjectIsOtherEvidence|pre|
+|brother's|SubjectIsOtherEvidence|pre|
+|but|NegationEvidence|termin|
+|can be ruled out|ConditionalEvidence|post|
+|can be ruled out for|ConditionalEvidence|pre|
+|can rule her out|NegationEvidence|pre|
+|can rule her out against|NegationEvidence|pre|
+|can rule her out for|NegationEvidence|pre|
+|can rule him out|NegationEvidence|pre|
+|can rule him out against|NegationEvidence|pre|
+|can rule him out for|NegationEvidence|pre|
+|can rule out|NegationEvidence|pre|
+|can rule out against|NegationEvidence|pre|
+|can rule out for|NegationEvidence|pre|
+|can rule the patient out|NegationEvidence|pre|
+|can rule the patinet out against|NegationEvidence|pre|
+|can rule the patinet out for|NegationEvidence|pre|
+|cannot|NegationEvidence|pre|
+|cause for|NegationEvidence|termin|
+|cause of|NegationEvidence|termin|
+|causes for|NegationEvidence|termin|
+|causes of|NegationEvidence|termin|
+|checked for|NegationEvidence|pre|
+|clear of|NegationEvidence|pre|
+|come back for|ConditionalEvidence|pre|
+|come back to|ConditionalEvidence|pre|
+|look for|ConditionalEvidence|pre|
+|look for any|ConditionalEvidence|pre|
+|wants to|ConditionalEvidence|pre|
+|could be ruled out|ConditionalEvidence|post|
+|could be ruled out for|ConditionalEvidence|pre|
+|dad|SubjectIsOtherEvidence|pre|
+|dad's|SubjectIsOtherEvidence|pre|
+|declined|NegationEvidence|pre|
+|declines|NegationEvidence|pre|
+|denied|NegationEvidence|pre|
+|denies|NegationEvidence|pre|
+|denies true|NegationEvidence|pre|
+|stopped|NegationEvidence|pre|
+|no longer|NegationEvidence|pre|
+|no signs or symptoms of|NegationEvidence|pre|
+|no sxs of|NegationEvidence|pre|
+|denied other symptoms of|NegationEvidence|pre|
+|no other symptoms of|NegationEvidence|pre|
+|deny|NegationEvidence|pre|
+|denying|NegationEvidence|pre|
+|did not rule out|ConditionalEvidence|post|
+|did rule her out|NegationEvidence|pre|
+|did rule her out against|NegationEvidence|pre|
+|did rule her out for|NegationEvidence|pre|
+|did rule him out|NegationEvidence|pre|
+|did rule him out against|NegationEvidence|pre|
+|did rule him out for|NegationEvidence|pre|
+|did rule out|NegationEvidence|pre|
+|did rule out against|NegationEvidence|pre|
+|did rule out for|NegationEvidence|pre|
+|did rule the patient out|NegationEvidence|pre|
+|did rule the patient out against|NegationEvidence|pre|
+|did rule the patient out for|NegationEvidence|pre|
+|doesn't look like|NegationEvidence|pre|
+|does not|NegationEvidence|pre|
+|does not appear to have any issues of|NegationEvidence|pre|
+|does not appear to have any|NegationEvidence|pre|
+|does not appear to have any issues with|NegationEvidence|pre|
+|does not appear to have any|NegationEvidence|pre|
+|does not appear to have any bizarre|NegationEvidence|pre|
+|does not express|NegationEvidence|pre|
+|does not usually|NegationEvidence|pre|
+|does not use|NegationEvidence|pre|
+|did not observe a|NegationEvidence|pre|
+|etiology for|NegationEvidence|termin|
+|etiology of|NegationEvidence|termin|
+|evaluate for|NegationEvidence|pre|
+|except|NegationEvidence|termin|
+|fails to reveal|NegationEvidence|pre|
+|family|SubjectIsOtherEvidence|pre|
+|fam hx|SubjectIsOtherEvidence|pre|
+|FH|SubjectIsOtherEvidence|pre|
+|F/H|SubjectIsOtherEvidence|pre|
+|H/O|SubjectIsOtherEvidence|pre|
+|father|SubjectIsOtherEvidence|pre|
+|father's|SubjectIsOtherEvidence|pre|
+|free|NegationEvidence|post|
+|free of|NegationEvidence|pre|
+|without success|NegationEvidence|post|
+|gram negative|NegationEvidence|pseudo|
+|grandfather|SubjectIsOtherEvidence|pre|
+|grandfather's|SubjectIsOtherEvidence|pre|
+|grandmother|SubjectIsOtherEvidence|pre|
+|grandmother's|SubjectIsOtherEvidence|pre|
+|has been negative|NegationEvidence|post|
+|has been ruled out|NegationEvidence|post|
+|have been ruled out|NegationEvidence|post|
+|history|HistoricalEvidence|pre|
+|history and|HistoricalEvidence|pseudo|
+|history and examination|HistoricalEvidence|pseudo|
+|history and physical|HistoricalEvidence|pseudo|
+|history for|HistoricalEvidence|pseudo|
+|history of chief complaint|HistoricalEvidence|pseudo|
+|history of present illness|HistoricalEvidence|pseudo|
+|history taking|HistoricalEvidence|pseudo|
+|history, physical|HistoricalEvidence|pseudo|
+|however|NegationEvidence|termin|
+|if|ConditionalEvidence|pre|
+|if negative|ConditionalEvidence|pseudo|
+|inconsistent with|NegationEvidence|pre|
+|is not|NegationEvidence|pre|
+|is ruled out|NegationEvidence|post|
+|is to be ruled out|ConditionalEvidence|post|
+|is to be ruled out for|ConditionalEvidence|pre|
+|isn't|NegationEvidence|pre|
+|lack of|NegationEvidence|pre|
+|lacked|NegationEvidence|pre|
+|may be ruled out|ConditionalEvidence|post|
+|may be ruled out for|ConditionalEvidence|pre|
+|might be ruled out|ConditionalEvidence|post|
+|might be ruled out for|ConditionalEvidence|pre|
+|mom|SubjectIsOtherEvidence|pre|
+|mom's|SubjectIsOtherEvidence|pre|
+|mother|SubjectIsOtherEvidence|pre|
+|mother's|SubjectIsOtherEvidence|pre|
+|must be ruled out|ConditionalEvidence|post|
+|must be ruled out for|ConditionalEvidence|pre|
+|negative for|NegationEvidence|pre|
+|was noted to be negative|NegationEvidence|post|
+|noted to be negative|NegationEvidence|post|
+|noted to be neg.|NegationEvidence|post|
+|neg.|NegationEvidence|post|
+|negative for|NegationEvidence|pre|
+|neg for|NegationEvidence|pre|
+|never developed|NegationEvidence|pre|
+|never had|NegationEvidence|pre|
+|nevertheless|NegationEvidence|termin|
+|no|NegationEvidence|pre|
+|no abnormal|NegationEvidence|pre|
+|no cause of|NegationEvidence|pre|
+|no change|NegationEvidence|pseudo|
+|no complaints of|NegationEvidence|pre|
+|no current|NegationEvidence|pre|
+|no indications of|NegationEvidence|pre|
+|without definite|NegationEvidence|pseudo|
+|no definite change|NegationEvidence|pseudo|
+|no evidence|NegationEvidence|pre|
+|no evidence of|NegationEvidence|pre|
+|no evidence to suggest|NegationEvidence|pre|
+|no findings of|NegationEvidence|pre|
+|no findings to indicate|NegationEvidence|pre|
+|no history of|NegationEvidence|pre|
+|no hx of|NegationEvidence|pre|
+|no known history of|NegationEvidence|pre|
+|no known hx of|NegationEvidence|pre|
+|no known|NegationEvidence|pre|
+|no hx of|NegationEvidence|pre|
+|n o|NegationEvidence|pre|
+|no increase|NegationEvidence|pseudo|
+|no interval change|NegationEvidence|pseudo|
+|no longer present|NegationEvidence|post|
+|no mammographic evidence of|NegationEvidence|pre|
+|no new|NegationEvidence|pre|
+|no new evidence|NegationEvidence|pre|
+|no other evidence|NegationEvidence|pre|
+|no radiographic evidence of|NegationEvidence|pre|
+|no recurrent|NegationEvidence|pre|
+|no sign of|NegationEvidence|pre|
+|no significant|NegationEvidence|pre|
+|no significant change|NegationEvidence|pseudo|
+|no significant interval change|NegationEvidence|pseudo|
+|no signs of|NegationEvidence|pre|
+|no suggestion of|NegationEvidence|pre|
+|no suspicious|NegationEvidence|pre|
+|no suspicious change|NegationEvidence|pseudo|
+|non diagnostic|NegationEvidence|post|
+|not|NegationEvidence|pre|
+|not appear|NegationEvidence|pre|
+|not appreciate|NegationEvidence|pre|
+|not associated with|NegationEvidence|pre|
+|not been ruled out|AssertedEvidence|post|
+|not cause|NegationEvidence|pseudo|
+|not certain if|NegationEvidence|pseudo|
+|not certain whether|NegationEvidence|pseudo|
+|not complain of|NegationEvidence|pre|
+|not current|NegationEvidence|pre|
+|not a current|NegationEvidence|pre|
+|not demonstrate|NegationEvidence|pre|
+|not drain|NegationEvidence|pseudo|
+|not exhibit|NegationEvidence|pre|
+|not extend|NegationEvidence|pseudo|
+|not feel|NegationEvidence|pre|
+|not had|NegationEvidence|pre|
+|not have|NegationEvidence|pre|
+|not have evidence of|NegationEvidence|pre|
+|not know of|NegationEvidence|pre|
+|not known to have|NegationEvidence|pre|
+|not necessarily|NegationEvidence|pseudo|
+|not on|NegationEvidence|pseudo|
+|not only|NegationEvidence|pseudo|
+|not reveal|NegationEvidence|pre|
+|not ruled out|ConditionalEvidence|post|
+|not see|NegationEvidence|pre|
+|not to be|NegationEvidence|pre|
+|not in|NegationEvidence|pre|
+|not in acute|NegationEvidence|pre|
+|nor|NegationEvidence|pre|
+|nor any|NegationEvidence|pre|
+|nor all|NegationEvidence|pre|
+|now resolved|NegationEvidence|post|
+|origin for|NegationEvidence|termin|
+|origin of|NegationEvidence|termin|
+|origins for|NegationEvidence|termin|
+|origins of|NegationEvidence|termin|
+|other possibilities of|NegationEvidence|termin|
+|ought to be ruled out|ConditionalEvidence|post|
+|ought to be ruled out for|ConditionalEvidence|pre|
+|to prevent|ConditionalEvidence|pre|
+|past history|HistoricalEvidence|pre|
+|past medical history|HistoricalEvidence|pre|
+|patient was not|NegationEvidence|pre|
+|poor history|HistoricalEvidence|pseudo|
+|previous|HistoricalEvidence|pre
+|prophylaxis|NegationEvidence|post|
+|r/o|ConditionalEvidence|pre|
+|rather than|NegationEvidence|pre|
+|reason for|NegationEvidence|termin|
+|reason of|NegationEvidence|termin|
+|reasons for|NegationEvidence|termin|
+|reasons of|NegationEvidence|termin|
+|resolved|NegationEvidence|pre|
+|return|ConditionalEvidence|pre|
+|ro|ConditionalEvidence|pre|
+|rule her out|ConditionalEvidence|pre|
+|rule her out for|ConditionalEvidence|pre|
+|rule him out|ConditionalEvidence|pre|
+|rule him out for|ConditionalEvidence|pre|
+|rule out|ConditionalEvidence|pre|
+|rule out for|ConditionalEvidence|pre|
+|rule the patient out|ConditionalEvidence|pre|
+|rule the patinet out for|ConditionalEvidence|pre|
+|ruled her out|NegationEvidence|pre|
+|ruled her out against|NegationEvidence|pre|
+|ruled her out for|NegationEvidence|pre|
+|ruled him out|NegationEvidence|pre|
+|ruled him out against|NegationEvidence|pre|
+|ruled him out for|NegationEvidence|pre|
+|ruled out|NegationEvidence|pre|
+|ruled out against|NegationEvidence|pre|
+|ruled out for|NegationEvidence|pre|
+|ruled the patient out|NegationEvidence|pre|
+|ruled the patient out against|NegationEvidence|pre|
+|ruled the patient out for|NegationEvidence|pre|
+|rules her out|NegationEvidence|pre|
+|rules her out for|NegationEvidence|pre|
+|rules him out|NegationEvidence|pre|
+|rules him out for|NegationEvidence|pre|
+|rules out|NegationEvidence|pre|
+|rules out for|NegationEvidence|pre|
+|rules the patient out|NegationEvidence|pre|
+|rules the patient out for|NegationEvidence|pre|
+|secondary|NegationEvidence|termin|
+|secondary to|NegationEvidence|termin|
+|should be ruled out|ConditionalEvidence|post|
+|should be ruled out for|ConditionalEvidence|pre|
+|should he|ConditionalEvidence|pre|
+|should she|ConditionalEvidence|pre|
+|should the patient|ConditionalEvidence|pre|
+|should there|ConditionalEvidence|pre|
+|since|ConditionalEvidence|termin|
+|sister|SubjectIsOtherEvidence|pre|
+|sister's|SubjectIsOtherEvidence|pre|
+|social history|HistoricalEvidence|pseudo|
+|source for|NegationEvidence|termin|
+|source of|NegationEvidence|termin|
+|sources for|NegationEvidence|termin|
+|sources of|NegationEvidence|termin|
+|still|NegationEvidence|termin|
+|sudden onset of|HistoricalEvidence|pseudo|
+|sufficient to rule her out|NegationEvidence|pre|
+|sufficient to rule her out against|NegationEvidence|pre|
+|sufficient to rule her out for|NegationEvidence|pre|
+|sufficient to rule him out|NegationEvidence|pre|
+|sufficient to rule him out against|NegationEvidence|pre|
+|sufficient to rule him out for|NegationEvidence|pre|
+|sufficient to rule out|NegationEvidence|pre|
+|sufficient to rule out against|NegationEvidence|pre|
+|sufficient to rule out for|NegationEvidence|pre|
+|sufficient to rule the patient out|NegationEvidence|pre|
+|sufficient to rule the patient out against|NegationEvidence|pre|
+|sufficient to rule the patient out for|NegationEvidence|pre|
+|test for|NegationEvidence|pre|
+|though|NegationEvidence|termin|
+|to exclude|NegationEvidence|pre|
+|trigger event for|NegationEvidence|termin|
+|uncle|SubjectIsOtherEvidence|pre|
+|uncle's|SubjectIsOtherEvidence|pre|
+|unlikely|NegationEvidence|post|
+|unlikelyfixthis|NegationEvidence|post|
+|is none|NegationEvidence|post|
+|unremarkable for|NegationEvidence|pre|
+|was negative|NegationEvidence|post|
+|was not|NegationEvidence|pre|
+|was ruled out|NegationEvidence|post|
+|wasn't|NegationEvidence|pre|
+|what must be ruled out is|ConditionalEvidence|pre|
+|will be ruled out|ConditionalEvidence|post|
+|will be ruled out for|ConditionalEvidence|pre|
+|with no|NegationEvidence|pre|
+|without|NegationEvidence|pre|
+|without the|NegationEvidence|pre|
+|without a|NegationEvidence|pre|
+|without an|NegationEvidence|pre|
+|without much|NegationEvidence|pre|
+|without being|NegationEvidence|pre|
+|without mention of|NegationEvidence|pre|
+|without reported|NegationEvidence|pre|
+|without visible|NegationEvidence|pre|
+|no acute|NegationEvidence|pre|
+|no mention of|NegationEvidence|pre|
+|no reported|NegationEvidence|pre|
+|no reported mention|NegationEvidence|pre|
+|no visable|NegationEvidence|pre|
+|no apparent|NegationEvidence|pre|
+|no additional significant|NegationEvidence|pre|
+|has not had any|NegationEvidence|pre|
+|has not had any problems|NegationEvidence|pre|
+|has not had any problems with|NegationEvidence|pre|
+|denies problems with|NegationEvidence|pre|
+|denied problems with|NegationEvidence|pre|
+|denies any problems with|NegationEvidence|pre|
+|denies any problems with|NegationEvidence|pre|
+|denied any significant|NegationEvidence|pre|
+|denies any significant|NegationEvidence|pre|
+|denies significant|NegationEvidence|pre|
+|denies any high-risk|NegationEvidence|pre|
+|denied any high-risk|NegationEvidence|pre|
+|did not have any problems with|NegationEvidence|pre|
+|did not have any more episodes of|NegationEvidence|pre|
+|did not have any episodes of|NegationEvidence|pre|
+|didn't have any problems with|NegationEvidence|pre|
+|didn't report any|NegationEvidence|pre|
+|didn't express any|NegationEvidence|pre|
+|didn't expressed any|NegationEvidence|pre|
+|didn't report any problems with|NegationEvidence|pre|
+|no problems with|NegationEvidence|pre|
+|without significant|NegationEvidence|pre|
+|without some|NegationEvidence|pre|
+|without other|NegationEvidence|pre|
+|without signs of|NegationEvidence|pre|
+|without sign of|NegationEvidence|pre|
+|without any|NegationEvidence|pre|
+|without any evidence of|NegationEvidence|pre|
+|without difficulty|ConditionalEvidence|pseudo|
+|without difficulties|ConditionalEvidence|pseudo|
+|without diff|ConditionalEvidence|pseudo|
+|without evidence|NegationEvidence|pre|
+|without evidence of|NegationEvidence|pre|
+|without indication of|NegationEvidence|pre|
+|without audible|NegationEvidence|pre|
+|no indication of|NegationEvidence|pre|
+|no major|NegationEvidence|pre|
+|without sign of|NegationEvidence|pre|
+|yet|NegationEvidence|termin|
+|prn|ConditionalEvidence|pre|
+|risk of|ConditionalEvidence|pre|
+|possible|ConditionalEvidence|pre|
+|use|ConditionalEvidence|pre|
+|adequate to rule her out for|NegationEvidence|pre|
+|adequate to rule him out for|NegationEvidence|pre|
+|adequate to rule out for|NegationEvidence|pre|
+|adequate to rule the patient out against|NegationEvidence|pre|
+|adequate to rule the patient out for|NegationEvidence|pre|
+|cannot see|NegationEvidence|pre|
+|denise|NegationEvidence|pre|
+|denies any|NegationEvidence|pre|
+|denies any recent|NegationEvidence|pre|
+|denies any change in the|NegationEvidence|pre|
+|denies any changes in the|NegationEvidence|pre|
+|denies any current|NegationEvidence|pre|
+|denies any history of|NegationEvidence|pre|
+|denies any other|NegationEvidence|pre|
+|denies any other|NegationEvidence|pre|
+|denies any problems|NegationEvidence|pre|
+|denies any problems of|NegationEvidence|pre|
+|denies any symptom of|NegationEvidence|pre|
+|denies any symptoms of|NegationEvidence|pre|
+|denies any undue|NegationEvidence|pre|
+|denies current|NegationEvidence|pre|
+|denies experiencing|NegationEvidence|pre|
+|denies experiencing any|NegationEvidence|pre|
+|denies symptoms of|NegationEvidence|pre|
+|denies this|NegationEvidence|pre|
+|denies active|NegationEvidence|pre|
+|denies any abnormal|NegationEvidence|pre|
+|denies ever|NegationEvidence|pre|
+|denied any|NegationEvidence|pre|
+|denied any recent|NegationEvidence|pre|
+|denied any change in the|NegationEvidence|pre|
+|denied any changes in the|NegationEvidence|pre|
+|denied any current|NegationEvidence|pre|
+|denied any history of|NegationEvidence|pre|
+|denied any other|NegationEvidence|pre|
+|denied any other|NegationEvidence|pre|
+|denied any problems|NegationEvidence|pre|
+|denied any problems of|NegationEvidence|pre|
+|denied any symptom of|NegationEvidence|pre|
+|denied any symptoms of|NegationEvidence|pre|
+|denied current|NegationEvidence|pre|
+|denied symptoms of|NegationEvidence|pre|
+|denied this|NegationEvidence|pre|
+|denied active|NegationEvidence|pre|
+|denied any abnormal|NegationEvidence|pre|
+|denied ever|NegationEvidence|pre|
+|denies there was any recent|NegationEvidence|pre|
+|denies there was any|NegationEvidence|pre|
+|denies there was any current|NegationEvidence|pre|
+|denies there was any history of|NegationEvidence|pre|
+|denies there was ever|NegationEvidence|pre|
+|denies there was ever history of|NegationEvidence|pre|
+|denies there was history of|NegationEvidence|pre|
+|denies there was problems|NegationEvidence|pre|
+|denies there was problems of|NegationEvidence|pre|
+|denies there were any|NegationEvidence|pre|
+|denies there were any history of|NegationEvidence|pre|
+|denies there were ever|NegationEvidence|pre|
+|denies there were ever history of|NegationEvidence|pre|
+|denies there were history of|NegationEvidence|pre|
+|denies there were problems|NegationEvidence|pre|
+|denies there were problems of|NegationEvidence|pre|
+|denies there was any recent|NegationEvidence|pre|
+|denies there was any|NegationEvidence|pre|
+|denies there was any current|NegationEvidence|pre|
+|denies there was any history of|NegationEvidence|pre|
+|denies there was ever|NegationEvidence|pre|
+|denies there was ever history of|NegationEvidence|pre|
+|denies there was history of|NegationEvidence|pre|
+|denies there was problems|NegationEvidence|pre|
+|denies there was problems of|NegationEvidence|pre|
+|denies there were any|NegationEvidence|pre|
+|denies there were any history of|NegationEvidence|pre|
+|denies there were ever|NegationEvidence|pre|
+|denies there were ever history of|NegationEvidence|pre|
+|denies there were history of|NegationEvidence|pre|
+|denies there were problems|NegationEvidence|pre|
+|denies there were problems of|NegationEvidence|pre|
+|denied that there was any|NegationEvidence|pre|
+|denied that there was any current|NegationEvidence|pre|
+|denied that there was any history of|NegationEvidence|pre|
+|denied that there was ever|NegationEvidence|pre|
+|denied that there was ever history of|NegationEvidence|pre|
+|denied that there was history of|NegationEvidence|pre|
+|denied that there was problems|NegationEvidence|pre|
+|denied that there was problems of|NegationEvidence|pre|
+|denied that there were any|NegationEvidence|pre|
+|denied that there were any history of|NegationEvidence|pre|
+|denied that there were ever|NegationEvidence|pre|
+|denied that there were ever history of|NegationEvidence|pre|
+|denied that there were history of|NegationEvidence|pre|
+|denied that there were problems|NegationEvidence|pre|
+|denied that there were problems of|NegationEvidence|pre|
+|denies use of|NegationEvidence|pre|
+|denies use of other|NegationEvidence|pre|
+|denied use of|NegationEvidence|pre|
+|denied use of other|NegationEvidence|pre|
+|nevertheless|NegationEvidence|termin|
+|none|NegationEvidence|post|
+|is none|NegationEvidence|post|
+|has none|NegationEvidence|post|
+|was none|NegationEvidence|post|
+|are none|NegationEvidence|post|
+|were none|NegationEvidence|post|
+|have none|NegationEvidence|post|
+|will be ruled out|AssertedEvidence|pre|
+|no residual|NegationEvidence|pre|

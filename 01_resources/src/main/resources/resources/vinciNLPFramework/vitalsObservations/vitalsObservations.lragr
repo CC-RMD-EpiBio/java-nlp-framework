@@ -1,0 +1,30 @@
+# =============================
+# September 6, 2018
+#  Vitals Observations - this terminology includes those test names 
+#  that would otherwise be missed because of table column headings
+#  not being processed correctly 
+# =============================
+#  
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|Asserted/negated
+#
+# 
+#    
+# ===============================================
+V00001|body height|<noun>|<base>|body height|body height|VitalsTestName|
+V00001|height|<noun>|<base>|body height|body height|VitalsTestName|
+V00002|body weight|<noun>|<base>|body weight|body weight|VitalsTestName|
+V00002|weight|<noun>|<base>|body weight|body weight|VitalsTestName|
+V00003|bmi|<noun>|<base>|bmi|bmi|VitalsTestName|
+V00004|heart rate|<noun>|<base>|heart rate|heart rate|VitalsTestName|
+V00004|pulse rate|<noun>|<base>|heart rate|heart rate|VitalsTestName|
+V00004|rate pulse|<noun>|<base>|heart rate|heart rate|VitalsTestName|
+V00005|temperature|<noun>|<base>|temperature|temperature|VitalsTestName|
+V00006|respiratory rate|<noun>|<base>|respiratory rate|respiratory rate|VitalsTestName|
+V00007|blood pressure|<noun>|<base>|blood pressure|blood presssure|VitalsTestName|
+V00007|pressure|<noun>|<base>|blood pressure|blood presssure|VitalsTestName|
+V00008|body surface area|<noun>|<base>|||VitalsTestName|
+V00008|surface area|<noun>|<base>|||VitalsTestName|
+V00008|area surface area|<noun>|<base>|||VitalsTestName|
+V00009|head circumference|<noun>|<base>|||VitalsTestName|
+V00009|circumference head|<noun>|<base>|||VitalsTestName|
+V00010|bmi percentile|<noun>|<base>|||VitalsTestName|

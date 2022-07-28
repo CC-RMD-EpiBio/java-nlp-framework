@@ -1,0 +1,17 @@
+
+Given a CUI, DescendantConcepts returns files in the mrconso.rrf format that are direct descendants 
+based on relationships to the concept and concepts that are related to each of the
+descendant concepts.
+
+Usage:  DescendantConcepts
+
+   Enter a cui to be descended  --> 
+
+   Enter a cui to be descended (or control^z to quit)  --> 
+   
+   Options: 
+     --inputDir=     where to find the META files MRREL.RRF, MRCONSO.RRF
+     --outputDir=    where to place the files - by default they will go in $inputDir_terminology_[dateStamp]
+     --mrrel=        the name of the MRREL file (by default it's MRREL.RRF)
+     --totalNumberOfMrconsoRows=   gotta do a wc -l on mrconso to get this number - by default it is set to the 2019AA value
+     --totalNumberOfMRRELRows="    gotta do a wc -l on mrrel to get this number   - by default it is set to the 2019AA value

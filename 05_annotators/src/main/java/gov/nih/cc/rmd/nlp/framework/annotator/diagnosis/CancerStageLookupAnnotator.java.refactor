@@ -1,0 +1,177 @@
+// =================================================
+/**
+ * Cancer Stage labels cancer staging from text.
+ *
+ * This is built directly upon UIMA's implementation of
+ * an annotator - JCasAnnotator_ImplBase.  
+ * 
+ * This class creates annotations that get defined 
+ * from a uima type descriptor found in the
+ * 06_type.descriptor/src/main/resources/com/ciitizen/framework/DiagnosisModel.xml
+ *
+ * This class refers to annotations that got defined
+ * in the framework-type.descriptors project/repo
+ *
+ * @author  Guy Divita 
+ * @created Jun 1, 2018
+ *
+ * 
+ * 
+
+ */
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.diagnosis;
+
+import java.util.List;
+
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import com.ciitizen.framework.CancerStage;
+import gov.nih.cc.rmd.nlp.framework.utils.terminologies.lookup.LRAGRRow;
+
+import gov.nih.cc.rmd.nlp.framework.annotator.loretta.LorettaAnnotator;
+import gov.nih.cc.rmd.nlp.framework.annotator.loretta.TempTerm;
+import gov.va.chir.model.Utterance;
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+import gov.nih.cc.rmd.nlp.framework.utils.framework.uima.VUIMAUtil;
+
+
+
+public class CancerStageLookupAnnotator extends LorettaAnnotator  {
+ 
+
+//=================================================
+ /**
+  * getTerminologiesFromSection returns a terminology
+  * based on what section this annotation is in
+  * 
+  * i.e., look in rxnorm if you are in a medications section
+  *       look in loinc if you are in vitals, labs ... section
+  *       otherwise look in snomedct_us
+  * 
+  * @param pJCas
+  * @param pSentence
+  * @return String[]
+ */
+ // =================================================
+ @Override
+ public String[] getTerminologiesFromSection(JCas pJCas, Utterance pSentence) {
+   
+   String[] terminologies =  this.terminologies; 
+   
+   return terminologies;
+ } // end Method getTerminologyFromSection()----------
+
+
+
+// =================================================
+/**
+ * makeTermFromLRAGRRow
+ * 
+ * @param pRows
+ * @return List<Annotation>
+*/
+// =================================================
+ @Override
+ protected
+ Annotation makeTermFromLRAGRRows(JCas pJCas, TempTerm aTempTerm, List<LRAGRRow> pRows ) {
+  
+   
+   CancerStage statement = new CancerStage(pJCas);
+ 
+ List<Annotation> tokens = aTempTerm.getRealTokens();
+  if ( tokens == null || tokens.isEmpty()) {
+    GLog.println(GLog.ERROR_LEVEL, "Issue with term with no aligned tokens " );
+    return null;
+  }
+  int beginOffset = tokens.get(0).getBegin();
+  int endOffset   = tokens.get(tokens.size() -1).getEnd();
+
+  String cuis = LRAGRRow.getCuis( pRows ); 
+  String conceptNames = LRAGRRow.getConceptNames( pRows);
+  String semanticTypes = LRAGRRow.getSemanticTypes( pRows);
+  
+  String cancerType = "unknown";
+  String node = "unknown";
+  String metastasis = "unknown";
+  String grade = "unkown";
+  String status = "unknown";
+ 
+  
+  statement.setBegin( beginOffset);
+  statement.setEnd(    endOffset );
+  statement.setId("CancerStageLookup_" + annotationCounter );
+  statement.setCuis(cuis);
+  statement.setCategories(semanticTypes);
+  statement.setConceptNames(conceptNames);
+  
+  statement.setCancerType(cancerType);
+  statement.setNode(node);
+  statement.setMetastasis(metastasis);
+  statement.setGrade( grade);
+  
+ 
+ 
+ 
+  //   0        1     2      3     4    5     6    7    8    9 10|11|12|13|4
+  // C1519530|title|<noun>|<all>|Title|Title|T078|NCI|C19067|n|0 |S |PF|title|1
+  
+  StringBuffer buff = new StringBuffer();
+  for ( LRAGRRow row : pRows )
+    buff.append( row.toLRAGRString() + ":");
+  
+ statement.setOtherInfo( buff.toString());
+ 
+ 
+  statement.addToIndexes();
+  String sectionName = VUIMAUtil.getSectionName(statement);
+  statement.setSectionName(sectionName);
+ 
+  return statement;
+  
+  
+} // end Method makeTermFromLRAGRRow() -------------
+
+
+
+
+
+ //----------------------------------
+ /**
+  * initialize initializes the class.  Parameters are passed in via a String
+  *                array  with each row containing a --key=value format.
+  *                
+  *                It is important to adhere to the posix style "--" prefix and
+  *                include a "=someValue" to fill in the value to the key. 
+  * @param pArgs
+  * @throws  ResourceInitializationException            
+  * 
+  **/
+ // ----------------------------------
+ public void initialize(String[] pArgs) throws ResourceInitializationException {
+      
+   super.initialize( pArgs);
+   
+   super.terminologies  = new String[1] ;
+   super.terminologies[0] = "SNOMEDCT_US";
+   super.tree = "<<80631005";
+   GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "initialize", "New improved cancer staging tool! using Snomed using <<80631005 tree");
+   
+   try {
+  
+ 
+     
+   } catch (Exception e) {
+     e.printStackTrace();
+     String msg = "Issue initizlizng Loretta " + e.toString();
+     GLog.println(GLog.ERROR_LEVEL, this.getClass(), "initialize", msg);
+     throw new ResourceInitializationException();
+   }
+ } // end Method initialize() -------
+ 
+
+  
+} // end Class DiagnosisAnnotator() ---------------
+

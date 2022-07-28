@@ -1,0 +1,142 @@
+#==============================================
+#
+# C:/ciitizen/softwareRepos/nlp/ciitizen-nlp-resources/src/main/resources/resources/com/ciitizen/framework/sections/pageHeaderPageFooterEvidence.lragr 
+#
+# Author: Divita
+# Date: 2018-08-10_14_38_02
+# Date: 2018-08-29 added gene section terms
+#
+#    id|key|pos|inflection|citationForm|uninflectedForm|Category|subCategory
+#
+#==============================================
+M00000|page|<noun>|<all>|page|page|PageFooterEvidence:PageHeaderEvidence|
+M00001|report|<noun>|<all>|report|report|PageFooterEvidence:PageHeaderEvidence|
+#M00002|image|<noun>|<all>|image|image|PageFooterEvidence:PageHeaderEvidence|
+M00003|phone|<noun>|<all>|phone|phone|PageFooterEvidence:PageHeaderEvidence|
+M00003|work phone|<noun>|<all>|phone|phone|PageFooterEvidence:PageHeaderEvidence|
+#M00004|location|<noun>|<all>|location|location|PageFooterEvidence:PageHeaderEvidence|
+M00005|note|<noun>|<all>|note|note|PageFooterEvidence:PageHeaderEvidence|
+M00006|hospital|<noun>|<all>|hospital|hospital|PageFooterEvidence:PageHeaderEvidence|
+M00007|the cancer center|<noun>|<all>|center|center|PageFooterEvidence:PageHeaderEvidence|
+M00007|cancer center|<noun>|<all>|center|center|PageFooterEvidence:PageHeaderEvidence|
+M00007|care center|<noun>|<all>|center|center|PageFooterEvidence:PageHeaderEvidence|
+M00007|breast care center|<noun>|<all>|center|center|PageFooterEvidence:PageHeaderEvidence|
+#M00008|visit|<noun>|<all>|visit|visit|PageFooterEvidence:PageHeaderEvidence|
+M00009|fax|<noun>|<all>|fax|fax|PageFooterEvidence:PageHeaderEvidence|
+M00011|dob|<noun>|<all>|dob|dob|PageHeaderEvidence|
+M00011|ordering phys|<noun>|<all>|dob|dob|PageHeaderEvidence:GeneReportHeading|
+M00011|ordering physician|<noun>|<all>|dob|dob|PageHeaderEvidence:GeneReportHeading|
+M00011|physician|<noun>|<all>|ordering physician|ordering physician|PageHeaderEvidence|PageHeaderEvidence:GeneReportHeading
+M00014|chart|<noun>|<all>|chart|chart|PageFooterEvidence|
+#M00015|summary|<noun>|<all>|summary|summary|PageFooterEvidence|
+M00015|continuity of care document|<noun>|<all>|summary|summary|PageHeaderEvidence|
+M00015|c -CDA|<noun>|<all>|summary|summary|PageHeaderEvidence|
+M00016|appointment|<noun>|<all>|appointment|appointment|PageHeaderEvidence:PageFooterEvidence|
+M00017|date|<noun>|<all>|date|date|PageFooterEvidence|
+M00028|electronically signed by|<noun>|<all>|electronically|electronically|PageFooterEvidence|
+M00018|signed by|<noun>|<all>|signed|signed|PageFooterEvidence|
+M00023|released by|<noun>|<all>|released|released|PageFooterEvidence|
+M00028|refreshed by|<noun>|<all>|electronically|electronically|PageHeaderEvidence|
+M00020|transcribed by|<noun>|<all>|transcribed|transcribed|PageFooterEvidence|
+M00021|printed|<noun>|<all>|printed|printed|PageFooterEvidence|
+M00021|printed on|<noun>|<all>|printed|printed|PageFooterEvidence|
+M00022|final|<noun>|<all>|final|final|PageFooterEvidence|
+M00024|thanks|<noun>|<all>|thanks|thanks|PageFooterEvidence|
+M00025|regards|<noun>|<all>|regards|regards|PageFooterEvidence|
+M00026|md|<noun>|<all>|md|md|PageFooterEvidence|
+M00027|m.d.|<noun>|<all>|m.d.|m.d.|PageFooterEvidence|
+M00029|cc|<noun>|<all>|cc|cc|PageFooterEvidence|
+M00030|cc'd|<noun>|<all>|cc'd|cc'd|PageFooterEvidence|
+M00031|recipients|<noun>|<all>|recipients|recipients|PageFooterEvidence|
+M00032|admitting|<noun>|<all>|admitting|admitting|PageFooterEvidence|
+M00033|attending|<noun>|<all>|attending|attending|PageHeaderEvidence:PageFooterEvidence|
+M00034|work|<noun>|<all>|work|work|PageFooterEvidence|
+M00035|performing site|<noun>|<all>|performing site|performing site|PageFooterEvidence|
+M00035|performing site legend|<noun>|<all>|performing site legend|performing site legend|PageFooterEvidence|
+M00036|received and reported dates and times are reported in us central time|<noun>|<all>|||PageFooterEvidence|
+M00037|for a more detailed guardant360 Patient Report, log into|<noun>|<all>|||PageFooterEvidence|
+M00038|set up an account|<noun>|<all>|||PageFooterEvidence|
+M00038|set up your|<noun>|<all>|||PageFooterEvidence|
+M00038|sales prepresentative|<noun>|<all>|||PageFooterEvidence|
+M00038|or call|<noun>|<all>|||PageFooterEvidence|
+M00039|contact|<noun>|<all>|||PageFooterEvidence|
+M00039|please log on to|<noun>|<all>|||PageFooterEvidence|
+M00039|client services|<noun>|<all>|||PageFooterEvidence|
+M00039|clientservices|<noun>|<all>|||PageFooterEvidence|
+M00040|GUARDANTHEALTH|<noun>|<all>|||PageFooterEvidence|
+M00040|GUARDANTH|<noun>|<all>|||PageFooterEvidence|
+M00041|all rights reserved|<noun>|<all>|||PageFooterEvidence|
+M00041|copyright|<noun>|<all>|||PageFooterEvidence|
+M00041|©|<noun>|<all>|||PageFooterEvidence|
+M00042|report status|<noun>|<all>|||PageFooterEvidence|
+M00043|if you take your|<noun>|<all>|||PageFooterEvidence|
+M00043|record on a thumb drive to a different doctor|<noun>|<all>|||PageFooterEvidence|
+M00043|your downloaded|<noun>|<all>|||PageFooterEvidence|
+M00043|personal health summary document is in a format called|<noun>|<all>|||PageFooterEvidence|
+M00043|understands cda|<noun>|<all>|||PageFooterEvidence|
+M00043|need to enter a password before your doctor can use this file|<noun>|<all>|||PageFooterEvidence|
+M00043|Lusy|<noun>|<all>|||PageFooterEvidence|
+M00043|Lucy|<noun>|<all>|||PageFooterEvidence|
+M00045|personal heatlh summary|<noun>|<all>|||PageHeaderEvidence|
+M00045|as of|<noun>|<all>|||PageHeaderEvidence|
+M00045|lucy personal health summary|<noun>|<all>|||PageHeaderEvidence|
+M00045|personal health summary logo|<noun>|<all>|||PageHeaderEvidence|
+M00045|this document contains informaton that was shared with|<noun>|<all>|||PageHeaderEvidence|
+M00045|it may not contain the the entire record from|<noun>|<all>|||PageHeaderEvidence|
+M00045|note from|<noun>|<all>|||PageHeaderEvidence|
+M00046|powered by|<noun>|<all>|||PageFooterEvidence|
+M00046|powered by allscripts|<noun>|<all>|||PageFooterEvidence|
+M00046|powered by allscriptstm|<noun>|<all>|||PageFooterEvidence|
+M00046|powered by allscripts tm|<noun>|<all>|||PageFooterEvidence|
+M00046|published|<noun>|<all>|||PageFooterEvidence|
+M00046|epic - version|<noun>|<all>|||PageFooterEvidence|
+M00047|style sheet|<noun>|<all>|||PageFooterEvidence|
+M00048|document id|<noun>|<all>|||PageFooterEvidence|
+M00048|document created|<noun>|<all>|||PageFooterEvidence|
+M00049|english (preferred)|<noun>|<all>|||PageHeaderEvidence|
+M00050|patient id|<noun>|<all>|||PageHeaderEvidence|
+M00051|patient name|<noun>|<all>|||PageHeaderEvidence:GeneReportHeading|
+M00052|gender|<noun>|<all>|||PageHeaderEvidence|
+M00053|sex|<noun>|<all>|||PageHeaderEvidence|
+M00054|birth date|<noun>|<all>|||PageHeaderEvidence|
+M00055|receipt date|<noun>|<all>|||PageHeaderEvidence|
+M00056|account|<noun>|<all>|||PageHeaderEvidence|
+M00057|age|<noun>|<all>|||PageHeaderEvidence|
+M00058|race|<noun>|<all>|||PageHeaderEvidence|
+M00059|ethnicity|<noun>|<all>|||PageHeaderEvidence|
+M00060|order #|<noun>|<all>|||PageHeaderEvidence|
+M00061|marital status|<noun>|<all>|||PageHeaderEvidence|
+M00062|mrn|<noun>|<all>|||PageHeaderEvidence|
+M00063|report date|<noun>|<all>|||PageHeaderEvidence|
+M00063|origional report date|<noun>|<all>|||PageHeaderEvidence|
+M00064|report notes|<noun>|<all>|||PageHeaderEvidence|
+M00065|client order number|<noun>|<all>|||PageHeaderEvidence|
+M00066|end of report|<noun>|<all>|||PageFooterEvidence|
+M00067|Therapies associated with potential benefit or lack of benefit, as indicated above|<noun>|<all>|||PageHeaderEvidence|
+M00068|are based on biomarker results provided in this report and are based on published medical evidence|<noun>|<all>|||PageHeaderEvidence|
+M00069|tumor type|<noun>|<all>|diagnosis|diagnosis|PageHeaderEvidence:DiagnosisEvidence|
+M00070|diagnosis|<noun>|<all>|diagnosis|diagnosis|PageHeaderEvidence:DiagnosisEvidence|
+M00070|provided diagnosis|<noun>|<all>|diagnosis|diagnosis|PageHeaderEvidence:DiagnosisEvidence|Post
+M00070|clinical diagnosis|<noun>|<all>|diagnosis|diagnosis|PageHeaderEvidence:DiagnosisEvidence|
+M00071|specimen site|<noun>|<all>|specimen site|specimen site|PageHeaderEvidence:SpecimenSiteEvidence|
+M00071|specimen source|<noun>|<all>|specimen site|specimen site|PageHeaderEvidence:SpecimenSiteEvidence|
+M00071|specimen received|<noun>|<all>|specimen received|specimen received|PageHeaderEvidence|
+M00071|specimen|<noun>|<all>|specimen site|specimen site|PageHeaderEvidence:SpecimenSiteEvidence|
+M00072|collection date|<noun>|<all>|collection date|collection date|PageHeaderEvidence:CollectionDateEvidence|
+M00072|specimen date|<noun>|<all>|collection date|collection date|PageHeaderEvidence:CollectionDateEvidence|
+M00072|date of collection|<noun>|<all>|collection date|collection date|PageHeaderEvidence:CollectionDateEvidence|
+M00072|collected|<noun>|<all>|collection date|collection date|PageHeaderEvidence:CollectionDateEvidence|
+M00073|pathologist|<noun>|<all>|pathologist|pathologist|PageHeaderEvidence:ProviderEvidence|
+#  After first Review
+#
+M00074|cover sheet|<noun>|<all>|cover sheet|cover sheet|PageHeaderEvidence|
+M00074|document cover sheet|<noun>|<all>|cover sheet|cover sheet|PageHeaderEvidence|
+M00075|http|<noun>|<all>|http|http|PageHeaderEvidence:PageFoooterEvidence|
+M00075|http://|<noun>|<all>|http|http|PageHeaderEvidence:PageFoooterEvidence|
+M00075|https|<noun>|<all>|http|http|PageHeaderEvidence:PageFoooterEvidence|
+M00075|https://|<noun>|<all>|http|http|PageHeaderEvidence:PageFoooterEvidence|
+M00075|www|<noun>|<all>|http|http|PageHeaderEvidence:PageFoooterEvidence|
+M00076|continued|<noun>|<all>|continued|continued|PageHeaderEvidence:PageFoooterEvidence|
+M00077|copy|<noun>|<all>|copy|copy|PageHeaderEvidence|
+M00077|encounter|<noun>|<all>|encounter|encounter|PageHeaderEvidence|
+

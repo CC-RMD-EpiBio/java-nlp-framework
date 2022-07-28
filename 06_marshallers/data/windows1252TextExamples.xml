@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+<Feature>
+  <Name className="java.lang.String">gate.SourceURL</Name>
+  <Value className="java.lang.String">file:/C:/work/softwareRepos/framework-legacy/00_legacy/06_marshallers/data/windows1252TextExamples.txt</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">gate.OriginalURL</Name>
+  <Value className="java.lang.String">file:/C:/work/softwareRepos/framework-legacy/00_legacy/06_marshallers/data/windows1252TextExamples.txt</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">MimeType</Name>
+  <Value className="java.lang.String">text/plain</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">docNewLineType</Name>
+  <Value className="java.lang.String">CRLF</Value>
+</Feature>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes><Node id="0"/>This is a test.  it has windows 1252 (latin-8) characters in it.  á¸&#x17e;  ás?  A&#x160; A&#x161;&#xd;
+<Node id="83"/>&#xd;
+<Node id="85"/>windows 1252  | Name    | as seen in Utf-8&#xd;
+&#x192;             | f       |     x83    &#xd;
+&#x2020;             | dagger  |     x86&#xd;
+&#x20ac;             |euro sign|     x80&#xd;
+&#x152;             | OE      |     x8C&#xd;
+<Node id="273"/></TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="Original markups">
+<Annotation Id="0" Type="paragraph" StartNode="0" EndNode="83">
+</Annotation>
+<Annotation Id="1" Type="paragraph" StartNode="85" EndNode="273">
+</Annotation>
+</AnnotationSet>
+
+</GateDocument>

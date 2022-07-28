@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ====================================================== -->
+  <!-- Framework Multi-module pom to build all derma projects -->
+  <!-- ====================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>02-thirdParty</artifactId>
+  <version>2021.02.0</version>
+  <packaging>pom</packaging>
+  <description>NLP applications </description>
+
+  <!-- ======================================================= -->
+  <!-- Parent Pom - look here for global framework settings -->
+  <!-- including -->
+  <!-- Distribution Managment -->
+  <!-- Java versions -->
+  <!-- Plugin Management and plugins -->
+  <!-- ======================================================= -->
+
+  <modules>
+    <!-- module>vtt</module -->
+    <module>unmavenedJars</module>
+
+  </modules> 
+</project>

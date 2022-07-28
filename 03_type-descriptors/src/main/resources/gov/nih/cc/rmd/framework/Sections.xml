@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>gov.nih.cc.rmd.framework.Sections</name>
+    <description>Contains labels specific to sectionizing.  This was updated to include text tiling scores</description>
+    <version>2019.01.0</version>
+  <vendor/>
+  <imports>
+    <import name="gov.nih.cc.rmd.framework.Core"/>
+  </imports>
+  <types>
+
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.SectionZone</name>
+      <description>This label covers a section within a document</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>sectionTypes</name>
+          <description>While this could be subtyped, section types are the sections of interest like medications, allergies, chef Complaint, Assessment, Plan ...
+Given that this could grow to 1000 or more, best be a field rather than subtyping it.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionName</name>
+          <description>This is the instance name of the section - the content heading,</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>indentation</name>
+          <description>The number of spaces this section is in.  This is to be useful for
+determining what nesting level the section is</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>nestedSection</name>
+          <description>Nested sections pointers</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.nih.cc.rmd.framework.SectionZone</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+      <featureDescription>
+          <name>statementDate</name>
+          <description>This is the date that a section or page was labeled on</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>referenceDate</name>
+          <description>Sections have reference dates and statement dates.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>annotationTypes</name>
+          <description>This is a : delimited list of the kinds of annotations that could be found/processed within this kind of section.  The source of this info
+comes from the ccdaSectionHeaders.lragr.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>eventDate</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.NestedSection</name>
+      <description>Subsection of a section</description>
+      <supertypeName>gov.nih.cc.rmd.framework.SectionZone</supertypeName>
+      <features>
+        <featureDescription>
+          <name>parentSection</name>
+          <description>The parent section this subsection belongs to</description>
+          <rangeTypeName>gov.nih.cc.rmd.framework.SectionZone</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageHeader</name>
+      <description>The part of the document that contains non-clinical information.  Mostly administrative (patient/provider) info, or meta document data (page number, report date ...)</description>
+      <supertypeName>gov.nih.cc.rmd.framework.SectionZone</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageFooter</name>
+      <description>Part of the document that has non clinical information, like provider info, page numbers, foot notes?</description>
+      <supertypeName>gov.nih.cc.rmd.framework.SectionZone</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageHeaderFooter</name>
+      <description>The part of the document that contains non-clinical information.  Mostly administrative (patient/provider) info, or meta document data (page number, report date ...)</description>
+      <supertypeName>gov.nih.cc.rmd.framework.SectionZone</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageHeaderFooterEvidence</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+    <features>
+        <featureDescription>
+          <name>id</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageHeaderEvidence</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.PageHeaderFooterEvidence</supertypeName>
+    <features>
+        <featureDescription>
+          <name>id</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageFooterEvidence</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.PageHeaderFooterEvidence</supertypeName>
+    <features>
+        <featureDescription>
+          <name>id</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Table</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+  </typeDescription>
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TableRowHeading</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Table</supertypeName>
+  </typeDescription>
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TableColumnHeading</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Table</supertypeName>
+  </typeDescription>
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TableCell</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Table</supertypeName>
+  </typeDescription>
+
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TableRow</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Table</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.FeatureNameList</name>
+      <description> This label holds a pipe delimited string of feature names that are married  feature values stored on other annotations like the svm features for line annotations </description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+       <features>
+        <featureDescription>
+          <name>LineFeatureNames</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+         <featureDescription>
+          <name>Delimiter</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        
+       </features>
+    </typeDescription>
+    
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TilingScores</name>
+      <description>This is a vector of numbers that give a document fingerprint of the text tiling scores.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    <features>
+        <featureDescription>
+          <name>tilingScore1</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tilingScore2</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.MultiColumn</name>
+      <description>Multi-column text.  This is currently a catch all for OCR'd munged text.  Most of the time it is because the ocr could not handle multi-column .</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Checkbox</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_CheckboxMark</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_CheckboxSlot</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_CheckboxValue</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_List_Element</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_List_Element_Delimiter</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_List_Sentence</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_List_Structured</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Event_Dates</name>
+      <description>Manually annotated event dates</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_AddressBlock</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_AdministrativeDemographics</name>
+      <description>Manually annotated administrative demographics </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_FigureOrCaption</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_Instructions</name>
+      <description>Manually annotated Instructions</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_Metadata</name>
+      <description>Manually annotated metadata</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_PageDelimiter</name>
+      <description>Manually annotated page delimiter</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_ParagraphBreak</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_ReferenceElement</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_References</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_Salutation</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Misc_UnknownJunk</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Multi_Column</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_QA</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_QA_Answer</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_QA_Delimiter</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_QA_Question</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_SV</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_SV_Delimiter</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_SV_Slot</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_SV_Value</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_Content</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_Delimiter</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_SectionOrSV</name>
+      <description>Manually annotated section or slot value </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_DocumentTitle</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_Name</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_PageHeader</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_PageFooter</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_Paragraph</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Section_Zone</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Segment</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Sentence</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Table</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Table_Caption</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Table_Cell</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Table_ColumnHeading</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_Table_RowHeading</name>
+      <description>Manually annotated __________ </description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_TableOfContents</name>
+      <description>Manually annotated table of contents</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+    
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_TableOfContents</name>
+      <description>Manually annotated table of contents</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_LabsEvidence</name>
+      <description>Manually annotated labs evidence</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+      <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_UnitOfMeasure</name>
+      <description>Manually annotated unit of measure</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_MedicationsEvidence</name>
+      <description>Manually annotated medications evidence</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_VitalsEvidence</name>
+      <description>Manually annotated vitals evidence</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Manual_DocumentTitle</name>
+      <description>Manually annotated Document Title</description>
+      <supertypeName>gov.va.vinci.model.Gold</supertypeName>
+    </typeDescription>
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.framework.LabsEvidence</name>
+      <description>Machine annotated Labs Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.MedicationsEvidence</name>
+      <description>Machine annotated Medications Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.framework.VitalsEvidence</name>
+      <description>Machine annotated Vitals Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.nih.cc.rmd.framework.DemographicEvidence</name>
+      <description>Machine annotated Demographic Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+      <typeDescription>
+      <name>gov.nih.cc.rmd.framework.DocumentTitle</name>
+      <description>Machine annotated DocumentTitle</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+    
+    
+
+    </types>
+</typeSystemDescription>

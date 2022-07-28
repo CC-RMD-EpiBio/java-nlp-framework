@@ -1,0 +1,52 @@
+/*
+ * Copyright 2018 Ciitizen Corp. - All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property of Ciitizen Corp.
+ * The intellectual and technical concepts contained herein are proprietary to
+ * Ciitizen Corp. and may be covered by U.S. and Foreign Patents, patents in process,
+ * and are protected by trade secret or copyright law.  Dissemination of this information
+ * or reproduction of this material is strictly forbidden.
+ */
+/**
+ * ToJson writes uima annotations out as sjon objects
+ * This is a convience class extending JsonWriter.
+ * Its here because of the other processAPI classes
+ * within the framework call ToXXX classes which
+ * call the process(JCas) that return an object
+ * (i.e., just slightly not uima specs) -
+ * 
+ * The ToXXXX classes have a processAPI(pJCas) 
+ * that gets called rather than the void process(JCas)
+ * methods. I wrapped that class into the jsonWriter
+ * class - because it's used within the the process(JCas)
+ * 
+ *
+ * @author     Guy Divita
+ * @created    Feb 22, 2018
+ * 
+*/
+// =================================================
+package com.ciitizen.framework.marshallers.json;
+
+import org.apache.uima.resource.ResourceInitializationException;
+
+/**
+ * Writer to JSON.
+ */
+public class ToJson extends JsonWriter {
+
+  // =================================================
+  /**
+   * Constructor.
+   *
+   * @param pArgs the args
+   * @throws ResourceInitializationException the resource initialization
+   *           exception
+   */
+  // =================================================
+  public ToJson(String[] pArgs) throws ResourceInitializationException {
+    super(pArgs);
+
+  } // end Constructor() -----------------------------
+
+} // End Class ToJson() ------------------------------

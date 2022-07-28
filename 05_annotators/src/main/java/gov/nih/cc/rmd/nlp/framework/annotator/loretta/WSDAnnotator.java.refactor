@@ -1,0 +1,489 @@
+// =================================================
+/**
+ * WSDAnnotatorAnnotator labels wsdAnnotators from text.
+ *
+ * This is built directly upon UIMA's implementation of
+ * an annotator - JCasAnnotator_ImplBase.  
+ * 
+ * This class creates annotations that get defined 
+ * from a uima type descriptor found in the
+ * 06_type.descriptor/src/main/resources/com/ciitizen/framework/WSDAnnotatorModel.xml
+ *
+ * This class refers to annotations that got defined
+ * in the framework-type.descriptors project/repo
+ *
+ * @author  Guy Divita 
+ * @created Jun 1, 2018
+ *
+ * 
+ * 
+
+ */
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.loretta;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.uima.UimaContext;
+import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
+import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.cas.Type;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import gov.nih.cc.rmd.nlp.framework.utils.terminologies.lookup.LRAGRRow;
+import com.ciitizen.rest.client.wsd.ApiClient;
+import com.ciitizen.rest.client.wsd.api.InternalApi;
+import com.ciitizen.rest.client.wsd.model.CuiAndScore;
+import com.ciitizen.rest.client.wsd.model.WsdRequest;
+import com.ciitizen.rest.client.wsd.model.WsdResponse;
+
+import gov.va.chir.model.ClinicalStatement;
+import gov.va.chir.model.CodedEntry;
+import gov.va.chir.model.Token;
+import gov.va.chir.model.Utterance;
+import gov.va.chir.model.WordToken;
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.U;
+import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
+
+
+public class WSDAnnotator   {
+ 
+
+ 
+  
+// =================================================
+  /**
+   * Constructor
+   *
+   * @param pArgs
+   * @throws ResourceInitializationException 
+   * 
+  **/
+  // =================================================
+  public WSDAnnotator(String[] pArgs) throws ResourceInitializationException {
+     initialize(pArgs);
+  }
+
+
+  // =================================================
+  /**
+   * disambiguate will return a reduced set of rows 
+   * 
+   * @param pJCas
+   * @param pTempTerm
+   * @param pRows
+   * @return List<LRAGRRow> 
+   * 
+  */
+  // =================================================
+  public final List<LRAGRRow> disambiguate(JCas pJCas, TempTerm pTempTerm, List<LRAGRRow> pRows) {
+    
+    List<LRAGRRow> returnVal = pRows;
+    WsdRequest wsdRequest = new WsdRequest();
+    String term = U.normalize(pTempTerm.getCoveredText());
+   
+    if ( this.processMe ) {
+    
+    Annotation sentence = getSentence( pJCas, pTempTerm);
+    List<Annotation> tokensToLeft = getLeftContext(pJCas, pTempTerm, sentence);
+    List<Annotation> tokensToRight = getRightContext( pJCas, pTempTerm, sentence);
+    String wordsToLeft = makeStringFrom( tokensToLeft);
+    String wordsToRight = makeStringFrom( tokensToRight);
+    String context = wordsToLeft + " " + term + " " + wordsToRight;
+    int targetWordStart = wordsToLeft.length() + 1;
+    
+    List<String >cuis = getCuiList( pRows );
+     
+    wsdRequest.setTargetWord( term );
+    wsdRequest.setTargetWordStart(targetWordStart);
+    wsdRequest.setContext(context);
+    wsdRequest.setPossibleCuis( cuis);
+
+    
+    WsdResponse response = null;
+    int ctr = 0;
+    boolean done = false;
+    while ( !done && ctr < 4) {
+    try {
+       response = api.wsdPost(wsdRequest);
+       done = true;
+    } catch ( Exception e2 ) {
+      try {
+      
+        initializeClient();
+        response = api.wsdPost(wsdRequest);
+      } catch ( Exception e3) {
+      //  GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", "keep getting a timeout " + e3.toString());
+        ctr++;
+      }
+    }
+    }
+    if ( ctr == 4 ) {
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", "keep getting a timeout for term " + pTempTerm.getCoveredText());
+        
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", " targetWord: "+ wsdRequest.getTargetWord() + "\n" );
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", " context: "+ wsdRequest.getContext() + "\n");
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", " context: "+ wsdRequest.getTargetWordStart() + "\n" );
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "diambiguate", " cuis: "+ U.list2String(wsdRequest.getPossibleCuis(), '|') + "\n" );
+        
+        
+        return null;
+    }
+    
+        // try one more time to make a connection
+      
+   
+    try {
+      List<CuiAndScore> evaluatedCuis =  response.getEvaluatedCuis();
+     
+      if ( evaluatedCuis != null && !evaluatedCuis.isEmpty() ) {
+        
+        // The cuis are sorted in score order
+        // take the top scoring cui UNLESS
+        // the score is -9
+        // Remove the non top scoring codedEntry links from the clinicalStatement fsArray 
+        // Remove the non top scoring codedEntries from the index
+        // Remove the -9 scoring entries 
+        // re-compute the clinical statement's semantic type using the top scoring codedEntry
+        // Question: are there ties?
+        double topScore = -9;
+        double score = -9;
+        for ( int i = 0; i < evaluatedCuis.size(); i++ ) {
+          CuiAndScore cuiAndScore = evaluatedCuis.get(i);
+          score = cuiAndScore.getScore();
+          GLog.println(GLog.TRACE_LEVEL, this.getClass(), "disambiguate", " score  => " + score + "|  topScore = " + topScore);
+          if (score < topScore || score != -9 ) {
+            mark( pRows, cuiAndScore.getCui() , cuiAndScore.getScore(), false);
+         } else {
+            mark( pRows, cuiAndScore.getCui() , cuiAndScore.getScore(), true);
+            topScore = score;
+          }
+        }
+        returnVal = removeBadRows( pRows);
+    
+      }
+      
+    } catch (Exception e) {
+      e.printStackTrace();
+      String msg = "Issue making a request to the wsd server " + e.toString();
+      GLog.println(GLog.ERROR_LEVEL, this.getClass(), "disambiguate", msg);
+    }
+    
+    }
+    return returnVal;
+  } // end Method disambiguate() -------------------
+
+
+  // end Class WSDAnnotatorAnnotator() ---------------
+  
+ 
+
+
+// =================================================
+/**
+ * getCuiList returns a list of cuis
+ *  This method has a deliibrate side effect - it sets
+ *  the codedEntries that have cuis as processMe=true
+ *  
+ *  this is needed downstream - the codedEntries that don't make the cut
+ *  get marked with processMe=false
+ *  
+ *  At the end, all those codedEntries that are marked with processMe=false
+ *  get deleted.
+ * 
+ * @param pAnnotation
+ * @return List<String>  of cuis
+*/
+// =================================================
+  private final List<String> getCuiList(List<LRAGRRow> pRows) {
+ 
+    List<String> cuis = LRAGRRow.getCuisList(pRows);
+    
+  return cuis;
+} // end Method getCuiList() ------------------------
+
+
+  // =================================================
+  /**
+   * makeStringFrom returns the string that was covered by
+   * the set of tokens.  The key will have whitespace normalized.
+   * Case is preserved.
+   * 
+   * @param pTokens
+   * @return String
+   *  
+  */
+  // =================================================
+  public final static String makeStringFrom( List<Annotation> pTokens)  {
+    String returnVal = "";
+    
+    StringBuffer buff = new StringBuffer();
+    if ( pTokens != null && !pTokens.isEmpty( )) {
+      for ( Annotation token : pTokens ) {
+        String tokenText = token.getCoveredText();
+        tokenText = U.normalize( tokenText.trim() );
+        buff.append( tokenText );
+        buff.append( " ");
+      }
+      returnVal = buff.toString().trim();
+    }
+   
+    return returnVal;
+  } // end Method makeKeyFrom() ----------------------
+
+
+// =================================================
+  /**
+   * getLeftContext returns the tokens to the left of the statement within the sentence
+   * 
+   * @param pJCas
+   * @param pAnnotation
+   * @param sentence
+   * @return List<Annotation>
+  */
+  // =================================================
+  public final static List<Annotation> getLeftContext(JCas pJCas, TempTerm pAnnotation, Annotation pSentence) {
+   
+    List<Annotation> returnVal = null;
+    
+    returnVal = UIMAUtil.getAnnotationsBySpan(pJCas,  WordToken.typeIndexID, pSentence.getBegin(), pAnnotation.getBeginOffset()-1);
+    
+    if ( returnVal != null && !returnVal.isEmpty() )
+      // ---------------------------------------
+      // Strip punctuation only tokens from this
+      returnVal = UIMAUtil.uniqueAnnotations(returnVal);
+      UIMAUtil.sortByOffset(returnVal);
+      returnVal = makeWordTokensFromTokens( returnVal);
+    
+    return returnVal;
+  } // end Method getLeftContext() ----------------
+  
+//=================================================
+ /**
+  * getRightContext returns the tokens to the right of the statement within the sentence
+  * 
+  * @param pJCas
+  * @param pAnnotation
+  * @param sentence
+  * @return List<Annotation>
+ */
+ // =================================================
+ public final static List<Annotation> getRightContext(JCas pJCas, TempTerm pAnnotation, Annotation pSentence) {
+  
+   List<Annotation> returnVal = null;
+   
+  
+   
+   returnVal = UIMAUtil.getAnnotationsBySpan(pJCas, WordToken.typeIndexID, pAnnotation.getEndOffset()+1, pSentence.getEnd() +1);
+   
+   if ( returnVal != null && !returnVal.isEmpty() )
+     // ---------------------------------------
+     // Strip punctuation only tokens from this
+     returnVal = UIMAUtil.uniqueAnnotations(returnVal);
+     UIMAUtil.sortByOffset(returnVal);
+     returnVal = makeWordTokensFromTokens( returnVal);
+   
+   return returnVal;
+ } // end Method getLeftContext() ----------------
+
+//=================================================
+/**
+ * makeWordTokensFromTokens strips the set of tokens
+ * to just the word tokens, devoid of punctuation tokens 
+ * 
+ * 
+ * @param pTokens
+ * @param pEnd
+ * @return List<Annotation>
+*/
+// =================================================
+public final static List<Annotation> makeWordTokensFromTokens(List<Annotation> pTokens ) {
+  ArrayList< Annotation> someTokens = null;
+  
+  if ( pTokens != null && pTokens.size() > 0 ) {
+    someTokens = new ArrayList<Annotation>( pTokens.size() );
+    for ( int i = 0; i < pTokens.size(); i++) {
+      if ( ((WordToken)pTokens.get(i)).getPunctuationOnly() )
+        continue;
+     
+      else if ( !((WordToken)pTokens.get(i)).getSentenceBreak() )
+        someTokens.add( pTokens.get(i));
+    
+    }
+  }
+  return someTokens;
+} // end Method makeTokens() --------------------
+
+
+// =================================================
+/**
+ * getSentence retrieves the sentence, slot value, or contentHeading
+ * that this clinical statement is within.  If there are multiple 
+ * ones (say a sentence within a slot value) return the 
+ * larger context one
+ * 
+ * @param pJCas
+ * @param pAnnotation
+ * @return
+*/
+// =================================================
+  public final static Annotation getSentence(JCas pJCas, TempTerm pAnnotation) {
+  
+    Annotation sentence = null;
+    
+    
+    Type utteranceType = pJCas.getTypeSystem().getType("gov.va.chir.model.Utterance");
+    List<Annotation> sentences = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, utteranceType, Utterance.typeIndexID,  pAnnotation.getBeginOffset(), pAnnotation.getEndOffset(), true );
+    
+    if ( sentences != null && !sentences.isEmpty()) {
+      if (sentences.size() == 1 )
+        sentence = sentences.get(0);
+      else {
+        int maxSpan = -1;
+        int span = 0;
+        for ( Annotation aSentence : sentences ) {
+          span = aSentence.getEnd() - aSentence.getBegin();
+          if (span > maxSpan ) {
+            sentence = aSentence;
+            maxSpan = span;
+          }
+        }
+      }
+    }
+    
+    
+    
+  return sentence;
+}
+
+
+// =================================================
+/**
+ * removeBadRows removes codedEntries that didn't make the cut
+ * 
+ * @param pJCas
+ * @param pAnnotation
+*/
+// =================================================
+private final List<LRAGRRow> removeBadRows( List<LRAGRRow> pRows) {
+  
+  List<LRAGRRow> returnVal = null;
+  
+  if ( pRows != null && !pRows.isEmpty() ) {
+    for ( LRAGRRow row : pRows ) {
+      returnVal = new ArrayList<LRAGRRow>( pRows.size());
+      if ( row.isProcessMe())
+        returnVal.add( row);
+    }    
+  }
+  
+  return returnVal;
+  
+} // end Method removeBadRows () -----------
+
+
+// =================================================
+/**
+ * markForRemoval marks the codedEntry that has  
+ * the cui from the VAnnotation to be
+ * removed in one step after all have been evaluated
+ * 
+ * @param pRows
+ * @param pCui
+ * @param pScore 
+ * @param pProcessMe
+*/
+// =================================================
+private final void mark( List<LRAGRRow> pRows, String pCui, Float pScore, boolean pProcessMe) {
+ 
+ 
+  boolean found = false;
+  if ( pRows != null && pRows.size() > 0 ) {
+    for ( int i = 0; i < pRows.size(); i++  ) {
+      
+      LRAGRRow aLragrRow = pRows.get(i);
+      
+      if ( aLragrRow.getCuis().toLowerCase().contains( pCui) ) {
+      
+     
+        GLog.println(GLog.TRACE_LEVEL, this.getClass(), "mark", " Found the codedEntry " + aLragrRow.getName() + " + Marking it as " + pProcessMe );
+        aLragrRow.setProcessMe(pProcessMe);
+        aLragrRow.setUncertainty( (int) (pScore * 1000));
+        found = true;
+        break;
+      }
+    }
+  }
+  if ( !found ) {
+    GLog.println(GLog.ERROR_LEVEL, this.getClass(), "mark", "Couldnt find the codedEntry ! " );
+    throw new RuntimeException();
+    
+  }
+  
+  
+} // end Method removeCodedEntry() ----------------
+
+
+ 
+  
+  //----------------------------------
+  /**
+   * initialize initializes the class.  Parameters are passed in via a String
+   *                array  with each row containing a --key=value format.
+   *                
+   *                It is important to adhere to the posix style "--" prefix and
+   *                include a "=someValue" to fill in the value to the key. 
+   * @param pArgs
+   * @throws  ResourceInitializationException            
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(String[] pArgs) throws ResourceInitializationException {
+       
+    
+    this.wsdServerURL = U.getOption(pArgs,  "--wsdServerURL=", "http://localHost:5000"); 
+    this.processMe = !Boolean.parseBoolean(U.getOption(pArgs,  "--turnOffWSD=", "true")); 
+    
+    if ( processMe ) {
+      initializeClient( );
+      this.client = new ApiClient();
+      this.client.setBasePath( this.wsdServerURL );
+      this.api = new InternalApi(client);
+    }
+      
+  } // end Method initialize() -------
+  
+  
+  // =================================================
+  /**
+   * initializeClient
+   * 
+  */
+  // =================================================
+  private final void initializeClient() {
+    
+    GLog.println(GLog.INFO_LEVEL, this.getClass(), "initializeClient", "Reinitizliing ... " );
+    this.client = new ApiClient();
+    this.client.setBasePath( this.wsdServerURL );
+    this.api = new InternalApi(client);
+  } // end Method initializeClient() ------------------
+
+
+  // ---------------------------------------
+  // Global Variables
+  // ---------------------------------------
+  protected int annotationCtr = 0;
+  ProfilePerformanceMeter performanceMeter = null;
+  private String  wsdServerURL = null;
+  private ApiClient client = null;
+  private InternalApi api = null;
+  private boolean processMe = false;
+  
+}
+

@@ -1,0 +1,58 @@
+# =========================================================================
+#
+# Summary:
+#  temperature.lragr Lexicon came from terms gathered from the UMLS, ngrams around temperature
+#  from a sample from the VINCI corpus, and from the CAUTI project.
+#
+# Description of Fields:
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category
+#
+#
+# Created :2015-10-15
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+T000001|temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|vital signs temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|vital signs temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|recent vitals temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|recent vitals temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|exam vitals temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|exam vitals temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|physical exam vitals temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|physical exam vitals temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|physical examination vitals temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|physical examination vitals temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|vitals temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000004|vitals temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|skin temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|skin temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|skin temperature temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|core body temperature|noun|count(thr_sing)|temperature|temperature|Temperature
+T000001|core body temp|noun|count(thr_sing)|temperature|temperature|Temperature
+# the values are on the next line
+T000002|temp pulse resp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000003|date time temp|noun|count(thr_sing)|temperature|temperature|Temperature
+T000005|has a temperature of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+T000005|had a temperature of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+T000005|has a temp of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+T000005|had a temp of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+T000006|warm to touch|noun|count(thr_sing)|warm to touch|warm to touch|Temperature|

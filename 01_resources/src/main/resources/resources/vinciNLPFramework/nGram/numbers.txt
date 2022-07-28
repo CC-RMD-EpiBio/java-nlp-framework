@@ -1,0 +1,228 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+one 
+first 
+1st   
+two 
+second 
+2d 
+2nd  
+three
+third
+3d
+3rd  
+four
+fourth
+4th   
+five
+fifth 
+5th   
+six
+sixth
+6th   
+seven
+seventh
+7th   
+eight
+eighth 
+8th   
+nine
+ninth
+9th   
+ten
+tenth
+10th   
+eleven
+eleventh
+11th   
+twelve
+twelfth
+12th   
+thirteen
+thirteenth
+13th   
+fourteen
+fourteenth
+14th   
+fifteen
+fifteenth
+15th   
+sixteen
+sixteenth
+16th   
+seventeen
+seventeenth
+17th   
+eighteen
+eighteenth
+18th   
+nineteen
+nineteenth
+19th   
+twenty
+twentieth
+20th   
+twenty-one
+twenty one
+twenty-first
+twenty first
+21st   
+twenty-two
+twenty two
+twenty-second
+22d
+22nd  
+twenty-three
+twenty three
+twenty-third
+twenty third
+23d
+23rd  
+twenty-four
+twenty four
+twenty-fourth 
+twenty fourth 
+24th   
+twenty-five
+twenty five
+twenty-fifth
+twenty fifth
+25th   
+twenty-six
+twenty six
+twenty-sixth
+twenty sixth
+26th   
+twenty-seven
+twenty seven
+twenty-seventh
+twenty seventh
+27th   
+twenty-eight
+twenty eight
+twenty-eighth
+twenty eighth
+28th   
+twenty-nine
+twenty nine
+twenty-ninth
+twenty ninth
+29th   
+thirty
+thirtieth 
+30th   
+thirty-one
+thirty one
+thirty-first
+thirty first
+31st   
+thirty-two
+thirty-second 
+32d 
+32nd  
+forty
+fortieth
+40th   
+forty-one
+forty-first
+forty-two
+forty-second
+fifty
+fiftieth
+50th   
+sixty
+sixtieth
+60th   
+seventy
+seventieth
+70th   
+eighty
+eightieth
+80th   
+ninety
+ninetieth
+90th   
+one hundred
+hundredth
+one hundredth
+100th   
+one hundred and one
+one hundred one 
+hundred and first
+one hundred and first 
+101st   
+one hundred and two
+one hundred and second 
+102d
+102nd  
+two hundred
+two hundredth
+200th   
+three hundred
+three hundredth
+300th   
+four hundred
+four hundredth
+400th   
+five hundred
+five hundredth
+500th   
+six hundred
+six hundredth
+600th   
+seven hundred
+seven hundredth
+700th   
+eight hundred
+eight hundredth
+800th   
+nine hundred
+nine hundredth
+900th   
+one thousand
+ten hundred 
+thousandth
+one thousandth 
+1,000th   
+two thousand
+two thousandth
+2,000th   
+three thousand
+three thousandth
+3,000th   
+four thousand
+four thousandth
+4,000th   
+five thousand
+five thousandth
+5,000th   
+ten thousand
+ten thousandth 
+10,000th   
+one hundred thousand 
+hundred thousandth
+one hundred thousandth 
+100,000th   
+one million 
+millionth
+one millionth
+1,000,000th   

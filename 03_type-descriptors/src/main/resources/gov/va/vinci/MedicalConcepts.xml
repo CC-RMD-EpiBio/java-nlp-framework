@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.va.vinci.MedicalConcepts</name>
+  <description>A catch all for medical concepts that inherit Concept as it's parent.   Diabetes,  antibiotic, IntentToPrescribeAntibiotics,  ...</description>
+  <version>2017.10.12</version>
+  <vendor/>
+  <imports>
+    <import name="gov.va.vinci.ConceptModel"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.va.vinci.model.Diabetes</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.IntentToPrescribeAntibiotics</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Antibiotic</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

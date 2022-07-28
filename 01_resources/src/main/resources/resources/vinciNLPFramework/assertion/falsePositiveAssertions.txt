@@ -1,0 +1,70 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+	    // "without new ,pre,neg",  <---- semantics of this one is merky
+	    // "without further ,pre,neg", <----- same here
+	    // "without additional ,pre,neg",  <-----
+	    // "without gross ,pre,neg", <----
+	    // "without active ,pre,neg", <-----
+	    // "without maximally ,pre,neg", 
+	    // "without purulent ,pre,neg", 
+	    // "without paraspinal ,pre,neg",
+	    // "without apparent,pre,neg", <------
+	    // "without noted ,pre,neg",    <------ 
+	    // "without obvious ,pre,neg",     <------
+	    // "without having , pre,neg",         <-----
+	    // "without painful ,pre,neg",           <------
+	    // "without abnormal ,pre,neg",
+	    // "without left ,pre,neg",
+	    // "without right ,pre,neg",
+	    // "without upward ,pre,neg",
+	    // "without peripheral ,pre,neg",
+	    // "without becoming ,pre,neg",
+	    // "without which ,pre,neg",
+	    // "without major ,pre,neg",
+	    // "without using ,pre,neg",
+	    // "without not ,pre,poss",  <------------------------- look at these (3 times in a million records)
+	    // "without no ,pre,poss",   <--------------------------look at these (3 times in a million records)
+	    // "without noticed ,pre,neg",
+	    // "without experiencing pre,neg",
+	    // "without audible ,pre,neg",
+	    // "without vital ,pre,neg",
+	    // "without increased ,pre,neg",
+	    // "without causing ,pre,neg",
+
+	    "complains,termin,histexp",
+	    "currently,termin,histexp",
+	    "ED ,termin,hist",
+	    "emergency department ,termin,hist",
+	    "her,termin,hypoexp",
+	    "his,termin,hypoexp",
+	    "noted,termin,histexp",
+	    "presenting,termin,histexp",
+	    "presents,termin,histexp",
+	    "reported,termin,histexp",
+	    "reports,termin,histexp",
+	    "states,termin,histexp",
+	    "today,termin,histexp",
+	    "was found ,termin,histexp",
+	    "patient,termin,hypoexp",
+	    "patient's,termin,hypoexp",
+	    "which ,termin,exp",
+	    "who ,termin,hypoexp",

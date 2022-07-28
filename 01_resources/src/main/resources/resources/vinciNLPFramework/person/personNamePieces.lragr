@@ -1,0 +1,36 @@
+# =============================
+# Person Pieces lexicon 
+#  Generated 2018.07.08
+#   see https://en.wikipedia.org/wiki/English_honorifics
+#       https://en.wikipedia.org/wiki/Uniformed_services_pay_grades_of_the_United_States
+# =============================
+#                              
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|subCategory
+#     where category can be personName, personPrefix, personSuffix 
+#                               
+# ============================= 
+PO000001|Mr.|<noun>|<base>|Mr.|Mr.|personPrefix|
+PO000002|Dr.|<noun>|<base>|Dr.|Dr.|personPrefix|
+PO000003|Mrs.|<noun>|<base>|Mrs.|Mrs.|personPrefix|
+PO000004|Miss.|<noun>|<base>|Miss.|Miss.|personPrefix|
+PO000005|Ms.|<noun>|<base>|Ms.|Ms.|personPrefix|
+PO000006|Mx.|<noun>|<base>|Ms.|Ms.|personPrefix|
+PO000007|Sir|<noun>|<base>|Sir|Sir|personPrefix|
+PO000008|Madam|<noun>|<base>|Madam|Madam|personPrefix|
+PO000009|Professor|<noun>|<base>|Professor|Professor|personPrefix|
+PO000010|Prof|<noun>|<base>|Professor|Professor|personPrefix|
+PO000010|Jr.|<noun>|<base>|Junior|Junior|personSuffix|
+PO000010|jr.|<noun>|<base>|Junior|Junior|personSuffix|
+PO000011|MD|<noun>|<base>|MD|MD|personSuffix|
+PO000011|M.D.|<noun>|<base>|MD|MD|personSuffix|
+PO000012|R.N.|<noun>|<base>|RN|RN|personSuffix|
+PO000012|RN|<noun>|<base>|RN|RN|personSuffix|
+PO000013|PA|<noun>|<base>|PA|PA|personSuffix|
+PO000013|P.A.|<noun>|<base>|PA|PA|personSuffix|
+PO000014|patient|<noun>|<base>|patient|patient|personPrefix|
+PO000015|name|<noun>|<base>|name|name|personPrefix|
+PO000016|referred by|<noun>|<base>|referred by|referred by|personPrefix|
+PO000017|signed|<noun>|<base>|signed|signed|personPrefix|
+PO000018|signed by|<noun>|<base>|signed by|signed by|personPrefix|
+PO000018|esigned by|<noun>|<base>|esigned by|esigned by|personPrefix|
+PO000019|transcribed by|<noun>|<base>|transcribed by|transcribed by|personPrefix|

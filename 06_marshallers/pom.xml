@@ -1,0 +1,195 @@
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ====================================================== -->
+  <!-- Framework Multi-module pom to build all derma projects -->
+  <!-- ====================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>06-nlp-marshallers</artifactId>
+
+  <version>2021.02.0</version>
+  <packaging>jar</packaging>
+  <description>Framework NLP Marshallers</description>
+
+  <!-- ======================================================= -->
+  <!-- Parent Pom - look here for global framework settings -->
+  <!-- including -->
+  <!-- Distribution Managment -->
+  <!-- Java versions -->
+  <!-- Plugin Management and plugins -->
+  <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+  </parent>
+
+  <properties>
+    <finalName>GateUtilities</finalName>
+  </properties>
+
+  <dependencies>
+
+    <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>01-nlp-resources        </artifactId> </dependency>
+    <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>05-nlp-annotators      </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-core               </artifactId> </exclusion> 
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-document-annotation</artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>03-nlp-type-descriptors</artifactId> </dependency>
+
+
+
+    <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>04.0-nlp-util            </artifactId> </dependency>
+    <dependency> <groupId>gov.nih.cc.rmd.framework        </groupId> <artifactId>04.1-nlp-vUtil           </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-core               </artifactId> </exclusion> 
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-document-annotation</artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency> <groupId>com.h2database                  </groupId> <artifactId>h2                  </artifactId> </dependency>
+    <dependency> <groupId>com.thoughtworks.xstream        </groupId> <artifactId>xstream             </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>xmlpull                     </groupId> <artifactId>xmlpull            </artifactId> </exclusion>
+         <exclusion> <groupId>xpp3                        </groupId> <artifactId>xpp3_min           </artifactId> </exclusion>
+         <exclusion> <groupId>xml-apis                    </groupId> <artifactId>xml-apis           </artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+    <dependency> <groupId>gov.nih.nlm.nls                 </groupId> <artifactId>vtt                 </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>org.apache.xmlbeans       </groupId> <artifactId>xmlbeans                 </artifactId></exclusion>
+         <exclusion> <groupId>org.slf4j                 </groupId> <artifactId>slf4j-log4j12            </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.maven.surefire </groupId> <artifactId>surefire-booter          </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.maven.plugins  </groupId> <artifactId>maven-surefire-plugin    </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-artifact-manager   </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-artifact           </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-repository-metadata</artifactId></exclusion>
+         <exclusion><groupId>stax                       </groupId> <artifactId>stax-api                 </artifactId></exclusion>
+         <exclusion><groupId> org.apache.poi            </groupId> <artifactId>poi-ooxml                </artifactId></exclusion>
+         <exclusion><groupId> org.apache.poi            </groupId> <artifactId>poi                      </artifactId></exclusion>
+         <exclusion> <groupId>xml-apis                  </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-plugin-api         </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-model-builder      </artifactId></exclusion>
+         <exclusion><groupId>dom4j                      </groupId> <artifactId> dom4j                   </artifactId></exclusion>
+        </exclusions>
+    </dependency>
+    <dependency> <groupId>gov.va                          </groupId> <artifactId>eHOST               </artifactId> </dependency>
+    <!-- dependency> <groupId>gov.va.vinci.nlp.framework      </groupId> <artifactId>knowtatorUtils      </artifactId> </dependency --> 
+    <dependency> <groupId>com.healthmarketscience.jackcess</groupId> <artifactId>jackcess            </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>commons-logging              </groupId> <artifactId>commons-logging    </artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+
+    <!-- dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-core               </artifactId> <version>2.9.0    </version> </dependency -->
+    <dependency> <groupId>log4j                   </groupId> <artifactId>log4j                    </artifactId> <version>1.2.17   </version> </dependency>
+    <dependency> <groupId>uk.ac.gate              </groupId> <artifactId>gate-core                </artifactId>  
+<!--
+        <exclusions>
+         <exclusion> <groupId>org.apache.tika                  </groupId> <artifactId>tika-parsers             </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.xmlbeans              </groupId> <artifactId>xmlbeans                 </artifactId> </exclusion>
+         <exclusion> <groupId>org.slf4j                        </groupId> <artifactId>slf4j-log4j12            </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.maven                 </groupId> <artifactId>maven-repository-metadata</artifactId> </exclusion>
+         <exclusion> <groupId>xmlpull                          </groupId> <artifactId>xmlpull                  </artifactId> </exclusion>
+         <exclusion> <groupId>org.appache.uima                 </groupId> <artifactId>jcas.tcas                </artifactId> </exclusion>
+         <exclusion> <groupId>org.bouncycastle                 </groupId> <artifactId>bcmail-jdk15on           </artifactId> </exclusion>
+         <exclusion> <groupId>org.bouncycastle                 </groupId> <artifactId>bcpkix-jdk15on           </artifactId> </exclusion>
+          - exclusion> <groupId>jaxen                        </groupId> <artifactId>jaxen                    </artifactId> </exclusion -  
+         <exclusion> <groupId>org.codehaus.httpcache4j.storage </groupId> <artifactId>storage-file             </artifactId> </exclusion>
+         <exclusion> <groupId>org.codehaus.httpcache4j         </groupId> <artifactId>httpcache4j-storage-api  </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.poi                   </groupId> <artifactId>poi-ooxml                </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.pdfbox                </groupId> <artifactId>jempbox                  </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.maven                 </groupId> <artifactId>maven-model-builder      </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.maven                 </groupId> <artifactId>maven-builder-support    </artifactId> </exclusion>
+         <exclusion> <groupId>org.codehaus.httpcache4j         </groupId> <artifactId>httpcache4j-api          </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.maven.resolver        </groupId> <artifactId>maven-resolver-connector-basic </artifactId> </exclusion>
+         <exclusion> <groupId>org.codehaus.plexus              </groupId> <artifactId>plexus-interpolation     </artifactId> </exclusion>
+         <exclusion> <groupId>org.sonatype.plexus              </groupId> <artifactId>plexus-cipher            </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.httpcomponents        </groupId> <artifactId>httpcore                 </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.ant                   </groupId> <artifactId>ant                      </artifactId> </exclusion>
+         <exclusion> <groupId>edu.emory.mathcs.backport        </groupId> <artifactId>com.springsource.edu.emory.mathcs.backport </artifactId> </exclusion>
+     - needed       <exclusion> <groupId>org.apache.commons               </groupId> <artifactId>commons-lang3            </artifactId> </exclusion -  
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-core               </artifactId> </exclusion> 
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-document-annotation</artifactId> </exclusion>
+         <exclusion> <groupId>com.sun.xml.bind                 </groupId> <artifactId>jaxb-core                </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.maven                 </groupId> <artifactId>maven-settings-builder   </artifactId> </exclusion>
+         <exclusion> <groupId>xpp3                             </groupId> <artifactId>xpp3                     </artifactId> </exclusion>
+         <exclusion> <groupId>javax.activation                 </groupId> <artifactId>javax.activation-api     </artifactId> </exclusion>
+         <exclusion> <groupId>uk.ac.gate                       </groupId> <artifactId>gate-asm                 </artifactId> </exclusion>
+         <exclusion> <groupId>com.fasterxml.jackson.core       </groupId> <artifactId>jackson-databind         </artifactId> </exclusion>
+        </exclusions>
+-->
+    </dependency>
+    <dependency> <groupId>com.googlecode.juniversalchardet</groupId> <artifactId>juniversalchardet</artifactId> <version>1.0.3</version> </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/edu.emory.mathcs.backport/com.springsource.edu.emory.mathcs.backport          -->
+    <!-- this is used in the html writer and is causing problems. The html writer has been taken out until there is a fix -->
+    <!-- The original jar was taken out of maven central, so a copy of it is coming from the unmavened jars               --> 
+    <!-- dependency> <groupId>edu.emory.mathcs.backport</groupId> <artifactId>com.springsource.edu.emory.mathcs.backport</artifactId> <version>3.1.0</version> </dependency -->
+    <!-- Looks like the biggest issue was Arrays.asList() which is now part of java.utils.  When this code was originally written, it was not. --> 
+
+<!-- This should be obsolete these days, with a java version of a toBIO marshaller -->
+  <!--   dependency><groupId>gov.nih.cc.rmd.framework       </groupId> <artifactId>GATE2BIOPythonWindowsJar    </artifactId><version>2020.09.09 </version> </dependency -->
+
+  </dependencies>
+
+  <!-- ======================================================= -->
+  <!-- The resources section below used to live at -->
+  <!-- the top level, may no longer be needed -->
+  <!-- ======================================================= -->
+  <build>
+    <resources>
+      <!-- ############################################# -->
+      <!-- Copy over the descriptor files -->
+      <!-- to the target/classes dir -->
+      <!-- ############################################# -->
+      <resource>
+        <directory>desc</directory>
+        <targetPath>./</targetPath>
+        <includes>
+          <include>**/*</include>
+          <include>**/*.preamble</include>
+        </includes>
+        <excludes>
+          <exclude>*~</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>src/main/java</directory>
+        <targetPath>./</targetPath>
+        <includes>
+          <include>**/*</include>
+          <include>**/*.preamble</include>
+        </includes>
+        <excludes>
+          <exclude>*~</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    </build>
+</project>

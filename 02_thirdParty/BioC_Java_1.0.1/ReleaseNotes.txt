@@ -1,0 +1,12 @@
+Realease Notes
+-------------------
+
+
+6/21/2013 BioC_Java_1.0.1
+
+Changes: 
+	- include third party jar files to facilitate use.
+	- replace print stack traces with throw exceptions.
+	- add more member accessors
+
+6/7/2013 BioC_Java_1.0

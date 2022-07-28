@@ -1,0 +1,815 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+# -----------------------------------------------
+# --- Copyright Notice: --------------------------------------------------
+#
+# Copyright 2012 United States Department of Veterans Affairs, 
+#                Health Services Research & Development Service
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License. 
+# 
+# --- End Copyright Notice: ----------------------------------------------
+#
+# Stop word list for nGrams.  This list should
+# include the usual suspects, and also be guided
+# by the top of the ngram list.  Any word that
+# returns more than a quarter of the corpus is
+# not likely to be useful.
+#
+# Created Oct. 27, 2011
+# Modified March 2, 2012 - added written numbers, as well.
+# Modified March 3, 2012 - removed the single words from stopword list
+#                          turns out they are needed for lookup
+#                          with look-ahead 
+# Guy Divita
+# -----------------------------------------------
+# ---------------
+# Usual Suspects
+# ---------------
+#   ---------------
+#   punctuation 
+#   ---------------
+,
+.
+:
+;
+?
+!
+#
+&
+*
+(
+)
+-
+_
+[
+]
+/
+\
+"
+'
+<
+>
+~
+`
+#   ---------------
+#   conjunctions and disjunctions 
+#   ---------------
+according as
+after
+albeit
+although
+and
+and/or
+as
+as if
+as though
+as well as
+as well
+because
+before
+but
+by
+except
+e.g.
+for
+if
+inasmuch as
+i.e.
+lest
+like
+nor
+notwithstanding
+once
+only
+or
+provided
+provided that
+providing
+providing that
+rather than
+since
+so
+suppose
+supposing
+than
+though
+unless
+until
+versus
+what with
+when
+whenever
+where
+whereas
+wherein
+wherever
+whether
+while
+whilst
+with
+without
+yet
+insofar as
+insomuch as
+forasmuch as
+whereafter
+wherefore
+therefore
+whereof
+whereupon
+vs.
+whereatand
+or
+so
+#   ---------------
+#   prepositions 
+#   ---------------
+aboard
+about
+according to
+across
+across from
+after
+against
+aka
+along
+alongside
+amidst
+among
+apropos of
+around
+as
+astride
+as regards
+at
+atop
+bar
+because of
+before
+beneath
+beside
+besides
+between
+but
+by
+ca.
+circa
+despite
+down
+due to
+during
+excluding
+failing
+following
+for
+from
+given
+in
+inside
+instead of
+into
+in conjunction with
+in lieu of
+in relation to
+irrespective of
+less
+mid
+minus
+near
+nearby
+notwithstanding
+of
+off
+on
+onto
+other than
+out
+out of
+past
+pending
+per
+plus
+previous to
+prior to
+regarding
+regardless of
+respecting
+since
+status post
+subject to
+such as
+s/p
+than
+throughout
+to
+together with
+towards
+under
+underneath
+unlike
+until
+unto
+upon
+wanting
+with
+within
+without
+worth
+w
+reg.
+contra
+anti
+sans
+neath
+including
+unbeknownst to
+through
+modulo
+next to
+back of
+independent of
+by dint of
+by means of
+by virtue of
+except for
+exclusive of
+in between
+inclusive of
+independently of
+ahead of
+inside of
+in spite of
+off of
+outside of
+over against
+over and above
+owing to
+pursuant to
+short of
+alongside of
+subsequent to
+to within
+up to
+as far as
+apart from
+as for
+aside from
+betwixt
+as of
+as to
+irregardless of
+outwith
+vis-a-vis
+upside
+sensu
+like
+ex
+toward
+above
+beyond
+on board
+in line with
+allover
+in exchange for
+qua
+up
+via
+over
+behind
+except
+incl.
+w/o
+#   ---------------
+#   pronouns 
+#   ---------------
+all
+another
+any
+anybody
+anyone
+anything
+both
+each
+each other
+either
+everybody
+everyone
+everything
+few
+fewer
+half
+he
+her
+hers
+herself
+him
+himself
+his
+it
+its
+itself
+less
+many
+me
+mine
+much
+my
+myself
+neither
+nobody
+none
+nothing
+no one
+one
+oneself
+one's
+our
+ours
+ourselves
+several
+she
+some
+somebody
+someone
+something
+that
+their
+theirs
+them
+themselves
+these
+they
+this
+those
+us
+we
+what
+whatever
+when
+which
+whichever
+who
+whoever
+whom
+whomever
+whose
+you
+your
+yours
+yourself
+yourselves
+thence
+whatsoever
+thou
+thyself
+suchlike
+thyselves
+theirselves
+nowt
+naught
+whosoever
+
+#   -------------------------------
+#   determiners and complementizers 
+#   -------------------------------
+that
+a
+all
+an
+another
+any
+both
+certain
+each
+either
+enough
+every
+few
+fewer
+last
+less
+many
+more
+most
+much
+neither
+no
+other
+several
+some
+such
+that
+the
+these
+this
+those
+thy
+what
+whatever
+which
+whichever
+nary a
+nary an
+suchlike
+#   ---------------
+#   aux's and modals 
+#   ---------------
+be
+be
+is
+'s
+isn't
+are
+'re
+aren't
+am
+'m
+was
+wasn't
+were
+weren't
+been
+being
+do
+do
+don't
+does
+doesn't
+did
+didn't
+have
+have
+have
+has
+had
+having
+hadn't
+hasn't
+haven't
+'ve
+'d
+can
+can
+could
+couldn't
+cannot
+can't
+dare
+dare
+daren't
+may
+may
+might
+mayn't
+mightn't
+must
+must
+mustn't
+ought
+ought
+oughtn't
+shall
+shall
+should
+shan't
+shouldn't
+will
+will
+would
+won't
+wouldn't
+'ll
+'d
+#   ---------------
+#   single letters 
+#   ---------------
+#a
+#b
+#c
+#d
+#e
+#f
+#g
+#h
+#i
+#j
+#k
+#l
+#m
+#n
+#o
+#p
+#q
+#r
+#s
+#t
+#u
+#v
+#w
+#x
+#y
+#z
+# ---------------
+#A
+#B
+#C
+#D
+#E
+#F
+#G
+#H
+#I
+#J
+#K
+#L
+#M
+#N
+#O
+#P
+#Q
+#R
+#S
+#T
+#U
+#V
+#W
+#X
+#Y
+#Z
+# ---------------
+# written Numbers 
+# ---------------
+one 
+first 
+1st   
+two 
+second 
+2d 
+2nd  
+three
+third
+3d
+3rd  
+four
+fourth
+4th   
+five
+fifth 
+5th   
+six
+sixth
+6th   
+seven
+seventh
+7th   
+eight
+eighth 
+8th   
+nine
+ninth
+9th   
+ten
+tenth
+10th   
+eleven
+eleventh
+11th   
+twelve
+twelfth
+12th   
+thirteen
+thirteenth
+13th   
+fourteen
+fourteenth
+14th   
+fifteen
+fifteenth
+15th   
+sixteen
+sixteenth
+16th   
+seventeen
+seventeenth
+17th   
+eighteen
+eighteenth
+18th   
+nineteen
+nineteenth
+19th   
+twenty
+twentieth
+20th   
+twenty-one
+twenty one
+twenty-first
+twenty first
+21st   
+twenty-two
+twenty two
+twenty-second
+22d
+22nd  
+twenty-three
+twenty three
+twenty-third
+twenty third
+23d
+23rd  
+twenty-four
+twenty four
+twenty-fourth 
+twenty fourth 
+24th   
+twenty-five
+twenty five
+twenty-fifth
+twenty fifth
+25th   
+twenty-six
+twenty six
+twenty-sixth
+twenty sixth
+26th   
+twenty-seven
+twenty seven
+twenty-seventh
+twenty seventh
+27th   
+twenty-eight
+twenty eight
+twenty-eighth
+twenty eighth
+28th   
+twenty-nine
+twenty nine
+twenty-ninth
+twenty ninth
+29th   
+thirty
+thirtieth 
+30th   
+thirty-one
+thirty one
+thirty-first
+thirty first
+31st   
+thirty-two
+thirty-second 
+32d 
+32nd  
+forty
+fortieth
+40th   
+forty-one
+forty-first
+forty-two
+forty-second
+fifty
+fiftieth
+50th   
+sixty
+sixtieth
+60th   
+seventy
+seventieth
+70th   
+eighty
+eightieth
+80th   
+ninety
+ninetieth
+90th   
+one hundred
+hundredth
+one hundredth
+100th   
+one hundred and one
+one hundred one 
+hundred and first
+one hundred and first 
+101st   
+one hundred and two
+one hundred and second 
+102d
+102nd  
+two hundred
+two hundredth
+200th   
+three hundred
+three hundredth
+300th   
+four hundred
+four hundredth
+400th   
+five hundred
+five hundredth
+500th   
+six hundred
+six hundredth
+600th   
+seven hundred
+seven hundredth
+700th   
+eight hundred
+eight hundredth
+800th   
+nine hundred
+nine hundredth
+900th   
+one thousand
+ten hundred 
+thousandth
+one thousandth 
+1,000th   
+two thousand
+two thousandth
+2,000th   
+three thousand
+three thousandth
+3,000th   
+four thousand
+four thousandth
+4,000th   
+five thousand
+five thousandth
+5,000th   
+ten thousand
+ten thousandth 
+10,000th   
+one hundred thousand 
+hundred thousandth
+one hundred thousandth 
+100,000th   
+one million 
+millionth
+one millionth
+1,000,000th   
+
+# ---------------
+# By Emperical Observation 
+# ---------------
+# ---------------
+#   Prevent some sensitive data from escaping
+# ---------------
+M.D.
+Dr.
+Mr.
+Ms.
+Phd.
+RN
+# ---------------
+# By the numbers 
+# ---------------
+DISCHARGE
+The patient
+patient was
+. She
+, and
+. The
+, M.D.
+, which
+and the
+once a
+Medications :
+patient
+in the
+she was
+she has
+There was
+# ---------------
+# Artifacts from v3NLP Framework
+# ---------------
+==============================================metadata=not=part=of=record =
+= ==============================================metadata=not=part=of=record

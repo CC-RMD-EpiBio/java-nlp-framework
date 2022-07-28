@@ -1,0 +1,334 @@
+// =================================================
+/**
+ * GeneInfoInPageHeaderAnnotator
+ * 
+ *   finds specimen site
+ *         date of collection
+ *         tumor type (diagnosis)  
+ *         
+ *         in gene reports 
+ *         
+ *         This info 
+ * 
+ * 
+ *  
+ *  
+ * @author  Guy Divita 
+ * @created Jun 1, 2018
+ *
+ * 
+ * 
+
+ */
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.geneObservations;
+
+import java.util.List;
+
+import org.apache.uima.UimaContext;
+import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import com.ciitizen.framework.GeneVariantObservation;
+import com.ciitizen.framework.PageHeader;
+import com.ciitizen.framework.SectionZone;
+
+import gov.nih.cc.rmd.nlp.framework.annotator.diagnosis.DiagnosisLookupAnnotator;
+import gov.va.chir.model.LexicalElement;
+import gov.va.chir.model.Line;
+import gov.va.chir.model.Sentence;
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.framework.uima.VUIMAUtil;
+import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
+
+
+
+public class DiagnosisInGeneReportPageHeaderAnnotator extends DiagnosisLookupAnnotator  {
+ 
+
+  // -----------------------------------------
+  /**
+   * process retrieves lines of the document, labels those that are questions
+   * as QuestionAndAnswer elements.
+   * 
+   * 
+   */
+  // -----------------------------------------
+  @Override
+  public void process(JCas pJCas) throws AnalysisEngineProcessException {
+   
+    try {
+    this.performanceMeter.startCounter();
+    
+   
+    // Iterate through the geneObservation sections
+    
+    List<Annotation> sections = UIMAUtil.getAnnotations(pJCas, SectionZone.typeIndexID );
+    
+    if (sections != null && !sections.isEmpty()) {
+      
+      for ( Annotation section : sections) {
+        String sectionType = ((SectionZone) section ).getSectionName();
+        
+        if ( sectionType != null && 
+          ( // sectionType.toLowerCase().contains("pageheader") ||
+            sectionType.toLowerCase().contains("genereportpageheading"))) {
+          processGenePageHeading( pJCas, section );
+          break;
+        }
+      }
+    }
+    
+    this.performanceMeter.stopCounter();
+    
+    } catch (Exception e) {
+      e.printStackTrace();
+      System.err.println("Issue with " + this.getClass().getName() + " " + e.toString());
+   //   throw new AnalysisEngineProcessException();
+    }
+  } // end Method process() ----------------
+   
+  
+  // =================================================
+  /**
+   * processGenePageHeading 
+   * 
+   * @param pSection
+  */
+  // =================================================
+  private final void processGenePageHeading(JCas pJCas, Annotation pSection) {
+    
+    List<Annotation> terms = UIMAUtil.getAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSection.getBegin(), pSection.getEnd());
+    
+    
+    if ( terms != null && !terms.isEmpty() ) {
+      
+      for ( Annotation term : terms ) {
+  if ( ((LexicalElement) term).getSemanticTypes() != null ) {
+          
+          String semanticTypes =  ((LexicalElement) term).getSemanticTypes();
+          System.err.println( semanticTypes);
+          if ( semanticTypes.contains("DiagnosisEvidence")) {
+          
+            List<Annotation> diagnoses = findDiagnosisInNextLine( pJCas, term);
+            
+            if ( diagnoses == null )  
+              // look for it in the same line after the term
+               diagnoses = findDiagnosis( pJCas, term);
+            
+            if ( diagnoses != null)
+              break;
+            
+          }
+        }
+      }
+      
+      
+    }
+    
+    
+  } // end Method processGeneSection() --------------
+
+
+
+
+// =================================================
+  /**
+   * findDiagnosisInNextLine finds diagnosis from the last or first
+   * field in the line after the term was found
+   * 
+   * @param pJCas
+   * @param term
+   * @return Annotation
+  */
+  // =================================================
+   private List<Annotation> findDiagnosisInNextLine(JCas pJCas, Annotation pTerm) {
+    List<Annotation> returnVal = null;
+    
+    // get the line of the term
+    Line line = VUIMAUtil.getLine(pJCas, pTerm);
+    
+    // get the next line 
+    List<Annotation> nextLines = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  Line.typeIndexID,  line.getEnd() + 2, line.getEnd()+3);
+    
+    if ( nextLines != null && !nextLines.isEmpty()) {
+      // get the sentences from the next line
+      Annotation nextLine = nextLines.get(0);
+      List<Annotation>sentences = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  Sentence.typeIndexID, nextLine.getBegin(), nextLine.getEnd() );
+       
+      if ( sentences != null && !sentences.isEmpty())
+        for ( Annotation sentence : sentences ) {
+          if ( ( returnVal = findDiagnosisAux( pJCas, (Sentence) sentence )) != null )
+            break;
+        }
+      
+    }
+    
+    return returnVal;
+  } // end Method findDiagnosis 
+
+   
+// =================================================
+  /**
+   * findDiagnosis finds specimen site in the line
+   * the evidence was in
+   * 
+   * @param pJCas
+   * @param term
+   * @return Annotation
+  */
+  // =================================================
+   private List<Annotation> findDiagnosis(JCas pJCas, Annotation pTerm) {
+    List<Annotation> returnVal = null;
+    
+    // get the line of the term
+    Line line = VUIMAUtil.getLine(pJCas, pTerm);
+    
+      List<Annotation>sentences = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas,  Sentence.typeIndexID, pTerm.getEnd() +1,  line.getEnd() );
+       
+      if ( sentences != null && !sentences.isEmpty())
+        for ( Annotation sentence : sentences ) {
+          if ( ( returnVal = findDiagnosisAux( pJCas, (Sentence) sentence )) != null )
+            break;
+        }
+      
+    
+    return returnVal;
+  } // end Method findDiagnosis 
+   
+// =================================================
+/**
+ * findDiagnosisAux looks for diagnosis terms in this sentence
+ * 
+ * 
+ * @param pJCas
+ * @param pSentence
+ * @return List<Annotation>
+*/
+// =================================================
+private final List<Annotation> findDiagnosisAux(JCas pJCas, Sentence pSentence) {
+  List<Annotation> returnVal = null;
+  
+  if ( pSentence != null ) {
+    try {
+     returnVal = (List<Annotation> )super.termTokenizeSentence( pJCas, pSentence);
+    } catch (Exception e) {
+      e.printStackTrace();
+      GLog.println(GLog.ERROR_LEVEL, this.getClass(), "findDiagnosisAux", "issue with looking up term");
+    }
+  }
+  
+  
+  return returnVal;
+} // end Method findDiagnosisAux() ----------------
+
+
+
+// =================================================
+/**
+ * createGeneVariantObservation 
+ * 
+ * @param pJCas
+ * @param pBeginOffset
+ * @param pEndOffset
+*/
+// =================================================
+private GeneVariantObservation createGeneVariantObservation(JCas pJCas, int pBeginOffset, int pEndOffset ) {
+  
+  GeneVariantObservation statement = new GeneVariantObservation(pJCas );
+  
+  statement.setBegin( pBeginOffset);
+  statement.setEnd(  pEndOffset );
+  statement.setId( "GeneObservationAnnotator_" + this.annotationCtr++);
+  statement.addToIndexes();
+  
+  
+  return statement ;
+} // end Method createGeneVAriantObservation() ------------
+
+
+
+
+//----------------------------------
+/**
+ * destroy
+* 
+ **/
+// ----------------------------------
+public void destroy() {
+  this.performanceMeter.writeProfile( this.getClass().getSimpleName());
+}
+
+
+  //----------------------------------
+  /**
+   *  initialize    This is the standard uima way to pass parameters to an annotator.
+   *                It is cumbersome.  It requires creating a config file with params
+   *                in it, making it difficult to dynamically pass in parameters. 
+   *                
+   *                This method merges the uima way and keeping the ability to dynamically
+   *                pass parameters into the class via - putting all parameters in a string
+   *                array called "args" with each row containing a --key=value format.
+   *                This way, arguments could be directly passed from command line,
+   *                or read from a config file, or dynamically added to that string
+   *                passed in. 
+   *                
+   *                It is important to adhere to the posix style "--" prefix and
+   *                include a "=someValue" to fill in the value to the key. 
+   * 
+   * @param aContext
+   * @throws ResourceInitializationException
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(UimaContext aContext) throws ResourceInitializationException {
+       
+     
+      String[] args = null;
+      try {
+        args                 = (String[]) aContext.getConfigParameterValue("args");  
+
+        initialize(args);
+        
+      } catch (Exception e ) {
+        String msg = "Issue in initializing class " + this.getClass().getName() + " " + e.toString() ;
+        GLog.println(GLog.ERROR_LEVEL, msg);     // <------ use your own logging here
+        throw new ResourceInitializationException();
+      }
+      
+  
+  } // end Method initialize() -------
+  
+  //----------------------------------
+  /**
+   * initialize initializes the class.  Parameters are passed in via a String
+   *                array  with each row containing a --key=value format.
+   *                
+   *                It is important to adhere to the posix style "--" prefix and
+   *                include a "=someValue" to fill in the value to the key. 
+   * @param pArgs
+   * @throws  ResourceInitializationException            
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(String[] pArgs) throws ResourceInitializationException {
+    
+    super.initialize(pArgs);
+    
+    this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
+    
+  } // end Method initialize() -------
+  
+  
+  // ---------------------------------------
+  // Global Variables
+  // ---------------------------------------
+  protected int annotationCtr = 0;
+  ProfilePerformanceMeter performanceMeter = null;
+  
+  
+} // end Class ProceduresAnnotator() ---------------
+

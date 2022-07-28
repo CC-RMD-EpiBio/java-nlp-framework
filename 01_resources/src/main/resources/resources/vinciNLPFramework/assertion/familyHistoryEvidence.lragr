@@ -1,0 +1,1627 @@
+# ----------------------------------------------------------
+# FamilyHistory Lexica
+#     
+#   FamilyHistoryEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of family history of something 
+#
+#     The terms come from a curated set of terms from the 2011 UMLS 
+#     level 0 + 9 set of concept variants (from Sophia's indexes)
+#     that have the semantic type T099 (family member)
+#     
+#   This file contains the category FamilyHistoryEvidence  and subcategories post, pre
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#
+#  Author:        Guy Divita
+#  Last modified: 2017-11-02
+# --------------------------------------------------------------------------
+#   Copyright 2017 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+C0008095|abandon children|<noun>|<base>|abandon children|abandon children|FamilyHistoryEvidence|post
+C1137103|abandoned adolescents|<noun>|<base>|abandoned adolescents|abandoned adolescents|FamilyHistoryEvidence|pre
+C1137103|abandoned adolescents|<noun>|<base>|abandoned adolescents|abandoned adolescents|FamilyHistoryEvidence|post
+C1137103|abandoned adolescent|<noun>|<base>|abandoned adolescent|abandoned adolescent|FamilyHistoryEvidence|pre
+C1137103|abandoned adolescent|<noun>|<base>|abandoned adolescent|abandoned adolescent|FamilyHistoryEvidence|post
+C0008095|abandoned children|<noun>|<base>|abandoned children|abandoned children|FamilyHistoryEvidence|pre
+C0008095|abandoned children|<noun>|<base>|abandoned children|abandoned children|FamilyHistoryEvidence|post
+C0008095|abandoned child|<noun>|<base>|abandoned child|abandoned child|FamilyHistoryEvidence|pre
+C0008095|abandoned child|<noun>|<base>|abandoned child|abandoned child|FamilyHistoryEvidence|post
+C0237404|adolescent mothers|<noun>|<base>|adolescent mothers|adolescent mothers|FamilyHistoryEvidence|pre
+C0237404|adolescent mothers|<noun>|<base>|adolescent mothers|adolescent mothers|FamilyHistoryEvidence|post
+C0237404|adolescent mother|<noun>|<base>|adolescent mother|adolescent mother|FamilyHistoryEvidence|pre
+C0237404|adolescent mother|<noun>|<base>|adolescent mother|adolescent mother|FamilyHistoryEvidence|post
+C1137103|adolescent, abandoned|<noun>|<base>|adolescent, abandoned|adolescent, abandoned|FamilyHistoryEvidence|pre
+C1137103|adolescent, abandoned|<noun>|<base>|adolescent, abandoned|adolescent, abandoned|FamilyHistoryEvidence|post
+C0237404|adolescents mothers|<noun>|<base>|adolescents mothers|adolescents mothers|FamilyHistoryEvidence|pre
+C0237404|adolescents mothers|<noun>|<base>|adolescents mothers|adolescents mothers|FamilyHistoryEvidence|post
+C0237404|adolescents mother|<noun>|<base>|adolescents mother|adolescents mother|FamilyHistoryEvidence|pre
+C0237404|adolescents mother|<noun>|<base>|adolescents mother|adolescents mother|FamilyHistoryEvidence|post
+C1137103|adolescents, abandoned|<noun>|<base>|adolescents, abandoned|adolescents, abandoned|FamilyHistoryEvidence|pre
+C1137103|adolescents, abandoned|<noun>|<base>|adolescents, abandoned|adolescents, abandoned|FamilyHistoryEvidence|post
+C0337541|adopted children|<noun>|<base>|adopted children|adopted children|FamilyHistoryEvidence|pre
+C0337541|adopted children|<noun>|<base>|adopted children|adopted children|FamilyHistoryEvidence|post
+C0337541|adopted child|<noun>|<base>|adopted child|adopted child|FamilyHistoryEvidence|pre
+C0337541|adopted child|<noun>|<base>|adopted child|adopted child|FamilyHistoryEvidence|post
+C0337553|adopted daughter|<noun>|<base>|adopted daughter|adopted daughter|FamilyHistoryEvidence|pre
+C0337553|adopted daughter|<noun>|<base>|adopted daughter|adopted daughter|FamilyHistoryEvidence|post
+C0337565|adopted son|<noun>|<base>|adopted son|adopted son|FamilyHistoryEvidence|pre
+C0337565|adopted son|<noun>|<base>|adopted son|adopted son|FamilyHistoryEvidence|post
+C0175798|adoptees|<noun>|<base>|adoptees|adoptees|FamilyHistoryEvidence|pre
+C0175798|adoptees|<noun>|<base>|adoptees|adoptees|FamilyHistoryEvidence|post
+C0175798|adoptee|<noun>|<base>|adoptee|adoptee|FamilyHistoryEvidence|pre
+C0175798|adoptee|<noun>|<base>|adoptee|adoptee|FamilyHistoryEvidence|post
+C0337541|adopting children|<noun>|<base>|adopting children|adopting children|FamilyHistoryEvidence|pre
+C0337541|adopting children|<noun>|<base>|adopting children|adopting children|FamilyHistoryEvidence|post
+C0337541|adopting child|<noun>|<base>|adopting child|adopting child|FamilyHistoryEvidence|pre
+C0337541|adopting child|<noun>|<base>|adopting child|adopting child|FamilyHistoryEvidence|post
+C0337529|adoptive brother|<noun>|<base>|adoptive brother|adoptive brother|FamilyHistoryEvidence|pre
+C0337529|adoptive brother|<noun>|<base>|adoptive brother|adoptive brother|FamilyHistoryEvidence|post
+C0337541|adoptive child|<noun>|<base>|adoptive child|adoptive child|FamilyHistoryEvidence|pre
+C0337541|adoptive child|<noun>|<base>|adoptive child|adoptive child|FamilyHistoryEvidence|post
+C0337553|adoptive daughter|<noun>|<base>|adoptive daughter|adoptive daughter|FamilyHistoryEvidence|pre
+C0337553|adoptive daughter|<noun>|<base>|adoptive daughter|adoptive daughter|FamilyHistoryEvidence|post
+C0682319|adoptive family relation|<noun>|<base>|adoptive family relation|adoptive family relation|FamilyHistoryEvidence|pre
+C0682319|adoptive family relation|<noun>|<base>|adoptive family relation|adoptive family relation|FamilyHistoryEvidence|post
+C0337495|adoptive father|<noun>|<base>|adoptive father|adoptive father|FamilyHistoryEvidence|pre
+C0337495|adoptive father|<noun>|<base>|adoptive father|adoptive father|FamilyHistoryEvidence|post
+C0337479|adoptive grand-father|<noun>|<base>|adoptive grand-father|adoptive grand-father|FamilyHistoryEvidence|pre
+C0337479|adoptive grand-father|<noun>|<base>|adoptive grand-father|adoptive grand-father|FamilyHistoryEvidence|post
+C0337478|adoptive grand-mother|<noun>|<base>|adoptive grand-mother|adoptive grand-mother|FamilyHistoryEvidence|pre
+C0337478|adoptive grand-mother|<noun>|<base>|adoptive grand-mother|adoptive grand-mother|FamilyHistoryEvidence|post
+C0337473|adoptive grand-parent|<noun>|<base>|adoptive grand-parent|adoptive grand-parent|FamilyHistoryEvidence|pre
+C0337473|adoptive grand-parent|<noun>|<base>|adoptive grand-parent|adoptive grand-parent|FamilyHistoryEvidence|post
+C0337487|adoptive mother|<noun>|<base>|adoptive mother|adoptive mother|FamilyHistoryEvidence|pre
+C0337487|adoptive mother|<noun>|<base>|adoptive mother|adoptive mother|FamilyHistoryEvidence|post
+C0337466|adoptive parenting|<noun>|<base>|adoptive parenting|adoptive parenting|FamilyHistoryEvidence|pre
+C0337466|adoptive parenting|<noun>|<base>|adoptive parenting|adoptive parenting|FamilyHistoryEvidence|post
+C0337466|adoptive parents|<noun>|<base>|adoptive parents|adoptive parents|FamilyHistoryEvidence|pre
+C0337466|adoptive parents|<noun>|<base>|adoptive parents|adoptive parents|FamilyHistoryEvidence|post
+C0337466|adoptive parent|<noun>|<base>|adoptive parent|adoptive parent|FamilyHistoryEvidence|pre
+C0337466|adoptive parent|<noun>|<base>|adoptive parent|adoptive parent|FamilyHistoryEvidence|post
+C2347535|adoptive relation|<noun>|<base>|adoptive relation|adoptive relation|FamilyHistoryEvidence|pre
+C2347535|adoptive relation|<noun>|<base>|adoptive relation|adoptive relation|FamilyHistoryEvidence|post
+C2347535|adoptive relative|<noun>|<base>|adoptive relative|adoptive relative|FamilyHistoryEvidence|pre
+C2347535|adoptive relative|<noun>|<base>|adoptive relative|adoptive relative|FamilyHistoryEvidence|post
+C0337503|adoptive sibling|<noun>|<base>|adoptive sibling|adoptive sibling|FamilyHistoryEvidence|pre
+C0337503|adoptive sibling|<noun>|<base>|adoptive sibling|adoptive sibling|FamilyHistoryEvidence|post
+C0337516|adoptive sister|<noun>|<base>|adoptive sister|adoptive sister|FamilyHistoryEvidence|pre
+C0337516|adoptive sister|<noun>|<base>|adoptive sister|adoptive sister|FamilyHistoryEvidence|post
+C0337565|adoptive son|<noun>|<base>|adoptive son|adoptive son|FamilyHistoryEvidence|pre
+C0337565|adoptive son|<noun>|<base>|adoptive son|adoptive son|FamilyHistoryEvidence|post
+C0683572|adult children|<noun>|<base>|adult children|adult children|FamilyHistoryEvidence|pre
+C0683572|adult children|<noun>|<base>|adult children|adult children|FamilyHistoryEvidence|post
+C0683572|adult daughters|<noun>|<base>|adult daughters|adult daughters|FamilyHistoryEvidence|pre
+C0683572|adult daughters|<noun>|<base>|adult daughters|adult daughters|FamilyHistoryEvidence|post
+C0683572|adult daughter|<noun>|<base>|adult daughter|adult daughter|FamilyHistoryEvidence|pre
+C0683572|adult daughter|<noun>|<base>|adult daughter|adult daughter|FamilyHistoryEvidence|post
+C0683572|adult offspring|<noun>|<base>|adult offspring|adult offspring|FamilyHistoryEvidence|pre
+C0683572|adult offspring|<noun>|<base>|adult offspring|adult offspring|FamilyHistoryEvidence|post
+C0683572|adult sons|<noun>|<base>|adult sons|adult sons|FamilyHistoryEvidence|pre
+C0683572|adult sons|<noun>|<base>|adult sons|adult sons|FamilyHistoryEvidence|post
+C0683572|adult son|<noun>|<base>|adult son|adult son|FamilyHistoryEvidence|pre
+C0683572|adult son|<noun>|<base>|adult son|adult son|FamilyHistoryEvidence|post
+C0683572|adults children|<noun>|<base>|adults children|adults children|FamilyHistoryEvidence|pre
+C0683572|adults children|<noun>|<base>|adults children|adults children|FamilyHistoryEvidence|post
+C0870134|ancestors|<noun>|<base>|ancestors|ancestors|FamilyHistoryEvidence|pre
+C0870134|ancestors|<noun>|<base>|ancestors|ancestors|FamilyHistoryEvidence|post
+C0870134|ancestor|<noun>|<base>|ancestor|ancestor|FamilyHistoryEvidence|pre
+C0870134|ancestor|<noun>|<base>|ancestor|ancestor|FamilyHistoryEvidence|post
+C0870134|ancestresses|<noun>|<base>|ancestresses|ancestresses|FamilyHistoryEvidence|pre
+C0870134|ancestresses|<noun>|<base>|ancestresses|ancestresses|FamilyHistoryEvidence|post
+C0870134|ancestress|<noun>|<base>|ancestress|ancestress|FamilyHistoryEvidence|pre
+C0870134|ancestress|<noun>|<base>|ancestress|ancestress|FamilyHistoryEvidence|post
+C2732646|aunt of subject|<noun>|<base>|aunt of subject|aunt of subject|FamilyHistoryEvidence|pre
+C2732646|aunt of subject|<noun>|<base>|aunt of subject|aunt of subject|FamilyHistoryEvidence|post
+C0337576|aunts|<noun>|<base>|aunts|aunts|FamilyHistoryEvidence|pre
+C0337576|aunts|<noun>|<base>|aunts|aunts|FamilyHistoryEvidence|post
+C0337576|aunty|<noun>|<base>|aunty|aunty|FamilyHistoryEvidence|pre
+C0337576|aunty|<noun>|<base>|aunty|aunty|FamilyHistoryEvidence|post
+C0337576|aunt|<noun>|<base>|aunt|aunt|FamilyHistoryEvidence|pre
+C0337576|aunt|<noun>|<base>|aunt|aunt|FamilyHistoryEvidence|post
+C0337539|bastard brother|<noun>|<base>|bastard brother|bastard brother|FamilyHistoryEvidence|pre
+C0337539|bastard brother|<noun>|<base>|bastard brother|bastard brother|FamilyHistoryEvidence|post
+C0337551|bastard child|<noun>|<base>|bastard child|bastard child|FamilyHistoryEvidence|pre
+C0337551|bastard child|<noun>|<base>|bastard child|bastard child|FamilyHistoryEvidence|post
+C0337562|bastard daughter|<noun>|<base>|bastard daughter|bastard daughter|FamilyHistoryEvidence|pre
+C0337562|bastard daughter|<noun>|<base>|bastard daughter|bastard daughter|FamilyHistoryEvidence|post
+C0337513|bastard sibling|<noun>|<base>|bastard sibling|bastard sibling|FamilyHistoryEvidence|pre
+C0337513|bastard sibling|<noun>|<base>|bastard sibling|bastard sibling|FamilyHistoryEvidence|post
+C0337526|bastard sister|<noun>|<base>|bastard sister|bastard sister|FamilyHistoryEvidence|pre
+C0337526|bastard sister|<noun>|<base>|bastard sister|bastard sister|FamilyHistoryEvidence|post
+C0337574|bastard son|<noun>|<base>|bastard son|bastard son|FamilyHistoryEvidence|pre
+C0337574|bastard son|<noun>|<base>|bastard son|bastard son|FamilyHistoryEvidence|post
+C0337528|biological brother|<noun>|<base>|biological brother|biological brother|FamilyHistoryEvidence|pre
+C0337528|biological brother|<noun>|<base>|biological brother|biological brother|FamilyHistoryEvidence|post
+C0337540|biological child|<noun>|<base>|biological child|biological child|FamilyHistoryEvidence|pre
+C0337540|biological child|<noun>|<base>|biological child|biological child|FamilyHistoryEvidence|post
+C0337552|biological daughter|<noun>|<base>|biological daughter|biological daughter|FamilyHistoryEvidence|pre
+C0337552|biological daughter|<noun>|<base>|biological daughter|biological daughter|FamilyHistoryEvidence|post
+C0682317|biological family relation|<noun>|<base>|biological family relation|biological family relation|FamilyHistoryEvidence|pre
+C0682317|biological family relation|<noun>|<base>|biological family relation|biological family relation|FamilyHistoryEvidence|post
+C0337494|biological father|<noun>|<base>|biological father|biological father|FamilyHistoryEvidence|pre
+C0337494|biological father|<noun>|<base>|biological father|biological father|FamilyHistoryEvidence|post
+C0337477|biological grand-father|<noun>|<base>|biological grand-father|biological grand-father|FamilyHistoryEvidence|pre
+C0337477|biological grand-father|<noun>|<base>|biological grand-father|biological grand-father|FamilyHistoryEvidence|post
+C0337476|biological grand-mother|<noun>|<base>|biological grand-mother|biological grand-mother|FamilyHistoryEvidence|pre
+C0337476|biological grand-mother|<noun>|<base>|biological grand-mother|biological grand-mother|FamilyHistoryEvidence|post
+C0337472|biological grand-parent|<noun>|<base>|biological grand-parent|biological grand-parent|FamilyHistoryEvidence|pre
+C0337472|biological grand-parent|<noun>|<base>|biological grand-parent|biological grand-parent|FamilyHistoryEvidence|post
+C0337486|biological mother|<noun>|<base>|biological mother|biological mother|FamilyHistoryEvidence|pre
+C0337486|biological mother|<noun>|<base>|biological mother|biological mother|FamilyHistoryEvidence|post
+C0337465|biological parent|<noun>|<base>|biological parent|biological parent|FamilyHistoryEvidence|pre
+C0337465|biological parent|<noun>|<base>|biological parent|biological parent|FamilyHistoryEvidence|post
+C1266852|biological relative|<noun>|<base>|biological relative|biological relative|FamilyHistoryEvidence|pre
+C1266852|biological relative|<noun>|<base>|biological relative|biological relative|FamilyHistoryEvidence|post
+C0337502|biological sibling|<noun>|<base>|biological sibling|biological sibling|FamilyHistoryEvidence|pre
+C0337502|biological sibling|<noun>|<base>|biological sibling|biological sibling|FamilyHistoryEvidence|post
+C0337515|biological sister|<noun>|<base>|biological sister|biological sister|FamilyHistoryEvidence|pre
+C0337515|biological sister|<noun>|<base>|biological sister|biological sister|FamilyHistoryEvidence|post
+C0337564|biological son|<noun>|<base>|biological son|biological son|FamilyHistoryEvidence|pre
+C0337564|biological son|<noun>|<base>|biological son|biological son|FamilyHistoryEvidence|post
+C0870206|biracial children|<noun>|<base>|biracial children|biracial children|FamilyHistoryEvidence|pre
+C0870206|biracial children|<noun>|<base>|biracial children|biracial children|FamilyHistoryEvidence|post
+C0034373|birth multiple quadruplets|<noun>|<base>|birth multiple quadruplets|birth multiple quadruplets|FamilyHistoryEvidence|pre
+C0034373|birth multiple quadruplets|<noun>|<base>|birth multiple quadruplets|birth multiple quadruplets|FamilyHistoryEvidence|post
+C0026753|birth offspring, multiple|<noun>|<base>|birth offspring, multiple|birth offspring, multiple|FamilyHistoryEvidence|pre
+C0026753|birth offspring, multiple|<noun>|<base>|birth offspring, multiple|birth offspring, multiple|FamilyHistoryEvidence|post
+C0871667|birth parents|<noun>|<base>|birth parents|birth parents|FamilyHistoryEvidence|pre
+C0871667|birth parents|<noun>|<base>|birth parents|birth parents|FamilyHistoryEvidence|post
+C0871667|birth parent|<noun>|<base>|birth parent|birth parent|FamilyHistoryEvidence|pre
+C0871667|birth parent|<noun>|<base>|birth parent|birth parent|FamilyHistoryEvidence|post
+C0026753|birth, multiple|<noun>|<base>|birth, multiple|birth, multiple|FamilyHistoryEvidence|pre
+C0026753|birth, multiple|<noun>|<base>|birth, multiple|birth, multiple|FamilyHistoryEvidence|post
+C0680029|blended families|<noun>|<base>|blended families|blended families|FamilyHistoryEvidence|pre
+C0680029|blended families|<noun>|<base>|blended families|blended families|FamilyHistoryEvidence|post
+C0680029|blended family|<noun>|<base>|blended family|blended family|FamilyHistoryEvidence|pre
+C0680029|blended family|<noun>|<base>|blended family|blended family|FamilyHistoryEvidence|post
+C1266852|blood relation|<noun>|<base>|blood relation|blood relation|FamilyHistoryEvidence|pre
+C1266852|blood relation|<noun>|<base>|blood relation|blood relation|FamilyHistoryEvidence|post
+C1266852|blood relatives|<noun>|<base>|blood relatives|blood relatives|FamilyHistoryEvidence|pre
+C1266852|blood relatives|<noun>|<base>|blood relatives|blood relatives|FamilyHistoryEvidence|post
+C1266852|blood relative|<noun>|<base>|blood relative|blood relative|FamilyHistoryEvidence|pre
+C1266852|blood relative|<noun>|<base>|blood relative|blood relative|FamilyHistoryEvidence|post
+C0337527|br's|<noun>|<base>|br's|br's|FamilyHistoryEvidence|pre
+C0337527|br's|<noun>|<base>|br's|br's|FamilyHistoryEvidence|post
+C2733257|brother of subject|<noun>|<base>|brother of subject|brother of subject|FamilyHistoryEvidence|pre
+C2733257|brother of subject|<noun>|<base>|brother of subject|brother of subject|FamilyHistoryEvidence|post
+C0337527|brotherliness|<noun>|<base>|brotherliness|brotherliness|FamilyHistoryEvidence|pre
+C0337527|brotherliness|<noun>|<base>|brotherliness|brotherliness|FamilyHistoryEvidence|post
+C0337527|brothers|<noun>|<base>|brothers|brothers|FamilyHistoryEvidence|pre
+C0337527|brothers|<noun>|<base>|brothers|brothers|FamilyHistoryEvidence|post
+C0337527|brother|<noun>|<base>|brother|brother|FamilyHistoryEvidence|pre
+C0337527|brother|<noun>|<base>|brother|brother|FamilyHistoryEvidence|post
+C0337527|broth|<noun>|<base>|broth|broth|FamilyHistoryEvidence|pre
+C0337527|broth|<noun>|<base>|broth|broth|FamilyHistoryEvidence|post
+C0337527|brs|<noun>|<base>|brs|brs|FamilyHistoryEvidence|pre
+C0337527|brs|<noun>|<base>|brs|brs|FamilyHistoryEvidence|post
+C0337527|br|<noun>|<base>|br|br|FamilyHistoryEvidence|pre
+C0337527|br|<noun>|<base>|br|br|FamilyHistoryEvidence|post
+C0337527|bs|<noun>|<base>|bs|bs|FamilyHistoryEvidence|pre
+C0337527|bs|<noun>|<base>|bs|bs|FamilyHistoryEvidence|post
+C0337527|b|<noun>|<base>|b|b|FamilyHistoryEvidence|pre
+C0337527|b|<noun>|<base>|b|b|FamilyHistoryEvidence|post
+C0680063|c-h's|<noun>|<base>|c-h's|c-h's|FamilyHistoryEvidence|pre
+C0680063|c-h's|<noun>|<base>|c-h's|c-h's|FamilyHistoryEvidence|post
+C0680063|c-hs|<noun>|<base>|c-hs|c-hs|FamilyHistoryEvidence|pre
+C0680063|c-hs|<noun>|<base>|c-hs|c-hs|FamilyHistoryEvidence|post
+C0680063|c-h|<noun>|<base>|c-h|c-h|FamilyHistoryEvidence|pre
+C0680063|c-h|<noun>|<base>|c-h|c-h|FamilyHistoryEvidence|post
+C1516196|cancer family|<noun>|<base>|cancer family|cancer family|FamilyHistoryEvidence|pre
+C1516196|cancer family|<noun>|<base>|cancer family|cancer family|FamilyHistoryEvidence|post
+C0086279|caregiver, family|<noun>|<base>|caregiver, family|caregiver, family|FamilyHistoryEvidence|pre
+C0086279|caregiver, family|<noun>|<base>|caregiver, family|caregiver, family|FamilyHistoryEvidence|post
+C0087015|caregiver, spouse|<noun>|<base>|caregiver, spouse|caregiver, spouse|FamilyHistoryEvidence|pre
+C0087015|caregiver, spouse|<noun>|<base>|caregiver, spouse|caregiver, spouse|FamilyHistoryEvidence|post
+C0086279|caregivers family|<noun>|<base>|caregivers family|caregivers family|FamilyHistoryEvidence|pre
+C0086279|caregivers family|<noun>|<base>|caregivers family|caregivers family|FamilyHistoryEvidence|post
+C0086279|caregivers, family|<noun>|<base>|caregivers, family|caregivers, family|FamilyHistoryEvidence|pre
+C0086279|caregivers, family|<noun>|<base>|caregivers, family|caregivers, family|FamilyHistoryEvidence|post
+C0087015|caregivers, spouse|<noun>|<base>|caregivers, spouse|caregivers, spouse|FamilyHistoryEvidence|pre
+C0087015|caregivers, spouse|<noun>|<base>|caregivers, spouse|caregivers, spouse|FamilyHistoryEvidence|post
+C0038947|carrier, gestational|<noun>|<base>|carrier, gestational|carrier, gestational|FamilyHistoryEvidence|pre
+C0038947|carrier, gestational|<noun>|<base>|carrier, gestational|carrier, gestational|FamilyHistoryEvidence|post
+C0038947|carriers, gestational|<noun>|<base>|carriers, gestational|carriers, gestational|FamilyHistoryEvidence|pre
+C0038947|carriers, gestational|<noun>|<base>|carriers, gestational|carriers, gestational|FamilyHistoryEvidence|post
+C0680063|ch's|<noun>|<base>|ch's|ch's|FamilyHistoryEvidence|pre
+C0680063|ch's|<noun>|<base>|ch's|ch's|FamilyHistoryEvidence|post
+C0680063|ch.'s|<noun>|<base>|ch.'s|ch.'s|FamilyHistoryEvidence|pre
+C0680063|ch.'s|<noun>|<base>|ch.'s|ch.'s|FamilyHistoryEvidence|post
+C0680063|ch.s|<noun>|<base>|ch.s|ch.s|FamilyHistoryEvidence|pre
+C0680063|ch.s|<noun>|<base>|ch.s|ch.s|FamilyHistoryEvidence|post
+C0680063|ch.|<noun>|<base>|ch.|ch.|FamilyHistoryEvidence|pre
+C0680063|ch.|<noun>|<base>|ch.|ch.|FamilyHistoryEvidence|post
+C0682332|charge of the court|<noun>|<base>|charge of the court|charge of the court|FamilyHistoryEvidence|pre
+C0682332|charge of the court|<noun>|<base>|charge of the court|charge of the court|FamilyHistoryEvidence|post
+C0680063|child find|<noun>|<base>|child find|child find|FamilyHistoryEvidence|pre
+C0680063|child find|<noun>|<base>|child find|child find|FamilyHistoryEvidence|post
+C0524333|child given for adoption|<noun>|<base>|child given for adoption|child given for adoption|FamilyHistoryEvidence|pre
+C0524333|child given for adoption|<noun>|<base>|child given for adoption|child given for adoption|FamilyHistoryEvidence|post
+C0337548|child grand|<noun>|<base>|child grand|child grand|FamilyHistoryEvidence|pre
+C0337548|child grand|<noun>|<base>|child grand|child grand|FamilyHistoryEvidence|post
+C0682328|child of aod user|<noun>|<base>|child of aod user|child of aod user|FamilyHistoryEvidence|pre
+C0682328|child of aod user|<noun>|<base>|child of aod user|child of aod user|FamilyHistoryEvidence|post
+C2733583|child of subject|<noun>|<base>|child of subject|child of subject|FamilyHistoryEvidence|pre
+C2733583|child of subject|<noun>|<base>|child of subject|child of subject|FamilyHistoryEvidence|post
+C0682328|child of substance abusing parent|<noun>|<base>|child of substance abusing parent|child of substance abusing parent|FamilyHistoryEvidence|pre
+C0682328|child of substance abusing parent|<noun>|<base>|child of substance abusing parent|child of substance abusing parent|FamilyHistoryEvidence|post
+C0682332|child of the court|<noun>|<base>|child of the court|child of the court|FamilyHistoryEvidence|pre
+C0682332|child of the court|<noun>|<base>|child of the court|child of the court|FamilyHistoryEvidence|post
+C0680063|child of|<noun>|<base>|child of|child of|FamilyHistoryEvidence|pre
+C0680063|child of|<noun>|<base>|child of|child of|FamilyHistoryEvidence|post
+C0260096|child parenting|<noun>|<base>|child parenting|child parenting|FamilyHistoryEvidence|pre
+C0260096|child parenting|<noun>|<base>|child parenting|child parenting|FamilyHistoryEvidence|post
+C0260096|child parents|<noun>|<base>|child parents|child parents|FamilyHistoryEvidence|pre
+C0260096|child parents|<noun>|<base>|child parents|child parents|FamilyHistoryEvidence|post
+C0260096|child parent|<noun>|<base>|child parent|child parent|FamilyHistoryEvidence|pre
+C0260096|child parent|<noun>|<base>|child parent|child parent|FamilyHistoryEvidence|post
+C0682331|child without parent|<noun>|<base>|child without parent|child without parent|FamilyHistoryEvidence|pre
+C0682331|child without parent|<noun>|<base>|child without parent|child without parent|FamilyHistoryEvidence|post
+C0008095|child, abandoned|<noun>|<base>|child, abandoned|child, abandoned|FamilyHistoryEvidence|pre
+C0008095|child, abandoned|<noun>|<base>|child, abandoned|child, abandoned|FamilyHistoryEvidence|post
+C0029039|child, only|<noun>|<base>|child, only|child, only|FamilyHistoryEvidence|pre
+C0029039|child, only|<noun>|<base>|child, only|child, only|FamilyHistoryEvidence|post
+C0008101|child, unwanted|<noun>|<base>|child, unwanted|child, unwanted|FamilyHistoryEvidence|pre
+C0008101|child, unwanted|<noun>|<base>|child, unwanted|child, unwanted|FamilyHistoryEvidence|post
+C0237410|child-like|<noun>|<base>|child-like|child-like|FamilyHistoryEvidence|pre
+C0237410|child-like|<noun>|<base>|child-like|child-like|FamilyHistoryEvidence|post
+C0680063|child-like|<noun>|<base>|child-like|child-like|FamilyHistoryEvidence|pre
+C0680063|child-like|<noun>|<base>|child-like|child-like|FamilyHistoryEvidence|post
+C0237410|childishly|<noun>|<base>|childishly|childishly|FamilyHistoryEvidence|pre
+C0237410|childishly|<noun>|<base>|childishly|childishly|FamilyHistoryEvidence|post
+C0680063|childishly|<noun>|<base>|childishly|childishly|FamilyHistoryEvidence|pre
+C0680063|childishly|<noun>|<base>|childishly|childishly|FamilyHistoryEvidence|post
+C0237410|childishness|<noun>|<base>|childishness|childishness|FamilyHistoryEvidence|pre
+C0237410|childishness|<noun>|<base>|childishness|childishness|FamilyHistoryEvidence|post
+C0680063|childishness|<noun>|<base>|childishness|childishness|FamilyHistoryEvidence|pre
+C0680063|childishness|<noun>|<base>|childishness|childishness|FamilyHistoryEvidence|post
+C0237410|childish|<noun>|<base>|childish|childish|FamilyHistoryEvidence|pre
+C0237410|childish|<noun>|<base>|childish|childish|FamilyHistoryEvidence|post
+C0680063|childish|<noun>|<base>|childish|childish|FamilyHistoryEvidence|pre
+C0680063|childish|<noun>|<base>|childish|childish|FamilyHistoryEvidence|post
+C0683567|childless couple|<noun>|<base>|childless couple|childless couple|FamilyHistoryEvidence|pre
+C0683567|childless couple|<noun>|<base>|childless couple|childless couple|FamilyHistoryEvidence|post
+C0680030|childless family|<noun>|<base>|childless family|childless family|FamilyHistoryEvidence|pre
+C0680030|childless family|<noun>|<base>|childless family|childless family|FamilyHistoryEvidence|post
+C0237410|childlessness|<noun>|<base>|childlessness|childlessness|FamilyHistoryEvidence|pre
+C0237410|childlessness|<noun>|<base>|childlessness|childlessness|FamilyHistoryEvidence|post
+C0680063|childlessness|<noun>|<base>|childlessness|childlessness|FamilyHistoryEvidence|pre
+C0680063|childlessness|<noun>|<base>|childlessness|childlessness|FamilyHistoryEvidence|post
+C0237410|childless|<noun>|<base>|childless|childless|FamilyHistoryEvidence|pre
+C0237410|childless|<noun>|<base>|childless|childless|FamilyHistoryEvidence|post
+C0680063|childless|<noun>|<base>|childless|childless|FamilyHistoryEvidence|pre
+C0680063|childless|<noun>|<base>|childless|childless|FamilyHistoryEvidence|post
+C0237410|childlikeness|<noun>|<base>|childlikeness|childlikeness|FamilyHistoryEvidence|pre
+C0237410|childlikeness|<noun>|<base>|childlikeness|childlikeness|FamilyHistoryEvidence|post
+C0680063|childlikeness|<noun>|<base>|childlikeness|childlikeness|FamilyHistoryEvidence|pre
+C0680063|childlikeness|<noun>|<base>|childlikeness|childlikeness|FamilyHistoryEvidence|post
+C0237410|childlike|<noun>|<base>|childlike|childlike|FamilyHistoryEvidence|pre
+C0237410|childlike|<noun>|<base>|childlike|childlike|FamilyHistoryEvidence|post
+C0680063|childlike|<noun>|<base>|childlike|childlike|FamilyHistoryEvidence|pre
+C0680063|childlike|<noun>|<base>|childlike|childlike|FamilyHistoryEvidence|post
+C0680017|childrearing environment|<noun>|<base>|childrearing environment|childrearing environment|FamilyHistoryEvidence|pre
+C0680017|childrearing environment|<noun>|<base>|childrearing environment|childrearing environment|FamilyHistoryEvidence|post
+C0683572|children adult|<noun>|<base>|children adult|children adult|FamilyHistoryEvidence|pre
+C0683572|children adult|<noun>|<base>|children adult|children adult|FamilyHistoryEvidence|post
+C0029039|children only|<noun>|<base>|children only|children only|FamilyHistoryEvidence|pre
+C0029039|children only|<noun>|<base>|children only|children only|FamilyHistoryEvidence|post
+C0008095|children, abandoned|<noun>|<base>|children, abandoned|children, abandoned|FamilyHistoryEvidence|pre
+C0008095|children, abandoned|<noun>|<base>|children, abandoned|children, abandoned|FamilyHistoryEvidence|post
+C0337541|children, adopted|<noun>|<base>|children, adopted|children, adopted|FamilyHistoryEvidence|pre
+C0337541|children, adopted|<noun>|<base>|children, adopted|children, adopted|FamilyHistoryEvidence|post
+C0683572|children, adult|<noun>|<base>|children, adult|children, adult|FamilyHistoryEvidence|pre
+C0683572|children, adult|<noun>|<base>|children, adult|children, adult|FamilyHistoryEvidence|post
+C0029039|children, only|<noun>|<base>|children, only|children, only|FamilyHistoryEvidence|pre
+C0029039|children, only|<noun>|<base>|children, only|children, only|FamilyHistoryEvidence|post
+C0008101|children, unwanted|<noun>|<base>|children, unwanted|children, unwanted|FamilyHistoryEvidence|pre
+C0008101|children, unwanted|<noun>|<base>|children, unwanted|children, unwanted|FamilyHistoryEvidence|post
+C0237410|children|<noun>|<base>|children|children|FamilyHistoryEvidence|pre
+C0237410|children|<noun>|<base>|children|children|FamilyHistoryEvidence|post
+C0680063|children|<noun>|<base>|children|children|FamilyHistoryEvidence|pre
+C0680063|children|<noun>|<base>|children|children|FamilyHistoryEvidence|post
+C0237410|childs|<noun>|<base>|childs|childs|FamilyHistoryEvidence|pre
+C0237410|childs|<noun>|<base>|childs|childs|FamilyHistoryEvidence|post
+C0680063|childs|<noun>|<base>|childs|childs|FamilyHistoryEvidence|pre
+C0680063|childs|<noun>|<base>|childs|childs|FamilyHistoryEvidence|post
+C0237410|child|<noun>|<base>|child|child|FamilyHistoryEvidence|pre
+C0237410|child|<noun>|<base>|child|child|FamilyHistoryEvidence|post
+C0680063|child|<noun>|<base>|child|child|FamilyHistoryEvidence|pre
+C0680063|child|<noun>|<base>|child|child|FamilyHistoryEvidence|post
+C0680063|chs|<noun>|<base>|chs|chs|FamilyHistoryEvidence|pre
+C0680063|chs|<noun>|<base>|chs|chs|FamilyHistoryEvidence|post
+C0680063|ch|<noun>|<base>|ch|ch|FamilyHistoryEvidence|pre
+C0680063|ch|<noun>|<base>|ch|ch|FamilyHistoryEvidence|post
+C0683566|co-parents|<noun>|<base>|co-parents|co-parents|FamilyHistoryEvidence|pre
+C0683566|co-parents|<noun>|<base>|co-parents|co-parents|FamilyHistoryEvidence|post
+C0683566|co-parent|<noun>|<base>|co-parent|co-parent|FamilyHistoryEvidence|pre
+C0683566|co-parent|<noun>|<base>|co-parent|co-parent|FamilyHistoryEvidence|post
+C2732256|common law husband of subject|<noun>|<base>|common law husband of subject|common law husband of subject|FamilyHistoryEvidence|pre
+C2732256|common law husband of subject|<noun>|<base>|common law husband of subject|common law husband of subject|FamilyHistoryEvidence|post
+C2733351|common law wife of subject|<noun>|<base>|common law wife of subject|common law wife of subject|FamilyHistoryEvidence|pre
+C2733351|common law wife of subject|<noun>|<base>|common law wife of subject|common law wife of subject|FamilyHistoryEvidence|post
+C0680026|compadrazgo|<noun>|<base>|compadrazgo|compadrazgo|FamilyHistoryEvidence|pre
+C0680026|compadrazgo|<noun>|<base>|compadrazgo|compadrazgo|FamilyHistoryEvidence|post
+C0680027|compadre|<noun>|<base>|compadre|compadre|FamilyHistoryEvidence|pre
+C0680027|compadre|<noun>|<base>|compadre|compadre|FamilyHistoryEvidence|post
+C0682323|companionability|<noun>|<base>|companionability|companionability|FamilyHistoryEvidence|pre
+C0682323|companionability|<noun>|<base>|companionability|companionability|FamilyHistoryEvidence|post
+C0682323|companionable|<noun>|<base>|companionable|companionable|FamilyHistoryEvidence|pre
+C0682323|companionable|<noun>|<base>|companionable|companionable|FamilyHistoryEvidence|post
+C0682323|companioned|<noun>|<base>|companioned|companioned|FamilyHistoryEvidence|pre
+C0682323|companioned|<noun>|<base>|companioned|companioned|FamilyHistoryEvidence|post
+C0682323|companioning|<noun>|<base>|companioning|companioning|FamilyHistoryEvidence|pre
+C0682323|companioning|<noun>|<base>|companioning|companioning|FamilyHistoryEvidence|post
+C0682323|companionless|<noun>|<base>|companionless|companionless|FamilyHistoryEvidence|pre
+C0682323|companionless|<noun>|<base>|companionless|companionless|FamilyHistoryEvidence|post
+C0682323|companionship|<noun>|<base>|companionship|companionship|FamilyHistoryEvidence|pre
+C0682323|companionship|<noun>|<base>|companionship|companionship|FamilyHistoryEvidence|post
+C0682323|companions|<noun>|<base>|companions|companions|FamilyHistoryEvidence|pre
+C0682323|companions|<noun>|<base>|companions|companions|FamilyHistoryEvidence|post
+C0682323|companion|<noun>|<base>|companion|companion|FamilyHistoryEvidence|pre
+C0682323|companion|<noun>|<base>|companion|companion|FamilyHistoryEvidence|post
+C0683568|consanguineal relationship|<noun>|<base>|consanguineal relationship|consanguineal relationship|FamilyHistoryEvidence|pre
+C0683568|consanguineal relationship|<noun>|<base>|consanguineal relationship|consanguineal relationship|FamilyHistoryEvidence|post
+C0683568|consanguineous relationships|<noun>|<base>|consanguineous relationships|consanguineous relationships|FamilyHistoryEvidence|pre
+C0683568|consanguineous relationships|<noun>|<base>|consanguineous relationships|consanguineous relationships|FamilyHistoryEvidence|post
+C0683566|coparents|<noun>|<base>|coparents|coparents|FamilyHistoryEvidence|pre
+C0683566|coparents|<noun>|<base>|coparents|coparents|FamilyHistoryEvidence|post
+C0683566|coparent|<noun>|<base>|coparent|coparent|FamilyHistoryEvidence|pre
+C0683566|coparent|<noun>|<base>|coparent|coparent|FamilyHistoryEvidence|post
+C0682328|cosa's|<noun>|<base>|cosa's|cosa's|FamilyHistoryEvidence|pre
+C0682328|cosa's|<noun>|<base>|cosa's|cosa's|FamilyHistoryEvidence|post
+C0682328|cosas|<noun>|<base>|cosas|cosas|FamilyHistoryEvidence|pre
+C0682328|cosas|<noun>|<base>|cosas|cosas|FamilyHistoryEvidence|post
+C0682328|cosa|<noun>|<base>|cosa|cosa|FamilyHistoryEvidence|pre
+C0682328|cosa|<noun>|<base>|cosa|cosa|FamilyHistoryEvidence|post
+C0870848|couple married|<noun>|<base>|couple married|couple married|FamilyHistoryEvidence|pre
+C0870848|couple married|<noun>|<base>|couple married|couple married|FamilyHistoryEvidence|post
+C0010222|coupled|<noun>|<base>|coupled|coupled|FamilyHistoryEvidence|pre
+C0010222|coupled|<noun>|<base>|coupled|coupled|FamilyHistoryEvidence|post
+C0010222|couplers|<noun>|<base>|couplers|couplers|FamilyHistoryEvidence|pre
+C0010222|couplers|<noun>|<base>|couplers|couplers|FamilyHistoryEvidence|post
+C0010222|coupler|<noun>|<base>|coupler|coupler|FamilyHistoryEvidence|pre
+C0010222|coupler|<noun>|<base>|coupler|coupler|FamilyHistoryEvidence|post
+C0870848|couples married|<noun>|<base>|couples married|couples married|FamilyHistoryEvidence|pre
+C0870848|couples married|<noun>|<base>|couples married|couples married|FamilyHistoryEvidence|post
+C0010222|couples|<noun>|<base>|couples|couples|FamilyHistoryEvidence|pre
+C0010222|couples|<noun>|<base>|couples|couples|FamilyHistoryEvidence|post
+C0010222|couple|<noun>|<base>|couple|couple|FamilyHistoryEvidence|pre
+C0010222|couple|<noun>|<base>|couple|couple|FamilyHistoryEvidence|post
+C0010222|coupling|<noun>|<base>|coupling|coupling|FamilyHistoryEvidence|pre
+C0010222|coupling|<noun>|<base>|coupling|coupling|FamilyHistoryEvidence|post
+C0337583|cousins first|<noun>|<base>|cousins first|cousins first|FamilyHistoryEvidence|pre
+C0337583|cousins first|<noun>|<base>|cousins first|cousins first|FamilyHistoryEvidence|post
+C0337586|cousins second|<noun>|<base>|cousins second|cousins second|FamilyHistoryEvidence|pre
+C0337586|cousins second|<noun>|<base>|cousins second|cousins second|FamilyHistoryEvidence|post
+C0337580|cousins|<noun>|<base>|cousins|cousins|FamilyHistoryEvidence|pre
+C0337580|cousins|<noun>|<base>|cousins|cousins|FamilyHistoryEvidence|post
+C0337580|cousin|<noun>|<base>|cousin|cousin|FamilyHistoryEvidence|pre
+C0337580|cousin|<noun>|<base>|cousin|cousin|FamilyHistoryEvidence|post
+C0011011|d.'s|<noun>|<base>|d.'s|d.'s|FamilyHistoryEvidence|pre
+C0011011|d.'s|<noun>|<base>|d.'s|d.'s|FamilyHistoryEvidence|post
+C0011011|d.s|<noun>|<base>|d.s|d.s|FamilyHistoryEvidence|pre
+C0011011|d.s|<noun>|<base>|d.s|d.s|FamilyHistoryEvidence|post
+C0011011|d.|<noun>|<base>|d.|d.|FamilyHistoryEvidence|pre
+C0011011|d.|<noun>|<base>|d.|d.|FamilyHistoryEvidence|post
+C0011011|da's|<noun>|<base>|da's|da's|FamilyHistoryEvidence|pre
+C0011011|da's|<noun>|<base>|da's|da's|FamilyHistoryEvidence|post
+C0011011|das|<noun>|<base>|das|das|FamilyHistoryEvidence|pre
+C0011011|das|<noun>|<base>|das|das|FamilyHistoryEvidence|post
+C2733606|daughter of subject|<noun>|<base>|daughter of subject|daughter of subject|FamilyHistoryEvidence|pre
+C2733606|daughter of subject|<noun>|<base>|daughter of subject|daughter of subject|FamilyHistoryEvidence|post
+C0683572|daughter, adult|<noun>|<base>|daughter, adult|daughter, adult|FamilyHistoryEvidence|pre
+C0683572|daughter, adult|<noun>|<base>|daughter, adult|daughter, adult|FamilyHistoryEvidence|post
+C0011011|daughterly|<noun>|<base>|daughterly|daughterly|FamilyHistoryEvidence|pre
+C0011011|daughterly|<noun>|<base>|daughterly|daughterly|FamilyHistoryEvidence|post
+C0683572|daughters, adult|<noun>|<base>|daughters, adult|daughters, adult|FamilyHistoryEvidence|pre
+C0683572|daughters, adult|<noun>|<base>|daughters, adult|daughters, adult|FamilyHistoryEvidence|post
+C0011011|daughters|<noun>|<base>|daughters|daughters|FamilyHistoryEvidence|pre
+C0011011|daughters|<noun>|<base>|daughters|daughters|FamilyHistoryEvidence|post
+C0011011|daughter|<noun>|<base>|daughter|daughter|FamilyHistoryEvidence|pre
+C0011011|daughter|<noun>|<base>|daughter|daughter|FamilyHistoryEvidence|post
+C0011011|her daughter|<noun>|<base>|daughter|daughter|FamilyHistoryEvidence|post
+C0011011|his daughter|<noun>|<base>|daughter|daughter|FamilyHistoryEvidence|post
+C0011011|da|<noun>|<base>|da|da|FamilyHistoryEvidence|pre
+C0011011|da|<noun>|<base>|da|da|FamilyHistoryEvidence|post
+C0680043|de-scented|<noun>|<base>|de-scented|de-scented|FamilyHistoryEvidence|pre
+C0680043|de-scented|<noun>|<base>|de-scented|de-scented|FamilyHistoryEvidence|post
+C0680043|de-scenting|<noun>|<base>|de-scenting|de-scenting|FamilyHistoryEvidence|pre
+C0680043|de-scenting|<noun>|<base>|de-scenting|de-scenting|FamilyHistoryEvidence|post
+C0680043|de-scents|<noun>|<base>|de-scents|de-scents|FamilyHistoryEvidence|pre
+C0680043|de-scents|<noun>|<base>|de-scents|de-scents|FamilyHistoryEvidence|post
+C0680043|de-scent|<noun>|<base>|de-scent|de-scent|FamilyHistoryEvidence|pre
+C0680043|de-scent|<noun>|<base>|de-scent|de-scent|FamilyHistoryEvidence|post
+C0682276|dependent member of household|<noun>|<base>|dependent member of household|dependent member of household|FamilyHistoryEvidence|pre
+C0682276|dependent member of household|<noun>|<base>|dependent member of household|dependent member of household|FamilyHistoryEvidence|post
+C0680043|descendance|<noun>|<base>|descendance|descendance|FamilyHistoryEvidence|pre
+C0680043|descendance|<noun>|<base>|descendance|descendance|FamilyHistoryEvidence|post
+C0680043|descendancy|<noun>|<base>|descendancy|descendancy|FamilyHistoryEvidence|pre
+C0680043|descendancy|<noun>|<base>|descendancy|descendancy|FamilyHistoryEvidence|post
+C0680043|descendants|<noun>|<base>|descendants|descendants|FamilyHistoryEvidence|pre
+C0680043|descendants|<noun>|<base>|descendants|descendants|FamilyHistoryEvidence|post
+C0680043|descendant|<noun>|<base>|descendant|descendant|FamilyHistoryEvidence|pre
+C0680043|descendant|<noun>|<base>|descendant|descendant|FamilyHistoryEvidence|post
+C0680043|descended|<noun>|<base>|descended|descended|FamilyHistoryEvidence|pre
+C0680043|descended|<noun>|<base>|descended|descended|FamilyHistoryEvidence|post
+C0680043|descendence|<noun>|<base>|descendence|descendence|FamilyHistoryEvidence|pre
+C0680043|descendence|<noun>|<base>|descendence|descendence|FamilyHistoryEvidence|post
+C0680043|descendency|<noun>|<base>|descendency|descendency|FamilyHistoryEvidence|pre
+C0680043|descendency|<noun>|<base>|descendency|descendency|FamilyHistoryEvidence|post
+C0680043|descendents|<noun>|<base>|descendents|descendents|FamilyHistoryEvidence|pre
+C0680043|descendents|<noun>|<base>|descendents|descendents|FamilyHistoryEvidence|post
+C0680043|descendent|<noun>|<base>|descendent|descendent|FamilyHistoryEvidence|pre
+C0680043|descendent|<noun>|<base>|descendent|descendent|FamilyHistoryEvidence|post
+C0680043|descending|<noun>|<base>|descending|descending|FamilyHistoryEvidence|pre
+C0680043|descending|<noun>|<base>|descending|descending|FamilyHistoryEvidence|post
+C0680043|descends|<noun>|<base>|descends|descends|FamilyHistoryEvidence|pre
+C0680043|descends|<noun>|<base>|descends|descends|FamilyHistoryEvidence|post
+C0680043|descend|<noun>|<base>|descend|descend|FamilyHistoryEvidence|pre
+C0680043|descend|<noun>|<base>|descend|descend|FamilyHistoryEvidence|post
+C0680043|descension|<noun>|<base>|descension|descension|FamilyHistoryEvidence|pre
+C0680043|descension|<noun>|<base>|descension|descension|FamilyHistoryEvidence|post
+C0680043|descented|<noun>|<base>|descented|descented|FamilyHistoryEvidence|pre
+C0680043|descented|<noun>|<base>|descented|descented|FamilyHistoryEvidence|post
+C0680043|descenting|<noun>|<base>|descenting|descenting|FamilyHistoryEvidence|pre
+C0680043|descenting|<noun>|<base>|descenting|descenting|FamilyHistoryEvidence|post
+C0680043|descents|<noun>|<base>|descents|descents|FamilyHistoryEvidence|pre
+C0680043|descents|<noun>|<base>|descents|descents|FamilyHistoryEvidence|post
+C0680043|descent|<noun>|<base>|descent|descent|FamilyHistoryEvidence|pre
+C0680043|descent|<noun>|<base>|descent|descent|FamilyHistoryEvidence|post
+C0524352|disabled relative|<noun>|<base>|disabled relative|disabled relative|FamilyHistoryEvidence|pre
+C0524352|disabled relative|<noun>|<base>|disabled relative|disabled relative|FamilyHistoryEvidence|post
+C1273526|distant relative|<noun>|<base>|distant relative|distant relative|FamilyHistoryEvidence|pre
+C1273526|distant relative|<noun>|<base>|distant relative|distant relative|FamilyHistoryEvidence|post
+C0425149|divorced parenting|<noun>|<base>|divorced parenting|divorced parenting|FamilyHistoryEvidence|pre
+C0425149|divorced parenting|<noun>|<base>|divorced parenting|divorced parenting|FamilyHistoryEvidence|post
+C0425149|divorced parents|<noun>|<base>|divorced parents|divorced parents|FamilyHistoryEvidence|pre
+C0425149|divorced parents|<noun>|<base>|divorced parents|divorced parents|FamilyHistoryEvidence|post
+C0425149|divorcing parents|<noun>|<base>|divorcing parents|divorcing parents|FamilyHistoryEvidence|pre
+C0425149|divorcing parents|<noun>|<base>|divorcing parents|divorcing parents|FamilyHistoryEvidence|post
+C0041429|dizygotic twins|<noun>|<base>|dizygotic twins|dizygotic twins|FamilyHistoryEvidence|pre
+C0041429|dizygotic twins|<noun>|<base>|dizygotic twins|dizygotic twins|FamilyHistoryEvidence|post
+C0041429|dizygotic twin|<noun>|<base>|dizygotic twin|dizygotic twin|FamilyHistoryEvidence|pre
+C0041429|dizygotic twin|<noun>|<base>|dizygotic twin|dizygotic twin|FamilyHistoryEvidence|post
+C0600393|domestic partners|<noun>|<base>|domestic partners|domestic partners|FamilyHistoryEvidence|pre
+C0600393|domestic partners|<noun>|<base>|domestic partners|domestic partners|FamilyHistoryEvidence|post
+C0600393|domestic partner|<noun>|<base>|domestic partner|domestic partner|FamilyHistoryEvidence|pre
+C0600393|domestic partner|<noun>|<base>|domestic partner|domestic partner|FamilyHistoryEvidence|post
+C0871736|expectant mothers|<noun>|<base>|expectant mothers|expectant mothers|FamilyHistoryEvidence|pre
+C0871736|expectant mothers|<noun>|<base>|expectant mothers|expectant mothers|FamilyHistoryEvidence|post
+C0871736|expectant mother|<noun>|<base>|expectant mother|expectant mother|FamilyHistoryEvidence|pre
+C0871736|expectant mother|<noun>|<base>|expectant mother|expectant mother|FamilyHistoryEvidence|post
+C0015341|extended families|<noun>|<base>|extended families|extended families|FamilyHistoryEvidence|pre
+C0015341|extended families|<noun>|<base>|extended families|extended families|FamilyHistoryEvidence|post
+C1274025|extended family member|<noun>|<base>|extended family member|extended family member|FamilyHistoryEvidence|pre
+C1274025|extended family member|<noun>|<base>|extended family member|extended family member|FamilyHistoryEvidence|post
+C0015341|extended family|<noun>|<base>|extended family|extended family|FamilyHistoryEvidence|pre
+C0015341|extended family|<noun>|<base>|extended family|extended family|FamilyHistoryEvidence|post
+C0314650|f1 generation|<noun>|<base>|f1 generation|f1 generation|FamilyHistoryEvidence|pre
+C0314650|f1 generation|<noun>|<base>|f1 generation|f1 generation|FamilyHistoryEvidence|post
+C0314651|f2 generation|<noun>|<base>|f2 generation|f2 generation|FamilyHistoryEvidence|pre
+C0314651|f2 generation|<noun>|<base>|f2 generation|f2 generation|FamilyHistoryEvidence|post
+C0314650|f<sub>1</sub> generation|<noun>|<base>|f<sub>1</sub> generation|f<sub>1</sub> generation|FamilyHistoryEvidence|pre
+C0314650|f<sub>1</sub> generation|<noun>|<base>|f<sub>1</sub> generation|f<sub>1</sub> generation|FamilyHistoryEvidence|post
+C0314651|f<sub>2</sub> generation|<noun>|<base>|f<sub>2</sub> generation|f<sub>2</sub> generation|FamilyHistoryEvidence|pre
+C0314651|f<sub>2</sub> generation|<noun>|<base>|f<sub>2</sub> generation|f<sub>2</sub> generation|FamilyHistoryEvidence|post
+C0314650|f>1< generation|<noun>|<base>|f>1< generation|f>1< generation|FamilyHistoryEvidence|pre
+C0314650|f>1< generation|<noun>|<base>|f>1< generation|f>1< generation|FamilyHistoryEvidence|post
+C0314651|f>2< generation|<noun>|<base>|f>2< generation|f>2< generation|FamilyHistoryEvidence|pre
+C0314651|f>2< generation|<noun>|<base>|f>2< generation|f>2< generation|FamilyHistoryEvidence|post
+C0015576|familiae|<noun>|<base>|familiae|familiae|FamilyHistoryEvidence|pre
+C0015576|familiae|<noun>|<base>|familiae|familiae|FamilyHistoryEvidence|post
+C0015576|familialities|<noun>|<base>|familialities|familialities|FamilyHistoryEvidence|pre
+C0015576|familialities|<noun>|<base>|familialities|familialities|FamilyHistoryEvidence|post
+C0015576|familiality|<noun>|<base>|familiality|familiality|FamilyHistoryEvidence|pre
+C0015576|familiality|<noun>|<base>|familiality|familiality|FamilyHistoryEvidence|post
+C0015576|familially|<noun>|<base>|familially|familially|FamilyHistoryEvidence|pre
+C0015576|familially|<noun>|<base>|familially|familially|FamilyHistoryEvidence|post
+C0015576|familial|<noun>|<base>|familial|familial|FamilyHistoryEvidence|pre
+C0015576|familial|<noun>|<base>|familial|familial|FamilyHistoryEvidence|post
+C0015576|familiarities|<noun>|<base>|familiarities|familiarities|FamilyHistoryEvidence|pre
+C0015576|familiarities|<noun>|<base>|familiarities|familiarities|FamilyHistoryEvidence|post
+C0015576|familiarity|<noun>|<base>|familiarity|familiarity|FamilyHistoryEvidence|pre
+C0015576|familiarity|<noun>|<base>|familiarity|familiarity|FamilyHistoryEvidence|post
+C0015576|familiarly|<noun>|<base>|familiarly|familiarly|FamilyHistoryEvidence|pre
+C0015576|familiarly|<noun>|<base>|familiarly|familiarly|FamilyHistoryEvidence|post
+C0015576|familiar|<noun>|<base>|familiar|familiar|FamilyHistoryEvidence|pre
+C0015576|familiar|<noun>|<base>|familiar|familiar|FamilyHistoryEvidence|post
+C0015576|familia|<noun>|<base>|familia|familia|FamilyHistoryEvidence|pre
+C0015576|familia|<noun>|<base>|familia|familia|FamilyHistoryEvidence|post
+C0086279|family caregivers|<noun>|<base>|family caregivers|family caregivers|FamilyHistoryEvidence|pre
+C0086279|family caregivers|<noun>|<base>|family caregivers|family caregivers|FamilyHistoryEvidence|post
+C0086279|family caregiver|<noun>|<base>|family caregiver|family caregiver|FamilyHistoryEvidence|pre
+C0086279|family caregiver|<noun>|<base>|family caregiver|family caregiver|FamilyHistoryEvidence|post
+C1545722|family member-caregiver|<noun>|<base>|family member-caregiver|family member-caregiver|FamilyHistoryEvidence|pre
+C1545722|family member-caregiver|<noun>|<base>|family member-caregiver|family member-caregiver|FamilyHistoryEvidence|post
+C0086282|family members|<noun>|<base>|family members|family members|FamilyHistoryEvidence|pre
+C0086282|family members|<noun>|<base>|family members|family members|FamilyHistoryEvidence|post
+C0086282|family member|<noun>|<base>|family member|family member|FamilyHistoryEvidence|pre
+C0086282|family member|<noun>|<base>|family member|family member|FamilyHistoryEvidence|post
+C2706616|family or significant other|<noun>|<base>|family or significant other|family or significant other|FamilyHistoryEvidence|pre
+C2706616|family or significant other|<noun>|<base>|family or significant other|family or significant other|FamilyHistoryEvidence|post
+C0870545|family origins|<noun>|<base>|family origins|family origins|FamilyHistoryEvidence|pre
+C0870545|family origins|<noun>|<base>|family origins|family origins|FamilyHistoryEvidence|post
+C0015341|family, extended|<noun>|<base>|family, extended|family, extended|FamilyHistoryEvidence|pre
+C0015341|family, extended|<noun>|<base>|family, extended|family, extended|FamilyHistoryEvidence|post
+C0028574|family, nuclear|<noun>|<base>|family, nuclear|family, nuclear|FamilyHistoryEvidence|pre
+C0028574|family, nuclear|<noun>|<base>|family, nuclear|family, nuclear|FamilyHistoryEvidence|post
+C0282174|family, reconstituted|<noun>|<base>|family, reconstituted|family, reconstituted|FamilyHistoryEvidence|pre
+C0282174|family, reconstituted|<noun>|<base>|family, reconstituted|family, reconstituted|FamilyHistoryEvidence|post
+C0037178|family, single parent|<noun>|<base>|family, single parent|family, single parent|FamilyHistoryEvidence|pre
+C0037178|family, single parent|<noun>|<base>|family, single parent|family, single parent|FamilyHistoryEvidence|post
+C0037178|family, single-parent|<noun>|<base>|family, single-parent|family, single-parent|FamilyHistoryEvidence|pre
+C0037178|family, single-parent|<noun>|<base>|family, single-parent|family, single-parent|FamilyHistoryEvidence|post
+C0086282|familys people|<noun>|<base>|familys people|familys people|FamilyHistoryEvidence|pre
+C0086282|familys people|<noun>|<base>|familys people|familys people|FamilyHistoryEvidence|post
+C0015576|family|<noun>|<base>|family|family|FamilyHistoryEvidence|pre
+C0015576|family|<noun>|<base>|family|family|FamilyHistoryEvidence|post
+C2732713|father of subject|<noun>|<base>|father of subject|father of subject|FamilyHistoryEvidence|pre
+C2732713|father of subject|<noun>|<base>|father of subject|father of subject|FamilyHistoryEvidence|post
+C0015671|father|<noun>|<base>|father|father|FamilyHistoryEvidence|pre
+C0015671|father|<noun>|<base>|father|father|FamilyHistoryEvidence|post
+C0041745|father, unmarried|<noun>|<base>|father, unmarried|father, unmarried|FamilyHistoryEvidence|pre
+C0041745|father, unmarried|<noun>|<base>|father, unmarried|father, unmarried|FamilyHistoryEvidence|post
+C2349973|father-in-law|<noun>|<base>|father-in-law|father-in-law|FamilyHistoryEvidence|pre
+C2349973|father-in-law|<noun>|<base>|father-in-law|father-in-law|FamilyHistoryEvidence|post
+C0015671|fathered|<noun>|<base>|fathered|fathered|FamilyHistoryEvidence|pre
+C0015671|fathered|<noun>|<base>|fathered|fathered|FamilyHistoryEvidence|post
+C0015671|fathering|<noun>|<base>|fathering|fathering|FamilyHistoryEvidence|pre
+C0015671|fathering|<noun>|<base>|fathering|fathering|FamilyHistoryEvidence|post
+C0015671|fatherlands|<noun>|<base>|fatherlands|fatherlands|FamilyHistoryEvidence|pre
+C0015671|fatherlands|<noun>|<base>|fatherlands|fatherlands|FamilyHistoryEvidence|post
+C0015671|fatherland|<noun>|<base>|fatherland|fatherland|FamilyHistoryEvidence|pre
+C0015671|fatherland|<noun>|<base>|fatherland|fatherland|FamilyHistoryEvidence|post
+C0015671|fatherlessness|<noun>|<base>|fatherlessness|fatherlessness|FamilyHistoryEvidence|pre
+C0015671|fatherlessness|<noun>|<base>|fatherlessness|fatherlessness|FamilyHistoryEvidence|post
+C0015671|fatherless|<noun>|<base>|fatherless|fatherless|FamilyHistoryEvidence|pre
+C0015671|fatherless|<noun>|<base>|fatherless|fatherless|FamilyHistoryEvidence|post
+C0041745|fathers, unmarried|<noun>|<base>|fathers, unmarried|fathers, unmarried|FamilyHistoryEvidence|pre
+C0041745|fathers, unmarried|<noun>|<base>|fathers, unmarried|fathers, unmarried|FamilyHistoryEvidence|post
+C2349973|fathers-in-law|<noun>|<base>|fathers-in-law|fathers-in-law|FamilyHistoryEvidence|pre
+C2349973|fathers-in-law|<noun>|<base>|fathers-in-law|fathers-in-law|FamilyHistoryEvidence|post
+C0015671|fathers|<noun>|<base>|fathers|fathers|FamilyHistoryEvidence|pre
+C0015671|fathers|<noun>|<base>|fathers|fathers|FamilyHistoryEvidence|post
+C0015671|father|<noun>|<base>|father|father|FamilyHistoryEvidence|pre
+C0015671|father|<noun>|<base>|father|father|FamilyHistoryEvidence|post
+C1517194|fdr's|<noun>|<base>|fdr's|fdr's|FamilyHistoryEvidence|pre
+C1517194|fdr's|<noun>|<base>|fdr's|fdr's|FamilyHistoryEvidence|post
+C1517194|fdrs|<noun>|<base>|fdrs|fdrs|FamilyHistoryEvidence|pre
+C1517194|fdrs|<noun>|<base>|fdrs|fdrs|FamilyHistoryEvidence|post
+C1517194|fdr|<noun>|<base>|fdr|fdr|FamilyHistoryEvidence|pre
+C1517194|fdr|<noun>|<base>|fdr|fdr|FamilyHistoryEvidence|post
+C0337581|female cousin|<noun>|<base>|female cousin|female cousin|FamilyHistoryEvidence|pre
+C0337581|female cousin|<noun>|<base>|female cousin|female cousin|FamilyHistoryEvidence|post
+C2732516|female fianc? of subject|<noun>|<base>|female fianc? of subject|female fianc? of subject|FamilyHistoryEvidence|pre
+C2732516|female fianc? of subject|<noun>|<base>|female fianc? of subject|female fianc? of subject|FamilyHistoryEvidence|post
+C2732516|female fiance of subject|<noun>|<base>|female fiance of subject|female fiance of subject|FamilyHistoryEvidence|pre
+C2732516|female fiance of subject|<noun>|<base>|female fiance of subject|female fiance of subject|FamilyHistoryEvidence|post
+C0337584|female first cousin|<noun>|<base>|female first cousin|female first cousin|FamilyHistoryEvidence|pre
+C0337584|female first cousin|<noun>|<base>|female first cousin|female first cousin|FamilyHistoryEvidence|post
+C0337587|female second cousin|<noun>|<base>|female second cousin|female second cousin|FamilyHistoryEvidence|pre
+C0337587|female second cousin|<noun>|<base>|female second cousin|female second cousin|FamilyHistoryEvidence|post
+C1266853|fianc?s|<noun>|<base>|fianc?s|fianc?s|FamilyHistoryEvidence|pre
+C1266853|fianc?s|<noun>|<base>|fianc?s|fianc?s|FamilyHistoryEvidence|post
+C1266853|fianc?|<noun>|<base>|fianc?|fianc?|FamilyHistoryEvidence|pre
+C1266853|fianc?|<noun>|<base>|fianc?|fianc?|FamilyHistoryEvidence|post
+C1266853|fiances|<noun>|<base>|fiances|fiances|FamilyHistoryEvidence|pre
+C1266853|fiances|<noun>|<base>|fiances|fiances|FamilyHistoryEvidence|post
+C1266853|fiance|<noun>|<base>|fiance|fiance|FamilyHistoryEvidence|pre
+C1266853|fiance|<noun>|<base>|fiance|fiance|FamilyHistoryEvidence|post
+C2348676|first cousin once removed|<noun>|<base>|first cousin once removed|first cousin once removed|FamilyHistoryEvidence|pre
+C2348676|first cousin once removed|<noun>|<base>|first cousin once removed|first cousin once removed|FamilyHistoryEvidence|post
+C0337583|first cousin|<noun>|<base>|first cousin|first cousin|FamilyHistoryEvidence|pre
+C0337583|first cousin|<noun>|<base>|first cousin|first cousin|FamilyHistoryEvidence|post
+C1266851|first degree biological relative|<noun>|<base>|first degree biological relative|first degree biological relative|FamilyHistoryEvidence|pre
+C1266851|first degree biological relative|<noun>|<base>|first degree biological relative|first degree biological relative|FamilyHistoryEvidence|post
+C2733545|first degree blood relative of subject|<noun>|<base>|first degree blood relative of subject|first degree blood relative of subject|FamilyHistoryEvidence|pre
+C2733545|first degree blood relative of subject|<noun>|<base>|first degree blood relative of subject|first degree blood relative of subject|FamilyHistoryEvidence|post
+C1266851|first degree blood relative|<noun>|<base>|first degree blood relative|first degree blood relative|FamilyHistoryEvidence|pre
+C1266851|first degree blood relative|<noun>|<base>|first degree blood relative|first degree blood relative|FamilyHistoryEvidence|post
+C1517194|first degree relatives|<noun>|<base>|first degree relatives|first degree relatives|FamilyHistoryEvidence|pre
+C1517194|first degree relatives|<noun>|<base>|first degree relatives|first degree relatives|FamilyHistoryEvidence|post
+C1517194|first degree relative|<noun>|<base>|first degree relative|first degree relative|FamilyHistoryEvidence|pre
+C1517194|first degree relative|<noun>|<base>|first degree relative|first degree relative|FamilyHistoryEvidence|post
+C1517194|first-degree relatives|<noun>|<base>|first-degree relatives|first-degree relatives|FamilyHistoryEvidence|pre
+C1517194|first-degree relatives|<noun>|<base>|first-degree relatives|first-degree relatives|FamilyHistoryEvidence|post
+C1517194|first-degree relative|<noun>|<base>|first-degree relative|first-degree relative|FamilyHistoryEvidence|pre
+C1517194|first-degree relative|<noun>|<base>|first-degree relative|first-degree relative|FamilyHistoryEvidence|post
+C0337532|foster brother|<noun>|<base>|foster brother|foster brother|FamilyHistoryEvidence|pre
+C0337532|foster brother|<noun>|<base>|foster brother|foster brother|FamilyHistoryEvidence|post
+C0419195|foster care family|<noun>|<base>|foster care family|foster care family|FamilyHistoryEvidence|pre
+C0419195|foster care family|<noun>|<base>|foster care family|foster care family|FamilyHistoryEvidence|post
+C0419195|foster care|<noun>|<base>|foster care|foster care|FamilyHistoryEvidence|pre
+C0419195|foster care|<noun>|<base>|foster care|foster care|FamilyHistoryEvidence|post
+C0337544|foster children|<noun>|<base>|foster children|foster children|FamilyHistoryEvidence|pre
+C0337544|foster children|<noun>|<base>|foster children|foster children|FamilyHistoryEvidence|post
+C0337544|foster child|<noun>|<base>|foster child|foster child|FamilyHistoryEvidence|pre
+C0337544|foster child|<noun>|<base>|foster child|foster child|FamilyHistoryEvidence|post
+C0337556|foster daughters|<noun>|<base>|foster daughters|foster daughters|FamilyHistoryEvidence|pre
+C0337556|foster daughters|<noun>|<base>|foster daughters|foster daughters|FamilyHistoryEvidence|post
+C0337556|foster daughter|<noun>|<base>|foster daughter|foster daughter|FamilyHistoryEvidence|pre
+C0337556|foster daughter|<noun>|<base>|foster daughter|foster daughter|FamilyHistoryEvidence|post
+C0684027|foster family relation|<noun>|<base>|foster family relation|foster family relation|FamilyHistoryEvidence|pre
+C0684027|foster family relation|<noun>|<base>|foster family relation|foster family relation|FamilyHistoryEvidence|post
+C0337498|foster fathers|<noun>|<base>|foster fathers|foster fathers|FamilyHistoryEvidence|pre
+C0337498|foster fathers|<noun>|<base>|foster fathers|foster fathers|FamilyHistoryEvidence|post
+C0337498|foster father|<noun>|<base>|foster father|foster father|FamilyHistoryEvidence|pre
+C0337498|foster father|<noun>|<base>|foster father|foster father|FamilyHistoryEvidence|post
+C0337489|foster mothers|<noun>|<base>|foster mothers|foster mothers|FamilyHistoryEvidence|pre
+C0337489|foster mothers|<noun>|<base>|foster mothers|foster mothers|FamilyHistoryEvidence|post
+C0337489|foster mother|<noun>|<base>|foster mother|foster mother|FamilyHistoryEvidence|pre
+C0337489|foster mother|<noun>|<base>|foster mother|foster mother|FamilyHistoryEvidence|post
+C0337468|foster parenting|<noun>|<base>|foster parenting|foster parenting|FamilyHistoryEvidence|pre
+C0337468|foster parenting|<noun>|<base>|foster parenting|foster parenting|FamilyHistoryEvidence|post
+C0337468|foster parents|<noun>|<base>|foster parents|foster parents|FamilyHistoryEvidence|pre
+C0337468|foster parents|<noun>|<base>|foster parents|foster parents|FamilyHistoryEvidence|post
+C0337468|foster parent|<noun>|<base>|foster parent|foster parent|FamilyHistoryEvidence|pre
+C0337468|foster parent|<noun>|<base>|foster parent|foster parent|FamilyHistoryEvidence|post
+C0684027|foster relationship|<noun>|<base>|foster relationship|foster relationship|FamilyHistoryEvidence|pre
+C0684027|foster relationship|<noun>|<base>|foster relationship|foster relationship|FamilyHistoryEvidence|post
+C2348710|foster relation|<noun>|<base>|foster relation|foster relation|FamilyHistoryEvidence|pre
+C2348710|foster relation|<noun>|<base>|foster relation|foster relation|FamilyHistoryEvidence|post
+C2348710|foster relative|<noun>|<base>|foster relative|foster relative|FamilyHistoryEvidence|pre
+C2348710|foster relative|<noun>|<base>|foster relative|foster relative|FamilyHistoryEvidence|post
+C0337506|foster sibling|<noun>|<base>|foster sibling|foster sibling|FamilyHistoryEvidence|pre
+C0337506|foster sibling|<noun>|<base>|foster sibling|foster sibling|FamilyHistoryEvidence|post
+C0337519|foster sister|<noun>|<base>|foster sister|foster sister|FamilyHistoryEvidence|pre
+C0337519|foster sister|<noun>|<base>|foster sister|foster sister|FamilyHistoryEvidence|post
+C0337568|foster sons|<noun>|<base>|foster sons|foster sons|FamilyHistoryEvidence|pre
+C0337568|foster sons|<noun>|<base>|foster sons|foster sons|FamilyHistoryEvidence|post
+C0337568|foster son|<noun>|<base>|foster son|foster son|FamilyHistoryEvidence|pre
+C0337568|foster son|<noun>|<base>|foster son|foster son|FamilyHistoryEvidence|post
+C0337544|foster-children|<noun>|<base>|foster-children|foster-children|FamilyHistoryEvidence|pre
+C0337544|foster-children|<noun>|<base>|foster-children|foster-children|FamilyHistoryEvidence|post
+C0337544|foster-child|<noun>|<base>|foster-child|foster-child|FamilyHistoryEvidence|pre
+C0337544|foster-child|<noun>|<base>|foster-child|foster-child|FamilyHistoryEvidence|post
+C0419195|fostercare|<noun>|<base>|fostercare|fostercare|FamilyHistoryEvidence|pre
+C0419195|fostercare|<noun>|<base>|fostercare|fostercare|FamilyHistoryEvidence|post
+C0344349|fostered|<noun>|<base>|fostered|fostered|FamilyHistoryEvidence|pre
+C0344349|fostered|<noun>|<base>|fostered|fostered|FamilyHistoryEvidence|post
+C0344349|fosterers|<noun>|<base>|fosterers|fosterers|FamilyHistoryEvidence|pre
+C0344349|fosterers|<noun>|<base>|fosterers|fosterers|FamilyHistoryEvidence|post
+C0344349|fosterer|<noun>|<base>|fosterer|fosterer|FamilyHistoryEvidence|pre
+C0344349|fosterer|<noun>|<base>|fosterer|fosterer|FamilyHistoryEvidence|post
+C0344349|fostering|<noun>|<base>|fostering|fostering|FamilyHistoryEvidence|pre
+C0344349|fostering|<noun>|<base>|fostering|fostering|FamilyHistoryEvidence|post
+C0344349|fosters|<noun>|<base>|fosters|fosters|FamilyHistoryEvidence|pre
+C0344349|fosters|<noun>|<base>|fosters|fosters|FamilyHistoryEvidence|post
+C0344349|foster|<noun>|<base>|foster|foster|FamilyHistoryEvidence|pre
+C0344349|foster|<noun>|<base>|foster|foster|FamilyHistoryEvidence|post
+C0015671|fr's|<noun>|<base>|fr's|fr's|FamilyHistoryEvidence|pre
+C0015671|fr's|<noun>|<base>|fr's|fr's|FamilyHistoryEvidence|post
+C0337536|fraternal twin brother|<noun>|<base>|fraternal twin brother|fraternal twin brother|FamilyHistoryEvidence|pre
+C0337536|fraternal twin brother|<noun>|<base>|fraternal twin brother|fraternal twin brother|FamilyHistoryEvidence|post
+C0337510|fraternal twin sibling|<noun>|<base>|fraternal twin sibling|fraternal twin sibling|FamilyHistoryEvidence|pre
+C0337510|fraternal twin sibling|<noun>|<base>|fraternal twin sibling|fraternal twin sibling|FamilyHistoryEvidence|post
+C0337523|fraternal twin sister|<noun>|<base>|fraternal twin sister|fraternal twin sister|FamilyHistoryEvidence|pre
+C0337523|fraternal twin sister|<noun>|<base>|fraternal twin sister|fraternal twin sister|FamilyHistoryEvidence|post
+C0041429|fraternal twins|<noun>|<base>|fraternal twins|fraternal twins|FamilyHistoryEvidence|pre
+C0041429|fraternal twins|<noun>|<base>|fraternal twins|fraternal twins|FamilyHistoryEvidence|post
+C0041429|fraternal twin|<noun>|<base>|fraternal twin|fraternal twin|FamilyHistoryEvidence|pre
+C0041429|fraternal twin|<noun>|<base>|fraternal twin|fraternal twin|FamilyHistoryEvidence|post
+C0015671|frs|<noun>|<base>|frs|frs|FamilyHistoryEvidence|pre
+C0015671|frs|<noun>|<base>|frs|frs|FamilyHistoryEvidence|post
+C0015671|fr|<noun>|<base>|fr|fr|FamilyHistoryEvidence|pre
+C0015671|fr|<noun>|<base>|fr|fr|FamilyHistoryEvidence|post
+C2348717|full relation|<noun>|<base>|full relation|full relation|FamilyHistoryEvidence|pre
+C2348717|full relation|<noun>|<base>|full relation|full relation|FamilyHistoryEvidence|post
+C2348717|full relative|<noun>|<base>|full relative|full relative|FamilyHistoryEvidence|pre
+C2348717|full relative|<noun>|<base>|full relative|full relative|FamilyHistoryEvidence|post
+C2348717|full sibling|<noun>|<base>|full sibling|full sibling|FamilyHistoryEvidence|pre
+C2348717|full sibling|<noun>|<base>|full sibling|full sibling|FamilyHistoryEvidence|post
+C0870598|gay parenting|<noun>|<base>|gay parenting|gay parenting|FamilyHistoryEvidence|pre
+C0870598|gay parenting|<noun>|<base>|gay parenting|gay parenting|FamilyHistoryEvidence|post
+C0870598|gay parents|<noun>|<base>|gay parents|gay parents|FamilyHistoryEvidence|pre
+C0870598|gay parents|<noun>|<base>|gay parents|gay parents|FamilyHistoryEvidence|post
+C0870598|gay parent|<noun>|<base>|gay parent|gay parent|FamilyHistoryEvidence|pre
+C0870598|gay parent|<noun>|<base>|gay parent|gay parent|FamilyHistoryEvidence|post
+C0041427|gemellary|<noun>|<base>|gemellary|gemellary|FamilyHistoryEvidence|pre
+C0041427|gemellary|<noun>|<base>|gemellary|gemellary|FamilyHistoryEvidence|post
+C0038947|gestational carriers|<noun>|<base>|gestational carriers|gestational carriers|FamilyHistoryEvidence|pre
+C0038947|gestational carriers|<noun>|<base>|gestational carriers|gestational carriers|FamilyHistoryEvidence|post
+C0038947|gestational carrier|<noun>|<base>|gestational carrier|gestational carrier|FamilyHistoryEvidence|pre
+C0038947|gestational carrier|<noun>|<base>|gestational carrier|gestational carrier|FamilyHistoryEvidence|post
+C0038947|gestational mothers|<noun>|<base>|gestational mothers|gestational mothers|FamilyHistoryEvidence|pre
+C0038947|gestational mothers|<noun>|<base>|gestational mothers|gestational mothers|FamilyHistoryEvidence|post
+C0038947|gestational mother|<noun>|<base>|gestational mother|gestational mother|FamilyHistoryEvidence|pre
+C0038947|gestational mother|<noun>|<base>|gestational mother|gestational mother|FamilyHistoryEvidence|post
+C0337475|gf's|<noun>|<base>|gf's|gf's|FamilyHistoryEvidence|pre
+C0337475|gf's|<noun>|<base>|gf's|gf's|FamilyHistoryEvidence|post
+C0337475|gfs|<noun>|<base>|gfs|gfs|FamilyHistoryEvidence|pre
+C0337475|gfs|<noun>|<base>|gfs|gfs|FamilyHistoryEvidence|post
+C0337475|gf|<noun>|<base>|gf|gf|FamilyHistoryEvidence|pre
+C0337475|gf|<noun>|<base>|gf|gf|FamilyHistoryEvidence|post
+C0337474|gm's|<noun>|<base>|gm's|gm's|FamilyHistoryEvidence|pre
+C0337474|gm's|<noun>|<base>|gm's|gm's|FamilyHistoryEvidence|post
+C0337474|gm.'s|<noun>|<base>|gm.'s|gm.'s|FamilyHistoryEvidence|pre
+C0337474|gm.'s|<noun>|<base>|gm.'s|gm.'s|FamilyHistoryEvidence|post
+C0337474|gm.s|<noun>|<base>|gm.s|gm.s|FamilyHistoryEvidence|pre
+C0337474|gm.s|<noun>|<base>|gm.s|gm.s|FamilyHistoryEvidence|post
+C0337474|gm.|<noun>|<base>|gm.|gm.|FamilyHistoryEvidence|pre
+C0337474|gm.|<noun>|<base>|gm.|gm.|FamilyHistoryEvidence|post
+C0337474|gms|<noun>|<base>|gms|gms|FamilyHistoryEvidence|pre
+C0337474|gms|<noun>|<base>|gms|gms|FamilyHistoryEvidence|post
+C0337474|gm|<noun>|<base>|gm|gm|FamilyHistoryEvidence|pre
+C0337474|gm|<noun>|<base>|gm|gm|FamilyHistoryEvidence|post
+C0680028|godparents|<noun>|<base>|godparents|godparents|FamilyHistoryEvidence|pre
+C0680028|godparents|<noun>|<base>|godparents|godparents|FamilyHistoryEvidence|post
+C0680028|godparent|<noun>|<base>|godparent|godparent|FamilyHistoryEvidence|pre
+C0680028|godparent|<noun>|<base>|godparent|godparent|FamilyHistoryEvidence|post
+C0337548|grand child|<noun>|<base>|grand child|grand child|FamilyHistoryEvidence|pre
+C0337548|grand child|<noun>|<base>|grand child|grand child|FamilyHistoryEvidence|post
+C0337561|grand daughter|<noun>|<base>|grand daughter|grand daughter|FamilyHistoryEvidence|pre
+C0337561|grand daughter|<noun>|<base>|grand daughter|grand daughter|FamilyHistoryEvidence|post
+C0337474|grand mothers|<noun>|<base>|grand mothers|grand mothers|FamilyHistoryEvidence|pre
+C0337474|grand mothers|<noun>|<base>|grand mothers|grand mothers|FamilyHistoryEvidence|post
+C0337474|grand mother|<noun>|<base>|grand mother|grand mother|FamilyHistoryEvidence|pre
+C0337474|grand mother|<noun>|<base>|grand mother|grand mother|FamilyHistoryEvidence|post
+C2348890|grand relation|<noun>|<base>|grand relation|grand relation|FamilyHistoryEvidence|pre
+C2348890|grand relation|<noun>|<base>|grand relation|grand relation|FamilyHistoryEvidence|post
+C2348890|grand relative|<noun>|<base>|grand relative|grand relative|FamilyHistoryEvidence|pre
+C2348890|grand relative|<noun>|<base>|grand relative|grand relative|FamilyHistoryEvidence|post
+C0337573|grand son|<noun>|<base>|grand son|grand son|FamilyHistoryEvidence|pre
+C0337573|grand son|<noun>|<base>|grand son|grand son|FamilyHistoryEvidence|post
+C0337561|grand-daughters|<noun>|<base>|grand-daughters|grand-daughters|FamilyHistoryEvidence|pre
+C0337561|grand-daughters|<noun>|<base>|grand-daughters|grand-daughters|FamilyHistoryEvidence|post
+C0337561|grand-daughter|<noun>|<base>|grand-daughter|grand-daughter|FamilyHistoryEvidence|pre
+C0337561|grand-daughter|<noun>|<base>|grand-daughter|grand-daughter|FamilyHistoryEvidence|post
+C0337475|grand-father|<noun>|<base>|grand-father|grand-father|FamilyHistoryEvidence|pre
+C0337475|grand-father|<noun>|<base>|grand-father|grand-father|FamilyHistoryEvidence|post
+C0337474|grand-mothers|<noun>|<base>|grand-mothers|grand-mothers|FamilyHistoryEvidence|pre
+C0337474|grand-mothers|<noun>|<base>|grand-mothers|grand-mothers|FamilyHistoryEvidence|post
+C0337474|grand-mother|<noun>|<base>|grand-mother|grand-mother|FamilyHistoryEvidence|pre
+C0337474|grand-mother|<noun>|<base>|grand-mother|grand-mother|FamilyHistoryEvidence|post
+C0337471|grand-parent|<noun>|<base>|grand-parent|grand-parent|FamilyHistoryEvidence|pre
+C0337471|grand-parent|<noun>|<base>|grand-parent|grand-parent|FamilyHistoryEvidence|post
+C0337548|grandchildrens|<noun>|<base>|grandchildrens|grandchildrens|FamilyHistoryEvidence|pre
+C0337548|grandchildrens|<noun>|<base>|grandchildrens|grandchildrens|FamilyHistoryEvidence|post
+C0337548|grandchildren|<noun>|<base>|grandchildren|grandchildren|FamilyHistoryEvidence|pre
+C0337548|grandchildren|<noun>|<base>|grandchildren|grandchildren|FamilyHistoryEvidence|post
+C0337548|grandchild|<noun>|<base>|grandchild|grandchild|FamilyHistoryEvidence|pre
+C0337548|grandchild|<noun>|<base>|grandchild|grandchild|FamilyHistoryEvidence|post
+C0337561|granddaughter #1|<noun>|<base>|granddaughter #1|granddaughter #1|FamilyHistoryEvidence|pre
+C0337561|granddaughter #1|<noun>|<base>|granddaughter #1|granddaughter #1|FamilyHistoryEvidence|post
+C0337561|granddaughters|<noun>|<base>|granddaughters|granddaughters|FamilyHistoryEvidence|pre
+C0337561|granddaughters|<noun>|<base>|granddaughters|granddaughters|FamilyHistoryEvidence|post
+C0337561|granddaughter|<noun>|<base>|granddaughter|granddaughter|FamilyHistoryEvidence|pre
+C0337561|granddaughter|<noun>|<base>|granddaughter|granddaughter|FamilyHistoryEvidence|post
+C0337475|grandfathered|<noun>|<base>|grandfathered|grandfathered|FamilyHistoryEvidence|pre
+C0337475|grandfathered|<noun>|<base>|grandfathered|grandfathered|FamilyHistoryEvidence|post
+C0337475|grandfathering|<noun>|<base>|grandfathering|grandfathering|FamilyHistoryEvidence|pre
+C0337475|grandfathering|<noun>|<base>|grandfathering|grandfathering|FamilyHistoryEvidence|post
+C0337475|grandfathers|<noun>|<base>|grandfathers|grandfathers|FamilyHistoryEvidence|pre
+C0337475|grandfathers|<noun>|<base>|grandfathers|grandfathers|FamilyHistoryEvidence|post
+C0337475|grandfather|<noun>|<base>|grandfather|grandfather|FamilyHistoryEvidence|pre
+C0337475|grandfather|<noun>|<base>|grandfather|grandfather|FamilyHistoryEvidence|post
+C0337474|grandmothers|<noun>|<base>|grandmothers|grandmothers|FamilyHistoryEvidence|pre
+C0337474|grandmothers|<noun>|<base>|grandmothers|grandmothers|FamilyHistoryEvidence|post
+C0337474|grandmother|<noun>|<base>|grandmother|grandmother|FamilyHistoryEvidence|pre
+C0337474|grandmother|<noun>|<base>|grandmother|grandmother|FamilyHistoryEvidence|post
+C2732389|grandparent of subject|<noun>|<base>|grandparent of subject|grandparent of subject|FamilyHistoryEvidence|pre
+C2732389|grandparent of subject|<noun>|<base>|grandparent of subject|grandparent of subject|FamilyHistoryEvidence|post
+C0337471|grandparental|<noun>|<base>|grandparental|grandparental|FamilyHistoryEvidence|pre
+C0337471|grandparental|<noun>|<base>|grandparental|grandparental|FamilyHistoryEvidence|post
+C0337471|grandparented|<noun>|<base>|grandparented|grandparented|FamilyHistoryEvidence|pre
+C0337471|grandparented|<noun>|<base>|grandparented|grandparented|FamilyHistoryEvidence|post
+C0337471|grandparenting|<noun>|<base>|grandparenting|grandparenting|FamilyHistoryEvidence|pre
+C0337471|grandparenting|<noun>|<base>|grandparenting|grandparenting|FamilyHistoryEvidence|post
+C0337471|grandparents|<noun>|<base>|grandparents|grandparents|FamilyHistoryEvidence|pre
+C0337471|grandparents|<noun>|<base>|grandparents|grandparents|FamilyHistoryEvidence|post
+C0337471|grandparent|<noun>|<base>|grandparent|grandparent|FamilyHistoryEvidence|pre
+C0337471|grandparent|<noun>|<base>|grandparent|grandparent|FamilyHistoryEvidence|post
+C0337573|grandsons|<noun>|<base>|grandsons|grandsons|FamilyHistoryEvidence|pre
+C0337573|grandsons|<noun>|<base>|grandsons|grandsons|FamilyHistoryEvidence|post
+C0337573|grandson|<noun>|<base>|grandson|grandson|FamilyHistoryEvidence|pre
+C0337573|grandson|<noun>|<base>|grandson|grandson|FamilyHistoryEvidence|post
+C0337549|great grand child|<noun>|<base>|great grand child|great grand child|FamilyHistoryEvidence|pre
+C0337549|great grand child|<noun>|<base>|great grand child|great grand child|FamilyHistoryEvidence|post
+C0337482|great grand-father|<noun>|<base>|great grand-father|great grand-father|FamilyHistoryEvidence|pre
+C0337482|great grand-father|<noun>|<base>|great grand-father|great grand-father|FamilyHistoryEvidence|post
+C0337481|great grand-mother|<noun>|<base>|great grand-mother|great grand-mother|FamilyHistoryEvidence|pre
+C0337481|great grand-mother|<noun>|<base>|great grand-mother|great grand-mother|FamilyHistoryEvidence|post
+C0337480|great grand-parent|<noun>|<base>|great grand-parent|great grand-parent|FamilyHistoryEvidence|pre
+C0337480|great grand-parent|<noun>|<base>|great grand-parent|great grand-parent|FamilyHistoryEvidence|post
+C0337482|great grandfathers|<noun>|<base>|great grandfathers|great grandfathers|FamilyHistoryEvidence|pre
+C0337482|great grandfathers|<noun>|<base>|great grandfathers|great grandfathers|FamilyHistoryEvidence|post
+C0337482|great grandfather|<noun>|<base>|great grandfather|great grandfather|FamilyHistoryEvidence|pre
+C0337482|great grandfather|<noun>|<base>|great grandfather|great grandfather|FamilyHistoryEvidence|post
+C0337481|great grandmothers|<noun>|<base>|great grandmothers|great grandmothers|FamilyHistoryEvidence|pre
+C0337481|great grandmothers|<noun>|<base>|great grandmothers|great grandmothers|FamilyHistoryEvidence|post
+C0337481|great grandmother|<noun>|<base>|great grandmother|great grandmother|FamilyHistoryEvidence|pre
+C0337481|great grandmother|<noun>|<base>|great grandmother|great grandmother|FamilyHistoryEvidence|post
+C2348895|great relation|<noun>|<base>|great relation|great relation|FamilyHistoryEvidence|pre
+C2348895|great relation|<noun>|<base>|great relation|great relation|FamilyHistoryEvidence|post
+C2348895|great relative|<noun>|<base>|great relative|great relative|FamilyHistoryEvidence|pre
+C2348895|great relative|<noun>|<base>|great relative|great relative|FamilyHistoryEvidence|post
+C1273528|great-aunt|<noun>|<base>|great-aunt|great-aunt|FamilyHistoryEvidence|pre
+C1273528|great-aunt|<noun>|<base>|great-aunt|great-aunt|FamilyHistoryEvidence|post
+C0337549|great-grandchild|<noun>|<base>|great-grandchild|great-grandchild|FamilyHistoryEvidence|pre
+C0337549|great-grandchild|<noun>|<base>|great-grandchild|great-grandchild|FamilyHistoryEvidence|post
+C1274024|great-granddaughter|<noun>|<base>|great-granddaughter|great-granddaughter|FamilyHistoryEvidence|pre
+C1274024|great-granddaughter|<noun>|<base>|great-granddaughter|great-granddaughter|FamilyHistoryEvidence|post
+C0337482|great-grandfathers|<noun>|<base>|great-grandfathers|great-grandfathers|FamilyHistoryEvidence|pre
+C0337482|great-grandfathers|<noun>|<base>|great-grandfathers|great-grandfathers|FamilyHistoryEvidence|post
+C0337482|great-grandfather|<noun>|<base>|great-grandfather|great-grandfather|FamilyHistoryEvidence|pre
+C0337482|great-grandfather|<noun>|<base>|great-grandfather|great-grandfather|FamilyHistoryEvidence|post
+C0337481|great-grandmothers|<noun>|<base>|great-grandmothers|great-grandmothers|FamilyHistoryEvidence|pre
+C0337481|great-grandmothers|<noun>|<base>|great-grandmothers|great-grandmothers|FamilyHistoryEvidence|post
+C0337481|great-grandmother|<noun>|<base>|great-grandmother|great-grandmother|FamilyHistoryEvidence|pre
+C0337481|great-grandmother|<noun>|<base>|great-grandmother|great-grandmother|FamilyHistoryEvidence|post
+C0337480|great-grandparent|<noun>|<base>|great-grandparent|great-grandparent|FamilyHistoryEvidence|pre
+C0337480|great-grandparent|<noun>|<base>|great-grandparent|great-grandparent|FamilyHistoryEvidence|post
+C1274023|great-grandson|<noun>|<base>|great-grandson|great-grandson|FamilyHistoryEvidence|pre
+C1274023|great-grandson|<noun>|<base>|great-grandson|great-grandson|FamilyHistoryEvidence|post
+C0337550|great-great grand child|<noun>|<base>|great-great grand child|great-great grand child|FamilyHistoryEvidence|pre
+C0337550|great-great grand child|<noun>|<base>|great-great grand child|great-great grand child|FamilyHistoryEvidence|post
+C0337485|great-great grand-father|<noun>|<base>|great-great grand-father|great-great grand-father|FamilyHistoryEvidence|pre
+C0337485|great-great grand-father|<noun>|<base>|great-great grand-father|great-great grand-father|FamilyHistoryEvidence|post
+C0337484|great-great grand-mother|<noun>|<base>|great-great grand-mother|great-great grand-mother|FamilyHistoryEvidence|pre
+C0337484|great-great grand-mother|<noun>|<base>|great-great grand-mother|great-great grand-mother|FamilyHistoryEvidence|post
+C0337483|great-great grand-parent|<noun>|<base>|great-great grand-parent|great-great grand-parent|FamilyHistoryEvidence|pre
+C0337483|great-great grand-parent|<noun>|<base>|great-great grand-parent|great-great grand-parent|FamilyHistoryEvidence|post
+C1273527|great-uncles|<noun>|<base>|great-uncles|great-uncles|FamilyHistoryEvidence|pre
+C1273527|great-uncles|<noun>|<base>|great-uncles|great-uncles|FamilyHistoryEvidence|post
+C1273527|great-uncle|<noun>|<base>|great-uncle|great-uncle|FamilyHistoryEvidence|pre
+C1273527|great-uncle|<noun>|<base>|great-uncle|great-uncle|FamilyHistoryEvidence|post
+C0337482|greatgrandfathers|<noun>|<base>|greatgrandfathers|greatgrandfathers|FamilyHistoryEvidence|pre
+C0337482|greatgrandfathers|<noun>|<base>|greatgrandfathers|greatgrandfathers|FamilyHistoryEvidence|post
+C0337482|greatgrandfather|<noun>|<base>|greatgrandfather|greatgrandfather|FamilyHistoryEvidence|pre
+C0337482|greatgrandfather|<noun>|<base>|greatgrandfather|greatgrandfather|FamilyHistoryEvidence|post
+C0337481|greatgrandmothers|<noun>|<base>|greatgrandmothers|greatgrandmothers|FamilyHistoryEvidence|pre
+C0337481|greatgrandmothers|<noun>|<base>|greatgrandmothers|greatgrandmothers|FamilyHistoryEvidence|post
+C0337481|greatgrandmother|<noun>|<base>|greatgrandmother|greatgrandmother|FamilyHistoryEvidence|pre
+C0337481|greatgrandmother|<noun>|<base>|greatgrandmother|greatgrandmother|FamilyHistoryEvidence|post
+C1273527|greatuncles|<noun>|<base>|greatuncles|greatuncles|FamilyHistoryEvidence|pre
+C1273527|greatuncles|<noun>|<base>|greatuncles|greatuncles|FamilyHistoryEvidence|post
+C1273527|greatuncle|<noun>|<base>|greatuncle|greatuncle|FamilyHistoryEvidence|pre
+C1273527|greatuncle|<noun>|<base>|greatuncle|greatuncle|FamilyHistoryEvidence|post
+C1274041|guardianships|<noun>|<base>|guardianships|guardianships|FamilyHistoryEvidence|pre
+C1274041|guardianships|<noun>|<base>|guardianships|guardianships|FamilyHistoryEvidence|post
+C1274041|guardianship|<noun>|<base>|guardianship|guardianship|FamilyHistoryEvidence|pre
+C1274041|guardianship|<noun>|<base>|guardianship|guardianship|FamilyHistoryEvidence|post
+C1274041|guardians|<noun>|<base>|guardians|guardians|FamilyHistoryEvidence|pre
+C1274041|guardians|<noun>|<base>|guardians|guardians|FamilyHistoryEvidence|post
+C1274041|guardian|<noun>|<base>|guardian|guardian|FamilyHistoryEvidence|pre
+C1274041|guardian|<noun>|<base>|guardian|guardian|FamilyHistoryEvidence|post
+C0337531|half brothers|<noun>|<base>|half brothers|half brothers|FamilyHistoryEvidence|pre
+C0337531|half brothers|<noun>|<base>|half brothers|half brothers|FamilyHistoryEvidence|post
+C0337531|half brother|<noun>|<base>|half brother|half brother|FamilyHistoryEvidence|pre
+C0337531|half brother|<noun>|<base>|half brother|half brother|FamilyHistoryEvidence|post
+C0337505|half relation|<noun>|<base>|half relation|half relation|FamilyHistoryEvidence|pre
+C0337505|half relation|<noun>|<base>|half relation|half relation|FamilyHistoryEvidence|post
+C0337505|half relative|<noun>|<base>|half relative|half relative|FamilyHistoryEvidence|pre
+C0337505|half relative|<noun>|<base>|half relative|half relative|FamilyHistoryEvidence|post
+C0337505|half sibling|<noun>|<base>|half sibling|half sibling|FamilyHistoryEvidence|pre
+C0337505|half sibling|<noun>|<base>|half sibling|half sibling|FamilyHistoryEvidence|post
+C0337518|half sister|<noun>|<base>|half sister|half sister|FamilyHistoryEvidence|pre
+C0337518|half sister|<noun>|<base>|half sister|half sister|FamilyHistoryEvidence|post
+C0337531|half-brothers|<noun>|<base>|half-brothers|half-brothers|FamilyHistoryEvidence|pre
+C0337531|half-brothers|<noun>|<base>|half-brothers|half-brothers|FamilyHistoryEvidence|post
+C0337531|half-brother|<noun>|<base>|half-brother|half-brother|FamilyHistoryEvidence|pre
+C0337531|half-brother|<noun>|<base>|half-brother|half-brother|FamilyHistoryEvidence|post
+C0337505|half-siblings|<noun>|<base>|half-siblings|half-siblings|FamilyHistoryEvidence|pre
+C0337505|half-siblings|<noun>|<base>|half-siblings|half-siblings|FamilyHistoryEvidence|post
+C0337505|half-sibling|<noun>|<base>|half-sibling|half-sibling|FamilyHistoryEvidence|pre
+C0337505|half-sibling|<noun>|<base>|half-sibling|half-sibling|FamilyHistoryEvidence|post
+C0337518|half-sisters|<noun>|<base>|half-sisters|half-sisters|FamilyHistoryEvidence|pre
+C0337518|half-sisters|<noun>|<base>|half-sisters|half-sisters|FamilyHistoryEvidence|post
+C0337518|half-sister|<noun>|<base>|half-sister|half-sister|FamilyHistoryEvidence|pre
+C0337518|half-sister|<noun>|<base>|half-sister|half-sister|FamilyHistoryEvidence|post
+C0041429|heterozygotic twin|<noun>|<base>|heterozygotic twin|heterozygotic twin|FamilyHistoryEvidence|pre
+C0041429|heterozygotic twin|<noun>|<base>|heterozygotic twin|heterozygotic twin|FamilyHistoryEvidence|post
+C0041429|heterozygous twin|<noun>|<base>|heterozygous twin|heterozygous twin|FamilyHistoryEvidence|pre
+C0041429|heterozygous twin|<noun>|<base>|heterozygous twin|heterozygous twin|FamilyHistoryEvidence|post
+C0038947|host mothers|<noun>|<base>|host mothers|host mothers|FamilyHistoryEvidence|pre
+C0038947|host mothers|<noun>|<base>|host mothers|host mothers|FamilyHistoryEvidence|post
+C0038947|host mother|<noun>|<base>|host mother|host mother|FamilyHistoryEvidence|pre
+C0038947|host mother|<noun>|<base>|host mother|host mother|FamilyHistoryEvidence|post
+C0020052|house holds|<noun>|<base>|house holds|house holds|FamilyHistoryEvidence|pre
+C0020052|house holds|<noun>|<base>|house holds|house holds|FamilyHistoryEvidence|post
+C0020052|house hold|<noun>|<base>|house hold|house hold|FamilyHistoryEvidence|pre
+C0020052|house hold|<noun>|<base>|house hold|house hold|FamilyHistoryEvidence|post
+C0020052|house-holds|<noun>|<base>|house-holds|house-holds|FamilyHistoryEvidence|pre
+C0020052|house-holds|<noun>|<base>|house-holds|house-holds|FamilyHistoryEvidence|post
+C0020052|household|<noun>|<base>|household|household|FamilyHistoryEvidence|pre
+C0020052|household|<noun>|<base>|household|household|FamilyHistoryEvidence|post
+C0020052|households|<noun>|<base>|households|households|FamilyHistoryEvidence|pre
+C0020052|households|<noun>|<base>|households|households|FamilyHistoryEvidence|post
+C0020052|house-hold|<noun>|<base>|house-hold|house-hold|FamilyHistoryEvidence|pre
+C0020052|house-hold|<noun>|<base>|house-hold|house-hold|FamilyHistoryEvidence|post
+C0015578|household and family|<noun>|<base>|household and family|household and family|FamilyHistoryEvidence|pre
+C0015578|household and family|<noun>|<base>|household and family|household and family|FamilyHistoryEvidence|post
+C0237903|human surrogate parents|<noun>|<base>|human surrogate parents|human surrogate parents|FamilyHistoryEvidence|pre
+C0237903|human surrogate parents|<noun>|<base>|human surrogate parents|human surrogate parents|FamilyHistoryEvidence|post
+C2732833|husband of subject|<noun>|<base>|husband of subject|husband of subject|FamilyHistoryEvidence|pre
+C2732833|husband of subject|<noun>|<base>|husband of subject|husband of subject|FamilyHistoryEvidence|post
+C0242664|husband|<noun>|<base>|husband|husband|FamilyHistoryEvidence|pre
+C0242664|husband|<noun>|<base>|husband|husband|FamilyHistoryEvidence|post
+C0337535|identical twin brother|<noun>|<base>|identical twin brother|identical twin brother|FamilyHistoryEvidence|pre
+C0337535|identical twin brother|<noun>|<base>|identical twin brother|identical twin brother|FamilyHistoryEvidence|post
+C0337509|identical twin sibling|<noun>|<base>|identical twin sibling|identical twin sibling|FamilyHistoryEvidence|pre
+C0337509|identical twin sibling|<noun>|<base>|identical twin sibling|identical twin sibling|FamilyHistoryEvidence|post
+C0337522|identical twin sister|<noun>|<base>|identical twin sister|identical twin sister|FamilyHistoryEvidence|pre
+C0337522|identical twin sister|<noun>|<base>|identical twin sister|identical twin sister|FamilyHistoryEvidence|post
+C0041432|identical twins|<noun>|<base>|identical twins|identical twins|FamilyHistoryEvidence|pre
+C0041432|identical twins|<noun>|<base>|identical twins|identical twins|FamilyHistoryEvidence|post
+C0041432|identical twin|<noun>|<base>|identical twin|identical twin|FamilyHistoryEvidence|pre
+C0041432|identical twin|<noun>|<base>|identical twin|identical twin|FamilyHistoryEvidence|post
+C0337539|illegitimate brother|<noun>|<base>|illegitimate brother|illegitimate brother|FamilyHistoryEvidence|pre
+C0337539|illegitimate brother|<noun>|<base>|illegitimate brother|illegitimate brother|FamilyHistoryEvidence|post
+C0337551|illegitimate child|<noun>|<base>|illegitimate child|illegitimate child|FamilyHistoryEvidence|pre
+C0337551|illegitimate child|<noun>|<base>|illegitimate child|illegitimate child|FamilyHistoryEvidence|post
+C0337562|illegitimate daughter|<noun>|<base>|illegitimate daughter|illegitimate daughter|FamilyHistoryEvidence|pre
+C0337562|illegitimate daughter|<noun>|<base>|illegitimate daughter|illegitimate daughter|FamilyHistoryEvidence|post
+C0337513|illegitimate sibling|<noun>|<base>|illegitimate sibling|illegitimate sibling|FamilyHistoryEvidence|pre
+C0337513|illegitimate sibling|<noun>|<base>|illegitimate sibling|illegitimate sibling|FamilyHistoryEvidence|post
+C0337526|illegitimate sister|<noun>|<base>|illegitimate sister|illegitimate sister|FamilyHistoryEvidence|pre
+C0337526|illegitimate sister|<noun>|<base>|illegitimate sister|illegitimate sister|FamilyHistoryEvidence|post
+C0337574|illegitimate son|<noun>|<base>|illegitimate son|illegitimate son|FamilyHistoryEvidence|pre
+C0337574|illegitimate son|<noun>|<base>|illegitimate son|illegitimate son|FamilyHistoryEvidence|post
+C1273520|immediate family member|<noun>|<base>|immediate family member|immediate family member|FamilyHistoryEvidence|pre
+C1273520|immediate family member|<noun>|<base>|immediate family member|immediate family member|FamilyHistoryEvidence|post
+C0682322|in-law family relation|<noun>|<base>|in-law family relation|in-law family relation|FamilyHistoryEvidence|pre
+C0682322|in-law family relation|<noun>|<base>|in-law family relation|in-law family relation|FamilyHistoryEvidence|post
+C2349980|in-laws|<noun>|<base>|in-laws|in-laws|FamilyHistoryEvidence|pre
+C2349980|in-laws|<noun>|<base>|in-laws|in-laws|FamilyHistoryEvidence|post
+C2349980|in-law|<noun>|<base>|in-law|in-law|FamilyHistoryEvidence|pre
+C2349980|in-law|<noun>|<base>|in-law|in-law|FamilyHistoryEvidence|post
+C2349980|inlaws|<noun>|<base>|inlaws|inlaws|FamilyHistoryEvidence|pre
+C2349980|inlaws|<noun>|<base>|inlaws|inlaws|FamilyHistoryEvidence|post
+C2349980|inlaw|<noun>|<base>|inlaw|inlaw|FamilyHistoryEvidence|pre
+C2349980|inlaw|<noun>|<base>|inlaw|inlaw|FamilyHistoryEvidence|post
+C0029039|#is an only child|<noun>|<base>|#is an only child|#is an only child|FamilyHistoryEvidence|pre
+C0029039|#is an only child|<noun>|<base>|#is an only child|#is an only child|FamilyHistoryEvidence|post
+C0680063|kids|<noun>|<base>|kids|kids|FamilyHistoryEvidence|pre
+C0680063|kids|<noun>|<base>|kids|kids|FamilyHistoryEvidence|post
+C0680063|kid|<noun>|<base>|kid|kid|FamilyHistoryEvidence|pre
+C0680063|kid|<noun>|<base>|kid|kid|FamilyHistoryEvidence|post
+C0424972|large family|<noun>|<base>|large family|large family|FamilyHistoryEvidence|pre
+C0424972|large family|<noun>|<base>|large family|large family|FamilyHistoryEvidence|post
+C0337533|legal brother|<noun>|<base>|legal brother|legal brother|FamilyHistoryEvidence|pre
+C0337533|legal brother|<noun>|<base>|legal brother|legal brother|FamilyHistoryEvidence|post
+C0337545|legal child|<noun>|<base>|legal child|legal child|FamilyHistoryEvidence|pre
+C0337545|legal child|<noun>|<base>|legal child|legal child|FamilyHistoryEvidence|post
+C0337557|legal daughter|<noun>|<base>|legal daughter|legal daughter|FamilyHistoryEvidence|pre
+C0337557|legal daughter|<noun>|<base>|legal daughter|legal daughter|FamilyHistoryEvidence|post
+C0337501|legal father|<noun>|<base>|legal father|legal father|FamilyHistoryEvidence|pre
+C0337501|legal father|<noun>|<base>|legal father|legal father|FamilyHistoryEvidence|post
+C0337492|legal mother|<noun>|<base>|legal mother|legal mother|FamilyHistoryEvidence|pre
+C0337492|legal mother|<noun>|<base>|legal mother|legal mother|FamilyHistoryEvidence|post
+C0337470|legal parent|<noun>|<base>|legal parent|legal parent|FamilyHistoryEvidence|pre
+C0337470|legal parent|<noun>|<base>|legal parent|legal parent|FamilyHistoryEvidence|post
+C2346667|legal relation|<noun>|<base>|legal relation|legal relation|FamilyHistoryEvidence|pre
+C2346667|legal relation|<noun>|<base>|legal relation|legal relation|FamilyHistoryEvidence|post
+C2346667|legal relative|<noun>|<base>|legal relative|legal relative|FamilyHistoryEvidence|pre
+C2346667|legal relative|<noun>|<base>|legal relative|legal relative|FamilyHistoryEvidence|post
+C0337507|legal sibling|<noun>|<base>|legal sibling|legal sibling|FamilyHistoryEvidence|pre
+C0337507|legal sibling|<noun>|<base>|legal sibling|legal sibling|FamilyHistoryEvidence|post
+C0337520|legal sister|<noun>|<base>|legal sister|legal sister|FamilyHistoryEvidence|pre
+C0337520|legal sister|<noun>|<base>|legal sister|legal sister|FamilyHistoryEvidence|post
+C0337569|legal son|<noun>|<base>|legal son|legal son|FamilyHistoryEvidence|pre
+C0337569|legal son|<noun>|<base>|legal son|legal son|FamilyHistoryEvidence|post
+C0337582|male cousin|<noun>|<base>|male cousin|male cousin|FamilyHistoryEvidence|pre
+C0337582|male cousin|<noun>|<base>|male cousin|male cousin|FamilyHistoryEvidence|post
+C2732517|male fiance of subject|<noun>|<base>|male fiance of subject|male fiance of subject|FamilyHistoryEvidence|pre
+C2732517|male fiance of subject|<noun>|<base>|male fiance of subject|male fiance of subject|FamilyHistoryEvidence|post
+C0337585|male first cousin|<noun>|<base>|male first cousin|male first cousin|FamilyHistoryEvidence|pre
+C0337585|male first cousin|<noun>|<base>|male first cousin|male first cousin|FamilyHistoryEvidence|post
+C0337588|male second cousin|<noun>|<base>|male second cousin|male second cousin|FamilyHistoryEvidence|pre
+C0337588|male second cousin|<noun>|<base>|male second cousin|male second cousin|FamilyHistoryEvidence|post
+C0682323|marriage or cohabitation partner|<noun>|<base>|marriage or cohabitation partner|marriage or cohabitation partner|FamilyHistoryEvidence|pre
+C0682323|marriage or cohabitation partner|<noun>|<base>|marriage or cohabitation partner|marriage or cohabitation partner|FamilyHistoryEvidence|post
+C0162409|married person|<noun>|<base>|married person|married person|FamilyHistoryEvidence|pre
+C0162409|married person|<noun>|<base>|married person|married person|FamilyHistoryEvidence|post
+C1273523|maternal grand-father|<noun>|<base>|maternal grand-father|maternal grand-father|FamilyHistoryEvidence|pre
+C1273523|maternal grand-father|<noun>|<base>|maternal grand-father|maternal grand-father|FamilyHistoryEvidence|post
+C1273525|maternal grand-mother|<noun>|<base>|maternal grand-mother|maternal grand-mother|FamilyHistoryEvidence|pre
+C1273525|maternal grand-mother|<noun>|<base>|maternal grand-mother|maternal grand-mother|FamilyHistoryEvidence|post
+C2732390|maternal grandfather of subject|<noun>|<base>|maternal grandfather of subject|maternal grandfather of subject|FamilyHistoryEvidence|pre
+C2732390|maternal grandfather of subject|<noun>|<base>|maternal grandfather of subject|maternal grandfather of subject|FamilyHistoryEvidence|post
+C1273523|maternal grandfather|<noun>|<base>|maternal grandfather|maternal grandfather|FamilyHistoryEvidence|pre
+C1273523|maternal grandfather|<noun>|<base>|maternal grandfather|maternal grandfather|FamilyHistoryEvidence|post
+C2733123|maternal grandmother of subject|<noun>|<base>|maternal grandmother of subject|maternal grandmother of subject|FamilyHistoryEvidence|pre
+C2733123|maternal grandmother of subject|<noun>|<base>|maternal grandmother of subject|maternal grandmother of subject|FamilyHistoryEvidence|post
+C1273525|maternal grandmothers|<noun>|<base>|maternal grandmothers|maternal grandmothers|FamilyHistoryEvidence|pre
+C1273525|maternal grandmothers|<noun>|<base>|maternal grandmothers|maternal grandmothers|FamilyHistoryEvidence|post
+C1273525|maternal grandmother|<noun>|<base>|maternal grandmother|maternal grandmother|FamilyHistoryEvidence|pre
+C1273525|maternal grandmother|<noun>|<base>|maternal grandmother|maternal grandmother|FamilyHistoryEvidence|post
+C2347083|maternal relative|<noun>|<base>|maternal relative|maternal relative|FamilyHistoryEvidence|pre
+C2347083|maternal relative|<noun>|<base>|maternal relative|maternal relative|FamilyHistoryEvidence|post
+C0026591|maternal|<noun>|<base>|maternal|maternal|FamilyHistoryEvidence|pre
+C0026591|maternal|<noun>|<base>|maternal|maternal|FamilyHistoryEvidence|post
+C2347083|maternal|<noun>|<base>|maternal|maternal|FamilyHistoryEvidence|pre
+C2347083|maternal|<noun>|<base>|maternal|maternal|FamilyHistoryEvidence|post
+C0682323|mates|<noun>|<base>|mates|mates|FamilyHistoryEvidence|pre
+C0682323|mates|<noun>|<base>|mates|mates|FamilyHistoryEvidence|post
+C0682323|mate|<noun>|<base>|mate|mate|FamilyHistoryEvidence|pre
+C0682323|mate|<noun>|<base>|mate|mate|FamilyHistoryEvidence|post
+C0680036|matrifocal family|<noun>|<base>|matrifocal family|matrifocal family|FamilyHistoryEvidence|pre
+C0680036|matrifocal family|<noun>|<base>|matrifocal family|matrifocal family|FamilyHistoryEvidence|post
+C0683569|matrilineal descent|<noun>|<base>|matrilineal descent|matrilineal descent|FamilyHistoryEvidence|pre
+C0683569|matrilineal descent|<noun>|<base>|matrilineal descent|matrilineal descent|FamilyHistoryEvidence|post
+C0424972|member of large family|<noun>|<base>|member of large family|member of large family|FamilyHistoryEvidence|pre
+C0424972|member of large family|<noun>|<base>|member of large family|member of large family|FamilyHistoryEvidence|post
+C0682336|member of unstable family|<noun>|<base>|member of unstable family|member of unstable family|FamilyHistoryEvidence|pre
+C0682336|member of unstable family|<noun>|<base>|member of unstable family|member of unstable family|FamilyHistoryEvidence|post
+C0041432|monochorial twins|<noun>|<base>|monochorial twins|monochorial twins|FamilyHistoryEvidence|pre
+C0041432|monochorial twins|<noun>|<base>|monochorial twins|monochorial twins|FamilyHistoryEvidence|post
+C0041432|monochorial twin|<noun>|<base>|monochorial twin|monochorial twin|FamilyHistoryEvidence|pre
+C0041432|monochorial twin|<noun>|<base>|monochorial twin|monochorial twin|FamilyHistoryEvidence|post
+C0041432|monovular twins|<noun>|<base>|monovular twins|monovular twins|FamilyHistoryEvidence|pre
+C0041432|monovular twins|<noun>|<base>|monovular twins|monovular twins|FamilyHistoryEvidence|post
+C0041432|monovular twin|<noun>|<base>|monovular twin|monovular twin|FamilyHistoryEvidence|pre
+C0041432|monovular twin|<noun>|<base>|monovular twin|monovular twin|FamilyHistoryEvidence|post
+C0041432|monozygotic twins|<noun>|<base>|monozygotic twins|monozygotic twins|FamilyHistoryEvidence|pre
+C0041432|monozygotic twins|<noun>|<base>|monozygotic twins|monozygotic twins|FamilyHistoryEvidence|post
+C0041432|monozygotic twin|<noun>|<base>|monozygotic twin|monozygotic twin|FamilyHistoryEvidence|pre
+C0041432|monozygotic twin|<noun>|<base>|monozygotic twin|monozygotic twin|FamilyHistoryEvidence|post
+C0041432|monozygous twinning|<noun>|<base>|monozygous twinning|monozygous twinning|FamilyHistoryEvidence|pre
+C0041432|monozygous twinning|<noun>|<base>|monozygous twinning|monozygous twinning|FamilyHistoryEvidence|post
+C0041432|monozygous twin|<noun>|<base>|monozygous twin|monozygous twin|FamilyHistoryEvidence|pre
+C0041432|monozygous twin|<noun>|<base>|monozygous twin|monozygous twin|FamilyHistoryEvidence|post
+C2733255|mother of subject|<noun>|<base>|mother of subject|mother of subject|FamilyHistoryEvidence|pre
+C2733255|mother of subject|<noun>|<base>|mother of subject|mother of subject|FamilyHistoryEvidence|post
+C0337491|mother single|<noun>|<base>|mother single|mother single|FamilyHistoryEvidence|pre
+C0337491|mother single|<noun>|<base>|mother single|mother single|FamilyHistoryEvidence|post
+C0038947|mother substitute|<noun>|<base>|mother substitute|mother substitute|FamilyHistoryEvidence|pre
+C0038947|mother substitute|<noun>|<base>|mother substitute|mother substitute|FamilyHistoryEvidence|post
+C0237404|mother teenage|<noun>|<base>|mother teenage|mother teenage|FamilyHistoryEvidence|pre
+C0237404|mother teenage|<noun>|<base>|mother teenage|mother teenage|FamilyHistoryEvidence|post
+C0337613|mother working|<noun>|<base>|mother working|mother working|FamilyHistoryEvidence|pre
+C0337613|mother working|<noun>|<base>|mother working|mother working|FamilyHistoryEvidence|post
+C0038947|mother, gestational|<noun>|<base>|mother, gestational|mother, gestational|FamilyHistoryEvidence|pre
+C0038947|mother, gestational|<noun>|<base>|mother, gestational|mother, gestational|FamilyHistoryEvidence|post
+C0038947|mother, host|<noun>|<base>|mother, host|mother, host|FamilyHistoryEvidence|pre
+C0038947|mother, host|<noun>|<base>|mother, host|mother, host|FamilyHistoryEvidence|post
+C0038947|mother, surrogate|<noun>|<base>|mother, surrogate|mother, surrogate|FamilyHistoryEvidence|pre
+C0038947|mother, surrogate|<noun>|<base>|mother, surrogate|mother, surrogate|FamilyHistoryEvidence|post
+C0041746|mother, unmarried|<noun>|<base>|mother, unmarried|mother, unmarried|FamilyHistoryEvidence|pre
+C0041746|mother, unmarried|<noun>|<base>|mother, unmarried|mother, unmarried|FamilyHistoryEvidence|post
+C2349972|mother-in-law|<noun>|<base>|mother-in-law|mother-in-law|FamilyHistoryEvidence|pre
+C2349972|mother-in-law|<noun>|<base>|mother-in-law|mother-in-law|FamilyHistoryEvidence|post
+C2349972|mothers-in-law|<noun>|<base>|mothers-in-law|mothers-in-law|FamilyHistoryEvidence|pre
+C2349972|mothers-in-law|<noun>|<base>|mothers-in-law|mothers-in-law|FamilyHistoryEvidence|post
+C0026591|mothers|<noun>|<base>|mothers|mothers|FamilyHistoryEvidence|pre
+C0026591|mothers|<noun>|<base>|mothers|mothers|FamilyHistoryEvidence|post
+C2347083|mothers|<noun>|<base>|mothers|mothers|FamilyHistoryEvidence|pre
+C2347083|mothers|<noun>|<base>|mothers|mothers|FamilyHistoryEvidence|post
+C0026591|mother|<noun>|<base>|mother|mother|FamilyHistoryEvidence|pre
+C0026591|mother|<noun>|<base>|mother|mother|FamilyHistoryEvidence|post
+C0026753|multiple birth offspring|<noun>|<base>|multiple birth offspring|multiple birth offspring|FamilyHistoryEvidence|pre
+C0026753|multiple birth offspring|<noun>|<base>|multiple birth offspring|multiple birth offspring|FamilyHistoryEvidence|post
+C0026753|multiple birth|<noun>|<base>|multiple birth|multiple birth|FamilyHistoryEvidence|pre
+C0026753|multiple birth|<noun>|<base>|multiple birth|multiple birth|FamilyHistoryEvidence|post
+C0920598|multiplets|<noun>|<base>|multiplets|multiplets|FamilyHistoryEvidence|pre
+C0920598|multiplets|<noun>|<base>|multiplets|multiplets|FamilyHistoryEvidence|post
+C0920598|multiplet|<noun>|<base>|multiplet|multiplet|FamilyHistoryEvidence|pre
+C0920598|multiplet|<noun>|<base>|multiplet|multiplet|FamilyHistoryEvidence|post
+C0337528|natural brother|<noun>|<base>|natural brother|natural brother|FamilyHistoryEvidence|pre
+C0337528|natural brother|<noun>|<base>|natural brother|natural brother|FamilyHistoryEvidence|post
+C0337540|natural children|<noun>|<base>|natural children|natural children|FamilyHistoryEvidence|pre
+C0337540|natural children|<noun>|<base>|natural children|natural children|FamilyHistoryEvidence|post
+C0337540|natural child|<noun>|<base>|natural child|natural child|FamilyHistoryEvidence|pre
+C0337540|natural child|<noun>|<base>|natural child|natural child|FamilyHistoryEvidence|post
+C0337552|natural daughter|<noun>|<base>|natural daughter|natural daughter|FamilyHistoryEvidence|pre
+C0337552|natural daughter|<noun>|<base>|natural daughter|natural daughter|FamilyHistoryEvidence|post
+C0870940|natural family|<noun>|<base>|natural family|natural family|FamilyHistoryEvidence|pre
+C0870940|natural family|<noun>|<base>|natural family|natural family|FamilyHistoryEvidence|post
+C0337494|natural father|<noun>|<base>|natural father|natural father|FamilyHistoryEvidence|pre
+C0337494|natural father|<noun>|<base>|natural father|natural father|FamilyHistoryEvidence|post
+C0337477|natural grand-father|<noun>|<base>|natural grand-father|natural grand-father|FamilyHistoryEvidence|pre
+C0337477|natural grand-father|<noun>|<base>|natural grand-father|natural grand-father|FamilyHistoryEvidence|post
+C0337476|natural grand-mother|<noun>|<base>|natural grand-mother|natural grand-mother|FamilyHistoryEvidence|pre
+C0337476|natural grand-mother|<noun>|<base>|natural grand-mother|natural grand-mother|FamilyHistoryEvidence|post
+C0337472|natural grand-parent|<noun>|<base>|natural grand-parent|natural grand-parent|FamilyHistoryEvidence|pre
+C0337472|natural grand-parent|<noun>|<base>|natural grand-parent|natural grand-parent|FamilyHistoryEvidence|post
+C0337486|natural mother|<noun>|<base>|natural mother|natural mother|FamilyHistoryEvidence|pre
+C0337486|natural mother|<noun>|<base>|natural mother|natural mother|FamilyHistoryEvidence|post
+C0337465|natural parent|<noun>|<base>|natural parent|natural parent|FamilyHistoryEvidence|pre
+C0337465|natural parent|<noun>|<base>|natural parent|natural parent|FamilyHistoryEvidence|post
+C1266852|natural relative|<noun>|<base>|natural relative|natural relative|FamilyHistoryEvidence|pre
+C1266852|natural relative|<noun>|<base>|natural relative|natural relative|FamilyHistoryEvidence|post
+C0337502|natural sibling|<noun>|<base>|natural sibling|natural sibling|FamilyHistoryEvidence|pre
+C0337502|natural sibling|<noun>|<base>|natural sibling|natural sibling|FamilyHistoryEvidence|post
+C0337515|natural sister|<noun>|<base>|natural sister|natural sister|FamilyHistoryEvidence|pre
+C0337515|natural sister|<noun>|<base>|natural sister|natural sister|FamilyHistoryEvidence|post
+C0337564|natural son|<noun>|<base>|natural son|natural son|FamilyHistoryEvidence|pre
+C0337564|natural son|<noun>|<base>|natural son|natural son|FamilyHistoryEvidence|post
+C0337579|nephews|<noun>|<base>|nephews|nephews|FamilyHistoryEvidence|pre
+C0337579|nephews|<noun>|<base>|nephews|nephews|FamilyHistoryEvidence|post
+C0337579|nephew|<noun>|<base>|nephew|nephew|FamilyHistoryEvidence|pre
+C0337579|nephew|<noun>|<base>|nephew|nephew|FamilyHistoryEvidence|post
+C0337578|nieces|<noun>|<base>|nieces|nieces|FamilyHistoryEvidence|pre
+C0337578|nieces|<noun>|<base>|nieces|nieces|FamilyHistoryEvidence|post
+C0337578|niece|<noun>|<base>|niece|niece|FamilyHistoryEvidence|pre
+C0337578|niece|<noun>|<base>|niece|niece|FamilyHistoryEvidence|post
+C1273521|non-immediate family member|<noun>|<base>|non-immediate family member|non-immediate family member|FamilyHistoryEvidence|pre
+C1273521|non-immediate family member|<noun>|<base>|non-immediate family member|non-immediate family member|FamilyHistoryEvidence|post
+C0028574|nuclear family|<noun>|<base>|nuclear family|nuclear family|FamilyHistoryEvidence|pre
+C0028574|nuclear family|<noun>|<base>|nuclear family|nuclear family|FamilyHistoryEvidence|post
+C0680063|off-spring|<noun>|<base>|off-spring|off-spring|FamilyHistoryEvidence|pre
+C0680063|off-spring|<noun>|<base>|off-spring|off-spring|FamilyHistoryEvidence|post
+C0680063|offspring|<noun>|<base>|offspring|offspring|FamilyHistoryEvidence|pre
+C0680063|offspring|<noun>|<base>|offspring|offspring|FamilyHistoryEvidence|post
+C0683572|offspring, adult|<noun>|<base>|offspring, adult|offspring, adult|FamilyHistoryEvidence|pre
+C0683572|offspring, adult|<noun>|<base>|offspring, adult|offspring, adult|FamilyHistoryEvidence|post
+C0026753|offspring, multiple birth|<noun>|<base>|offspring, multiple birth|offspring, multiple birth|FamilyHistoryEvidence|pre
+C0026753|offspring, multiple birth|<noun>|<base>|offspring, multiple birth|offspring, multiple birth|FamilyHistoryEvidence|post
+C0680063|offsprings|<noun>|<base>|offsprings|offsprings|FamilyHistoryEvidence|pre
+C0680063|offsprings|<noun>|<base>|offsprings|offsprings|FamilyHistoryEvidence|post
+C0337537|older brother|<noun>|<base>|older brother|older brother|FamilyHistoryEvidence|pre
+C0337537|older brother|<noun>|<base>|older brother|older brother|FamilyHistoryEvidence|post
+C0337511|older sibling|<noun>|<base>|older sibling|older sibling|FamilyHistoryEvidence|pre
+C0337511|older sibling|<noun>|<base>|older sibling|older sibling|FamilyHistoryEvidence|post
+C0337524|older sister|<noun>|<base>|older sister|older sister|FamilyHistoryEvidence|pre
+C0337524|older sister|<noun>|<base>|older sister|older sister|FamilyHistoryEvidence|post
+C0337559|oldest daughter|<noun>|<base>|oldest daughter|oldest daughter|FamilyHistoryEvidence|pre
+C0337559|oldest daughter|<noun>|<base>|oldest daughter|oldest daughter|FamilyHistoryEvidence|post
+C0337571|oldest son|<noun>|<base>|oldest son|oldest son|FamilyHistoryEvidence|pre
+C0337571|oldest son|<noun>|<base>|oldest son|oldest son|FamilyHistoryEvidence|post
+C0917998|one parent family|<noun>|<base>|one parent family|one parent family|FamilyHistoryEvidence|pre
+C0917998|one parent family|<noun>|<base>|one parent family|one parent family|FamilyHistoryEvidence|post
+C0029039|only children|<noun>|<base>|only children|only children|FamilyHistoryEvidence|pre
+C0029039|only children|<noun>|<base>|only children|only children|FamilyHistoryEvidence|post
+C0029039|only child|<noun>|<base>|only child|only child|FamilyHistoryEvidence|pre
+C0029039|only child|<noun>|<base>|only child|only child|FamilyHistoryEvidence|post
+C0337558|only daughter|<noun>|<base>|only daughter|only daughter|FamilyHistoryEvidence|pre
+C0337558|only daughter|<noun>|<base>|only daughter|only daughter|FamilyHistoryEvidence|post
+C0337570|only sons|<noun>|<base>|only sons|only sons|FamilyHistoryEvidence|pre
+C0337570|only sons|<noun>|<base>|only sons|only sons|FamilyHistoryEvidence|post
+C0337570|only son|<noun>|<base>|only son|only son|FamilyHistoryEvidence|pre
+C0337570|only son|<noun>|<base>|only son|only son|FamilyHistoryEvidence|post
+C1273800|other related persons|<noun>|<base>|other related persons|other related persons|FamilyHistoryEvidence|pre
+C1273800|other related persons|<noun>|<base>|other related persons|other related persons|FamilyHistoryEvidence|post
+C0260096|parent and child|<noun>|<base>|parent and child|parent and child|FamilyHistoryEvidence|pre
+C0260096|parent and child|<noun>|<base>|parent and child|parent and child|FamilyHistoryEvidence|post
+C2732711|parent of subject|<noun>|<base>|parent of subject|parent of subject|FamilyHistoryEvidence|pre
+C2732711|parent of subject|<noun>|<base>|parent of subject|parent of subject|FamilyHistoryEvidence|post
+C0030551|parent of|<noun>|<base>|parent of|parent of|FamilyHistoryEvidence|pre
+C0030551|parent of|<noun>|<base>|parent of|parent of|FamilyHistoryEvidence|post
+C0037177|parent single|<noun>|<base>|parent single|parent single|FamilyHistoryEvidence|pre
+C0037177|parent single|<noun>|<base>|parent single|parent single|FamilyHistoryEvidence|post
+C0037177|parent, single|<noun>|<base>|parent, single|parent, single|FamilyHistoryEvidence|pre
+C0037177|parent, single|<noun>|<base>|parent, single|parent, single|FamilyHistoryEvidence|post
+C0037177|parenting single|<noun>|<base>|parenting single|parenting single|FamilyHistoryEvidence|pre
+C0037177|parenting single|<noun>|<base>|parenting single|parenting single|FamilyHistoryEvidence|post
+C0425149|parents divorced|<noun>|<base>|parents divorced|parents divorced|FamilyHistoryEvidence|pre
+C0425149|parents divorced|<noun>|<base>|parents divorced|parents divorced|FamilyHistoryEvidence|post
+C0037177|parents single|<noun>|<base>|parents single|parents single|FamilyHistoryEvidence|pre
+C0037177|parents single|<noun>|<base>|parents single|parents single|FamilyHistoryEvidence|post
+C0282288|parents step|<noun>|<base>|parents step|parents step|FamilyHistoryEvidence|pre
+C0282288|parents step|<noun>|<base>|parents step|parents step|FamilyHistoryEvidence|post
+C0337612|parents working|<noun>|<base>|parents working|parents working|FamilyHistoryEvidence|pre
+C0337612|parents working|<noun>|<base>|parents working|parents working|FamilyHistoryEvidence|post
+C0037177|parents, single|<noun>|<base>|parents, single|parents, single|FamilyHistoryEvidence|pre
+C0037177|parents, single|<noun>|<base>|parents, single|parents, single|FamilyHistoryEvidence|post
+C0030551|parents|<noun>|<base>|parents|parents|FamilyHistoryEvidence|pre
+C0030551|parents|<noun>|<base>|parents|parents|FamilyHistoryEvidence|post
+C0030551|parent|<noun>|<base>|parent|parent|FamilyHistoryEvidence|pre
+C0030551|parent|<noun>|<base>|parent|parent|FamilyHistoryEvidence|post
+C0682323|partner in relationship|<noun>|<base>|partner in relationship|partner in relationship|FamilyHistoryEvidence|pre
+C0682323|partner in relationship|<noun>|<base>|partner in relationship|partner in relationship|FamilyHistoryEvidence|post
+C0600393|partner, domestic|<noun>|<base>|partner, domestic|partner, domestic|FamilyHistoryEvidence|pre
+C0600393|partner, domestic|<noun>|<base>|partner, domestic|partner, domestic|FamilyHistoryEvidence|post
+C0600393|partners, domestic|<noun>|<base>|partners, domestic|partners, domestic|FamilyHistoryEvidence|pre
+C0600393|partners, domestic|<noun>|<base>|partners, domestic|partners, domestic|FamilyHistoryEvidence|post
+C0682323|partner|<noun>|<base>|partner|partner|FamilyHistoryEvidence|pre
+C0682323|partner|<noun>|<base>|partner|partner|FamilyHistoryEvidence|post
+C1273522|paternal grand-father|<noun>|<base>|paternal grand-father|paternal grand-father|FamilyHistoryEvidence|pre
+C1273522|paternal grand-father|<noun>|<base>|paternal grand-father|paternal grand-father|FamilyHistoryEvidence|post
+C1273524|paternal grand-mother|<noun>|<base>|paternal grand-mother|paternal grand-mother|FamilyHistoryEvidence|pre
+C1273524|paternal grand-mother|<noun>|<base>|paternal grand-mother|paternal grand-mother|FamilyHistoryEvidence|post
+C2732698|paternal grandfather of subject|<noun>|<base>|paternal grandfather of subject|paternal grandfather of subject|FamilyHistoryEvidence|pre
+C2732698|paternal grandfather of subject|<noun>|<base>|paternal grandfather of subject|paternal grandfather of subject|FamilyHistoryEvidence|post
+C1273522|paternal grandfather|<noun>|<base>|paternal grandfather|paternal grandfather|FamilyHistoryEvidence|pre
+C1273522|paternal grandfather|<noun>|<base>|paternal grandfather|paternal grandfather|FamilyHistoryEvidence|post
+C2733124|paternal grandmother of subject|<noun>|<base>|paternal grandmother of subject|paternal grandmother of subject|FamilyHistoryEvidence|pre
+C2733124|paternal grandmother of subject|<noun>|<base>|paternal grandmother of subject|paternal grandmother of subject|FamilyHistoryEvidence|post
+C1273524|paternal grandmother|<noun>|<base>|paternal grandmother|paternal grandmother|FamilyHistoryEvidence|pre
+C1273524|paternal grandmother|<noun>|<base>|paternal grandmother|paternal grandmother|FamilyHistoryEvidence|post
+C2347452|paternal relative|<noun>|<base>|paternal relative|paternal relative|FamilyHistoryEvidence|pre
+C2347452|paternal relative|<noun>|<base>|paternal relative|paternal relative|FamilyHistoryEvidence|post
+C2347452|paternal|<noun>|<base>|paternal|paternal|FamilyHistoryEvidence|pre
+C2347452|paternal|<noun>|<base>|paternal|paternal|FamilyHistoryEvidence|post
+C0680037|patrifocal family|<noun>|<base>|patrifocal family|patrifocal family|FamilyHistoryEvidence|pre
+C0680037|patrifocal family|<noun>|<base>|patrifocal family|patrifocal family|FamilyHistoryEvidence|post
+C0086282|people in the family|<noun>|<base>|people in the family|people in the family|FamilyHistoryEvidence|pre
+C0086282|people in the family|<noun>|<base>|people in the family|people in the family|FamilyHistoryEvidence|post
+C2732431|person in family of subject|<noun>|<base>|person in family of subject|person in family of subject|FamilyHistoryEvidence|pre
+C2732431|person in family of subject|<noun>|<base>|person in family of subject|person in family of subject|FamilyHistoryEvidence|post
+C0086282|person in the family|<noun>|<base>|person in the family|person in the family|FamilyHistoryEvidence|pre
+C0086282|person in the family|<noun>|<base>|person in the family|person in the family|FamilyHistoryEvidence|post
+C0162409|person, married|<noun>|<base>|person, married|person, married|FamilyHistoryEvidence|pre
+C0162409|person, married|<noun>|<base>|person, married|person, married|FamilyHistoryEvidence|post
+C0162409|persons, married|<noun>|<base>|persons, married|persons, married|FamilyHistoryEvidence|pre
+C0162409|persons, married|<noun>|<base>|persons, married|persons, married|FamilyHistoryEvidence|post
+C1948021|pro-bands|<noun>|<base>|pro-bands|pro-bands|FamilyHistoryEvidence|pre
+C1948021|pro-bands|<noun>|<base>|pro-bands|pro-bands|FamilyHistoryEvidence|post
+C1948021|pro-band|<noun>|<base>|pro-band|pro-band|FamilyHistoryEvidence|pre
+C1948021|pro-band|<noun>|<base>|pro-band|pro-band|FamilyHistoryEvidence|post
+C1948021|probands|<noun>|<base>|probands|probands|FamilyHistoryEvidence|pre
+C1948021|probands|<noun>|<base>|probands|probands|FamilyHistoryEvidence|post
+C1948021|proband|<noun>|<base>|proband|proband|FamilyHistoryEvidence|pre
+C1948021|proband|<noun>|<base>|proband|proband|FamilyHistoryEvidence|post
+C0680063|progenies|<noun>|<base>|progenies|progenies|FamilyHistoryEvidence|pre
+C0680063|progenies|<noun>|<base>|progenies|progenies|FamilyHistoryEvidence|post
+C0870134|progenitors|<noun>|<base>|progenitors|progenitors|FamilyHistoryEvidence|pre
+C0870134|progenitors|<noun>|<base>|progenitors|progenitors|FamilyHistoryEvidence|post
+C0870134|progenitor|<noun>|<base>|progenitor|progenitor|FamilyHistoryEvidence|pre
+C0870134|progenitor|<noun>|<base>|progenitor|progenitor|FamilyHistoryEvidence|post
+C0680063|progeny|<noun>|<base>|progeny|progeny|FamilyHistoryEvidence|pre
+C0680063|progeny|<noun>|<base>|progeny|progeny|FamilyHistoryEvidence|post
+C1948021|propositus|<noun>|<base>|propositus|propositus|FamilyHistoryEvidence|pre
+C1948021|propositus|<noun>|<base>|propositus|propositus|FamilyHistoryEvidence|post
+C0034373|quadruplet multiple birth|<noun>|<base>|quadruplet multiple birth|quadruplet multiple birth|FamilyHistoryEvidence|pre
+C0034373|quadruplet multiple birth|<noun>|<base>|quadruplet multiple birth|quadruplet multiple birth|FamilyHistoryEvidence|post
+C0034373|quadruplets|<noun>|<base>|quadruplets|quadruplets|FamilyHistoryEvidence|pre
+C0034373|quadruplets|<noun>|<base>|quadruplets|quadruplets|FamilyHistoryEvidence|post
+C0034373|quadruplet|<noun>|<base>|quadruplet|quadruplet|FamilyHistoryEvidence|pre
+C0034373|quadruplet|<noun>|<base>|quadruplet|quadruplet|FamilyHistoryEvidence|post
+C0034438|quintuplet multiple birth|<noun>|<base>|quintuplet multiple birth|quintuplet multiple birth|FamilyHistoryEvidence|pre
+C0034438|quintuplet multiple birth|<noun>|<base>|quintuplet multiple birth|quintuplet multiple birth|FamilyHistoryEvidence|post
+C0034438|quintuplets|<noun>|<base>|quintuplets|quintuplets|FamilyHistoryEvidence|pre
+C0034438|quintuplets|<noun>|<base>|quintuplets|quintuplets|FamilyHistoryEvidence|post
+C0034438|quintuplet|<noun>|<base>|quintuplet|quintuplet|FamilyHistoryEvidence|pre
+C0034438|quintuplet|<noun>|<base>|quintuplet|quintuplet|FamilyHistoryEvidence|post
+C0282174|reconstituted families|<noun>|<base>|reconstituted families|reconstituted families|FamilyHistoryEvidence|pre
+C0282174|reconstituted families|<noun>|<base>|reconstituted families|reconstituted families|FamilyHistoryEvidence|post
+C0282174|reconstituted family|<noun>|<base>|reconstituted family|reconstituted family|FamilyHistoryEvidence|pre
+C0282174|reconstituted family|<noun>|<base>|reconstituted family|reconstituted family|FamilyHistoryEvidence|post
+C1446393|refugee family|<noun>|<base>|refugee family|refugee family|FamilyHistoryEvidence|pre
+C1446393|refugee family|<noun>|<base>|refugee family|refugee family|FamilyHistoryEvidence|post
+C0080103|rel's|<noun>|<base>|rel's|rel's|FamilyHistoryEvidence|pre
+C0080103|rel's|<noun>|<base>|rel's|rel's|FamilyHistoryEvidence|post
+C2711322|related sperm donor for artificial insemination|<noun>|<base>|related sperm donor for artificial insemination|related sperm donor for artificial insemination|FamilyHistoryEvidence|pre
+C2711322|related sperm donor for artificial insemination|<noun>|<base>|related sperm donor for artificial insemination|related sperm donor for artificial insemination|FamilyHistoryEvidence|post
+C0080103|relation|<noun>|<base>|relation|relation|FamilyHistoryEvidence|pre
+C0080103|relation|<noun>|<base>|relation|relation|FamilyHistoryEvidence|post
+C0080103|relativeness|<noun>|<base>|relativeness|relativeness|FamilyHistoryEvidence|pre
+C0080103|relativeness|<noun>|<base>|relativeness|relativeness|FamilyHistoryEvidence|post
+C0080103|relatives|<noun>|<base>|relatives|relatives|FamilyHistoryEvidence|pre
+C0080103|relatives|<noun>|<base>|relatives|relatives|FamilyHistoryEvidence|post
+C0080103|relative|<noun>|<base>|relative|relative|FamilyHistoryEvidence|pre
+C0080103|relative|<noun>|<base>|relative|relative|FamilyHistoryEvidence|post
+C0337586|second cousin|<noun>|<base>|second cousin|second cousin|FamilyHistoryEvidence|pre
+C0337586|second cousin|<noun>|<base>|second cousin|second cousin|FamilyHistoryEvidence|post
+C1519210|second degree relative|<noun>|<base>|second degree relative|second degree relative|FamilyHistoryEvidence|pre
+C1519210|second degree relative|<noun>|<base>|second degree relative|second degree relative|FamilyHistoryEvidence|post
+C0524660|sextuplets|<noun>|<base>|sextuplets|sextuplets|FamilyHistoryEvidence|pre
+C0524660|sextuplets|<noun>|<base>|sextuplets|sextuplets|FamilyHistoryEvidence|post
+C0524660|sextuplet|<noun>|<base>|sextuplet|sextuplet|FamilyHistoryEvidence|pre
+C0524660|sextuplet|<noun>|<base>|sextuplet|sextuplet|FamilyHistoryEvidence|post
+C2733256|sibling of subject|<noun>|<base>|sibling of subject|sibling of subject|FamilyHistoryEvidence|pre
+C2733256|sibling of subject|<noun>|<base>|sibling of subject|sibling of subject|FamilyHistoryEvidence|post
+C0037047|siblings|<noun>|<base>|siblings|siblings|FamilyHistoryEvidence|pre
+C0037047|siblings|<noun>|<base>|siblings|siblings|FamilyHistoryEvidence|post
+C0037047|sibling|<noun>|<base>|sibling|sibling|FamilyHistoryEvidence|pre
+C0037047|sibling|<noun>|<base>|sibling|sibling|FamilyHistoryEvidence|post
+C0037047|sibs|<noun>|<base>|sibs|sibs|FamilyHistoryEvidence|pre
+C0037047|sibs|<noun>|<base>|sibs|sibs|FamilyHistoryEvidence|post
+C0037047|sib|<noun>|<base>|sib|sib|FamilyHistoryEvidence|pre
+C0037047|sib|<noun>|<base>|sib|sib|FamilyHistoryEvidence|post
+C0682323|significant others|<noun>|<base>|significant others|significant others|FamilyHistoryEvidence|pre
+C0682323|significant others|<noun>|<base>|significant others|significant others|FamilyHistoryEvidence|post
+C0682323|significant other|<noun>|<base>|significant other|significant other|FamilyHistoryEvidence|pre
+C0682323|significant other|<noun>|<base>|significant other|significant other|FamilyHistoryEvidence|post
+C0037178|single family parent|<noun>|<base>|single family parent|single family parent|FamilyHistoryEvidence|pre
+C0037178|single family parent|<noun>|<base>|single family parent|single family parent|FamilyHistoryEvidence|post
+C0337500|single father|<noun>|<base>|single father|single father|FamilyHistoryEvidence|pre
+C0337500|single father|<noun>|<base>|single father|single father|FamilyHistoryEvidence|post
+C0337491|single mothers|<noun>|<base>|single mothers|single mothers|FamilyHistoryEvidence|pre
+C0337491|single mothers|<noun>|<base>|single mothers|single mothers|FamilyHistoryEvidence|post
+C0337491|single mother|<noun>|<base>|single mother|single mother|FamilyHistoryEvidence|pre
+C0337491|single mother|<noun>|<base>|single mother|single mother|FamilyHistoryEvidence|post
+C0037178|single parent families|<noun>|<base>|single parent families|single parent families|FamilyHistoryEvidence|pre
+C0037178|single parent families|<noun>|<base>|single parent families|single parent families|FamilyHistoryEvidence|post
+C0580091|single parent family, father present|<noun>|<base>|single parent family, father present|single parent family, father present|FamilyHistoryEvidence|pre
+C0580091|single parent family, father present|<noun>|<base>|single parent family, father present|single parent family, father present|FamilyHistoryEvidence|post
+C0037178|single parent family|<noun>|<base>|single parent family|single parent family|FamilyHistoryEvidence|pre
+C0037178|single parent family|<noun>|<base>|single parent family|single parent family|FamilyHistoryEvidence|post
+C0037177|single parents|<noun>|<base>|single parents|single parents|FamilyHistoryEvidence|pre
+C0037177|single parents|<noun>|<base>|single parents|single parents|FamilyHistoryEvidence|post
+C0037177|single parent|<noun>|<base>|single parent|single parent|FamilyHistoryEvidence|pre
+C0037177|single parent|<noun>|<base>|single parent|single parent|FamilyHistoryEvidence|post
+C0037180|single step parent|<noun>|<base>|single step parent|single step parent|FamilyHistoryEvidence|pre
+C0037180|single step parent|<noun>|<base>|single step parent|single step parent|FamilyHistoryEvidence|post
+C0037180|single step-parents|<noun>|<base>|single step-parents|single step-parents|FamilyHistoryEvidence|pre
+C0037180|single step-parents|<noun>|<base>|single step-parents|single step-parents|FamilyHistoryEvidence|post
+C0037180|single step-parent|<noun>|<base>|single step-parent|single step-parent|FamilyHistoryEvidence|pre
+C0037180|single step-parent|<noun>|<base>|single step-parent|single step-parent|FamilyHistoryEvidence|post
+C0037180|single stepparents|<noun>|<base>|single stepparents|single stepparents|FamilyHistoryEvidence|pre
+C0037180|single stepparents|<noun>|<base>|single stepparents|single stepparents|FamilyHistoryEvidence|post
+C0037180|single stepparent|<noun>|<base>|single stepparent|single stepparent|FamilyHistoryEvidence|pre
+C0037180|single stepparent|<noun>|<base>|single stepparent|single stepparent|FamilyHistoryEvidence|post
+C0682327|single teenage mother|<noun>|<base>|single teenage mother|single teenage mother|FamilyHistoryEvidence|pre
+C0682327|single teenage mother|<noun>|<base>|single teenage mother|single teenage mother|FamilyHistoryEvidence|post
+C0680031|single-child family|<noun>|<base>|single-child family|single-child family|FamilyHistoryEvidence|pre
+C0680031|single-child family|<noun>|<base>|single-child family|single-child family|FamilyHistoryEvidence|post
+C0037178|single-parent families|<noun>|<base>|single-parent families|single-parent families|FamilyHistoryEvidence|pre
+C0037178|single-parent families|<noun>|<base>|single-parent families|single-parent families|FamilyHistoryEvidence|post
+C0037178|single-parent family|<noun>|<base>|single-parent family|single-parent family|FamilyHistoryEvidence|pre
+C0037178|single-parent family|<noun>|<base>|single-parent family|single-parent family|FamilyHistoryEvidence|post
+C0037177|single-parent|<noun>|<base>|single-parent|single-parent|FamilyHistoryEvidence|pre
+C0037177|single-parent|<noun>|<base>|single-parent|single-parent|FamilyHistoryEvidence|post
+C1313913|singletons|<noun>|<base>|singletons|singletons|FamilyHistoryEvidence|pre
+C1313913|singletons|<noun>|<base>|singletons|singletons|FamilyHistoryEvidence|post
+C1313913|singleton|<noun>|<base>|singleton|singleton|FamilyHistoryEvidence|pre
+C1313913|singleton|<noun>|<base>|singleton|singleton|FamilyHistoryEvidence|post
+C2732271|sister of subject|<noun>|<base>|sister of subject|sister of subject|FamilyHistoryEvidence|pre
+C2732271|sister of subject|<noun>|<base>|sister of subject|sister of subject|FamilyHistoryEvidence|post
+C2350006|sister-in-law|<noun>|<base>|sister-in-law|sister-in-law|FamilyHistoryEvidence|pre
+C2350006|sister-in-law|<noun>|<base>|sister-in-law|sister-in-law|FamilyHistoryEvidence|post
+C2350006|sisters-in-law|<noun>|<base>|sisters-in-law|sisters-in-law|FamilyHistoryEvidence|pre
+C2350006|sisters-in-law|<noun>|<base>|sisters-in-law|sisters-in-law|FamilyHistoryEvidence|post
+C0337514|sisters|<noun>|<base>|sisters|sisters|FamilyHistoryEvidence|pre
+C0337514|sisters|<noun>|<base>|sisters|sisters|FamilyHistoryEvidence|post
+C0337514|sister|<noun>|<base>|sister|sister|FamilyHistoryEvidence|pre
+C0337514|sister|<noun>|<base>|sister|sister|FamilyHistoryEvidence|post
+C2733584|son of subject|<noun>|<base>|son of subject|son of subject|FamilyHistoryEvidence|pre
+C2733584|son of subject|<noun>|<base>|son of subject|son of subject|FamilyHistoryEvidence|post
+C0683572|son, adult|<noun>|<base>|son, adult|son, adult|FamilyHistoryEvidence|pre
+C0683572|son, adult|<noun>|<base>|son, adult|son, adult|FamilyHistoryEvidence|post
+C2350007|son-in-law|<noun>|<base>|son-in-law|son-in-law|FamilyHistoryEvidence|pre
+C2350007|son-in-law|<noun>|<base>|son-in-law|son-in-law|FamilyHistoryEvidence|post
+C0683572|sons, adult|<noun>|<base>|sons, adult|sons, adult|FamilyHistoryEvidence|pre
+C0683572|sons, adult|<noun>|<base>|sons, adult|sons, adult|FamilyHistoryEvidence|post
+C2350007|sons-in-law|<noun>|<base>|sons-in-law|sons-in-law|FamilyHistoryEvidence|pre
+C2350007|sons-in-law|<noun>|<base>|sons-in-law|sons-in-law|FamilyHistoryEvidence|post
+C0037683|sons|<noun>|<base>|sons|sons|FamilyHistoryEvidence|pre
+C0037683|sons|<noun>|<base>|sons|sons|FamilyHistoryEvidence|post
+C0037683|son|<noun>|<base>|son|son|FamilyHistoryEvidence|pre
+C0037683|son|<noun>|<base>|son|son|FamilyHistoryEvidence|post
+C0087015|spouse caregivers|<noun>|<base>|spouse caregivers|spouse caregivers|FamilyHistoryEvidence|pre
+C0087015|spouse caregivers|<noun>|<base>|spouse caregivers|spouse caregivers|FamilyHistoryEvidence|post
+C0087015|spouse caregiver|<noun>|<base>|spouse caregiver|spouse caregiver|FamilyHistoryEvidence|pre
+C0087015|spouse caregiver|<noun>|<base>|spouse caregiver|spouse caregiver|FamilyHistoryEvidence|post
+C2732307|spouse of subject|<noun>|<base>|spouse of subject|spouse of subject|FamilyHistoryEvidence|pre
+C2732307|spouse of subject|<noun>|<base>|spouse of subject|spouse of subject|FamilyHistoryEvidence|post
+C0682323|spouse or significant other|<noun>|<base>|spouse or significant other|spouse or significant other|FamilyHistoryEvidence|pre
+C0682323|spouse or significant other|<noun>|<base>|spouse or significant other|spouse or significant other|FamilyHistoryEvidence|post
+C0162409|spouses|<noun>|<base>|spouses|spouses|FamilyHistoryEvidence|pre
+C0162409|spouses|<noun>|<base>|spouses|spouses|FamilyHistoryEvidence|post
+C0162409|spouse|<noun>|<base>|spouse|spouse|FamilyHistoryEvidence|pre
+C0162409|spouse|<noun>|<base>|spouse|spouse|FamilyHistoryEvidence|post
+C0337514|sr - sister|<noun>|<base>|sr - sister|sr - sister|FamilyHistoryEvidence|pre
+C0337514|sr - sister|<noun>|<base>|sr - sister|sr - sister|FamilyHistoryEvidence|post
+C0337530|step brother|<noun>|<base>|step brother|step brother|FamilyHistoryEvidence|pre
+C0337530|step brother|<noun>|<base>|step brother|step brother|FamilyHistoryEvidence|post
+C0337542|step child|<noun>|<base>|step child|step child|FamilyHistoryEvidence|pre
+C0337542|step child|<noun>|<base>|step child|step child|FamilyHistoryEvidence|post
+C0337554|step daughter|<noun>|<base>|step daughter|step daughter|FamilyHistoryEvidence|pre
+C0337554|step daughter|<noun>|<base>|step daughter|step daughter|FamilyHistoryEvidence|post
+C0282175|step families|<noun>|<base>|step families|step families|FamilyHistoryEvidence|pre
+C0282175|step families|<noun>|<base>|step families|step families|FamilyHistoryEvidence|post
+C0682318|step family relation|<noun>|<base>|step family relation|step family relation|FamilyHistoryEvidence|pre
+C0682318|step family relation|<noun>|<base>|step family relation|step family relation|FamilyHistoryEvidence|post
+C0282175|step family|<noun>|<base>|step family|step family|FamilyHistoryEvidence|pre
+C0282175|step family|<noun>|<base>|step family|step family|FamilyHistoryEvidence|post
+C0282288|step parents|<noun>|<base>|step parents|step parents|FamilyHistoryEvidence|pre
+C0282288|step parents|<noun>|<base>|step parents|step parents|FamilyHistoryEvidence|post
+C0282288|step parent|<noun>|<base>|step parent|step parent|FamilyHistoryEvidence|pre
+C0282288|step parent|<noun>|<base>|step parent|step parent|FamilyHistoryEvidence|post
+C2348536|step relation|<noun>|<base>|step relation|step relation|FamilyHistoryEvidence|pre
+C2348536|step relation|<noun>|<base>|step relation|step relation|FamilyHistoryEvidence|post
+C2348536|step relative|<noun>|<base>|step relative|step relative|FamilyHistoryEvidence|pre
+C2348536|step relative|<noun>|<base>|step relative|step relative|FamilyHistoryEvidence|post
+C0337504|step sibling|<noun>|<base>|step sibling|step sibling|FamilyHistoryEvidence|pre
+C0337504|step sibling|<noun>|<base>|step sibling|step sibling|FamilyHistoryEvidence|post
+C0337517|step sister|<noun>|<base>|step sister|step sister|FamilyHistoryEvidence|pre
+C0337517|step sister|<noun>|<base>|step sister|step sister|FamilyHistoryEvidence|post
+C0337566|step son|<noun>|<base>|step son|step son|FamilyHistoryEvidence|pre
+C0337566|step son|<noun>|<base>|step son|step son|FamilyHistoryEvidence|post
+C0337542|step-child|<noun>|<base>|step-child|step-child|FamilyHistoryEvidence|pre
+C0337542|step-child|<noun>|<base>|step-child|step-child|FamilyHistoryEvidence|post
+C0337554|step-daughters|<noun>|<base>|step-daughters|step-daughters|FamilyHistoryEvidence|pre
+C0337554|step-daughters|<noun>|<base>|step-daughters|step-daughters|FamilyHistoryEvidence|post
+C0337554|step-daughter|<noun>|<base>|step-daughter|step-daughter|FamilyHistoryEvidence|pre
+C0337554|step-daughter|<noun>|<base>|step-daughter|step-daughter|FamilyHistoryEvidence|post
+C0282175|step-families|<noun>|<base>|step-families|step-families|FamilyHistoryEvidence|pre
+C0282175|step-families|<noun>|<base>|step-families|step-families|FamilyHistoryEvidence|post
+C0282175|step-family|<noun>|<base>|step-family|step-family|FamilyHistoryEvidence|pre
+C0282175|step-family|<noun>|<base>|step-family|step-family|FamilyHistoryEvidence|post
+C0337496|step-father|<noun>|<base>|step-father|step-father|FamilyHistoryEvidence|pre
+C0337496|step-father|<noun>|<base>|step-father|step-father|FamilyHistoryEvidence|post
+C0337488|step-mothers|<noun>|<base>|step-mothers|step-mothers|FamilyHistoryEvidence|pre
+C0337488|step-mothers|<noun>|<base>|step-mothers|step-mothers|FamilyHistoryEvidence|post
+C0337488|step-mother|<noun>|<base>|step-mother|step-mother|FamilyHistoryEvidence|pre
+C0337488|step-mother|<noun>|<base>|step-mother|step-mother|FamilyHistoryEvidence|post
+C0037180|step-parent, single|<noun>|<base>|step-parent, single|step-parent, single|FamilyHistoryEvidence|pre
+C0037180|step-parent, single|<noun>|<base>|step-parent, single|step-parent, single|FamilyHistoryEvidence|post
+C0037180|step-parents, single|<noun>|<base>|step-parents, single|step-parents, single|FamilyHistoryEvidence|pre
+C0037180|step-parents, single|<noun>|<base>|step-parents, single|step-parents, single|FamilyHistoryEvidence|post
+C0282288|step-parents|<noun>|<base>|step-parents|step-parents|FamilyHistoryEvidence|pre
+C0282288|step-parents|<noun>|<base>|step-parents|step-parents|FamilyHistoryEvidence|post
+C0282288|step-parent|<noun>|<base>|step-parent|step-parent|FamilyHistoryEvidence|pre
+C0282288|step-parent|<noun>|<base>|step-parent|step-parent|FamilyHistoryEvidence|post
+C0337504|step-sibling|<noun>|<base>|step-sibling|step-sibling|FamilyHistoryEvidence|pre
+C0337504|step-sibling|<noun>|<base>|step-sibling|step-sibling|FamilyHistoryEvidence|post
+C0337517|step-sisters|<noun>|<base>|step-sisters|step-sisters|FamilyHistoryEvidence|pre
+C0337517|step-sisters|<noun>|<base>|step-sisters|step-sisters|FamilyHistoryEvidence|post
+C0337517|step-sister|<noun>|<base>|step-sister|step-sister|FamilyHistoryEvidence|pre
+C0337517|step-sister|<noun>|<base>|step-sister|step-sister|FamilyHistoryEvidence|post
+C0337566|step-sons|<noun>|<base>|step-sons|step-sons|FamilyHistoryEvidence|pre
+C0337566|step-sons|<noun>|<base>|step-sons|step-sons|FamilyHistoryEvidence|post
+C0337566|step-son|<noun>|<base>|step-son|step-son|FamilyHistoryEvidence|pre
+C0337566|step-son|<noun>|<base>|step-son|step-son|FamilyHistoryEvidence|post
+C0337530|stepbrothers|<noun>|<base>|stepbrothers|stepbrothers|FamilyHistoryEvidence|pre
+C0337530|stepbrothers|<noun>|<base>|stepbrothers|stepbrothers|FamilyHistoryEvidence|post
+C0337530|stepbrother|<noun>|<base>|stepbrother|stepbrother|FamilyHistoryEvidence|pre
+C0337530|stepbrother|<noun>|<base>|stepbrother|stepbrother|FamilyHistoryEvidence|post
+C0337542|stepchildrens|<noun>|<base>|stepchildrens|stepchildrens|FamilyHistoryEvidence|pre
+C0337542|stepchildrens|<noun>|<base>|stepchildrens|stepchildrens|FamilyHistoryEvidence|post
+C0337542|stepchildren|<noun>|<base>|stepchildren|stepchildren|FamilyHistoryEvidence|pre
+C0337542|stepchildren|<noun>|<base>|stepchildren|stepchildren|FamilyHistoryEvidence|post
+C0337542|stepchild|<noun>|<base>|stepchild|stepchild|FamilyHistoryEvidence|pre
+C0337542|stepchild|<noun>|<base>|stepchild|stepchild|FamilyHistoryEvidence|post
+C0337554|stepdaughters|<noun>|<base>|stepdaughters|stepdaughters|FamilyHistoryEvidence|pre
+C0337554|stepdaughters|<noun>|<base>|stepdaughters|stepdaughters|FamilyHistoryEvidence|post
+C0337554|stepdaughter|<noun>|<base>|stepdaughter|stepdaughter|FamilyHistoryEvidence|pre
+C0337554|stepdaughter|<noun>|<base>|stepdaughter|stepdaughter|FamilyHistoryEvidence|post
+C0282175|stepfamilies|<noun>|<base>|stepfamilies|stepfamilies|FamilyHistoryEvidence|pre
+C0282175|stepfamilies|<noun>|<base>|stepfamilies|stepfamilies|FamilyHistoryEvidence|post
+C0282175|stepfamily|<noun>|<base>|stepfamily|stepfamily|FamilyHistoryEvidence|pre
+C0282175|stepfamily|<noun>|<base>|stepfamily|stepfamily|FamilyHistoryEvidence|post
+C0337496|stepfathers|<noun>|<base>|stepfathers|stepfathers|FamilyHistoryEvidence|pre
+C0337496|stepfathers|<noun>|<base>|stepfathers|stepfathers|FamilyHistoryEvidence|post
+C0337496|stepfather|<noun>|<base>|stepfather|stepfather|FamilyHistoryEvidence|pre
+C0337496|stepfather|<noun>|<base>|stepfather|stepfather|FamilyHistoryEvidence|post
+C0337488|stepmothers|<noun>|<base>|stepmothers|stepmothers|FamilyHistoryEvidence|pre
+C0337488|stepmothers|<noun>|<base>|stepmothers|stepmothers|FamilyHistoryEvidence|post
+C0337488|stepmother|<noun>|<base>|stepmother|stepmother|FamilyHistoryEvidence|pre
+C0337488|stepmother|<noun>|<base>|stepmother|stepmother|FamilyHistoryEvidence|post
+C0037180|stepparent, single|<noun>|<base>|stepparent, single|stepparent, single|FamilyHistoryEvidence|pre
+C0037180|stepparent, single|<noun>|<base>|stepparent, single|stepparent, single|FamilyHistoryEvidence|post
+C0037180|stepparents, single|<noun>|<base>|stepparents, single|stepparents, single|FamilyHistoryEvidence|pre
+C0037180|stepparents, single|<noun>|<base>|stepparents, single|stepparents, single|FamilyHistoryEvidence|post
+C0282288|stepparents|<noun>|<base>|stepparents|stepparents|FamilyHistoryEvidence|pre
+C0282288|stepparents|<noun>|<base>|stepparents|stepparents|FamilyHistoryEvidence|post
+C0282288|stepparent|<noun>|<base>|stepparent|stepparent|FamilyHistoryEvidence|pre
+C0282288|stepparent|<noun>|<base>|stepparent|stepparent|FamilyHistoryEvidence|post
+C0337517|stepsisters|<noun>|<base>|stepsisters|stepsisters|FamilyHistoryEvidence|pre
+C0337517|stepsisters|<noun>|<base>|stepsisters|stepsisters|FamilyHistoryEvidence|post
+C0337517|stepsister|<noun>|<base>|stepsister|stepsister|FamilyHistoryEvidence|pre
+C0337517|stepsister|<noun>|<base>|stepsister|stepsister|FamilyHistoryEvidence|post
+C0337566|stepsons|<noun>|<base>|stepsons|stepsons|FamilyHistoryEvidence|pre
+C0337566|stepsons|<noun>|<base>|stepsons|stepsons|FamilyHistoryEvidence|post
+C0337566|stepson|<noun>|<base>|stepson|stepson|FamilyHistoryEvidence|pre
+C0337566|stepson|<noun>|<base>|stepson|stepson|FamilyHistoryEvidence|post
+C0337543|surrogate child|<noun>|<base>|surrogate child|surrogate child|FamilyHistoryEvidence|pre
+C0337543|surrogate child|<noun>|<base>|surrogate child|surrogate child|FamilyHistoryEvidence|post
+C0337555|surrogate daughter|<noun>|<base>|surrogate daughter|surrogate daughter|FamilyHistoryEvidence|pre
+C0337555|surrogate daughter|<noun>|<base>|surrogate daughter|surrogate daughter|FamilyHistoryEvidence|post
+C0682321|surrogate family relation|<noun>|<base>|surrogate family relation|surrogate family relation|FamilyHistoryEvidence|pre
+C0682321|surrogate family relation|<noun>|<base>|surrogate family relation|surrogate family relation|FamilyHistoryEvidence|post
+C0337497|surrogate father|<noun>|<base>|surrogate father|surrogate father|FamilyHistoryEvidence|pre
+C0337497|surrogate father|<noun>|<base>|surrogate father|surrogate father|FamilyHistoryEvidence|post
+C0038947|surrogate mothers|<noun>|<base>|surrogate mothers|surrogate mothers|FamilyHistoryEvidence|pre
+C0038947|surrogate mothers|<noun>|<base>|surrogate mothers|surrogate mothers|FamilyHistoryEvidence|post
+C0038947|surrogate mother|<noun>|<base>|surrogate mother|surrogate mother|FamilyHistoryEvidence|pre
+C0038947|surrogate mother|<noun>|<base>|surrogate mother|surrogate mother|FamilyHistoryEvidence|post
+C0337467|surrogate parent|<noun>|<base>|surrogate parent|surrogate parent|FamilyHistoryEvidence|pre
+C0337467|surrogate parent|<noun>|<base>|surrogate parent|surrogate parent|FamilyHistoryEvidence|post
+C0337567|surrogate son|<noun>|<base>|surrogate son|surrogate son|FamilyHistoryEvidence|pre
+C0337567|surrogate son|<noun>|<base>|surrogate son|surrogate son|FamilyHistoryEvidence|post
+C0680035|symmetrical family|<noun>|<base>|symmetrical family|symmetrical family|FamilyHistoryEvidence|pre
+C0680035|symmetrical family|<noun>|<base>|symmetrical family|symmetrical family|FamilyHistoryEvidence|post
+C0237404|teenage mother|<noun>|<base>|teenage mother|teenage mother|FamilyHistoryEvidence|pre
+C0237404|teenage mother|<noun>|<base>|teenage mother|teenage mother|FamilyHistoryEvidence|post
+C0041095|triplet multiple birth|<noun>|<base>|triplet multiple birth|triplet multiple birth|FamilyHistoryEvidence|pre
+C0041095|triplet multiple birth|<noun>|<base>|triplet multiple birth|triplet multiple birth|FamilyHistoryEvidence|post
+C0041095|triplets|<noun>|<base>|triplets|triplets|FamilyHistoryEvidence|pre
+C0041095|triplets|<noun>|<base>|triplets|triplets|FamilyHistoryEvidence|post
+C0337534|twin brothers|<noun>|<base>|twin brothers|twin brothers|FamilyHistoryEvidence|pre
+C0337534|twin brothers|<noun>|<base>|twin brothers|twin brothers|FamilyHistoryEvidence|post
+C0337534|twin brother|<noun>|<base>|twin brother|twin brother|FamilyHistoryEvidence|pre
+C0337534|twin brother|<noun>|<base>|twin brother|twin brother|FamilyHistoryEvidence|post
+C0041427|twin sibling|<noun>|<base>|twin sibling|twin sibling|FamilyHistoryEvidence|pre
+C0041427|twin sibling|<noun>|<base>|twin sibling|twin sibling|FamilyHistoryEvidence|post
+C0337521|twin sisters|<noun>|<base>|twin sisters|twin sisters|FamilyHistoryEvidence|pre
+C0337521|twin sisters|<noun>|<base>|twin sisters|twin sisters|FamilyHistoryEvidence|post
+C0337521|twin sister|<noun>|<base>|twin sister|twin sister|FamilyHistoryEvidence|pre
+C0337521|twin sister|<noun>|<base>|twin sister|twin sister|FamilyHistoryEvidence|post
+C0041429|twin, dizygotic|<noun>|<base>|twin, dizygotic|twin, dizygotic|FamilyHistoryEvidence|pre
+C0041429|twin, dizygotic|<noun>|<base>|twin, dizygotic|twin, dizygotic|FamilyHistoryEvidence|post
+C0041429|twin, fraternal|<noun>|<base>|twin, fraternal|twin, fraternal|FamilyHistoryEvidence|pre
+C0041429|twin, fraternal|<noun>|<base>|twin, fraternal|twin, fraternal|FamilyHistoryEvidence|post
+C0041432|twin, identical|<noun>|<base>|twin, identical|twin, identical|FamilyHistoryEvidence|pre
+C0041432|twin, identical|<noun>|<base>|twin, identical|twin, identical|FamilyHistoryEvidence|post
+C0041432|twin, monozygotic|<noun>|<base>|twin, monozygotic|twin, monozygotic|FamilyHistoryEvidence|pre
+C0041432|twin, monozygotic|<noun>|<base>|twin, monozygotic|twin, monozygotic|FamilyHistoryEvidence|post
+C0872326|twin/multiplet|<noun>|<base>|twin/multiplet|twin/multiplet|FamilyHistoryEvidence|pre
+C0872326|twin/multiplet|<noun>|<base>|twin/multiplet|twin/multiplet|FamilyHistoryEvidence|post
+C0041427|twinned|<noun>|<base>|twinned|twinned|FamilyHistoryEvidence|pre
+C0041427|twinned|<noun>|<base>|twinned|twinned|FamilyHistoryEvidence|post
+C0041427|twinness|<noun>|<base>|twinness|twinness|FamilyHistoryEvidence|pre
+C0041427|twinness|<noun>|<base>|twinness|twinness|FamilyHistoryEvidence|post
+C0041427|twinning|<noun>|<base>|twinning|twinning|FamilyHistoryEvidence|pre
+C0041427|twinning|<noun>|<base>|twinning|twinning|FamilyHistoryEvidence|post
+C0041429|twins fraternal|<noun>|<base>|twins fraternal|twins fraternal|FamilyHistoryEvidence|pre
+C0041429|twins fraternal|<noun>|<base>|twins fraternal|twins fraternal|FamilyHistoryEvidence|post
+C0682333|twins growing up together|<noun>|<base>|twins growing up together|twins growing up together|FamilyHistoryEvidence|pre
+C0682333|twins growing up together|<noun>|<base>|twins growing up together|twins growing up together|FamilyHistoryEvidence|post
+C0682334|twins separated at birth|<noun>|<base>|twins separated at birth|twins separated at birth|FamilyHistoryEvidence|pre
+C0682334|twins separated at birth|<noun>|<base>|twins separated at birth|twins separated at birth|FamilyHistoryEvidence|post
+C0041429|twins, dizygotic|<noun>|<base>|twins, dizygotic|twins, dizygotic|FamilyHistoryEvidence|pre
+C0041429|twins, dizygotic|<noun>|<base>|twins, dizygotic|twins, dizygotic|FamilyHistoryEvidence|post
+C0041429|twins, fraternal|<noun>|<base>|twins, fraternal|twins, fraternal|FamilyHistoryEvidence|pre
+C0041429|twins, fraternal|<noun>|<base>|twins, fraternal|twins, fraternal|FamilyHistoryEvidence|post
+C0041432|twins, identical|<noun>|<base>|twins, identical|twins, identical|FamilyHistoryEvidence|pre
+C0041432|twins, identical|<noun>|<base>|twins, identical|twins, identical|FamilyHistoryEvidence|post
+C0041432|twins, monozygotic|<noun>|<base>|twins, monozygotic|twins, monozygotic|FamilyHistoryEvidence|pre
+C0041432|twins, monozygotic|<noun>|<base>|twins, monozygotic|twins, monozygotic|FamilyHistoryEvidence|post
+C0041427|twins|<noun>|<base>|twins|twins|FamilyHistoryEvidence|pre
+C0041427|twins|<noun>|<base>|twins|twins|FamilyHistoryEvidence|post
+C0041427|twin|<noun>|<base>|twin|twin|FamilyHistoryEvidence|pre
+C0041427|twin|<noun>|<base>|twin|twin|FamilyHistoryEvidence|post
+C0680032|two-child family|<noun>|<base>|two-child family|two-child family|FamilyHistoryEvidence|pre
+C0680032|two-child family|<noun>|<base>|two-child family|two-child family|FamilyHistoryEvidence|post
+C2733544|uncle of subject|<noun>|<base>|uncle of subject|uncle of subject|FamilyHistoryEvidence|pre
+C2733544|uncle of subject|<noun>|<base>|uncle of subject|uncle of subject|FamilyHistoryEvidence|post
+C0337577|uncles|<noun>|<base>|uncles|uncles|FamilyHistoryEvidence|pre
+C0337577|uncles|<noun>|<base>|uncles|uncles|FamilyHistoryEvidence|post
+C0337577|uncle|<noun>|<base>|uncle|uncle|FamilyHistoryEvidence|pre
+C0337577|uncle|<noun>|<base>|uncle|uncle|FamilyHistoryEvidence|post
+C0041432|uniovular twins|<noun>|<base>|uniovular twins|uniovular twins|FamilyHistoryEvidence|pre
+C0041432|uniovular twins|<noun>|<base>|uniovular twins|uniovular twins|FamilyHistoryEvidence|post
+C0041432|uniovular twin|<noun>|<base>|uniovular twin|uniovular twin|FamilyHistoryEvidence|pre
+C0041432|uniovular twin|<noun>|<base>|uniovular twin|uniovular twin|FamilyHistoryEvidence|post
+C0041745|unmarried father|<noun>|<base>|unmarried father|unmarried father|FamilyHistoryEvidence|pre
+C0041745|unmarried father|<noun>|<base>|unmarried father|unmarried father|FamilyHistoryEvidence|post
+C0041746|unmarried mother|<noun>|<base>|unmarried mother|unmarried mother|FamilyHistoryEvidence|pre
+C0041746|unmarried mother|<noun>|<base>|unmarried mother|unmarried mother|FamilyHistoryEvidence|post
+C0037177|unmarried parent|<noun>|<base>|unmarried parent|unmarried parent|FamilyHistoryEvidence|pre
+C0037177|unmarried parent|<noun>|<base>|unmarried parent|unmarried parent|FamilyHistoryEvidence|post
+C0008101|unwanted children|<noun>|<base>|unwanted children|unwanted children|FamilyHistoryEvidence|pre
+C0008101|unwanted children|<noun>|<base>|unwanted children|unwanted children|FamilyHistoryEvidence|post
+C0008101|unwanted child|<noun>|<base>|unwanted child|unwanted child|FamilyHistoryEvidence|pre
+C0008101|unwanted child|<noun>|<base>|unwanted child|unwanted child|FamilyHistoryEvidence|post
+C0041746|unwed mothers|<noun>|<base>|unwed mothers|unwed mothers|FamilyHistoryEvidence|pre
+C0041746|unwed mothers|<noun>|<base>|unwed mothers|unwed mothers|FamilyHistoryEvidence|post
+C0043174|widower|<noun>|<base>|widower|widower|FamilyHistoryEvidence|pre
+C0043174|widower|<noun>|<base>|widower|widower|FamilyHistoryEvidence|post
+C0043174|widow|<noun>|<base>|widow|widow|FamilyHistoryEvidence|pre
+C0043174|widow|<noun>|<base>|widow|widow|FamilyHistoryEvidence|post
+C2732834|wife of subject|<noun>|<base>|wife of subject|wife of subject|FamilyHistoryEvidence|pre
+C2732834|wife of subject|<noun>|<base>|wife of subject|wife of subject|FamilyHistoryEvidence|post
+C0242665|wifes|<noun>|<base>|wifes|wifes|FamilyHistoryEvidence|pre
+C0242665|wifes|<noun>|<base>|wifes|wifes|FamilyHistoryEvidence|post
+C0242665|wife|<noun>|<base>|wife|wife|FamilyHistoryEvidence|pre
+C0242665|wife|<noun>|<base>|wife|wife|FamilyHistoryEvidence|post
+C0242665|wives|<noun>|<base>|wives|wives|FamilyHistoryEvidence|pre
+C0242665|wives|<noun>|<base>|wives|wives|FamilyHistoryEvidence|post
+C0337614|working father|<noun>|<base>|working father|working father|FamilyHistoryEvidence|pre
+C0337614|working father|<noun>|<base>|working father|working father|FamilyHistoryEvidence|post
+C0337613|working mother|<noun>|<base>|working mother|working mother|FamilyHistoryEvidence|pre
+C0337613|working mother|<noun>|<base>|working mother|working mother|FamilyHistoryEvidence|post
+C0337612|working parent|<noun>|<base>|working parent|working parent|FamilyHistoryEvidence|pre
+C0337612|working parent|<noun>|<base>|working parent|working parent|FamilyHistoryEvidence|post
+C0337538|younger brother|<noun>|<base>|younger brother|younger brother|FamilyHistoryEvidence|pre
+C0337538|younger brother|<noun>|<base>|younger brother|younger brother|FamilyHistoryEvidence|post
+C0337547|younger child|<noun>|<base>|younger child|younger child|FamilyHistoryEvidence|pre
+C0337547|younger child|<noun>|<base>|younger child|younger child|FamilyHistoryEvidence|post
+C0337512|younger sibling|<noun>|<base>|younger sibling|younger sibling|FamilyHistoryEvidence|pre
+C0337512|younger sibling|<noun>|<base>|younger sibling|younger sibling|FamilyHistoryEvidence|post
+C0337525|younger sister|<noun>|<base>|younger sister|younger sister|FamilyHistoryEvidence|pre
+C0337525|younger sister|<noun>|<base>|younger sister|younger sister|FamilyHistoryEvidence|post
+C0337560|youngest daughter|<noun>|<base>|youngest daughter|youngest daughter|FamilyHistoryEvidence|pre
+C0337560|youngest daughter|<noun>|<base>|youngest daughter|youngest daughter|FamilyHistoryEvidence|post
+C0337572|youngest son|<noun>|<base>|youngest son|youngest son|FamilyHistoryEvidence|pre
+C0337572|youngest son|<noun>|<base>|youngest son|youngest son|FamilyHistoryEvidence|post

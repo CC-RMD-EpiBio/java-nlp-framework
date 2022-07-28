@@ -1,0 +1,45 @@
+ExpanedFormsFromLvg 
+
+This tool creates ....
+
+
+The output is in the UMLS lragr format plus additional information. 
+
+The output is in the following format: 
+
+     
+TermID|variant|pos|infl|Concept Name|ontology Seed|category|Sources|SourceIdentifiers|OntologyId|History|cost|
+   
+Where the concept Name is the concept found via traversing through the UMLS hierarchy 
+from the point of the concept taken from the ontology, otherwise referred to as the ontology seed.
+The category is the top level category taken from the ontology.  The sources and source identifiers 
+are the UMLS sources and concept identifiers (cuis) of the concept name. The ontology ID is the 
+id of the seed term from the ontology.  History and cost are explained above. 
+
+Some filtering that is being hooked in includes
+                         LVG's flow component
+   syntatic uninversion  (-f:S)
+   remove Nec and NOS     -f:0
+   
+For two word terms, generate "of" inversions and "of the" inversions
+For two word terms, generate permuted terms
+
+   
+
+Usage:  java -jar ExpanedFormsFromLvg --lvgDir=/some/path/to/lvg [Options]
+
+Options
+   --lvgDir=/some/path/to/installedLvgDir
+   --inputFile=/path/to/ontologyTerminology.csv
+   --outputFile= 
+   --help
+   --stripNoOutput=true|false
+   --stripParentheticalExpressions=true|false
+   
+   
+   
+Another Detail:
+   This program requires that the path to a current installed version of LVG is in the classpath. 
+    The program looks for a $LVG/data/config/lvg.properties file which has references to all
+    the lvg resource files the tool needs. 
+   

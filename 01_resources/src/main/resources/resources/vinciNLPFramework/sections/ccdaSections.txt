@@ -1,0 +1,285 @@
+patient demographics
+patient detail
+patient information
+chief complaint and reason for visit
+chief complaint
+reason for referral
+reason for visit
+note from
+encounter details
+encounters
+allergies
+allergies, adverse reactions, alerts
+current medications
+medications
+ordered prescriptions
+medications administered
+active problems
+problems
+visit diagnoses
+history of present illness
+immunizations
+Immunizations
+social history
+last filed vital signs
+vitals
+vital signs
+.. vital sign
+plan of treatment
+plan of care
+treatment plans
+procedures
+results
+document information
+document details
+health care providers
+instructions
+hospital c
+hospital d instructions
+table of contents
+advance directives
+family history
+functional status
+payers
+encounter diagnosis
+clinical history
+impression
+impressions
+interpretation and diagnosis
+laboratory notes
+section
+narrative
+potential treatment
+comment
+comparison
+report
+additional therapies
+important
+indication
+complications
+specimens
+academic achievement
+academic function
+active range of motion of lumbar spine
+affect
+alcohol use
+allergies
+allowed condition
+allowed conditions
+answer
+appearance
+assessment
+assets
+attention
+attention/ executive function
+attitude
+axis i
+axis ii
+axis iii
+axis iv
+axis v
+balance
+behavior observations
+behavioral observations
+behavioral/emotional function
+brief summary & impressions
+capability
+cardiopulmonary
+causation and apportionment
+chief complaint
+chief complaint and reaction to hospitalization
+cognitive assessment
+cognitive responses
+compensable injury
+contested condition
+contested conditions
+controlled oral word association test (cowat
+current functioning
+current medications
+current symptoms
+daily activities and functioning
+date of examination 
+date of injury 
+deep tendon reflexes with reinforcement
+description
+diagnoses
+diagnosis
+diagnostic data
+diagnostic imaging
+diagnostic impression
+diagnostic studies
+dictated by
+disallowed condition
+discharge medications
+discussion
+drug allergies
+emotional functioning
+employer
+estimated length of stay
+evaluation findings
+examination
+exam
+examining physician 
+executive functioning
+factors for disability
+family history
+family medical history
+files review
+formulation
+forward flexion
+functional activities and hobbies
+future medical care
+gait
+gastrointestinal
+general
+general cognitive ability
+general observations
+genetic psychiatric history
+genitourinary
+heent
+highest level of education
+history
+history of injury and present complaints
+history of other pertinent medical events
+history of present illness
+history of present injury
+history of presenting problem
+homicidal/suicidal ideation
+identifying data
+illnesses
+imaging studies
+impression
+impression and plan
+information processing speed
+insight/judgment
+inspection
+intellectual functioning
+judgment and insight
+keywords
+language
+language function
+learning & memory skills
+legal history
+limitations
+long term goal to be achieved in 8 weeks
+long-term goals to be completed in six weeks
+loss of pre-injury capacity
+marital status
+measurements right/left
+medical
+medical history
+medical imaging
+medical records review
+medications
+mental health history
+mental status
+comprhensive mental status evaluation
+mental status evaluation
+mental status exam
+mental status examination
+military history
+mini-mental status exam
+mood
+motor functioning
+motor strength in the upper extremity
+motor/psychomotor functioning
+neck examination
+neurological symptoms
+non-verbal/visual learning and memory
+objective
+objective findings
+objective findings (completed w/ Physiatrist)
+occupational
+opinion and summary
+orientation
+oswestry pain inventory
+other medical history
+outpatient care
+palpation
+past medical history
+past psychiatric history
+past surgical history
+patient goal
+patient's goal
+permanent and stationary status
+photographs depicting damage to vehicles
+physical examination
+plan
+plan of care
+present illness
+present problems
+problem list
+prognosis
+psychiatric history
+psychological
+psychomotor
+question
+range of motion
+re
+reason for consult
+reason for evaluation
+reason for referral
+reason for referral/general observations
+recommendations
+recommendations/capability
+records review
+records reviewed
+recreational drug use
+relevant background information
+relevant history
+requested allowance
+requesting party
+review of systems
+sample name
+sensory examination
+low back examination
+short term goal to be completed in 4 weeks
+short-term goals to be completed in three weeks
+short term goals to be completed in three weeks
+short-term goals to be completed in six weeks
+long-term goals to be completed in six weeks
+long term goals to be completed in six weeks
+shoulder
+social and developmental history
+social history
+socio-economic history
+speech
+strength
+subjective
+subjective comments
+other subjective comments
+pain/ /other subjective comments
+substance abuse
+substance and alcohol history
+substance use
+substance use history
+summary & impressions
+summary and conclusions
+conclusions
+surgeries
+surgical history
+tasks administered
+tests administered
+thoracic spine examination
+thought content
+thought process
+thought processes
+tobacco use
+total temporary disability
+treatment history
+treatment plan
+verbal learning and memory
+visual learning and memory
+visual-spatial & visual-motor function
+visuospatial perception and construction
+visuospatial perception and organization
+vocational rehabilitation
+work history
+work restrictions and disability
+(medical transcription sample report)
+A Title
+SlotValues
+Column
+observations
+assessment and plan
+plan and assessment

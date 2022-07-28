@@ -1,0 +1,142 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   conditionalEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of conditional evidence.   
+#   For instance - TBD
+#
+#
+#   This file contains the category ConditionalEvidence  and subcategories post and pre 
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-23
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+CN0001|as needed|noun|count(thr_sing)|as needed|as needed|ConditionalEvidence|pre
+CN0002|be ruled out|noun|count(thr_sing)|be ruled out|be ruled out|ConditionalEvidence|post
+CN0003|be ruled out for|noun|count(thr_sing)|be ruled out for|be ruled out for|ConditionalEvidence|pre
+#CN0004|because|noun|count(thr_sing)|because|because|ConditionalEvidence|termin
+CN0005|being ruled out|noun|count(thr_sing)|being ruled out|being ruled out|ConditionalEvidence|post
+CN0006|can be ruled out|noun|count(thr_sing)|can be ruled out|can be ruled out|ConditionalEvidence|post
+CN0007|can be ruled out for|noun|count(thr_sing)|can be ruled out for|can be ruled out for|ConditionalEvidence|pre
+CN0008|come back for|noun|count(thr_sing)|come back for|come back for|ConditionalEvidence|pre
+CN0009|come back to|noun|count(thr_sing)|come back to|come back to|ConditionalEvidence|pre
+CN0009|repeat|verb|base|repeat|repeat|ConditionalEvidence|pre
+CN00010|could be ruled out|noun|count(thr_sing)|could be ruled out|could be ruled out|ConditionalEvidence|post
+CN00011|could be ruled out for|noun|count(thr_sing)|could be ruled out for|could be ruled out for|ConditionalEvidence|pre
+CN00010|would be ruled out|noun|count(thr_sing)|could be ruled out|could be ruled out|ConditionalEvidence|post
+CN00011|would be ruled out for|noun|count(thr_sing)|could be ruled out for|could be ruled out for|ConditionalEvidence|pre
+CN00012|did not rule out|noun|count(thr_sing)|did not rule out|did not rule out|ConditionalEvidence|post
+CN00013|if|noun|count(thr_sing)|if|if|ConditionalEvidence|pre
+CN00013|if|noun|count(thr_sing)|if|if|ConditionalEvidence|post
+CN00014|if negative|noun|count(thr_sing)|if negative|if negative|ConditionalEvidence|pseudo
+CN00015|is to be ruled out|noun|count(thr_sing)|is to be ruled out|is to be ruled out|ConditionalEvidence|post
+CN00016|is to be ruled out for|noun|count(thr_sing)|is to be ruled out for|is to be ruled out for|ConditionalEvidence|pre
+CN00017|look for|noun|count(thr_sing)|look for|look for|ConditionalEvidence|pre
+CN00018|look for any|noun|count(thr_sing)|look for any|look for any|ConditionalEvidence|pre
+CN00019|may be ruled out|noun|count(thr_sing)|may be ruled out|may be ruled out|ConditionalEvidence|post
+CN00020|may be ruled out for|noun|count(thr_sing)|may be ruled out for|may be ruled out for|ConditionalEvidence|pre
+CN00021|might be ruled out|noun|count(thr_sing)|might be ruled out|might be ruled out|ConditionalEvidence|post
+CN00022|might be ruled out for|noun|count(thr_sing)|might be ruled out for|might be ruled out for|ConditionalEvidence|pre
+CN00023|must be ruled out|noun|count(thr_sing)|must be ruled out|must be ruled out|ConditionalEvidence|post
+CN00024|must be ruled out for|noun|count(thr_sing)|must be ruled out for|must be ruled out for|ConditionalEvidence|pre
+CN00025|not ruled out|noun|count(thr_sing)|not ruled out|not ruled out|ConditionalEvidence|post
+CN00026|ought to be ruled out|noun|count(thr_sing)|ought to be ruled out|ought to be ruled out|ConditionalEvidence|post
+CN00027|ought to be ruled out for|noun|count(thr_sing)|ought to be ruled out for|ought to be ruled out for|ConditionalEvidence|pre
+CN00028|possible|noun|count(thr_sing)|possible|possible|ConditionalEvidence|pre
+CN00029|prn|noun|count(thr_sing)|prn|prn|ConditionalEvidence|pre
+CN00030|r/o|noun|count(thr_sing)|r/o|r/o|ConditionalEvidence|pre
+CN00031|return|noun|count(thr_sing)|return|return|ConditionalEvidence|pre
+CN00031|returns|noun|count(thr_sing)|return|return|ConditionalEvidence|pre
+CN00032|risk of|noun|count(thr_sing)|risk of|risk of|ConditionalEvidence|pre
+CN00033|ro|noun|count(thr_sing)|ro|ro|ConditionalEvidence|pre
+CN00034|rule her out|noun|count(thr_sing)|rule her out|rule her out|ConditionalEvidence|pre
+CN00035|rule her out for|noun|count(thr_sing)|rule her out for|rule her out for|ConditionalEvidence|pre
+CN00036|rule him out|noun|count(thr_sing)|rule him out|rule him out|ConditionalEvidence|pre
+CN00037|rule him out for|noun|count(thr_sing)|rule him out for|rule him out for|ConditionalEvidence|pre
+CN00038|rule out|noun|count(thr_sing)|rule out|rule out|ConditionalEvidence|pre
+CN00039|rule out for|noun|count(thr_sing)|rule out for|rule out for|ConditionalEvidence|pre
+CN00040|rule the patient out|noun|count(thr_sing)|rule the patient out|rule the patient out|ConditionalEvidence|pre
+CN00041|rule the patinet out for|noun|count(thr_sing)|rule the patinet out for|rule the patinet out for|ConditionalEvidence|pre
+CN00042|should be ruled out|noun|count(thr_sing)|should be ruled out|should be ruled out|ConditionalEvidence|post
+CN00043|should be ruled out for|noun|count(thr_sing)|should be ruled out for|should be ruled out for|ConditionalEvidence|pre
+CN00044|should he|noun|count(thr_sing)|should he|should he|ConditionalEvidence|pre
+CN00045|should she|noun|count(thr_sing)|should she|should she|ConditionalEvidence|pre
+CN00046|should the patient|noun|count(thr_sing)|should the patient|should the patient|ConditionalEvidence|pre
+CN00047|should there|noun|count(thr_sing)|should there|should there|ConditionalEvidence|pre
+CN00048|since|noun|count(thr_sing)|since|since|ConditionalEvidence|termin
+CN00048|since|noun|count(thr_sing)|since|since|ConditionalEvidence|pre
+CN00049|to prevent|noun|count(thr_sing)|to prevent|to prevent|ConditionalEvidence|pre
+#CN00050|use|noun|count(thr_sing)|use|use|ConditionalEvidence|pre
+CN00051|wants to|noun|count(thr_sing)|wants to|wants to|ConditionalEvidence|post
+CN00052|what must be ruled out is|noun|count(thr_sing)|what must be ruled out is|what must be ruled out is|ConditionalEvidence|pre
+CN00053|will be ruled out|noun|count(thr_sing)|will be ruled out|will be ruled out|ConditionalEvidence|post
+CN00054|will be ruled out for|noun|count(thr_sing)|will be ruled out for|will be ruled out for|ConditionalEvidence|pre
+CN00055|without diff|noun|count(thr_sing)|without diff|without diff|ConditionalEvidence|pseudo
+CN00056|without difficulties|noun|count(thr_sing)|without difficulties|without difficulties|ConditionalEvidence|pseudo
+CN00057|without difficulty|noun|count(thr_sing)|without difficulty|without difficulty|ConditionalEvidence|pseudo
+CN00058|watch|noun|count(thr_sing)|watch|watch|ConditionalEvidence|post
+CN00059|watch out|noun|count(thr_sing)|watch|watch|ConditionalEvidence|post
+CN00060|when|noun|count(thr_sing)|when|when|ConditionalEvidence|post
+CN00061|when|noun|count(thr_sing)|when|when|ConditionalEvidence|pre
+CN00062|how|noun|count(thr_sing)|how|how|ConditionalEvidence|pre
+CN00063|how much|noun|count(thr_sing)|how much|how much|ConditionalEvidence|pre
+CN00063|after|noun|count(thr_sing)|after|after|ConditionalEvidence|post
+CN00063|after|noun|count(thr_sing)|after|after|ConditionalEvidence|pre
+CN00063|can|noun|count(thr_sing)|can|can|ConditionalEvidence|post
+CN00063|can|noun|count(thr_sing)|can|can|ConditionalEvidence|pre
+CN00063|could|noun|count(thr_sing)|can|can|ConditionalEvidence|post
+CN00063|could|noun|count(thr_sing)|can|can|ConditionalEvidence|pre
+CN00063|would|noun|count(thr_sing)|can|can|ConditionalEvidence|post
+CN00063|would|noun|count(thr_sing)|can|can|ConditionalEvidence|pre
+CN00063|would benefit|noun|count(thr_sing)|can|can|ConditionalEvidence|pre
+CN00063|would benefit from|noun|count(thr_sing)|can|can|ConditionalEvidence|pre
+CN00064|Do|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00064|Did|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00064|Don't|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00065|will|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00065|will|noun|count(thr_sing)|do|do|ConditionalEvidence|post
+CN00065|will benefit|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00065|will benefit from|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00065|should|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00065|shouldn't|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00066|Including|noun|count(thr_sing)|do|do|ConditionalEvidence|pre
+CN00067|as soon as possible|noun|count(thr_sing)|as soon as possible|as soon as possible|ConditionalEvidence|pre
+CN00067|as soon as possible|noun|count(thr_sing)|as soon as possible|as soon as possible|ConditionalEvidence|post
+CN00068|reasons different than|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00068|reasons different than|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00069|asking|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00069|questions|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00069|questions|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00070|while|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00070|while|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00070|willing to|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00070|may|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00070|yet|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00070|instruct|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00070|instructed|noun|count(thr_sing)|||ConditionalEvidence|post
+CN00071|perhaps|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00071|since perhaps|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00071|perhaps since|noun|count(thr_sing)|||ConditionalEvidence|pre
+CN00072|at risk for|noun|count(thr_sing)|||ConditionalEvidence|pre

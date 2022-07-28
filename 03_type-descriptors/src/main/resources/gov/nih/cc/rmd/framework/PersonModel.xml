@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    
+  <name>gov.va.vinci.model.Shapes</name>
+    
+  <description>Includes labels for patient and provider attributes</description>
+    
+  <version>2019.01.0</version>
+    
+  <imports>
+        
+    <import name="gov.nih.cc.rmd.framework.ShapesModel"/>
+      
+  </imports>
+    
+  <types>
+        
+    <typeDescription>
+            
+      <name>gov.nih.cc.rmd.framework.model.Person</name>
+      <description>Label for a person</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+      <features>
+        <featureDescription>
+          <name>middleName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>firstName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+                
+        <featureDescription>
+          <name>lastName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+                
+        <featureDescription>
+          <name>nameSuffix</name>
+          <description>Jr.  (retired), Fellow ...</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+                
+        <featureDescription>
+          <name>contactAddress</name>
+          <description>[TBD] - this will be backfiled with an address type</description>
+          <rangeTypeName>gov.nih.cc.rmd.framework.model.Address</rangeTypeName>
+        </featureDescription>
+                
+        <featureDescription>
+          <name>namePrefix</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+              
+      </features>
+          
+    </typeDescription>
+      
+    
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.PersonNamePrefix</name>
+      <description>items like Dr. Mr. Miss.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.nih.cc.rmd.framework.model.PersonNameSuffix</name>
+      <description>Things like Jr. Fellow, M.D.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+      
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.PersonNameSuffix</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+      
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Redacted</name>
+      <description>This is a span of text that has been redacted.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+
+  </types>
+  
+</typeSystemDescription>

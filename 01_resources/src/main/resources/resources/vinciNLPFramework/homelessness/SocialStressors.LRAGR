@@ -1,0 +1,240 @@
+# =========================================================================
+#
+# Summary: SocialStressors are a class of psycosocial risk factors. 
+#          Some of these were taken out of the homelessness lexicon and put
+#          into the MST related lexicon, and subsquently dropped from the MST lexicon.
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#     
+#          N.B.  The eui's need to be refactored. They are from the original MST lexicon.
+#
+# Created :2015-12-03
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+S000118|getting divorced|noun|count(thr_sing)|getting divorced|getting divorced|SocialStressors
+M000117|divorced|noun|count(thr_sing)|divorced|divorced|SocialStressors
+S000119|job loss|noun|count(thr_sing)|job loss|job loss|SocialStressors
+S000120|marital stress|noun|count(thr_sing)|marital stress|marital stress|SocialStressors
+S000121|money issues|noun|count(thr_sing)|money issues|money issues|SocialStressors
+S000122|recent divorce|noun|count(thr_sing)|recent divorce|recent divorce|SocialStressors
+S000123|unemployed|noun|count(thr_sing)|unemployed|unemployed|SocialStressors
+S000124|unemployment|noun|count(thr_sing)|unemployment|unemployment|SocialStressors
+S000125|failed marriage|noun|count(thr_sing)|failed marriage|failed marriage|SocialStressors
+S000126|lost job|noun|count(thr_sing)|lost job|lost job|SocialStressors
+S000127|mental stressors|noun|count(thr_sing)|mental stressors|mental stressors|SocialStressors
+S000128|acute stressors|noun|count(thr_sing)|acute stressors|acute stressors|SocialStressors
+S000129|environmental stressors|noun|count(thr_sing)|environmental stressors|environmental stressors|SocialStressors
+S000130|Life stressors|noun|count(thr_sing)|Life stressors|Life stressors|SocialStressors
+S000131|Psychosocial stressors|noun|count(thr_sing)|Psychosocial stressors|Psychosocial stressors|SocialStressors
+S000132|Financial stressors|noun|count(thr_sing)|Financial stressors|Financial stressors|SocialStressors
+S000133|psychosocial stressors|noun|count(thr_sing)|psychosocial stressors|psychosocial stressors|SocialStressors
+S000134|significant stressors|noun|count(thr_sing)|significant stressors|significant stressors|SocialStressors
+S000135|family stressors|noun|count(thr_sing)|family stressors|family stressors|SocialStressors
+S000136|traumatic stressors|noun|count(thr_sing)|traumatic stressors|traumatic stressors|SocialStressors
+S000137|social stressors|noun|count(thr_sing)|social stressors|social stressors|SocialStressors
+S000138|new stressors|noun|count(thr_sing)|new stressors|new stressors|SocialStressors
+S000139|major stressors|noun|count(thr_sing)|major stressors|major stressors|SocialStressors
+S000140|postdeployment stressors|noun|count(thr_sing)|postdeployment stressors|postdeployment stressors|SocialStressors
+S000141|work stressors|noun|count(thr_sing)|work stressors|work stressors|SocialStressors
+S000142|marital stressors|noun|count(thr_sing)|marital stressors|marital stressors|SocialStressors
+S000143|PTSD|noun|count(thr_sing)|PTSD|PTSD|SocialStressors
+S000144|post traumatic stress disorder|noun|count(thr_sing)|Post traumatic stress disorder|Post traumatic stress disorder|SocialStressors
+S000145|financial legal|noun|count(thr_sing)|financial legal|financial legal|SocialStressors
+S000146|patients financial|noun|count(thr_sing)|Patients financial|Patients financial|SocialStressors
+S000147|finanial situation|noun|count(thr_sing)|Finanial situation|Finanial situation|SocialStressors
+S000148|financial problems|noun|count(thr_sing)|Financial problems|Financial problems|SocialStressors
+S000149|financial loss|noun|count(thr_sing)|Financial loss|Financial loss|SocialStressors
+S000150|financial issues|noun|count(thr_sing)|Financial issues|Financial issues|SocialStressors
+S000151|financial stress|noun|count(thr_sing)|Financial stress|Financial stress|SocialStressors
+S000152|financial stressors|noun|count(thr_sing)|Financial stressors|Financial stressors|SocialStressors
+S000153|financial concerns|noun|count(thr_sing)|Financial concerns|Financial concerns|SocialStressors
+S000154|financial concerns|noun|count(thr_sing)|Financial concerns|Financial concerns|SocialStressors
+S000155|financial assistance|noun|count(thr_sing)|Financial assistance|Financial assistance|SocialStressors
+S000156|financial difficulties|noun|count(thr_sing)|Financial difficulties|Financial difficulties|SocialStressors
+S000157|financial Difficulty|noun|count(thr_sing)|financial Difficulty|financial Difficulty|SocialStressors
+S000158|chronic financial|noun|count(thr_sing)|Chronic financial|Chronic financial|SocialStressors
+S000159|financial Constraints|noun|count(thr_sing)|Financial Constraints|Financial Constraints|SocialStressors
+S000160|financial Worries|noun|count(thr_sing)|Financial Worries|Financial Worries|SocialStressors
+S000161|pain financial|noun|count(thr_sing)|Pain financial|Pain financial|SocialStressors
+S000162|financial pressures|noun|count(thr_sing)|Financial pressures|Financial pressures|SocialStressors
+S000163|financial counseling|noun|count(thr_sing)|Financial counseling|Financial counseling|SocialStressors
+S000164|housing financial|noun|count(thr_sing)|Housing financial|Housing financial|SocialStressors
+S000165|financial housing|noun|count(thr_sing)|Financial housing|Financial housing|SocialStressors
+S000166|financial difficulty|noun|count(thr_sing)|Financial difficulty|Financial difficulty|SocialStressors
+S000167|financial worries|noun|count(thr_sing)|Financial worries|Financial worries|SocialStressors
+S000168|financially unstable|noun|count(thr_sing)|Financially unstable|Financially unstable|SocialStressors
+S000169|chronic financial|noun|count(thr_sing)|Chronic financial|Chronic financial|SocialStressors
+S000170|unemployed financial|noun|count(thr_sing)|Unemployed financial|Unemployed financial|SocialStressors
+S000171|financial needs|noun|count(thr_sing)|Financial needs|Financial needs|SocialStressors
+S000172|financial restrictions|noun|count(thr_sing)|Financial restrictions|Financial restrictions|SocialStressors
+S000173|financial struggling|noun|count(thr_sing)|Financial struggling|Financial struggling|SocialStressors
+S000174|financial trouble|noun|count(thr_sing)|Financial trouble|Financial trouble|SocialStressors
+S000175|financial limitations|noun|count(thr_sing)|Financial limitations|Financial limitations|SocialStressors
+S000176|financial burdens|noun|count(thr_sing)|Financial burdens|Financial burdens|SocialStressors
+S000177|financial stresses|noun|count(thr_sing)|Financial stresses|Financial stresses|SocialStressors
+S000178|financial|noun|count(thr_sing)|Financial|Financial|SocialStressors
+S000179|financial marital|noun|count(thr_sing)|financial marital|financial marital|SocialStressors
+S000180|financial burden|noun|count(thr_sing)|Financial burden|Financial burden|SocialStressors
+S000181|financial hardship|noun|count(thr_sing)|financial hardship|financial hardship|SocialStressors
+S000182|ongoing financial|noun|count(thr_sing)|Ongoing financial|Ongoing financial|SocialStressors
+S000183|financial hardship|noun|count(thr_sing)|Financial hardship|Financial hardship|SocialStressors
+S000184|xxperiencing financial|noun|count(thr_sing)|Experiencing financial|Experiencing financial|SocialStressors
+S000185|unmet financial|noun|count(thr_sing)|unmet financial|unmet financial|SocialStressors
+S000186|little money|noun|count(thr_sing)|Little money|Little money|SocialStressors
+S000187|gas money|noun|count(thr_sing)|Gas money|Gas money|SocialStressors
+S000188|borrow money|noun|count(thr_sing)|Borrow money|Borrow money|SocialStressors
+S000189|steal/stealing money|noun|count(thr_sing)|Steal/stealing money|Steal/stealing money|SocialStressors
+S000189|steal money|noun|count(thr_sing)|Steal/stealing money|Steal/stealing money|SocialStressors
+S000189|stealing money|noun|count(thr_sing)|Steal/stealing money|Steal/stealing money|SocialStressors
+S000190|need money|noun|count(thr_sing)|Need money|Need money|SocialStressors
+S000191|rather estranged|noun|count(thr_sing)|rather estranged|rather estranged|SocialStressors
+S000192|estranged relationship|noun|count(thr_sing)|Estranged relationship|Estranged relationship|SocialStressors
+S000193|estranged daughter|noun|count(thr_sing)|Estranged daughter|Estranged daughter|SocialStressors
+S000194|somewhat estranged|noun|count(thr_sing)|Somewhat estranged|Somewhat estranged|SocialStressors
+S000195|isolation estranged|noun|count(thr_sing)|Isolation estranged|Isolation estranged|SocialStressors
+S000196|siblings estranged|noun|count(thr_sing)|Siblings estranged|Siblings estranged|SocialStressors
+S000197|estranged brother|noun|count(thr_sing)|Estranged brother|Estranged brother|SocialStressors
+S000198|mother estranged|noun|count(thr_sing)|Mother estranged|Mother estranged|SocialStressors
+S000199|divorce estranged|noun|count(thr_sing)|Divorce estranged|Divorce estranged|SocialStressors
+S000200|feeling estranged|noun|count(thr_sing)|Feeling estranged|Feeling estranged|SocialStressors
+S000201|become estranged|noun|count(thr_sing)|Become estranged|Become estranged|SocialStressors
+S000202|children estranged|noun|count(thr_sing)|Children estranged|Children estranged|SocialStressors
+S000203|increasingly estranged|noun|count(thr_sing)|Increasingly estranged|Increasingly estranged|SocialStressors
+S000204|estranged grandparents|noun|count(thr_sing)|estranged grandparents|estranged grandparents|SocialStressors
+S000205|estranged father|noun|count(thr_sing)|estranged father|estranged father|SocialStressors
+S000206|estranged sister|noun|count(thr_sing)|estranged sister|estranged sister|SocialStressors
+S000207|find work|noun|count(thr_sing)|Find work|Find work|SocialStressors
+S000208|no job|noun|count(thr_sing)|No job|No job|SocialStressors
+S000209|lost job|noun|count(thr_sing)|Lost job|Lost job|SocialStressors
+S000210|odd jobs|noun|count(thr_sing)|Odd jobs|Odd jobs|SocialStressors
+S000211|job search|noun|count(thr_sing)|Job search|Job search|SocialStressors
+S000212|job loss|noun|count(thr_sing)|Job loss|Job loss|SocialStressors
+S000213|two jobs|noun|count(thr_sing)|Two jobs|Two jobs|SocialStressors
+S000214|job situation|noun|count(thr_sing)|Job situation|Job situation|SocialStressors
+S000215|CWT job|noun|count(thr_sing)|CWT job|CWT job|SocialStressors
+S000216|job hunting|noun|count(thr_sing)|Job hunting|Job hunting|SocialStressors
+S000217|three jobs|noun|count(thr_sing)|Three jobs|Three jobs|SocialStressors
+S000218|homeless jobless|noun|count(thr_sing)|Homeless jobless|Homeless jobless|SocialStressors
+S000219|stable job|noun|count(thr_sing)|Stable job|Stable job|SocialStressors
+S000220|job offers|noun|count(thr_sing)|Job offers|Job offers|SocialStressors
+S000221|job stress|noun|count(thr_sing)|job stress|job stress|SocialStressors
+S000222|prison problems|noun|count(thr_sing)|Prison problems|Prison problems|SocialStressors
+S000223|prison again|noun|count(thr_sing)|Prison again|Prison again|SocialStressors
+S000224|leaving prison|noun|count(thr_sing)|Leaving prison|Leaving prison|SocialStressors
+S000225|prison approximately|noun|count(thr_sing)|Prison approximately|Prison approximately|SocialStressors
+S000226|prison stay|noun|count(thr_sing)|Prison stay|Prison stay|SocialStressors
+S000227|unstable job|noun|count(thr_sing)|unstable job|unstable job|SocialStressors
+S000228|jobless|noun|count(thr_sing)|jobless|jobless|SocialStressors
+S000229|possible job|noun|count(thr_sing)|possible job|possible job|SocialStressors
+S000230|prison time|noun|count(thr_sing)|prison time|prison time|SocialStressors
+S000231|leaving jail|noun|count(thr_sing)|leaving jail|leaving jail|SocialStressors
+S000232|jail problems|noun|count(thr_sing)|jail problems|jail problems|SocialStressors
+S000233|jail term|noun|count(thr_sing)|Jail term|Jail term|SocialStressors
+S000234|jail time|noun|count(thr_sing)|jail time|jail time|SocialStressors
+S000235|county jail|noun|count(thr_sing)|County jail|County jail|SocialStressors
+S000236|jail sentence|noun|count(thr_sing)|Jail sentence|Jail sentence|SocialStressors
+S000237|recent jail|noun|count(thr_sing)|Recent jail|Recent jail|SocialStressors
+S000238|jail yesterday|noun|count(thr_sing)|Jail yesterday|Jail yesterday|SocialStressors
+S000239|jail fight|noun|count(thr_sing)|jail fight|jail fight|SocialStressors
+S000240|jail again|noun|count(thr_sing)|jail again|jail again|SocialStressors
+S000241|left jail|noun|count(thr_sing)|left jail|left jail|SocialStressors
+S000242|left prison|noun|count(thr_sing)|left prison|left prison|SocialStressors
+S000243|jail related|noun|count(thr_sing)|jail related|jail related|SocialStressors
+S000244|prison time|noun|count(thr_sing)|prison time|prison time|SocialStressors
+S000245|DWI arrest|noun|count(thr_sing)|DWI arrest|DWI arrest|SocialStressors
+S000246|DUI arrest|noun|count(thr_sing)|DUI arrest|DUI arrest|SocialStressors
+S000247|outstanding arrest|noun|count(thr_sing)|outstanding arrest|outstanding arrest|SocialStressors
+S000248|house arrest|noun|count(thr_sing)|house arrest|house arrest|SocialStressors
+S000249|federal prison|noun|count(thr_sing)|federal prison|federal prison|SocialStressors
+S000250|state prison|noun|count(thr_sing)|state prison|state prison|SocialStressors
+S000251|local jail|noun|count(thr_sing)|local jail|local jail|SocialStressors
+S000252|local prison|noun|count(thr_sing)|local prison|local prison|SocialStressors
+S000253|left prison|noun|count(thr_sing)|left prison|left prison|SocialStressors
+S000254|facing prison|noun|count(thr_sing)|facing prison|facing prison|SocialStressors
+S000255|facing jail|noun|count(thr_sing)|facing jail|facing jail|SocialStressors
+S000256|jail immediately|noun|count(thr_sing)|jail immediately|jail immediately|SocialStressors
+S000257|left jail|noun|count(thr_sing)|left jail|left jail|SocialStressors
+S000258|prison parole|noun|count(thr_sing)|prison parole|prison parole|SocialStressors
+S000259|jail parole|noun|count(thr_sing)|jail parole|jail parole|SocialStressors
+S000260|prison immediately|noun|count(thr_sing)|prison immediately|prison immediately|SocialStressors
+S000261|previously incarcerated|noun|count(thr_sing)|Previously incarcerated|Previously incarcerated|SocialStressors
+S000262|was incarcerated|noun|count(thr_sing)|Was incarcerated|Was incarcerated|SocialStressors
+S000263|currently incarcerated|noun|count(thr_sing)|Currently incarcerated|Currently incarcerated|SocialStressors
+S000264|recently incarcerated|noun|count(thr_sing)|Recently incarcerated|Recently incarcerated|SocialStressors
+S000265|chronically incarcerated|noun|count(thr_sing)|Chronically incarcerated|Chronically incarcerated|SocialStressors
+S000266|years incarcerated|noun|count(thr_sing)|Years incarcerated|Years incarcerated|SocialStressors
+S000267|months incarcerated|noun|count(thr_sing)|Months incarcerated|Months incarcerated|SocialStressors
+S000268|incarcerated twice|noun|count(thr_sing)|Incarcerated twice|Incarcerated twice|SocialStressors
+S000269|incarcerated again|noun|count(thr_sing)|incarcerated again|incarcerated again|SocialStressors
+S000270|once incarcerated|noun|count(thr_sing)|Once incarcerated|Once incarcerated|SocialStressors
+S000271|temporary incarcerated|noun|count(thr_sing)|temporary incarcerated|temporary incarcerated|SocialStressors
+S000272|legal committed|noun|count(thr_sing)|legal committed|legal committed|SocialStressors
+S000273|legal difficulties|noun|count(thr_sing)|Legal difficulties|Legal difficulties|SocialStressors
+S000274|legal issues|noun|count(thr_sing)|Legal issues|Legal issues|SocialStressors
+S000275|legal problems|noun|count(thr_sing)|Legal problems|Legal problems|SocialStressors
+S000276|illegal drugs|noun|count(thr_sing)|Illegal drugs|Illegal drugs|SocialStressors
+S000277|legally committed|noun|count(thr_sing)|Legally committed|Legally committed|SocialStressors
+S000278|illicit illegal|noun|count(thr_sing)|Illicit illegal|Illicit illegal|SocialStressors
+S000279|illegal medications|noun|count(thr_sing)|illegal medications|illegal medications|SocialStressors
+S000280|legal charges|noun|count(thr_sing)|Legal charges|Legal charges|SocialStressors
+S000281|illegal substances|noun|count(thr_sing)|Illegal substances|Illegal substances|SocialStressors
+S000282|used illegal|noun|count(thr_sing)|Used illegal|Used illegal|SocialStressors
+S000283|ongoing legal|noun|count(thr_sing)|Ongoing legal|Ongoing legal|SocialStressors
+S000284|legal consequences|noun|count(thr_sing)|Legal consequences|Legal consequences|SocialStressors
+S000285|legal stressors|noun|count(thr_sing)|Legal stressors|Legal stressors|SocialStressors
+S000286|legal infractions|noun|count(thr_sing)|Legal infractions|Legal infractions|SocialStressors
+S000287|qutstanding legal|noun|count(thr_sing)|Outstanding legal|Outstanding legal|SocialStressors
+S000288|legal status|noun|count(thr_sing)|legal status|legal status|SocialStressors
+S000289|legal infraction|noun|count(thr_sing)|legal infraction|legal infraction|SocialStressors
+S000290|legal trouble|noun|count(thr_sing)|Legal trouble|Legal trouble|SocialStressors
+S000291|legal proceedings|noun|count(thr_sing)|Legal proceedings|Legal proceedings|SocialStressors
+S000292|illegal activities|noun|count(thr_sing)|Illegal activities|Illegal activities|SocialStressors
+S000293|medications illegal|noun|count(thr_sing)|Medications illegal|Medications illegal|SocialStressors
+S000294|problems legal|noun|count(thr_sing)|Problems legal|Problems legal|SocialStressors
+S000295|alcohol illegal|noun|count(thr_sing)|Alcohol illegal|Alcohol illegal|SocialStressors
+S000296|significant legal|noun|count(thr_sing)|Significant legal|Significant legal|SocialStressors
+S000297|homeless legal|noun|count(thr_sing)|Homeless legal|Homeless legal|SocialStressors
+S000298|difficulties legal|noun|count(thr_sing)|Difficulties legal|Difficulties legal|SocialStressors
+S000299|facing legal|noun|count(thr_sing)|Facing legal|Facing legal|SocialStressors
+S000300|legal history|noun|count(thr_sing)|legal history|legal history|SocialStressors
+S000301|parole officer|noun|count(thr_sing)|Parole officer|Parole officer|SocialStressors
+S000302|parole probation|noun|count(thr_sing)|Parole probation|Parole probation|SocialStressors
+S000303|parole violation|noun|count(thr_sing)|Parole violation|Parole violation|SocialStressors
+S000304|incarceration parole|noun|count(thr_sing)|Incarceration parole|Incarceration parole|SocialStressors
+S000305|multiple parole|noun|count(thr_sing)|Multiple parole|Multiple parole|SocialStressors
+S000306|recent parole|noun|count(thr_sing)|Recent parole|Recent parole|SocialStressors
+S000307|parole requirements|noun|count(thr_sing)|Parole requirements|Parole requirements|SocialStressors
+S000308|violating parole|noun|count(thr_sing)|Violating parole|Violating parole|SocialStressors
+S000309|parole current|noun|count(thr_sing)|Parole current|Parole current|SocialStressors
+S000310|broken parole|noun|count(thr_sing)|Broken parole|Broken parole|SocialStressors
+S000311|parole on|noun|count(thr_sing)|parole on|parole on|SocialStressors
+S000312|breaking parole|noun|count(thr_sing)|breaking parole|breaking parole|SocialStressors
+S000313|upcoming parole|noun|count(thr_sing)|upcoming parole|upcoming parole|SocialStressors
+S000314|mild poverty|noun|count(thr_sing)|Mild poverty|Mild poverty|SocialStressors
+S000315|poverty unemployment|noun|count(thr_sing)|Poverty unemployment|Poverty unemployment|SocialStressors
+S000316|exhibited poverty|noun|count(thr_sing)|exhibited poverty|exhibited poverty|SocialStressors
+S000317|relationship conflict|noun|count(thr_sing)|relationship conflict|relationship conflict|SocialStressors
+M000109|decreased work performance|noun|count(thr_sing)|decreased work performance|decreased work performance|SocialStressors
+M000110|difficulty keeping a job|noun|count(thr_sing)|difficulty keeping a job|difficulty keeping a job|SocialStressors
+M000115|gambling|noun|count(thr_sing)|gambling|gambling|SocialStressors
+M000116|pathological gambling|noun|count(thr_sing)|pathological gambling|pathological gambling|SocialStressors

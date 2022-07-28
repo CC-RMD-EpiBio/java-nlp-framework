@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.nih.cc.rmd.gate.MAction</name>
+  <description>Information about an activity related to Mobility that the machine creates</description>
+  <version>2019.01.0</version>
+  <vendor/>
+  <types>
+
+        <typeDescription>
+          <name>gov.nih.cc.rmd.gate.Action.Subdomain_Code</name>
+          <description>ICF activity codes</description>
+          <supertypeName>uima.cas.String</supertypeName>
+          <allowedValues>
+             <value> <string>d410</string> <description/> </value>
+             <value> <string>d415</string> <description/> </value>
+             <value> <string>d420</string> <description/> </value>
+             <value> <string>d430</string> <description/> </value>
+             <value> <string>d435</string> <description/> </value>
+             <value> <string>d440</string> <description/> </value>
+             <value> <string>d445</string> <description/> </value>
+             <value> <string>d450</string> <description/> </value>
+             <value> <string>d455</string> <description/> </value>
+             <value> <string>d460</string> <description/> </value>
+             <value> <string>d470</string> <description/> </value>
+             <value> <string>d475</string> <description/> </value>
+             <value> <string>d480</string> <description/> </value>
+          </allowedValues>
+        </typeDescription>
+
+        <typeDescription>
+          <name>gov.nih.cc.rmd.gate.Action_Polarity</name>
+          <description>is this person able or unable to perform this action</description>
+          <supertypeName>uima.cas.String</supertypeName>
+          <allowedValues>
+             <value> <string>Unable</string> <description/> </value>
+             <value> <string>Able</string> <description/> </value>
+             <value> <string>Unclear</string> <description/> </value>
+          </allowedValues>
+        </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.gate.MAction</name>
+      <description>These are ICF activity codes</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+
+        <featureDescription>
+          <name>subDomain_Code</name>
+          <description>ICF activity codes</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>polarity</name>
+          <description>is this person able or unable to perform this action</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+
+  <typeDescription>
+      <name>gov.nih.cc.rmd.gate.Correct</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>gold</name>
+          <description>This is what the gold standard says for this evaluation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>machine</name>
+          <description>This is what the machine chose for this evaluation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.gate.NotCorrect</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.gate.Correct</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

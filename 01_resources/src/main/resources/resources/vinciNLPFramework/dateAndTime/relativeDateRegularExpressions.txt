@@ -1,0 +1,197 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ \d+\s{1,50}months 
+ earlier\s{1,50}this\s{1,50}year 
+it\s{1,50} today 
+ Recent 
+Her\s{1,50} recent 
+ past \s{1,50}were
+here\s{1,50} today 
+Her\s{1,50} past 
+ last\s{1,50}August 
+ several\s{1,50}years\s{1,50}before 
+ at\s{1,50}the\s{1,50}end\s{1,50}of\s{1,50}November 
+ the\s{1,50}end\s{1,50}of\s{1,50}November 
+about\s{1,50} \d+\s{1,50}years\s{1,50}ago 
+about\s{1,50} \d+\s{1,50}years \s{1,50}ago\p{Punct}
+ \d+\s{1,50}years\s{1,50}ago \s{1,50}
+diagnosed\s{1,50} \d+\s{1,50}years\s{1,50}ago 
+ the\s{1,50}last\s{1,50}several\s{1,50}months 
+ the\s{1,50}beginning\s{1,50}of\s{1,50}this\s{1,50}month 
+ in\s{1,50}November 
+ November \s{1,50}
+ a\s{1,50}week\s{1,50}ago 
+ the\s{1,50}last\s{1,50}\d+\s{1,50}or\s{1,50}\d+\s{1,50}days 
+ today \s{1,50}as
+ At\s{1,50}this\s{1,50}time \p{Punct}\s{1,50}the
+ the\s{1,50}next\s{1,50}few\s{1,50}days 
+ the\s{1,50}past\s{1,50}year \p{Punct}\s{1,50}\d+
+for\s{1,50} \d+\s{1,50}years 
+ the\s{1,50}afternoon 
+ in\s{1,50}the\s{1,50}distant\s{1,50}past 
+ in\s{1,50}the\s{1,50}past \s{1,50}with
+ recently \s{1,50}he
+ In\s{1,50}the\s{1,50}past 
+ in\s{1,50}the\s{1,50}past \p{Punct}\s{1,50}He
+ the\s{1,50}past\s{1,50}\d+\s{1,50}years \s{1,50}
+ many\s{1,50}years\s{1,50}ago 
+ two\s{1,50}years\s{1,50}ago \s{1,50}of
+ Two\s{1,50}years\s{1,50}ago 
+ a\s{1,50}couple\s{1,50}of\s{1,50}years 
+ two\s{1,50}years\s{1,50}ago \p{Punct}
+performed\s{1,50} today 
+ the\s{1,50}past\s{1,50}month 
+ one\s{1,50}and\s{1,50}a\s{1,50}half\s{1,50}years \p{Punct}
+test\s{1,50} today 
+from\s{1,50} today 
+ in\s{1,50}the\s{1,50}past\s{1,50}month \p{Punct}
+ nine\s{1,50}months 
+ the\s{1,50}years 
+ one\s{1,50}and\s{1,50}a\s{1,50}half\s{1,50}years\s{1,50}ago 
+ after\s{1,50}another\s{1,50}fall 
+ another\s{1,50}fall 
+ for\s{1,50}the\s{1,50}past\s{1,50}three\s{1,50}weeks 
+ the\s{1,50}past\s{1,50}three\s{1,50}weeks 
+ on\s{1,50}Monday 
+ Monday \p{Punct}
+ on\s{1,50}day\s{1,50}\d+ 
+\s{1,50} day\s{1,50}\d+ 
+ holiday\s{1,50}weekend 
+ weekend 
+ one\s{1,50}year 
+ a\s{1,50}year\p{Punct}and\p{Punct}half\s{1,50}ago 
+ \d+\p{Punct}\d+\p{Punct}\d+\p{Punct}\d+\s{1,50}weeks 
+ after\s{1,50}a\s{1,50}few\s{1,50}months\s{1,50}had\s{1,50}elapsed 
+ approximately\s{1,50}two\s{1,50}years\s{1,50}after\s{1,50}the\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+ two\s{1,50}years \s{1,50}after
+ three\s{1,50}years\s{1,50}previously 
+ two\s{1,50}weeks\s{1,50}previously 
+ in\s{1,50}October \p{Punct}
+in\s{1,50} October \p{Punct}
+ two\s{1,50}weeks \p{Punct}
+than\s{1,50} approximately\s{1,50}two\s{1,50}hours 
+ nearly\s{1,50}three\s{1,50}years 
+ approximately\s{1,50}two\s{1,50}hours \s{1,50}
+ after\s{1,50}one\s{1,50}year 
+ after\s{1,50}two\s{1,50}years 
+ two\s{1,50}years \s{1,50}he
+ a\s{1,50}few\s{1,50}days\s{1,50}later 
+\d+\p{Punct}\s{1,50} PAST 
+surgery\s{1,50} \d+\s{1,50}years\s{1,50}ago 
+ two\s{1,50}and\s{1,50}a\s{1,50}half\s{1,50}weeks\s{1,50}ago 
+ today \s{1,50}and
+of\s{1,50} \d+\s{1,50}years 
+of\s{1,50} today 
+ the\s{1,50}last\s{1,50}date\s{1,50}that\s{1,50}he\s{1,50}worked\s{1,50}up 
+ the\s{1,50}past\s{1,50}year \p{Punct}\s{1,50}Dr
+ a\s{1,50}year\s{1,50}ago \s{1,50}
+ a\s{1,50}year \s{1,50}ago\s{1,50}
+his\s{1,50} recent 
+ recent \s{1,50}MRI
+for\s{1,50} six\s{1,50}months 
+over\s{1,50} a\s{1,50}year 
+ the\s{1,50}past\s{1,50}\d+\s{1,50}years \p{Punct}\s{1,50}REVIEW
+ another\s{1,50}six\s{1,50}months 
+ until\s{1,50}about\s{1,50}a\s{1,50}year\s{1,50}ago 
+ about\s{1,50}a\s{1,50}year\s{1,50}ago \p{Punct}
+Lay\p{Punct}\s{1,50} PAST 
+no\s{1,50} prior 
+report\p{Punct}\s{1,50} PAST 
+her\s{1,50} recent 
+was\s{1,50} Monday 
+ Tuesday 
+had\s{1,50} recently 
+ at\s{1,50}the\s{1,50}end\s{1,50}of\s{1,50}October 
+ the\s{1,50}end\s{1,50}of\s{1,50}October 
+ five\s{1,50}to\s{1,50}six\s{1,50}years\s{1,50}ago 
+ three\s{1,50}to\s{1,50}four\s{1,50}years\s{1,50}ago 
+ approximately\s{1,50}two\s{1,50}years\s{1,50}ago 
+approximately\s{1,50} two\s{1,50}years 
+was\s{1,50} recently 
+ in\s{1,50}July \p{Punct}
+ approximately\s{1,50}one\s{1,50}day\s{1,50}subsequent\s{1,50}to\s{1,50}the\s{1,50}date\s{1,50}of\s{1,50}injury 
+ the\s{1,50}next\s{1,50}couple\s{1,50}of\s{1,50}months 
+ the\s{1,50}next\s{1,50}few\s{1,50}months 
+ the\s{1,50}last\s{1,50}five\s{1,50}years 
+ PRIOR 
+ in\s{1,50}the\s{1,50}future 
+ approximately\s{1,50}\d+\s{1,50}days\s{1,50}before\s{1,50}performing\s{1,50}the\s{1,50}surgery 
+ after\s{1,50}\d+\s{1,50}days 
+ at\s{1,50}approximately\s{1,50}\d+\s{1,50}days 
+at\s{1,50} approximately\s{1,50}\d+\s{1,50}days 
+ in\s{1,50}\d+\s{1,50}days 
+in\s{1,50} \d+\s{1,50}days 
+ the\s{1,50}past\s{1,50}year \s{1,50}
+ the\s{1,50}next\s{1,50}day 
+ several\s{1,50}years\s{1,50}ago 
+ in\s{1,50}the\s{1,50}past \s{1,50}which
+ this\s{1,50}year \s{1,50}by
+ in\s{1,50}his\s{1,50}teenage\s{1,50}years 
+ until\s{1,50}recently 
+ recently \p{Punct}
+ eight\s{1,50}years\s{1,50}and\s{1,50}five\s{1,50}months 
+ two\s{1,50}years \p{Punct}
+ very\s{1,50}long 
+ in\s{1,50}March\s{1,50}of\s{1,50}this\s{1,50}year 
+ March\s{1,50}of\s{1,50}this\s{1,50}year 
+\p{Punct}\s{1,50} Monday 
+ Wednesday 
+ Friday 
+ until\s{1,50}hospital\s{1,50}day\s{1,50}\p{Punct}\d+ 
+ day\s{1,50}\p{Punct}\d+ \s{1,50}\p{Punct}\s{1,50}We
+ Day\s{1,50}\p{Punct}\d+ 
+ Mar \p{Punct}
+ Past \s{1,50}Medical\s{1,50}History\s{1,50}\p{Punct}\s{1,50}SCA\s{1,50}Hepatitis\s{1,50}C\s{1,50}ICH\s{1,50}\p{Punct}\p{Punct}DATE\p{Punct}Mar\s{1,50}\d+\p{Punct}\s{1,50}Chronic\s{1,50}Pain\s{1,50}Subjective\s{1,50}\p{Punct}\s{1,50}Events\s{1,50}Overnight\s{1,50}\p{Punct}\s{1,50}RN
+ in\s{1,50}\d+\s{1,50}to\s{1,50}\d+\s{1,50}weeks 
+ on\s{1,50}the\s{1,50}day\s{1,50}of\s{1,50}blood\s{1,50}draw 
+ Past \s{1,50}Medical\s{1,50}History\s{1,50}\p{Punct}\s{1,50}SCA\s{1,50}Hepatitis\s{1,50}C\s{1,50}ICH\s{1,50}\p{Punct}\p{Punct}DATE\p{Punct}Mar\s{1,50}\d+\p{Punct}\s{1,50}Chronic\s{1,50}Pain\s{1,50}Subjective\s{1,50}\p{Punct}\s{1,50}Events\s{1,50}Overnight\s{1,50}\p{Punct}\s{1,50}Pt\s{1,50}\S{1,6}\s{1,50}\S{1,4}\s{1,50}\S{1,2}\s{1,50}\S{1,3}\s{1,50}\S{1,3}\s{1,50}a\s{1,50}
+Steroids\s{1,50}\p{Punct}\s{1,50}\p{Punct}\s{1,50}secondary\s{1,50}to\s{1,50}SSC\s{1,50}\p{Punct}\s{1,50}Disposition\s{1,50}\p{Punct}\s{1,50}Pending\s{1,50}\p{Punct}\s{1,50}Pt\s{1,50}does\s{1,50}not\s{1,50}want\s{1,50}to\s{1,50}go\s{1,50}to\s{1,50}SNF\s{1,50}\p{Punct}\s{1,50}Could\s{1,50}consider\s{1,50}Rehab\s{1,50}\p{Punct}\s{1,50}ie\s{1,50}Montefiore\s{1,50}\p{Punct}\s{1,50}for\s{1,50} \d+\s{1,50}wk 
+for\s{1,50} today 
+Oxycontin\s{1,50}\S{1,3}\s{1,50}\S{1,3}\s{1,50}\S{1,2}\s{1,50}\S{1,8}\s{1,50}\p{Punct}\s{1,50}\S{1,4}\s{1,50}\S{1,4}\s{1,50}for\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\S{1,9}\s{1,50}\p{Punct}\s{1,50}h\p{Punct}o\s{1,50}\S{1,6}\s{1,50}\p{Punct}\s{1,50}\S{1,7}\s{1,50}\S{1,3}\s{1,50}\p{Punct}\s{1,50}\S{1,3}\s{1,50}\p{Punct}\s{1,50}\S{1,8}\s{1,50}D\p{Punct}c\s{1,50}\p{Punct}d\s{1,50}\p{Punct}\s{1,50}\S{1,9}\s{1,50}\S{1,4}\s{1,50}\S{1,6}\s{1,50}\p{Punct}\s{1,50}\S{1,2}\s{1,50}\S{1,14}\s{1,50}\p{Punct}\s{1,50}\S{1,4}\s{1,50}to\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\S{1,5}\s{1,50}\S{1,1}\s{1,50}\S{1,5}\s{1,50}\S{1,6}\s{1,50}\p{Punct}\s{1,50}\S{1,9}\s{1,50} \d+\s{1,50}day 
+step\s{1,50} yesterday 
+ in\s{1,50}the\s{1,50}following\s{1,50}week 
+ the\s{1,50}following\s{1,50}week 
+ until\s{1,50}about\s{1,50}a\s{1,50}week\s{1,50}ago 
+for\s{1,50} \d+\s{1,50}weeks 
+for\s{1,50} \d+\s{1,50}to\s{1,50}\d+\s{1,50}weeks 
+ in\s{1,50}approximately\s{1,50}\d+\s{1,50}weeks 
+ \d+\s{1,50}weeks \s{1,50}at
+fall\s{1,50} \d+\s{1,50}years 
+is\s{1,50} \d+\s{1,50}days 
+\d+\s{1,50} today 
+HD\s{1,50} today 
+ Past \s{1,50}Medical\s{1,50}History\s{1,50}\p{Punct}\s{1,50}SCA\s{1,50}Hepatitis\s{1,50}C\s{1,50}ICH\s{1,50}\p{Punct}\p{Punct}DATE\p{Punct}Mar\s{1,50}\d+\p{Punct}\s{1,50}Chronic\s{1,50}Pain\s{1,50}Subjective\s{1,50}\p{Punct}\s{1,50}Events\s{1,50}Overnight\s{1,50}\p{Punct}\s{1,50}Pt\s{1,50}c
+ tomorrow 
+Results\s{1,50} Today 
+done\s{1,50} today 
+ Past \s{1,50}Medical\s{1,50}History\s{1,50}\p{Punct}\s{1,50}SCA\s{1,50}Hepatitis\s{1,50}C\s{1,50}ICH\s{1,50}\p{Punct}\p{Punct}DATE\p{Punct}Mar\s{1,50}\d+\p{Punct}\s{1,50}Chronic\s{1,50}Pain\s{1,50}Subjective\s{1,50}\p{Punct}\s{1,50}Events\s{1,50}Overnight\s{1,50}\p{Punct}\s{1,50}Chart
+ today \s{1,50}\d+
+\d+\s{1,50} yesterday 
+ \d+\s{1,50}hours \s{1,50}at
+ couple\s{1,50}of\s{1,50}weeks 
+ further \s{1,50}workup
+ several\s{1,50}days\s{1,50}afterwards 
+ several\s{1,50}days 
+ in\s{1,50}\d+\s{1,50}weeks 
+\p{Punct}\s{1,50} Thursday 
+ Saturday 
+Dilaudid\s{1,50} today 

@@ -1,0 +1,11 @@
+C2724207|+|<adj>|<positive>|+|+|Qualifier|+|Presence findings
+C2724207|+1|<adj>|<positive>|+|+|Qualifier|+|Presence findings
+C2724208|++|<adj>|<positive>|++|++|Qualifier|++|Presence findings
+C2724205|+++|<adj>|<positive>|+++|+++|Qualifier|+++|Presence findings
+C0442725|++++|<adj>|<positive>|++++|++++|Qualifier|++++|Presence findings
+#C0439092|<|<adj>|<positive>|<|<|Qualifier|<|Mathematical sign
+#C0439090|<=|<adj>|<positive>|<=|<=|Qualifier|<=|Mathematical sign
+#C0439089|=|<adj>|<positive>|=|=|Qualifier|=|Mathematical sign
+#C0439093|>|<adj>|<positive>|>|>|Qualifier|>|Mathematical sign
+#C0439091|>=|<adj>|<positive>|>=|>=|Qualifier|>=|Mathematical sign
+C0439091|<->|<adj>|<positive>|to|to|||

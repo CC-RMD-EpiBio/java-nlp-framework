@@ -1,0 +1,74 @@
+# =============================
+# April 10, 2018
+#  Gene Observations - this terminology includes variant observations 
+# =============================
+#  
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|Asserted/negated
+#
+# 
+#    
+# ===============================================
+G00001|L858R|<noun>|<base>|single nucleotied variant|single nucleotied variant|GeneVariantObservation|
+G00002|amplification|<noun>|<base>|||GeneVariantObservation|
+G00002|amplificatied|<noun>|<base>|||GeneVariantObservation|
+G00002|amp|<noun>|<base>|||GeneVariantObservation|
+#G00002|+|<noun>|<base>|||GeneVariantObservation|
+#G00002|++|<noun>|<base>|||GeneVariantObservation|
+#G00002|+++|<noun>|<base>|||GeneVariantObservation|
+G00002|equivocal|<noun>|<base>|||GeneVariantObservation|
+G00003|deletion|<noun>|<base>|||GeneVariantObservation|
+G00003|del|<noun>|<base>|||GeneVariantObservation|
+G00004|insertion|<noun>|<base>|||GeneVariantObservation|
+G00005|fusion|<noun>|<base>|||GeneVariantObservation|
+G00006|translocation|<noun>|<base>|||GeneVariantObservation|
+G00007|tumor mutation burden|<noun>|<base>|||TestName|
+C3543289|EGER|<noun>|<base>|EGFR|EGFR|TestName|
+G00008|loss exons|<noun>|<base>|||GeneVariantObservation|
+G00008|splice site|<noun>|<base>|||GeneVariantObservation|
+G00009|mutation not detected|<noun>|<base>|||GeneVariantObservation|Negative
+G00010|not amplified|<noun>|<base>|||GeneVariantObservation|Negative
+G00011|mutated|<noun>|<base>|||GeneVariantObservation|
+G00011|Pathogenic|<noun>|<base>|||GeneVariantObservation|
+G00011|wild type|<noun>|<base>|||GeneVariantObservation|
+G00011|positive|<noun>|<base>|||GeneVariantObservation|
+G00012|negative|<noun>|<base>|||GeneVariantObservation|Negative
+G00012|variant of uncertain significance|<noun>|<base>|||GeneVariantObservation|Negative
+G00012|mutation|<noun>|<base>|||GeneVariantObservation|
+G00012|none|<noun>|<base>|||ignore|
+G00012|yes|<noun>|<base>|||ignore|
+G00012|no|<noun>|<base>|||ignore|
+G00013|NGS|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|next generation sequencing|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|next-generation sequencing|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|next gen sequencing|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|next gen seq|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|next|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00013|Gen SEQ|<noun>|<base>|next generation sequencing|next generation sequencing|GeneSequencingMethod|
+G00014|IHC|<noun>|<base>|Immunohistochemistry|Immunohistochemistry|GeneSequencingMethod|
+G00014|IHC|<noun>|<base>|Immunohistochemistry|Immunohistochemistry|GeneSequencingMethod|
+G00014|ІНС|<noun>|<base>|Immunohistochemistry|Immunohistochemistry|GeneSequencingMethod|
+G00015|THC|<noun>|<base>|||GeneSequencingMethod|
+G00016|FISH|<noun>|<base>|||GeneSequencingMethod|
+G00017|CISH|<noun>|<base>|||GeneSequencingMethod|
+G00018|fragment analysis|<noun>|<base>|fragment analysis|fragment analysis|GeneVariantObservation|
+G00018|FA|<noun>|<base>|fragment analysis|fragment analysis|GeneVariantObservation|
+G00019|dna change|<noun>|<base>|dna change|dna change|GeneVariantObservation|
+G00020|amino acid change|<noun>|<base>|amino acid change|amino acid change|GeneVariantObservation|
+G00021|splice site|<noun>|<base>|splice site|splice site|GeneVariantObservation|
+G00022|deleted|<noun>|<base>|deleted|deleted|GeneVariantObservation|
+G00023|exon|<noun>|<base>|exon|exon|GeneVariantObservation|
+G00024|promoter|<noun>|<base>|promoter|promoter|GeneVariantObservation|
+G00025|subclonal|<noun>|<base>|subclonal|subclonal|GeneVariantObservation|
+#
+#
+G00019|monoclonal|<noun>|<base>|||GeneTestEvidence|Post
+G00020|polyclonal|<noun>|<base>|||GeneTestEvidence|Post
+G00021|Gene|<noun>|<base>|||GeneNameEvidence|Post
+G00022|DNA change|<noun>|<base>|||GeneVarientObservationEvidence|Post
+G00023|Amino Acid Change|<noun>|<base>|||GeneVarientObservationEvidence|Post
+G00024|Classification|<noun>|<base>|||GeneVarientObservationEvidence|Post
+#
+# Specimen Site Evidences
+G00050|specimen site|<noun>|<base>|||SpecimenSiteEvidence|Post
+G00050|specimen source|<noun>|<base>|||SpecimenSiteEvidence|Post
+G00051|specimen|<noun>|<base>|||SpecimenSiteEvidence|Post

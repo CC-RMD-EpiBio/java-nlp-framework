@@ -1,0 +1,81 @@
+# =========================================================================
+#
+# Summary: PTSD Symptoms are a class of psycosocial risk factors. 
+#          Some of these were taken out of the homelessness lexicon and put
+#          into the MST related lexicon, and subsquently dropped from the MST lexicon.
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#     
+#          N.B.  The eui's need to be refactored. They are from the original MST lexicon.
+#
+# Created :2015-12-03
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+M000057|memories|noun|count(thr_sing)|memories|memories|PTSDSymptoms
+M000058|repeated memories|noun|count(thr_sing)|repeated memories|repeated memories|PTSDSymptoms
+M000059|disturbing memories|noun|count(thr_sing)|disturbing memories|disturbing memories|PTSDSymptoms
+M000060|unwanted memories|noun|count(thr_sing)|unwanted memories|unwanted memories|PTSDSymptoms
+M000061|disturing dreams|noun|count(thr_sing)|disturing dreams|disturing dreams|PTSDSymptoms
+M000062|nightmares|noun|count(thr_sing)|nightmares|nightmares|PTSDSymptoms
+M000063|flashbacks|noun|count(thr_sing)|flashbacks|flashbacks|PTSDSymptoms
+M000064|physical reactions|noun|count(thr_sing)|physical reactions|physical reactions|PTSDSymptoms
+M000065|physical reaction|noun|count(thr_sing)|physical reaction|physical reaction|PTSDSymptoms
+M000066|trauma reminder|noun|count(thr_sing)|trauma reminder|trauma reminder|PTSDSymptoms
+M000067|trauma reminders|noun|count(thr_sing)|trauma reminders|trauma reminders|PTSDSymptoms
+M000068|memory problems|noun|count(thr_sing)|memory problems|memory problems|PTSDSymptoms
+M000069|avoidance|noun|count(thr_sing)|avoidance|avoidance|PTSDSymptoms
+M000070|avoiding|noun|count(thr_sing)|avoiding|avoiding|PTSDSymptoms
+M000071|avoiding memories|noun|count(thr_sing)|avoiding memories|avoiding memories|PTSDSymptoms
+M000072|avoiding thoughts|noun|count(thr_sing)|avoiding thoughts|avoiding thoughts|PTSDSymptoms
+M000073|avoiding feelings|noun|count(thr_sing)|avoiding feelings|avoiding feelings|PTSDSymptoms
+M000074|avoiding reminders|noun|count(thr_sing)|avoiding reminders|avoiding reminders|PTSDSymptoms
+M000075|blaming yourself|noun|count(thr_sing)|blaming yourself|blaming yourself|PTSDSymptoms
+M000076|blaming himself|noun|count(thr_sing)|blaming himself|blaming himself|PTSDSymptoms
+M000077|blaming herslef|noun|count(thr_sing)|blaming herslef|blaming herslef|PTSDSymptoms
+M000078|blames herself|noun|count(thr_sing)|blames herself|blames herself|PTSDSymptoms
+M000079|blames himself|noun|count(thr_sing)|blames himself|blames himself|PTSDSymptoms
+M000080|fear|noun|count(thr_sing)|fear|fear|PTSDSymptoms
+M000081|horror|noun|count(thr_sing)|horror|horror|PTSDSymptoms
+M000082|feeling distant|noun|count(thr_sing)|feeling distant|feeling distant|PTSDSymptoms
+M000083|feels distant|noun|count(thr_sing)|feels distant|feels distant|PTSDSymptoms
+M000084|feeling cut off|noun|count(thr_sing)|feeling cut off|feeling cut off|PTSDSymptoms
+M000085|feels cut off|noun|count(thr_sing)|feels cut off|feels cut off|PTSDSymptoms
+M000086|irritable|noun|count(thr_sing)|irritable|irritable|PTSDSymptoms
+M000087|irritable behavior|noun|count(thr_sing)|irritable behavior|irritable behavior|PTSDSymptoms
+M000088|angry|noun|count(thr_sing)|angry|angry|PTSDSymptoms
+M000089|angry outbursts|noun|count(thr_sing)|angry outbursts|angry outbursts|PTSDSymptoms
+M000090|acting aggressively|noun|count(thr_sing)|acting aggressively|acting aggressively|PTSDSymptoms
+M000091|aggressive behavior|noun|count(thr_sing)|aggressive behavior|aggressive behavior|PTSDSymptoms
+M000092|risky behavior|noun|count(thr_sing)|risky behavior|risky behavior|PTSDSymptoms
+M000093|takes too many risks|noun|count(thr_sing)|takes too many risks|takes too many risks|PTSDSymptoms
+M000094|taking too many risks|noun|count(thr_sing)|taking too many risks|taking too many risks|PTSDSymptoms
+M000095|superalert|noun|count(thr_sing)|superalert|superalert|PTSDSymptoms
+M000096|watchful|noun|count(thr_sing)|watchful|watchful|PTSDSymptoms
+M000097|on guard|noun|count(thr_sing)|on guard|on guard|PTSDSymptoms
+M000098|feeling jumpy|noun|count(thr_sing)|feeling jumpy|feeling jumpy|PTSDSymptoms
+M000099|feels jumpy|noun|count(thr_sing)|feels jumpy|feels jumpy|PTSDSymptoms
+M000100|jumpy|noun|count(thr_sing)|jumpy|jumpy|PTSDSymptoms
+M000101|easily startled|noun|count(thr_sing)|easily startled|easily startled|PTSDSymptoms
+M000102|startles easily|noun|count(thr_sing)|startles easily|startles easily|PTSDSymptoms
+M000103|difficulty concentrating|noun|count(thr_sing)|difficulty concentrating|difficulty concentrating|PTSDSymptoms
+M000104|sleep problems|noun|count(thr_sing)|sleep problems|sleep problems|PTSDSymptoms

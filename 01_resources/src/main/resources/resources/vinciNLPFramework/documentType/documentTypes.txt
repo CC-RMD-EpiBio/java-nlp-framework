@@ -1,0 +1,92 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+LOINC-Code|documentType|
+51969-4|Genetic analysis summary report|
+60591-5|Patient summary|
+11502-2|Laboratory report|
+other|Other|
+correspondence|Correspondence|
+
+# ----- http://hl7.org/fhir/2018Jan/valueset-c80-doc-classcodes.html#4.3.1.46 -----
+#11369-6|History of Immunization|
+#11485-0|Anesthesia records|
+#11486-8|Chemotherapy records|
+#11488-4|Consult Note|
+#11506-3|Provider-unspecified progress note|
+#11543-6|Nursery records|
+#15508-5|Labor and delivery records|
+#18726-0|Radiology studies|
+#18761-7|Provider-unspecified transfer summary|
+#18842-5|Discharge summary|
+#26436-6|Laboratory studies|
+	#18716-1|Allergy studies
+	#18717-9|Blood bank studies
+	#18767-4|Blood gas studies
+	#18718-7|Cell marker studies
+	#18719-5|Chemistry studies
+	#26437-4|Chemistry challenge studies
+	#18720-3|Coagulation studies
+	#26438-2|Cytology studies
+	#18722-9|Fertility studies
+	#18723-7|Hematology studies
+	#18724-5|HLA studies
+	#18769-0|Microbial susceptibility tests Set
+	#18725-2|Microbiology studies
+	26435-8|Molecular pathology studies|
+	#18727-8|Serology studies
+	#26439-0|Surgical pathology studies
+	#18721-1|Therapeutic drug monitoring studies
+	#18729-4|Urinalysis studies
+#26441-6|Cardiology studies|
+#26442-4|Obstetrical studies|
+#27895-2|Gastroenterology endoscopy studies|
+#27896-0|Pulmonary studies|
+#27897-8|Neuromuscular electrophysiology studies|
+#27898-6|Pathology studies|
+#28570-0|Provider-unspecified procedure note|
+#28619-5|Ophthalmology/optometry studies|
+#28634-4|Miscellaneous studies|
+#29749-9|Dialysis records|
+#29750-7|Neonatal intensive care records|
+#29751-5|Critical care records|
+#29752-3|Perioperative records|
+#34109-9|Evaluation and management note|
+#34117-2|Provider-unspecified, History and physical note|
+#34121-4|Interventional procedure note|
+#34122-2|Pathology procedure note|
+#34133-9|Summarization of episode note|
+#34140-4|Transfer of care referral note|
+#34748-4|Telephone encounter note|
+#34775-7|General surgery Pre-operative evaluation and management note|
+#47039-3|Inpatient Admission history and physical note|
+#47042-7|Counseling note|
+#47045-0|Study report Document|
+#47046-8|Summary of death|
+#47049-2|Non-patient Communication|
+#57017-6|Privacy Policy Organization Document|
+#57016-8|Privacy Policy Acknowledgment Document|
+#56445-0|Medication Summary Document|
+#53576-5|Personal health monitoring report Document|
+#56447-6|Plan of care note|
+18748-4|Diagnostic imaging study|
+#11504-8|Surgical operation note|
+#57133-1|Referral note|

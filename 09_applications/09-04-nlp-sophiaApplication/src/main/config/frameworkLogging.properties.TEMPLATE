@@ -1,0 +1,147 @@
+
+# -------------------------------------------------------------------------
+#  	V3NLP Framework Logging Configuration File
+#
+# This file contains the flags to set for annotator and
+# client logging settings used with apache's log4j facility 
+# 
+# This file should be specified when kicking off the main
+# as a command line option  
+#
+#   --loggerConfig=../config/frameworkLogging.properties 
+#
+# -------------------------------------------------------------------------
+#* --- Copyright Notice: --------------------------------------------------
+#*
+#* Copyright 2013 United States Department of Veterans Affairs, 
+#*                Health Services Research & Development Service
+#*
+#*  Licensed under the Apache License, Version 2.0 (the "License");
+#*  you may not use this file except in compliance with the License.
+#*  You may obtain a copy of the License at
+#*
+#*      http://www.apache.org/licenses/LICENSE-2.0
+#*
+#*  Unless required by applicable law or agreed to in writing, software
+#*  distributed under the License is distributed on an "AS IS" BASIS,
+#*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#*  See the License for the specific language governing permissions and
+#*  limitations under the License. 
+#* 
+#* --- End Copyright Notice: ----------------------------------------------
+
+# -------------------------------------------------------------------------
+# The root Logger goes by default to the console (stdout) 
+# Specify the root logger's level
+# -------------------------------------------------------------------------
+log4j.rootLogger=debug
+
+# -------------------------------------------------------------------------
+# Log files or appenders in log4j 
+#   Specify the appenders and their format
+# -------------------------------------------------------------------------
+
+#   -------------------------------------------------------------------------
+#   Console - currently uses the default pattern layout 
+#   -------------------------------------------------------------------------
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+
+#   -------------------------------------------------------------------------
+#   file log file or appender is specified in the code based
+#                 on where the output directory is for the main.
+#        The file based log files are contingent on the following
+#
+#        command line arguments --logFile   default is $output/logs/kickoff%d.log
+#                               --serverLog default is $output/logs/server%d.log
+#                               --clientLog default is $output/logs/client%d.log
+#        
+#                               Where $output comes from the --outputDir 
+#                               command line argument
+#                               Where %d is replaced with a simple date stamp
+#   -------------------------------------------------------------------------
+#      --------------
+#      Server appender
+#      --------------
+log4j.appender.server=org.apache.log4j.RollingFileAppender
+log4j.appender.server.Append=false
+log4j.appender.server.MaxFileSize=100KB
+log4j.appender.server.layout=org.apache.log4j.PatternLayout
+log4j.appender.server.File=../logs/server.log
+#
+#      --------------
+#      client appender
+#      --------------
+log4j.appender.client=org.apache.log4j.RollingFileAppender
+log4j.appender.client.Append=false
+log4j.appender.client.MaxFileSize=100KB
+log4j.appender.client.layout=org.apache.log4j.PatternLayout
+log4j.appender.client.File=../logs/client.log
+#
+#      --------------
+#      kickoff appender 
+#      --------------
+log4j.appender.kickoff=org.apache.log4j.RollingFileAppender
+log4j.appender.kickoff.Append=false
+log4j.appender.kickoff.MaxFileSize=100KB
+log4j.appender.kickoff.layout=org.apache.log4j.PatternLayout
+log4j.appender.kickoff.File=../logs/kickoff.log
+#
+#      --------------
+#      default log appender 
+#      --------------
+log4j.appender.logg=org.apache.log4j.RollingFileAppender
+log4j.appender.logg.Append=false
+log4j.appender.logg.MaxFileSize=100KB
+log4j.appender.logg.layout=org.apache.log4j.PatternLayout
+log4j.appender.logg.File=../logs/logg.log
+#
+#
+# ----------------------------------------
+# Logging Level Section
+#   The format to specify a level is
+#   
+#   log4j.logger.<class name>=$LEVEL, <list of appenders> 
+#                
+#        where the <class name> is the either a package name, class name, or a
+#                               name of a marker you specified in the code to turn on 
+#                         
+#        where $LEVEL is TRACE|DEBUG|INFO|WARN|ERROR|FATAL
+#
+#        where the list of appenders are stdout|server|client|kickoff|log
+#        Not all those files get created - only if a server, client, or 
+#        kickoff class is instantiated. The log appender is a placeholder
+#        for other applications not yet thought through.
+# ----------------------------------------
+
+# -------------------------------------------------------------------------
+# Dials for kick off events 
+# -------------------------------------------------------------------------
+log4j.logger.gov.va.vinci.nlp.framework.pipeline.server.applications=TRACE, kickoff
+
+# -------------------------------------------------------------------------
+# Dials for server events 
+# -------------------------------------------------------------------------
+log4j.logger.gov.va.vinci.nlp.framework.pipeline.server=TRACE, stdout, server 
+log4j.logger.gov.va.vinci.nlp.framework.annotator=TRACE, stdout, server
+log4j.logger.gov.va.vinci.nlp.framework.annotator.concept.local=TRACE, server
+
+# -------------------------------------------------------------------------
+# Dials for client side events 
+# -------------------------------------------------------------------------
+log4j.logger.gov.va.vinci.nlp.framework.clients=TRACE, client 
+log4j.logger.gov.va.vinci.nlp.framework.readers=TRACE, client
+log4j.logger.gov.va.vinci.nlp.framework.pipeline.listeners=TRACE, client 
+
+# -------------------------------------------------------------------------
+# Dials for other events 
+# -------------------------------------------------------------------------
+log4j.logger.org.apache.uima=FATAL,   stdout, logg
+log4j.logger.gov.va.vinci.flap=FATAL, stdout, logg
+
+# -------------------------------------------------------------------------
+# Dials for third party events 
+# -------------------------------------------------------------------------
+log4j.logger.org.springframework.context.support.FileSystemXmlApplicationContext=FATAL, stdout, logg
+log4j.logger.org.hibernate.service.jdbc.connections.internal.DriverManagerConnectionProviderImpl=ERROR, stdout, logg
+log4j.logger.org.jboss.logging=ERROR, stdout, logg

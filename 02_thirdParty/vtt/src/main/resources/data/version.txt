@@ -1,0 +1,4 @@
+Implementation-Title: Visual Tagging Tool
+Implementation-Version: VTT.2010
+Implementation-Vendor: NIH/NLM/LHC/CgSB
+Implementation-TIME: 2010.11.23, 03:14:39 PM

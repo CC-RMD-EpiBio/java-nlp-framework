@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- =========================================================== -->
+  <!-- Framework Multi-module pom                                  -->
+  <!-- =========================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>000-top</artifactId>
+  <version>2022.09.0</version>
+  <packaging>pom</packaging>
+  <description>Top level project for NLP framework</description>
+
+  <organization>
+    <name>NIH Clinical Center Rehabilitation Department</name>
+    <url>http:// </url>
+  </organization>
+
+  <!-- ======================================================= -->
+  <!-- Modules                                                 -->
+  <!-- ======================================================= -->
+  <modules>
+
+    <!-- =================================================== -->
+    <!-- overarching global projects -->
+    <!-- =================================================== -->
+
+    <module>     00_parent            </module>
+    <module>     01_resources         </module>
+    <module>     02_thirdParty        </module>  
+    <module>     03_type-descriptors  </module>
+    <module>     04.0_utils           </module>
+    <module>     04.1_vUtils          </module>
+    <module>     04.2_tUtils          </module>
+    <module>     05_annotators        </module>
+    <module>     06_marshallers       </module>
+    <module>     07.0_pUtils          </module>
+    <module>     08_pipelines         </module>
+    <module>     09_applications      </module>
+
+  </modules>
+
+
+
+</project>
+  

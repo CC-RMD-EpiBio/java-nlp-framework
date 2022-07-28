@@ -1,0 +1,73 @@
+# =========================================================================
+#
+# Summary: employmentSatus lexicon includes terms that are indicative of 
+#          employment status 
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#
+#
+# Created :2016-03-29_
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2016 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+
+H0000079|job loss|noun|count(thr_sing)|job loss|job loss|SocialStressors|||
+H0000079|lost job|noun|count(thr_sing)|job loss|job loss|SocialStressors|||
+H0000041|currently employed:__y x__n|noun|count(thr_sing)|currently employed:__y x__n|currently employed:__y x__n|SocialStressors|||
+H0000182|unemployed|noun|count(thr_sing)|unemployed|unemployed|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000183|unemployment|noun|count(thr_sing)|unemployment|unemployment|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000183|jobless|noun|count(thr_sing)|unemployment|unemployment|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000183|no job|noun|count(thr_sing)|unemployment|unemployment|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000133|not working now|noun|count(thr_sing)|not working now|not working now|SocialStressors|||
+H0000133|not working|noun|count(thr_sing)|not working now|not working now|SocialStressors|||
+H0000233|incarcerated|noun|count(thr_sing)|incarcerated|incarcerated|LegalAndIncarcerationRelated|C0205255|Incarceration|T077
+H0000233|incarceration|noun|count(thr_sing)|incarceration|incarceration|LegalAndIncarcerationRelated|C0205255|Incarceration|T077
+H0000220|fired|noun|count(thr_sing)|fired|fired|SocialStressors|||
+H0000086|laid off|noun|count(thr_sing)|laid off|laid off|SocialStressors|||
+H0000129|no income|noun|count(thr_sing)|no income|no income|SocialStressors|||
+H0000196|work therapy|noun|count(thr_sing)|work therapy|work therapy|DirectEvidence|||
+
+unemployed, financial
+job search
+job hunting
+job offers
+find work
+possible job
+difficulty keeping a job
+leaving prison
+leaving jail 
+left prison
+left jail 
+recent jail 
+chronically incarcerated
+
+odd jobs
+two jobs
+three jobs
+job stress
+work stressor
+CWT job
+job situation
+stable job
+summer job
+unstable job
+working now

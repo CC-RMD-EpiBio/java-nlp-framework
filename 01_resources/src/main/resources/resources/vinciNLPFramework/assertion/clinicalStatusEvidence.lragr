@@ -1,0 +1,44 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   clinical status evidence 
+#
+#   This table contains terms that are direct evidence 
+#   of an entity's current state 
+#   For instance - aspirin  10 mg    (active) 
+#
+#    see https://www.hl7.org/fhir/DSTU1/medication-prescription-status.html  for values
+# 
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#   This needs to be augmented by role and occupations
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-23
+# --------------------------------------------------------------------------
+CS00001|active|noun|count(thr_sing)|active|active|ClinicalStatusEvidence|post
+CS00002|filled|noun|count(thr_sing)|filled|filled|ClinicalStatusEvidence|post
+CS00002|dispense|noun|count(thr_sing)|filled|filled|ClinicalStatusEvidence|post
+CS00002|dispensed|noun|count(thr_sing)|filled|filled|ClinicalStatusEvidence|post
+CS00003|expired|noun|count(thr_sing)|expired|expired|ClinicalStatusEvidence|post
+CS00004|discontinued|noun|count(thr_sing)|discontinued|discontinued|ClinicalStatusEvidence|post
+CS00004|stopped|noun|count(thr_sing)|stopped|discontinued|ClinicalStatusEvidence|post
+CS00005|completed|noun|count(thr_sing)|completed|completed|ClinicalStatusEvidence|post
+CS00006|replaced|noun|count(thr_sing)|replaced|replaced|ClinicalStatusEvidence|post
+CS00006|superceded|noun|count(thr_sing)|superceded|superceded|ClinicalStatusEvidence|post
+CS00007|hold|noun|count(thr_sing)|hold|hold|ClinicalStatusEvidence|post
+CS00007|on hold|noun|count(thr_sing)|hold|hold|ClinicalStatusEvidence|post
+CS00008|needs refill|noun|count(thr_sing)|needs refill|needs refill|ClinicalStatusEvidence|post
+CS00009|entered in|noun|count(thr_sing)|entered in|entered in|ClinicalStatusEvidence|post
+CS00010|error|noun|count(thr_sing)|error|error|ClinicalStatusEvidence|post
+CS00011|started|noun|count(thr_sing)|started|started|ClinicalStatusEvidence|post
+CS00012|prescribed|noun|count(thr_sing)|prescribe|prescribe|ClinicalStatusEvidence|post
+CS00012|prescribe|noun|count(thr_sing)|prescribe|prescribe|ClinicalStatusEvidence|post
+CS00012|ordered|noun|count(thr_sing)|prescribe|prescribe|ClinicalStatusEvidence|post
+CS00012|order|noun|count(thr_sing)|prescribe|prescribe|ClinicalStatusEvidence|post
+CS00013|final|noun|count(thr_sing)|final|final|ClinicalStatusEvidence|post
+CS00013|Final report|<noun>|<all>|||ClinicalStatusEvidence|pre
+CS00014|preliminary|noun|count(thr_sing)|preliminary|preliminary|ClinicalStatusEvidence|post
+CS00015|registered|noun|count(thr_sing)|registered|regestered|ClinicalStatusEvidence|post
+CS00016|amended|noun|count(thr_sing)|amended|amended|ClinicalStatusEvidence|post
+

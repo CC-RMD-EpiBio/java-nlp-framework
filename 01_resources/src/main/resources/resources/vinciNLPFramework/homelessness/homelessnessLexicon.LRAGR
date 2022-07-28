@@ -1,0 +1,382 @@
+# =========================================================================
+#
+# Summary: Homelessness lexicon includes psycosocial risk factors, vetted
+#          in a preliminary study for predictive factors for homelessness.
+#          This version previously underwent revisions to take out MST 
+#          related terms.
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#
+#
+# Created :2014-03-09_17_50_22
+#  edited :2015-12-03  to take out alchoholAndSubstanceAbuse to make that a separate file
+#  edited :2015-12-03  to add Copyright 
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+H0000001|4th street clinic|noun|count(thr_sing)|4th street clinic|4th street clinic|DirectEvidence|||
+H0000002|"a long history of alcohol dependence, treatment, and relapse"|noun|count(thr_sing)|"a long history of alcohol dependence, treatment, and relapse"|"a long history of alcohol dependence, treatment, and relapse"|AlcoholRelated|||
+H0000003|a significant amount of psychological stress|noun|count(thr_sing)|a significant amount of psychological stress|a significant amount of psychological stress|SocialStressors|||
+H0000004|addictions|noun|count(thr_sing)|addictions|addictions|SubstanceAbuseRelated|C0085281|ADDICTION|T048
+H0000004|addiction|noun|count(thr_sing)|addiction|addiction|SubstanceAbuseRelated|C0085281|ADDICTION|T048
+H0000006|adult corrective services|noun|count(thr_sing)|adult corrective services|adult corrective services|LegalAndIncarcerationRelated|||
+H0000007|AA|noun|count(thr_sing)|AA|AA|AlcoholRelated|C0001972|AA|T095
+H0000007|alcohol abuse|noun|count(thr_sing)|alcohol abuse|alcohol abuse|AlcoholRelated|C0001972|AA|T095
+H0000007|alcohol abuse|noun|count(thr_sing)|alcohol abuse|alcohol abuse|AlcoholRelated|C0085762|ALCOHOL ABUSE|T048
+H0000008|AD|noun|count(thr_sing)|AD|AD|AlcoholRelated|C0002395|AD|T047
+H0000008|alcohol dependence|noun|count(thr_sing)|alcohol dependence|alcohol dependence|AlcoholRelated|C0001555|AD|T081
+H0000008|alcohol dependence|noun|count(thr_sing)|alcohol dependence|alcohol dependence|AlcoholRelated|C0001973|ALCOHOL DEPENDENCE|T048
+H0000008|alcohol dependence|noun|count(thr_sing)|alcohol dependence|alcohol dependence|AlcoholRelated|C0002395|AD|T047
+H0000009|alcohol detoxification|noun|count(thr_sing)|alcohol detoxification|alcohol detoxification|AlcoholRelated|||
+H0000010|alcohol rehab|noun|count(thr_sing)|alcohol rehab|alcohol rehab|AlcoholRelated|||
+H0000011|alcohol use|noun|count(thr_sing)|alcohol use|alcohol use|AlcoholRelated|C0001948|T055|ALCOHOL USE
+H0000011|alcohol use|noun|count(thr_sing)|alcohol use|alcohol use|AlcoholRelated|C0552479|T033|alcohol use
+H0000012|anger|noun|count(thr_sing)|anger|anger|MentalHealthEvidence|C0002957|ANGER|T041
+H0000013|antisocial personality disorder|noun|count(thr_sing)|antisocial personality disorder|antisocial personality disorder|MentalHealthEvidence|C0003431|Antisocial Personality Disorder|T048
+H0000014|AP+P|noun|count(thr_sing)|AP+P|AP+P|LegalAndIncarcerationRelated||adult probation and parole|
+H0000015|APS|noun|count(thr_sing)|APS|APS|LegalAndIncarcerationRelated||adult probation services|
+H0000016|assessment and referral services|noun|count(thr_sing)|assessment and referral services|assessment and referral services|SocialStressors|||
+H0000017|avoidance|noun|count(thr_sing)|avoidance|avoidance|MentalHealthEvidence|C0870186|Avoidance|T048
+H0000018|bipolar disorder|noun|count(thr_sing)|bipolar disorder|bipolar disorder|MentalHealthEvidence|C0005586|BIPOLAR DISORDER|T048
+H0000019|borderline personality disorder|noun|count(thr_sing)|borderline personality disorder|borderline personality disorder|MentalHealthEvidence|C0006012|Borderline Personality Disorder|T048
+H0000020|break-up with girlfriend|noun|count(thr_sing)|break-up with girlfriend|break-up with girlfriend|SocialStressors|||
+H0000021|broke up|noun|count(thr_sing)|broke up|broke up|SocialStressors|||
+H0000022|camping|noun|count(thr_sing)|camping|camping|DirectEvidence|C0006811|Camping|T056
+H0000023|cerrhosis of liver|noun|count(thr_sing)|cerrhosis of liver|cerrhosis of liver|MedicalComorbidities|||
+H0000024|childhood abuse|noun|count(thr_sing)|childhood abuse|childhood abuse|SexualOtherTrauma|||
+H0000025|close friend who was shot|noun|count(thr_sing)|close friend who was shot|close friend who was shot|SocialStressors|||
+H0000026|Cluster B|noun|count(thr_sing)|Cluster B|Cluster B|MentalHealthEvidence|||
+H0000027|cocaine abuse|noun|count(thr_sing)|cocaine abuse|cocaine abuse|SubstanceAbuseRelated|||
+H0000028|cocaine dependency|noun|count(thr_sing)|cocaine dependency|cocaine dependency|SubstanceAbuseRelated|||
+H0000029|conviction|noun|count(thr_sing)|conviction|conviction|LegalAndIncarcerationRelated|||
+H0000031|co-occuring conditions|noun|count(thr_sing)|co-occuring conditions|co-occuring conditions|MedicalComorbidities|||
+H0000032|Cornerstone Counseling Center|noun|count(thr_sing)|Cornerstone Counseling Center|Cornerstone Counseling Center|SubstanceAbuseRelated|||
+H0000033|Couch surfing|noun|count(thr_sing)|Couch surfing|Couch surfing|DoublingUp|||
+H0000034|court st shelter|noun|count(thr_sing)|court st shelter|court st shelter|DirectEvidence|||
+H0000035|court st. ne shelter|noun|count(thr_sing)|court st. ne shelter|court st. ne shelter|DirectEvidence|||
+H0000036|court st. shelter|noun|count(thr_sing)|court st. shelter|court st. shelter|DirectEvidence|||
+H0000037|court street shelter|noun|count(thr_sing)|court street shelter|court street shelter|DirectEvidence|||
+H0000038|CPS|noun|count(thr_sing)|CPS|CPS|SocialStressors||compensation disability preference|
+H0000039|Crashing in friend's house|noun|count(thr_sing)|Crashing in friend's house|Crashing in friend's house|DoublingUp|||
+H0000040|crisis|noun|count(thr_sing)|crisis|crisis|SocialStressors|C1511545|Critical|T080
+H0000041|currently employed:__y x__n|noun|count(thr_sing)|currently employed:__y x__n|currently employed:__y x__n|SocialStressors|||
+H0000042|day treatment|noun|count(thr_sing)|day treatment|day treatment|SubstanceAbuseRelated|||
+H0000043|DCHV|noun|count(thr_sing)|DCHV|DCHV|DirectEvidence|||
+H0000044|death of mother 3 ms ago|noun|count(thr_sing)|death of mother 3 ms ago|death of mother 3 ms ago|SocialStressors|||
+H0000045|dependant personality disorder|noun|count(thr_sing)|dependant personality disorder|dependant personality disorder|MentalHealthEvidence|||
+H0000046|depression|noun|count(thr_sing)|depression|depression|MentalHealthEvidence|C0011570|DEPRESSION|T048
+H0000046|depression|noun|count(thr_sing)|depression|depression|MentalHealthEvidence|C0011581|Depression|T048
+H0000047|detox|noun|count(thr_sing)|detox|detox|SubstanceAbuseRelated|||
+H0000048|detoxification|noun|count(thr_sing)|detoxification|detoxification|SubstanceAbuseRelated|||
+H0000049|did not show up|noun|count(thr_sing)|did not show up|did not show up|UtilizationAndNonCompliance|||
+H0000050|divorced|noun|count(thr_sing)|divorced|divorced|SocialStressors|C0012828|Divorce|T054
+H0000050|divorced|noun|count(thr_sing)|divorced|divorced|SocialStressors|C0086170|DIVORCED|T033
+H0000051|divorced:|noun|count(thr_sing)|divorced:|divorced:|SocialStressors|C0086170|DIVORCED|T033
+H0000052|domestic violence|noun|count(thr_sing)|domestic violence|domestic violence|SocialStressors|C0206073|Domestic Violence|T048
+H0000053|domestic violence:|noun|count(thr_sing)|domestic violence:|domestic violence:|SocialStressors|C0206073|Domestic Violence|T048
+H0000054|domicilliary program|noun|count(thr_sing)|domicilliary program|domicilliary program|DirectEvidence|||
+H0000055|Doubled up|noun|count(thr_sing)|Doubled up|Doubled up|DoublingUp|||
+H0000056|drug abuse|noun|count(thr_sing)|drug abuse|drug abuse|SubstanceAbuseRelated|C0013146|DRUG ABUSE|T048
+H0000056|drug abuse|noun|count(thr_sing)|drug abuse|drug abuse|SubstanceAbuseRelated|C0338666|Drug abuser|T101
+H0000057|drug rehab|noun|count(thr_sing)|drug rehab|drug rehab|SubstanceAbuseRelated|C1555458|Drug Rehab|T170
+H0000058|drug use|noun|count(thr_sing)|drug use|drug use|SubstanceAbuseRelated|C2239127|drug use|T033
+H0000059|dual diagnosis|noun|count(thr_sing)|dual diagnosis|dual diagnosis|MentalHealthEvidence|C0206308|Dual Diagnosis|T060
+H0000060|dui|noun|count(thr_sing)|dui|dui|AlcoholRelated|||
+H0000061|Emergency Medical Service|noun|count(thr_sing)|Emergency Medical Service|Emergency Medical Service|UtilizationAndNonCompliance|C0013961|Emergency Medical Service|T058
+H0000061|ems|noun|count(thr_sing)|ems|ems|UtilizationAndNonCompliance|C0013961|Emergency Medical Service|T058
+H0000062|ETOH|noun|count(thr_sing)|ETOH|ETOH|AlcoholRelated|C0001962|Ethyl alchohol|T109
+H0000062|EtOH|noun|count(thr_sing)|EtOH|EtOH|AlcoholRelated|C0202304|Ethyl|T059
+H0000062|ethyl alchohol|noun|count(thr_sing)|ethyl alchohol|ethyl alchohol|AlcoholRelated|C0001962|Ethyl alchohol|T109
+H0000062|ethyl|noun|count(thr_sing)|ethyl|ethyl|AlcoholRelated|C0202304|Ethyl|T059
+H0000062|etoh|noun|count(thr_sing)|etoh|etoh|AlcoholRelated|C0001962|Ethyl alchohol|T109
+H0000063|eviction|noun|count(thr_sing)|eviction|eviction|DirectEvidence|||
+H0000064|Family Promise of Salt Lake City|noun|count(thr_sing)|Family Promise of Salt Lake City|Family Promise of Salt Lake City|DirectEvidence|||
+H0000065|food bank|noun|count(thr_sing)|food bank|food bank|SocialStressors|||
+H0000066|frequent discharge|noun|count(thr_sing)|frequent discharge|frequent discharge|UtilizationAndNonCompliance|||
+H0000067|frostbite|noun|count(thr_sing)|frostbite|frostbite|MedicalComorbidities|C0016736|Frostbyte|T037
+H0000068|gangrene|noun|count(thr_sing)|gangrene|gangrene|MedicalComorbidities|C0017086|GANGRENE|T047
+H0000069|"girlfriend, who reciently died"|noun|count(thr_sing)|"girlfriend, who reciently died"|"girlfriend, who reciently died"|SocialStressors|||
+H0000069|gf died|noun|count(thr_sing)|gf died|gf died|SocialStressors||girl friend|
+H0000069|girlfriend died|noun|count(thr_sing)|girlfriend died|girlfriend died|SocialStressors|||
+H0000070|gf had died|noun|count(thr_sing)|gf had died|gf had died|SocialStressors||girl friend|
+H0000070|high risk for suicide|noun|count(thr_sing)|high risk for suicide|high risk for suicide|MentalHealthEvidence|||
+H0000071|Grace Mary Manor|noun|count(thr_sing)|Grace Mary Manor|Grace Mary Manor|DirectEvidence|||
+H0000071|homeless|noun|count(thr_sing)|homeless|homeless|DirectEvidence|C0237154|HOMELESSNESS|T033
+H0000072|Homeless Chronically Mentally Ill|noun|count(thr_sing)|Homeless Chronically Mentally Ill|Homeless Chronically Mentally Ill|DirectEvidence|||
+H0000072|half way house|noun|count(thr_sing)|half way house|half way house|DirectEvidence|||
+H0000073|HCHV|noun|count(thr_sing)|HCHV|HCHV|DirectEvidence|||
+H0000073|homeless program|noun|count(thr_sing)|homeless program|homeless program|DirectEvidence|||
+H0000074|HCMI|noun|count(thr_sing)|HCMI|HCMI|DirectEvidence|||
+H0000074|homelessness|noun|count(thr_sing)|homelessness|homelessness|DirectEvidence|||
+H0000075|HCRV|noun|count(thr_sing)|HCRV|HCRV|LegalAndIncarcerationRelated|||
+H0000075|housing coordinator|noun|count(thr_sing)|housing coordinator|housing coordinator|DirectEvidence|||
+H0000076|Healthcare for Homeless Veterans|noun|count(thr_sing)|Healthcare for Homeless Veterans|Healthcare for Homeless Veterans|DirectEvidence|||
+H0000076|housing program|noun|count(thr_sing)|housing program|housing program|DirectEvidence|||
+H0000077|HUD VASH|noun|count(thr_sing)|HUD VASH|HUD VASH|DirectEvidence|||
+H0000077|HUD-VASH|noun|count(thr_sing)|HUD-VASH|HUD-VASH|DirectEvidence|||
+H0000077|Healthcare for Re-Entry Veterans|noun|count(thr_sing)|Healthcare for Re-Entry Veterans|Healthcare for Re-Entry Veterans|LegalAndIncarcerationRelated|||
+H0000078|HEP C|noun|count(thr_sing)|HEP C|HEP C|MedicalComorbidities|||
+H0000078|jail|noun|count(thr_sing)|jail|jail|LegalAndIncarcerationRelated|C04426814|Jail|T073
+H0000079|Hep C|noun|count(thr_sing)|Hep C|Hep C|MedicalComorbidities|C0019196|HEPATITIS C|T047
+H0000079|hepatitis C|noun|count(thr_sing)|hepatitis C|hepatitis C|MedicalComorbidities|C0019196|HEPATITIS C|T047
+H0000079|hepatitis C|noun|count(thr_sing)|hepatitis C|hepatitis C|MedicalComorbidities|C0220847|HEPATITIS C|T005
+H0000079|job loss|noun|count(thr_sing)|job loss|job loss|SocialStressors|||
+H0000080|Jordan River|noun|count(thr_sing)|Jordan River|Jordan River|DirectEvidence|||
+H0000081|Judge Baxter|noun|count(thr_sing)|Judge Baxter|Judge Baxter|DirectEvidence|||
+H0000082|lack of housing|noun|count(thr_sing)|lack of housing|lack of housing|DirectEvidence|||
+H0000083|lack of sober support|noun|count(thr_sing)|lack of sober support|lack of sober support|AlcoholRelated|||
+H0000084|lack of support network|noun|count(thr_sing)|lack of support network|lack of support network|SocialStressors|||
+H0000085|lacks support|noun|count(thr_sing)|lacks support|lacks support|SocialStressors|||
+H0000086|laid off|noun|count(thr_sing)|laid off|laid off|SocialStressors|||
+H0000087|legal problem|noun|count(thr_sing)|legal problem|legal problem|LegalAndIncarcerationRelated|||
+H0000088|legal problems|noun|count(thr_sing)|legal problems|legal problems|LegalAndIncarcerationRelated|||
+H0000089|legal proceedings|noun|count(thr_sing)|legal proceedings|legal proceedings|LegalAndIncarcerationRelated|||
+H0000090|LGBT|noun|count(thr_sing)|LGBT|LGBT|SocialStressors||lesbian gay bisexual transgender|
+H0000091|liberty house|noun|count(thr_sing)|liberty house|liberty house|DirectEvidence|||
+H0000092|liberty house shelter|noun|count(thr_sing)|liberty house shelter|liberty house shelter|DirectEvidence|||
+H0000093|lived alone|noun|count(thr_sing)|lived alone|lived alone|SocialStressors|||
+H0000093|lives alone|noun|count(thr_sing)|lives alone|lives alone|SocialStressors|||
+H0000094|lived with boyfriend|noun|count(thr_sing)|lived with boyfriend|lived with boyfriend|DoublingUp|||
+H0000094|lives with boyfriend|noun|count(thr_sing)|lives with boyfriend|lives with boyfriend|DoublingUp|||
+H0000094|living with boyfriend|noun|count(thr_sing)|living with boyfriend|living with boyfriend|DoublingUp|||
+H0000095|lived with brothers|noun|count(thr_sing)|lived with brothers|lived with brothers|DoublingUp|||
+H0000095|lived with brother|noun|count(thr_sing)|lived with brother|lived with brother|DoublingUp|||
+H0000095|lives with brothers|noun|count(thr_sing)|lives with brothers|lives with brothers|DoublingUp|||
+H0000095|lives with brother|noun|count(thr_sing)|lives with brother|lives with brother|DoublingUp|||
+H0000095|living with brothers|noun|count(thr_sing)|living with brothers|living with brothers|DoublingUp|||
+H0000095|living with brother|noun|count(thr_sing)|living with brother|living with brother|DoublingUp|||
+H0000096|lived with father|noun|count(thr_sing)|lived with father|lived with father|DoublingUp|||
+H0000096|lives with father|noun|count(thr_sing)|lives with father|lives with father|DoublingUp|||
+H0000096|living with father|noun|count(thr_sing)|living with father|living with father|DoublingUp|||
+H0000097|lived with girlfriend|noun|count(thr_sing)|lived with girlfriend|lived with girlfriend|DoublingUp|||
+H0000097|lives with girlfriend|noun|count(thr_sing)|lives with girlfriend|lives with girlfriend|DoublingUp|||
+H0000097|living with girlfriend|noun|count(thr_sing)|living with girlfriend|living with girlfriend|DoublingUp|||
+H0000098|lived with mother|noun|count(thr_sing)|lived with mother|lived with mother|DoublingUp|||
+H0000098|lives with mother|noun|count(thr_sing)|lives with mother|lives with mother|DoublingUp|||
+H0000098|living with mother|noun|count(thr_sing)|living with mother|living with mother|DoublingUp|||
+H0000099|lived with parents|noun|count(thr_sing)|lived with parents|lived with parents|DoublingUp|||
+H0000099|lived with parent|noun|count(thr_sing)|lived with parent|lived with parent|DoublingUp|||
+H0000099|lives with parents|noun|count(thr_sing)|lives with parents|lives with parents|DoublingUp|||
+H0000099|lives with parent|noun|count(thr_sing)|lives with parent|lives with parent|DoublingUp|||
+H0000099|living with parents|noun|count(thr_sing)|living with parents|living with parents|DoublingUp|||
+H0000100|lived with partner|noun|count(thr_sing)|lived with partner|lived with partner|DoublingUp|||
+H0000100|lives with partner|noun|count(thr_sing)|lives with partner|lives with partner|DoublingUp|||
+H0000100|living with parent|noun|count(thr_sing)|living with parent|living with parent|DoublingUp|||
+H0000100|missed appt|noun|count(thr_sing)|missed appt|missed appt|UtilizationAndNonCompliance|||
+H0000101|lived with same sex partner|noun|count(thr_sing)|lived with same sex partner|lived with same sex partner|DoublingUp|||
+H0000101|lives with same sex partner|noun|count(thr_sing)|lives with same sex partner|lives with same sex partner|DoublingUp|||
+H0000101|living with partner|noun|count(thr_sing)|living with partner|living with partner|DoublingUp|||
+H0000101|living with same sex partner|noun|count(thr_sing)|living with same sex partner|living with same sex partner|DoublingUp|||
+H0000102|lived with sisters|noun|count(thr_sing)|lived with sisters|lived with sisters|DoublingUp|||
+H0000102|lived with sister|noun|count(thr_sing)|lived with sister|lived with sister|DoublingUp|||
+H0000102|lives with sisters|noun|count(thr_sing)|lives with sisters|lives with sisters|DoublingUp|||
+H0000102|lives with sister|noun|count(thr_sing)|lives with sister|lives with sister|DoublingUp|||
+H0000102|living with sister|noun|count(thr_sing)|living with sister|living with sister|DoublingUp|||
+H0000103|loss of his girlfriend|noun|count(thr_sing)|loss of his girlfriend|loss of his girlfriend|SocialStressors|||
+H0000104|low income|noun|count(thr_sing)|low income|low income|SocialStressors|||
+H0000105|marital stress|noun|count(thr_sing)|marital stress|marital stress|SocialStressors|||
+H0000106|mass veteran's inc shelter|noun|count(thr_sing)|mass veteran's inc shelter|mass veteran's inc shelter|DirectEvidence|||
+H0000107|medication noncompliance|noun|count(thr_sing)|medication noncompliance|medication noncompliance|UtilizationAndNonCompliance|||
+H0000108|military sexual trauma|noun|count(thr_sing)|military sexual trauma|military sexual trauma|MilitarySexualTrauma|||
+H0000109|missed appointments:|noun|count(thr_sing)|missed appointments:|missed appointments:|UtilizationAndNonCompliance|||
+H0000111|missed his fu appt|noun|count(thr_sing)|missed his fu appt|missed his fu appt|UtilizationAndNonCompliance|||
+H0000112|mo died|noun|count(thr_sing)|mo died|mo died|SocialStressors||mother died|
+H0000113|money issues|noun|count(thr_sing)|money issues|money issues|SocialStressors|||
+H0000114|MST|noun|count(thr_sing)|MST|MST|MilitarySexualTrauma|||
+H0000114|mst|noun|count(thr_sing)|mst|mst|MilitarySexualTrauma|||
+H0000115|multiple arrests|noun|count(thr_sing)|multiple arrests|multiple arrests|LegalAndIncarcerationRelated|||
+H0000116|multiple hospitalizations|noun|count(thr_sing)|multiple hospitalizations|multiple hospitalizations|UtilizationAndNonCompliance|||
+H0000117|narcissistic personality disorder|noun|count(thr_sing)|narcissistic personality disorder|narcissistic personality disorder|MentalHealthEvidence|C0027402|Narcissistic Personality Disorder|T033
+H0000118|Native American|noun|count(thr_sing)|Native American|Native American|OtherRisks|C0282204|NATIVE AMERICAN|T098
+H0000118|Native American|noun|count(thr_sing)|Native American|Native American|OtherRisks|C1515945|Native Americans|T098
+H0000118|Native americans|noun|count(thr_sing)|Native americans|Native americans|OtherRisks|C1515945|Native Americans|T098
+H0000118|native american|noun|count(thr_sing)|native american|native american|OtherRisks|C0282204|NATIVE AMERICAN|T098
+H0000118|native american|noun|count(thr_sing)|native american|native american|OtherRisks|C1515945|Native Americans|T098
+H0000119|needs backpacks|noun|count(thr_sing)|needs backpacks|needs backpacks|HomelessRelatedNeeds|||
+H0000120|needs ID|noun|count(thr_sing)|needs ID|needs ID|HomelessRelatedNeeds|||
+H0000121|needs shoes|noun|count(thr_sing)|needs shoes|needs shoes|HomelessRelatedNeeds|||
+H0000122|needs sleeping bag|noun|count(thr_sing)|needs sleeping bag|needs sleeping bag|HomelessRelatedNeeds|||
+H0000123|needs socks|noun|count(thr_sing)|needs socks|needs socks|HomelessRelatedNeeds|||
+H0000124|needs tent|noun|count(thr_sing)|needs tent|needs tent|HomelessRelatedNeeds|||
+H0000125|never married|noun|count(thr_sing)|never married|never married|SocialStressors|C0027952|NEVER MARRIED|T033
+H0000126|no family support|noun|count(thr_sing)|no family support|no family support|SocialStressors|||
+H0000127|no housing|noun|count(thr_sing)|no housing|no housing|DirectEvidence|||
+H0000128|No ID|noun|count(thr_sing)|No ID|No ID|HomelessRelatedNeeds|||
+H0000128|no id|noun|count(thr_sing)|no id|no id|HomelessRelatedNeeds|||
+H0000129|no income|noun|count(thr_sing)|no income|no income|SocialStressors|||
+H0000130|no permanent address|noun|count(thr_sing)|no permanent address|no permanent address|SocialStressors|||
+H0000131|non-adherence|noun|count(thr_sing)|non-adherence|non-adherence|UtilizationAndNonCompliance|||
+H0000132|not involved with family|noun|count(thr_sing)|not involved with family|not involved with family|SocialStressors|||
+H0000133|not working now|noun|count(thr_sing)|not working now|not working now|SocialStressors|||
+H0000134|notice to vacate|noun|count(thr_sing)|notice to vacate|notice to vacate|SocialStressors|||
+H0000135|Odyssey House|noun|count(thr_sing)|Odyssey House|Odyssey House|DirectEvidence|||
+H0000136|on probation|noun|count(thr_sing)|on probation|on probation|LegalAndIncarcerationRelated|||
+H0000137|over 12 psychiatric admissions|noun|count(thr_sing)|over 12 psychiatric admissions|over 12 psychiatric admissions|MentalHealthEvidence|||
+H0000138|overdose|noun|count(thr_sing)|overdose|overdose|SubstanceAbuseRelated|C0029944|OVERDOSE|T037
+H0000139|Palmer Court|noun|count(thr_sing)|Palmer Court|Palmer Court|DirectEvidence|||
+H0000140|paranoia|noun|count(thr_sing)|paranoia|paranoia|MentalHealthEvidence|C1456784|PARANOIA|T048
+H0000141|parole|noun|count(thr_sing)|parole|parole|LegalAndIncarcerationRelated|C0814701|Parole|T089
+H0000142|pathological gambling|noun|count(thr_sing)|pathological gambling|pathological gambling|PathologicalGambling|C0030662|Pathological Gambling|T048
+H0000143|poor coping skills|noun|count(thr_sing)|poor coping skills|poor coping skills|MentalHealthEvidence|||
+H0000144|poor family support|noun|count(thr_sing)|poor family support|poor family support|SocialStressors|||
+H0000145|poor social support|noun|count(thr_sing)|poor social support|poor social support|SocialStressors|||
+H0000146|prison|noun|count(thr_sing)|prison|prison|LegalAndIncarcerationRelated|C0033168|Prison|T073
+H0000147|probation|noun|count(thr_sing)|probation|probation|LegalAndIncarcerationRelated|C0687758|PROBATION|T048
+H0000148|psychosis|noun|count(thr_sing)|psychosis|psychosis|MentalHealthEvidence|C0033975|PSYCHOSIS|T048
+H0000149|rapid rehousing|noun|count(thr_sing)|rapid rehousing|rapid rehousing|DirectEvidence|||
+H0000150|recent divorce|noun|count(thr_sing)|recent divorce|recent divorce|SocialStressors|||
+H0000151|recently moved|noun|count(thr_sing)|recently moved|recently moved|SocialStressors|||
+H0000152|reckless driving|noun|count(thr_sing)|reckless driving|reckless driving|LegalAndIncarcerationRelated|||
+H0000153|re-establish relationship|noun|count(thr_sing)|re-establish relationship|re-establish relationship|SocialStressors|||
+H0000154|relationship conflict|noun|count(thr_sing)|relationship conflict|relationship conflict|SocialStressors|||
+H0000155|Rescue Haven|noun|count(thr_sing)|Rescue Haven|Rescue Haven|DirectEvidence|||
+H0000156|Rescue Mission|noun|count(thr_sing)|Rescue Mission|Rescue Mission|DirectEvidence|||
+H0000157|reservation|noun|count(thr_sing)|reservation|reservation|OtherRisks|C1514889|Reservation|T083
+H0000158|residential rehab treatment|noun|count(thr_sing)|residential rehab treatment|residential rehab treatment|DirectEvidence|||
+H0000159|sa|noun|count(thr_sing)|sa|sa|SubstanceAbuseRelated||substance abuse|
+H0000160|SA rehab|noun|count(thr_sing)|SA rehab|SA rehab|SubstanceAbuseRelated||substance abuse rehab|
+H0000160|sa rehab|noun|count(thr_sing)|sa rehab|sa rehab|SubstanceAbuseRelated||substance abuse rehab|
+H0000160|single room occupancy|noun|count(thr_sing)|single room occupancy|single room occupancy|DirectEvidence|||
+H0000161|schizophrenia|noun|count(thr_sing)|schizophrenia|schizophrenia|MentalHealthEvidence|C0036341|SCHIZOPHRENIA|T048
+H0000162|section 8|noun|count(thr_sing)|section 8|section 8|DirectEvidence|||
+H0000163|separated|noun|count(thr_sing)|separated|separated|SocialStressors|C0086972|Separated|T033
+H0000163|separated|noun|count(thr_sing)|separated|separated|SocialStressors|C0443299|Separate|T082
+H0000164|sever and persistant mental illness|noun|count(thr_sing)|sever and persistant mental illness|sever and persistant mental illness|MentalHealthEvidence|||
+H0000165|sexual abuse|noun|count(thr_sing)|sexual abuse|sexual abuse|SexualOtherTrauma|C0282350|Sexual Abuse|T048
+H0000166|sexual assault|noun|count(thr_sing)|sexual assault|sexual assault|SexualOtherTrauma|C0237236|Sexual Assault|T048
+H0000167|sexually abused|noun|count(thr_sing)|sexually abused|sexually abused|SexualOtherTrauma|C0282350|Sexual Abuse|T048
+H0000168|shelter|noun|count(thr_sing)|shelter|shelter|DirectEvidence|C0150767|SHELTER|T073
+H0000169|single mother|noun|count(thr_sing)|single mother|single mother|SocialStressors|||
+H0000171|Sleeping in a different place every night|noun|count(thr_sing)|Sleeping in a different place every night|Sleeping in a different place every night|DoublingUp|||
+H0000172|social isolation|noun|count(thr_sing)|social isolation|social isolation|MentalHealthEvidence|C0037421|SOCIAL ISOLATION|T054
+H0000173|squatting|noun|count(thr_sing)|squatting|squatting|DirectEvidence|||
+H0000174|SRO|noun|count(thr_sing)|SRO|SRO|DirectEvidence|||
+H0000174|sro|noun|count(thr_sing)|sro|sro|DirectEvidence|||
+H0000175|St Vincent|noun|count(thr_sing)|St Vincent|St Vincent|DirectEvidence|||
+H0000176|stressor|noun|count(thr_sing)|stressor|stressor|SocialStressors|C0038435|Stressor|T033
+H0000176|stressor|noun|count(thr_sing)|stressor|stressor|SocialStressors|C0597530|Stressor|T078
+H0000177|substance abuse|noun|count(thr_sing)|substance abuse|substance abuse|SubstanceAbuseRelated|C0740858|SUBSTANCE ABUSE|T048
+H0000178|substance dependance|noun|count(thr_sing)|substance dependance|substance dependance|SubstanceAbuseRelated|||
+H0000179|suspected abuse/neglect|noun|count(thr_sing)|suspected abuse/neglect|suspected abuse/neglect|SexualOtherTrauma|||
+H0000180|The Road Home|noun|count(thr_sing)|The Road Home|The Road Home|DirectEvidence|||
+H0000181|trauma|noun|count(thr_sing)|trauma|trauma|SexualOtherTrauma|C0043251|TRAUMA|T037
+H0000182|unemployed|noun|count(thr_sing)|unemployed|unemployed|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000183|unemployment|noun|count(thr_sing)|unemployment|unemployment|SocialStressors|C0041674|UNEMPLOYED|T033
+H0000184|v60.0|noun|count(thr_sing)|v60.0|v60.0|DirectEvidence|||
+H0000185|VA Supportive Housing|noun|count(thr_sing)|VA Supportive Housing|VA Supportive Housing|DirectEvidence|||
+H0000186|VASH|noun|count(thr_sing)|VASH|VASH|DirectEvidence|||
+H0000187|violence|noun|count(thr_sing)|violence|violence|SexualOtherTrauma|C0042693|Violence|T048
+H0000188|domiciliary care|noun|count(thr_sing)|domiciliary care|domiciliary care|DirectEvidence|C0019855|Domiciliary Care|T058
+H0000189|violent behavior|noun|count(thr_sing)|violent behavior|violent behavior|MentalHealthEvidence|||
+H0000192|Wasatch Homeless Health Care Program|noun|count(thr_sing)|Wasatch Homeless Health Care Program|Wasatch Homeless Health Care Program|DirectEvidence|||
+H0000193|Weigand Center|noun|count(thr_sing)|Weigand Center|Weigand Center|DirectEvidence|||
+H0000194|widowed|noun|count(thr_sing)|widowed|widowed|SocialStressors|C0206275|WIDOWED|T033
+H0000196|work therapy|noun|count(thr_sing)|work therapy|work therapy|DirectEvidence|||
+H0000197|a victim of abuse or neglect|noun|count(thr_sing)|a victim of abuse or neglect|a victim of abuse or neglect|SexualOtherTrauma|||
+H0000198|rule out|verb|"pres(fst_sing,fst_plur,thr_plur,second)"|rule out|rule out||||
+H0000198|rule out|verb|infinitive|rule out|rule out||||
+H0000198|ruled out|verb|past_part|ruled out|ruled out||||
+H0000198|ruled out|verb|past|ruled out|ruled out||||
+H0000198|rules out|verb|pres(thr_sing)|rules out|rules out||||
+H0000198|ruling out|verb|pres_part|ruling out|ruling out||||
+H0000199|AXIS II|noun|count(thr_sing)noun|AXIS II|AXIS II|MentalHealthEvidence|||
+H0000200|Domiciliary Care for Homeless Veterans|noun|count(thr_sing)noun|Domiciliary Care for Homeless Veterans|Domiciliary Care for Homeless Veterans|DirectEvidence|||
+H0000201|Domicilliary Care for Homeless Veterans|noun|count(thr_sing)noun|Domicilliary Care for Homeless Veterans|Domicilliary Care for Homeless Veterans|DirectEvidence|||
+H0000202|SATP|noun|count(thr_sing)noun|SATP|SATP|SubstanceAbuseRelated||substance abuse treatment program|
+H0000203|VA Domiciliary Care Program|noun|count(thr_sing)noun|VA Domiciliary Care Program|VA Domiciliary Care Program|DirectEvidence|||
+H0000204|childhood trauma|noun|count(thr_sing)noun|childhood trauma|childhood trauma|SexualOtherTrauma|||
+H0000205|domiciliary program|noun|count(thr_sing)noun|domiciliary program|domiciliary program|DirectEvidence|||
+H0000207|rehab|noun|count(thr_sing)noun|rehab|rehab|SubstanceAbuseRelated|C0034991|Rehabilitation|T061
+H0000208|sexual trauma|noun|count(thr_sing)noun|sexual trauma|sexual trauma|SexualOtherTrauma|||
+H0000209|substance abuse rehab|noun|count(thr_sing)noun|substance abuse rehab|substance abuse rehab|SubstanceAbuseRelated|||
+H0000210|substance abuse treatment program|noun|count(thr_sing)noun|substance abuse treatment program|substance abuse treatment program|SubstanceAbuseRelated|||
+H0000211|transitional residence|noun|count(thr_sing)noun|transitional residence|transitional residence|DirectEvidence|||
+H0000212|well known to me|noun|count(thr_sing)noun|well known to me|well known to me|DirectEvidence|||
+H0000213|alcohol abuse/dependence|noun|count(thr_sing)|alcohol abuse/dependence|alcohol abuse/dependence|AlcoholRelated|||
+H0000214|etoh abuse|noun|count(thr_sing)|etoh abuse|etoh abuse|AlcoholRelated|C0085762|Alchohol abuse|T048
+H0000215|etoh dependence|noun|count(thr_sing)|etoh dependence|etoh dependence|AlcoholRelated|C0001973|"Alchoholic Intoxication, Chronic"|T048
+H0000216|etoh abuse/dependence|noun|count(thr_sing)|etoh abuse/dependence|etoh abuse/dependence|AlcoholRelated| | | 
+H0000218|limited social support|noun|count(thr_sing)|limited social support|limited social support|SocialStressors|||
+H0000219|failed marriage|noun|count(thr_sing)|failed marriage|failed marriage|SocialStressors|||
+H0000220|fired|noun|count(thr_sing)|fired|fired|SocialStressors|||
+H0000221|SA groups|noun|count(thr_sing)|SA groups|SA groups|SubstanceAbuseRelated||substance abuse groups|
+H0000221|SA group|noun|count(thr_sing)|SA group|SA group|SubstanceAbuseRelated||substance abuse groups|
+H0000222|AA groups|noun|count(thr_sing)|AA groups|AA groups|AlcoholRelated|||
+H0000222|AA group|noun|count(thr_sing)|AA group|AA group|AlcoholRelated|||
+H0000223|structured residential program|noun|count(thr_sing)|structured residential program|structured residential program|DirectEvidence|||
+H0000224|binge drinking|noun|count(thr_sing)|binge drinking|binge drinking|AlcoholRelated|||
+H0000225|soup kitchen|noun|count(thr_sing)|soup kitchen|soup kitchen|DirectEvidence|||
+H0000226|wife died|noun|count(thr_sing)|wife died|wife died|SocialStressors|||
+H0000226|wife passed away|noun|count(thr_sing)|wife passed away|wife passed away|SocialStressors|||
+H0000227|temporary housing program|noun|count(thr_sing)|temporary housing program|temporary housing program|DirectEvidence|||
+H0000228|living on the streets|noun|count(thr_sing)|living on the streets|living on the streets|DirectEvidence|||
+H0000228|living on the street|noun|count(thr_sing)|living on the street|living on the street|DirectEvidence|||
+H0000229|assistance with housing|noun|count(thr_sing)|assistance with housing|assistance with housing|DirectEvidence|||
+H0000229|housing assistance|noun|count(thr_sing)|housing assistance|housing assistance|DirectEvidence|||
+H0000229|obtaining housing|noun|count(thr_sing)|obtaining housing|obtaining housing|DirectEvidence|||
+H0000229|seeking housing assistance|noun|count(thr_sing)|seeking housing assistance|seeking housing assistance|DirectEvidence|||
+H0000230|GPD program|noun|count(thr_sing)|GPD program|GPD program|DirectEvidence|||
+H0000230|grant per diem program|noun|count(thr_sing)|grant per diem program|grant per diem program|DirectEvidence|||
+H0000231|concerned about housing|noun|count(thr_sing)|concerned about housing|concerned about housing|DirectEvidence|||
+H0000231|concerns about housing|noun|count(thr_sing)|concerns about housing|concerns about housing|DirectEvidence|||
+H0000231|housing concerns|noun|count(thr_sing)|housing concerns|housing concerns|DirectEvidence|||
+H0000232|pan handling|noun|count(thr_sing)|pan handling|pan handling|DirectEvidence|||
+H0000233|incarcerated|noun|count(thr_sing)|incarcerated|incarcerated|LegalAndIncarcerationRelated|C0205255|Incarceration|T077
+H0000233|incarceration|noun|count(thr_sing)|incarceration|incarceration|LegalAndIncarcerationRelated|C0205255|Incarceration|T077
+H0000233|registered sex offender|noun|count(thr_sing)|registered sex offender|registered sex offender|MentalHealthEvidence|||
+H0000233|sexual convictions|noun|count(thr_sing)|sexual convictions|sexual convictions|MentalHealthEvidence|||
+H0000234|SRH|noun|count(thr_sing)|SRH|SRH|DirectEvidence|||
+H0000234|single room housing|noun|count(thr_sing)|single room housing|single room housing|DirectEvidence|||
+H0000235|heroin|noun|count(thr_sing)|heroin|heroin|SubstanceAbuseRelated|||
+H0000236|eligible to apply for|noun|count(thr_sing)|eligible to apply for|eligible to apply for|DirectEvidence|||
+H0000237|Form X|noun|count(thr_sing)|Form X|Form X|DirectEvidence|||
+H0000238|SA TAB|noun|count(thr_sing)|SA TAB|SA TAB||||
+H0000239|hostel|noun|count(thr_sing)|hostel|hostel|DirectEvidence|||
+H0000239|sleep in automobile|noun|count(thr_sing)|sleep in automobile|sleep in automobile|DirectEvidence|||
+H0000239|sleep in auto|noun|count(thr_sing)|sleep in auto|sleep in auto|DirectEvidence|||
+H0000239|sleeping in automobile|noun|count(thr_sing)|sleeping in automobile|sleeping in automobile|DirectEvidence|||
+H0000239|slept in automobile|noun|count(thr_sing)|slept in automobile|slept in automobile|DirectEvidence|||
+H0000239|slept in auto|noun|count(thr_sing)|slept in auto|slept in auto|DirectEvidence|||
+H0000240|sleep in truck|noun|count(thr_sing)|sleep in truck|sleep in truck|DirectEvidence|||
+H0000240|sleeping in truck|noun|count(thr_sing)|sleeping in truck|sleeping in truck|DirectEvidence|||
+H0000240|slept in truck|noun|count(thr_sing)|slept in truck|slept in truck|DirectEvidence|||
+H0000241|sleep in boat|noun|count(thr_sing)|sleep in boat|sleep in boat|DirectEvidence|||
+H0000241|sleeping in boat|noun|count(thr_sing)|sleeping in boat|sleeping in boat|DirectEvidence|||
+H0000241|slept in boat|noun|count(thr_sing)|slept in boat|slept in boat|DirectEvidence|||
+H0000242|sleep in trailer|noun|count(thr_sing)|sleep in trailer|sleep in trailer|DirectEvidence|||
+H0000242|sleeping in trailer|noun|count(thr_sing)|sleeping in trailer|sleeping in trailer|DirectEvidence|||
+H0000242|slept in trailer|noun|count(thr_sing)|slept in trailer|slept in trailer|DirectEvidence|||
+H0000243|sleeping outdoors|noun|count(thr_sing)|sleeping outdoors|sleeping outdoors|DirectEvidence|||
+H0000243|slept outdoors|noun|count(thr_sing)|slept outdoors|slept outdoors|DirectEvidence|||
+H0000244|sleeping on the sidewalk|noun|count(thr_sing)|sleeping on the sidewalk|sleeping on the sidewalk|DirectEvidence|||
+H0000244|slept on the sidewalk|noun|count(thr_sing)|slept on the sidewalk|slept on the sidewalk|DirectEvidence|||
+H0000245|sleeping in abandoned building|noun|count(thr_sing)|sleeping in abandoned building|sleeping in abandoned building|DirectEvidence|||
+H0000245|slept in abandoned building|noun|count(thr_sing)|slept in abandoned building|slept in abandoned building|DirectEvidence|||
+H0000246|sleeping in the park|noun|count(thr_sing)|sleeping in the park|sleeping in the park|DirectEvidence|||
+H0000246|slept in the park|noun|count(thr_sing)|slept in the park|slept in the park|DirectEvidence|||
+H0000247|"wife, who reciently died"|noun|count(thr_sing)|"wife, who reciently died"|"wife, who reciently died"|SocialStressors|||
+H0000247|wife died|noun|count(thr_sing)|wife died|wife died|SocialStressors|||
+H0000247|wife reciently died|noun|count(thr_sing)|wife reciently died|wife reciently died|SocialStressors|||
+H0000248|AIDS|noun|count(thr_sing)|AIDS|AIDS|MedicalComorbidities|||
+H0000248|HIV|noun|count(thr_sing)|HIV|HIV|MedicalComorbidities|||
+H0000249|human immunodeficiency virus|noun|count(thr_sing)|human immunodeficiency virus|human immunodeficiency virus|MedicalComorbidities|||
+H0000250|icd 042|noun|count(thr_sing)|icd 042|icd 042|MedicalComorbidities|||

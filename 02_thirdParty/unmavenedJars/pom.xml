@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <!-- =================================================== -->
+    <!--          unmavendJars                               -->
+    <!-- =================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>unmavenedJars</artifactId>
+  <packaging>jar</packaging>
+  <version>2021.02.0</version>
+
+  <description> Unmavened jars installs local 3rd party jars that are not in a nexus server </description>
+
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+  </parent>
+
+
+    <!-- =================================================== -->
+    <!--  Properties - The global stuff                      -->
+    <!-- =================================================== -->
+
+
+    <!-- =================================================== -->
+    <!-- Build Phase                                         -->
+    <!-- =================================================== -->
+    <build>
+ <plugins>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-install-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+
+                <execution>
+                    <id>inst_02</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- config for file 01 -->
+                        <file>lib/com.springsource.edu.emory.mathcs.backport-3.1.0.jar</file>
+                        <groupId>edu.emory.mathcs.backport</groupId>
+                        <artifactId>com.springsource.edu.emory.mathcs.backport</artifactId>
+                        <version>3.1.0</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_03</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- config for file 01 -->
+                        <file>lib/nashorn-0.1.0.2013020801.jar</file>
+                        <groupId>org.bodil.openjdk</groupId>
+                        <artifactId>nashorn</artifactId>
+                        <version>0.1.0.2013020801</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+
+                <execution>
+                    <id>inst_05</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- BioC - it's an NCBI file format set of software. -->
+                        <file>lib/bioC_Java-1.0.jar</file>
+                        <groupId>gov.nih.ncbi</groupId>
+                        <artifactId>bioC_Java</artifactId>
+                        <version>1.0</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_06</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- OpenNLP tools - the default version had a bug in it. This local version has the fix. -->
+                        <file>lib/opennlp-tools-1.4.0.local.jar</file>
+  			<groupId>org.apache.opennlpL</groupId>
+  			<artifactId>opennlp-tools</artifactId>
+                        <version>1.4.0.local</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_07</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- OpenNLP MaxInt - the default version had a bug in it. This local version has the fix. -->
+                        <file>lib/maxent-2.5.2.local.jar</file>
+  			<groupId>opennlpL</groupId>
+  			<artifactId>maxent</artifactId>
+			<version>2.5.2.local</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_08</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- Thuy Le Tran's ObSecAn sectionizer she never put it into a public repo.  --> 
+                        <file>lib/obsecAnSection-2015.04.21.jar</file>
+  			<groupId>gov.va.ltran</groupId>
+  			<artifactId>obsecAnSection</artifactId>
+  			<version>2015.04.21</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+
+                <execution>
+                    <id>inst_10</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- MIT's JverbNet--> 
+                        <file>lib/edu.mit.jverbnet-1.2.0.jar</file>
+                        <packaging>jar</packaging>
+			<groupId>edu.mit</groupId>
+  			<artifactId>jverbnet</artifactId>
+  			<version>1.2.0</version>
+  			<packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_11</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- NLM's lvg 2022 version --> 
+                        <file>lib/lvg2022dist.jar</file>
+                        <packaging>jar</packaging>
+			<groupId>gov.nih.nlm.nls.lvg</groupId>
+  			<artifactId>lvgdist</artifactId>
+  			<version>2022.0</version>
+  			<packaging>jar</packaging>
+                    </configuration>
+                </execution>
+            </executions>
+
+
+        </plugin>            
+    </plugins>
+</build>
+</project>

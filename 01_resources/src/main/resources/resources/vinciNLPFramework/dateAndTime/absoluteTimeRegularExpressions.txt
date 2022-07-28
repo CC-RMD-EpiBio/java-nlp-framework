@@ -1,0 +1,64 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ at\s{1,50}this\s{1,50}time 
+ \d+\p{Punct}\d+\s{1,50}a\p{Punct}m\p{Punct} 
+ \d+\s{1,50}p\p{Punct}m\p{Punct} 
+ currently 
+\s{1,50} \d+\p{Punct}\d+\s{1,50}AM 
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}\p{Punct}
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}acetaminophen
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}insulin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}metoprolol
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}aspirin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}Normal
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}nystatin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}T
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}R
+ \d+\p{Punct}\d+\p{Punct}\d+ \p{Punct}\S{1,2}
+\s{1,50} \d+\p{Punct}\d+\s{1,50}PM 
+ \d+\p{Punct}\d+\p{Punct}\d+\s{1,50}AM 
+\s{1,50} \d+\p{Punct}\d+ \s{1,50}T
+\d+\p{Punct}\s{1,50} \d+\p{Punct}\d+ \s{1,50}\p{Punct}
+ \d+\p{Punct}\d+\p{Punct}\d+\s{1,50}PM \s{1,50}\p{Punct}
+\p{Punct}neb\s{1,50}\p{Punct}\s{1,50}Start\s{1,50}\p{Punct}\s{1,50}\p{Punct}\p{Punct}DATE\p{Punct}Apr\s{1,50}\d+\s{1,50}\d+\p{Punct}\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}darbepoetin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}Dextrose
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}epoetin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}heparin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}hydromorphone
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}lactulose
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}lanthanum
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}menthol
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}oxycodone
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}predniSONE
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}prochlorperazine
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}sodium
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}General
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}Tran
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}DKB
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}Impression
+#
+#
+#
+[0-9]:[0-5][0-9]:[0-5][0-9]\s?(am|pm|a.m.|p.m.|AM|PM)?
+[0-9]:[0-5][0-9]:[0-5][0-9]\s[AM|PM|A.M.|P.M.|a.m.|p.m.|am|pm]
+[0]?[0-2]:[0]?[0-5][0-9]|[0-9]:[0-5][0-9]

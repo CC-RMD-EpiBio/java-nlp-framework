@@ -1,0 +1,249 @@
+M0000|changes|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|changes|changes|modifier
+M0000|unusual|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|unusual|unusual|modifier
+M0000|unusually|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|unusually|unusually|modifier
+M0000|discomfort|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|discomfort|discomfort|modifier
+M0000|uncomfortable|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|uncomfortable|uncomfortable|modifier
+M0000|urge|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|urge|urge|modifier
+M0000|urgent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|urgent|urgent|modifier
+M0000|complain|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|complain|complain|modifier
+M0000|complaining|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|complaining|complaining|modifier
+M0000|complaint|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|complaint|complaint|modifier
+#M0000|discharge|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|discharge|discharge|modifier
+M0000|itch|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|itch|itch|modifier
+M0000|itching|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|itching|itching|modifier
+M0000|itchiness|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|itchiness|itchiness|modifier
+M0000|odor|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|odor|odor|modifier
+M0000|paresthesia|<noun>|<base+singular>|paresthesia|paresthesia|modifier
+M0000|tingling|<verb>|<presPart>|tingling|tingling|modifier
+M0000|longer|<adj+adv+noun+verb>|<base+comparative+positive+singular+infinitive>|longer|longer|modifier
+M0000|shorter|<adj+adv+noun+verb>|<base+comparative+positive+singular+infinitive>|shorter|shorter|modifier
+M0000|tender|<adj+adv+noun+verb>|<base+comparative+positive+singular+infinitive>|tender|tender|modifier
+M0000|tenderness|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|tenderness|tenderness|modifier
+M0000|vague|<adj>|<base+positive>|vague|vague|modifier
+M0000|painful|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|painful|painful|modifier
+#M0000|pain|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pain|pain|modifier
+M0000|abnormal|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abnormal|abnormal|modifier
+M0000|very|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|very|very|modifier
+M0000|cloudy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|cloudy|cloudy|modifier
+M0000|cloudiness|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|cloudiness|cloudiness|modifier
+M0000|deterioration|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deterioration|deterioration|modifier
+M0000|distort|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|distort|distort|modifier
+M0000|distortion|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|distortion|distortion|modifier
+M0000|disturbed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|disturbed|disturbed|modifier
+M0000|disturbance|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|disturbance|disturbance|modifier
+M0000|impaired|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|impaired|impaired|modifier
+M0000|impairment|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|impairment|impairment|modifier
+M0000|defect|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|defect|defect|modifier
+M0000|defective|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|defective|defective|modifier
+M0000|deficit|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deficit|deficit|modifier
+M0000|deep|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deep|deep|modifier
+M0000|deepening|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|deepening|deepening|modifier
+M0000|vulnerable|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|vulnerable|vulnerable|modifier
+M0000|too early|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|too early|too early|modifier
+M0000|too|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|too|too|modifier
+M0000|delayed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|delayed|delayed|modifier
+M0000|wasting|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|wasting|wasting|modifier
+M0000|warm|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|warm|warm|modifier
+M0000|deform|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deform|deform|modifier
+M0000|deformed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|deformed|deformed|modifier
+M0000|weakening|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|weakening|weakening|modifier
+M0000|weakened|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|weakened|weakened|modifier
+M0000|weakening|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|weakened|weakened|modifier
+M0000|weaker|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|weakened|weakened|modifier
+M0000|weeping|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|weeping|weeping|modifier
+M0000|decrease|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|decrease|decrease|modifier
+M0000|decreasing|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|decrease|decrease|modifier
+M0000|increase|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|increase|increase|modifier
+M0000|increasing|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|increase|increase|modifier
+M0000|wheezing|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|wheezing|wheezing|modifier
+M0000|whimpering|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|whimpering|whimpering|modifier
+M0000|whistling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|whistling|whistling|modifier
+M0000|white patches|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|white patches|white patches|modifier
+M0000|wide|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|wide|wide|modifier
+M0000|widening|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|widening|widening|modifier
+M0000|widely|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|widely|widely|modifier
+M0000|whoozy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|whoozy|whoozy|modifier
+M0000|worsening|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|worsening|worsening|modifier
+M0000|worsen|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|worsening|worsening|modifier
+M0000|inflammed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|inflammed|inflammed|modifier
+M0000|inflaming|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|inflammed|inflammed|modifier
+M0000|paralyzed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|paralyzed|paralyzed|modifier
+M0000|fullness|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|fullness|fullness|modifier
+M0000|full feeling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|full feeling|full feeling|modifier
+M0000|growth|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|growth|growth|modifier
+M0000|mass|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|mass|mass|modifier
+M0000|bulging|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|bulging|bulging|modifier
+M0000|conditions|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|conditions|conditions|modifier
+M0000|bloating|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|bloating|bloating|modifier
+M0000|distention|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|distention|distention|modifier
+M0000|collateral distention|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|collateral distention|collateral distention|modifier
+M0000|discoloration|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|discoloration|discoloration|modifier
+M0000|enlarged|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|enlarged|enlarged|modifier
+M0000|enlargement|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|enlargement|enlargement|modifier
+M0000|hardness|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|hardness|hardness|modifier
+M0000|abdominal heat|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abdominal heat|abdominal heat|modifier
+M0000|due to|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|due to|due to|modifier
+M0000|relieved by|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|relieved by|relieved by|modifier
+M0000|tympanic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|tympanic|tympanic|modifier
+M0000|sticking out|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|sticking out|sticking out|modifier
+M0000|aberrant|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|aberrant|aberrant|modifier
+M0000|abnormal|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abnormal|abnormal|modifier
+M0000|abnormally|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abnormally|abnormally|modifier
+M0000|bleeding|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|bleeding|bleeding|modifier
+M0000|large|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|large|large|modifier
+M0000|low|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|low|low|modifier
+M0000|prominent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|prominent|prominent|modifier
+M0000|abrupt|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abrupt|abrupt|modifier
+M0000|absence of|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|absence of|absence of|modifier
+M0000|absent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|absent|absent|modifier
+M0000|abundant|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|abundant|abundant|modifier
+M0000|accidental|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|accidental|accidental|modifier
+M0000|ached|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|ached|ached|modifier
+M0000|achy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|achy|achy|modifier
+M0000|acidic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|acidic|acidic|modifier
+M0000|acute|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|acute|acute|modifier
+M0000|blurred|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|blurred|blurred|modifier
+M0000|infrequent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|infrequent|infrequent|modifier
+M0000|frequent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|frequent|frequent|modifier
+M0000|collapse|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|collapse|collapse|modifier
+M0000|cold-like|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|cold-like|cold-like|modifier
+M0000|cold|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|cold-like|cold-like|modifier
+M0000|febrile|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|febrile|febrile|modifier
+M0000|feelings of|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|feelings of|feelings of|modifier
+M0000|lower|<adj+adv+noun+verb>|<base+comparative+positive+singular+infinitive>|lower|lower|modifier
+M0000|onset|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|onset|onset|modifier
+M0000|sudden|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|sudden|sudden|modifier
+M0000|fail|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|fail|fail|modifier
+M0000|distress|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|distress|distress|modifier
+M0000|crisis|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|crisis|crisis|modifier
+M0000|damage|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|damage|damage|modifier
+M0000|overactive|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|overactive|overactive|modifier
+M0000|insufficient|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|insufficient|insufficient|modifier
+M0000|deficient|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deficient|deficient|modifier
+M0000|affected|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|affected|affected|modifier
+M0000|affecting|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|affecting|affecting|modifier
+M0000|aggressive|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|aggressive|aggressive|modifier
+M0000|agitated|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|agitated|agitated|modifier
+M0000|agonizing|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|agonizing|agonizing|modifier
+M0000|intolerable|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|intolerable|intolerable|modifier
+M0000|altered|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|altered|altered|modifier
+M0000|immobility|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|immobility|immobility|modifier
+M0000|strain|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|strain|strain|modifier
+M0000|tic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|tic|tic|modifier
+M0000|tense|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|tense|tense|modifier
+M0000|tension|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|tension|tension|modifier
+M0000|episodes|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|episodes|episodes|modifier
+M0000|episodic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|episodic|episodic|modifier
+M0000|spells|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|spells|spells|modifier
+M0000|suppressed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|suppressed|suppressed|modifier
+M0000|prickling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|prickling|prickling|modifier
+M0000|pallor|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pallor|pallor|modifier
+M0000|constricted|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|constricted|constricted|modifier
+M0000|occlussion|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|occlussion|occlussion|modifier
+M0000|asymmetric|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|asymmetric|asymmetric|modifier
+M0000|asymptomatic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|asymptomatic|asymptomatic|modifier
+M0000|atrophic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|atrophic|atrophic|modifier
+M0000|awkward|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|awkward|awkward|modifier
+M0000|bad|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|bad|bad|modifier
+M0000|balding|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|balding|balding|modifier
+M0000| barrel-chested|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>| barrel-chested| barrel-chested|modifier
+M0000|big|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|big|big|modifier
+M0000|binge eating|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|binge eating|binge eating|modifier
+M0000|bizarre|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|bizarre|bizarre|modifier
+M0000|bizarre|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|bizarre|bizarre|modifier
+M0000|red|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|red|red|modifier
+M0000|pink|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pink|pink|modifier
+M0000|pinkish|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pinkish|pinkish|modifier
+M0000|white|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|white|white|modifier
+M0000|whitish|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|whitish|whitish|modifier
+M0000|black|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|black|black|modifier
+M0000|green|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|green|green|modifier
+M0000|blue|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|blue|blue|modifier
+M0000|redish|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|redish|redish|modifier
+M0000|blue|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|blue|blue|modifier
+M0000|pink|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pink|pink|modifier
+M0000|red|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|red|red|modifier
+M0000|blanching|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|blanching|blanching|modifier
+M0000|blistery|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|blistery|blistery|modifier
+M0000|depletion|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|depletion|depletion|modifier
+M0000|bowed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|bowed|bowed|modifier
+M0000|degeneration|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|degeneration|degeneration|modifier
+M0000|noisy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|noisy|noisy|modifier
+M0000|belabored|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|belabored|belabored|modifier
+M0000|brief|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|brief|brief|modifier
+M0000|burn-like|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|burn-like|burn-like|modifier
+M0000|cannot|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|cannot|cannot|modifier
+M0000|changed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|changed|changed|modifier
+M0000|changing|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|changing|changing|modifier
+M0000|characteristic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|characteristic|characteristic|modifier
+M0000|fluttering|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|fluttering|fluttering|modifier
+M0000|clammy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|clammy|clammy|modifier
+M0000|clamped|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|clamped|clamped|modifier
+M0000|clicking|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|clicking|clicking|modifier
+M0000|complicated|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|complicated|complicated|modifier
+M0000|compulsive|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|compulsive|compulsive|modifier
+M0000|continuous|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|continuous|continuous|modifier
+M0000|convulsive|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|convulsive|convulsive|modifier
+M0000|creep crawly feelings|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|creep crawly feelings|creep crawly feelings|modifier
+M0000|cutting|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|cutting|cutting|modifier
+M0000|dark|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|dark|dark|modifier
+M0000|decline|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|decline|decline|modifier
+M0000|deep|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|deep|deep|modifier
+M0000|defiant|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|defiant|defiant|modifier
+M0000|degraded|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|degraded|degraded|modifier
+M0000|delusional|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|delusional|delusional|modifier
+M0000|denial|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|denial|denial|modifier
+M0000|deteriorating|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|deteriorating|deteriorating|modifier
+M0000|dim|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|dim|dim|modifier
+M0000|diminished|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|diminished|diminished|modifier
+M0000|discolored|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|discolored|discolored|modifier
+M0000|disordered|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|disordered|disordered|modifier
+M0000|distorted|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|distorted|distorted|modifier
+M0000|distracted|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|distracted|distracted|modifier
+M0000|disturbed|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|disturbed|disturbed|modifier
+M0000|early|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|early|early|modifier
+M0000|rituals|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|rituals|rituals|modifier
+M0000|empty|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|empty|empty|modifier
+M0000|foul|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|foul|foul|modifier
+M0000|foul tasting|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|foul tasting|foul tasting|modifier
+M0000|foul smelling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|foul smelling|foul smelling|modifier
+M0000|excessivley|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|excessivley|excessivley|modifier
+M0000|failure|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|failure|failure|modifier
+M0000|falling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|falling|falling|modifier
+M0000|fear of|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|fear of|fear of|modifier
+M0000|foot stamping|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|foot stamping|foot stamping|modifier
+M0000|foot wiggling|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|foot wiggling|foot wiggling|modifier
+M0000|metalic|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|metalic|metalic|modifier
+M0000|night|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|night|night|modifier
+M0000|fuzzy|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|fuzzy|fuzzy|modifier
+# new terms
+M0000|problem|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|problem|problem|modifier
+M0000|problems|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|problem|problem|modifier
+M0000|occasionally|<adv>|<present>|occasionally|occasionally|modifier
+M0000|occasional|<adv>|<present>|occasional|occasionally|modifier
+M0000|good|<adv>|<present>|good|good|modifier
+M0000|poor|<adv>|<present>|poor|poor|modifier
+M0000|suitable|<adv>|<present>|suitable|suitable|modifier
+M0000|watery|<adv>|<present>|watery|watery|modifier
+M0000|shakey|<adv>|<present>|shakey|shakey|modifier
+M0000|diffusely|<adv>|<present>|diffusely|diffusely|modifier
+M0000|wheezy|<adv>|<present>|wheezy|wheezy|modifier
+M0000|frequent|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|frequent|frequent|modifier
+M0000|slowley|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|slowley|slowley|modifier
+M0000|does well|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|does well|does well|modifier
+M0000|did well|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|does well|does well|modifier
+M0000|doing well|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|does well|does well|modifier
+M0000|worsen|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|worsening|worsening|modifier
+M0000|swollen|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|swollen|worsening|modifier
+M0000|blurry|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|blurry|blurry|modifier
+M0000|trouble|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|trouble|trouble|modifier
+M0000|difficulty|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|difficulty|difficulty|modifier
+M0000|having more difficulty|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|difficulty|difficulty|modifier
+M0000|more difficulty|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|difficulty|difficulty|modifier
+M0000|progressive|<adj+adv+noun+verb>|<base+presPart+positive+singular+infinitive>|progressive|progressive|modifier
+M0000|more|<adj+adv+verb>|<base+presPart+positive+infinitive>|more|more|modifier
+M0000|most|<adj+adv+verb>|<base+presPart+positive+infinitive>|more|more|modifier
+M0000|weaker|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|weakened|weakened|modifier
+M0000|stable|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|stable|stable|modifier
+M0000|minimal|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|minimal|minimal|modifier
+M0000|min|<adj+adv+noun+verb>|<base+past+pastPart+positive+singular+infinitive>|minimal|minimal|modifier

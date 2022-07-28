@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.nih.cc.rmd.model.ConceptFeatures</name>
+  <description>These are concept attributes to be fed to a machine learning tool</description>
+  <version>2019.05</version>
+  <vendor/>
+   <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.model.ConceptFeatures</name>
+      <description>Concept features</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features> 
+       
+        <featureDescription>  <name>inSlotValue</name>   <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>inSectionZone</name> <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>inSectionName</name> <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>inSentence</name>    <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>inSlot</name>        <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>inValue</name>       <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>isAsserted</name>    <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>isNegated</name>     <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>isConditional</name> <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>isHistorical</name>  <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>isPatient</name>     <description/>  <rangeTypeName>uima.cas.Boolean</rangeTypeName>  </featureDescription>
+        <featureDescription>  <name>sectionName</name>   <description/>  <rangeTypeName>uima.cas.String</rangeTypeName>  </featureDescription>
+      
+        
+      
+      
+      <featureDescription>
+          <name>futureSection</name>
+          <description>Is the section a planning, or education section - that is, does the contents of the section have just things that have not yet happened yet?</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>patientReports</name>
+          <description>Is this annotation part of a patient reported or subjective mention</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>assertedEvidenceBeforeMention</name>
+          <description>Is there asserted evidence before this mention</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>goldPolarity</name>
+          <description>This is the gold standard polarity taken from the training or testing corpus.  It is used as the "answer" or prediction to learn from.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ruleGeneratedPolarity</name>
+          <description>This is the polarity prediction generated from the rules using the contexts that are embedded in this feature vector.  </description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+ 
+  <typeDescription>
+      <name>gov.nih.cc.rmd.model.ActionPolarityConceptFeatures</name>
+      <description>These are features that are specific to Action Polarity</description>
+      <supertypeName>gov.nih.cc.rmd.model.ConceptFeatures</supertypeName>
+      <features>
+        <featureDescription>
+          <name>goalsMet</name>
+          <description>Does this mention indicate some kind of goals were met</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

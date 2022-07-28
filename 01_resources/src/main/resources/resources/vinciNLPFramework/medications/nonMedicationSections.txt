@@ -1,0 +1,70 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+# ------------------------------------------
+# This is a list of sections that we should 
+# ignore when looking for medications
+#  like address, patient name, HEENT
+#
+#  Ideally, this list should be sync'd with
+#  the fhir/loinc notion of section types
+#
+#  Guy Divita
+#   2018.04.12
+# ------------------------------------------
+address
+
+Title
+DocumentType
+Document Type
+Document Type:
+Reference Date
+Result Date
+Result Status
+Performed By
+Verified By
+Modified By
+Patient
+DOB
+Address
+Primary Diagnosis
+Date
+Reference Date
+Result Date
+Original Stage
+Sites of Disease
+Pathology
+Resuscitation Status
+Review of Systems
+Physical Examination
+Constitutional
+HEENT
+Respiratory
+Cardiovascular
+Abdomen
+Breasts
+Musculoskeletal
+Neuro
+Psych
+Lymph
+Imaging Studies
+Signed by
+Transcribed by

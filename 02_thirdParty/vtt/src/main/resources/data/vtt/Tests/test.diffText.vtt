@@ -1,0 +1,59 @@
+#<---------------------------------------------------------------------->
+#<Text Content>
+#<---------------------------------------------------------------------->
+This study has investigated the relationship between duodenogastric
+Add line 1
+Add line 2
+reflux, gastritis and certain symptoms 6-12 months after three operations
+for uncomplicated duodenal ulcer. The operations studied were proximal
+gastric vagotomy (PGV, 20 cases), truncal vagotomy and pyloroplasty (TV+P,
+22 cases) and truncal vagotomy and antrectomy (TV+A, 21 cases).
+were determined by endoscopic biopsy. Symptoms were assessed by
+symptomatic score and Visick grading. There was a significant correlation
+change 2 between duodenal reflux and histological evidence of both severe
+superficial gastritis and glandular atrophy (P less than 0-01). There was
+also a close association between the degree of reflux and the presence of
+severe heartburn, epigastric pain and bile vomiting after operation. The
+amount of reflux did not differ before operation. There was significantly
+less reflux following PGV than after either TV+P (P less than 0-025) or
+TV+A (P less than 0-001). The results indicate that an operation which
+preserves an innervated and intact antrum and pylorus will protect against
+postoperative duodenogastric reflux, gastritis and symptoms..
+#<---------------------------------------------------------------------->
+#<Tags Configuration>
+#<Name|Category|Bold|Italic|Underline|Display|FR|FG|FB|BR|BG|BB|FontFamily|FontSize>
+#<---------------------------------------------------------------------->
+Text/Clear||false|false|false|true|255|255|255|0|51|153|Monospaced|12
+#<---------------------------------------------------------------------->
+Noun||false|false|false|true|0|0|0|255|180|180|Monospaced|12
+Noun|Sigular|true|false|false|true|0|0|0|255|180|180|Monospaced|12
+Noun|Plural|true|false|true|true|0|0|0|255|180|180|Monospaced|12
+Adj||false|true|false|true|0|0|0|180|225|180|Monospaced|12
+Adv||false|false|false|true|0|0|0|204|204|255|Monospaced|12
+Verb||false|false|true|true|0|0|0|150|196|225|Monospaced|12
+Test||true|false|false|true|153|51|0|255|255|204|Monospaced|12
+#<---------------------------------------------------------------------->
+#<MarkUps Information>
+#<Offset|Length|TagName|TagCategory|Annotation|TagText>
+#<---------------------------------------------------------------------->
+      0| 4|Test        |            |First Test|This
+      5| 5|Noun        |Sigular     ||study
+     90| 7|Adj         |            ||certain
+    112| 6|Adv         |            ||months
+    247| 6|Verb        |            ||trunca
+    367| 6|Adv         |            ||reflux
+    373| 1|Noun        |Sigular     || 
+    374| 3|Adv         |            ||was
+    377| 1|Noun        |            || 
+    378| 8|Test        |            ||assessed
+    387| 4|Adv         |            ||both
+    392| 2|Noun        |Plural      ||by
+    397|12|Adj         |            ||radiological
+    509|12|Adj         |            ||operation. I
+    519| 2|Text/Clear  |            || I
+    600| 7|Adv         |            |Extra space and S, need to delete|biopsy.
+    617| 4|Noun        |Sigular     |Were is a be verb|were
+    736|12|Noun        |Sigular     ||histological
+    894| 6|Noun        |Plural      ||reflux
+    939|10|Noun        |            ||epigastric
+    955| 3|Verb        |            ||and

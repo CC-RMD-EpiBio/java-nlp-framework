@@ -1,0 +1,52 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   falsePositiveEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of non asserted evidence (pseudo) 
+#
+#      There are a few transformations from her patterns
+#         neg,pseudo -> NoEvidence|pseudo         because it would be wrong to 
+#                                                 make a negation annotation for these
+#         neg,termin -> ScopeBreakEvidence|termin - it's at least initially useful
+#                                                   to create an annotation that marks the end of scope.
+#   For instance - TBD
+#
+#   This file contains the category NegationEvidence  and subcategories post, pre, and termin
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#
+#  Author:        Guy Divita
+#  Last modified: 2016-07-21
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+P00001|screen for|noun|count(thr_sing)|||NotEvidence|pre
+P00001|screening for|noun|count(thr_sing)|||NotEvidence|pre
+P00001|screen for|noun|count(thr_sing)|||NotEvidence|pseudo
+P00002|screen|noun|count(thr_sing)|||NotEvidence|post
+P00002|screen|noun|count(thr_sing)|||NotEvidence|pseudo
+P00003|test for|noun|count(thr_sing)|||NotEvidence|pre
+P00003|test for|noun|count(thr_sing)|||NotEvidence|pseudo
+P00003|test|noun|count(thr_sing)|||NotEvidence|post
+P00003|test|noun|count(thr_sing)|||NotEvidence|pseudo
+P00004|survey|noun|count(thr_sing)|||NotEvidence|post
+P00004|survey|noun|count(thr_sing)|||NotEvidence|pseudo

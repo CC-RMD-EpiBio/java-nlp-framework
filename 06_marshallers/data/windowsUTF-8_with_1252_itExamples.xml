@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+<Feature>
+  <Name className="java.lang.String">gate.OriginalURL</Name>
+  <Value className="java.lang.String">file:/C:/work/softwareRepos/framework-legacy/00_legacy/06_marshallers/data/windowsUTF-8_with_1252_itExamples</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">gate.SourceURL</Name>
+  <Value className="java.lang.String">file:/C:/work/softwareRepos/framework-legacy/00_legacy/06_marshallers/data/windowsUTF-8_with_1252_itExamples</Value>
+</Feature>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes>This is a test.  it has windows 1252 (latin-8) characters in it.  Ḟ  �s?  A� A�&#xd;
+&#xd;
+�    f &#xd;
+�    dagger&#xd;
+�    euro sign&#xd;
+�    OE &#xd;
+&#xd;
+<Node id="133"/>Ëœ <Node id="136"/>    e + oe   in utf-8</TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+<!-- Named annotation set -->
+
+<AnnotationSet Name="Manual">
+<Annotation Id="0" Type="_New_" StartNode="133" EndNode="136">
+</Annotation>
+</AnnotationSet>
+
+</GateDocument>

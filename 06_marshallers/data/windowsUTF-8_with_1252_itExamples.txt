@@ -1,0 +1,8 @@
+This is a test.  it has windows 1252 (latin-8) characters in it.  á¸ž  ás?  AŠ Aš
+
+ƒ    f 
+†    dagger
+€    euro sign
+Œ    OE 
+
+Ã‹Å“     e + oe   in utf-8

@@ -1,0 +1,402 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+MST Lexicon Terms|category ||||||||||
+mst|MST and Similar Terms||||||||||
+MST|MST and Similar Terms||||||||||
+military sexual trauma|MST and Similar Terms||||||||||
+military sex trauma|MST and Similar Terms||||||||||
+sexual trauma during military service|MST and Similar Terms||||||||||
+military sexual violence|MST and Similar Terms||||||||||
+raped|Rape||||||||||
+rape|Rape||||||||||
+rape victim|Rape||||||||||
+forced sex|Rape||||||||||
+nonconsensual sex|Rape||||||||||
+sodomy|Rape||||||||||
+sodomized|Rape||||||||||
+forced oral sex|Rape||||||||||
+marital rape|Rape||||||||||
+victim of rape|Rape||||||||||
+a victim of abuse or neglect|Sexual Assault/Abuse||||||||||
+childhood abuse|Sexual Assault/Abuse||||||||||
+childhood trauma|Sexual Assault/Abuse||||||||||
+suspected abuse|Sexual Assault/Abuse||||||||||
+suspected sexual abuse|Sexual Assault/Abuse||||||||||
+sexual trauma|Sexual Assault/Abuse||||||||||
+sexually assaulted|Sexual Assault/Abuse||||||||||
+sexual assault|Sexual Assault/Abuse||||||||||
+sex assault|Sexual Assault/Abuse||||||||||
+sexually abused|Sexual Assault/Abuse||||||||||
+sexual abuse|Sexual Assault/Abuse||||||||||
+sex abuse|Sexual Assault/Abuse||||||||||
+groping|Sexual Assault/Abuse||||||||||
+groped|Sexual Assault/Abuse||||||||||
+molested|Sexual Assault/Abuse||||||||||
+molestation|Sexual Assault/Abuse||||||||||
+sexual violence|Sexual Assault/Abuse||||||||||
+sex crime|Sexual Assault/Abuse||||||||||
+grope|Sexual Assault/Abuse||||||||||
+interpersonal violence|Sexual Assault/Abuse||||||||||
+partner violence|Sexual Assault/Abuse||||||||||
+fondle|Sexual Assault/Abuse||||||||||
+fondled|Sexual Assault/Abuse||||||||||
+fondling|Sexual Assault/Abuse||||||||||
+sexual battery|Sexual Assault/Abuse||||||||||
+assault of a sexual nature|Sexual Assault/Abuse||||||||||
+sexual harassment|Harrassment and Coercion||||||||||
+sexually harassed|Harrassment and Coercion||||||||||
+sexual favors|Harrassment and Coercion||||||||||
+sexual coercion|Harrassment and Coercion||||||||||
+sexually coerced|Harrassment and Coercion||||||||||
+coerced sex|Harrassment and Coercion||||||||||
+sexual extortion|Harrassment and Coercion||||||||||
+sexually extorted|Harrassment and Coercion||||||||||
+sexual intimidation|Harrassment and Coercion||||||||||
+sexually intimidated|Harrassment and Coercion||||||||||
+sexual advances|Harrassment and Coercion||||||||||
+hazing|Harrassment and Coercion||||||||||
+hazing ritual|Harrassment and Coercion||||||||||
+memories|PTSD symptoms||||||||||
+repeated memories|PTSD symptoms||||||||||
+disturbing memories|PTSD symptoms||||||||||
+unwanted memories|PTSD symptoms||||||||||
+disturing dreams|PTSD symptoms||||||||||
+nightmares|PTSD symptoms||||||||||
+flashbacks|PTSD symptoms||||||||||
+physical reactions|PTSD symptoms||||||||||
+physical reaction|PTSD symptoms||||||||||
+trauma reminder|PTSD symptoms||||||||||
+trauma reminders|PTSD symptoms||||||||||
+memory problems|PTSD symptoms||||||||||
+avoidance|PTSD symptoms||||||||||
+avoiding|PTSD symptoms||||||||||
+avoiding memories|PTSD symptoms||||||||||
+avoiding thoughts|PTSD symptoms||||||||||
+avoiding feelings|PTSD symptoms||||||||||
+avoiding reminders|PTSD symptoms||||||||||
+blaming yourself|PTSD symptoms||||||||||
+blaming himself|PTSD symptoms||||||||||
+blaming herslef|PTSD symptoms||||||||||
+blames herself|PTSD symptoms||||||||||
+blames himself|PTSD symptoms||||||||||
+fear|PTSD symptoms||||||||||
+horror|PTSD symptoms||||||||||
+feeling distant|PTSD symptoms||||||||||
+feels distant|PTSD symptoms||||||||||
+feeling cut off|PTSD symptoms||||||||||
+feels cut off|PTSD symptoms||||||||||
+irritable|PTSD symptoms||||||||||
+irritable behavior|PTSD symptoms||||||||||
+angry|PTSD symptoms||||||||||
+angry outbursts|PTSD symptoms||||||||||
+acting aggressively|PTSD symptoms||||||||||
+aggressive behavior|PTSD symptoms||||||||||
+risky behavior|PTSD symptoms||||||||||
+takes too many risks|PTSD symptoms||||||||||
+taking too many risks|PTSD symptoms||||||||||
+superalert|PTSD symptoms||||||||||
+watchful |PTSD symptoms||||||||||
+on guard|PTSD symptoms||||||||||
+feeling jumpy|PTSD symptoms||||||||||
+feels jumpy|PTSD symptoms||||||||||
+jumpy|PTSD symptoms||||||||||
+easily startled|PTSD symptoms||||||||||
+startles easily|PTSD symptoms||||||||||
+difficulty concentrating|PTSD symptoms||||||||||
+sleep problems|PTSD symptoms||||||||||
+test for STI|Markers for MST||||||||||
+test for STD|Markers for MST||||||||||
+test for sexually transmitted disease|Markers for MST||||||||||
+test for sexually transmitted illness|Markers for MST||||||||||
+decreased work performance|Markers for MST||||||||||
+difficulty keeping a job|Markers for MST||||||||||
+sexual dysfunction|Markers for MST||||||||||
+reduced libido|Markers for MST||||||||||
+abstinance|Markers for MST||||||||||
+difficulty with intimacy|Markers for MST||||||||||
+gambling|Markers for MST||||||||||
+pathological gambling|Markers for MST||||||||||
+divorced|Markers for MST||||||||||
+getting divorced|Social Markers||||||||||
+job loss|Social Markers||||||||||
+marital stress|Social Markers||||||||||
+money issues|Social Markers||||||||||
+recent divorce|Social Markers||||||||||
+unemployed|Social Markers||||||||||
+unemployment|Social Markers||||||||||
+failed marriage|Social Markers||||||||||
+lost job|Social Markers||||||||||
+mental stressors|Social Markers||||||||||
+acute stressors|Social Markers||||||||||
+environmental stressors|Social Markers||||||||||
+Life stressors|Social Markers||||||||||
+Psychosocial stressors|Social Markers||||||||||
+Financial stressors|Social Markers||||||||||
+psychosocial stressors|Social Markers||||||||||
+significant stressors|Social Markers||||||||||
+ family stressors|Social Markers||||||||||
+traumatic stressors|Social Markers||||||||||
+social stressors|Social Markers||||||||||
+new stressors|Social Markers||||||||||
+major stressors|Social Markers||||||||||
+postdeployment stressors|Social Markers||||||||||
+work stressors|Social Markers||||||||||
+marital stressors|Social Markers||||||||||
+PTSD|Social Markers||||||||||
+Post traumatic stress disorder|Social Markers||||||||||
+financial legal|Social Markers||||||||||
+Patients financial|Social Markers||||||||||
+Finanial situation|Social Markers||||||||||
+Financial problems|Social Markers||||||||||
+Financial loss|Social Markers||||||||||
+Financial issues|Social Markers||||||||||
+Financial stress|Social Markers||||||||||
+Financial stressors|Social Markers||||||||||
+Financial concerns|Social Markers||||||||||
+Financial concerns|Social Markers||||||||||
+Financial assistance|Social Markers||||||||||
+Financial difficulties|Social Markers||||||||||
+financial Difficulty|Social Markers||||||||||
+Chronic financial|Social Markers||||||||||
+Financial Constraints|Social Markers||||||||||
+Financial Worries|Social Markers||||||||||
+Pain financial|Social Markers||||||||||
+Financial pressures|Social Markers||||||||||
+Financial counseling|Social Markers||||||||||
+Housing financial|Social Markers||||||||||
+Financial housing|Social Markers||||||||||
+Financial difficulty|Social Markers||||||||||
+Financial worries|Social Markers||||||||||
+Financially unstable|Social Markers||||||||||
+Chronic financial|Social Markers||||||||||
+Unemployed financial|Social Markers||||||||||
+Financial needs|Social Markers||||||||||
+Financial restrictions|Social Markers||||||||||
+Financial struggling|Social Markers||||||||||
+Financial trouble|Social Markers||||||||||
+Financial limitations|Social Markers||||||||||
+Financial burdens|Social Markers||||||||||
+Financial stresses|Social Markers||||||||||
+Financial|Social Markers||||||||||
+financial marital|Social Markers||||||||||
+Financial burden|Social Markers||||||||||
+financial hardship|Social Markers||||||||||
+Ongoing financial|Social Markers||||||||||
+Financial hardship|Social Markers||||||||||
+Experiencing financial|Social Markers||||||||||
+unmet financial|Social Markers||||||||||
+Little money|Social Markers||||||||||
+Gas money|Social Markers||||||||||
+Borrow money|Social Markers||||||||||
+Steal/stealing money|Social Markers||||||||||
+Need money|Social Markers||||||||||
+rather estranged|Social Markers||||||||||
+Estranged relationship|Social Markers||||||||||
+Estranged daughter|Social Markers||||||||||
+Somewhat estranged|Social Markers||||||||||
+Isolation estranged|Social Markers||||||||||
+Siblings estranged|Social Markers||||||||||
+Estranged brother|Social Markers||||||||||
+Mother estranged|Social Markers||||||||||
+Divorce estranged|Social Markers||||||||||
+Feeling estranged|Social Markers||||||||||
+Become estranged|Social Markers||||||||||
+Children estranged|Social Markers||||||||||
+Increasingly estranged|Social Markers||||||||||
+estranged grandparents|Social Markers||||||||||
+estranged father|Social Markers||||||||||
+estranged sister|Social Markers||||||||||
+Find work|Social Markers||||||||||
+No job|Social Markers||||||||||
+Lost job|Social Markers||||||||||
+Odd jobs|Social Markers||||||||||
+Job search|Social Markers||||||||||
+Job loss|Social Markers||||||||||
+Two jobs|Social Markers||||||||||
+Job situation|Social Markers||||||||||
+CWT job|Social Markers||||||||||
+Job hunting|Social Markers||||||||||
+ Three jobs|Social Markers||||||||||
+ Homeless jobless|Social Markers||||||||||
+Stable job|Social Markers||||||||||
+Job offers|Social Markers||||||||||
+job stress|Social Markers||||||||||
+Prison problems|Social Markers||||||||||
+Prison again|Social Markers||||||||||
+Leaving prison|Social Markers||||||||||
+Prison approximately|Social Markers||||||||||
+Prison stay|Social Markers||||||||||
+unstable job|Social Markers||||||||||
+jobless|Social Markers||||||||||
+possible job|Social Markers||||||||||
+prison time|Social Markers||||||||||
+leaving jail|Social Markers||||||||||
+jail problems|Social Markers||||||||||
+Jail term|Social Markers||||||||||
+jail time|Social Markers||||||||||
+County jail|Social Markers||||||||||
+Jail sentence|Social Markers||||||||||
+Recent jail|Social Markers||||||||||
+Jail yesterday|Social Markers||||||||||
+jail fight|Social Markers||||||||||
+jail again|Social Markers||||||||||
+left jail|Social Markers||||||||||
+left prison|Social Markers||||||||||
+jail related|Social Markers||||||||||
+prison time|Social Markers||||||||||
+DWI arrest|Social Markers||||||||||
+DUI arrest|Social Markers||||||||||
+outstanding arrest|Social Markers||||||||||
+house arrest|Social Markers||||||||||
+federal prison|Social Markers||||||||||
+state prison|Social Markers||||||||||
+local jail|Social Markers||||||||||
+local prison|Social Markers||||||||||
+left prison|Social Markers||||||||||
+facing prison|Social Markers||||||||||
+facing jail|Social Markers||||||||||
+jail immediately|Social Markers||||||||||
+left jail|Social Markers||||||||||
+prison parole|Social Markers||||||||||
+jail parole|Social Markers||||||||||
+prison immediately|Social Markers||||||||||
+Previously incarcerated|Social Markers||||||||||
+Was incarcerated|Social Markers||||||||||
+Currently incarcerated|Social Markers||||||||||
+Recently incarcerated|Social Markers||||||||||
+Chronically incarcerated|Social Markers||||||||||
+Years incarcerated|Social Markers||||||||||
+Months incarcerated|Social Markers||||||||||
+Incarcerated twice|Social Markers||||||||||
+incarcerated again|Social Markers||||||||||
+Once incarcerated|Social Markers||||||||||
+temporary incarcerated|Social Markers||||||||||
+legal committed|Social Markers||||||||||
+Legal difficulties|Social Markers||||||||||
+Legal issues|Social Markers||||||||||
+Legal problems|Social Markers||||||||||
+Illegal drugs|Social Markers||||||||||
+Legally committed|Social Markers||||||||||
+Illicit illegal|Social Markers||||||||||
+illegal medications|Social Markers||||||||||
+Legal charges|Social Markers||||||||||
+Illegal substances|Social Markers||||||||||
+Used illegal|Social Markers||||||||||
+Ongoing legal|Social Markers||||||||||
+Legal consequences|Social Markers||||||||||
+Legal stressors|Social Markers||||||||||
+Legal infractions|Social Markers||||||||||
+Outstanding legal|Social Markers||||||||||
+legal status|Social Markers||||||||||
+legal infraction|Social Markers||||||||||
+Legal trouble|Social Markers||||||||||
+Legal proceedings|Social Markers||||||||||
+Illegal activities|Social Markers||||||||||
+Medications illegal|Social Markers||||||||||
+Problems legal|Social Markers||||||||||
+Alcohol illegal|Social Markers||||||||||
+Significant legal|Social Markers||||||||||
+Homeless legal|Social Markers||||||||||
+Difficulties legal|Social Markers||||||||||
+Facing legal|Social Markers||||||||||
+legal history|Social Markers||||||||||
+Parole officer|Social Markers||||||||||
+Parole probation|Social Markers||||||||||
+Parole violation|Social Markers||||||||||
+Incarceration parole|Social Markers||||||||||
+Multiple parole|Social Markers||||||||||
+Recent parole|Social Markers||||||||||
+Parole requirements|Social Markers||||||||||
+Violating parole|Social Markers||||||||||
+Parole current|Social Markers||||||||||
+Broken parole|Social Markers||||||||||
+parole on|Social Markers||||||||||
+breaking parole|Social Markers||||||||||
+upcoming parole|Social Markers||||||||||
+Mild poverty|Social Markers||||||||||
+Poverty unemployment|Social Markers||||||||||
+exhibited poverty|Social Markers||||||||||
+relationship conflict|Social Markers||||||||||
+alcohol abuse|Alcohol Abuse||||||||||
+etoh abuse|Alcohol Abuse||||||||||
+AD|Alcohol Abuse||||||||||
+alcohol dependence|Alcohol Abuse||||||||||
+alcohol detoxification|Alcohol Abuse||||||||||
+alcohol rehab|Alcohol Abuse||||||||||
+alcohol use|Alcohol Abuse||||||||||
+dui|Alcohol Abuse||||||||||
+ETOH|Alcohol Abuse||||||||||
+EtOH|Alcohol Abuse||||||||||
+ethyl alchohol|Alcohol Abuse||||||||||
+ethyl|Alcohol Abuse||||||||||
+etoh|Alcohol Abuse||||||||||
+alcohol abuse/dependence|Alcohol Abuse||||||||||
+etoh abuse|Alcohol Abuse||||||||||
+etoh dependence|Alcohol Abuse||||||||||
+etoh abuse/dependence|Alcohol Abuse||||||||||
+AA groups|Alcohol Abuse||||||||||
+AA group|Alcohol Abuse||||||||||
+binge drinking|Alcohol Abuse||||||||||
+anger|MentalHealthEvidence||||||||||
+antisocial |MentalHealthEvidence||||||||||
+depression|MentalHealthEvidence||||||||||
+major depression|MentalHealthEvidence||||||||||
+high risk for suicide|MentalHealthEvidence||||||||||
+poor coping skills|MentalHealthEvidence||||||||||
+social isolation|MentalHealthEvidence||||||||||
+violent behavior|MentalHealthEvidence||||||||||
+panic attacks|MentalHealthEvidence||||||||||
+anxiety|MentalHealthEvidence||||||||||
+addictions|SubstanceAbuseRelated||||||||||
+addiction|SubstanceAbuseRelated||||||||||
+cocaine abuse|SubstanceAbuseRelated||||||||||
+cocaine dependency|SubstanceAbuseRelated||||||||||
+Cornerstone Counseling Center|SubstanceAbuseRelated||||||||||
+day treatment|SubstanceAbuseRelated||||||||||
+detox|SubstanceAbuseRelated||||||||||
+detoxification|SubstanceAbuseRelated||||||||||
+drug abuse|SubstanceAbuseRelated||||||||||
+drug abuse|SubstanceAbuseRelated||||||||||
+drug rehab|SubstanceAbuseRelated||||||||||
+drug use|SubstanceAbuseRelated||||||||||
+overdose|SubstanceAbuseRelated||||||||||
+sa|SubstanceAbuseRelated||||||||||
+SA rehab|SubstanceAbuseRelated||||||||||
+sa rehab|SubstanceAbuseRelated||||||||||
+substance abuse|SubstanceAbuseRelated||||||||||
+substance dependance|SubstanceAbuseRelated||||||||||
+SATP|SubstanceAbuseRelated||||||||||
+rehab|SubstanceAbuseRelated||||||||||
+substance abuse rehab|SubstanceAbuseRelated||||||||||
+substance abuse treatment program|SubstanceAbuseRelated||||||||||
+SA groups|SubstanceAbuseRelated||||||||||
+SA group|SubstanceAbuseRelated||||||||||
+heroin|SubstanceAbuseRelated||||||||||
+
+Seed term - abuse
+
+
+seed term sexual
+
+
+Seed term anger
+

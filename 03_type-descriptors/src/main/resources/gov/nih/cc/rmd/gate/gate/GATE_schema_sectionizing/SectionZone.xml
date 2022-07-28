@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
+  <!-- XSchema definition for SectionZone.  A section zone is a block of content that optionally has a sectionName .  
+       Examples of Section zones include medication sections, labs, and the like. 
+       Advanced (and not yet utilized) attributes include a nesting attribute to be filled with a number
+       from 0 thru x to indicate how many levels this section is nested within other sections.
+       -->
+  <element name="SectionZone">
+      <complexType>
+       <attribute name="nesting" use="optional"  >
+              <simpleType>
+                  <restriction base="string"> </restriction>
+              </simpleType>
+          </attribute>
+      </complexType>
+  </element>
+</schema>

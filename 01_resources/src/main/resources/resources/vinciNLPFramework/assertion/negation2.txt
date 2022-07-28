@@ -1,0 +1,572 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+noun|count(thr_sing)|
+|not been ruled out|AssertedEvidence|post|noun|count(thr_sing)|
+|will be ruled out|AssertedEvidence|pre|noun|count(thr_sing)|
+|as needed|ConditionalEvidence|pre|noun|count(thr_sing)|
+|be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|because|ConditionalEvidence|termin|noun|count(thr_sing)|
+|being ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|can be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|can be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|come back for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|come back to|ConditionalEvidence|pre|noun|count(thr_sing)|
+|could be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|could be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|did not rule out|ConditionalEvidence|post|noun|count(thr_sing)|
+|if|ConditionalEvidence|pre|noun|count(thr_sing)|
+|if negative|ConditionalEvidence|pseudo|noun|count(thr_sing)|
+|is to be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|is to be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|look for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|look for any|ConditionalEvidence|pre|noun|count(thr_sing)|
+|may be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|may be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|might be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|might be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|must be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|must be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|not ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|ought to be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|ought to be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|possible|ConditionalEvidence|pre|noun|count(thr_sing)|
+|prn|ConditionalEvidence|pre|noun|count(thr_sing)|
+|r/o|ConditionalEvidence|pre|noun|count(thr_sing)|
+|return|ConditionalEvidence|pre|noun|count(thr_sing)|
+|risk of|ConditionalEvidence|pre|noun|count(thr_sing)|
+|ro|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule her out|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule her out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule him out|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule him out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule out|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule the patient out|ConditionalEvidence|pre|noun|count(thr_sing)|
+|rule the patinet out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|should be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|should be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|should he|ConditionalEvidence|pre|noun|count(thr_sing)|
+|should she|ConditionalEvidence|pre|noun|count(thr_sing)|
+|should the patient|ConditionalEvidence|pre|noun|count(thr_sing)|
+|should there|ConditionalEvidence|pre|noun|count(thr_sing)|
+|since|ConditionalEvidence|termin|noun|count(thr_sing)|
+|to prevent|ConditionalEvidence|pre|noun|count(thr_sing)|
+|use|ConditionalEvidence|pre|noun|count(thr_sing)|
+|wants to|ConditionalEvidence|pre|noun|count(thr_sing)|
+|what must be ruled out is|ConditionalEvidence|pre|noun|count(thr_sing)|
+|will be ruled out|ConditionalEvidence|post|noun|count(thr_sing)|
+|will be ruled out for|ConditionalEvidence|pre|noun|count(thr_sing)|
+|without diff|ConditionalEvidence|pseudo|noun|count(thr_sing)|
+|without difficulties|ConditionalEvidence|pseudo|noun|count(thr_sing)|
+|without difficulty|ConditionalEvidence|pseudo|noun|count(thr_sing)|
+|history|HistoricalEvidence|pre|noun|count(thr_sing)|
+|history and|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history and examination|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history and physical|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history for|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history of chief complaint|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history of present illness|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history taking|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|history, physical|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|past history|HistoricalEvidence|pre|noun|count(thr_sing)|
+|past medical history|HistoricalEvidence|pre|noun|count(thr_sing)|
+|poor history|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|previous|HistoricalEvidence|prenoun|count(thr_sing)|
+|social history|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|sudden onset of|HistoricalEvidence|pseudo|noun|count(thr_sing)|
+|absence of|NegationEvidence|pre|noun|count(thr_sing)|
+|absence of a|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule her out|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule him out|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule out|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule out for|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule the patient out against|NegationEvidence|pre|noun|count(thr_sing)|
+|adequate to rule the patient out for|NegationEvidence|pre|noun|count(thr_sing)|
+|although|NegationEvidence|termin|noun|count(thr_sing)|
+|any other|NegationEvidence|pre|noun|count(thr_sing)|
+|apart from|NegationEvidence|termin|noun|count(thr_sing)|
+|are none|NegationEvidence|post|noun|count(thr_sing)|
+|are ruled out|NegationEvidence|post|noun|count(thr_sing)|
+|as a cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a secondary source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as a source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as a source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an secondary source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as an source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as an source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as has|NegationEvidence|termin|noun|count(thr_sing)|
+|as the cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the secondary source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as the source for|NegationEvidence|termin|noun|count(thr_sing)|
+|as the source of|NegationEvidence|termin|noun|count(thr_sing)|
+|as well as any|NegationEvidence|pre|noun|count(thr_sing)|
+|aside from|NegationEvidence|termin|noun|count(thr_sing)|
+|aside from|NegationEvidence|termin|noun|count(thr_sing)|
+|but|NegationEvidence|termin|noun|count(thr_sing)|
+|can rule her out|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule her out against|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule him out|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule him out against|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule out|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule out against|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule out for|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule the patinet out against|NegationEvidence|pre|noun|count(thr_sing)|
+|can rule the patinet out for|NegationEvidence|pre|noun|count(thr_sing)|
+|cannot|NegationEvidence|pre|noun|count(thr_sing)|
+|cannot see|NegationEvidence|pre|noun|count(thr_sing)|
+|cause for|NegationEvidence|termin|noun|count(thr_sing)|
+|cause of|NegationEvidence|termin|noun|count(thr_sing)|
+|causes for|NegationEvidence|termin|noun|count(thr_sing)|
+|causes of|NegationEvidence|termin|noun|count(thr_sing)|
+|checked for|NegationEvidence|pre|noun|count(thr_sing)|
+|clear of|NegationEvidence|pre|noun|count(thr_sing)|
+|declined|NegationEvidence|pre|noun|count(thr_sing)|
+|declines|NegationEvidence|pre|noun|count(thr_sing)|
+|denied|NegationEvidence|pre|noun|count(thr_sing)|
+|denied active|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any abnormal|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any change in the|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any changes in the|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any current|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any high-risk|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any other|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any other|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any recent|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any significant|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any symptom of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied any symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied current|NegationEvidence|pre|noun|count(thr_sing)|
+|denied ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denied other symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|denied symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was any|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was any current|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there was problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were any|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denied that there were problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied this|NegationEvidence|pre|noun|count(thr_sing)|
+|denied use of|NegationEvidence|pre|noun|count(thr_sing)|
+|denied use of other|NegationEvidence|pre|noun|count(thr_sing)|
+|denies|NegationEvidence|pre|noun|count(thr_sing)|
+|denies active|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any abnormal|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any change in the|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any changes in the|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any current|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any high-risk|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any other|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any other|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any recent|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any significant|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any symptom of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies any undue|NegationEvidence|pre|noun|count(thr_sing)|
+|denies current|NegationEvidence|pre|noun|count(thr_sing)|
+|denies ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denies experiencing|NegationEvidence|pre|noun|count(thr_sing)|
+|denies experiencing any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|denies significant|NegationEvidence|pre|noun|count(thr_sing)|
+|denies symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any current|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any current|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any recent|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was any recent|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there was problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were any|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were any history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were ever|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were ever history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were history of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were problems|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies there were problems of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies this|NegationEvidence|pre|noun|count(thr_sing)|
+|denies true|NegationEvidence|pre|noun|count(thr_sing)|
+|denies use of|NegationEvidence|pre|noun|count(thr_sing)|
+|denies use of other|NegationEvidence|pre|noun|count(thr_sing)|
+|denise|NegationEvidence|pre|noun|count(thr_sing)|
+|deny|NegationEvidence|pre|noun|count(thr_sing)|
+|denying|NegationEvidence|pre|noun|count(thr_sing)|
+|did not have any episodes of|NegationEvidence|pre|noun|count(thr_sing)|
+|did not have any more episodes of|NegationEvidence|pre|noun|count(thr_sing)|
+|did not have any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|did not observe a|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule her out|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule her out against|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule him out|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule him out against|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule out|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule out against|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule out for|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule the patient out against|NegationEvidence|pre|noun|count(thr_sing)|
+|did rule the patient out for|NegationEvidence|pre|noun|count(thr_sing)|
+|didn't express any|NegationEvidence|pre|noun|count(thr_sing)|
+|didn't expressed any|NegationEvidence|pre|noun|count(thr_sing)|
+|didn't have any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|didn't report any|NegationEvidence|pre|noun|count(thr_sing)|
+|didn't report any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|does not|NegationEvidence|pre|noun|count(thr_sing)|
+|does not appear to have any|NegationEvidence|pre|noun|count(thr_sing)|
+|does not appear to have any|NegationEvidence|pre|noun|count(thr_sing)|
+|does not appear to have any bizarre|NegationEvidence|pre|noun|count(thr_sing)|
+|does not appear to have any issues of|NegationEvidence|pre|noun|count(thr_sing)|
+|does not appear to have any issues with|NegationEvidence|pre|noun|count(thr_sing)|
+|does not express|NegationEvidence|pre|noun|count(thr_sing)|
+|does not use|NegationEvidence|pre|noun|count(thr_sing)|
+|does not usually|NegationEvidence|pre|noun|count(thr_sing)|
+|doesn't look like|NegationEvidence|pre|noun|count(thr_sing)|
+|etiology for|NegationEvidence|termin|noun|count(thr_sing)|
+|etiology of|NegationEvidence|termin|noun|count(thr_sing)|
+|evaluate for|NegationEvidence|pre|noun|count(thr_sing)|
+|except|NegationEvidence|termin|noun|count(thr_sing)|
+|fails to reveal|NegationEvidence|pre|noun|count(thr_sing)|
+|free|NegationEvidence|post|noun|count(thr_sing)|
+|free of|NegationEvidence|pre|noun|count(thr_sing)|
+|gram negative|NegationEvidence|pseudo|noun|count(thr_sing)|
+|has been negative|NegationEvidence|post|noun|count(thr_sing)|
+|has been ruled out|NegationEvidence|post|noun|count(thr_sing)|
+|has none|NegationEvidence|post|noun|count(thr_sing)|
+|has not had any|NegationEvidence|pre|noun|count(thr_sing)|
+|has not had any problems|NegationEvidence|pre|noun|count(thr_sing)|
+|has not had any problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|have been ruled out|NegationEvidence|post|noun|count(thr_sing)|
+|have none|NegationEvidence|post|noun|count(thr_sing)|
+|however|NegationEvidence|termin|noun|count(thr_sing)|
+|inconsistent with|NegationEvidence|pre|noun|count(thr_sing)|
+|is none|NegationEvidence|post|noun|count(thr_sing)|
+|is none|NegationEvidence|post|noun|count(thr_sing)|
+|is not|NegationEvidence|pre|noun|count(thr_sing)|
+|is ruled out|NegationEvidence|post|noun|count(thr_sing)|
+|isn't|NegationEvidence|pre|noun|count(thr_sing)|
+|lack of|NegationEvidence|pre|noun|count(thr_sing)|
+|lacked|NegationEvidence|pre|noun|count(thr_sing)|
+|n o|NegationEvidence|pre|noun|count(thr_sing)|
+|neg for|NegationEvidence|pre|noun|count(thr_sing)|
+|neg.|NegationEvidence|post|noun|count(thr_sing)|
+|negative for|NegationEvidence|pre|noun|count(thr_sing)|
+|negative for|NegationEvidence|pre|noun|count(thr_sing)|
+|never developed|NegationEvidence|pre|noun|count(thr_sing)|
+|never had|NegationEvidence|pre|noun|count(thr_sing)|
+|nevertheless|NegationEvidence|termin|noun|count(thr_sing)|
+|nevertheless|NegationEvidence|termin|noun|count(thr_sing)|
+|no|NegationEvidence|pre|noun|count(thr_sing)|
+|no abnormal|NegationEvidence|pre|noun|count(thr_sing)|
+|no acute|NegationEvidence|pre|noun|count(thr_sing)|
+|no additional significant|NegationEvidence|pre|noun|count(thr_sing)|
+|no apparent|NegationEvidence|pre|noun|count(thr_sing)|
+|no cause of|NegationEvidence|pre|noun|count(thr_sing)|
+|no change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no complaints of|NegationEvidence|pre|noun|count(thr_sing)|
+|no current|NegationEvidence|pre|noun|count(thr_sing)|
+|no definite change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no evidence|NegationEvidence|pre|noun|count(thr_sing)|
+|no evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|no evidence to suggest|NegationEvidence|pre|noun|count(thr_sing)|
+|no findings of|NegationEvidence|pre|noun|count(thr_sing)|
+|no findings to indicate|NegationEvidence|pre|noun|count(thr_sing)|
+|no history of|NegationEvidence|pre|noun|count(thr_sing)|
+|no hx of|NegationEvidence|pre|noun|count(thr_sing)|
+|no hx of|NegationEvidence|pre|noun|count(thr_sing)|
+|no increase|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no indication of|NegationEvidence|pre|noun|count(thr_sing)|
+|no indications of|NegationEvidence|pre|noun|count(thr_sing)|
+|no interval change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no known|NegationEvidence|pre|noun|count(thr_sing)|
+|no known history of|NegationEvidence|pre|noun|count(thr_sing)|
+|no known hx of|NegationEvidence|pre|noun|count(thr_sing)|
+|no longer|NegationEvidence|pre|noun|count(thr_sing)|
+|no longer present|NegationEvidence|post|noun|count(thr_sing)|
+|no major|NegationEvidence|pre|noun|count(thr_sing)|
+|no mammographic evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|no mention of|NegationEvidence|pre|noun|count(thr_sing)|
+|no new|NegationEvidence|pre|noun|count(thr_sing)|
+|no new evidence|NegationEvidence|pre|noun|count(thr_sing)|
+|no other evidence|NegationEvidence|pre|noun|count(thr_sing)|
+|no other symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|no problems with|NegationEvidence|pre|noun|count(thr_sing)|
+|no radiographic evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|no recurrent|NegationEvidence|pre|noun|count(thr_sing)|
+|no reported|NegationEvidence|pre|noun|count(thr_sing)|
+|no reported mention|NegationEvidence|pre|noun|count(thr_sing)|
+|no residual|NegationEvidence|pre|noun|count(thr_sing)|
+|no sign of|NegationEvidence|pre|noun|count(thr_sing)|
+|no significant|NegationEvidence|pre|noun|count(thr_sing)|
+|no significant change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no significant interval change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no signs of|NegationEvidence|pre|noun|count(thr_sing)|
+|no signs or symptoms of|NegationEvidence|pre|noun|count(thr_sing)|
+|no suggestion of|NegationEvidence|pre|noun|count(thr_sing)|
+|no suspicious|NegationEvidence|pre|noun|count(thr_sing)|
+|no suspicious change|NegationEvidence|pseudo|noun|count(thr_sing)|
+|no sxs of|NegationEvidence|pre|noun|count(thr_sing)|
+|no visable|NegationEvidence|pre|noun|count(thr_sing)|
+|non diagnostic|NegationEvidence|post|noun|count(thr_sing)|
+|none|NegationEvidence|post|noun|count(thr_sing)|
+|nor|NegationEvidence|pre|noun|count(thr_sing)|
+|nor all|NegationEvidence|pre|noun|count(thr_sing)|
+|nor any|NegationEvidence|pre|noun|count(thr_sing)|
+|not|NegationEvidence|pre|noun|count(thr_sing)|
+|not a current|NegationEvidence|pre|noun|count(thr_sing)|
+|not appear|NegationEvidence|pre|noun|count(thr_sing)|
+|not appreciate|NegationEvidence|pre|noun|count(thr_sing)|
+|not associated with|NegationEvidence|pre|noun|count(thr_sing)|
+|not cause|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not certain if|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not certain whether|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not complain of|NegationEvidence|pre|noun|count(thr_sing)|
+|not current|NegationEvidence|pre|noun|count(thr_sing)|
+|not demonstrate|NegationEvidence|pre|noun|count(thr_sing)|
+|not drain|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not exhibit|NegationEvidence|pre|noun|count(thr_sing)|
+|not extend|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not feel|NegationEvidence|pre|noun|count(thr_sing)|
+|not had|NegationEvidence|pre|noun|count(thr_sing)|
+|not have|NegationEvidence|pre|noun|count(thr_sing)|
+|not have evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|not in|NegationEvidence|pre|noun|count(thr_sing)|
+|not in acute|NegationEvidence|pre|noun|count(thr_sing)|
+|not know of|NegationEvidence|pre|noun|count(thr_sing)|
+|not known to have|NegationEvidence|pre|noun|count(thr_sing)|
+|not necessarily|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not on|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not only|NegationEvidence|pseudo|noun|count(thr_sing)|
+|not reveal|NegationEvidence|pre|noun|count(thr_sing)|
+|not see|NegationEvidence|pre|noun|count(thr_sing)|
+|not to be|NegationEvidence|pre|noun|count(thr_sing)|
+|noted to be neg.|NegationEvidence|post|noun|count(thr_sing)|
+|noted to be negative|NegationEvidence|post|noun|count(thr_sing)|
+|now resolved|NegationEvidence|post|noun|count(thr_sing)|
+|origin for|NegationEvidence|termin|noun|count(thr_sing)|
+|origin of|NegationEvidence|termin|noun|count(thr_sing)|
+|origins for|NegationEvidence|termin|noun|count(thr_sing)|
+|origins of|NegationEvidence|termin|noun|count(thr_sing)|
+|other possibilities of|NegationEvidence|termin|noun|count(thr_sing)|
+|patient was not|NegationEvidence|pre|noun|count(thr_sing)|
+|prophylaxis|NegationEvidence|post|noun|count(thr_sing)|
+|rather than|NegationEvidence|pre|noun|count(thr_sing)|
+|reason for|NegationEvidence|termin|noun|count(thr_sing)|
+|reason of|NegationEvidence|termin|noun|count(thr_sing)|
+|reasons for|NegationEvidence|termin|noun|count(thr_sing)|
+|reasons of|NegationEvidence|termin|noun|count(thr_sing)|
+|resolved|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled her out|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled her out against|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled him out|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled him out against|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled out|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled out against|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled out for|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled the patient out against|NegationEvidence|pre|noun|count(thr_sing)|
+|ruled the patient out for|NegationEvidence|pre|noun|count(thr_sing)|
+|rules her out|NegationEvidence|pre|noun|count(thr_sing)|
+|rules her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|rules him out|NegationEvidence|pre|noun|count(thr_sing)|
+|rules him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|rules out|NegationEvidence|pre|noun|count(thr_sing)|
+|rules out for|NegationEvidence|pre|noun|count(thr_sing)|
+|rules the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|rules the patient out for|NegationEvidence|pre|noun|count(thr_sing)|
+|secondary|NegationEvidence|termin|noun|count(thr_sing)|
+|secondary to|NegationEvidence|termin|noun|count(thr_sing)|
+|source for|NegationEvidence|termin|noun|count(thr_sing)|
+|source of|NegationEvidence|termin|noun|count(thr_sing)|
+|sources for|NegationEvidence|termin|noun|count(thr_sing)|
+|sources of|NegationEvidence|termin|noun|count(thr_sing)|
+|still|NegationEvidence|termin|noun|count(thr_sing)|
+|stopped|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule her out|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule her out against|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule her out for|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule him out|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule him out against|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule him out for|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule out|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule out against|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule out for|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule the patient out|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule the patient out against|NegationEvidence|pre|noun|count(thr_sing)|
+|sufficient to rule the patient out for|NegationEvidence|pre|noun|count(thr_sing)|
+|test for|NegationEvidence|pre|noun|count(thr_sing)|
+|though|NegationEvidence|termin|noun|count(thr_sing)|
+|to exclude|NegationEvidence|pre|noun|count(thr_sing)|
+|trigger event for|NegationEvidence|termin|noun|count(thr_sing)|
+|unlikely|NegationEvidence|post|noun|count(thr_sing)|
+|unlikelyfixthis|NegationEvidence|post|noun|count(thr_sing)|
+|unremarkable for|NegationEvidence|pre|noun|count(thr_sing)|
+|was negative|NegationEvidence|post|noun|count(thr_sing)|
+|was none|NegationEvidence|post|noun|count(thr_sing)|
+|was not|NegationEvidence|pre|noun|count(thr_sing)|
+|was noted to be negative|NegationEvidence|post|noun|count(thr_sing)|
+|was ruled out|NegationEvidence|post|noun|count(thr_sing)|
+|wasn't|NegationEvidence|pre|noun|count(thr_sing)|
+|were none|NegationEvidence|post|noun|count(thr_sing)|
+|with no|NegationEvidence|pre|noun|count(thr_sing)|
+|without|NegationEvidence|pre|noun|count(thr_sing)|
+|without a|NegationEvidence|pre|noun|count(thr_sing)|
+|without an|NegationEvidence|pre|noun|count(thr_sing)|
+|without any|NegationEvidence|pre|noun|count(thr_sing)|
+|without any evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|without audible|NegationEvidence|pre|noun|count(thr_sing)|
+|without being|NegationEvidence|pre|noun|count(thr_sing)|
+|without definite|NegationEvidence|pseudo|noun|count(thr_sing)|
+|without evidence|NegationEvidence|pre|noun|count(thr_sing)|
+|without evidence of|NegationEvidence|pre|noun|count(thr_sing)|
+|without indication of|NegationEvidence|pre|noun|count(thr_sing)|
+|without mention of|NegationEvidence|pre|noun|count(thr_sing)|
+|without much|NegationEvidence|pre|noun|count(thr_sing)|
+|without other|NegationEvidence|pre|noun|count(thr_sing)|
+|without reported|NegationEvidence|pre|noun|count(thr_sing)|
+|without sign of|NegationEvidence|pre|noun|count(thr_sing)|
+|without sign of|NegationEvidence|pre|noun|count(thr_sing)|
+|without significant|NegationEvidence|pre|noun|count(thr_sing)|
+|without signs of|NegationEvidence|pre|noun|count(thr_sing)|
+|without some|NegationEvidence|pre|noun|count(thr_sing)|
+|without success|NegationEvidence|post|noun|count(thr_sing)|
+|without the|NegationEvidence|pre|noun|count(thr_sing)|
+|without visible|NegationEvidence|pre|noun|count(thr_sing)|
+|yet|NegationEvidence|termin|noun|count(thr_sing)|
+|F/H|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|FH|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|H/O|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|aunt|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|aunt's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|brother|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|brother's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|dad|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|dad's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|fam hx|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|family|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|father|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|father's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|grandfather|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|grandfather's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|grandmother|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|grandmother's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|mom|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|mom's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|mother|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|mother's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|sister|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|sister's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|uncle|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|
+|uncle's|SubjectIsOtherEvidence|pre|noun|count(thr_sing)|

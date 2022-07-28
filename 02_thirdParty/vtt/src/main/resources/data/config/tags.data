@@ -1,0 +1,11 @@
+#<---------------------------------------------------------------------->
+#<Tags Configuration>
+#<Name|Category|Bold|Italic|Underline|Display|FR|FG|FB|BR|BG|BB|FontFamily|FontSize>
+#<---------------------------------------------------------------------->
+Highlight||false|false|false|true|0|0|0|192|192|192|Monospaced|+0
+#<---------------------------------------------------------------------->
+Concept||false|false|false|true|0|0|0|255|200|0|Monospaced|+0
+True||false|false|false|true|0|0|0|0|255|0|Monospaced|+0
+False||false|false|false|true|0|0|0|255|0|0|Monospaced|+0
+Uncertain||false|false|false|true|0|0|0|255|175|175|Monospaced|+0
+SnippetColumn||false|false|false|false|0|0|0|255|255|0|Monospaced|+0

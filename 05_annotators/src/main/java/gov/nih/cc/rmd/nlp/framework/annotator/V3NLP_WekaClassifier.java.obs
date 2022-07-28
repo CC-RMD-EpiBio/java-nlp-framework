@@ -1,0 +1,686 @@
+/*******************************************************************************
+ * ---------------------------------------------------------------------------
+ *                                   NIH Clinical Center 
+ *                             Department of Rehabilitation 
+ *                        Epidemiology and Biostatistics Branch 
+ *                                         2019
+ *    
+ *  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+ *  
+ *  This license allows you to use, share and  adapt for any purpose, provided:
+ *     Provide attribution to the creators of this work within your work.
+ *     Indicate if changes were made to this work.
+ *     No claim to merchantability, implied warranty, or liability can be made.
+ *     
+ *   When attributing this code, please make reference to
+ *    [citation/url here] .  
+ *    
+ *     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+ *  
+ *  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+ ******************************************************************************/
+// =======================================================
+/**
+ * V3NLP_SVMClassifier is a wrapper around the weka models created
+ *
+ * @author  Divita
+ * @created Dec 17, 2014
+ *
+   
+ */
+// =======================================================
+package gov.nih.cc.rmd.nlp.framework.annotator;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+
+import gov.nih.cc.rmd.nlp.framework.utils.U;
+import weka.classifiers.Classifier;
+import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.LibSVM;
+import weka.classifiers.lazy.IBk;
+import weka.core.Attribute;
+import weka.core.DenseInstance;
+import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.converters.ArffSaver;
+import weka.core.converters.ConverterUtils.DataSource;
+
+
+
+public class V3NLP_WekaClassifier  {
+   static final long serialVersionUID = -8649999999992L;
+  
+ //=======================================================
+ /**
+  * constructor loads the attribute enumerations from the arff header file
+  *             to create instances to pass to the classifier
+  * 
+  * @param pArfHeader
+  * @param pModel
+  * 
+  * @throws Exception 
+  */
+ // =======================================================
+ public V3NLP_WekaClassifier( String pArffHeader, String pModel, String pOutputDir ) throws Exception {
+  
+  
+   try {
+     this.load( pModel);
+     this.outputDir = pOutputDir;
+     
+   } catch ( Exception e) {
+     e.printStackTrace();
+     System.err.println("Issue loading the model " + e.toString());
+     throw e;
+     
+   }
+   
+   this.contexts = new SVMContexts( pArffHeader);
+  
+   this.attributes = new HashMap<String,Attribute>();
+   
+   // ---------------------
+   // Create a catalog of attribute enumerations for each attribute taken from the svmContexts
+   
+   this.attributeNames = this.contexts.getAttributeNames();
+   
+   for ( String attributeName : this.attributeNames) {
+   
+     List<String> enumerationList = this.contexts.getAttributeEnumerations(attributeName);
+     Attribute attribute = null;
+     if ( enumerationList != null && enumerationList.size() > 0 )
+      attribute = new Attribute( attributeName, enumerationList);
+     else
+      attribute = new Attribute( attributeName );  // <---- for numeric attribute values
+     
+     this.attributes.put(attributeName, attribute);
+     
+   }
+   DataSource source = null;
+   try {
+    source = new DataSource( pArffHeader);
+   } catch (Exception e) {
+     e.printStackTrace();
+     System.err.println("Issue loading in the arff header for creating new instances to pass thru the the classifier " + e.toString());
+     throw e;
+   }
+   this.data = source.getDataSet();
+// Make the last attribute be the class
+   System.err.println("The last attribute in the dataset = " + (this.data.numAttributes() -1) );
+   this.data.setClassIndex(this.data.numAttributes() -1 );
+   
+ } // End Constructor() -----------
+
+  // =======================================================
+/**
+ * classify classifies the incoming context
+ * 
+ * @param pSVMContext
+ * @return String      value|prediction
+ * @throws Exception 
+ */
+// =======================================================
+public String classify(SVMContext pSVMContext, String pDocumentName, String pSymptomName, int pBeginOffset, int pEndOffset) throws Exception {
+  
+  String symptom = pSVMContext.getAttributeValue("00_symptomWords");
+ // System.err.println(" The potential symptom = " + symptom);                                  
+ // System.err.println(" The potential symptom assertion = " + pSVMContext.getAttributeValue("01_assertionStatus"));
+  
+  
+  Instance instance = createWekaInstance( pSVMContext) ;
+  
+  String answer = "?";
+  
+  try {
+   answer = classify( instance );
+  } catch (Exception  e) {
+    e.printStackTrace();
+    System.err.println("Issue with trying to classify this " + e.toString());
+    throw e;
+  }
+   StringBuffer returnVal = new StringBuffer();
+  
+   returnVal.append(answer);
+   returnVal.append("|");
+   returnVal.append( pDocumentName);
+   returnVal.append("|");
+   returnVal.append(pSymptomName);
+   returnVal.append("|");
+   returnVal.append(pBeginOffset);
+   returnVal.append("|");
+   returnVal.append( pEndOffset);
+ 
+    
+   
+   
+ return returnVal.toString();
+} // End Method classify() ======================
+
+// =======================================================
+/**
+ * classify 
+ * 
+ * @param instance
+ * @return
+ * @throws Exception 
+ */
+// =======================================================
+private String classify(Instance instance) throws Exception {
+ 
+  String answer = null;
+  
+  Instance labeledInstance = (Instance) instance.copy();
+  /*
+     System.err.println(" the weka instance name = " + instance.toString(0));
+     System.err.println(" the weka instance assertion = " + instance.toString(2));
+     System.err.println(" The weka answer so far " + instance.toString( instance.classIndex()));
+     System.err.println(" The weka answer index " + instance.classIndex() );
+   */
+     StringBuffer returnVal = new StringBuffer();
+   
+  //double targetIndex  = 0.0;
+  double clsLabel = 0.0;
+  try {
+    
+     clsLabel = this.model.classifyInstance(instance);
+       
+    labeledInstance.setClassValue(clsLabel);
+    // targetIndex = this.model.classifyInstance(instance);
+     answer = instance.classAttribute().value((int) clsLabel );
+     
+   // instance.setClassValue( instance.dataset().classAttribute().value((int) targetIndex));
+    // instance.setValue(instance.classIndex(),answer );
+  } catch (Exception e) {
+    e.printStackTrace();
+    System.err.println("Issue with classifying " + " " + e.toString() );
+    throw e;
+  }
+  
+  //System.err.println("The weka answer now is " + labeledInstance.toString( labeledInstance.classIndex() ));
+ 
+  returnVal.append(answer);
+  returnVal.append("|");
+  double predictions[] = this.model.distributionForInstance(instance);
+  returnVal.append(predictions[(int) clsLabel]);
+  
+ 
+  this.data.add( labeledInstance);
+  if ( this.ctr == 100 ) {
+	  ArffSaver saver = new ArffSaver();
+	  saver.setInstances(this.data);
+	  File outputFile = new File( this.outputDir + "/svm/runningNow.arff");
+	  saver.setFile(outputFile);
+	  saver.writeBatch();
+	 // System.exit(-1);
+	  
+  }
+ 
+  ctr++;
+  
+  return returnVal.toString();
+} // End Method classify() ======================
+
+
+// =======================================================
+/**
+ * classify given a dataset, classify
+ * 
+ * @param pData
+ * @throws Exception 
+ */
+// =======================================================
+private void classify(Instances pData) throws Exception {
+ 
+  int tp = 0, fn = 0, tn = 0, fp = 0;
+  
+  String answer = null;
+  for ( Instance instance : pData) {
+    String trainingAnswer =  new String(instance.toString( instance.classIndex()));
+    System.err.println(" The training answer = " + trainingAnswer );
+    instance.setClassValue("unknown");
+    System.err.println(" The zero'd out answer = " + instance.toString( instance.classIndex()));
+    answer = this.classify(instance);
+    System.err.println(" The classified answer = " + instance.toString( instance.classIndex()));
+
+    if ( trainingAnswer.contains("true")) 
+      if ( answer.contains("true"))
+        tp++;
+      else
+        fn++;
+    else if ( trainingAnswer.contains("false") )  
+      if ( answer.contains("false"))
+        tn++;
+      else
+        fp++;
+       
+  } // end loop thru instances
+  
+  // -----------------
+  // display the stats
+  double recall    = tp / (( tp + fn) + .00000001) ;
+  double precision = tp / (( tp + fp)  + .00000001); 
+  //double accuracy  = (tp + tn)/ ((tp + tn + fp + fn) + .0000001); 
+  //double specificity = tn / ((tn + fp) + .0000001);
+  double           f = 2 * ((precision*recall)/(precision+recall)); 
+  
+  System.err.println(" ===========================");
+  System.err.println("tp        = " + tp);
+  System.err.println("tn        = " + tn);
+  System.err.println("fp        = " + fp);
+  System.err.println("fn        = " + fn);
+  System.err.println("recall    = " + recall);
+  System.err.println("precision = " + precision);
+  System.err.println("f         = " + f);
+  System.err.println("============================");
+  
+} // End Method classify() ======================
+
+
+// =======================================================
+/**
+ * load loads the model
+ * 
+ * @param pPath
+ * 
+ * @throws Exception
+ */
+// =======================================================
+public void load(String pPath) throws Exception {
+
+  
+  InputStream stream = null;
+  
+  try {
+   
+    // ---------------
+    // Grab an inputstream from this path
+    // ---------------
+    try {
+      stream = new FileInputStream( pPath);
+    } catch (Exception e1 ) {
+      ClassLoader cl = Thread.currentThread().getContextClassLoader();
+      stream = cl.getResourceAsStream(pPath);
+    }
+    
+   
+    if ( stream != null ) {
+     this.model = (Classifier) weka.core.SerializationHelper.read( stream );
+     stream.close();
+    }
+    
+    
+  } catch (IOException e) {
+    
+    e.printStackTrace();
+    throw new Exception("Can't read object. retrain model..." + e.toString());
+    
+  }
+  
+} // end Method load() ---------------------------
+
+// =======================================================
+/**
+ * createWekaInstance creates a weka instance from an arff line
+ * 
+ * @param pSVMContexts  array of featureName|feature values 
+ * @return Instance
+ * @throws Exception 
+ */
+// =======================================================
+public Instance createWekaInstance(SVMContext pSVMContext) throws Exception {
+  
+  
+  
+ // String[] attributeNames = pSVMContext.getSortedAttributeNames();
+	 Set<String> attributeNames2 = pSVMContext.getAttributeNames();
+
+  Instance instance = new DenseInstance( attributeNames2.size() + 1 );  // add one because the attributes don't include the class variable!
+  instance.setDataset(this.data);
+  // instance.setClassValue("false");
+  int ctr = 0;
+  for ( String attributeName : attributeNames2 ) {
+    
+  //  if ( ctr == 2) break;
+    
+    Attribute attribute = this.attributes.get( attributeName);
+    int attributeIndex = Integer.parseInt(attributeName.substring(0,2));
+    String value = pSVMContext.getAttributeValue(attributeName);
+    if ( value == null ) {
+      System.err.println("Issue with null value " + attributeName );
+      System.exit(-1);
+    }
+   
+    // ------------------------------
+    // It is entirely likely that the value is outside the
+    // range of the enumerations for a given attribute. For instance
+    // the word to the left is "purple", but "purple" is not in the 
+    // enumerations for the word to the left, because the number of
+    // times "purple" showed up in the training data was below
+    // the threshold to keep it as an enumeration.
+    //
+    // I am relying on instance to throw an exception to figure
+    // out if the value is within the enumerated set - as the
+    // most economic way to figure this out.
+   
+    try {
+      
+      if ( attributeName.endsWith("ID")) 
+    	  instance.setValue(attributeIndex, Integer.parseInt(value));
+      else 
+    	  instance.setValue(attributeIndex, value);
+     
+    } catch ( Exception e) {
+      // e.printStackTrace();
+      // System.err.println(" issue with trying to set " + attributeIndex + " with " + value );
+      try {
+        instance.setValue(attributeIndex, "unknown");
+ 
+      } catch (Exception e2) {
+        e2.printStackTrace();
+        System.err.println("Something went wrong adding values to the instance before being put thru the model " + 
+        attributeName + "|"+ attributeIndex + "|"+ "|" + value + " " +
+            e2.toString());
+      }
+    }
+    // System.err.println("attribute:" + attributeName + " " +  instance.toString(attributeIndex) + "|original value:" + value );
+ 
+      ctr++;
+  
+  }
+  // set the initial value for the class variable
+  
+ // instance.setClassValue("false");
+
+  
+  
+  return instance;
+} // End Method createWekaInstance() ======================
+
+    // =======================================================
+    /**
+     * save
+     * 
+     * @param model
+     * @param pPath
+     *  
+     * @throws Exception 
+     */
+    // =======================================================
+    public static void save(Classifier model, String pPath) throws Exception {
+      weka.core.SerializationHelper.write(pPath,model);
+  } // end Method save() -----------------------
+
+// =======================================================
+    /**
+     * printARFFFile 
+     * 
+     * @param pSVMOutputDir
+     * @return String  - the name of the arff file
+     * @throws Exception 
+     */
+    // =======================================================
+    public String printARFFFile(String pSVMOutputDir) throws Exception {
+      
+      ArffSaver saver = new ArffSaver();
+      saver.setInstances(this.data);
+      String fileName = pSVMOutputDir + "/" + "debugging.arff";
+      saver.setFile(new File( fileName));
+    
+      saver.writeBatch();
+      return fileName;
+      // End Method printARFFFile() ======================
+    }
+
+    // =======================================================
+    /**
+     * main runs a classifier from an arff file
+     *  --classifier=SVM|NaiveBayes| ...
+     *  --arffFile=xxx.arff
+     *  --localResources=
+     *  --outputDir= 
+     *  --model=someModelName
+     *  
+     * @param pArgs
+     */
+    // =======================================================
+    public static void main(String[] pArgs) {
+    
+      try {
+      
+      String args[] = setArgs(pArgs);
+      String  dateStamp = U.getOption(args, "--dateStamp=", "2014-12-16_17_54_19");
+      String inputDir  = U.getOption(args,       "--inputDir=",       "/data/vhaslcdivitg/data/ORD_SAMORE_201007105D/MUS/MUS_OLD/Tyler/750data/TrainingAll");
+      //inputDir =  "/data/ORD_SAMORE_201007105D/MUS/MUS_OLD/Tyler/final250/corpus";
+      String outputPreamble = U.getOption(args,  "--outputPreamble=", inputDir + "/"  + dateStamp  );
+      String outputDir      =  U.getOption(args, "--outputDir=",      outputPreamble);
+      String        arffFile = U.getOption(args, "--arffFile=", outputDir + "/svm/" + "symptomTrainingModel.arff"); 
+      String  localResources =  U.getOption(args, "--localResources=",    "./bla");
+      String  modelDirectory = U.getClassPathToLocalResources() + "/symptoms";
+      String  classifier = U.getOption(args, "--classifier=", "SVM");
+      String  arfHeader = U.getOption(args, "--arffHeader=" , "arffHeader.arff");
+      
+      if ( !localResources.equals("./bla"))
+        modelDirectory = localResources + "/symptoms";
+     
+      String           model = U.getOption(args, "--model=", modelDirectory + "/" + "symptomModel.model"); 
+     
+      DataSource source = new DataSource( arffFile );
+      Instances data = source.getDataSet();
+      if (data.classIndex() == -1)
+          data.setClassIndex(data.numAttributes() - 1);
+      System.out.println(data.classIndex());
+      
+      if ( classifier.toLowerCase().contains("svm")) {
+        trainSVM( data, model);
+        
+      } else if ( classifier.toLowerCase().contains("naive")) {
+        trainNaiveBayes(data, model );
+      } else if ( classifier.toLowerCase().contains("ibk")) {
+        trainIBk( data, model);
+      }
+      
+      // ------------------
+      // Move the arf header file and the model file to the local resources directory
+      
+    
+          
+        // TBD  test with the training set and report the metrics on a 10 fold cross validation
+        // TBD  test with the test set and report the metrics
+    
+      // -----------------------------
+       test( data, arfHeader, model, outputDir ); 
+      
+      
+      
+      } catch (Exception e ) {
+      }
+      
+    } // end Method main() -------------------------------
+          
+    // =======================================================
+    /**
+     * test 
+     * 
+     * @param pData
+     * @param pArffHeader
+     * @param model2 
+     */
+    // =======================================================
+    public static void test(Instances pData, String pArffHeader, String pModel, String pOutputDir ) {
+    
+      try {
+      
+      V3NLP_WekaClassifier classifier = new V3NLP_WekaClassifier(pArffHeader, pModel, pOutputDir);
+     
+      classifier.classify(pData);
+      
+      } catch (Exception e) {
+        e.printStackTrace();
+        System.err.println("Issue loading the model " + e.toString()) ;
+        throw new RuntimeException();
+      }
+      
+    } // End Method test() ======================
+    
+
+    // =======================================================
+    /**
+     * trainSVM
+     * @param pData
+     * @param pModel 
+     * @throws Exception 
+     * 
+     */
+    // =======================================================
+    private static void trainSVM(Instances pData, String pModel) throws Exception {
+
+      LibSVM classifier = new LibSVM();
+      String[] options = {"-S 0", "-K 1", "-D 3", "-G 0.0", "-R 0.0", "-N 0.5", "-M 4.0", "-C 30.0", "-E 0.0010", "-P 0.1", "-M 4000", "-seed 1" };
+      
+      classifier.setOptions(options);
+          
+      System.out.println("start training... ");
+         
+      classifier.buildClassifier(pData);
+          
+      V3NLP_WekaClassifier.save(classifier, pModel);
+          
+      System.out.println("finished training. Wrote model out to " + pModel);
+          
+    } // End Method trainSVM() ======================
+    
+    
+    // =======================================================
+    /**
+     * trainIBk
+     * @param pData
+     * @param pModel 
+     * @throws Exception 
+     * 
+     */
+    // =======================================================
+    private static void trainIBk(Instances pData, String pModel) throws Exception {
+
+       IBk classifier = new IBk();
+      
+          
+      System.out.println("start training... ");
+         
+      classifier.buildClassifier(pData);
+          
+      V3NLP_WekaClassifier.save(classifier, pModel);
+          
+      System.out.println("finished training. Wrote model out to " + pModel);
+          
+    } // End Method trainIBk() ======================
+    
+    
+    // =======================================================
+    /**
+     * trainNaiveBayes
+     * @param pData
+     * @param pModel 
+     * @throws Exception 
+     * 
+     */
+    // =======================================================
+    private static void trainNaiveBayes(Instances pData, String pModel) throws Exception {
+
+      NaiveBayes classifier = new NaiveBayes();
+     
+         
+      System.out.println("start training... ");
+         
+      classifier.buildClassifier(pData);
+          
+      V3NLP_WekaClassifier.save(classifier, pModel);
+          
+      System.out.println("finished training. Wrote model out to " + pModel);
+      
+          
+    } // End Method trainSVM() ======================
+    
+
+    
+  // ------------------------------------------
+  /**
+   * setArgs
+   *
+   *
+   * @return
+   */
+  // ------------------------------------------
+  private static String[] setArgs( String[] pArgs) {
+    
+    try {
+    String dateStamp = U.getOption(pArgs, "--dateStamp=", "2014-12-16_16_44_13");
+    String inputDir  = U.getOption(pArgs,       "--inputDir=",       "/data/vhaslcdivitg/data/ORD_SAMORE_201007105D/MUS/MUS_OLD/Tyler/750data/TrainingAll/corpus");
+    //inputDir =  "/data/ORD_SAMORE_201007105D/MUS/MUS_OLD/Tyler/final250/corpus";
+    String outputPreamble = U.getOption(pArgs,  "--outputPreamble=", inputDir + "/../" + dateStamp  );
+    String outputDir      =  U.getOption(pArgs, "--outputDir=",      outputPreamble);
+    String         goldDir = U.getOption(pArgs, "--goldDir=", "/data/vhaslcdivitg/data/ORD_SAMORE_201007105D/MUS/MUS_OLD/Tyler/750data/trainingAll/xmi");
+    String  localResources =  U.getOption(pArgs, "--localResources=",    "./bla");
+    String   wordFreqThreshold = U.getOption(pArgs, "--wordFreqThreshold=", "10"); 
+    String  modelDirectory = U.getClassPathToLocalResources() + "/symptoms"; 
+    if ( !localResources.equals("./bla"))
+      modelDirectory = localResources + "/symptoms";
+    String  classifier = U.getOption(pArgs, "--classifier=", "SVM");
+   
+    String           model = U.getOption(pArgs, "--model=", modelDirectory + "/" + "svmModelC10_4folds_linearModel.model"); 
+    String      arffHeader = U.getOption(pArgs, "--arffHeader=", modelDirectory + "/" + "arffHeader.arff"); 
+    String        arffFile = U.getOption(pArgs, "--arffFile=", outputDir + "/svm/" + "symptomTrainingModel.arff"); 
+    
+    System.err.println("The model is |" + model);
+    System.err.println("The arff file is |" + arffHeader);
+    
+    
+    String args[] = { "--inputDir=" + inputDir,
+                      "--dateStamp=" + dateStamp,
+                      "--outputPreamble=" + outputPreamble,
+                      "--outputDir=" + outputDir,
+                      "--goldDir=" + goldDir,
+                      "--localResources=" + localResources,
+                      "--wordFreqThreshold=" + wordFreqThreshold,
+                      "--model=" + model,
+                      "--arffHeader=" + arffHeader,
+                      "--arffFile=" + arffFile,
+                      "--classifier=" + classifier
+                      
+                   
+                     };
+    
+    
+    return args;
+    } catch (Exception e) {
+      e.printStackTrace();;
+      System.err.println("Issue with setting the arguments " + e.toString());
+      throw new RuntimeException();
+    }
+    
+    
+    
+    
+  } // End Method setArgs() -----------------------
+  
+
+  
+  
+  // -----------------------------------
+  // Global Variables
+  private HashMap<String, Attribute>    attributes = null;
+  private String[]                  attributeNames = null;
+  private SVMContexts contexts = null;
+  private Instances data = null;
+  private int ctr = 0;
+  private String outputDir = null;
+ 
+  
+  private Classifier model = null;
+  
+} // end Class v3NLP_WekaClassifier

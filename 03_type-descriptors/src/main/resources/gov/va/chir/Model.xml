@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.va.chir.Model</name>
+  <description>The chir insprired labels from the CHIR NLP Standard work.
+With nested elements taken out of Phrase because of the huge savings in space</description>
+  <version>2018.07.05</version>
+  <vendor/>
+  <types>    <typeDescription>      <name>gov.va.chir.model.Document</name>      <description>This is a container class for a document and header.  A document contains a document body (a set of annotations), and a document header that contains meta-data about the document.</description>      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>        <featureDescription>          <name>documentBody</name>          <description>A container class that holds the content of a document as a set of Annotations.</description>          <rangeTypeName>uima.cas.FSArray</rangeTypeName>          <elementType>gov.va.chir.model.VAnnotation</elementType>          <multipleReferencesAllowed>true</multipleReferencesAllowed>        </featureDescription>        <featureDescription>
+          <name>documentHeader</name>
+          <description>A container where the meta data for a document resides.</description>
+          <rangeTypeName>gov.va.chir.model.DocumentHeader</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentGroups</name>
+          <description>A document could include a set of groups that could either be sections or paragraphs. This is a convenence class whose instances should point to instances in the annotations container.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Group</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentLexicalElements</name>
+          <description>This is a convienence class to point to the instances of terms within the document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.LexicalElement</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentParagraphs</name>
+          <description>This is a convienence class to hold pointers ot instances of paragraphs of a document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Paragraph</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentPhrases</name>
+          <description>This is a convienence class to hold pinters to instances of the phrases of a document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Phrase</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentSections</name>
+          <description>This is a convenence class whose instances should point to instances of sections of the document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Section</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentTokens</name>
+          <description>This is a convienence class to hold pointers to instances of  tokens of a document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>documentUtterances</name>
+          <description>This is a convienence class to hold pointers to instances the utterances of a document.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Utterance</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Section</name>
+      <description>This is a container for a contiguious zone within a document. For example, the medications section, or the plan section.</description>
+      <supertypeName>gov.va.chir.model.Group</supertypeName>
+      <features>
+        <featureDescription>
+          <name>sectionHeading</name>
+          <description>The section heading.</description>
+          <rangeTypeName>gov.va.chir.model.ContentHeading</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraphs</name>
+          <description>Paragrpahs of the Section</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Paragraph</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionUtterances</name>
+          <description>The utterances of the Section.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Utterance</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionSnippets</name>
+          <description>The phrases of the section.  This is a convenience class that points to the phrases of the section.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Snippet</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionLexicalElements</name>
+          <description>The terms of the section.  This is a convenience class that points to the terms of the section.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.LexicalElement</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>tokens</name>
+          <description>The tokens of the section.  This is a convenience class that points to the tokens of the section.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>contentHeaderString</name>
+          <description>The header string.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionProperties</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.Properties</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Paragraph</name>
+      <description>A container for a set of sentences.</description>
+      <supertypeName>gov.va.chir.model.Group</supertypeName>
+      <features>
+        <featureDescription>
+          <name>utterances</name>
+          <description>The utterances of the paragraph</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Utterance</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraphPhrases</name>
+          <description>The phrases of the paragraph.  This is a convienence feature. This should point to the same phrases, as if you traversed through the phrases of the paragraph, one by one.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Phrase</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraphLexcialElements</name>
+          <description>The lexical Elements of this paragraph.  This is a convienence container to point to the terms of the paragraph. These should point to the same terms as if you were to traverse  through each of terms of the phrases of each of the utterances of the paragraph.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.LexicalElement</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraphTokens</name>
+          <description>The tokens of the paragraph.  This is a convienence class to point to the tokens of the paragraph.  These should point to the same tokens as if you were to traverse through the tokens of the terms, of each of the phrases, of each of the utterances within this paragraph.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraphProperties</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.Properties</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Utterance</name>
+      <description>A container class for a sentence or sentence like structure.  Items in this class include titles, labels, headings, captions,  non-gramatical sentences,  cells within a table, list items, and of course, grammatical sentences.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>utteranceLexicalElements</name>
+          <description>The terms of the utterance.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.LexicalElement</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>utteranceTokens</name>
+          <description>A convienence class to hold the tokens of an utterance.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>properties</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.Properties</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Phrase</name>
+      <description>A container class that contains components of a sentence.  A phrase can be further typed to prepositional phrases, noun phrases, verb  phrases, adjectival phrases, adverbial phrases, equations, and those unspecified pieces that provide the structure of a sentence, including conjunctions, complementizers, interjections, and interrogativesA container holding an atomic level element from an entity extraction task.  For the purposes of this standard, a named entity is likely to be a phrase.Core phrases could contain one or relationships.  Each relationship points to another Named Entity or kind of Named Entity.</description>
+      <supertypeName>gov.va.chir.model.Snippet</supertypeName>
+      <features>
+        <featureDescription>
+          <name>phraseType</name>
+          <description>The Penn Treebank phrase labels plus labels for verb group and simple noun phrase.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>phraseKind</name>
+          <description>Whether or not this is a final vs an intermediate phrase or not.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.LargePhrase</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.Phrase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.LexicalElement</name>
+      <description>Lexical Element is a container class for the terms of a document. A term is a word or words that equate to what you'd find in a dictionary.  This includes both single and multi-token items such as "a priori".  This class also includes multiple tokens that wouldn't be covered in a dictionary like dates, times, phone numbers, urls, and identifiers.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>tokens</name>
+          <description>List of Tokens that make up the Lexical Element</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>potentialPartsOfSpeech</name>
+          <description>This is a placeholder for a PartOfSpeech type</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.PartOfSpeech</elementType>
+          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>head</name>
+          <description>True if this lexical element is the head of a phrase.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>euis</name>
+          <description>List of SPECIALIST Lexicon identifiers</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>partOfSpeech</name>
+          <description>The determined part of speech after the tagger has had its way.</description>
+          <rangeTypeName>gov.va.chir.model.PartOfSpeech</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>lexMatches</name>
+          <description>These are the matches from the Lexicon as they appear in the lexicon.  For instance, AIDS and aids would could be returned as lexMatches, with different euis for each.  You would want to filter out the one that does not match.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>acronymExpansions</name>
+          <description>A list of acronym expansions this term might have.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>acronyms</name>
+          <description>A list of acronyms for this term.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>isAcronym</name>
+          <description>a marker that this term is an acronym.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>isAcronymExpansion</name>
+          <description>is a marker to indicate this term is an acronym expansion for an acronym.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>acronymExpansionEuis</name>
+          <description>A set of EUIs of acronym expansions for this term.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>types</name>
+          <description>A lexical element can be typed (possibly multiple ways), as to if the term is a shape, (date, time, phone number, identifier, measurement, etc), or semanticly, such as Proper (name, organization, geographic entity,  or any other high level classification that might be useful.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>subTerms</name>
+          <description>This is a pipe delimited fielded text filled with each of the possible sub terms wihin a term.
+Implementation note:  At the moment, this is just the covered text. If need be, the full lexical record can be retrieved for each subterm.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>pos</name>
+          <description>A convenence feature to view the part of speech without having to delve into the part of speech object</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>semanticTypes</name>
+          <description>Semantic types for locally defined terms.   This is in a pipe delimited list of semantic types</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>citationForm</name>
+          <description>The main entry or lemma or root or preferred form found in a lexicon.  The citation form should be an uninflected form, and could be used for normalization purposes.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>stemmedKey</name>
+          <description>This should be the uninflected, lowercased, citation form, if it exists, or if the term is just numbers, the numbers, if the term is just punctuation then null, if a combination of punctuation and numbers then that, else if the term contains letters but has no citation form, it will be porter stemmed.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>      <name>gov.va.chir.model.Token</name>      <description>A word.  A sequence of alpha-numeric characters bounded by space.  Tokens can be further classified into white space tokens (to cover the stuff in-between words that provide the structure of a document.  There is also need to define tokens punctuation tokens, both to define sentence structure punctuation such as periods, colons, and double quotes, but also to allow for those systems that define a word token that breaks on space and punctuation.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>      <features>
+        <featureDescription>          <name>initialCapitalization</name>          <description>An indication if the first character is uppercase and the rest of the characters are in lower case.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>allCapitalization</name>          <description>An indication if all the letters of the token are upper case.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>whiteSpaceFollows</name>          <description>An indication if the character after this token is a white space token or not.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>partOfSpeech</name>          <description/>          <rangeTypeName>gov.va.chir.model.PartOfSpeech</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>sentenceBreak</name>          <description>A boolean to indicate whether this token, be it a period, colon, semi-colon, or some other explicit string is a sentence ending token.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>tokenType</name>          <description>This captures hitex's type features</description>          <rangeTypeName>uima.cas.String</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>subType</name>          <description>This captures hitex's subType features</description>          <rangeTypeName>uima.cas.String</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>punctuationOnly</name>          <description>indicates this token is only punctuation</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>containsPunctuation</name>          <description>This flag indicates that this token contains some punctuation.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>containsSymbol</name>          <description>This flag indicates that this token contains a symbol or ligature such (TM), (R), or ae, mu, alpha, beta, gamma, etc.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>phraseTag</name>          <description>A transient tag to store phrase tags that come from the chunker.</description>          <rangeTypeName>uima.cas.String</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>pos</name>          <description>A convenience String to view the pos without having to delve into the partOfSpeech object</description>          <rangeTypeName>uima.cas.String</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>tokenNumber</name>          <description>The sequence place within a document of this token.  NewLines are counted as one or 2 depending on how they are represented (nl or crlf).</description>          <rangeTypeName>uima.cas.Integer</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>listDelimiter</name>          <description>True if this token is a list delimiter such as 1.  or a).</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+        <featureDescription>          <name>inGold</name>          <description>True if this token is in a gold annotation</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>        <featureDescription>          <name>inCopper</name>          <description>True if this token is in a copper annotation</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.WordToken</name>
+      <description>A word.  A sequence of alpha-numeric characters bounded by space and punctuation.</description>
+      <supertypeName>gov.va.chir.model.Token</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.WhitespaceToken</name>
+      <description>A contiguous sequence of white space characters.</description>
+      <supertypeName>gov.va.chir.model.Token</supertypeName>
+      <features>
+        <featureDescription>
+          <name>newLine</name>
+          <description>Boolean to indicate this string represents a newline in rendered or displayed text, be it a string of the form: ^m, \n, \r, ret-13, &lt;NL&gt;, &lt;P&gt;. CRLF, CR, LF.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>emptyLine</name>
+          <description>This is an indication that this newline token is an empty line.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentBegin</name>
+          <description>This token is the first token of the document.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentEnd</name>
+          <description>This token is the last token of the document.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>paragraph</name>
+          <description>This is a paragraph marker token</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.DocumentHeader</name>
+      <description>This header contains meta-data about the doucment, and could be extended to cover the kinds of meta-data that the HL7 CDA document header contains about a clincial record, such as who was the author, provider, patient, when the service happened, when it was reviewed, and the like.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>author</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentId</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentTitle</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentType</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentName</name>
+          <description>This is the name of the document (devoid of a full path)</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>documentPath</name>
+          <description>This is the file system path to the location of the document. The path does not include the name of the file, but the name and path of the directory it sits in.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>otherMetaData</name>
+          <description>Place to put other metadata to pass along with the record</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>patientID</name>
+          <description>A slot for a patient identifier</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>referenceDate</name>
+          <description>The date the record was created</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>otherMetaDataFieldNames</name>
+          <description>a pipe delimited String containing the field names for any meta data fields passed in.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>otherMetaDataFieldTypes</name>
+          <description>a pipe delimited String containing the field types for any meta data fields passed in.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>recordId</name>
+          <description>This is a parishable field, filled out with the reader, and only useful during processing.</description>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>ssn</name>
+          <description>ssn or scrambled ssn.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>positiveOrControl</name>
+          <description>records if this document comes from a patient which is in a control or positive cohort</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>visitSID</name>
+          <description/>
+          <rangeTypeName>uima.cas.Long</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>location</name>
+          <description>Location is a institution location like a visn, or station for the VA, or a hospital or lab name for others.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>numberOfSentences</name>
+          <description/>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>numberOfSections</name>
+          <description/>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>numberOfWords</name>
+          <description/>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>numberOfChars</name>
+          <description/>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionType</name>
+          <description>When this is filled out, process the whole document as if it is this kind of section.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>pageNumber</name>
+          <description>What page is this document (for multi documents)</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>eventDate</name>
+          <description>The date the event happened.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Sentence</name>
+      <description>A group of phrases forming a syntactic unit that expresses an assertion, a question, a wish, or the performance of an action, that in writing usually begins with a capital letter and concludes with appropriate end punctuation.  In this context, a sentence should include a verb and subject and/or an object.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+      <features>
+        <featureDescription>
+          <name>phrases</name>
+          <description>A container of phrases of the sentence.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Phrase</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>sentenceNumber</name>
+          <description>The sentence number starting from the beginning of the document.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.FigureOrCaption</name>
+      <description>A figure or caption under or over a table, figure, or picture.  Like a heading, these are likely to be a phrase without a verb, each word within the heading may be initial capitalized, or completely capitalized, and there is not likely to be trailing punctuation on this phrase.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.ContentHeading</name>
+      <description>A section or paragraph heading.  Typically a phrase with no verb.  Each word within the heading may be initial capitalized, or completely capitalized, and there is not likely to be trailing punctuation on this phrase.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.ListElement</name>
+      <description>An element of a list.  List markers such as bullets, commas, or numbers and punctuation are part of ListElements, but not of the utterance elements.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+      <features>
+        <featureDescription>
+          <name>delimiter</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.Delimiter</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>content</name>
+          <description>The part of the list that is a short statement.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Utterance</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>tokens</name>
+          <description>The tokens of the list element (sans the delimiter tokens)</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>spansLines</name>
+          <description>true if this element is on more than one line</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Snippet</name>
+      <description>A section of text that a user or system has highlighted.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+      <features>
+        <featureDescription>
+          <name>relations</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Relationship</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>clinicalStatments</name>
+          <description>Snippets/phrases can contain clinical statements</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.ClinicalStatement</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>    <typeDescription>      
+         <name>gov.va.chir.model.TablesMetaData</name>      
+         <description>This annotation holds metadata about the tables in a document.  Parse through the metaData field,
+                      to find a row for each table, with info on how many rows for each table, how many columns, what
+                      the offset was for where the table is in the document, and what the table name is.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>      
+      <features>        
+	<featureDescription>
+          <name>tablesMetaData</name>          
+	  <description>A pipe and newline delimited string. Each newline indicates a new row describing a new table.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+     </typeDescription>    
+        <typeDescription>      
+	<name>gov.va.chir.model.TableCell</name>      
+        <description>A cell within a table.  This could be an entire paragraph, a sentence, a word, a number.  
+                     Table cells are unique in that they must be interpreted within the context of the column 
+                     and row headings if they are provided.  This may mean having to generate a sentence from 
+                     the table row and column headings along with the table cell.
+        </description>
+        <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+        <features>
+          <featureDescription>
+          <name>columnNumber</name>
+          <description>The "0" based column number</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>        <featureDescription>
+          <name>rowNumber</name>
+          <description>The "zero" based row number</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tableNumber</name>
+          <description>The "zero" based table number</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.PartOfSpeech</name>
+      <description>A high level grammatical categorization of the term or token.  These categories include noun, adjective, adverb, verb, preposition, determiners and the others.  The strings that represent these categories come from one of several type systems including the Penn Treebank types, the MedPost types and NLM's SPECIALIST's types.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>pos</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>typeSystem</name>
+          <description>The system or type of tags being labeled.  For instance were these Penn treebank tags, or SPECIALIST tags, or MedPOST tags.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.VAnnotation</name>
+      <description>A UIMA annotation that includes the display value and the original content value.  Both are convienence features that will enable one to work directly with the annotation class rather than have to compute them.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>displayString</name>
+          <description>This is the "formatted" content between the begin and end span.
+There are cases where the content might have to be interpreted because it cannot be printed out (non-printing characters), or because the original content contains formatting chars (html formatting such as &amp;gt. for &lt;), or is a symbol that you might want to convert to ascii chars (copyright, trademark)
+This method is a convienence feature.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>id</name>
+          <description>identifier</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>provenance</name>
+          <description>What was the source of this annotation? Was it a locally defined term, from a specific vocabulary such as SPECIALIST lexicon, or MeSH terms, or VA Enterprise Vocabulary, by a particular system.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>otherFeatures</name>
+          <description>Non standard information to expose to others.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>parent</name>
+          <description>The parent of this annotation.</description>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>marked</name>
+          <description>a transient feature for internal processing.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>Negation_Status</name>
+          <description>The negation status for a Sentence, Phrase, Concept, Term, Token etc.
+Includes the values Negated|Possible|Actual</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>processMe</name>
+          <description>Marked true if this annotation should be pushed through the NLP Methods.  Usueally assumes that some kind of assertable content is within this annotation.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>uncertainty</name>
+          <description>This is from mitre's mastif attribute annotation module.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>conditional</name>
+          <description>Whether or not the statement is predicated on another criteria.  For example, "if he is cold, then give him blankets".  This was a part of the i2b2/VA 2010 challange attributes.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>generic</name>
+          <description>This is from mitre's mastif assertion annotation system.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>contextLeft</name>
+          <description>The context to the left for this annotation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>contextRight</name>
+          <description>The context to the right of this annotation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>subject</name>
+          <description>Has to do with the patient or not</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>          <name>attributedToPatient</name>          <description/>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>        <featureDescription>
+          <name>annotator</name>
+          <description>The name of the full pipeline or human who created this annotation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>sectionName</name>
+          <description>The section name this annotation is in</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>assertionPredicate</name>
+          <description>This is the evidence of the assertion or negation.  The semantics is the name of the predicate relationship should be in Negation_Status field - the assertionPredicate points to the snippet/concept/term that was the trigger for the assertion or negation.</description>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>inProse</name>
+          <description>is a boolean that is true if this annotation is in prose.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>historical</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>section</name>
+          <description>This is the section that this annotation is within.</description>
+          <rangeTypeName>gov.va.chir.model.VAnnotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>eventDate</name>
+          <description>The date thing thing happened</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>statementDate</name>
+          <description>The date this was mentioned. This should coinside with the document reference date, or the date of page this was mentioned.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>referenceDate</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>          <name>replaceWithClass</name>          <description>when printing out, use the class or the display string rather than the contents of the offsets.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.SlotValue</name>
+      <description>A special kind of utterance that includes a content header and content, where the content is constrained to a phrase or two, and where the content does not make a complete sentence.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+      <features>
+        <featureDescription>
+          <name>contentHeaderString</name>
+          <description>The is the string for the content header of the slot value pair.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>contentString</name>
+          <description>This is the string content.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>contentHeader</name>
+          <description>The content header set of phrases.</description>
+          <rangeTypeName>gov.va.chir.model.Phrase</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>content</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Phrase</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>delimiter</name>
+          <description>The delimiter used between the content header and the content</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>processContent</name>
+          <description>A flag to say that the content is either a quantitative value, or sensitive data that should not be futher processed.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>heading</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.ContentHeading</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>dependentContent</name>
+          <description/>
+          <rangeTypeName>gov.va.chir.model.DependentContent</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Acronym</name>
+      <description>An acronym</description>
+      <supertypeName>gov.va.chir.model.LexicalElement</supertypeName>
+      <features>
+        <featureDescription>
+          <name>euis</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tokens</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>acronymExpansions</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>acronymExpansionEuis</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>          <name>replaceWithClass</name>          <description>This is a flag to either replace the display with the name of the class, or use the displayString instead of the contents of the offsets.</description>          <rangeTypeName>uima.cas.Boolean</rangeTypeName>        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.AcronymExpansion</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.LexicalElement</supertypeName>
+      <features>
+        <featureDescription>
+          <name>euis</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tokens</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Token</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>acronyms</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>acronymEUIs</name>
+          <description/>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Group</name>
+      <description>This is a class to model elements that include sections and paragraphs</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>utterances</name>
+          <description>A group contains a set of utterances, such as snippets, or sentences.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.Utterance</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Organization</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.LexicalElement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.PersonalName</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.LexicalElement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Relationship</name>
+      <description>A named relation of a given NamedEntity to another Named Entity.</description>
+      <supertypeName>uima.cas.TOP</supertypeName>
+      <features>
+        <featureDescription>
+          <name>constituent</name>
+          <description>The constituent is the entity that this relation points to.  It can be any kind of annotation.</description>
+          <rangeTypeName>gov.va.chir.model.VAnnotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>typeCode</name>
+          <description>TypeCode is the CDA's term for the name of the relationship</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.EntryRelationship</name>
+      <description>A named relation of a given Named Entity to another Named Entity.The EntryRelationship however has additional suggested constraints on the typeCode. CDA has identified and modeled various link and reference scenarios. These scenarios enable CDA documents to be semantically linked to entries that exist within the same document (by traversing the entryRelationship class) or to objects external to it (by traversing the reference class).NOTE: The CDA specification permits any CDA entry to relate to any CDA entry using any of the following relationship types. In many cases, this would result in nonsensical relationships.  See table 132, CDA entryRelationshipTypes within the HL7 CDA Document.</description>
+      <supertypeName>gov.va.chir.model.Relationship</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Properties</name>
+      <description>Properties holds assertions, temporal, and state of mind attributes associated with phrase.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.ClinicalStatement</name>
+      <description>A kind of Named Entity that contains a clinical statement.   Clinical statements are the atomic level labeled components of a section or document within a CDA document.  Clinical Statements typically identify a label from a controlled medical vocabulary via the coded Entries slots.</description>
+      <supertypeName>gov.va.chir.model.Phrase</supertypeName>
+      <features>
+        <featureDescription>
+          <name>codedEntries</name>
+          <description>Here is where the UI's for the source codes will go.</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.CodedEntry</elementType>
+          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>semanticGroups</name>
+          <description>A very rough high level categorizatoin of a clnical statement based upon groupings of the UMLS Semantic types by McCray et al.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>semanticTypez</name>
+          <description>A high level categorization, typically from the UMLS Semantic Network categories.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>confidence</name>
+          <description>Confidence is a metric that asserts how truthful this clinical statement is.  It is being filled with metamap's mapping score.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>secondaryCategorizations</name>
+          <description>High level categories, such as the top level icd codes, or the paranthetical expression categories from Snomed</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>conceptInfo</name>
+          <description>A human readable version of conceptName, semantic type formatted
+as rows of
+cui|tui|ConceptName|SemanticType</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>clinicalMappings</name>
+          <description>Houses mappings of candidate concepts (codedEntries) for a given clinical statement</description>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.ClinicalMapping</elementType>
+        </featureDescription>
+        <featureDescription>
+          <name>statementDate</name>
+          <description>The date this thing was mentioned.  This should coincide with the document's reference date, or the date on a page that this was menioned.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>eventDate</name>
+          <description>The date this thing happend on.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.CodedEntry</name>
+      <description>Coded Entry is a component of a clinical statement that includes the name of the coded system, the code name, and the code value. This is where one would put in UMLS, SNOWMED, ICD and similar encodings.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>codeCode</name>
+          <description>The identifier in the source vocabulary, such as the SNOMED identifier, or a CUI for the UMLS.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>codeSystem</name>
+          <description>Likely to be the specific version of the vocabulary or the tree of the vocabulary.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>codeSystemName</name>
+          <description>Here is where one would put in SNOMED, or ICD, or MeSH</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>displayName</name>
+          <description>The string in the source vocabulary.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>semanticType</name>
+          <description>Semantic Types associated with this codedEntry.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>semanticGroup</name>
+          <description>The semantic groups associated with this coded entry.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>parentPhrase</name>
+          <description>The minimal phrase that covers this coded-entry</description>
+          <rangeTypeName>gov.va.chir.model.MinimalPhrase</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>secondaryCategorizations</name>
+          <description>This houses additional categorizations for this concept.  This is primarily used to house the SNOMED categorizations found in variants with parenthetical expressions.</description>
+          <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.MinimalPhrase</name>
+      <description>This is a phrase that is composed of only the tokens that might appear within tokens of entries of terms within a controlled medical vocabulary.  Determiners, and some modifiers are dropped from the noun phrases.</description>
+      <supertypeName>gov.va.chir.model.Phrase</supertypeName>
+    </typeDescription>    <typeDescription>
+      <name>gov.va.chir.model.Line</name>
+      <description>A line from a document.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>indentation</name>
+          <description>How many characters from the left before the first non-whitespace character.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>capitalized</name>
+          <description>if the first non whitespace character of the line is capitalized or is '*' or a number.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>        <featureDescription>
+          <name>lineFeatureVector</name>
+          <description> This container holds feature attibutes of this line.  While this is stored as a String, use the LineFeatureVector methods to create and parse it.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+       </featureDescription>      </features>
+    </typeDescription>    <typeDescription>
+    <name>gov.va.chir.model.TruePositive</name>
+      <description>A true positive Annotation</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.TrueNegative</name>
+      <description>A true negative annotation</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.FalsePositive</name>
+      <description>A false positive annotation</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.FalseNegative</name>
+      <description>A false negative annotation</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.SystemA</name>
+      <description>This is an interium label for evaluation.  An annotator will create SystemA labels from some run.</description>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.SystemB</name>
+      <description>SystemB Annotations are intrium annotations for the purposes of evaluation.  Another annotator will create SystemB annotations from another kind of annotation to be evaluated.</description>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Reference</name>
+      <description>Reference Annotations are intrium annotations for the purposes of evaluation.  Rererence Annotations are those that were created by human annotation.</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.DependentContent</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.Delimiter</name>
+      <description>The characters that separate elements such as slots and values.
+The characters that indicate a list element such as 1)  and 2)
+The characters that separate fields  such as a pipe</description>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>    <typeDescription>
+      <name>gov.va.chir.model.ListDelimiter</name>
+      <description>The characters that indicate a list element such as 1)  and 2)</description>
+      <supertypeName>gov.va.chir.model.Delimiter</supertypeName>
+    </typeDescription>    <typeDescription>
+      <name>gov.va.chir.model.SlotValueDelimiter</name>
+      <description>The characters that separate elements within slots and values.</description>
+      <supertypeName>gov.va.chir.model.Delimiter</supertypeName>
+    </typeDescription>    <typeDescription>
+      <name>gov.va.chir.model.SectionHeadingDelimiter</name>
+      <description>The characters that separate a Section name from the rest of the section</description>
+      <supertypeName>gov.va.chir.model.Delimiter</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.ClinicalMapping</name>
+      <description>Holds the mapping candidates  for a given MetaMap Mapping</description>
+      <supertypeName>gov.va.chir.model.ClinicalStatement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.List</name>
+      <description>A kind of Section - that contains list elements.</description>
+      <supertypeName>gov.va.chir.model.Section</supertypeName>
+      <features>
+        <featureDescription>
+          <name>listElements</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.va.chir.model.ListElement</elementType>
+          <multipleReferencesAllowed>false</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>initialIndentation</name>
+          <description>The initial indentation from the last new line for the elements of a list.  For example,  xxxx1. bla, bla\nxxxx2. The number of xxxx. This is needed to figure out if the line after a list delimiter belongs to the list or closed out the list.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.DocumentClassificationObs</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>status</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>category</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.PanelContentHeading</name>
+      <description>This is a contentHeading that starts a Result Panel</description>
+      <supertypeName>gov.va.chir.model.ContentHeading</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.QuotedUtterance</name>
+      <description>This is a quoted expression that could be attributed to a source.</description>
+      <supertypeName>gov.va.chir.model.Utterance</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.chir.model.DoubleQuote</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>    <typeDescription>
+      <name>gov.va.chir.model.NewlineToken</name>
+      <description>This is a newline</description>
+      <supertypeName>gov.va.chir.model.Token</supertypeName>
+    </typeDescription>  </types>
+</typeSystemDescription>

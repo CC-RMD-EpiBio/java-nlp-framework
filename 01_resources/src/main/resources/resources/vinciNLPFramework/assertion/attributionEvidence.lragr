@@ -1,0 +1,160 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   AttributionEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of who the mention is attributed to (attribution) evidence.   
+#   For instance "Patient reports",  "Patient states" , Wife reports
+#
+#   This file contains the category AttributionPatientEvidence  and subcategories post, pre, and termin
+#   This file contains the category AttributionProviderEvidence  and subcategories post, pre, and termin
+#   This file contains the category AttributionOtherEvidence  and subcategories post, pre, and termin
+#
+#    The insparation for these patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#   This needs to be augmented by role and occupations
+#
+#  Author:        Guy Divita
+#  Last modified: 2020-08-19
+# --------------------------------------------------------------------------
+# --------------------------------------------------------------------------
+#
+# ---------Patient ---------------------------------------------------------
+S00001|patient states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|also reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|he reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|she reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient says|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient said|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt states|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt stated|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt reports|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt reported|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt says|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|pt said|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|said the patient|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|said the pt|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|reported by the patient|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|reported by the pt|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|it should be noted|noun|count(thr_sing)|||AttributionProviderEvidence|post
+S00001|it should be noted that|noun|count(thr_sing)|||AttributionProviderEvidence|post
+S00001|noticed|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|admits to|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|he admits|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|she admits|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|with complaints of|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|complains that|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|complains of|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|c/o|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|chief complaints are|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|chief complaint|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|chief complaint|noun|count(thr_sing)|||AttributionPatientEvidence|pseudo
+S00001|c/c|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|c/o|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|c / o|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|complaints are|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|with complaints of |noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|feels|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|feels|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|feeling|noun|count(thr_sing)|||AttributionPatientEvidence|post
+S00001|had been experiencing|noun|count(thr_sing)|feels|feels|AttributionPatientEvidence|pre
+S00001|denies|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|denies any|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|experienced|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|does notice|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|notice|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|notes|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+S00001|patient does not|noun|count(thr_sing)|||AttributionPatientEvidence|pre
+#
+#
+#
+# ---------Other ---------------------------------------------------------
+S000026|daughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000027|granddaughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000300|grandson|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000031|grand-son|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000032|nephew|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000033|niece|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000034|cousin|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000035|son|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000036|stepdaughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000037|step-daughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000038|step daughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000039|stepmother|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000040|step-mother|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000041|step mother|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000042|stepson|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000043|step-son|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000044|step son|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000045|stepfather|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000046|step-father|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000047|step father|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000048|stepchild|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000049|step-child|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000050|mum|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000051|parent|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000052|parents|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000053|child|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000054|children|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000055|grandad|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000056|grandchild|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000056|grandchildren|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000057|grand-child|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000058|grand child|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000059|boyfriend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000060|boy-friend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000061|girlfriend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000062|girl-friend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000063|fiance|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000064|fiancee|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000065|bride|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000066|groom|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000067|bridegroom|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000068|husband|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000069|spouse|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000070|father-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000080|father in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000081|father in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000082|mother-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000083|mother in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000084|mother in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000085|mother in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000086|parents-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000087|son-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000088|son in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000089|son in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000090|daughter-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000091|daughter in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000091|daughter in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000092|brother-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000093|brother in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000094|brother in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000095|sister-in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000096|sister in-law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000097|sister in law|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000098|godfather|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000099|godmother|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000100|godson|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000101|goddaughter|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000102|godchild|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000103|godchildren|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000104|literature on|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000104|literature about|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000104|literature|noun|count(thr_sing)|||SubjectIsOtherEvidence|post
+S000105|pamphlet on|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000105|pamphlet about|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000105|pamphlet|noun|count(thr_sing)|||SubjectIsOtherEvidence|post
+S000106|neighbor|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000107|friend|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000108|partner|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre
+S000109|significant other|noun|count(thr_sing)|||SubjectIsOtherEvidence|pre

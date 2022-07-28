@@ -1,0 +1,46 @@
+# =========================================================================
+#
+# Summary: MarkersForMST are a possible class of psycosocial risk factors. 
+#          Some of these were taken out of the homelessness lexicon and put
+#          into the MST related lexicon, and subsquently dropped from the MST lexicon.
+# 
+#          Some terms like decreased work performance, difficulty keeping a job, gambling
+#          were moved to the socialStressors file (and category).
+#        
+#          These terms/ this file is no longer referenced for the homelessness task.
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#     
+#          N.B.  The eui's need to be refactored. They are from the original MST lexicon.
+#
+# Created :2015-12-03
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+M000105|test for STI|noun|count(thr_sing)|test for STI|test for STI|MarkersForMST
+M000106|test for STD|noun|count(thr_sing)|test for STD|test for STD|MarkersForMST
+M000107|test for sexually transmitted disease|noun|count(thr_sing)|test for sexually transmitted disease|test for sexually transmitted disease|MarkersForMST
+M000108|test for sexually transmitted illness|noun|count(thr_sing)|test for sexually transmitted illness|test for sexually transmitted illness|MarkersForMST
+M000111|sexual dysfunction|noun|count(thr_sing)|sexual dysfunction|sexual dysfunction|MarkersForMST
+M000112|reduced libido|noun|count(thr_sing)|reduced libido|reduced libido|MarkersForMST
+M000113|abstinance|noun|count(thr_sing)|abstinance|abstinance|MarkersForMST
+M000114|difficulty with intimacy|noun|count(thr_sing)|difficulty with intimacy|difficulty with intimacy|MarkersForMST

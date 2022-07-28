@@ -1,0 +1,438 @@
+# =============================
+# July [VS1]12, 2016
+# =============================
+#  
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|tui
+#
+# This lexicon is specific to finding diarrhea, and symptoms indicitive
+# of diarrhea in text.  The lexicon contains 
+# DiarrheaDirectMention ,
+# DiarrheaFrequency
+# DiarrheaSeverity
+# DiarrheaColor
+# DiarrheaConsistancy
+# DiarrheaVolume
+# DiarrheaSensation
+# DiarrheaPathologicalModifier 
+# DiarrheaSymptoms
+# DiarrheaLabTest
+# DiarrheaPertinantNegative 
+# DiarrheaAnatomy
+# NormalDefication
+# DiarrheaCeasation 
+# 
+# from these kinds of texts, Diarrhea and DiarrheaEvidence annotations
+# are created from the following combination of mentions found within 
+# a sentence:
+# 
+#   Diarrhea = DiarrheaDirectMention 
+#
+#   Diarrheaevidence =              
+#              [ DiarrheaAnatomy + 
+#              [ DiarrheaFrequency               -+ 
+#                DiarrheaSeverity |               |   One or more of these
+#                DiarrheaColor |                  |
+#                DiarrheaConsistancy |            |
+#                DiarrheaSensation |              |
+#                DiarrheaPathologicalModifier  |  |
+#                DiarrheaSymptoms ]              -+
+#   Diarrheaevidence =              
+#              [ NormalDefication + 
+#              [ DiarrheaFrequency               -+ 
+#                DiarrheaSeverity |               |   One or more of these
+#                DiarrheaColor |                  |
+#                DiarrheaConsistancy |            |
+#                DiarrheaSensation |              |
+#                DiarrheaPathologicalModifiers |  |
+#                DiarrheaSymptoms ]              -+
+#   Diarrheaevidence =              
+#                DiarrheaLabTest
+#
+#  ! formed stool
+#    bm x4
+#    
+# I've noted pertinent negatives, in this lexicon, but not sure how
+# they will be used yet.
+# ===============================================
+# =====================================
+# Direct [VS2]synonyms for diarrhea.  
+# =====================================
+D00000|diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarrhoea|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarrea|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarreah|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarrhe|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|loose stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|loose stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|continuous loose stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|liquid stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|liquid stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|loose bm|<noun>|<base>|||DiarrheaDirectMention
+D00000|frequent loose stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|frequent loose stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|frequent loosee stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|frequent bowel movement|<noun>|<base>|||DiarrheaDirectMention
+D00000|frequent bowel movements|<noun>|<base>|||DiarrheaDirectMention
+D00000|Bowel incontinence|<noun>|<base>|||DiarrheaDirectMention
+D00000|Bowel incontinent|<noun>|<base>|||DiarrheaDirectMention
+D00000|incontinent diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|Accidental bowel leakage|<noun>|<base>|||DiarrheaDirectMention
+D00000|Effortless exit of stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|Loss of bowel control|<noun>|<base>|||DiarrheaDirectMention
+D00000|no control of bowel control|<noun>|<base>|||DiarrheaDirectMention
+D00000|no bowel control|<noun>|<base>|||DiarrheaDirectMention
+D00000|loss of bowel control|<noun>|<base>|||DiarrheaDirectMention
+D00000|bowel control loss|<noun>|<base>|||DiarrheaDirectMention
+D00000|dysentery|<noun>|<base>|||DiarrheaDirectMention
+D00000|the runs|<noun>|<base>|||DiarrheaDirectMention
+D00000|the trots|<noun>|<base>|||DiarrheaDirectMention
+D00000|the tros|<noun>|<base>|||DiarrheaDirectMention
+D00000|montezuma's revenge|<noun>|<base>|||DiarrheaDirectMention
+D00000|bloody flux|<noun>|<base>|||DiarrheaDirectMention
+D00000|backdoor trots|<noun>|<base>|||DiarrheaDirectMention 
+D00000|summer complaint|<noun>|<base>|||DiarrheaDirectMention
+D00000|torista|<noun>|<base>|||DiarrheaDirectMention
+D00000|turistas|<noun>|<base>|||DiarrheaDirectMention
+D00000|aztec two-step|<noun>|<base>|||DiarrheaDirectMention
+D00000|looseness in the bowels|<noun>|<base>|||DiarrheaDirectMention
+D00000|delhi belly|<noun>|<base>|||DiarrheaDirectMention
+D00000|scours|<noun>|<base>|||DiarrheaDirectMention
+D00000|shits|<noun>|<base>|||DiarrheaDirectMention
+D00000|ague|<noun>|<base>|||DiarrheaDirectMention
+D00000|blennorhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|colon blow|<noun>|<base>|||DiarrheaDirectMention
+D00000|green apple nasties|<noun>|<base>|||DiarrheaDirectMention
+D00000|green apple quick step|<noun>|<base>|||DiarrheaDirectMention
+D00000|splatters|<noun>|<base>|||DiarrheaDirectMention
+D00000|havana omelet|<noun>|<base>|||DiarrheaDirectMention
+D00000|hershey squirts|<noun>|<base>|||DiarrheaDirectMention
+D00000|the squirts|<noun>|<base>|||DiarrheaDirectMention
+D00000|piss out of the ass|<noun>|<base>|||DiarrheaDirectMention
+D00000|assquake|<noun>|<base>|||DiarrheaDirectMention
+D00000|shistle belly thumps|<noun>|<base>|||DiarrheaDirectMention
+D00000|mud butt|<noun>|<base>|||DiarrheaDirectMention
+D00000|anal leakage|<noun>|<base>|||DiarrheaDirectMention
+D00000|squits|<noun>|<base>|||DiarrheaDirectMention
+D00000|skitters|<noun>|<base>|||DiarrheaDirectMention
+D00000|Pharaoh's revenge|<noun>|<base>|||DiarrheaDirectMention
+D00000|watery stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|watery stools|<noun>|<base>|||DiarrheaDirectMention
+#===================================
+# DiarrheaAnatomy[VS3]
+#===================================
+D00000|abdominal|<noun>|<base>|||DiarrheaAnatomy
+D00000|abdomen|<noun>|<base>|||DiarrheaAnatomy
+D00000|stomach|<noun>|<base>|||DiarrheaAnatomy
+D00000|intestines|<noun>|<base>|||DiarrheaAnatomy
+D00000|intestinal|<noun>|<base>|||DiarrheaAnatomy
+D00000|colon|<noun>|<base>|||DiarrheaAnatomy
+D00000|belly|<noun>|<base>|||DiarrheaAnatomy
+D00000|gut|<noun>|<base>|||DiarrheaAnatomy
+D00000|butt|<noun>|<base>|||DiarrheaAnatomy
+D00000|rectum|<noun>|<base>|||DiarrheaAnatomy
+D00000|rectal|<noun>|<base>|||DiarrheaAnatomy
+D00000|large bowel|<noun>|<base>|||DiarrheaAnatomy
+D00000|small bowel|<noun>|<base>|||DiarrheaAnatomy
+D00000|anus|<noun>|<base>|||DiarrheaAnatomy
+D00000|colostomy|<noun>|<base>|||DiarrheaAnatomy
+# =====================================
+# NormalDefecation[VS4]
+# =====================================
+D00000|defecation|<noun>|<base>|||NormalDefication
+D00000|defecate|<noun>|<base>|||NormalDefication
+D00000|bowel movement|<noun>|<base>|||NormalDefication
+D00000|bowel movements|<noun>|<base>|||NormalDefication
+D00000|fecal matter|<noun>|<base>|||NormalDefication
+D00000|feces|<noun>|<base>|||NormalDefication
+D00000|defecation effort[VS5]|<noun>|<base>|||NormalDefication
+D00000|stool|<noun>|<base>|||NormalDefication
+D00000|stools|<noun>|<base>|||NormalDefication
+D00000|bm|<noun>|<base>|||NormalDefication
+D00000|bm this am|<noun>|<base>|||NormalDefication
+D00000|bm this pm|<noun>|<base>|||NormalDefication
+D00000|bm this|<noun>|<base>|||NormalDefication
+D00000|dump|<noun>|<base>|||NormalDefication
+D00000|Passage of feces|<noun>|<base>|||NormalDefication
+D00000|shit|<noun>|<base>|||NormalDefication
+D00000|poop|<noun>|<base>|||NormalDefication
+D00000|crap|<noun>|<base>|||NormalDefication
+# =====================================
+# DiarrheaFrequency
+# =====================================
+D00000|frequent|<noun>|<base>|||DiarrheaFrequency
+D00000|freq|<noun>|<base>|||DiarrheaFrequency
+D00000|frequently|<noun>|<base>|||DiarrheaFrequency
+D00000|frequency|<noun>|<base>|||DiarrheaFrequency
+D00000|intermittent|<noun>|<base>|||DiarrheaFrequency
+D00000|intractable|<noun>|<base>|||DiarrheaFrequency
+D00000|urgent|<noun>|<base>|||DiarrheaFrequency
+D00000|one|<noun>|<base>|||DiarrheaFrequency
+D00000|two|<noun>|<base>|||DiarrheaFrequency
+D00000|1x|<noun>|<base>|||DiarrheaFrequency
+D00000|2x|<noun>|<base>|||DiarrheaFrequency
+D00000|x2|<noun>|<base>|||DiarrheaFrequency
+D00000|2|<noun>|<base>|||DiarrheaFrequency
+D00000|1|<noun>|<base>|||DiarrheaFrequency
+D00000|3-4|<noun>|<base>|||DiarrheaFrequency
+# =====================================[VS6]
+# DiarrheaSeverity
+# =====================================[VS7]
+D00000|explosive|<noun>|<base>|||DiarrheaSeverity
+D00000|urgency|<noun>|<base>|||DiarrheaSeverity
+D00000|acute|<noun>|<base>|||DiarrheaSeverity
+D00000|syndromic|<noun>|<base>|||DiarrheaSeverity
+D00000|congenital|<noun>|<base>|||DiarrheaSeverity
+#D00000|malabsorptive|<noun>|<base>|||DiarrheaSeverity
+D00000|chronic|<noun>|<base>|||DiarrheaSeverity
+D00000|villous atrophy|<noun>|<base>|||DiarrheaSeverity
+D00000|protracted|<noun>|<base>|||DiarrheaSeverity
+D00000|spurious|<noun>|<base>|||DiarrheaSeverity
+D00000|osmotic|<noun>|<base>|||DiarrheaSeverity
+D00000|severe|<noun>|<base>|||DiarrheaSeverity
+# =====================================
+# DiarrheaColor
+# =====================================
+D00000|change in appearance|<noun>|<base>|||DiarrheaColor
+D00000|clay colored|<noun>|<base>|||DiarrheaColor
+D00000|clay coloured|<noun>|<base>|||DiarrheaColor
+D00000|clay-colored |<noun>|<base>|||DiarrheaColor
+D00000|clay-coloured|<noun>|<base>|||DiarrheaColor
+D00000|colored light|<noun>|<base>|||DiarrheaColor
+D00000|light colored|<noun>|<base>|||DiarrheaColor
+D00000|discolored|<noun>|<base>|||DiarrheaColor
+D00000|pale|<noun>|<base>|||DiarrheaColor
+D00000|grey|<noun>|<base>|||DiarrheaColor
+D00000|light stool color|<noun>|<base>|||DiarrheaColor
+D00000|black|<noun>|<base>|||DiarrheaColor
+# =====================================
+# DiarrheaConsistancy[VS8][VS9]
+# =====================================
+D00000|liquid|<noun>|<base>|||DiarrheaConsistancy
+D00000|semi solid|<noun>|<base>|||DiarrheaConsistancy
+D00000|semi-solid|<noun>|<base>|||DiarrheaConsistancy
+D00000|semisolid|<noun>|<base>|||DiarrheaConsistancy
+D00000|loose|<noun>|<base>|||DiarrheaConsistancy
+D00000|watery|<noun>|<base>|||DiarrheaConsistancy
+D00000|fluidity|<noun>|<base>|||DiarrheaConsistancy
+D00000|decreased consistency|<noun>|<base>|||DiarrheaConsistancy
+D00000|loose watery|<noun>|<base>|||DiarrheaConsistancy
+D00000|unformed|<noun>|<base>|||DiarrheaConsistancy
+#
+#D00000|mushy|<noun>|<base>|||DiarrheaConsistancy
+#D00000|muddy|<noun>|<base>|||DiarrheaConsistancy
+#D00000|oily|<noun>|<base>|||DiarrheaConsistancy
+#D00000|fatty|<noun>|<base>|||DiarrheaConsistancy
+#D00000|tarry|<noun>|<base>|||DiarrheaConsistancy D00000|runny|<noun>|<base>|||DiarrheaConsistancy
+#D00000|formed|<noun>|<base>|||DiarrheaConsistancy
+#D00000|lg|<noun>|<base>|||DiarrheaConsistancy
+#D00000|small|<noun>|<base>|||DiarrheaConsistancy
+#D00000|small amount of|<noun>|<base>|||DiarrheaConsistancy
+#D00000|sm amt|<noun>|<base>|||DiarrheaConsistancy
+# =====================================
+# DiarrheaSensation 
+# =====================================
+D00000|tightness|<noun>|<base>|||DiarrheaSensation
+D00000|bloating|<noun>|<base>|||DiarrheaSensation
+D00000|cramping |<noun>|<base>|||DiarrheaSensation
+D00000|cramps|<noun>|<base>|||DiarrheaSensation
+D00000|pain |<noun>|<base>|||DiarrheaSensation
+D00000|painful|<noun>|<base>|||DiarrheaSensation
+D00000|painfully|<noun>|<base>|||DiarrheaSensation
+D00000|distress |<noun>|<base>|||DiarrheaSensation
+D00000|discomfort|<noun>|<base>|||DiarrheaSensation
+D00000|stiff|<noun>|<base>|||DiarrheaSensation
+D00000|tender|<noun>|<base>|||DiarrheaSensation
+D00000|stiff and tender|<noun>|<base>|||DiarrheaSensation
+D00000|fullness|<noun>|<base>|||DiarrheaSensation
+D00000|muscle pain|<noun>|<base>|||DiarrheaSensation
+D00000|swelling |<noun>|<base>|||DiarrheaSensation
+D00000|gas|<noun>|<base>|||DiarrheaSensation
+D00000|gassy|<noun>|<base>|||DiarrheaSensation
+D00000|stretched|<noun>|<base>|||DiarrheaSensation
+D00000|disturbance|<noun>|<base>|||DiarrheaSensation
+D00000|spasms|<noun>|<base>|||DiarrheaSensation
+D00000|distention|<noun>|<base>|||DiarrheaSensation
+# =====================================
+# DiarrheaPathologicalModifier [VS10]
+# =====================================
+D00000|straining|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|abnormal urge|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|urge|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|abnormal|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|abnormally|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|altered|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|urgency|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|incomplete|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|blood in|<noun>|<base>|||DiarrheaPathologicalModifier[VS11]
+D00000|containing blood|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|containing mucus|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|lacking blood|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|lacking mucus|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|effort|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|amount|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|after taking antibiotics|<noun>|<base>|||DiarrheaPathologicalModifier[VS12]
+D00000|antibiotic-associated|<noun>|<base>|||DiarrheaPathologicalModifier[VS13]
+D00000|traveling|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|noninfectious|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|malodorous|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|paradoxical|<noun>|<base>|||DiarrheaPathologicalModifier
+D00000|bout of|<noun>|<base>|||DiarrheaPathologicalModifier
+# =====================================
+# DiarrheaSymptoms
+# =====================================
+D00000|fever|<noun>|<base>|||DiarrheaSymptoms
+D00000|chills|<noun>|<base>|||DiarrheaSymptoms
+D00000|vomiting|<noun>|<base>|||DiarrheaSymptoms
+D00000|dehydration|<noun>|<base>|||DiarrheaSymptoms
+D00000|dehydrated|<noun>|<base>|||DiarrheaSymptoms
+D00000|electrolyte abnormal|<noun>|<base>|||DiarrheaSymptoms
+D00000|nausea|<noun>|<base>|||DiarrheaSymptoms
+D00000|secretory|<noun>|<base>|||DiarrheaSymptoms
+D00000|abdominal pain|<noun>|<base>|||DiarrheaSymptoms
+D00000|lower abdominal pain|<noun>|<base>|||DiarrheaSymptoms
+# =====================================
+# DiarrheaDirectMention
+# =====================================
+D00000|Antibiotic-associated diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|bile acid malabsorption, primary|<noun>|<base>|||DiarrheaDirectMention
+D00000|chronic diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|explosive diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|chronic large bowel diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|chronic small bowel diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|c.difficile diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|c.difficile diarrhoea|<noun>|<base>|||DiarrheaDirectMention
+D00000|clostridium difficile diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|Clostridium difficile diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|frank diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|functional diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|Hemorrhagic diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|bloody diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|iatrogenic diarrhoea|<noun>|<base>|||DiarrheaDirectMention
+D00000|idiopathic diarrhoea|<noun>|<base>|||DiarrheaDirectMention
+D00000|infantile Diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|insulin-dependent diabetes mellitus secretory diarrhea syndrome|<noun>|<base>|||DiarrheaDirectMention
+D00000|mocoid diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|mucous diarrhoea|<noun>|<base>|||DiarrheaDirectMention
+D00000|neonatal diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|nocturnal diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|gastroenteritis|<noun>|<base>|||DiarrheaDirectMention
+D00000|food poisoning|<noun>|<base>|||DiarrheaDirectMention
+D00000|food-handler's diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|parasite infection|<noun>|<base>|||DiarrheaDirectMention
+D00000|campylobacter infection|<noun>|<base>|||DiarrheaDirectMention
+D00000|ratavirus|<noun>|<base>|||DiarrheaDirectMention
+D00000|salmonellosis[VS14]|<noun>|<base>|||DiarrheaDirectMention
+D00000|shigellosis[VS15]|<noun>|<base>|||DiarrheaDirectMention
+D00000|traveler's diarrhea|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarrhea stool|<noun>|<base>|||DiarrheaDirectMention
+D00000|diarrhea stools|<noun>|<base>|||DiarrheaDirectMention
+D00000|medication toxicity|<noun>|<base>|||DiarrheaDirectMention[VS16]
+# =====================================
+# DiarrheaLabTest
+# Lab Tests [VS17]indicative of Diarrhea 
+# =====================================
+D00000|stool test results: giardia preent|<noun>|<base>|||DiarrheaLabTest
+D00000|clostridium difficile positive|<noun>|<base>|||DiarrheaLabTest
+D00000|colonoscopy findings: colitis, colon [VS18]ulcers|<noun>|<base>|||DiarrheaLabTest
+D00000|clostridia difficile toxin positive|<noun>|<base>|||DiarrheaLabTest
+D00000|colon rectal swap samonella|<noun>|<base>|||DiarrheaLabTest
+D00000|stool culture|<noun>|<base>|||DiarrheaLabTest
+D00000|Ova and parasites|<noun>|<base>|||DiarrheaLabTest
+D00000|O&P|<noun>|<base>|||DiarrheaLabTest
+D00000|O & P|<noun>|<base>|||DiarrheaLabTest
+# =====================================
+# Diarrhea Indirect Mention
+# =====================================
+D00000|bed pads|<noun>|<base>|||DiarrheaMention
+# =====================================
+# DiarrheaPertinantNegative 
+# =====================================
+D00000|weight loss|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|weight decreased |<noun>|<base>|||DiarrheaPertinantNegative
+D00000|appetite loss|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|colectomy|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|colostomy|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|ileostomy|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|colon cancer|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|chrons disease|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|ulcerative colitis|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|celiac disease|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|constipation|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|lactose intolerance|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|absence of bowel movement|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|soft|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|hard|<noun>|<base>|||DiarrheaPertinantNegative
+D00000|large|<noun>|<base>|||DiarrheaPertinantNegative
+#
+# =====================================
+# Conditional Evidence 
+# =====================================
+D00000|report|<noun>|<base>|||ConditionalEvidence|pre
+D00000|report any|<noun>|<base>|||ConditionalEvidence|pre
+D00000|report increased|<noun>|<base>|||ConditionalEvidence|pre
+D00000|notify staff|<noun>|<base>|||ConditionalEvidence|pre
+D00000|to staff|<noun>|<base>|||ConditionalEvidence|post
+D00000|first sign of|<noun>|<base>|||ConditionalEvidence|pre
+D00000|standard duration of|<noun>|<base>|||ConditionalEvidence|pre
+D00000|monitor|<noun>|<base>|||ConditionalEvidence|pre
+D00000|monitor frequency|<noun>|<base>|||ConditionalEvidence|pre
+D00000|monitor frequency|<noun>|<base>|||ConditionalEvidence|pre
+D00000|monitor for|<noun>|<base>|||ConditionalEvidence|pre
+D00000|monitor bowel movements|<noun>|<base>|||ConditionalEvidence|pre
+D00000|ensure|<noun>|<base>|||ConditionalEvidence|pre
+D00000|factors that contribute to|<noun>|<base>|||HypotheticalEvidence|pre
+D00000|causes|<noun>|<base>|||HypotheticalEvidence|pre
+D00000|diarrhea toxin|<noun>|<base>|||ConditionalEvidence|pre
+D00000|minimize the use of|<noun>|<base>|||ConditionalEvidence|pre
+D00000|when|<noun>|<base>|||ConditionalEvidence|pre
+D00000|causing|<noun>|<base>|||ConditionalEvidence|pre
+D00000|cause|<noun>|<base>|||ConditionalEvidence|pre
+D00000|relate factors that contribute to|<noun>|<base>|||ConditionalEvidence|pre
+D00000|neasea or vomiting|<noun>|<base>|||ConditionalEvidence|pre
+D00000|signs or symptoms|<noun>|<base>|||ConditionalEvidence|pre
+D00000|s/s|<noun>|<base>|||ConditionalEvidence|pre
+#
+# =====================================
+# Diarrhea:Volume
+# =====================================
+D00000|high volume|<noun>|<base>|||DiarrheaVolume
+# =====================================
+# DiarrheaCeased
+# =====================================
+D00000|diarrhea has stop|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea has stopped|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea stopped|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea ceased|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea resolved|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea improving|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea improved|<noun>|<base>|||DiarrheaCessation
+D00000|improved diarrhea|<noun>|<base>|||DiarrheaCessation
+D00000|improved diarrhea|<noun>|<base>|||DiarrheaCessation
+D00000|diarrhea has improved|<noun>|<base>|||DiarrheaCessation
+D00000|frequency of stools decreasing|<noun>|<base>|||DiarrheaCessation
+D00000|stools decreasing in frequency|<noun>|<base>|||DiarrheaCessation
+D00000|decreasing frequency and amount of stools|<noun>|<base>|||DiarrheaCessation
+D00000|improved frequency and consistency of stools|<noun>|<base>|||DiarrheaCessation
+D00000|no stool|<noun>|<base>|||DiarrheaCessation
+D00000|soft stool|<noun>|<base>|||DiarrheaCessation
+D00000|soft stools|<noun>|<base>|||DiarrheaCessation
+D00000|stools soft|<noun>|<base>|||DiarrheaCessation
+D00000|stool soft|<noun>|<base>|||DiarrheaCessation
+# =====================================
+# Negative Conditionals 
+# =====================================
+D00000|until gone|<noun>|<base>|||NegativeConditional
+D00000|can stop when|<noun>|<base>|||NegativeConditional
+D00000|if the diarrhea is resolved|<noun>|<base>|||NegativeConditional
+D00000|that can worsen|<noun>|<base>|||NegativeConditional
+D00000|when diarrhea is|<noun>|<base>|||NegativeConditional
+D00000|when he is having|<noun>|<base>|||NegativeConditional
+D00000|until gone|<noun>|<base>|||NegativeConditional
+D00000|until|<noun>|<base>|||NegativeConditional
+
+# =====================================
+# Missolanious Terms to classify
+# =====================================
+#[VS8]One concept that is sometimes used in the laboratory is whether the stool takes the shape of the container or not. I?m not sure how you would turn that into a useful term

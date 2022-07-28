@@ -1,0 +1,349 @@
+#This is a table with the following (pipe delimited) fields
+#     * 
+#     *    ---------------+---------------+------------------+-------------------
+#     *    UIMA Type Name |Gate Type Name |Uima feature name |gate feature name
+#     *    ---------------+---------------+------------------+-------------------
+#     *    name.space.Type| GateType      |                  |
+#     *    name.space.Type| GateType      | attribute1       |gateAttribute1
+#     *    name.space.Type| GateType      | attribute1       |gateAttribute2
+#
+#
+#  Created  May 6, 2019
+#  Author: Guy Divita
+#  Last Edited:  July 15, 2020
+#
+#----------------------------------------------------+----------------------+------------------+-------------------
+#UIMA Type Name                                      |Gate Type Name        |Uima feature name |gate feature name
+#----------------------------------------------------+----------------------+------------------+-------------------
+# Uima Model 
+gov.nih.cc.rmd.gate.Action                           |Action                |                  |
+gov.nih.cc.rmd.gate.Action                           |Action                |subDomain_Code    |Subdomain Code
+gov.nih.cc.rmd.gate.Action                           |Action                |polarity          |Polarity
+
+gov.nih.cc.rmd.gate.MAction                          |M_Action              |                  |
+gov.nih.cc.rmd.gate.MAction                          |M_Action              |subDomain_Code    |Subdomain Code
+gov.nih.cc.rmd.gate.MAction                          |M_Action              |polarity          |Polarity
+
+gov.nih.cc.rmd.gate.Assistance                       |Assistance            |                  |
+gov.nih.cc.rmd.gate.Assistance                       |Assistance            |polarity          |Polarity
+gov.nih.cc.rmd.gate.Assistance                       |Assistance            |source            |Source
+gov.nih.cc.rmd.gate.InstructionQuestions             |InstructionQuestions  |                  |
+gov.nih.cc.rmd.gate.Mobility                         |Mobility              |                  |
+gov.nih.cc.rmd.gate.Mobility                         |Mobility              |typeOfMobility    |Type
+gov.nih.cc.rmd.gate.Mobility                         |Mobility              |subject           |Subject
+gov.nih.cc.rmd.gate.Mobility                         |Mobility              |timeline          |Timeline
+gov.nih.cc.rmd.gate.Quantification                   |Quantification        |                  |
+gov.nih.cc.rmd.gate.Quantification                   |Quantification        |typeOf            |Type
+gov.nih.cc.rmd.gate.Score_Definition                 |Score Definition      |                  |
+# Uima Model 
+gov.nih.cc.rmd.model.Action                          |U_Action              |                  |
+gov.nih.cc.rmd.model.Action                          |U_Action              |subDomainCode     |Subdomain Code
+gov.nih.cc.rmd.model.Action                          |U_Action              |polarity          |Polarity
+gov.nih.cc.rmd.model.Assistance                      |U_Assistance          |                  |
+gov.nih.cc.rmd.model.Assistance                      |U_Assistance          |polarity          |Polarity
+gov.nih.cc.rmd.model.Assistance                      |U_Assistance          |source            |Source
+gov.nih.cc.rmd.model.InstructionQuestions            |U_InstructionQuestions|                  |
+gov.nih.cc.rmd.model.Mobility                        |U_Mobility            |                  |
+gov.nih.cc.rmd.model.Mobility                        |U_Mobility            |typeOfMobility    |Type
+gov.nih.cc.rmd.model.Mobility                        |U_Mobility            |subject           |Subject
+gov.nih.cc.rmd.model.Mobility                        |U_Mobility            |timeline          |Timeline
+gov.nih.cc.rmd.model.Mobility                        |                      |                  |annotator
+gov.nih.cc.rmd.model.Quantification                  |U_Quantification      |                  |
+gov.nih.cc.rmd.model.Quantification                  |U_Quantification      |typeOf            |Type
+gov.nih.cc.rmd.model.Score_Definition                |U_Score Definition    |                  |
+#
+# Evidences 
+#
+gov.nih.cc.rmd.model.Anatomy                         |U_Anatomy             |                  |
+gov.nih.cc.rmd.model.AssistiveDevice                 |U_AssistiveDevice     |                  |
+gov.nih.cc.rmd.model.BathroomEquipment               |U_BathroomEquipment   |                  |
+gov.nih.cc.rmd.model.BodyPosition                    |U_BodyPosition        |                  |
+gov.nih.cc.rmd.model.Distance                        |U_Distance            |                  |
+gov.nih.cc.rmd.model.ExerciseEquipment               |U_ExerciseEquipment   |                  |
+gov.nih.cc.rmd.model.Furniture                       |U_Furniture           |                  |
+gov.nih.cc.rmd.model.Appliance                       |U_Appliance           |                  |
+gov.nih.cc.rmd.model.FoodContainer                   |U_FoodContainer       |                  |
+gov.nih.cc.rmd.model.Imparative                      |U_Imparative          |                  |
+gov.nih.cc.rmd.model.LocationInTheHome               |U_LocationInTheHome   |                  |
+gov.nih.cc.rmd.model.LocationOutsideTheHome          |U_LocationOutsideTheHome|                |
+gov.nih.cc.rmd.model.Transportation                  |U_Transportation      |                  |
+#
+# Evaluation Pieces 
+#
+gov.va.chir.model.TruePositive                        |U_TruePositive       |                  |
+gov.va.chir.model.FalsePositive                       |U_FalsePositive      |                  |
+gov.va.chir.model.FalseNegative                       |U_FalseNegative      |                  |
+gov.va.chir.model.Gold                                |U_Gold               |                  |
+gov.va.chir.model.Copper                              |U_Copper             |                  |
+gov.nih.cc.rmd.gate.Correct                           |M_Correct            |                  |
+gov.nih.cc.rmd.gate.NotCorrect                        |NotCorrect           |                  |
+gov.nih.cc.rmd.gate.NotCorrect                        |NotCorrect           |gold              |gold
+gov.nih.cc.rmd.gate.NotCorrect                        |NotCorrect           |machine           |machine
+gov.nih.cc.rmd.gate.Correct                           |Correct              |                  |
+gov.nih.cc.rmd.gate.Correct                           |Correct              |gold              |gold
+gov.nih.cc.rmd.gate.Correct                           |Correct              |machine           |machine
+#
+# Section Pieces 
+#
+gov.nih.cc.rmd.framework.SectionZone                    |SectionZone          |                  |
+gov.nih.cc.rmd.framework.SectionZone                    |SectionZone          |sectionName       |SectionName
+gov.nih.cc.rmd.framework.SectionZone                    |SectionZone          |sectionType       |SectionType
+gov.nih.cc.rmd.framework.Manual_PageHeader              |Section_PageHeader   |                  |
+gov.nih.cc.rmd.framework.Manual_PageFooter              |Section_PageFooter   |                  |
+gov.nih.cc.rmd.framework.DocumentTitle                  |Section_DocumentTitle|                  |
+gov.va.chir.model.Sentence                              |Sentence             |                  | 
+gov.va.chir.model.ContentHeading                      |ContentHeading       |                  | 
+gov.va.chir.model.DependentContent                    |DependentContent     |                  | 
+gov.va.chir.model.List                                |List_Structured      |                  |
+gov.va.chir.model.ListInSentence                      |List_Sentence        |                  |
+gov.va.chir.model.ListElement                         |ListElement          |                  |
+gov.va.chir.model.SlotValue                           |SlotValue            |                  | 
+gov.va.chir.model.SlotValue                           |SlotValue            |contentHeading    |ContentHeading 
+gov.va.chir.model.SlotValue                           |SlotValue            |dependentContent  |DependentContent
+gov.va.chir.model.SlotValue                           |SlotValue            |delimiter         |Delimiter
+gov.va.chir.model.Checkbox                            |SlotValue            |delimiter         |Delimiter
+gov.va.chir.model.SlotValue                           |QA                   |                  |
+gov.va.chir.model.ContentHeading                      |QA_Question          |                  |
+gov.va.chir.model.QADelimiter                         |QA_Delimiter         |                  |
+gov.va.chir.model.DependentContent                    |QA_Answer            |                  |
+gov.va.chir.model.DependentContent                    |QA_Answer            |                  |
+
+gov.va.chir.model.SectionZone                         |Section_Content      |                  |
+gov.va.chir.model.Delimiter                           |Delimiter            |                  |
+gov.va.chir.model.SectionDelimiter                    |Section_Delimiter    |                  |
+gov.va.chir.model.ListDelimiter                       |ListDelimiter        |                  |
+gov.va.chir.model.SlotValueDelimiter                  |SlotValueDelimiter   |                  |
+gov.va.chir.model.SectionHeadingDelimiter             |SectionHeadingDelimiter|                |
+gov.nih.cc.rmd.framework.SectionName                  |SectionName          |                  |
+gov.nih.cc.rmd.framework.MultiColumn                  |Multi_Column         |                  |
+#
+# IPIR Mappings
+#
+gov.nih.cc.rmd.mentalFunction.InterpersonalInteractionsAndRelationships|Interpersonal_Interactions_and_Relationships|
+gov.nih.cc.rmd.mentalFunction.InterpersonalInteractionsAndRelationships|Interpersonal_Interactions_and_Relationships|timeline|Timeline
+gov.nih.cc.rmd.mentalFunction.InterpersonalInteractionsAndRelationships|Interpersonal_Interactions_and_Relationships|source|Source
+gov.nih.cc.rmd.mentalFunction.InterpersonalInteractionsAndRelationships|Interpersonal_Interactions_and_Relationships|subject|Type
+gov.nih.cc.rmd.mentalFunction.MentalFunctionSentence|MentalFunctionSentence|
+gov.nih.cc.rmd.mentalFunction.MentalFunctionSentence|MentalFunctionSentence|mentionValue
+gov.nih.cc.rmd.mentalFunction.MentalFunctionSentence|MentalFunctionSentence|timeline
+gov.nih.cc.rmd.mentalFunction.MentalFunctionSentence|MentalFunctionSentence|source
+gov.nih.cc.rmd.mentalFunction.MentalFunctionSentence|MentalFunctionSentence|subject
+
+#----------------------------------------------------+----------------------+------------------+-------------------
+#UIMA Type Name                                      |Gate Type Name        |Uima feature name |gate feature name
+#----------------------------------------------------+----------------------+------------------+-------------------
+#
+# Body Function Mappings
+#     Gate Model
+gov.nih.cc.rmd.gate.Body_Function                    |Body_Function         |                  |
+gov.nih.cc.rmd.gate.Body_location                    |Body_location         |                  |
+gov.nih.cc.rmd.gate.Body_Function_TType              |Body_Function_Type    |                  |
+gov.nih.cc.rmd.gate.Strength                         |Body_Function_Type    |function          |Function
+gov.nih.cc.rmd.gate.Qualifier                        |Qualifier             |                  |
+gov.nih.cc.rmd.gate.Qualifier                        |Qualifier             |category          |Category
+gov.nih.cc.rmd.gate.Body_Function_Context            |Body_Function_Context |                  |
+gov.nih.cc.rmd.gate.Body_Function_Context            |Body_Function_Context |context_Type      |Context_Type
+gov.nih.cc.rmd.gate.Possible_Body_Function           |Possible_Body_Function|
+#
+#
+#     Uima Model 
+BodyFunctionMention                                  |U_BodyFunctionMention  |                  |
+gov.nih.cc.rmd.framework.BodyLocation                |U_BodyLocation         |                  |
+gov.nih.cc.rmd.framework.FunctionType                |U_Body_Function_Type   |                  |
+gov.nih.cc.rmd.framework.Strength                    |U_Strength             |                  |
+gov.nih.cc.rmd.framework.RangeOfMotion               |U_RangeOfMotion        |                  |
+gov.nih.cc.rmd.framework.Reflex                      |U_Reflex               |                  |
+gov.nih.cc.rmd.framework.BFQualifier                 |U_Qualifier            |category          |Category
+gov.nih.cc.rmd.framework.BFQualifierCategory_0       |U_Qualifier            |                  |
+gov.nih.cc.rmd.framework.BFQualifierCategory_Plus_1  |U_Qualifier            |                  |
+gov.nih.cc.rmd.framework.BFQualifierCategory_Minus_1 |U_Qualifier            |                  |
+gov.nih.cc.rmd.framework.BFT_Ambiguous               |U_Body_Function_Type   |                  |
+gov.nih.cc.rmd.framework.BodyFunctionContext         |U_Body_Function_Context|                  |
+#
+#
+#----------------------------------------------------+----------------------+------------------+-------------------
+# HARE and SCDL Mappings
+#----------------------------------------------------+----------------------+------------------+-------------------
+# Uima Model 
+gov.nih.cc.rmd.model.MobilityScore                   |MobilityScore         |                  |
+gov.nih.cc.rmd.model.MobilityScore                   |MobilityScore         |score             |Score
+gov.nih.cc.rmd.model.MobilitySegment                 |MobilitySegment       |                  |
+
+
+#----------------------------------------------------+----------------------+------------------+-------------------
+# Segmentation Mappings                              | Gate type Name       |Uima feature name |gate feature name
+#----------------------------------------------------+----------------------+------------------+-------------------
+gov.nih.cc.rmd.framework.Manual_Checkbox             |Checkbox              |                  |
+gov.nih.cc.rmd.framework.Manual_CheckboxMark         |CheckboxMark          |                  |
+gov.nih.cc.rmd.framework.Manual_CheckboxSlot         |CheckboxSlot          |                  |
+gov.nih.cc.rmd.framework.Manual_CheckboxValue        |CheckboxValue         |                  |
+#
+gov.nih.cc.rmd.framework.Manual_List_Element         |List_Element          |                  |
+gov.nih.cc.rmd.framework.Manual_List_Element_Delimiter   |List_Element_Delimiter|                  |
+gov.nih.cc.rmd.framework.Manual_List_Sentence        |List_Sentence         |                  |
+gov.nih.cc.rmd.framework.Manual_List_Structured      |List_Structured       |                  |
+gov.nih.cc.rmd.framework.Manual_TableOfContents      |Misc_TableOfContents  |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Misc_AddressBlock    |Misc_AddressBlock     |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_AdministrativeDemographics    |Misc_AdministrativeDemographics     |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_FigureOrCaption |Misc_FigureOrCaption  |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_Instructions    |Misc_Instructions     | 
+gov.nih.cc.rmd.framework.Manual_Misc_PageDelimiter   |Misc_PageDelimter     |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_Metadata        |Misc_Metadata         |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_ParagraphBreak  |Misc_ParagraphBreak   |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_ReferenceElement|Misc_ReferenceElement |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_References      |Misc_References       |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_Salutation      |Misc_Salutation       |                  |
+gov.nih.cc.rmd.framework.Manual_Misc_UnknownJunk     |Misc_UnknownJunk      |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Event_Dates          |Event_Dates           |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Multi_Column         |Multi_Column          |                  |
+#
+gov.nih.cc.rmd.framework.Manual_QA                   |QA                    |                  |
+gov.nih.cc.rmd.framework.Manual_QA_Answer            |QA_Answer             |                  |
+gov.nih.cc.rmd.framework.Manual_QA_Delimiter         |QA_Delimiter          |                  |
+gov.nih.cc.rmd.framework.Manual_QA_Question          |QA_Question           |                  |
+#
+gov.nih.cc.rmd.framework.Manual_SV                   |SV                    |                  |
+gov.nih.cc.rmd.framework.Manual_SV_Delimiter         |SV_Delimiter          |                  |
+gov.nih.cc.rmd.framework.Manual_SV_Slot              |SV_Slot               |                  |
+gov.nih.cc.rmd.framework.Manual_SV_Value             |SV_Value              |                  |
+gov.nih.cc.rmd.framework.Manual_SectionOrSV          |SectionOrSV           |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Section_Content      |Section_Content       |                  |
+gov.nih.cc.rmd.framework.Manual_Section_Delimiter    |Section_Delimiter     |                  |
+gov.nih.cc.rmd.framework.Manual_Section_DocumentTitle|Section_DocumentTitle |                  |
+gov.nih.cc.rmd.framework.Manual_Section_Name         |Section_Name          |                  |
+gov.nih.cc.rmd.framework.Manual_Section_PageFooter   |Section_PageFooter    |                  |
+gov.nih.cc.rmd.framework.Manual_Section_PageHeader   |Section_PageHeader    |                  |
+gov.nih.cc.rmd.framework.Manual_Section_Paragraph    |Section_Paragraph     |                  |
+gov.nih.cc.rmd.framework.Manual_Section_Zone         |Section_Zone          |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Segment              |Segment               |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Sentence             |Sentence              |                  |
+gov.va.chir.model.Paragraph                          |paragraph             |                  |
+#
+gov.nih.cc.rmd.framework.Manual_Table                |Table                 |                  |
+gov.nih.cc.rmd.framework.Manual_Table_Caption        |Table_Caption         |                  |
+gov.nih.cc.rmd.framework.Manual_Table_Cell           |Table_Cell            |                  |
+gov.nih.cc.rmd.framework.Manual_Table_ColumnHeading  |Table_ColumnHeading   |                  |
+gov.nih.cc.rmd.framework.Manual_Table_RowHeading     |Table_RowHeading      |                  |
+#
+gov.nih.cc.rmd.framework.Manual_LabsEvidence         |LabsEvidence          |                  |
+gov.nih.cc.rmd.framework.Manual_MedicationsEvidence  |MedicationsEvidence   |                  |
+gov.nih.cc.rmd.framework.Manual_VitalsEvidence       |VitalsEvidence        |                  |
+gov.nih.cc.rmd.framework.Manual_DocumentTitle        |DocumentTitle         |                  |
+gov.nih.cc.rmd.framework.Manual_UnitsOfMeasure       |UnitsOfMeasure        |                  |
+#
+gov.nih.cc.rmd.framework.model.Shape                 |Shape                 |                  |
+gov.nih.cc.rmd.framework.model.Email                 |Email                 |                  |
+gov.nih.cc.rmd.framework.model.DateTime              |DateTime              |                  |
+gov.nih.cc.rmd.framework.model.Date                  |Date                  |                  |
+gov.nih.cc.rmd.framework.model.Time                  |Time                  |                  |
+gov.nih.cc.rmd.framework.model.URL                   |URL                   |                  |
+gov.nih.cc.rmd.framework.model.PhoneNumber           |PhoneNumber           |                  |
+gov.nih.cc.rmd.framework.model.Fax                   |Fax                   |                  |
+gov.nih.cc.rmd.framework.model.UnitOfMeasure         |UnitOfMeasure         |                  |
+gov.nih.cc.rmd.framework.model.Location              |Location              |                  |
+gov.nih.cc.rmd.framework.model.Address               |Address               |                  |
+gov.nih.cc.rmd.framework.model.City                  |City                  |                  |
+gov.nih.cc.rmd.framework.model.State                 |State                 |                  |
+gov.nih.cc.rmd.framework.model.Zipcode               |Zipcode               |                  |
+gov.nih.cc.rmd.framework.model.Street                |Street                |                  |
+gov.nih.cc.rmd.framework.model.Country               |Country               |                  |
+gov.nih.cc.rmd.framework.model.SocialMediaHandle     |SocialMediaHandle     |                  |
+gov.nih.cc.rmd.framework.model.Identifier            |Identifier            |                  |
+gov.nih.cc.rmd.framework.model.SSN                   |SSN                   |                  |
+gov.nih.cc.rmd.framework.model.Number                |Number                |                  |
+gov.nih.cc.rmd.framework.model.PotentialNumber       |PotentialNumber       |                  |
+gov.nih.cc.rmd.framework.model.NumberRange           |NumberRange           |                  |
+#
+gov.nih.cc.rmd.framework.AddressEvidence             |AddressEvidence       |                  |
+gov.nih.cc.rmd.framework.SalutationEvidence          |SalutationEvidence    |                  |
+gov.nih.cc.rmd.framework.InstitutionEvidence         |InstitutionEvidence   |                  |
+gov.nih.cc.rmd.framework.PageNumber                  |PageNumber            |                  |
+#
+gov.nih.cc.rmd.framework.model.Person                |Person                |                  |
+gov.nih.cc.rmd.framework.model.PersonNamePrefix      |PersonNamePrefix      |                  |
+gov.nih.cc.rmd.framework.model.PersonNameSuffix      |PersonNameSuffix      |                  |
+gov.nih.cc.rmd.framework.model.Redacted              |Redacted              |                  |
+#----------------------------------------------------+----------------------+------------------+-------------------
+#UIMA Type Name                                      |Gate Type Name        |Uima feature name |gate feature name
+#----------------------------------------------------+----------------------+------------------+-------------------
+# Uima Model 
+#
+# Machine Created UIMA Labels                           ----------------|---Machine Created GATE Labels
+#
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningOntology      |MentalFunctioningOntology_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioningMention       |MentalFunctioningMention_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Input                          |Input_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Throughput                     |Throughput_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Output                         |Output_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Feedback                       |Feedback_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.ExternalFactors                |ExternalFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.ContextualFactors              |ContextualFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.EnvironmentalFactors           |EnvironmentalFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonFactors                  |PersonFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyStructures                 |BodyStructures_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.BodyFunctions                  |BodyFunctions_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctions                |MentalFunctions_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.SensoryMotorFunctionsFunctions |SensoryMotorFunctionsFunctions_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.HealthConditionFactors         |HealthConditionFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.PersonalBackgroundFactors      |PersonalBackgroundFactors_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveFacilities            |CognitiveFacilities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationFunctions         |CommunicationFunctions_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MentalFunctioning              |MentalFunctioning_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.ObservableBehavior             |ObservableBehavior_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesAndParticipation     |ActivitiesAndParticipation_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Behavior                       |Behavior_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.ActivitiesOfDailyLiving        |ActivitiesOfDailyLiving_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.GeneralTasksAndDemands         |GeneralTasksAndDemands_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.LearningAndApplyingKnowledge   |LearningAndApplyingKnowledge_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunicationActivities        |CommunicationActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.CognitiveActivities            |CognitiveActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MobilityActivities             |MobilityActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.SelfCareActivities             |SelfCareActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.DomesticLifeActivities         |DomesticLifeActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.IPIRActivities                 |IPIRActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.MajorLifeAreasActivities       |MajorLifeAreasActivities_
+gov.nih.cc.rmd.mentalFunctionOntologyNER.CommunitiyActivities           |CommunitiyActivities_
+#
+# Manual Created Labels                                        ----------------|---Manual Created GATE Labels
+#
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_MentalFunctioningMention       |MentalFunctioningMention
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_Input                          |Input
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_Throughput                     |Throughput
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_Output                         |Output
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_Feedback                       |Feedback
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_ExternalFactors                |ExternalFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_ContextualFactors              |ContextualFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_EnvironmentalFactors           |EnvironmentalFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_PersonFactors                  |PersonFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_BodyStructures                 |BodyStructures
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_BodyFunctions                  |BodyFunctions
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_MentalFunctions                |MentalFunctions
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_SensoryMotorFunctionsFunctions |SensoryMotorFunctionsFunctions
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_HealthConditionFactors         |HealthConditionFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_PersonalBackgroundFactors      |PersonalBackgroundFactors
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_CognitiveFacilities            |CognitiveFacilities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_CommunicationFunctions         |CommunicationFunctions
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_MentalFunctioning              |MentalFunctioning
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_ObservableBehavior             |ObservableBehavior
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_ActivitiesAndParticipation     |ActivitiesAndParticipation
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_Behavior                       |Behavior
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_ActivitiesOfDailyLiving        |ActivitiesOfDailyLiving
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_GeneralTasksAndDemands         |GeneralTasksAndDemands
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_LearningAndApplyingKnowledge   |LearningAndApplyingKnowledge
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_CommunicationActivities        |CommunicationActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_CognitiveActivities            |CognitiveActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_MobilityActivities             |MobilityActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_SelfCareActivities             |SelfCareActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_DomesticLifeActivities         |DomesticLifeActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_IPIRActivities                 |IPIRActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_MajorLifeAreasActivities       |MajorLifeAreasActivities
+gov.nih.cc.rmd.mentalFunctionOntologyNER.Manual_CommunitiyActivities           |CommunitiyActivities
+
+
+

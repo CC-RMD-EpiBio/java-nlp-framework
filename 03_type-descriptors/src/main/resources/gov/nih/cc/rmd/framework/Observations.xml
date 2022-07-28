@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>gov.nih.cc.rmd.framework.GeneObservations</name>
+    <description>Contains labels specific to gene testing tasks</description>
+    <version>2019.01.0</version>
+  <imports>
+    <import name="gov.va.vinci.ClinicalConcepts"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.GeneObservation</name>
+      <description>Describes a test on a gene (called a bio-marker),  a variation observation, a percent change, and therapies.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Observation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>therapies</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>specimenSite</name>
+          <description>The specimen site</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>specimenCollectedDate</name>
+          <description>the date the specimen was collected for the analysis</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>diagnosis</name>
+          <description>The diagnosis relating to the tumor - sometimes its called tumor status.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>method</name>
+          <description>This is the method NGS or FISH, CISH</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.GeneName</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.TestName</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.GeneVariantObservation</name>
+      <description>This is the type of mutation that occurred on the gene.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Observation</name>
+      <description>An observation is an entity that is more like a frame with attributes that contain concepts - as such, an observation won't have a concept id.  It will have dates assigned to it like reference, statement and event date.  Gene Observation is an example of an observation.  Later on, there will be other kinds of observations, maybe like labs.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    <features>
+        <featureDescription>
+          <name>testName</name>
+          <description>This is the name of the test - be it a lab, a gene name, a substance</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>testValue</name>
+          <description>This is the value of the test</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>resultRange</name>
+          <description>This is the range the test results can take on</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>comment</name>
+          <description>This is a comment about this test</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>interpretation</name>
+          <description>This is the interpretation like, high, low, in range</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>parent</name>
+          <description>This is the panel or battery this observation/test came from [TBD]</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.SpecimenSite</name>
+      <description>The location (anatomy) of the biopsy or surgery site where the specimen came from.  It's not always an anatomical location - like if it came from a blood sample.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.ObservationsPanel</name>
+      <description>This is a groupings of tests and their observations.  These should correspond to entities in LOINC.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>observations</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>gov.nih.cc.rmd.framework.Observation</elementType>
+          <multipleReferencesAllowed>true</multipleReferencesAllowed>
+        </featureDescription>
+        <featureDescription>
+          <name>panelName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>comments</name>
+          <description>Comments often found at the end of the panel.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>clinicalStatus</name>
+          <description>The status of this panel like final, amended, reported, preliminary</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.LabObservation</name>
+      <description>A kind of Observation</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Observation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestName</name>
+      <description>This is a test name for a panel or gene observation</description>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestComment</name>
+      <description>This is a comment from a gene or lab observation</description>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestValue</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestRange</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.ObservationEvidence</name>
+      <description>This evidence might just have a code associated with it.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>parentPanel</name>
+          <description>The parent section this evidence resides in</description>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>evidence</name>
+          <description>This is the annotation that is a number or range, or status annotation that covers this evidence.</description>
+          <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestInterpretation</name>
+      <description>This is a value like high or in range, or low.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestClinicalStatus</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationEvidence</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.VitalsObservation</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.Observation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.VitalsObservationsPanel</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.ObservationsPanel</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TestMethod</name>
+      <description>This is the test method like for gene names, the testing Method</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

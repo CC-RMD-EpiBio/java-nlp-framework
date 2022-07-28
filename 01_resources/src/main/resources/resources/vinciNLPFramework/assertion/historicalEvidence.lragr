@@ -1,0 +1,63 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   historicalEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of historical evidence.   
+#   For instance - TBD
+#
+#   This file contains the category HistoricalEvidence  and subcategories post and pre 
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-23
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+H00001|history|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|history of|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|hx|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|hx of|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|h/o|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|past hx|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|past hx of|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|past history of|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|past h/o|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|past history|noun|count(thr_sing)|history|history|HistoricalEvidence|pre
+H00001|in the past|noun|count(thr_sing)|history|history|HistoricalEvidence|post
+H00002|history and|noun|count(thr_sing)|history and|history and|HistoricalEvidence|pseudo
+H00003|history and examination|noun|count(thr_sing)|history and examination|history and examination|HistoricalEvidence|pseudo
+H00004|history and physical|noun|count(thr_sing)|history and physical|history and physical|HistoricalEvidence|pseudo
+H00005|history for|noun|count(thr_sing)|history for|history for|HistoricalEvidence|pseudo
+H00006|history of chief complaint|noun|count(thr_sing)|history of chief complaint|history of chief complaint|HistoricalEvidence|pseudo
+H00007|history of present illness|noun|count(thr_sing)|history of present illness|history of present illness|HistoricalEvidence|pseudo
+H00008|history taking|noun|count(thr_sing)|history taking|history taking|HistoricalEvidence|pseudo
+H00009|history, physical|noun|count(thr_sing)|history, physical|history, physical|HistoricalEvidence|pseudo
+H000010|past history|noun|count(thr_sing)|past history|past history|HistoricalEvidence|pre
+H000011|past medical history|noun|count(thr_sing)|past medical history|past medical history|HistoricalEvidence|pre
+H000012|poor history|noun|count(thr_sing)|poor history|poor history|HistoricalEvidence|pseudo
+H000013|previous|count(thr_sing)||previous|previous|HistoricalEvidence|pre
+H000014|social history|noun|count(thr_sing)|social history|social history|HistoricalEvidence|pseudo
+H000015|sudden onset of|noun|count(thr_sing)|sudden onset of|sudden onset of|HistoricalEvidence|pre
+H000016|recent episode of|noun|count(thr_sing)|recent episode of|recent episode of|HistoricalEvidence|pre
+H000017|had been experiencing|noun|count(thr_sing)|feels|feels|HistoricalEvidence|pre
+H000018|subsequent|noun|count(thr_sing)|subsequent|subsequent|HistoricalEvidence|pre
+H000019|at which time|noun|count(thr_sing)|at which time|at which time|HistoricalEvidence|pre

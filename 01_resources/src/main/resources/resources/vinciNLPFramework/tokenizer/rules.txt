@@ -1,0 +1,215 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+## This file contains regular expressions defining tokens and space tokens
+## The lines starting with ## are treated as comments and are ignored.
+## The lines containing ## as the first non-white-space character sequence preceded
+## by some whitespace **are treated as regular lines**.
+## Empty lines are ignored as well. Each expression must reside exactly on one line.
+## Each line has the following format:
+
+## expression @@ capturing group number @@ annotation name @@ annotation type @@ annotation subtype
+
+## Here, the expression is a regular expression defining the token, 
+## capturing group is the standard regular expression capturing group number 
+## defining the token position in the matched expression, annotation name is the annotation 
+## name that will be assigned to the matched token, annotation type and subtype are values
+## of the annotation type and subtype.
+## The order of the expressions does not matter. Tokens take precedence over
+## SpaceTokens, and the longer spanning tokens take the priority over the included 
+## tokens (which are simply discarded)
+
+
+## Words
+\w+		@@ 0 @@ Token @@ Token @@ Token
+
+## Whitespace
+
+\s+		@@ 0 @@ SpaceToken @@ whitespace
+^		@@ 0 @@ SpaceToken @@ whitespace @@ documentStart
+$		@@ 0 @@ SpaceToken @@ whitespace @@ documentEnd
+(?m)(^\s*$)+	@@ 0 @@ Paragraph
+
+## Digits
+\d+	@@ 0 @@ Token
+
+## Complex Digits
+(\d+,\d+\.\d+)		@@ 1 @@ Token
+(\d+\.\d+)		@@ 1 @@ Token
+\s+(\.\d+)		@@ 1 @@ Token
+\d{3}-\d{3}-\d{4}		@@ 0 @@ Token
+\(\d{3}\)\s{1,2}\d{3}-\d{4}		@@ 0 @@ Token
+
+## Punctuation
+
+\s(-)\s  				@@ 1 @@ Token @@ punctuation
+#|%|/|\\|\[|\]|\{|\}|\||\*|\&|\+	@@ 0 @@ Token @@ punctuation
+,|:|;|\(|\)|\'|\"			@@ 0 @@ Token @@ punctuation
+\.|\!|\? 				@@ 0 @@ Token @@ punctuation @@ sentBreak
+
+## Abbreviations
+
+(?i)\s(Jr\.)	@@ 1 @@ Token
+(?i)\s(ct\.)	@@ 1 @@ Token
+(?i)\s(ekg\.)	@@ 1 @@ Token
+(?i)\s(rel\.)	@@ 1 @@ Token
+(?i)\s(neg\.)	@@ 1 @@ Token
+(?i)\s(chf\.)	@@ 1 @@ Token
+(?i)\s(ra\.)	@@ 1 @@ Token
+(?i)\s(pm\.)	@@ 1 @@ Token
+(?i)\s(bid\.)	@@ 1 @@ Token
+(?i)\s(rel\.)	@@ 1 @@ Token
+(?i)\s(sob\.)	@@ 1 @@ Token
+(?i)\s(qd\.)	@@ 1 @@ Token
+(?i)\s(mi\.)	@@ 1 @@ Token
+(?i)\s(cm\.)	@@ 1 @@ Token
+(?i)\s(mg\.)	@@ 1 @@ Token
+(?i)\s(pt\.)	@@ 1 @@ Token
+(?i)\s(sat\.)	@@ 1 @@ Token
+(?i)\s(lbs\.)	@@ 1 @@ Token
+
+(?i)\s(no\.)	@@ 1 @@ Token
+(?i)\s(AG\.)	@@ 1 @@ Token
+(?i)\s(APR\.)	@@ 1 @@ Token
+(?i)\s(AUG\.)	@@ 1 @@ Token
+(?i)\s(Adm\.)	@@ 1 @@ Token
+(?i)\s(Brig\.)	@@ 1 @@ Token
+(?i)\s(CO\.)	@@ 1 @@ Token
+(?i)\s(CORP\.)	@@ 1 @@ Token
+(?i)\s(Capt\.)	@@ 1 @@ Token
+(?i)\s(Cmdr\.)	@@ 1 @@ Token
+(?i)\s(Co\.)	@@ 1 @@ Token
+(?i)\s(Col\.)	@@ 1 @@ Token
+(?i)\s(Comdr\.)	@@ 1 @@ Token
+(?i)\s(DEC\.)	@@ 1 @@ Token
+(?i)\s(DR\.)	@@ 1 @@ Token
+(?i)\s(DRs\.)	@@ 1 @@ Token
+(?i)\s(FEB\.)	@@ 1 @@ Token
+(?i)\s(Fig\.)	@@ 1 @@ Token
+(?i)\s(FRI\.)	@@ 1 @@ Token
+(?i)\s(GMBH\.)	@@ 1 @@ Token
+(?i)\s(Gen\.)	@@ 1 @@ Token
+(?i)\s(Gov\.)	@@ 1 @@ Token
+(?i)\s(INC\.)	@@ 1 @@ Token
+(?i)\s(JAN\.)	@@ 1 @@ Token
+(?i)\s(JUL\.)	@@ 1 @@ Token
+(?i)\s(JUN\.)	@@ 1 @@ Token
+(?i)\s(LTD\.)	@@ 1 @@ Token
+(?i)\s(Lt\.)	@@ 1 @@ Token
+(?i)\s(Ltd\.)	@@ 1 @@ Token
+(?i)\s(MAR\.)	@@ 1 @@ Token
+(?i)\s(MON\.)	@@ 1 @@ Token
+(?i)\s(MP\.)	@@ 1 @@ Token
+(?i)\s(Maj\.)	@@ 1 @@ Token
+(?i)\s(Mr\.)	@@ 1 @@ Token
+(?i)\s(Mrs\.)	@@ 1 @@ Token
+(?i)\s(Ms\.)	@@ 1 @@ Token
+(?i)\s(NA\.)	@@ 1 @@ Token
+(?i)\s(NOV\.)	@@ 1 @@ Token
+
+(?i)\s(NV\.)	@@ 1 @@ Token
+(?i)\s(OCT\.)	@@ 1 @@ Token
+(?i)\s(Oy\.)	@@ 1 @@ Token
+(?i)\s(PLC\.)	@@ 1 @@ Token
+(?i)\s(Prof\.)	@@ 1 @@ Token
+(?i)\s(Rep\.)	@@ 1 @@ Token
+(?i)\s(SA\.)	@@ 1 @@ Token
+(?i)\s(SAT\.)	@@ 1 @@ Token
+(?i)\s(SEP\.)	@@ 1 @@ Token
+(?i)\s(SIR\.)	@@ 1 @@ Token
+(?i)\s(SR\.)	@@ 1 @@ Token
+(?i)\s(SUN\.)	@@ 1 @@ Token
+(?i)\s(Sen\.)	@@ 1 @@ Token
+(?i)\s(Sgt\.)	@@ 1 @@ Token
+(?i)\s(SpA\.)	@@ 1 @@ Token
+(?i)\s(St\.)	@@ 1 @@ Token
+(?i)\s(THU\.)	@@ 1 @@ Token
+(?i)\s(THUR\.)	@@ 1 @@ Token
+(?i)\s(TUE\.)	@@ 1 @@ Token
+(?i)\s(VP\.)	@@ 1 @@ Token
+(?i)\s(WED\.)	@@ 1 @@ Token
+(?i)\s(ad\.)	@@ 1 @@ Token
+(?i)\s(al\.)	@@ 1 @@ Token
+(?i)\s(ed\.)	@@ 1 @@ Token
+(?i)\s(eds\.)	@@ 1 @@ Token
+(?i)\s(eg\.)	@@ 1 @@ Token
+(?i)\s(et\.)	@@ 1 @@ Token
+(?i)\s(usu\.)	@@ 1 @@ Token
+(?i)\s(vs\.)	@@ 1 @@ Token
+(?i)\s(yr\.)	@@ 1 @@ Token
+(?i)\s(yrs\.)	@@ 1 @@ Token
+(?i)\s(m\.d\.)	@@ 1 @@ Token
+(?i)\s(ph\.d\.)	@@ 1 @@ Token
+(?i)\s(q\.)\s?(day|dayly|daily|month|monthly|months|week|weekly) @@ 1 @@ Token
+(?i)\s(q\.)\s?[0-9]{1,2}\s?(hours|days|weeks|months)		 @@ 1 @@ Token
+
+## p.r.n., p.o., etc
+
+(?i)([A-Za-z]{1}\.[A-Za-z]{1}\.[A-Za-z]{1}\.)	@@ 1 @@ Token
+(?i)([A-Za-z]{1}\.[A-Za-z]{1}\.)		@@ 1 @@ Token
+(?i)\s+([A-Za-z]{1}\.)\s+			@@ 1 @@ Token
+
+## Dates
+
+\s+(\d{1,2}:\d{2})	@@ 1 @@ Token
+
+(?i)\s([0-3]{1}[0-9]{1}/\d{1,2})		@@ 1 @@ Token
+(?i)\s([0-9]{1}/\d{1,2})			@@ 1 @@ Token
+
+(?i)\s([0-3]{1}[0-9]{1}/\d{4})			@@ 1 @@ Token
+(?i)\s([0-9]{1}/\d{4})				@@ 1 @@ Token
+
+(?i)\s([0-3]?[0-9]{1}/[0-3]?[0-9]{1}/\d{2})	@@ 1 @@ Token
+(?i)\s([0-3]?[0-9]{1}/[0-3]?[0-9]{1}/\d{4})	@@ 1 @@ Token
+
+## Same dates but starting with the new line w/o preceding whitespace
+
+(?m)^([0-3]{1}[0-9]{1}/\d{1,2})			@@ 1 @@ Token
+(?m)^([0-9]{1}/\d{1,2})				@@ 1 @@ Token
+	
+(?m)^([0-3]{1}[0-9]{1}/\d{4})			@@ 1 @@ Token
+(?m)^([0-9]{1}/\d{4})				@@ 1 @@ Token
+
+(?m)^([0-3]?[0-9]{1}/[0-3]?[0-9]{1}/\d{2})	@@ 1 @@ Token
+(?m)^([0-3]?[0-9]{1}/[0-3]?[0-9]{1}/\d{4})	@@ 1 @@ Token
+
+
+
+## Special punctuation cases - overrides the punctuation inside of the match
+
+## '30s, '40s, etc
+(?i)(\'[2-9][0]s)		@@ 1 @@ Token
+(?i)(\'cause)			@@ 1 @@ Token
+(?i)(\'em)			@@ 1 @@ Token
+(?i)(\'n)			@@ 1 @@ Token
+(?i)(\'s)			@@ 1 @@ Token
+(?i)(\'t)			@@ 1 @@ Token
+(?i)(\'ll)			@@ 1 @@ Token
+(?i)(\'d)			@@ 1 @@ Token
+(?i)(\'m)			@@ 1 @@ Token
+(?i)(\'re)			@@ 1 @@ Token
+(?i)(\'til)			@@ 1 @@ Token
+(?i)(\'ve)			@@ 1 @@ Token
+(?i)(\'n\')			@@ 1 @@ Token
+(?i)(c\'mon)			@@ 1 @@ Token
+(?i)(o\'clock)			@@ 1 @@ Token
+(?i)(ma\'am)			@@ 1 @@ Token
+(?i)(n\'t)			@@ 1 @@ Token

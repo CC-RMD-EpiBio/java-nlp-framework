@@ -1,0 +1,522 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   negationEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of negation evidence.   
+#
+#      There are a few transformations from her patterns
+#         neg,pseudo -> NotEvidence|pseudo         because it would be wrong to 
+#                                                 make a negation annotation for these
+#         neg,termin -> ScopeBreakEvidence|termin - it's at least initially useful
+#                                                   to create an annotation that marks the end of scope.
+#   For instance - TBD
+#
+#   This file contains the category NegationEvidence  and subcategories post, pre, and termin
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-23
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+N00001|absence of|noun|count(thr_sing)|absence of|absence of|NegationEvidence|pre
+N00002|absence of a|noun|count(thr_sing)|absence of a|absence of a|NegationEvidence|pre
+N00003|adequate to rule her out|noun|count(thr_sing)|adequate to rule her out|adequate to rule her out|NegationEvidence|pre
+N00004|adequate to rule her out for|noun|count(thr_sing)|adequate to rule her out for|adequate to rule her out for|NegationEvidence|pre
+N00005|adequate to rule him out|noun|count(thr_sing)|adequate to rule him out|adequate to rule him out|NegationEvidence|pre
+N00006|adequate to rule him out for|noun|count(thr_sing)|adequate to rule him out for|adequate to rule him out for|NegationEvidence|pre
+N00007|adequate to rule out|noun|count(thr_sing)|adequate to rule out|adequate to rule out|NegationEvidence|pre
+N00008|adequate to rule out for|noun|count(thr_sing)|adequate to rule out for|adequate to rule out for|NegationEvidence|pre
+N00009|adequate to rule the patient out|noun|count(thr_sing)|adequate to rule the patient out|adequate to rule the patient out|NegationEvidence|pre
+N000010|adequate to rule the patient out against|noun|count(thr_sing)|adequate to rule the patient out against|adequate to rule the patient out against|NegationEvidence|pre
+N000011|adequate to rule the patient out for|noun|count(thr_sing)|adequate to rule the patient out for|adequate to rule the patient out for|NegationEvidence|pre
+N000012|although|noun|count(thr_sing)|although|although|NegationEvidence|termin
+N000013|any other|noun|count(thr_sing)|any other|any other|NegationEvidence|pre
+N000014|apart from|noun|count(thr_sing)|apart from|apart from|NegationEvidence|termin
+N000015|are none|noun|count(thr_sing)|are none|are none|NegationEvidence|post
+N000016|are ruled out|noun|count(thr_sing)|are ruled out|are ruled out|NegationEvidence|post
+N000017|as a cause for|noun|count(thr_sing)|as a cause for|as a cause for|NegationEvidence|termin
+N000018|as a cause of|noun|count(thr_sing)|as a cause of|as a cause of|NegationEvidence|termin
+N000019|as a etiology for|noun|count(thr_sing)|as a etiology for|as a etiology for|NegationEvidence|termin
+N000020|as a etiology of|noun|count(thr_sing)|as a etiology of|as a etiology of|NegationEvidence|termin
+N000021|as a reason for|noun|count(thr_sing)|as a reason for|as a reason for|NegationEvidence|termin
+N000022|as a reason of|noun|count(thr_sing)|as a reason of|as a reason of|NegationEvidence|termin
+N000023|as a secondary cause for|noun|count(thr_sing)|as a secondary cause for|as a secondary cause for|NegationEvidence|termin
+N000024|as a secondary cause of|noun|count(thr_sing)|as a secondary cause of|as a secondary cause of|NegationEvidence|termin
+N000025|as a secondary etiology for|noun|count(thr_sing)|as a secondary etiology for|as a secondary etiology for|NegationEvidence|termin
+N000026|as a secondary etiology of|noun|count(thr_sing)|as a secondary etiology of|as a secondary etiology of|NegationEvidence|termin
+N000027|as a secondary origin for|noun|count(thr_sing)|as a secondary origin for|as a secondary origin for|NegationEvidence|termin
+N000028|as a secondary origin of|noun|count(thr_sing)|as a secondary origin of|as a secondary origin of|NegationEvidence|termin
+N000029|as a secondary reason for|noun|count(thr_sing)|as a secondary reason for|as a secondary reason for|NegationEvidence|termin
+N000030|as a secondary reason of|noun|count(thr_sing)|as a secondary reason of|as a secondary reason of|NegationEvidence|termin
+N000031|as a secondary source for|noun|count(thr_sing)|as a secondary source for|as a secondary source for|NegationEvidence|termin
+N000032|as a secondary source of|noun|count(thr_sing)|as a secondary source of|as a secondary source of|NegationEvidence|termin
+N000033|as a source for|noun|count(thr_sing)|as a source for|as a source for|NegationEvidence|termin
+N000034|as a source of|noun|count(thr_sing)|as a source of|as a source of|NegationEvidence|termin
+N000035|as an cause for|noun|count(thr_sing)|as an cause for|as an cause for|NegationEvidence|termin
+N000036|as an cause of|noun|count(thr_sing)|as an cause of|as an cause of|NegationEvidence|termin
+N000037|as an etiology for|noun|count(thr_sing)|as an etiology for|as an etiology for|NegationEvidence|termin
+N000038|as an etiology of|noun|count(thr_sing)|as an etiology of|as an etiology of|NegationEvidence|termin
+N000039|as an origin for|noun|count(thr_sing)|as an origin for|as an origin for|NegationEvidence|termin
+N000040|as an origin of|noun|count(thr_sing)|as an origin of|as an origin of|NegationEvidence|termin
+N000041|as an reason for|noun|count(thr_sing)|as an reason for|as an reason for|NegationEvidence|termin
+N000042|as an reason of|noun|count(thr_sing)|as an reason of|as an reason of|NegationEvidence|termin
+N000043|as an secondary cause for|noun|count(thr_sing)|as an secondary cause for|as an secondary cause for|NegationEvidence|termin
+N000044|as an secondary cause of|noun|count(thr_sing)|as an secondary cause of|as an secondary cause of|NegationEvidence|termin
+N000045|as an secondary etiology for|noun|count(thr_sing)|as an secondary etiology for|as an secondary etiology for|NegationEvidence|termin
+N000046|as an secondary etiology of|noun|count(thr_sing)|as an secondary etiology of|as an secondary etiology of|NegationEvidence|termin
+N000047|as an secondary origin for|noun|count(thr_sing)|as an secondary origin for|as an secondary origin for|NegationEvidence|termin
+N000048|as an secondary origin of|noun|count(thr_sing)|as an secondary origin of|as an secondary origin of|NegationEvidence|termin
+N000049|as an secondary reason for|noun|count(thr_sing)|as an secondary reason for|as an secondary reason for|NegationEvidence|termin
+N000050|as an secondary reason of|noun|count(thr_sing)|as an secondary reason of|as an secondary reason of|NegationEvidence|termin
+N000051|as an secondary source for|noun|count(thr_sing)|as an secondary source for|as an secondary source for|NegationEvidence|termin
+N000052|as an secondary source of|noun|count(thr_sing)|as an secondary source of|as an secondary source of|NegationEvidence|termin
+N000053|as an source for|noun|count(thr_sing)|as an source for|as an source for|NegationEvidence|termin
+N000054|as an source of|noun|count(thr_sing)|as an source of|as an source of|NegationEvidence|termin
+N000055|as has|noun|count(thr_sing)|as has|as has|NegationEvidence|termin
+N000056|as the cause for|noun|count(thr_sing)|as the cause for|as the cause for|NegationEvidence|termin
+N000057|as the cause of|noun|count(thr_sing)|as the cause of|as the cause of|NegationEvidence|termin
+N000058|as the etiology for|noun|count(thr_sing)|as the etiology for|as the etiology for|NegationEvidence|termin
+N000059|as the etiology of|noun|count(thr_sing)|as the etiology of|as the etiology of|NegationEvidence|termin
+N000060|as the origin for|noun|count(thr_sing)|as the origin for|as the origin for|NegationEvidence|termin
+N000061|as the origin of|noun|count(thr_sing)|as the origin of|as the origin of|NegationEvidence|termin
+N000062|as the reason for|noun|count(thr_sing)|as the reason for|as the reason for|NegationEvidence|termin
+N000063|as the reason of|noun|count(thr_sing)|as the reason of|as the reason of|NegationEvidence|termin
+N000064|as the secondary cause for|noun|count(thr_sing)|as the secondary cause for|as the secondary cause for|NegationEvidence|termin
+N000065|as the secondary cause of|noun|count(thr_sing)|as the secondary cause of|as the secondary cause of|NegationEvidence|termin
+N000066|as the secondary etiology for|noun|count(thr_sing)|as the secondary etiology for|as the secondary etiology for|NegationEvidence|termin
+N000067|as the secondary etiology of|noun|count(thr_sing)|as the secondary etiology of|as the secondary etiology of|NegationEvidence|termin
+N000068|as the secondary origin for|noun|count(thr_sing)|as the secondary origin for|as the secondary origin for|NegationEvidence|termin
+N000069|as the secondary origin of|noun|count(thr_sing)|as the secondary origin of|as the secondary origin of|NegationEvidence|termin
+N000070|as the secondary reason for|noun|count(thr_sing)|as the secondary reason for|as the secondary reason for|NegationEvidence|termin
+N000071|as the secondary reason of|noun|count(thr_sing)|as the secondary reason of|as the secondary reason of|NegationEvidence|termin
+N000072|as the secondary source for|noun|count(thr_sing)|as the secondary source for|as the secondary source for|NegationEvidence|termin
+N000073|as the secondary source of|noun|count(thr_sing)|as the secondary source of|as the secondary source of|NegationEvidence|termin
+N000074|as the source for|noun|count(thr_sing)|as the source for|as the source for|NegationEvidence|termin
+N000075|as the source of|noun|count(thr_sing)|as the source of|as the source of|NegationEvidence|termin
+N000076|as well as any|noun|count(thr_sing)|as well as any|as well as any|NegationEvidence|pre
+N000077|aside from|noun|count(thr_sing)|aside from|aside from|NegationEvidence|termin
+N000078|aside from|noun|count(thr_sing)|aside from|aside from|NegationEvidence|termin
+#N000079|but|noun|count(thr_sing)|but|but|NegationEvidence|termin
+N000080|can rule her out|noun|count(thr_sing)|can rule her out|can rule her out|NegationEvidence|pre
+N000081|can rule her out against|noun|count(thr_sing)|can rule her out against|can rule her out against|NegationEvidence|pre
+N000082|can rule her out for|noun|count(thr_sing)|can rule her out for|can rule her out for|NegationEvidence|pre
+N000083|can rule him out|noun|count(thr_sing)|can rule him out|can rule him out|NegationEvidence|pre
+N000084|can rule him out against|noun|count(thr_sing)|can rule him out against|can rule him out against|NegationEvidence|pre
+N000085|can rule him out for|noun|count(thr_sing)|can rule him out for|can rule him out for|NegationEvidence|pre
+N000086|can rule out|noun|count(thr_sing)|can rule out|can rule out|NegationEvidence|pre
+N000087|can rule out against|noun|count(thr_sing)|can rule out against|can rule out against|NegationEvidence|pre
+N000088|can rule out for|noun|count(thr_sing)|can rule out for|can rule out for|NegationEvidence|pre
+N000089|can rule the patient out|noun|count(thr_sing)|can rule the patient out|can rule the patient out|NegationEvidence|pre
+N000090|can rule the patinet out against|noun|count(thr_sing)|can rule the patinet out against|can rule the patinet out against|NegationEvidence|pre
+N000091|can rule the patinet out for|noun|count(thr_sing)|can rule the patinet out for|can rule the patinet out for|NegationEvidence|pre
+N000092|cannot|noun|count(thr_sing)|cannot|cannot|NegationEvidence|pre
+N000093|cannot see|noun|count(thr_sing)|cannot see|cannot see|NegationEvidence|pre
+N000094|cause for|noun|count(thr_sing)|cause for|cause for|NegationEvidence|termin
+N000095|cause of|noun|count(thr_sing)|cause of|cause of|NegationEvidence|termin
+N000096|causes for|noun|count(thr_sing)|causes for|causes for|NegationEvidence|termin
+N000097|causes of|noun|count(thr_sing)|causes of|causes of|NegationEvidence|termin
+N000098|checked for|noun|count(thr_sing)|checked for|checked for|NegationEvidence|pre
+N000099|clear of|noun|count(thr_sing)|clear of|clear of|NegationEvidence|pre
+N0000100|declined|noun|count(thr_sing)|declined|declined|NegationEvidence|pre
+N0000101|declines|noun|count(thr_sing)|declines|declines|NegationEvidence|pre
+N0000102|denied|noun|count(thr_sing)|denied|denied|NegationEvidence|pre
+N0000103|denied active|noun|count(thr_sing)|denied active|denied active|NegationEvidence|pre
+N0000104|denied any|noun|count(thr_sing)|denied any|denied any|NegationEvidence|pre
+N0000105|denied any abnormal|noun|count(thr_sing)|denied any abnormal|denied any abnormal|NegationEvidence|pre
+N0000106|denied any change in the|noun|count(thr_sing)|denied any change in the|denied any change in the|NegationEvidence|pre
+N0000107|denied any changes in the|noun|count(thr_sing)|denied any changes in the|denied any changes in the|NegationEvidence|pre
+N0000108|denied any current|noun|count(thr_sing)|denied any current|denied any current|NegationEvidence|pre
+N0000109|denied any high-risk|noun|count(thr_sing)|denied any high-risk|denied any high-risk|NegationEvidence|pre
+N0000110|denied any history of|noun|count(thr_sing)|denied any history of|denied any history of|NegationEvidence|pre
+N0000111|denied any other|noun|count(thr_sing)|denied any other|denied any other|NegationEvidence|pre
+N0000112|denied any other|noun|count(thr_sing)|denied any other|denied any other|NegationEvidence|pre
+N0000113|denied any problems|noun|count(thr_sing)|denied any problems|denied any problems|NegationEvidence|pre
+N0000114|denied any problems of|noun|count(thr_sing)|denied any problems of|denied any problems of|NegationEvidence|pre
+N0000115|denied any recent|noun|count(thr_sing)|denied any recent|denied any recent|NegationEvidence|pre
+N0000116|denied any significant|noun|count(thr_sing)|denied any significant|denied any significant|NegationEvidence|pre
+N0000117|denied any symptom of|noun|count(thr_sing)|denied any symptom of|denied any symptom of|NegationEvidence|pre
+N0000118|denied any symptoms of|noun|count(thr_sing)|denied any symptoms of|denied any symptoms of|NegationEvidence|pre
+N0000119|denied current|noun|count(thr_sing)|denied current|denied current|NegationEvidence|pre
+N0000120|denied ever|noun|count(thr_sing)|denied ever|denied ever|NegationEvidence|pre
+N0000121|denied other symptoms of|noun|count(thr_sing)|denied other symptoms of|denied other symptoms of|NegationEvidence|pre
+N0000122|denied problems with|noun|count(thr_sing)|denied problems with|denied problems with|NegationEvidence|pre
+N0000123|denied symptoms of|noun|count(thr_sing)|denied symptoms of|denied symptoms of|NegationEvidence|pre
+N0000124|denied that there was any|noun|count(thr_sing)|denied that there was any|denied that there was any|NegationEvidence|pre
+N0000125|denied that there was any current|noun|count(thr_sing)|denied that there was any current|denied that there was any current|NegationEvidence|pre
+N0000126|denied that there was any history of|noun|count(thr_sing)|denied that there was any history of|denied that there was any history of|NegationEvidence|pre
+N0000127|denied that there was ever|noun|count(thr_sing)|denied that there was ever|denied that there was ever|NegationEvidence|pre
+N0000128|denied that there was ever history of|noun|count(thr_sing)|denied that there was ever history of|denied that there was ever history of|NegationEvidence|pre
+N0000129|denied that there was history of|noun|count(thr_sing)|denied that there was history of|denied that there was history of|NegationEvidence|pre
+N0000130|denied that there was problems|noun|count(thr_sing)|denied that there was problems|denied that there was problems|NegationEvidence|pre
+N0000131|denied that there was problems of|noun|count(thr_sing)|denied that there was problems of|denied that there was problems of|NegationEvidence|pre
+N0000132|denied that there were any|noun|count(thr_sing)|denied that there were any|denied that there were any|NegationEvidence|pre
+N0000133|denied that there were any history of|noun|count(thr_sing)|denied that there were any history of|denied that there were any history of|NegationEvidence|pre
+N0000134|denied that there were ever|noun|count(thr_sing)|denied that there were ever|denied that there were ever|NegationEvidence|pre
+N0000135|denied that there were ever history of|noun|count(thr_sing)|denied that there were ever history of|denied that there were ever history of|NegationEvidence|pre
+N0000136|denied that there were history of|noun|count(thr_sing)|denied that there were history of|denied that there were history of|NegationEvidence|pre
+N0000137|denied that there were problems|noun|count(thr_sing)|denied that there were problems|denied that there were problems|NegationEvidence|pre
+N0000138|denied that there were problems of|noun|count(thr_sing)|denied that there were problems of|denied that there were problems of|NegationEvidence|pre
+N0000139|denied this|noun|count(thr_sing)|denied this|denied this|NegationEvidence|pre
+N0000140|denied use of|noun|count(thr_sing)|denied use of|denied use of|NegationEvidence|pre
+N0000141|denied use of other|noun|count(thr_sing)|denied use of other|denied use of other|NegationEvidence|pre
+N0000142|denies|noun|count(thr_sing)|denies|denies|NegationEvidence|pre
+N0000143|denies active|noun|count(thr_sing)|denies active|denies active|NegationEvidence|pre
+N0000144|denies any|noun|count(thr_sing)|denies any|denies any|NegationEvidence|pre
+N0000145|denies any abnormal|noun|count(thr_sing)|denies any abnormal|denies any abnormal|NegationEvidence|pre
+N0000146|denies any change in the|noun|count(thr_sing)|denies any change in the|denies any change in the|NegationEvidence|pre
+N0000147|denies any changes in the|noun|count(thr_sing)|denies any changes in the|denies any changes in the|NegationEvidence|pre
+N0000148|denies any current|noun|count(thr_sing)|denies any current|denies any current|NegationEvidence|pre
+N0000149|denies any high-risk|noun|count(thr_sing)|denies any high-risk|denies any high-risk|NegationEvidence|pre
+N0000150|denies any history of|noun|count(thr_sing)|denies any history of|denies any history of|NegationEvidence|pre
+N0000151|denies any other|noun|count(thr_sing)|denies any other|denies any other|NegationEvidence|pre
+N0000152|denies any other|noun|count(thr_sing)|denies any other|denies any other|NegationEvidence|pre
+N0000153|denies any problems|noun|count(thr_sing)|denies any problems|denies any problems|NegationEvidence|pre
+N0000154|denies any problems of|noun|count(thr_sing)|denies any problems of|denies any problems of|NegationEvidence|pre
+N0000155|denies any problems with|noun|count(thr_sing)|denies any problems with|denies any problems with|NegationEvidence|pre
+N0000156|denies any problems with|noun|count(thr_sing)|denies any problems with|denies any problems with|NegationEvidence|pre
+N0000157|denies any recent|noun|count(thr_sing)|denies any recent|denies any recent|NegationEvidence|pre
+N0000158|denies any significant|noun|count(thr_sing)|denies any significant|denies any significant|NegationEvidence|pre
+N0000159|denies any symptom of|noun|count(thr_sing)|denies any symptom of|denies any symptom of|NegationEvidence|pre
+N0000160|denies any symptoms of|noun|count(thr_sing)|denies any symptoms of|denies any symptoms of|NegationEvidence|pre
+N0000161|denies any undue|noun|count(thr_sing)|denies any undue|denies any undue|NegationEvidence|pre
+N0000162|denies current|noun|count(thr_sing)|denies current|denies current|NegationEvidence|pre
+N0000163|denies ever|noun|count(thr_sing)|denies ever|denies ever|NegationEvidence|pre
+N0000164|denies experiencing|noun|count(thr_sing)|denies experiencing|denies experiencing|NegationEvidence|pre
+N0000165|denies experiencing any|noun|count(thr_sing)|denies experiencing any|denies experiencing any|NegationEvidence|pre
+N0000166|denies problems with|noun|count(thr_sing)|denies problems with|denies problems with|NegationEvidence|pre
+N0000167|denies significant|noun|count(thr_sing)|denies significant|denies significant|NegationEvidence|pre
+N0000168|denies symptoms of|noun|count(thr_sing)|denies symptoms of|denies symptoms of|NegationEvidence|pre
+N0000169|denies there was any|noun|count(thr_sing)|denies there was any|denies there was any|NegationEvidence|pre
+N0000170|denies there was any|noun|count(thr_sing)|denies there was any|denies there was any|NegationEvidence|pre
+N0000171|denies there was any current|noun|count(thr_sing)|denies there was any current|denies there was any current|NegationEvidence|pre
+N0000172|denies there was any current|noun|count(thr_sing)|denies there was any current|denies there was any current|NegationEvidence|pre
+N0000173|denies there was any history of|noun|count(thr_sing)|denies there was any history of|denies there was any history of|NegationEvidence|pre
+N0000174|denies there was any history of|noun|count(thr_sing)|denies there was any history of|denies there was any history of|NegationEvidence|pre
+N0000175|denies there was any recent|noun|count(thr_sing)|denies there was any recent|denies there was any recent|NegationEvidence|pre
+N0000176|denies there was any recent|noun|count(thr_sing)|denies there was any recent|denies there was any recent|NegationEvidence|pre
+N0000177|denies there was ever|noun|count(thr_sing)|denies there was ever|denies there was ever|NegationEvidence|pre
+N0000178|denies there was ever|noun|count(thr_sing)|denies there was ever|denies there was ever|NegationEvidence|pre
+N0000179|denies there was ever history of|noun|count(thr_sing)|denies there was ever history of|denies there was ever history of|NegationEvidence|pre
+N0000180|denies there was ever history of|noun|count(thr_sing)|denies there was ever history of|denies there was ever history of|NegationEvidence|pre
+N0000181|denies there was history of|noun|count(thr_sing)|denies there was history of|denies there was history of|NegationEvidence|pre
+N0000182|denies there was history of|noun|count(thr_sing)|denies there was history of|denies there was history of|NegationEvidence|pre
+N0000183|denies there was problems|noun|count(thr_sing)|denies there was problems|denies there was problems|NegationEvidence|pre
+N0000184|denies there was problems|noun|count(thr_sing)|denies there was problems|denies there was problems|NegationEvidence|pre
+N0000185|denies there was problems of|noun|count(thr_sing)|denies there was problems of|denies there was problems of|NegationEvidence|pre
+N0000186|denies there was problems of|noun|count(thr_sing)|denies there was problems of|denies there was problems of|NegationEvidence|pre
+N0000187|denies there were any|noun|count(thr_sing)|denies there were any|denies there were any|NegationEvidence|pre
+N0000188|denies there were any|noun|count(thr_sing)|denies there were any|denies there were any|NegationEvidence|pre
+N0000189|denies there were any history of|noun|count(thr_sing)|denies there were any history of|denies there were any history of|NegationEvidence|pre
+N0000190|denies there were any history of|noun|count(thr_sing)|denies there were any history of|denies there were any history of|NegationEvidence|pre
+N0000191|denies there were ever|noun|count(thr_sing)|denies there were ever|denies there were ever|NegationEvidence|pre
+N0000192|denies there were ever|noun|count(thr_sing)|denies there were ever|denies there were ever|NegationEvidence|pre
+N0000193|denies there were ever history of|noun|count(thr_sing)|denies there were ever history of|denies there were ever history of|NegationEvidence|pre
+N0000194|denies there were ever history of|noun|count(thr_sing)|denies there were ever history of|denies there were ever history of|NegationEvidence|pre
+N0000195|denies there were history of|noun|count(thr_sing)|denies there were history of|denies there were history of|NegationEvidence|pre
+N0000196|denies there were history of|noun|count(thr_sing)|denies there were history of|denies there were history of|NegationEvidence|pre
+N0000197|denies there were problems|noun|count(thr_sing)|denies there were problems|denies there were problems|NegationEvidence|pre
+N0000198|denies there were problems|noun|count(thr_sing)|denies there were problems|denies there were problems|NegationEvidence|pre
+N0000199|denies there were problems of|noun|count(thr_sing)|denies there were problems of|denies there were problems of|NegationEvidence|pre
+N0000200|denies there were problems of|noun|count(thr_sing)|denies there were problems of|denies there were problems of|NegationEvidence|pre
+N0000201|denies this|noun|count(thr_sing)|denies this|denies this|NegationEvidence|pre
+N0000202|denies true|noun|count(thr_sing)|denies true|denies true|NegationEvidence|pre
+N0000203|denies use of|noun|count(thr_sing)|denies use of|denies use of|NegationEvidence|pre
+N0000204|denies use of other|noun|count(thr_sing)|denies use of other|denies use of other|NegationEvidence|pre
+N0000205|denise|noun|count(thr_sing)|denise|denise|NegationEvidence|pre
+N0000206|deny|noun|count(thr_sing)|deny|deny|NegationEvidence|pre
+N0000207|denying|noun|count(thr_sing)|denying|denying|NegationEvidence|pre
+N0000208|did not have any episodes of|noun|count(thr_sing)|did not have any episodes of|did not have any episodes of|NegationEvidence|pre
+N0000209|did not have any more episodes of|noun|count(thr_sing)|did not have any more episodes of|did not have any more episodes of|NegationEvidence|pre
+N0000210|did not have any problems with|noun|count(thr_sing)|did not have any problems with|did not have any problems with|NegationEvidence|pre
+N0000211|did not observe a|noun|count(thr_sing)|did not observe a|did not observe a|NegationEvidence|pre
+N0000212|did rule her out|noun|count(thr_sing)|did rule her out|did rule her out|NegationEvidence|pre
+N0000213|did rule her out against|noun|count(thr_sing)|did rule her out against|did rule her out against|NegationEvidence|pre
+N0000214|did rule her out for|noun|count(thr_sing)|did rule her out for|did rule her out for|NegationEvidence|pre
+N0000215|did rule him out|noun|count(thr_sing)|did rule him out|did rule him out|NegationEvidence|pre
+N0000216|did rule him out against|noun|count(thr_sing)|did rule him out against|did rule him out against|NegationEvidence|pre
+N0000217|did rule him out for|noun|count(thr_sing)|did rule him out for|did rule him out for|NegationEvidence|pre
+N0000218|did rule out|noun|count(thr_sing)|did rule out|did rule out|NegationEvidence|pre
+N0000219|did rule out against|noun|count(thr_sing)|did rule out against|did rule out against|NegationEvidence|pre
+N0000220|did rule out for|noun|count(thr_sing)|did rule out for|did rule out for|NegationEvidence|pre
+N0000221|did rule the patient out|noun|count(thr_sing)|did rule the patient out|did rule the patient out|NegationEvidence|pre
+N0000222|did rule the patient out against|noun|count(thr_sing)|did rule the patient out against|did rule the patient out against|NegationEvidence|pre
+N0000223|did rule the patient out for|noun|count(thr_sing)|did rule the patient out for|did rule the patient out for|NegationEvidence|pre
+N0000224|didn't express any|noun|count(thr_sing)|didn't express any|didn't express any|NegationEvidence|pre
+N0000225|didn't expressed any|noun|count(thr_sing)|didn't expressed any|didn't expressed any|NegationEvidence|pre
+N0000226|didn't have any problems with|noun|count(thr_sing)|didn't have any problems with|didn't have any problems with|NegationEvidence|pre
+N0000227|didn't report any|noun|count(thr_sing)|didn't report any|didn't report any|NegationEvidence|pre
+N0000228|didn't report any problems with|noun|count(thr_sing)|didn't report any problems with|didn't report any problems with|NegationEvidence|pre
+N0000229|does not|noun|count(thr_sing)|does not|does not|NegationEvidence|pre
+N0000229|does not report|noun|count(thr_sing)|does not|does not|NegationEvidence|pre
+N0000229|does not report any|noun|count(thr_sing)|does not|does not|NegationEvidence|pre
+N0000230|does not appear to have any|noun|count(thr_sing)|does not appear to have any|does not appear to have any|NegationEvidence|pre
+N0000231|does not appear to have any|noun|count(thr_sing)|does not appear to have any|does not appear to have any|NegationEvidence|pre
+N0000232|does not appear to have any bizarre|noun|count(thr_sing)|does not appear to have any bizarre|does not appear to have any bizarre|NegationEvidence|pre
+N0000233|does not appear to have any issues of|noun|count(thr_sing)|does not appear to have any issues of|does not appear to have any issues of|NegationEvidence|pre
+N0000234|does not appear to have any issues with|noun|count(thr_sing)|does not appear to have any issues with|does not appear to have any issues with|NegationEvidence|pre
+N0000235|does not express|noun|count(thr_sing)|does not express|does not express|NegationEvidence|pre
+N0000236|does not use|noun|count(thr_sing)|does not use|does not use|NegationEvidence|pre
+N0000237|does not usually|noun|count(thr_sing)|does not usually|does not usually|NegationEvidence|pre
+N0000238|doesn't look like|noun|count(thr_sing)|doesn't look like|doesn't look like|NegationEvidence|pre
+N0000239|etiology for|noun|count(thr_sing)|etiology for|etiology for|NegationEvidence|termin
+N0000240|etiology of|noun|count(thr_sing)|etiology of|etiology of|NegationEvidence|termin
+N0000241|evaluate for|noun|count(thr_sing)|evaluate for|evaluate for|NegationEvidence|pre
+N0000242|except|noun|count(thr_sing)|except|except|NegationEvidence|termin
+N0000243|fails to reveal|noun|count(thr_sing)|fails to reveal|fails to reveal|NegationEvidence|pre
+N0000244|free|noun|count(thr_sing)|free|free|NegationEvidence|post
+N0000245|free of|noun|count(thr_sing)|free of|free of|NegationEvidence|pre
+N0000246|gram negative|noun|count(thr_sing)|gram negative|gram negative|NoEvidence|pseudo
+N0000247|has been negative|noun|count(thr_sing)|has been negative|has been negative|NegationEvidence|post
+N0000248|has been ruled out|noun|count(thr_sing)|has been ruled out|has been ruled out|NegationEvidence|post
+N0000249|has none|noun|count(thr_sing)|has none|has none|NegationEvidence|post
+N0000250|has not had any|noun|count(thr_sing)|has not had any|has not had any|NegationEvidence|pre
+N0000251|has not had any problems|noun|count(thr_sing)|has not had any problems|has not had any problems|NegationEvidence|pre
+N0000252|has not had any problems with|noun|count(thr_sing)|has not had any problems with|has not had any problems with|NegationEvidence|pre
+N0000253|have been ruled out|noun|count(thr_sing)|have been ruled out|have been ruled out|NegationEvidence|post
+N0000254|have none|noun|count(thr_sing)|have none|have none|NegationEvidence|post
+#N0000255|however|noun|count(thr_sing)|however|however|NegationEvidence|termin
+N0000256|inconsistent with|noun|count(thr_sing)|inconsistent with|inconsistent with|NegationEvidence|pre
+N0000257|is none|noun|count(thr_sing)|is none|is none|NegationEvidence|post
+N0000258|is none|noun|count(thr_sing)|is none|is none|NegationEvidence|post
+N0000259|is not|noun|count(thr_sing)|is not|is not|NegationEvidence|pre
+N0000260|is ruled out|noun|count(thr_sing)|is ruled out|is ruled out|NegationEvidence|post
+N0000261|isn't|noun|count(thr_sing)|isn't|isn't|NegationEvidence|pre
+N0000262|lack of|noun|count(thr_sing)|lack of|lack of|NegationEvidence|pre
+N0000263|lacked|noun|count(thr_sing)|lacked|lacked|NegationEvidence|pre
+N0000264|n o|noun|count(thr_sing)|n o|n o|NegationEvidence|pre
+N0000265|neg for|noun|count(thr_sing)|neg for|neg for|NegationEvidence|pre
+N0000266|neg.|noun|count(thr_sing)|neg.|neg.|NegationEvidence|post
+N0000267|negative for|noun|count(thr_sing)|negative for|negative for|NegationEvidence|pre
+N0000268|negative for|noun|count(thr_sing)|negative for|negative for|NegationEvidence|pre
+N0000269|never developed|noun|count(thr_sing)|never developed|never developed|NegationEvidence|pre
+N0000270|never had|noun|count(thr_sing)|never had|never had|NegationEvidence|pre
+N0000271|nevertheless|noun|count(thr_sing)|nevertheless|nevertheless|NegationEvidence|termin
+N0000272|nevertheless|noun|count(thr_sing)|nevertheless|nevertheless|NegationEvidence|termin
+N000A273|no|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000B273|no|noun|count(thr_sing)|no|no|NegationEvidence|post
+N000C273|NO|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000D273|NO|noun|count(thr_sing)|no|no|NegationEvidence|post
+N000E273|No|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000F273|No|noun|count(thr_sing)|no|no|NegationEvidence|post
+N000G273|nope|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000H273|n|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000I273|n|noun|count(thr_sing)|no|no|NegationEvidence|post
+N000J273|N|noun|count(thr_sing)|no|no|NegationEvidence|pre
+N000K273|N|noun|count(thr_sing)|no|no|NegationEvidence|post
+N0000274|no abnormal|noun|count(thr_sing)|no abnormal|no abnormal|NegationEvidence|pre
+N0000275|no acute|noun|count(thr_sing)|no acute|no acute|NegationEvidence|pre
+N0000276|no additional significant|noun|count(thr_sing)|no additional significant|no additional significant|NegationEvidence|pre
+N0000277|no apparent|noun|count(thr_sing)|no apparent|no apparent|NegationEvidence|pre
+N0000278|no cause of|noun|count(thr_sing)|no cause of|no cause of|NegationEvidence|pre
+N0000279|no change|noun|count(thr_sing)|no change|no change|NoEvidence|pseudo
+N0000280|no complaints of|noun|count(thr_sing)|no complaints of|no complaints of|NegationEvidence|pre
+N0000281|no current|noun|count(thr_sing)|no current|no current|NegationEvidence|pre
+N0000282|no definite change|noun|count(thr_sing)|no definite change|no definite change|NoEvidence|pseudo
+N0000283|no evidence|noun|count(thr_sing)|no evidence|no evidence|NegationEvidence|pre
+N0000284|no evidence of|noun|count(thr_sing)|no evidence of|no evidence of|NegationEvidence|pre
+N0000285|no evidence to suggest|noun|count(thr_sing)|no evidence to suggest|no evidence to suggest|NegationEvidence|pre
+N0000286|no findings of|noun|count(thr_sing)|no findings of|no findings of|NegationEvidence|pre
+N0000287|no findings to indicate|noun|count(thr_sing)|no findings to indicate|no findings to indicate|NegationEvidence|pre
+N0000288|no history of|noun|count(thr_sing)|no history of|no history of|NegationEvidence|pre
+N0000289|no hx of|noun|count(thr_sing)|no hx of|no hx of|NegationEvidence|pre
+N0000290|no hx of|noun|count(thr_sing)|no hx of|no hx of|NegationEvidence|pre
+N0000291|no increase|noun|count(thr_sing)|no increase|no increase|NoEvidence|pseudo
+N0000292|no indication of|noun|count(thr_sing)|no indication of|no indication of|NegationEvidence|pre
+N0000293|no indications of|noun|count(thr_sing)|no indications of|no indications of|NegationEvidence|pre
+N0000294|no interval change|noun|count(thr_sing)|no interval change|no interval change|NoEvidence|pseudo
+N0000295|no known|noun|count(thr_sing)|no known|no known|NegationEvidence|pre
+N0000296|no known history of|noun|count(thr_sing)|no known history of|no known history of|NegationEvidence|pre
+N0000297|no known hx of|noun|count(thr_sing)|no known hx of|no known hx of|NegationEvidence|pre
+N0000298|no longer|noun|count(thr_sing)|no longer|no longer|NegationEvidence|pre
+N0000299|no longer present|noun|count(thr_sing)|no longer present|no longer present|NegationEvidence|post
+N0000300|no major|noun|count(thr_sing)|no major|no major|NegationEvidence|pre
+N0000301|no mammographic evidence of|noun|count(thr_sing)|no mammographic evidence of|no mammographic evidence of|NegationEvidence|pre
+N0000302|no mention of|noun|count(thr_sing)|no mention of|no mention of|NegationEvidence|pre
+N0000303|no new|noun|count(thr_sing)|no new|no new|NegationEvidence|pre
+N0000304|no new evidence|noun|count(thr_sing)|no new evidence|no new evidence|NegationEvidence|pre
+N0000305|no other evidence|noun|count(thr_sing)|no other evidence|no other evidence|NegationEvidence|pre
+N0000306|no other symptoms of|noun|count(thr_sing)|no other symptoms of|no other symptoms of|NegationEvidence|pre
+N0000307|no problems with|noun|count(thr_sing)|no problems with|no problems with|NegationEvidence|pre
+N0000308|no radiographic evidence of|noun|count(thr_sing)|no radiographic evidence of|no radiographic evidence of|NegationEvidence|pre
+N0000309|no recurrent|noun|count(thr_sing)|no recurrent|no recurrent|NegationEvidence|pre
+N0000310|no reported|noun|count(thr_sing)|no reported|no reported|NegationEvidence|pre
+N0000311|no reported mention|noun|count(thr_sing)|no reported mention|no reported mention|NegationEvidence|pre
+N0000312|no residual|noun|count(thr_sing)|no residual|no residual|NegationEvidence|pre
+N0000313|no sign of|noun|count(thr_sing)|no sign of|no sign of|NegationEvidence|pre
+N0000314|no significant|noun|count(thr_sing)|no significant|no significant|NegationEvidence|pre
+N0000315|no significant change|noun|count(thr_sing)|no significant change|no significant change|NoEvidence|pseudo
+N0000316|no significant interval change|noun|count(thr_sing)|no significant interval change|no significant interval change|NoEvidence|pseudo
+N0000317|no signs of|noun|count(thr_sing)|no signs of|no signs of|NegationEvidence|pre
+N0000318|no signs or symptoms of|noun|count(thr_sing)|no signs or symptoms of|no signs or symptoms of|NegationEvidence|pre
+N0000319|no suggestion of|noun|count(thr_sing)|no suggestion of|no suggestion of|NegationEvidence|pre
+N0000320|no suspicious|noun|count(thr_sing)|no suspicious|no suspicious|NegationEvidence|pre
+N0000321|no suspicious change|noun|count(thr_sing)|no suspicious change|no suspicious change|NoEvidence|pseudo
+N0000322|no sxs of|noun|count(thr_sing)|no sxs of|no sxs of|NegationEvidence|pre
+N0000323|no visable|noun|count(thr_sing)|no visable|no visable|NegationEvidence|pre
+N0000324|non diagnostic|noun|count(thr_sing)|non diagnostic|non diagnostic|NegationEvidence|post
+N0000325|none|noun|count(thr_sing)|none|none|NegationEvidence|post
+N0000325|none found|noun|count(thr_sing)|none|none|NegationEvidence|post
+N0000326|nor|noun|count(thr_sing)|nor|nor|NegationEvidence|pre
+N0000327|nor all|noun|count(thr_sing)|nor all|nor all|NegationEvidence|pre
+N0000328|nor any|noun|count(thr_sing)|nor any|nor any|NegationEvidence|pre
+N0000329|not|noun|count(thr_sing)|not|not|NegationEvidence|pre
+N0000330|not a current|noun|count(thr_sing)|not a current|not a current|NegationEvidence|pre
+N0000331|not appear|noun|count(thr_sing)|not appear|not appear|NegationEvidence|pre
+N0000332|not appreciate|noun|count(thr_sing)|not appreciate|not appreciate|NegationEvidence|pre
+N0000333|not associated with|noun|count(thr_sing)|not associated with|not associated with|NegationEvidence|pre
+N0000334|not cause|noun|count(thr_sing)|not cause|not cause|NoEvidence|pseudo
+N0000335|not certain if|noun|count(thr_sing)|not certain if|not certain if|NoEvidence|pseudo
+N0000336|not certain whether|noun|count(thr_sing)|not certain whether|not certain whether|NoEvidence|pseudo
+N0000337|not complain of|noun|count(thr_sing)|not complain of|not complain of|NegationEvidence|pre
+N0000338|not current|noun|count(thr_sing)|not current|not current|NegationEvidence|pre
+N0000339|not demonstrate|noun|count(thr_sing)|not demonstrate|not demonstrate|NegationEvidence|pre
+N0000340|not drain|noun|count(thr_sing)|not drain|not drain|NoEvidence|pseudo
+N0000341|not exhibit|noun|count(thr_sing)|not exhibit|not exhibit|NegationEvidence|pre
+N0000342|not extend|noun|count(thr_sing)|not extend|not extend|NoEvidence|pseudo
+N0000343|not feel|noun|count(thr_sing)|not feel|not feel|NegationEvidence|pre
+N0000344|not had|noun|count(thr_sing)|not had|not had|NegationEvidence|pre
+N0000345|not have|noun|count(thr_sing)|not have|not have|NegationEvidence|pre
+N0000346|not have evidence of|noun|count(thr_sing)|not have evidence of|not have evidence of|NegationEvidence|pre
+N0000347|not in|noun|count(thr_sing)|not in|not in|NegationEvidence|pre
+N0000348|not in acute|noun|count(thr_sing)|not in acute|not in acute|NegationEvidence|pre
+N0000349|not know of|noun|count(thr_sing)|not know of|not know of|NegationEvidence|pre
+N0000350|not known to have|noun|count(thr_sing)|not known to have|not known to have|NegationEvidence|pre
+N0000351|not necessarily|noun|count(thr_sing)|not necessarily|not necessarily|NoEvidence|pseudo
+N0000352|not on|noun|count(thr_sing)|not on|not on|NoEvidence|pseudo
+N0000353|not only|noun|count(thr_sing)|not only|not only|NoEvidence|pseudo
+N0000354|not reveal|noun|count(thr_sing)|not reveal|not reveal|NegationEvidence|pre
+N0000355|not see|noun|count(thr_sing)|not see|not see|NegationEvidence|pre
+N0000356|not to be|noun|count(thr_sing)|not to be|not to be|NegationEvidence|pre
+N0000357|noted to be neg|noun|count(thr_sing)|noted to be neg|noted to be neg|NegationEvidence|post
+N0000358|noted to be negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|post
+N0000358|negative|noun|count(thr_sing)|noted to be negative|noted to be negative|NegationEvidence|pre
+N0000359|now resolved|noun|count(thr_sing)|now resolved|now resolved|NegationEvidence|post
+N0000360|origin for|noun|count(thr_sing)|origin for|origin for|NegationEvidence|termin
+N0000361|origin of|noun|count(thr_sing)|origin of|origin of|NegationEvidence|termin
+N0000362|origins for|noun|count(thr_sing)|origins for|origins for|NegationEvidence|termin
+N0000363|origins of|noun|count(thr_sing)|origins of|origins of|NegationEvidence|termin
+N0000364|other possibilities of|noun|count(thr_sing)|other possibilities of|other possibilities of|NegationEvidence|termin
+N0000365|patient was not|noun|count(thr_sing)|patient was not|patient was not|NegationEvidence|pre
+N0000366|prophylaxis|noun|count(thr_sing)|prophylaxis|prophylaxis|NegationEvidence|post
+N0000367|rather than|noun|count(thr_sing)|rather than|rather than|NegationEvidence|pre
+N0000368|reason for|noun|count(thr_sing)|reason for|reason for|NegationEvidence|termin
+N0000369|reason of|noun|count(thr_sing)|reason of|reason of|NegationEvidence|termin
+N0000370|reasons for|noun|count(thr_sing)|reasons for|reasons for|NegationEvidence|termin
+N0000371|reasons of|noun|count(thr_sing)|reasons of|reasons of|NegationEvidence|termin
+N0000372|resolved|noun|count(thr_sing)|resolved|resolved|NegationEvidence|pre
+N0000373|ruled her out|noun|count(thr_sing)|ruled her out|ruled her out|NegationEvidence|pre
+N0000374|ruled her out against|noun|count(thr_sing)|ruled her out against|ruled her out against|NegationEvidence|pre
+N0000375|ruled her out for|noun|count(thr_sing)|ruled her out for|ruled her out for|NegationEvidence|pre
+N0000376|ruled him out|noun|count(thr_sing)|ruled him out|ruled him out|NegationEvidence|pre
+N0000377|ruled him out against|noun|count(thr_sing)|ruled him out against|ruled him out against|NegationEvidence|pre
+N0000378|ruled him out for|noun|count(thr_sing)|ruled him out for|ruled him out for|NegationEvidence|pre
+N0000379|ruled out|noun|count(thr_sing)|ruled out|ruled out|NegationEvidence|pre
+N0000379|is to be ruled out|noun|count(thr_sing)|ruled out|ruled out|NegationEvidence|pre
+N0000379|to be ruled out|noun|count(thr_sing)|ruled out|ruled out|NegationEvidence|pre
+N0000380|ruled out against|noun|count(thr_sing)|ruled out against|ruled out against|NegationEvidence|pre
+N0000381|ruled out for|noun|count(thr_sing)|ruled out for|ruled out for|NegationEvidence|pre
+N0000382|ruled the patient out|noun|count(thr_sing)|ruled the patient out|ruled the patient out|NegationEvidence|pre
+N0000383|ruled the patient out against|noun|count(thr_sing)|ruled the patient out against|ruled the patient out against|NegationEvidence|pre
+N0000384|ruled the patient out for|noun|count(thr_sing)|ruled the patient out for|ruled the patient out for|NegationEvidence|pre
+N0000385|rules her out|noun|count(thr_sing)|rules her out|rules her out|NegationEvidence|pre
+N0000386|rules her out for|noun|count(thr_sing)|rules her out for|rules her out for|NegationEvidence|pre
+N0000387|rules him out|noun|count(thr_sing)|rules him out|rules him out|NegationEvidence|pre
+N0000388|rules him out for|noun|count(thr_sing)|rules him out for|rules him out for|NegationEvidence|pre
+N0000389|rules out|noun|count(thr_sing)|rules out|rules out|NegationEvidence|pre
+N0000390|rules out for|noun|count(thr_sing)|rules out for|rules out for|NegationEvidence|pre
+N0000391|rules the patient out|noun|count(thr_sing)|rules the patient out|rules the patient out|NegationEvidence|pre
+N0000392|rules the patient out for|noun|count(thr_sing)|rules the patient out for|rules the patient out for|NegationEvidence|pre
+N0000393|secondary|noun|count(thr_sing)|secondary|secondary|NegationEvidence|termin
+N0000394|secondary to|noun|count(thr_sing)|secondary to|secondary to|NegationEvidence|termin
+N0000395|source for|noun|count(thr_sing)|source for|source for|NegationEvidence|termin
+N0000396|source of|noun|count(thr_sing)|source of|source of|NegationEvidence|termin
+N0000397|sources for|noun|count(thr_sing)|sources for|sources for|NegationEvidence|termin
+N0000398|sources of|noun|count(thr_sing)|sources of|sources of|NegationEvidence|termin
+N0000399|still|noun|count(thr_sing)|still|still|NegationEvidence|termin
+N0000400|stopped|noun|count(thr_sing)|stopped|stopped|NegationEvidence|pre
+N0000400|stoping|noun|count(thr_sing)|stopped|stopped|NegationEvidence|pre
+N0000400|discontinued|noun|count(thr_sing)|stopped|stopped|NegationEvidence|pre
+N0000400|discontinuing|noun|count(thr_sing)|stopped|stopped|NegationEvidence|pre
+N0000401|sufficient to rule her out|noun|count(thr_sing)|sufficient to rule her out|sufficient to rule her out|NegationEvidence|pre
+N0000402|sufficient to rule her out against|noun|count(thr_sing)|sufficient to rule her out against|sufficient to rule her out against|NegationEvidence|pre
+N0000403|sufficient to rule her out for|noun|count(thr_sing)|sufficient to rule her out for|sufficient to rule her out for|NegationEvidence|pre
+N0000404|sufficient to rule him out|noun|count(thr_sing)|sufficient to rule him out|sufficient to rule him out|NegationEvidence|pre
+N0000405|sufficient to rule him out against|noun|count(thr_sing)|sufficient to rule him out against|sufficient to rule him out against|NegationEvidence|pre
+N0000406|sufficient to rule him out for|noun|count(thr_sing)|sufficient to rule him out for|sufficient to rule him out for|NegationEvidence|pre
+N0000407|sufficient to rule out|noun|count(thr_sing)|sufficient to rule out|sufficient to rule out|NegationEvidence|pre
+N0000408|sufficient to rule out against|noun|count(thr_sing)|sufficient to rule out against|sufficient to rule out against|NegationEvidence|pre
+N0000409|sufficient to rule out for|noun|count(thr_sing)|sufficient to rule out for|sufficient to rule out for|NegationEvidence|pre
+N0000410|sufficient to rule the patient out|noun|count(thr_sing)|sufficient to rule the patient out|sufficient to rule the patient out|NegationEvidence|pre
+N0000411|sufficient to rule the patient out against|noun|count(thr_sing)|sufficient to rule the patient out against|sufficient to rule the patient out against|NegationEvidence|pre
+N0000412|sufficient to rule the patient out for|noun|count(thr_sing)|sufficient to rule the patient out for|sufficient to rule the patient out for|NegationEvidence|pre
+N0000413|test for|noun|count(thr_sing)|test for|test for|NegationEvidence|pre
+N0000414|though|noun|count(thr_sing)|though|though|NegationEvidence|termin
+N0000415|to exclude|noun|count(thr_sing)|to exclude|to exclude|NegationEvidence|pre
+N0000416|trigger event for|noun|count(thr_sing)|trigger event for|trigger event for|NegationEvidence|termin
+N0000417|unlikely|noun|count(thr_sing)|unlikely|unlikely|NegationEvidence|post
+N0000418|unlikelyfixthis|noun|count(thr_sing)|unlikelyfixthis|unlikelyfixthis|NegationEvidence|post
+N0000419|unremarkable for|noun|count(thr_sing)|unremarkable for|unremarkable for|NegationEvidence|pre
+N0000420|was negative|noun|count(thr_sing)|was negative|was negative|NegationEvidence|post
+N0000421|was none|noun|count(thr_sing)|was none|was none|NegationEvidence|post
+N0000422|was not|noun|count(thr_sing)|was not|was not|NegationEvidence|pre
+N0000423|was noted to be negative|noun|count(thr_sing)|was noted to be negative|was noted to be negative|NegationEvidence|post
+N0000424|was ruled out|noun|count(thr_sing)|was ruled out|was ruled out|NegationEvidence|post
+N0000425|wasn't|noun|count(thr_sing)|wasn't|wasn't|NegationEvidence|pre
+N0000426|were none|noun|count(thr_sing)|were none|were none|NegationEvidence|post
+N0000427|with no|noun|count(thr_sing)|with no|with no|NegationEvidence|pre
+N0000428|without|noun|count(thr_sing)|without|without|NegationEvidence|pre
+N0000429|without a|noun|count(thr_sing)|without a|without a|NegationEvidence|pre
+N0000430|without an|noun|count(thr_sing)|without an|without an|NegationEvidence|pre
+N0000431|without any|noun|count(thr_sing)|without any|without any|NegationEvidence|pre
+N0000432|without any evidence of|noun|count(thr_sing)|without any evidence of|without any evidence of|NegationEvidence|pre
+N0000433|without audible|noun|count(thr_sing)|without audible|without audible|NegationEvidence|pre
+N0000434|without being|noun|count(thr_sing)|without being|without being|NegationEvidence|pre
+N0000435|without definite|noun|count(thr_sing)|without definite|without definite|NoEvidence|pseudo
+N0000436|without evidence|noun|count(thr_sing)|without evidence|without evidence|NegationEvidence|pre
+N0000437|without evidence of|noun|count(thr_sing)|without evidence of|without evidence of|NegationEvidence|pre
+N0000438|without indication of|noun|count(thr_sing)|without indication of|without indication of|NegationEvidence|pre
+N0000439|without mention of|noun|count(thr_sing)|without mention of|without mention of|NegationEvidence|pre
+N0000440|without much|noun|count(thr_sing)|without much|without much|NegationEvidence|pre
+N0000441|without other|noun|count(thr_sing)|without other|without other|NegationEvidence|pre
+N0000442|without reported|noun|count(thr_sing)|without reported|without reported|NegationEvidence|pre
+N0000443|without sign of|noun|count(thr_sing)|without sign of|without sign of|NegationEvidence|pre
+N0000444|without sign of|noun|count(thr_sing)|without sign of|without sign of|NegationEvidence|pre
+N0000445|without significant|noun|count(thr_sing)|without significant|without significant|NegationEvidence|pre
+N0000446|without signs of|noun|count(thr_sing)|without signs of|without signs of|NegationEvidence|pre
+N0000447|without some|noun|count(thr_sing)|without some|without some|NegationEvidence|pre
+N0000448|without success|noun|count(thr_sing)|without success|without success|NegationEvidence|post
+N0000449|without the|noun|count(thr_sing)|without the|without the|NegationEvidence|pre
+N0000450|without visible|noun|count(thr_sing)|without visible|without visible|NegationEvidence|pre
+N0000451|yet|noun|count(thr_sing)|yet|yet|NegationEvidence|termin
+N0000452|aborting|noun|count(thr_sing)|abort|abort|NegationEvidence|pre
+N0000452|aborted|noun|count(thr_sing)|abort|abort|NegationEvidence|pre
+N0000452|aborted|noun|count(thr_sing)|abort|abort|NegationEvidence|post
+N0000453|deferred|noun|count(thr_sing)|abort|abort|NegationEvidence|post
+N0000453|defer|noun|count(thr_sing)|abort|abort|NegationEvidence|post
+N0000453|deferred|noun|count(thr_sing)|abort|abort|NegationEvidence|pre
+N0000453|defer|noun|count(thr_sing)|abort|abort|NegationEvidence|pre
+N0000454|unable|noun|count(thr_sing)|unable|unable|NegationEvidence|pre
+N0000454|impossible|noun|count(thr_sing)|unable|unable|NegationEvidence|pre
+N0000454|impossible|noun|count(thr_sing)|unable|unable|NegationEvidence|post

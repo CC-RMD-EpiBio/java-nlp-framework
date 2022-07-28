@@ -1,0 +1,126 @@
+#
+# This is a file of decisions to be made about tokenizing
+#  
+#
+
+# -------------------------
+# Numbers
+# -------------------------
+Can you tokenize numbers like 1, 2, 2.1,  0.03 or .31 and distinguish them from things that are not numbers like
+chemicals and proteins and enzymes like 1,4-alpha-Glucan Branching Enzyme.  Gotta worry about commas in numbers
+and periods in numbers and distinguish between 1,000,000 and the European way 1.000.000 of writing numbers.
+
+
+
+# -------------------------
+# Periods 
+# -------------------------
+Periods are tricky because they are at the end of sentences. But they also appear in abbr. and in numbers like 1.2, but also
+they appear as list markers like
+   1.0  item 1.
+   1.1  item 2.
+   1.2  item 3.
+One way to distinguish between ends of sentences and acronyms with periods at the end of is a combination of
+looking for the pattern period space(s) next token with a beginning capitalized word.  That task is helped by
+keeping a list of acronyms with trailing periods.  See (https://137.187.122.94/nlp/framework-legacy/blob/master/00_legacy/01_resources/src/main/resources/resources/vinciNLPFramework/tokenizer/knownAcronyms.txt) 
+
+
+# -------------------------
+# Slashes, dashes, fractions, dates, times
+# keep dates and times as one token
+# -------------------------
+ 11:           Could be the beginning of time 
+ 1/2           fractions
+ 1/2.2         fractions
+ 1.1/2.2       fractions
+ 1.1 / 2.2     fractions
+ 1\2           <--- not sure but would want this to stick together
+ 1-            begin of an equation 
+ 10+           begin of an equation 10+1  | positive 10+
+ 10+1
+ 1(             ?? 
+1)             end of an equation, or it's a list marker
+1[             ??
+0]             end of a reference
+3{             ?? 
+{3}            A reference or less commonly, a list marker 
+9*             part of an equation or list marker
+1/01/29        date
+1.01.29        a date but also an identifier 
+10:10          time
+10:10:10       time
+2019.08.07:10:10:10 date time
+
+# ------------------------------
+# Runs of punctuation 
+#    urls,  chemicals 
+# ------------------------------
+
+# ------------------------------
+# Surrounding punctuation
+#  Single and double quoted tokens should have
+#  the quotes made into separate tokens - That being
+#  said, there are a few terms in English that
+#  include double quotes - The comprimise is that 
+#  these become even more multi-token terms
+# ------------------------------
+(1)
+(see http://some/address)
+'in the black'
+He said "Who am I" 
+"locked-in" syndrome is a thing we'll see in text.
+3'-noncoding region
+[site]
+{site}
+<site>
+
+# ------------------------------
+# Decisions about leading punctuation 
+#  $ + - @, #  as well as the euro sign (not in 7-bit ascii)
+#   Some of these could be list markers
+#  it's usually wise to keep these as part of the token
+# ------------------------------
+$100
++100
+-100
+@call me
+#hastag: politics 
+#1 
+
+# ------------------------------
+# Decisions about trailing punctuation 
+#  %  This is the only one maybe to keep with the rest of the token
+# ------------------------------
+10% 
+
+# ------------------------------
+# Trailing punctuation 
+#  . most of the time split it unless it's part of an acroynm.  
+#  ? ! always make separate token
+#  : split unless part of time or date 
+# ------------------------------
+A.I.D.S.
+End of a sentence.
+End of a sentence?
+End of a sentence!
+Slot:value
+Slot:value
+
+# ------------------------------
+# Slashes and back slashes
+#   You usually want to preserve
+#   runs of punctuation, and, those
+#   runs are within words
+# ------------------------------
+http://some/address
+
+# -----------------------------
+# Trailing morphemes
+# Possessive forms, contractions and primes are examples of where you'd want to keep the tokens together
+# -----------------------------
+we'll
+Parkinson's
+you'd
+alpha'
+Browns' Syndrome
+ain't

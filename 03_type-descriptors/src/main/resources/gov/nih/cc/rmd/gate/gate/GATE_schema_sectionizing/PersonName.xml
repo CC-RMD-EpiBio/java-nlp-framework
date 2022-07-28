@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
+  <!-- XSchema definition for PersonName
+       A PersonName is an entity that includes a person's name, title, rank, role and the like.  Person name is
+       an entity that is related to sectionizing and sentence chunking in that person names could contain commas, 
+       making them look like lists, and periods that could be confused for sentence endings.  Sentences should not
+       break within a person name (or date for that matter).
+   -->
+  <element name="PersonName">
+     
+  </element>
+</schema>

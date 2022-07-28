@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    
+  <name>gov.nih.cc.rmd.framework.Model</name>
+    
+  <version>2019.01.0</version>
+    
+  <imports>
+        
+    <import name="gov.va.vinci.Model"/>
+    <import name="gov.nih.cc.rmd.framework.Sections"/>
+    <import name="gov.nih.cc.rmd.framework.TemporalModel"/>
+    <import name="gov.nih.cc.rmd.framework.Medications"/>
+    <import name="gov.nih.cc.rmd.framework.CancerModel"/>
+    <import name="gov.nih.cc.rmd.framework.Observations"/>
+    <import name="gov.nih.cc.rmd.framework.PersonModel"/>
+    <import name="gov.nih.cc.rmd.framework.ShapesModel"/>
+      
+  </imports>
+    
+  <types>
+        
+    <typeDescription>
+      <name>gov.nih.cc.rmd.model.SectionName</name>
+      <description>This will be a duplicate annotation to the underlying ContentHeading, but it distinguishes this content heading as a sectionName rather than a slot from a slot value. 
+This should have been in the Section.xml but, that file does not inherit the gov.va.chir.model</description>
+      <supertypeName>gov.va.chir.model.ContentHeading</supertypeName>
+    </typeDescription>
+      
+    <typeDescription>
+            
+      <name>gov.nih.cc.rmd.model.SemanticWindow</name>
+            
+      <description>This is an area of text that may span sentences, or phrases that are within the scope of some semantic component.</description>
+            
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+            
+      <features>
+                
+        <featureDescription>
+                    
+          <name>id</name>
+                    
+          <description/>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+              
+      </features>
+          
+    </typeDescription>
+  </types>
+  
+</typeSystemDescription>

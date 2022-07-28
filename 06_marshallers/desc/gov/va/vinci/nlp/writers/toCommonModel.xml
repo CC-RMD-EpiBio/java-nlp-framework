@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ 
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+ <!--  Copyright Notice: ....................................................... -->
+ <!--                                                                            -->
+ <!--   Copyright 2012 United States Department of Veterans Affairs,             -->
+ <!--                  Health Services Research & Development Service            -->
+ <!--                                                                            -->
+ <!--    Licensed under the Apache License, Version 2.0 (the "License");         -->
+ <!--    you may not use this file except in compliance with the License.        -->
+ <!--    You may obtain a copy of the License at                                 -->
+ <!--                                                                            -->
+ <!--        http://www.apache.org/licenses/LICENSE-2.0                          -->
+ <!--                                                                            -->
+ <!--    Unless required by applicable law or agreed to in writing, software     -->
+ <!--    distributed under the License is distributed on an "AS IS" BASIS,       -->
+ <!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+ <!--    See the License for the specific language governing permissions and     -->
+ <!--    limitations under the License.                                          -->
+ <!--                                                                            -->
+ <!--  End Copyright Notice: ................................................... -->
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>gov.va.vinci.nlp.framework.marshallers.commonModel.ToCommonModel</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>toCommonModel</name>
+    <description>A writer that writes out to the common model xml format</description>
+    <version>2012.02</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>outputDir</name>
+        <description>The directory the files should be deposited in.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>outputTypes</name>
+        <description>A list of either fully specified (full namespace) labels copy over.</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>outputDir</name>
+        <value>
+          <string>framework/framework.data/inputAndOutput/output/commonModel</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>outputTypes</name>
+        <value>
+          <array>
+            <string>gov.va.chir.model.CodedEntry</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.chir.Model"/>
+        <import name="gov.va.vinci.Model"/>
+        <import name="org.apache.uima.examples.SourceDocumentInformation"/>
+        <import name="flap.CSITypeDescriptor"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

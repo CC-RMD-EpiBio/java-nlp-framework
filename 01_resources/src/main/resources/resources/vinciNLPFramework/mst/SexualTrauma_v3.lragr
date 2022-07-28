@@ -1,0 +1,146 @@
+# ----------------------------------------------------------
+# SexualTrauma Lexicon_v3.largr
+#     
+#   This table contains terms that are always going to be 
+#   false positives - so they are marked in a similar
+#   fashion to pertanant negatives - they get marked as IGNORE 
+#   for the category of MST
+#     
+#
+#    EUI|MST Term|pos|inflection|baseForm|citationForm|category|sub category
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-28
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+ST_1|assault of a sexual nature|noun|count(thr_sing)|assault of a sexual nature|assault of a sexual nature|SexualTrauma|adult|contact|
+ST_2|coerced sex|noun|count(thr_sing)|coerced sex|coerced sex|SexualTrauma|adult|contact|
+ST_3|fondle|noun|count(thr_sing)|fondle|fondle|SexualTrauma|adult|contact|
+ST_4|fondled|noun|count(thr_sing)|fondled|fondled|SexualTrauma|adult|contact|
+ST_5|fondling|noun|count(thr_sing)|fondling|fondling|SexualTrauma|adult|contact|
+ST_6|forced oral sex|noun|count(thr_sing)|forced oral sex|forced oral sex|SexualTrauma|adult|contact|
+ST_7|forced sex|noun|count(thr_sing)|forced sex|forced sex|SexualTrauma|adult|contact|
+ST_8|gang rape|noun|count(thr_sing)|gang rape|gang rape|SexualTrauma|adult|contact|
+ST_9|grope|noun|count(thr_sing)|grope|grope|SexualTrauma|adult|contact|
+ST_10|groped|noun|count(thr_sing)|groped|groped|SexualTrauma|adult|contact|
+ST_11|groping|noun|count(thr_sing)|groping|groping|SexualTrauma|adult|contact|
+ST_12|hazing|noun|count(thr_sing)|hazing|hazing|SexualTrauma|adult|unknown|
+ST_13|hazing ritual|noun|count(thr_sing)|hazing ritual|hazing ritual|SexualTrauma|adult|unknown|
+ST_15|interpersonal violence|noun|count(thr_sing)|interpersonal violence|interpersonal violence|SexualTrauma|adult|contact|
+ST_16|marital rape|noun|count(thr_sing)|marital rape|marital rape|SexualTrauma|adult|contact|
+ST_17|military sex abuse|noun|count(thr_sing)|military sex abuse|military sex abuse|SexualTrauma|mst|unknown|
+ST_18|military sex assault|noun|count(thr_sing)|military sex assault|military sex assault|SexualTrauma|mst|unknown|
+ST_19|military sex trauma|noun|count(thr_sing)|military sex trauma|military sex trauma|SexualTrauma|mst|unknown|
+ST_20|military sexual abuse|noun|count(thr_sing)|military sexual abuse|military sexual abuse|SexualTrauma|mst|contact|
+ST_21|military sexual assault|noun|count(thr_sing)|military sexual assault|military sexual assault|SexualTrauma|mst|contact|
+ST_22|military sexual trauma|noun|count(thr_sing)|military sexual trauma|military sexual trauma|SexualTrauma|mst|contact|
+ST_23|military sexual violence|noun|count(thr_sing)|military sexual violence|military sexual violence|SexualTrauma|mst|contact|
+ST_24|military verbal abuse|noun|count(thr_sing)|military verbal abuse|military verbal abuse|SexualTrauma|mst|non-contact|
+ST_25|military verbal assault|noun|count(thr_sing)|military verbal assault|military verbal assault|SexualTrauma|mst|non-contact|
+ST_26|molestation|noun|count(thr_sing)|molestation|molestation|SexualTrauma|childhood|contact|
+ST_27|molested|noun|count(thr_sing)|molested|molested|SexualTrauma|childhood|contact|
+ST_28|mst|noun|count(thr_sing)|mst|mst|SexualTrauma|mst|unknown|
+ST_29|MST|noun|count(thr_sing)|adult|MST|SexualTrauma|mst|unknown||
+ST_30|nonconsensual sex|noun|count(thr_sing)|nonconsensual sex|nonconsensual sex|SexualTrauma|adult|contact|
+ST_31|partner violence|noun|count(thr_sing)|partner violence|partner violence|SexualTrauma|adult|contact|
+ST_32|rape|noun|count(thr_sing)|rape|rape|SexualTrauma|adult|contact|
+ST_33|rape survivor|noun|count(thr_sing)|rape survivor|rape survivor|SexualTrauma|adult|contact|
+ST_34|rape threats|noun|count(thr_sing)|rape threats|rape threats|SexualTrauma|adult|non-contact|
+ST_35|rape victim|noun|count(thr_sing)|rape victim|rape victim|SexualTrauma|adult|contact|
+ST_36|raped|noun|count(thr_sing)|raped|raped|SexualTrauma|adult|contact|
+ST_37|sex abuse|noun|count(thr_sing)|sex abuse|sex abuse|SexualTrauma|adult|contact|
+ST_38|sex abuse history|noun|count(thr_sing)|sex abuse history|sex abuse history|SexualTrauma|adult|contact|
+ST_39|sex assault|noun|count(thr_sing)|sex assault|sex assault|SexualTrauma|adult|contact|
+ST_40|sex crime|noun|count(thr_sing)|sex crime|sex crime|SexualTrauma|adult|contact|
+ST_41|sexual abuse|noun|count(thr_sing)|sexual abuse|sexual abuse|SexualTrauma|adult|contact|
+ST_42|sexual advances|noun|count(thr_sing)|sexual advances|sexual advances|SexualTrauma|adult|unknown|
+ST_43|sexual assault|noun|count(thr_sing)|sexual assault|sexual assault|SexualTrauma|adult|contact|
+ST_44|sexual battery|noun|count(thr_sing)|sexual battery|sexual battery|SexualTrauma|adult|contact|
+ST_45|sexual coercion|noun|count(thr_sing)|sexual coercion|sexual coercion|SexualTrauma|adult|contact|
+ST_46|sexual extortion|noun|count(thr_sing)|sexual extortion|sexual extortion|SexualTrauma|adult|contact|
+ST_47|sexual favors|noun|count(thr_sing)|sexual favors|sexual favors|SexualTrauma|adult|unknown|
+ST_48|favors of a sexual nature|noun|count(thr_sing)|favors of a sexual nature|favors of a sexual nature|SexualTrauma|adult|unknown|
+ST_49|harassment of a sexual nature|noun|count(thr_sing)|harassment of a sexual nature|harassment of a sexual nature|SexualTrauma|adult|non-contact|
+ST_50|sexual harassment|noun|count(thr_sing)|sexual harassment|sexual harassment|SexualTrauma|adult|unknown|
+ST_51|sexual intimidation|noun|count(thr_sing)|sexual intimidation|sexual intimidation|SexualTrauma|adult|unknown|
+ST_52|sexual threats|noun|count(thr_sing)|sexual threats|sexual threats|SexualTrauma|adult|non-contact|
+ST_53|sexual trauma|noun|count(thr_sing)|sexual trauma|sexual trauma|SexualTrauma|adult|unknown|
+ST_54|sexual trauma abuse|noun|count(thr_sing)|sexual trauma abuse|sexual trauma abuse|SexualTrauma|adult|contact|
+ST_55|sexual trauma assessment|noun|count(thr_sing)|sexual trauma assessment|sexual trauma assessment|SexualTrauma|adult|unknown|
+ST_56|sexual trauma during military service|noun|count(thr_sing)|sexual trauma during military service|sexual trauma during military service|SexualTrauma|mst|unknown|
+ST_57|sexual violence|noun|count(thr_sing)|sexual violence|sexual violence|SexualTrauma|adult|contact|
+ST_58|sexually abused|noun|count(thr_sing)|sexually abused|sexually abused|SexualTrauma|adult|contact|
+ST_59|sexually assaulted|noun|count(thr_sing)|sexually assaulted|sexually assaulted|SexualTrauma|adult|contact|
+ST_60|sexually coerced|noun|count(thr_sing)|sexually coerced|sexually coerced|SexualTrauma|adult|contact|
+ST_61|sexually extorted|noun|count(thr_sing)|sexually extorted|sexually extorted|SexualTrauma|adult|contact|
+ST_62|sexually harassed|noun|count(thr_sing)|sexually harassed|sexually harassed|SexualTrauma|adult|non-contact|
+ST_63|sexually intimidated|noun|count(thr_sing)|sexually intimidated|sexually intimidated|SexualTrauma|adult|unknown|
+ST_64|sodomized|noun|count(thr_sing)|sodomized|sodomized|SexualTrauma|adult|contact|
+ST_65|sodomy|noun|count(thr_sing)|sodomy|sodomy|SexualTrauma|adult|contact|
+ST_66|survivor of abuse|noun|count(thr_sing)|survivor of abuse|survivor of abuse|SexualTrauma|adult|unknown|
+ST_67|survivor of rape|noun|count(thr_sing)|survivor of rape|survivor of rape|SexualTrauma|adult|contact|
+ST_69|suspected sexual abuse|noun|count(thr_sing)|suspected sexual abuse|suspected sexual abuse|SexualTrauma|adult|contact|
+ST_70|symptoms of abuse|noun|count(thr_sing)|symptoms of abuse|symptoms of abuse|SexualTrauma|adult|unknown|
+ST_71|threat of rape|noun|count(thr_sing)|threat of rape|threat of rape|SexualTrauma|adult|non-contact|
+ST_72|threats of a sexual  nature|noun|count(thr_sing)|threats of a sexual  nature|threats of a sexual  nature|SexualTrauma|adult|non-contact|
+ST_73|unwanted sexual attention|noun|count(thr_sing)|unwanted sexual attention|unwanted sexual attention|SexualTrauma|adult|unknown|
+ST_74|verbal assault|noun|count(thr_sing)|verbal assault|verbal assault|SexualTrauma|adult|non-contact|
+ST_75|verbal attacks|noun|count(thr_sing)|verbal attacks|verbal attacks|SexualTrauma|adult|non-contact|
+ST_76|verbal harassment|noun|count(thr_sing)|verbal harassment|verbal harassment|SexualTrauma|adult|non-contact|
+ST_77|verbal sexual harassment|noun|count(thr_sing)|verbal sexual harassment|verbal sexual harassment|SexualTrauma|adult|non-contact|
+ST_78|verbally assaulted|noun|count(thr_sing)|verbally assaulted|verbally assaulted|SexualTrauma|adult|non-contact|
+ST_79|verbally attacked|noun|count(thr_sing)|verbally attacked|verbally attacked|SexualTrauma|adult|non-contact|
+ST_80|verbally harassed|noun|count(thr_sing)|verbally harassed|verbally harassed|SexualTrauma|adult|non-contact|
+ST_81|victim of abuse |noun|count(thr_sing)|victim of abuse |victim of abuse |SexualTrauma|adult|unknown|
+ST_82|victim of rape|noun|count(thr_sing)|victim of rape|victim of rape|SexualTrauma|adult|contact|
+ST_83|nonconsensual|noun|count(thr_sing)|nonconsensual|nonconsensual|SexualTrauma|adult|unknown|
+ST_84|non military sex abuse|noun|count(thr_sing)|non military sex abuse|non military sex abuse|SexualTrauma|adult|unknown|
+ST_84|non-military sex abuse|noun|count(thr_sing)|non military sex abuse|non military sex abuse|SexualTrauma|adult|unknown|
+ST_84|adult non military sex abuse|noun|count(thr_sing)|non military sex abuse|non military sex abuse|SexualTrauma|adult|unknown|
+ST_84|adult non-military sex abuse|noun|count(thr_sing)|non military sex abuse|non military sex abuse|SexualTrauma|adult|unknown|
+ST_85|non military sex assault|noun|count(thr_sing)|non military sex assault|non military sex assault|SexualTrauma|adult|unknown|
+ST_85|non-military sex assault|noun|count(thr_sing)|non military sex assault|non military sex assault|SexualTrauma|adult|unknown|
+ST_85|adult non military sex assault|noun|count(thr_sing)|non military sex assault|non military sex assault|SexualTrauma|adult|unknown|
+ST_85|adult non-military sex assault|noun|count(thr_sing)|non military sex assault|non military sex assault|SexualTrauma|adult|unknown|
+ST_86|non military sex trauma|noun|count(thr_sing)|non military sex trauma|non military sex trauma|SexualTrauma|adult|unknown|
+ST_86|non-military sex trauma|noun|count(thr_sing)|non military sex trauma|non military sex trauma|SexualTrauma|adult|unknown|
+ST_86|adult non military sex trauma|noun|count(thr_sing)|non military sex trauma|non military sex trauma|SexualTrauma|adult|unknown|
+ST_86|adult non-military sex trauma|noun|count(thr_sing)|non military sex trauma|non military sex trauma|SexualTrauma|adult|unknown|
+ST_87|non military sexual abuse|noun|count(thr_sing)|non military sexual abuse|non military sexual abuse|SexualTrauma|adult|contact|
+ST_87|non-military sexual abuse|noun|count(thr_sing)|non military sexual abuse|non military sexual abuse|SexualTrauma|adult|contact|
+ST_87|adult non military sexual abuse|noun|count(thr_sing)|non military sexual abuse|non military sexual abuse|SexualTrauma|adult|contact|
+ST_87|adult non-military sexual abuse|noun|count(thr_sing)|non military sexual abuse|non military sexual abuse|SexualTrauma|adult|contact|
+ST_88|non military sexual assault|noun|count(thr_sing)|non military sexual assault|non military sexual assault|SexualTrauma|adult|contact|
+ST_88|non-military sexual assault|noun|count(thr_sing)|non military sexual assault|non military sexual assault|SexualTrauma|adult|contact|
+ST_88|adult non military sexual assault|noun|count(thr_sing)|non military sexual assault|non military sexual assault|SexualTrauma|adult|contact|
+ST_88|adult non-military sexual assault|noun|count(thr_sing)|non military sexual assault|non military sexual assault|SexualTrauma|adult|contact|
+ST_89|non military sexual trauma|noun|count(thr_sing)|non military sexual trauma|non military sexual trauma|SexualTrauma|adult|contact|
+ST_89|non-military sexual trauma|noun|count(thr_sing)|non military sexual trauma|non military sexual trauma|SexualTrauma|adult|contact|
+ST_89|adult non military sexual trauma|noun|count(thr_sing)|non military sexual trauma|non military sexual trauma|SexualTrauma|adult|contact|
+ST_89|adult non-military sexual trauma|noun|count(thr_sing)|non military sexual trauma|non military sexual trauma|SexualTrauma|adult|contact|
+ST_90|non military sexual violence|noun|count(thr_sing)|non military sexual violence|non military sexual violence|SexualTrauma|adult|contact|
+ST_90|non-military sexual violence|noun|count(thr_sing)|non military sexual violence|non military sexual violence|SexualTrauma|adult|contact|
+ST_90|adult non military sexual violence|noun|count(thr_sing)|non military sexual violence|non military sexual violence|SexualTrauma|adult|contact|
+ST_90|adult non-military sexual violence|noun|count(thr_sing)|non military sexual violence|non military sexual violence|SexualTrauma|adult|contact|
+ST_92|military sexual trauma (MST) coordinator|noun|count(thr_sing)|x|x|SexualTrauma|mst|unknown|
+ST_92|military sexual trauma coordinator|noun|count(thr_sing)|x|x|SexualTrauma|mst|unknown|
+ST_93|sexual trauma counceling|noun|count(thr_sing)|x|x|SexualTrauma|mst|unknown|
+ST_94|mst services|noun|count(thr_sing)|x|x|SexualTrauma|mst|unknown|
+ST_95|childhood sexual trauma|noun|count(thr_sing)|x|x|SexualTrauma|childhood|unknown|
+ST_96|childhood|noun|count(thr_sing)|x|x|SexualTraumaEvidence|childhood|unknown|
+ST_96|child|noun|count(thr_sing)|x|x|SexualTraumaEvidence|childhood|unknown|

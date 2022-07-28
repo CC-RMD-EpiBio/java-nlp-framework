@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  
+  <name>gov.va.vinci.model.Shapes</name>
+  <description>Defines Labels that are not dictionary lookup entities.  These are things that are found by regular expression like email, urls, dates, times ....</description>
+  <version>2019.01.0</version>
+
+  <imports>
+    <import name="gov.va.vinci.ConceptModel"/>
+    <import name="gov.va.chir.Model"/>
+  </imports>
+  
+  <types>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Shape</name>
+      <description>A shape is a super class for non-dictionary lookup entities of interest.</description>
+      <supertypeName>gov.va.chir.model.LexicalElement</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Email</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.DateTime</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Date</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.DateTime</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Time</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.DateTime</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.URL</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.PhoneNumber</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Fax</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.UnitOfMeasure</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Location</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Address</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+
+      <features>
+
+        <featureDescription>
+          <name>streetName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>city</name>
+          <description/>
+          <rangeTypeName>gov.nih.cc.rmd.framework.model.City</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>state</name>
+          <description/>
+          <rangeTypeName>gov.nih.cc.rmd.framework.model.State</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>zipcode</name>
+          <description/>
+          <rangeTypeName>gov.nih.cc.rmd.framework.model.Zipcode</rangeTypeName>
+        </featureDescription>
+        
+        <featureDescription>
+          <name>addressLine2</name>
+          <description>Additional information to specify a location, like apt no, suite, floor, building no,</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+                                        
+        <featureDescription>
+          <name>streetNumber</name>
+          <description>while it's a number, the number could contain letters and strings like 9 1/2   or spelled out.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      
+      </features>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Street</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.City</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.State</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Country</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Zipcode</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Location</supertypeName>
+    </typeDescription>
+                    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.SocialMediaHandle</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Identifier</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.SSN</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Identifier</supertypeName>
+    </typeDescription>
+                  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.Number</name>
+      <description>This is a shape to cover intengers, real, fraction numbers, numbers with (american style) commas .</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.PotentialNumber</name>
+      <description>This is a shape to cover intengers, real, fraction numbers, numbers with (american style) commas .</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+                  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.NumberRange</name>
+      <description>This is a range that includes two numbers</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+  
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.AddressEvidence</name>
+      <description>Machine annotated Address Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+  
+  
+   <typeDescription>
+      <name>gov.nih.cc.rmd.framework.SalutationEvidence</name>
+      <description>Machine annotated Salutation Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+  
+  
+ 
+  
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.InstitutionEvidence</name>
+      <description>Machine annotated Institution Evidence</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Annotation</supertypeName>
+    </typeDescription>
+    
+    
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.PageNumber</name>
+      <description>Page Number</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+  
+  
+  </types>
+        
+
+
+
+</typeSystemDescription>

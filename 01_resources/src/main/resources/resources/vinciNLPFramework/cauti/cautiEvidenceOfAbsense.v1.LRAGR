@@ -1,0 +1,38 @@
+# ----------------------------------------------------------
+# Evidence of Absense Lexicon for CAUTI project
+#
+#   This table contains terms that are direct evidence 
+#   of the absense (or negation) of something else.
+#   For instance, when mention of bathroom privileges is
+#   seen, that is direct evidence of the absense of
+#   a foley catether (Device_Mentions).
+#
+#   This lexicon provides the terminology for the
+#   identification of the evidence of absense, and
+#   the categorization of what the absense or negation
+#   is focusing on.
+#
+#   This file contains an extra categorization field from other lexicons to hold the negated categorization label type.
+#
+#    EUI|term|pos|inflection|baseForm|citationForm|category|negatedCategory
+#
+U0500|bathroom privileges|noun|count(thr_sing)|bathroom privileges|bathroom privileges|Evidence_of_Absence|Device_Mentions
+U0500|brp|noun|count(thr_sing)|bathroom privileges|bathroom privileges|Evidence_of_Absence|Device_Mentions
+U0500|brp-denied problems|noun|count(thr_sing)|bathroom privileges|bathroom privileges|Evidence_of_Absence|Device_Mentions
+U0501|voided x2|noun|count(thr_sing)|voided x2|voided x2|Evidence_of_Absence|Device_Mentions
+U0501|voided x3|noun|count(thr_sing)|voided x2|voided x2|Evidence_of_Absence|Device_Mentions
+U0501|normal voiding|noun|count(thr_sing)|voided x2|voided x2|Evidence_of_Absence|Cath_Maintenance|
+U0504|urinal at bedside|noun|count(thr_sing)|urinal at bedside|urinal at bedside|Evidence_of_Absence|Device_Mentions
+U0504|per urinal|noun|count(thr_sing)|urinal at bedside|urinal at bedside|Evidence_of_Absence|Device_Mentions
+U0507|urinal|noun|count(thr_sing)|urinal|urinal|Evidence_of_Absence|Device_Mentions
+U0501|normal voiding|noun|count(thr_sing)|voided x2|voided x2|Evidence_of_Absence|Cath_Maintenance 
+U0512|bladder elimination|noun|count(thr_sing)|bladder elimination|bladder elimination|Evidence_of_Absence|Device_Mentions
+U0513|frequency of urination|noun|count(thr_sing)|frequency of urination|frequency of urination|Evidence_of_Absence|Device_Mentions
+U0514|burning on urination|noun|count(thr_sing)|burning on urination|burning on urination|Evidence_of_Absence|Device_Mentions
+U0515|decreased urination|noun|count(thr_sing)|decreased urination|decreased urination|Evidence_of_Absence|Device_Mentions
+U0516|bedpan|noun|count(thr_sing)|bedpan|bedpan|Evidence_of_Absence|Device_Mentions
+U0516|bed pan|noun|count(thr_sing)|bedpan|bedpan|Evidence_of_Absence|Device_Mentions
+U0517|camode|noun|count(thr_sing)|cammode|cammode|Evidence_of_Absence|Device_Mentions
+U0517|bedside camode|noun|count(thr_sing)|cammode|cammode|Evidence_of_Absence|Device_Mentions
+U0517|cammode|noun|count(thr_sing)|camode|cammode|Evidence_of_Absence|Device_Mentions
+U0517|bedside cammode|noun|count(thr_sing)|cammode|cammode|Evidence_of_Absence|Device_Mentions

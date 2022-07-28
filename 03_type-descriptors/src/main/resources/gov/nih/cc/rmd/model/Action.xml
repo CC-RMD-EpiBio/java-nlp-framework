@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.nih.cc.rmd.model.Action</name>
+  <description>Mobility Actions</description>
+  <version>2019.04.0</version>
+  <vendor/>
+   <imports>
+    <import name="gov.va.vinci.Model"/>
+    <import name="gov.nih.cc.rmd.model.Assistance"/> 
+    <import name="gov.nih.cc.rmd.model.Quantification"/> 
+    
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.model.Action</name>
+      <description>Mobility Action</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>subdomainCode</name>
+          <description>Subdomain Code: the 3-digit code from the Mobility subdomain of the ICF ( d410 (changing body position), d450 (walking) )</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>polarity</name>
+          <description>Polarity: an indication of the subject's ability to complete the activity (Able, Unable, and Unclear).</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>otherEvidence</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.model.ActionPolarity</name>
+      <description>This covers actions with polarity that is unknown</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.model.ActionPolarityAble</name>
+      <description>Covers actions that are of polarity "able"  or "1"</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.model.ActionPolarityUnable</name>
+      <description>this captures actions with polarity "unable" or "-1"</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

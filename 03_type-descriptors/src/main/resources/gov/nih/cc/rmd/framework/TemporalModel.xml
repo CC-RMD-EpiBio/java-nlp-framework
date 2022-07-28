@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.va.vinci.model.Temporal</name>
+  <description>Labels specific to Temporal entities.  This mirrors TIME-ML and timeX labels.</description>
+  <version>2019.01.0</version>
+  <imports>
+    <import name="gov.nih.cc.rmd.framework.ShapesModel"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.AbsoluteDate</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Date</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.AbsoluteTime</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Time</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.RelativeDate</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Date</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.RelativeTime</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Time</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.Duration</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.DateTime</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.Signal</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.DateTime</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.Set</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.DateTime</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.Event</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.temporal.OtherTemporalEntity</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.model.ReferenceDate</name>
+      <description>The reference date for the document</description>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Date</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.va.vinci.model.temporal.CollectionDate</name>
+      <description>The date a specimen was collected.</description>
+      <supertypeName>gov.va.vinci.model.temporal.AbsoluteDate</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.va.vinci.model.temporal.EventDate</name>
+      <description>This is the date that something happened - be it a test or procedure.</description>
+      <supertypeName>gov.va.vinci.model.temporal.AbsoluteDate</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

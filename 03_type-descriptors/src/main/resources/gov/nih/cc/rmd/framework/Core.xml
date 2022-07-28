@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.nih.cc.rmd.framework.Core</name>
+  <version>2019.01.0</version>
+  <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Annotation</name>
+      <description>A generic annotation with default attributes in it</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>id</name>
+          <description>An Identifier of who/what made this annoation.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>assertionStatus</name>
+          <description>Assertion status - asserted|negated|conditional|hypothetical|notThePatient|historical</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>fromSection</name>
+          <description>What section (type) did this come from?  If we had better readers and writers this would be a pointer to the sectionZone, but making pointers to other annotatons turns out to be problematic with uima persistance (xmi) output.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

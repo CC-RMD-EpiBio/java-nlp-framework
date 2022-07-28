@@ -1,0 +1,112 @@
+<!--
+  ---------------------------------------------------------------------------
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<?xml version="1.0" encoding="UTF-8"?><analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>gov.va.vinci.nlp.framework.marshallers.knowtator.ToKnowtator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>knowtator Annotator</name>
+    <description>A UIMA Aggregate runs the to knowtator writer</description>
+    <version>2012.01</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>outputTypes</name>
+        <description>a list of UIMA label|Knowtator Label 
+
+If not filled out, all the UIMA labels are printed out.</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>eHostWorkspaceName</name>
+        <description>The name of the eHost Workspace.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>eHostProject</name>
+        <description>The name of the eHost project.</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>outputDir</name>
+        <description>The ouput directory to deposit the knowtator files</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>annotator</name>
+        <description>The name of the pipeline or human who created all these annotations. </description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>outputTypes</name>
+        <value>
+          <array/>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>outputDir</name>
+        <value>
+          <string>/utah/derma/data</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>annotator</name>
+        <value>
+          <string>v3NLP</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+        <import name="org.apache.uima.examples.SourceDocumentInformation"/>
+        <import name="gov.va.vinci.flap.types.CSITypeDescriptor"/>
+      </imports>
+    </typeSystemDescription>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>false</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

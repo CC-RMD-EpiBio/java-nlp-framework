@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>gov.nih.cc.rmd.framework.Cancer</name>
+    <description>Contains labels specific to cancer tasks</description>
+    <version>2019.01.0</version>
+  <imports>
+    <import name="gov.va.vinci.ClinicalConcepts"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.framework.CancerStage</name>
+      <description>Describes the cancer staging</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>cancerType</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>location</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>tumor</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>node</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>metastasis</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>grade</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Diagnosis</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Condition</name>
+      <description>Conditions == snomed findings? observable entities?</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.TumorType</name>
+      <description>Tumor type is akin to a clinical diagnosis for a kind of cancer.</description>
+      <supertypeName>gov.nih.cc.rmd.framework.Diagnosis</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.framework.Procedure</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    <features>
+        <featureDescription>
+          <name>diagnosis</name>
+          <description>The stated diagnosis for doing the procedure.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

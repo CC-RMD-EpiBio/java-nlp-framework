@@ -1,0 +1,571 @@
+# =========================================================================
+#
+# Summary:
+#  cautiLexicon.v1.lragr Lexicon came from a review of terms needed for the
+#  CAUTI project.  
+#
+# Description of Fields:
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category
+#
+#
+# Created :2014-03-09_17_50_22
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+U0001|catheter change|noun|count(thr_sing)|catheter change|catheter change|Cath_Change|
+U0001|cath change|noun|count(thr_sing)|catheter change|catheter change|Cath_Change|
+U0002|change out suprapubic cath|noun|count(thr_sing)|change out suprapubic cath|change out suprapubic cath|Cath_Change|
+U0003|changed patient's s/p cath|noun|count(thr_sing)|changed patient's s/p cath|changed patient's s/p cath|Cath_Change|
+U0004|cic|noun|count(thr_sing)|cic|cic|Cath_Change|
+U0005|foley cath replaced|noun|count(thr_sing)|foley cath replaced|foley cath replaced|Cath_Change|
+U0005|catheter was replaced|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Change|
+U0005|replaced catheter|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Change|
+U0005|replaced cath|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Change|
+U0006|foley catheter replaced|noun|count(thr_sing)|foley catheter replaced|foley catheter replaced|Cath_Change|
+U0006|foley cath replaced|noun|count(thr_sing)|foley catheter replaced|foley catheter replaced|Cath_Change|
+U0007|foley catheter was replaced|noun|count(thr_sing)|foley catheter replaced|foley catheter replaced|Cath_Change|
+U0007|foley cath was replaced|noun|count(thr_sing)|foley catheter replaced|foley catheter replaced|Cath_Change|
+U0008|foley change|noun|count(thr_sing)|foley change|foley change|Cath_Change|
+U0008|change foley|noun|count(thr_sing)|foley change|foley change|Cath_Change|
+U0008|changed foley|noun|count(thr_sing)|foley change|foley change|Cath_Change|
+U0009|foley replaced|noun|count(thr_sing)|foley replaced|foley replaced|Cath_Change|
+U0009|replaced foley|noun|count(thr_sing)|foley replaced|foley replaced|Cath_Change|
+U00010|for spt change|noun|count(thr_sing)|for spt change|for spt change|Cath_Change|
+U00011|replace foley|noun|count(thr_sing)|replace foley|replace foley|Cath_Change|
+U00012|replace the suprapubic tube|noun|count(thr_sing)|replace the suprapubic tube|replace the suprapubic tube|Cath_Change|
+U00013|replaced the suprapubic tube|noun|count(thr_sing)|replaced the suprapubic tube|replaced the suprapubic tube|Cath_Change|
+U00014|replacement of suprapubic tube|noun|count(thr_sing)|replacement of suprapubic tube|replacement of suprapubic tube|Cath_Change|
+U00015|replacement of the sp tube|noun|count(thr_sing)|replacement of the sp tube|replacement of the sp tube|Cath_Change|
+U00016|s/p tb replacement|noun|count(thr_sing)|s/p tb replacement|s/p tb replacement|Cath_Change|
+U00017|sp tube was replaced|noun|count(thr_sing)|sp tube was replaced|sp tube was replaced|Cath_Change|
+U00018|spt change|noun|count(thr_sing)|spt change|spt change|Cath_Change|
+U00019|spt replacement|noun|count(thr_sing)|spt replacement|spt replacement|Cath_Change|
+U00020|suprapubic cath changed|noun|count(thr_sing)|suprapubic cath changed|suprapubic cath changed|Cath_Change|
+U00021|suprapubic cath was changed|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|cath was changed|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|changing cath|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|changing catheter|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|change cath|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|change catheter|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|foley cath was changed|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|suprapubic catheter was changed|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replaced suprapubic catheter|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replaced suprapubic cath|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replace suprapubic catheter|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replace suprapubic cath|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replacing suprapubic catheter|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00021|replacing suprapubic cath|noun|count(thr_sing)|suprapubic cath was changed|suprapubic cath was changed|Cath_Change|
+U00022|will change his foley|noun|count(thr_sing)|will change his foley|will change his foley|Cath_Change|
+U00023|will change out suprapubic cath|noun|count(thr_sing)|will change out suprapubic cath|will change out suprapubic cath|Cath_Change|
+U00024|#16 foley inserted|noun|count(thr_sing)|#16 foley inserted|#16 foley inserted|Cath_Insertion|
+U00025|18-french foley catheter was brought in|noun|count(thr_sing)|18-french foley catheter was brought in|18-french foley catheter was brought in|Cath_Insertion|
+U00026|apply condom catheter|noun|count(thr_sing)|Apply condom catheter|Apply condom catheter|Cath_Insertion|
+U00027|catheter insertion|noun|count(thr_sing)|catheter insertion|catheter insertion|Cath_Insertion|
+U00028|foely placed|noun|count(thr_sing)|foely placed|foely placed|Cath_Insertion|
+U00028|foely was placed|noun|count(thr_sing)|foely placed|foely placed|Cath_Insertion|
+U00029|foley cath inserted|noun|count(thr_sing)|foley cath inserted|foley cath inserted|Cath_Insertion|
+U00030|foley cath inserted|noun|count(thr_sing)|foley cath inserted|foley cath inserted|Cath_Insertion|
+U00030|foley cath was inserted|noun|count(thr_sing)|foley cath inserted|foley cath inserted|Cath_Insertion|
+U00031|foley cath placed|noun|count(thr_sing)|foley cath placed|foley cath placed|Cath_Insertion|
+U00031|foley cath was placed|noun|count(thr_sing)|foley cath placed|foley cath placed|Cath_Insertion|
+U00032|foley cath secured|noun|count(thr_sing)|foley cath secured|foley cath secured|Cath_Insertion|
+U00033|foley cath secured|noun|count(thr_sing)|foley cath secured|foley cath secured|Cath_Insertion|
+U00033|foley cath was secured|noun|count(thr_sing)|foley cath secured|foley cath secured|Cath_Insertion|
+U00034|foley cath to be inserted|noun|count(thr_sing)|foley cath to be inserted|foley cath to be inserted|Cath_Insertion|
+U00035|foley catheter inserted|noun|count(thr_sing)|foley catheter inserted|foley catheter inserted|Cath_Insertion|
+U00036|foley catheter inserted|noun|count(thr_sing)|foley catheter inserted|foley catheter inserted|Cath_Insertion|
+U00037|foley catheter inserted|noun|count(thr_sing)|foley catheter inserted|foley catheter inserted|Cath_Insertion|
+U00038|foley catheter insertion|noun|count(thr_sing)|foley catheter insertion|foley catheter insertion|Cath_Insertion|
+U00039|foley catheter kit used|noun|count(thr_sing)|foley catheter kit used|foley catheter kit used|Cath_Insertion|
+U00040|foley catheter placed|noun|count(thr_sing)|foley catheter placed|foley catheter placed|Cath_Insertion|
+U00041|foley catheter placed|noun|count(thr_sing)|foley catheter placed|foley catheter placed|Cath_Insertion|
+U00042|foley catheter secured|noun|count(thr_sing)|foley catheter secured|foley catheter secured|Cath_Insertion|
+U00042|foley catheter was secured|noun|count(thr_sing)|foley catheter secured|foley catheter secured|Cath_Insertion|
+U00043|foley catheter was placed|noun|count(thr_sing)|foley catheter was placed|foley catheter was placed|Cath_Insertion|
+U00043|catheter was placed|noun|count(thr_sing)|foley catheter was placed|foley catheter was placed|Cath_Insertion|
+U00043|catheter placed|noun|count(thr_sing)|foley catheter was placed|foley catheter was placed|Cath_Insertion|
+U00043|placement of the catheter|noun|count(thr_sing)|foley catheter was placed|foley catheter was placed|Cath_Insertion|
+U00043|placement of catheter|noun|count(thr_sing)|foley catheter was placed|foley catheter was placed|Cath_Insertion|
+U00401|urinary catheter was placed|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00401|urinary catheter placed|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00401|place urinary catheter|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00401|place the urinary catheter|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00401|placed urinary catheter|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00401|place urinary catheter|noun|count(thr_sing)|urinary catheter was placed|urinary catheter was placed|Cath_Insertion|
+U00044|foley inserted|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00045|foley insertion|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00412|traumatic foley insertion|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00412|traumatic catheter insertion|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00045|inserted foley|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00045|insert foley|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00045|inserting foley|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00045|inserts foley|noun|count(thr_sing)|foley inserted|foley inserted|Cath_Insertion|
+U00046|placed foley|noun|count(thr_sing)|foley placed|foley placed|Cath_Insertion|
+U00046|placing foley|noun|count(thr_sing)|foley placed|foley placed|Cath_Insertion|
+U00046|placed foley|noun|count(thr_sing)|foley placed|foley placed|Cath_Insertion|
+U00046|placed the foley|noun|count(thr_sing)|foley placed|foley placed|Cath_Insertion|
+U00046|foley placed|noun|count(thr_sing)|foley placed|foley placed|Cath_Insertion|
+U00046|foley placement|noun|count(thr_sing)|foley placement|foley placement|Cath_Insertion|
+U00046|placement of foley|noun|count(thr_sing)|foley placement|foley placement|Cath_Insertion|
+U00048|foley was done by the nurse|noun|count(thr_sing)|foley was done by the nurse|foley was done by the nurse|Cath_Insertion|
+U00049|foley was placed|noun|count(thr_sing)|foley was placed|foley was placed|Cath_Insertion|
+U00050|placed a 22-french foley catheter|noun|count(thr_sing)|placed a 22-french foley catheter|placed a 22-french foley catheter|Cath_Insertion|
+U00051|placed a 24-french three-way catheter|noun|count(thr_sing)|placed a 24-french three-way catheter|placed a 24-french three-way catheter|Cath_Insertion|
+U00052|placed the new foley catheter|noun|count(thr_sing)|placed the new foley catheter|placed the new foley catheter|Cath_Insertion|
+#U00053|placement|noun|count(thr_sing)|placement|placement|Cath_Insertion|
+U00054|placement of foley catheter|noun|count(thr_sing)|placement of foley catheter|placement of foley catheter|Cath_Insertion|
+U00055|placement of sp tube|noun|count(thr_sing)|placement of sp tube|placement of sp tube|Cath_Insertion|
+U00056|placement of suprapubic catheter|noun|count(thr_sing)|placement of suprapubic catheter|placement of suprapubic catheter|Cath_Insertion|
+U00057|placement of suprapubic tube|noun|count(thr_sing)|placement of suprapubic tube|placement of suprapubic tube|Cath_Insertion|
+U00058|placement sp tube|noun|count(thr_sing)|placement sp tube|placement sp tube|Cath_Insertion|
+U00059|placement suprapubic tube|noun|count(thr_sing)|placement suprapubic tube|placement suprapubic tube|Cath_Insertion|
+U00060|placing suprapubic tube|noun|count(thr_sing)|placing suprapubic tube|placing suprapubic tube|Cath_Insertion|
+U00061|sp catheter placement|noun|count(thr_sing)|sp catheter placement|sp catheter placement|Cath_Insertion|
+U00062|sp tube placement|noun|count(thr_sing)|sp tube placement|sp tube placement|Cath_Insertion|
+U00063|spt placement|noun|count(thr_sing)|spt placement|spt placement|Cath_Insertion|
+U00064|suprapubic catheter placement|noun|count(thr_sing)|suprapubic catheter placement|suprapubic catheter placement|Cath_Insertion|
+U00065|suprapubic tube placement|noun|count(thr_sing)|suprapubic tube placement|suprapubic tube placement|Cath_Insertion|
+U00066|suprapubic tube was placed|noun|count(thr_sing)|suprapubic tube was placed|suprapubic tube was placed|Cath_Insertion|
+U00067|suprapubic tube was then placed|noun|count(thr_sing)|suprapubic tube was then placed|suprapubic tube was then placed|Cath_Insertion|
+U00068|will place foley|noun|count(thr_sing)|will place foley|will place foley|Cath_Insertion|
+U00070|care performed this shift: foley care|noun|count(thr_sing)|care performed this shift: foley care|Care performed this shift: foley care|Cath_Maintenance|
+U00071|catherization|noun|count(thr_sing)|catherization|catherization|Cath_Maintenance|
+U00072|catheterize|noun|count(thr_sing)|catheterize|catheterize|Cath_Maintenance|
+U00073|catheterized|noun|count(thr_sing)|catheterized|catheterized|Cath_Maintenance|
+U00074|condom catheter drainage|noun|count(thr_sing)|condom catheter drainage|condom catheter drainage|Cath_Maintenance|
+U00075|continue foley|noun|count(thr_sing)|continue foley|continue foley|Cath_Maintenance|
+U00076|continued urinary catheterization|noun|count(thr_sing)|continued urinary catheterization|continued urinary catheterization|Cath_Maintenance|
+U00077|foley care|noun|count(thr_sing)|Foley care|Foley care|Cath_Maintenance|
+U00078|foley care done|noun|count(thr_sing)|foley care done|foley care done|Cath_Maintenance|
+U00079|foley cath care|noun|count(thr_sing)|foley cath care|foley cath care|Cath_Maintenance|
+U00080|foley cath care done|noun|count(thr_sing)|foley cath care done|foley cath care done|Cath_Maintenance|
+U00081|foley cath collecting|noun|count(thr_sing)|foley cath collecting|foley cath collecting|Cath_Maintenance|
+U00082|foley cath daily care|noun|count(thr_sing)|foley cath daily care|foley cath daily care|Cath_Maintenance|
+U00083|foley cath drainage|noun|count(thr_sing)|foley cath drainage|foley cath drainage|Cath_Maintenance|
+U00084|foley cath draining|noun|count(thr_sing)|foley cath draining|foley cath draining|Cath_Maintenance|
+U00085|foley cath irrigated|noun|count(thr_sing)|foley cath irrigated|foley cath irrigated|Cath_Maintenance|
+U00086|foley cath irrigation|noun|count(thr_sing)|foley cath irrigation|foley cath irrigation|Cath_Maintenance|
+U00087|foley cath is patent|noun|count(thr_sing)|foley cath is patent|foley cath is patent|Cath_Maintenance|
+U00088|foley cath patent|noun|count(thr_sing)|foley cath patent|foley cath patent|Cath_Maintenance|
+U00089|foley cath shift care|noun|count(thr_sing)|foley cath shift care|foley cath shift care|Cath_Maintenance|
+U00090|foley cath with output|noun|count(thr_sing)|foley cath with output|foley cath with output|Cath_Maintenance|
+U00091|foley catheter care|noun|count(thr_sing)|foley catheter care done|foley catheter care done|Cath_Maintenance|
+U00091|foley catheter care done|noun|count(thr_sing)|foley catheter care done|foley catheter care done|Cath_Maintenance|
+U00091|catheter care|noun|count(thr_sing)|foley catheter care done|foley catheter care done|Cath_Maintenance|
+U00092|foley catheter collecting|noun|count(thr_sing)|foley catheter collecting|foley catheter collecting|Cath_Maintenance|
+U00093|foley catheter daily care|noun|count(thr_sing)|foley catheter daily care|foley catheter daily care|Cath_Maintenance|
+U00094|foley catheter draining|noun|count(thr_sing)|foley catheter draining|foley catheter draining|Cath_Maintenance|
+U00095|foley catheter patent|noun|count(thr_sing)|foley catheter patent|foley catheter patent|Cath_Maintenance|
+U00096|foley catheter present|noun|count(thr_sing)|foley catheter present|foley catheter present|Cath_Maintenance|
+U00097|foley catheter shift care|noun|count(thr_sing)|foley catheter shift care|foley catheter shift care|Cath_Maintenance|
+U00098|foley collecting|noun|count(thr_sing)|foley collecting|foley collecting|Cath_Maintenance|
+U00099|foley daily care|noun|count(thr_sing)|foley daily care|foley daily care|Cath_Maintenance|
+U000100|foley drainage|noun|count(thr_sing)|foley drainage|foley drainage|Cath_Maintenance|
+U000101|foley drained|noun|count(thr_sing)|foley drained|foley drained|Cath_Maintenance|
+U000102|foley draing|noun|count(thr_sing)|foley draing|foley draing|Cath_Maintenance|
+U000103|foley draining|noun|count(thr_sing)|foley draining|foley draining|Cath_Maintenance|
+U000104|foley intact|noun|count(thr_sing)|foley intact|foley intact|Cath_Maintenance|
+U000105|foley is patent|noun|count(thr_sing)|foley is patent|foley is patent|Cath_Maintenance|
+U000106|foley no drainage|noun|count(thr_sing)|foley no drainage|foley no drainage|Cath_Maintenance|
+U000107|foley output|noun|count(thr_sing)|foley output|foley output|Cath_Maintenance|
+U000108|foley patent|noun|count(thr_sing)|foley patent|foley patent|Cath_Maintenance|
+U000109|foley secured|noun|count(thr_sing)|foley secured|foley secured|Cath_Maintenance|
+U000110|foley shift care|noun|count(thr_sing)|foley shift care|foley shift care|Cath_Maintenance|
+U000111|foley with amber urine|noun|count(thr_sing)|foley with amber urine|foley with amber urine|Cath_Maintenance|
+U000112|foley with clear yellow urine|noun|count(thr_sing)|foley with clear yellow urine|foley with clear yellow urine|Cath_Maintenance|
+U000113|foley with CYU|noun|count(thr_sing)|foley with CYU|foley with CYU|Cath_Maintenance|
+U000114|foley with dark urine|noun|count(thr_sing)|foley with dark urine|foley with dark urine|Cath_Maintenance|
+U000115|foley with output|noun|count(thr_sing)|foley with output|foley with output|Cath_Maintenance|
+U000116|INDWELLING URINARY CATHETER IN PLACE|noun|count(thr_sing)|INDWELLING URINARY CATHETER IN PLACE|INDWELLING URINARY CATHETER IN PLACE|Cath_Maintenance|
+U000091|foley maintenance|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|cath maintenance|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|suprapubic cath maintenance|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|suprapubic cath maintenance includes flushing tid and change|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|suprapubic cath maintenance includes flushing bid and change|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|suprapubic cath maintenance includes flushing qid and change|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000091|suprapubic cath maintenance includes flushing qd and change|noun|count(thr_sing)|cath maintenance|cath maintenance|Cath_Maintenance|
+U000117|malodorous|noun|count(thr_sing)|malodorous|malodorous|Cath_Symptom
+U000118|uses a condom catheter|noun|count(thr_sing)|uses a condom catheter|uses a condom catheter|Cath_Maintenance|
+U000119|via foley|noun|count(thr_sing)|via foley|via foley|Cath_Maintenance|
+U000120|via foley cath|noun|count(thr_sing)|via foley cath|via foley cath|Cath_Maintenance|
+U000121|via foley catheter|noun|count(thr_sing)|via foley catheter|via foley catheter|Cath_Maintenance|
+U000122|via the foley|noun|count(thr_sing)|via the foley|via the foley|Cath_Maintenance|
+U000123|via the foley cath|noun|count(thr_sing)|via the foley cath|via the foley cath|Cath_Maintenance|
+U000124|via the foley cath|noun|count(thr_sing)|via the foley cath|via the foley cath|Cath_Maintenance|
+U000125|via the foley catheter|noun|count(thr_sing)|via the foley catheter|via the foley catheter|Cath_Maintenance|
+U000126|via the foley catheter|noun|count(thr_sing)|via the foley catheter|via the foley catheter|Cath_Maintenance|
+U000127|voided \d{2}cc via foley|noun|count(thr_sing)|voided \d{2}cc via foley|voided \d{2}cc via foley|Cath_Maintenance|
+U000128|voided \d{3}cc via foley|noun|count(thr_sing)|voided \d{3}cc via foley|voided \d{3}cc via foley|Cath_Maintenance|
+U000129|voided \d{4}cc via foley|noun|count(thr_sing)|voided \d{4}cc via foley|voided \d{4}cc via foley|Cath_Maintenance|
+U000400|flush the catheter|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|flushing the catheter|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|flush catheter|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|flushed catheter|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|flushing catheter|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|catheter flush|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000400|catheter flushed|noun|count(thr_sing)|flush the catheter|flush the catheter|Cath_Maintenance|
+U000414|flush foley|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flush foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flush the foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushed the foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushed foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing the foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing of the foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing of foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing of foley|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing foley catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing the urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushing urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flush the urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flush urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushed the urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000414|flushed urinary catheter|noun|count(thr_sing)|flush foley catheter|flush foley catheter|Cath_Maintenance|
+U000130|can d/c foley|noun|count(thr_sing)|can d/c foley|can d/c foley|Cath_Removal|
+U000131|can pull foley|noun|count(thr_sing)|can pull foley|can pull foley|Cath_Removal|
+U000132|catheter removal|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000132|catheter removed|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000403|catheter discontinued|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000403|catheter was discontinued|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000403|foley catheter was discontinued|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000403|discontinued catheter|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000403|discontinue catheter|noun|count(thr_sing)|catheter removal|catheter removal|Cath_Removal|
+U000133|catheter was removed|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|removed catheter|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|removed catheters|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|removing catheters|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|removing catheter|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|remove catheters|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000133|remove catheter|noun|count(thr_sing)|catheter was removed|catheter was removed|Cath_Removal|
+U000134|catheters removed|noun|count(thr_sing)|catheters removed|catheters removed|Cath_Removal|
+U000135|d/c foley|noun|count(thr_sing)|d/c foley|d/c foley|Cath_Removal|
+U000136|d/c'd foley|noun|count(thr_sing)|d/c'd foley|d/c'd foley|Cath_Removal|
+U000137|dc foley|noun|count(thr_sing)|dc foley|dc foley|Cath_Removal|
+U000138|foely was removed|noun|count(thr_sing)|foely was removed|foely was removed|Cath_Removal|
+U000139|foley at discharge: discontinued|noun|count(thr_sing)|foley at discharge: discontinued|foley at discharge: discontinued|Cath_Removal|
+U000140|foley cath removal|noun|count(thr_sing)|foley cath removal|foley cath removal|Cath_Removal|
+U000141|foley cath removed|noun|count(thr_sing)|foley cath removed|foley cath removed|Cath_Removal|
+U000142|foley catheter was deflated and removed|noun|count(thr_sing)|foley catheter was deflated and removed|foley catheter was deflated and removed|Cath_Removal|
+U000143|foley catheter was removed|noun|count(thr_sing)|foley catheter was removed|foley catheter was removed|Cath_Removal|
+U000144|foley d/c|noun|count(thr_sing)|foley d/c|foley d/c|Cath_Removal|
+U000145|foley d/c'd|noun|count(thr_sing)|foley d/c'd|foley d/c'd|Cath_Removal|
+U000146|foley dc|noun|count(thr_sing)|foley dc|foley dc|Cath_Removal|
+U000147|foley dc'd|noun|count(thr_sing)|foley dc'd|foley dc'd|Cath_Removal|
+U000148|foley discontinued|noun|count(thr_sing)|foley discontinued|foley discontinued|Cath_Removal|
+U000149|foley removed|noun|count(thr_sing)|foley removed|foley removed|Cath_Removal|
+U000150|foley was recently discontinued|noun|count(thr_sing)|foley was recently discontinued|foley was recently discontinued|Cath_Removal|
+U000151|pulled his suprapubic catheter|noun|count(thr_sing)|pulled his suprapubic catheter|pulled his suprapubic catheter|Cath_Removal|
+U000152|remove foley|noun|count(thr_sing)|remove foley|remove foley|Cath_Removal|
+U000153|remove foley cather|noun|count(thr_sing)|remove foley cather|remove foley cather|Cath_Removal|
+U000154|remove foley catheter|noun|count(thr_sing)|remove foley catheter|remove foley catheter|Cath_Removal|
+U000155|remove the foley catheter|noun|count(thr_sing)|remove the foley catheter|remove the foley catheter|Cath_Removal|
+U000156|RED ROBINSON CATHETER 20FR (RED ROB)|noun|count(thr_sing)|RED ROBINSON CATHETER 20FR (RED ROB)|RED ROBINSON CATHETER 20FR (RED ROB)|Device_Mentions|
+U000157|#14 fr. foley|noun|count(thr_sing)|#14 fr. foley|#14 fr. foley|Device_Mentions|
+U000158|(indwelling cath)|noun|count(thr_sing)|(indwelling cath)|(indwelling cath)|Device_Mentions|
+
+U000159|+catheter|noun|count(thr_sing)|+catheter|+catheter|Device_Mentions|
+U000160|14 fr catheters|noun|count(thr_sing)|14 fr catheters|14 fr catheters|Device_Mentions|
+U000161|14 fr coude catheters|noun|count(thr_sing)|14 fr coude catheters|14 fr coude catheters|Device_Mentions|
+U000162|16 french foley|noun|count(thr_sing)|16 french foley|16 french foley|Device_Mentions|
+U000163|20f cath|noun|count(thr_sing)|20f cath|20f cath|Device_Mentions|
+U000164|24fr tlc|noun|count(thr_sing)|24fr tlc|24fr tlc|Device_Mentions|
+U000165|3-way|noun|count(thr_sing)|3-way|3-way|Device_Mentions|
+U000166|3-way catheter|noun|count(thr_sing)|3-way catheter|3-way catheter|Device_Mentions|
+U000167|3-way foley|noun|count(thr_sing)|3-way foley|3-way foley|Device_Mentions|
+U000168|bladder catheter|noun|count(thr_sing)|bladder catheter|bladder catheter|Device_Mentions|
+U000169|cathater|noun|count(thr_sing)|cathater|cathater|Device_Mentions|
+U000170|cather|noun|count(thr_sing)|cather|cather|Device_Mentions|
+U000171|catheter bladder|noun|count(thr_sing)|catheter bladder|catheter bladder|Device_Mentions|
+U000172|catheter caude 16FR|noun|count(thr_sing)|CATHETER COUDE 16FR|CATHETER COUDE 16FR|Device_Mentions|
+#U000173|catheter|noun|count(thr_sing)|catheter|catheter|Device_Mentions|
+#U000173|catheters|noun|count(thr_sing)|catheter|catheter|Device_Mentions|
+U000174|chronic indwelling|noun|count(thr_sing)|chronic indwelling  foley catheter|chronic indwelling  foley catheter|Device_Mentions|
+U000174|chronic indwelling foley catheter|noun|count(thr_sing)|chronic indwelling  foley catheter|chronic indwelling  foley catheter|Device_Mentions|
+U000175|chronic indwelling * catheter|noun|count(thr_sing)|chronic indwelling * catheter|chronic indwelling * catheter|Device_Mentions|
+U000176|chronic indwelling SP catheter|noun|count(thr_sing)|chronic indwelling SP catheter|chronic indwelling SP catheter|Device_Mentions|
+U000177|chronic indwelling urinary catheter|noun|count(thr_sing)|chronic indwelling urinary catheter|chronic indwelling urinary catheter|Device_Mentions|
+U000404|chronic suprapubic catheter|noun|count(thr_sing)|chronic suprapubic catheter|chronic suprapubic catheter|Device_Mentions|
+U000174|chronic indwelling foley|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic in-dwelling foley|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic indwelling foley catheter|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic in-dwelling foley catheter|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic indwelling foley catheters|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic in-dwelling foley catheters|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic indwelling foley cath|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000174|chronic in-dwelling foley cath|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000414|clogged foley|noun|count(thr_sing)|clogged foley|clogged foley|Device_Mentions|
+U000414|foley logged|noun|count(thr_sing)|clogged foley|clogged foley|Device_Mentions|
+U000178|condom catheter|noun|count(thr_sing)|condom catheter|condom catheter|Device_Mentions|
+U000178|urine/comdom|noun|count(thr_sing)|condom catheter|condom catheter|Device_Mentions|
+U000178|urine/comdom/foley|noun|count(thr_sing)|condom catheter|condom catheter|Device_Mentions|
+U000178|condom cath|noun|count(thr_sing)|condom catheter|condom catheter|Device_Mentions|
+U000179|conveen urisheath|noun|count(thr_sing)|conveen urisheath|conveen urisheath|Device_Mentions|
+U000180|couday|noun|count(thr_sing)|couday|couday|Device_Mentions|
+U000181|couday catheter|noun|count(thr_sing)|couday catheter|couday catheter|Device_Mentions|
+U000182|coudé|noun|count(thr_sing)|coudé|coudé|Device_Mentions|
+U000183|coude cath|noun|count(thr_sing)|coude cath|coude cath|Device_Mentions|
+U000184|coudé catheter|noun|count(thr_sing)|coudé catheter|coudé catheter|Device_Mentions|
+U000185|external sheath cather|noun|count(thr_sing)|EXTERNAL SHEATH CATHER|EXTERNAL SHEATH CATHER|Device_Mentions|
+U000186|external sheath catheter|noun|count(thr_sing)|EXTERNAL SHEATH catheter|EXTERNAL SHEATH catheter|Device_Mentions|
+U000187|external urinary catheter|noun|count(thr_sing)|EXTERNAL URINARY CATHETER|EXTERNAL URINARY CATHETER|Device_Mentions|
+U000188|external/condom catheter|noun|count(thr_sing)|External/Condom Catheter|External/Condom Catheter|Device_Mentions|
+U000189|fdd|noun|count(thr_sing)|fdd|fdd|Device_Mentions|
+U000190|floey|noun|count(thr_sing)|floey|floey|Device_Mentions|
+U000191|fole|noun|count(thr_sing)|fole|fole|Device_Mentions|
+U000192|foley|noun|count(thr_sing)|foley|foley|Device_Mentions|
+U000193|foley #|noun|count(thr_sing)|foley #|foley #|Device_Mentions|
+U000194|foley /d{4}cc|noun|count(thr_sing)|foley /d{4}cc|foley /d{4}cc|Device_Mentions|
+U000195|foley \d{2}cc|noun|count(thr_sing)|foley \d{2}cc|foley \d{2}cc|Device_Mentions|
+U000196|foley \d{2}cc urine|noun|count(thr_sing)|foley \d{2}cc urine|foley \d{2}cc urine|Device_Mentions|
+U000197|foley \d{3}cc|noun|count(thr_sing)|foley \d{3}cc|foley \d{3}cc|Device_Mentions|
+U000198|foley \d{3}cc urine|noun|count(thr_sing)|foley \d{3}cc urine|foley \d{3}cc urine|Device_Mentions|
+U000199|catheter bag|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|urinary bag|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|bag, urinary|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|urine in bag|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|foley bag|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|leg bag|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|tray, catheter, urinary|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000199|16f use catheter|noun|count(thr_sing)|foley bag|foley bag|Device_Mentions|
+U000200|foley cath|noun|count(thr_sing)|foley cath|foley cath|Device_Mentions|
+U000201|foley cath in place|noun|count(thr_sing)|foley cath in place|foley cath in place|Device_Mentions|
+U000202|foley cath in place|noun|count(thr_sing)|foley cath in place|foley cath in place|Device_Mentions|
+U000203|foley cath indwelling|noun|count(thr_sing)|foley cath indwelling|foley cath indwelling|Device_Mentions|
+U000204|foley cath present|noun|count(thr_sing)|foley cath present|foley cath present|Device_Mentions|
+U000205|foley cath present|noun|count(thr_sing)|foley cath present|foley cath present|Device_Mentions|
+U000206|foley cath to gravity|noun|count(thr_sing)|foley cath to gravity|foley cath to gravity|Device_Mentions|
+U000207|foley catheter|noun|count(thr_sing)|foley catheter|foley catheter|Device_Mentions|
+U000207|catheter, foley|noun|count(thr_sing)|foley catheter|foley catheter|Device_Mentions|
+U000207|18f|noun|count(thr_sing)|foley catheter|foley catheter|Device_Mentions|
+U000207|18f use catheter|noun|count(thr_sing)|foley catheter|foley catheter|Device_Mentions|
+U000208|foley catheter in place|noun|count(thr_sing)|foley catheter in place|foley catheter in place|Device_Mentions|
+U000209|foley catheter in place|noun|count(thr_sing)|foley catheter in place|foley catheter in place|Device_Mentions|
+U000210|foley catheter indwelling|noun|count(thr_sing)|foley catheter indwelling|foley catheter indwelling|Device_Mentions|
+U000211|foley catheter intact|noun|count(thr_sing)|foley catheter intact|foley catheter intact|Device_Mentions|
+U000212|foley catheter is patent|noun|count(thr_sing)|foley catheter is patent|foley catheter is patent|Device_Mentions|
+U000213|foley catheter present|noun|count(thr_sing)|foley catheter present|foley catheter present|Device_Mentions|
+U000214|foley catheter to gravity|noun|count(thr_sing)|foley catheter to gravity|foley catheter to gravity|Device_Mentions|
+U000215|foley catheter with output|noun|count(thr_sing)|foley catheter with output|foley catheter with output|Device_Mentions|
+U000216|foley for|noun|count(thr_sing)|foley for|foley for|Device_Mentions|
+U000217|foley in place|noun|count(thr_sing)|foley in place|foley in place|Device_Mentions|
+U000218|foley indwelling|noun|count(thr_sing)|foley indwelling|foley indwelling|Device_Mentions|
+U000219|irrigated foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|unclog the catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|unclog the foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|uncloged the foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|uncloged foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|foley unclogged|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|easily irrigated the catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|catheter is easily irrigated|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|catheter was easily irrigated|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|urinary catheter is easily irrigated|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|urinary catheter was easily irrigated|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the urinary catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigate foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigate the foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigate the catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigate the urinary catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigate urinary catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the foley|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated the urinary catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|irrigated urinary catheter|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000219|foley irrigated|noun|count(thr_sing)|foley irrigated|foley irrigated|Cath_Maintenance|
+U000220|foley irrigation|noun|count(thr_sing)|foley irrigation|foley irrigation|Cath_Maintenance|
+U000221|foley present|noun|count(thr_sing)|foley present|foley present|Device_Mentions|
+U000222|foley prior to admission|noun|count(thr_sing)|foley prior to admission|foley prior to admission|Device_Mentions|
+U000223|foley showing|noun|count(thr_sing)|foley showing|foley showing|Device_Mentions|
+U000224|foley size \d{2} fr|noun|count(thr_sing)|foley size \d{2} fr|foley size \d{2} fr|Device_Mentions|
+U000225|foley size \d{2} french|noun|count(thr_sing)|foley size \d{2} french|foley size \d{2} french|Device_Mentions|
+U000226|"foley size, \d{2}fr"|noun|count(thr_sing)|"foley size, \d{2}fr"|"foley size, \d{2}fr"|Device_Mentions|
+U000227|foley size: \d{2} french|noun|count(thr_sing)|foley size: \d{2} french|foley size: \d{2} french|Device_Mentions|
+U000228|foley size: \d{2}fr|noun|count(thr_sing)|foley size: \d{2}fr|foley size: \d{2}fr|Device_Mentions|
+U000229|foley statlock|noun|count(thr_sing)|foley statlock|foley statlock|Device_Mentions|
+U000230|foley to gravity|noun|count(thr_sing)|foley to gravity|foley to gravity|Device_Mentions|
+U000231|foley with|noun|count(thr_sing)|foley with|foley with|Device_Mentions|
+U000232|foley#|noun|count(thr_sing)|foley#|foley#|Device_Mentions|
+U000233|"foley, indewelling "|noun|count(thr_sing)|"foley, indewelling "|"foley, indewelling "|Device_Mentions|
+U000234|foleydraining|noun|count(thr_sing)|foleydraining|foleydraining|Device_Mentions|
+U000235|folley|noun|count(thr_sing)|folley|folley|Device_Mentions|
+U000236|folley cath|noun|count(thr_sing)|folley cath|folley cath|Device_Mentions|
+U000237|folly|noun|count(thr_sing)|folly|folly|Device_Mentions|
+U000238|foly|noun|count(thr_sing)|foly|foly|Device_Mentions|
+U000239|foly in place|noun|count(thr_sing)|foly in place|foly in place|Device_Mentions|
+U000240|fooley|noun|count(thr_sing)|fooley|fooley|Device_Mentions|
+U000241|Genitourinary: continue foley|noun|count(thr_sing)|Genitourinary: continue foley|Genitourinary: continue foley|Device_Mentions|
+U000242|genitourinary:/n foley catheter|noun|count(thr_sing)|GENITOURINARY:/n FOLEY CATHETER|GENITOURINARY:/n FOLEY CATHETER|Device_Mentions|
+U000243|genito-urinary:/n foley catheter|noun|count(thr_sing)|GENITO-URINARY:/n FOLEY CATHETER|GENITO-URINARY:/n FOLEY CATHETER|Device_Mentions|
+U000244|has a foley|noun|count(thr_sing)|has a foley|has a foley|Device_Mentions|
+U000245|has a foley cath|noun|count(thr_sing)|has a foley cath|has a foley cath|Device_Mentions|
+U000246|hematuria catheter|noun|count(thr_sing)|hematuria catheter|hematuria catheter|Device_Mentions|
+U000247|in- dwelling foley catheter|noun|count(thr_sing)|in- dwelling foley catheter|in- dwelling foley catheter|Device_Mentions|
+U000248|indwelling|noun|count(thr_sing)|indwelling|indwelling|Device_Mentions|
+U000248|urine indwelling|noun|count(thr_sing)|indwelling|indwelling|Device_Mentions|
+U000249|in-dwelling cath|noun|count(thr_sing)|Indwelling cath|Indwelling cath|Device_Mentions|
+U000250|indwelling catheter|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|indwelling catheters|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|catheter indwelling|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|indwelling cath|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|urine indwelling|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|urinary indwelling|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|indwelling folwy|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|indwelling suprapubic|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|indwelling ureteral|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|other indwelling|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000250|in-dwelling catheter|noun|count(thr_sing)|indwelling catheter|indwelling catheter|Device_Mentions|
+U000251|indwelling foley|noun|count(thr_sing)|indwelling foley|indwelling foley|Device_Mentions|
+U000253|in-dwelling foley|noun|count(thr_sing)|in-dwelling foley|in-dwelling foley|Device_Mentions|
+U000254|indwelling foley cath|noun|count(thr_sing)|indwelling foley cath|indwelling foley cath|Device_Mentions|
+U000254|in-dwelling foley cath|noun|count(thr_sing)|indwelling foley cath|indwelling foley cath|Device_Mentions|
+U000255|indwelling foley catheter|noun|count(thr_sing)|indwelling foley catheter|indwelling foley catheter|Device_Mentions|
+U000256|in-dwelling foley catheter|noun|count(thr_sing)|in-dwelling foley catheter|in-dwelling foley catheter|Device_Mentions|
+U000257|indwelling foley catheters|noun|count(thr_sing)|indwelling foley catheters|indwelling foley catheters|Device_Mentions|
+U000257|in-dwelling foley catheters|noun|count(thr_sing)|indwelling foley catheters|indwelling foley catheters|Device_Mentions|
+U000258|indwelling foleycatheter|noun|count(thr_sing)|indwelling foleycatheter|indwelling foleycatheter|Device_Mentions|
+U000258|in-dwelling foleycatheter|noun|count(thr_sing)|indwelling foleycatheter|indwelling foleycatheter|Device_Mentions|
+U000259|indwelling urinary catheter|noun|count(thr_sing)|indwelling urinary catheter|indwelling urinary catheter|Device_Mentions|
+U000259|in-dwelling urinary catheter|noun|count(thr_sing)|indwelling urinary catheter|indwelling urinary catheter|Device_Mentions|
+U000259|chronic indwelling urinary catheter|noun|count(thr_sing)|indwelling urinary catheter|indwelling urinary catheter|Device_Mentions|
+U000259|chronic in-dwelling urinary catheter|noun|count(thr_sing)|indwelling urinary catheter|indwelling urinary catheter|Device_Mentions|
+U000260|intact f/c|noun|count(thr_sing)|intact f/c|intact f/c|Device_Mentions|
+U000261|intermittent catheter|noun|count(thr_sing)|intermittent catheter|intermittent catheter|Device_Mentions|
+U000261|intermittent catheterization|noun|count(thr_sing)|intermittent catheter|intermittent catheter|Device_Mentions|
+U000263|possible suprapubic catheter|noun|count(thr_sing)|possible suprapubic catheter|possible suprapubic catheter|Device_Mentions|
+U000264|red rob|noun|count(thr_sing)|red rob|red rob|Device_Mentions|
+U000265|red robinson|noun|count(thr_sing)|red robinson|red robinson|Device_Mentions|
+U000266|red rubber cath|noun|count(thr_sing)|red rubber cath|red rubber cath|Device_Mentions|
+U000267|robinson catheter|noun|count(thr_sing)|Robinson catheter|Robinson catheter|Device_Mentions|
+U000268|s/p cath|noun|count(thr_sing)|s/p cath|s/p cath|Device_Mentions|
+U000269|s/p foley|noun|count(thr_sing)|s/p foley|s/p foley|Device_Mentions|
+U000270|sheath catheter|noun|count(thr_sing)|sheath catheter|sheath catheter|Device_Mentions|
+# U000271|sp|noun|count(thr_sing)|sp|sp|Device_Mentions|    taken out because of too many false positives
+U000272|sp cath|noun|count(thr_sing)|sp cath|sp cath|Device_Mentions|
+U000273|sp catheter|noun|count(thr_sing)|sp catheter|sp catheter|Device_Mentions|
+U000274|sp intact|noun|count(thr_sing)|sp intact|sp intact|Device_Mentions|
+U000275|sp tube|noun|count(thr_sing)|sp tube|sp tube|Device_Mentions|
+U000276|spc|noun|count(thr_sing)|spc|spc|Device_Mentions|
+U000276|spc site care|noun|count(thr_sing)|spc|spc|Cath_Maintenance|
+U000277|spt|noun|count(thr_sing)|spt|spt|Device_Mentions|
+U000278|sptube|noun|count(thr_sing)|sptube|sptube|Device_Mentions|
+U000279|supra pubic|noun|count(thr_sing)|supra pubic|supra pubic|Device_Mentions|
+U000280|supra pubic catheter|noun|count(thr_sing)|supra pubic catheter|supra pubic catheter|Device_Mentions|
+U000281|supra pubic tube|noun|count(thr_sing)|supra pubic tube|supra pubic tube|Device_Mentions|
+U000282|suprapubic|noun|count(thr_sing)|suprapubic|suprapubic|Device_Mentions|
+U000283|suprapubic catether|noun|count(thr_sing)|suprapubic catether|suprapubic catether|Device_Mentions|
+U000283|suprpubic catether|noun|count(thr_sing)|suprapubic catether|suprapubic catether|Device_Mentions|
+U000283|suprpubic cath|noun|count(thr_sing)|suprapubic catether|suprapubic catether|Device_Mentions|
+U000284|suprapubic cath|noun|count(thr_sing)|suprapubic cath|suprapubic cath|Device_Mentions|
+U000284|subrapubic cath|noun|count(thr_sing)|suprapubic cath|suprapubic cath|Device_Mentions|
+U000285|supra-pubic catheter|noun|count(thr_sing)|supra-pubic catheter|supra-pubic catheter|Device_Mentions|
+U000286|suprapubic catheter|noun|count(thr_sing)|suprapubic catheter|suprapubic catheter|Device_Mentions|
+U000287|suprapubic foley|noun|count(thr_sing)|suprapubic foley|suprapubic foley|Device_Mentions|
+U000288|suprapubic tube|noun|count(thr_sing)|suprapubic tube|suprapubic tube|Device_Mentions|
+U000289|supra-pubic tube|noun|count(thr_sing)|supra-pubic tube|supra-pubic tube|Device_Mentions|
+U000290|suprpubic catheter|noun|count(thr_sing)|suprpubic catheter|suprpubic catheter|Device_Mentions|
+U000291|suuperpubic|noun|count(thr_sing)|suuperpubic|suuperpubic|Device_Mentions|
+U000292|Texas catheter|noun|count(thr_sing)|Texas catheter|Texas catheter|Device_Mentions|
+U000293|texas catheter|noun|count(thr_sing)|texas catheter|texas catheter|Device_Mentions|
+U000294|urethral catheter|noun|count(thr_sing)|urethral catheter|urethral catheter|Device_Mentions|
+U000295|urinary catheter|noun|count(thr_sing)|urinary catheter|urinary catheter|Device_Mentions|
+U000296|urine indwel ca|noun|count(thr_sing)|urine indwel ca|urine indwel ca|Device_Mentions|
+U000297|urisheath|noun|count(thr_sing)|urisheath|urisheath|Device_Mentions|
+U000298|A bladder catheter is present.|noun|count(thr_sing)|A bladder catheter is present.|A bladder catheter is present.|Device_Mentions|
+U000299|A catheter is present in the bladder.|noun|count(thr_sing)|A catheter is present in the bladder.|A catheter is present in the bladder.|Device_Mentions|
+U000338|intermittent straigh-cath|noun|count(thr_sing)|intermittent straigh-cath|intermittent straigh-cath|Straight_Cath|
+U000339|self-cath|noun|count(thr_sing)|self-cath|self-cath|Straight_Cath|
+U000340|self-catheterization|noun|count(thr_sing)|self-catheterization|self-catheterization|Straight_Cath|
+U000341|self-catheterizes|noun|count(thr_sing)|self-catheterizes|self-catheterizes|Straight_Cath|
+U000342|self-caths|noun|count(thr_sing)|self-caths|self-caths|Straight_Cath|
+U000343|str cathing|noun|count(thr_sing)|str cathing|str cathing|Straight_Cath|
+U000344|straigh-cathing|noun|count(thr_sing)|straigh-cathing|straigh-cathing|Straight_Cath|
+U000345|straight cath|noun|count(thr_sing)|straight cath|straight cath|Straight_Cath|
+U000346|straight cath performed|noun|count(thr_sing)|straight cath performed|straight cath performed|Straight_Cath|
+U000347|straight cathed|noun|count(thr_sing)|straight cathed|straight cathed|Straight_Cath|
+U000348|straight catheter|noun|count(thr_sing)|straight catheter|straight catheter|Straight_Cath|
+U000349|straight cathing|noun|count(thr_sing)|straight cathing|straight cathing|Straight_Cath|
+U000350|straight caths|noun|count(thr_sing)|straight caths|straight caths|Straight_Cath|
+U000351|straight urine cath|noun|count(thr_sing)|straight urine cath|straight urine cath|Straight_Cath|
+U000352|straight-cath|noun|count(thr_sing)|straight-cath|straight-cath|Straight_Cath|
+U000353|strait cath|noun|count(thr_sing)|strait cath|strait cath|Straight_Cath|
+U000354|urine culture negative so far|noun|count(thr_sing)|urine culture negative so far|urine culture negative so far|Urine_Culture|
+U000355|#    Urine Culture -> urine for culture|noun|count(thr_sing)|#    Urine Culture -> urine for culture|#    Urine Culture -> urine for culture|Urine_Culture|
+U000356|culture urine|noun|count(thr_sing)|culture urine|culture urine|Urine_Culture|
+U000357|UC|noun|count(thr_sing)|UC|UC|Urine_Culture|
+U000358|urine culture|noun|count(thr_sing)|urine culture|urine culture|Urine_Culture|
+U000359|urine culture free of infection|noun|count(thr_sing)|urine culture free of infection|urine culture free of infection|Urine_Culture|
+U000360|urine culture grew|noun|count(thr_sing)|urine culture grew|urine culture grew|Urine_Culture|
+U000360|urine cultures grew|noun|count(thr_sing)|urine culture grew|urine culture grew|Urine_Culture|
+U000360|urine cultures grown|noun|count(thr_sing)|urine culture grew|urine culture grew|Urine_Culture|
+U000361|urine culture results pending|noun|count(thr_sing)|urine culture results pending|urine culture results pending|Urine_Culture|
+U000362|urine culture results|noun|count(thr_sing)|URINE CULTURE RESULTS:|URINE CULTURE RESULTS:|Urine_Culture|
+U000363|urine culture w/|noun|count(thr_sing)|urine culture w/|urine culture w/|Urine_Culture|
+U000364|urine culture was +ve|noun|count(thr_sing)|urine culture was +ve|urine culture was +ve|Urine_Culture|
+U000365|urine culture was positive|noun|count(thr_sing)|urine culture was positive|urine culture was positive|Urine_Culture|
+U000366|urine culture with|noun|count(thr_sing)|urine culture with|urine culture with|Urine_Culture|
+U000367|urine culture with sensitivity|noun|count(thr_sing)|urine culture with sensitivity|urine culture with sensitivity|Urine_Culture|
+U000368|urine culture:|noun|count(thr_sing)|urine culture:|urine culture:|Urine_Culture|
+U000369|urine cultures|noun|count(thr_sing)|urine cultures|urine cultures|Urine_Culture|
+U000370|urine cultures were positive|noun|count(thr_sing)|urine cultures were positive|urine cultures were positive|Urine_Culture|
+U000371|urine CX|noun|count(thr_sing)|urine CX|urine CX|Urine_Culture|
+U000372|bladder infection|noun|count(thr_sing)|bladder infection|bladder infection|Urine_Diagnosis|
+U000373|cystitis|noun|count(thr_sing)|cystitis|cystitis|Urine_Diagnosis|
+U000374|pyelonephritis|noun|count(thr_sing)|pyelonephritis|pyelonephritis|Urine_Diagnosis|
+U000375|pyuria|noun|count(thr_sing)|pyuria|pyuria|Urine_Diagnosis|
+U000376|upper tract infection|noun|count(thr_sing)|upper tract infection|upper tract infection|Urine_Diagnosis|
+U000377|urinary complications of care|noun|count(thr_sing)|urinary complications of care|urinary complications of care|Urine_Diagnosis|
+U000378|urinary infection|noun|count(thr_sing)|urinary infection|urinary infection|Urine_Diagnosis|
+U000379|urinary tract infection|noun|count(thr_sing)|urinary tract infection|urinary tract infection|Urine_Diagnosis|
+U000380|utt|noun|count(thr_sing)|UTI|UTI|Urine_Diagnosis|
+U000381|ucx|noun|count(thr_sing)|UCX|UCX|Urine_Culture|
+U000383|ucx (for urine culture)|noun|count(thr_sing)|UCX (for urine culture)|UCX (for urine culture)|Urine_Culture|
+U000384|catheter; complications|noun|count(thr_sing)|catheter; complications|catheter; complications|Device_Mentions|
+U000413|catheter was obstructed|noun|count(thr_sing)|catether was obstructed|catether was obstructed|Device_Mentions|
+U000413|catheter obstructed|noun|count(thr_sing)|catether was obstructed|catether was obstructed|Device_Mentions|
+U000413|obstructed catheter|noun|count(thr_sing)|catether was obstructed|catether was obstructed|Device_Mentions|
+U000385|16f|noun|count(thr_sing)|16F|16F|Device_Mentions|
+U000386|16fr|noun|count(thr_sing)|16Fr|16Fr|Device_Mentions|
+U000387|24f|noun|count(thr_sing)|24F|24F|Device_Mentions|
+U000388|24fr|noun|count(thr_sing)|24Fr|24Fr|Device_Mentions|
+U000389|blood in foley|noun|count(thr_sing)|blood in foley|blood in foley|Device_Mentions|
+#U000390|cath|noun|count(thr_sing)|cath|cath|Device_Mentions|
+U000391|catheter applied|noun|count(thr_sing)|catheter applied|catheter applied|Device_Mentions|
+U000392|chronic foley|noun|count(thr_sing)|chronic foley|chronic foley|Device_Mentions|
+U000393|chronic foly|noun|count(thr_sing)|chronic foly|chronic foly|Device_Mentions|
+U000394|continue foley|noun|count(thr_sing)|continue foley|continue foley|Device_Mentions|
+U000395|foley exchanged|noun|count(thr_sing)|foley exchanged|foley exchanged|Cath_Change|
+U000396|patient received an indwelling urinary foley|noun|count(thr_sing)|patient received an indwelling urinary foley|patient received an indwelling urinary foley|Device_Mentions|
+U000405|urine return through the catheter|noun|count(thr_sing)|urine return through the catheter|urine return through the catheter|Device_Mentions|
+U000406|suprapubic tenderness|noun|count(thr_sing)|suprapubic tenderness|suprapubic tenderness|Cath_Symptom 
+U000407|costovertebral angle pain|noun|count(thr_sing)|costovertebral angle pain|costovertebral angle pain|Cath_Symptom 
+U000408|costovertebral angle tenderness|noun|count(thr_sing)|costovertebral angle tenderness|costovertebral angle tenderness|Cath_Symptom
+U000409|urinary urgency|noun|count(thr_sing)|urinary urgency|urinary urgency|Cath_Symptom
+U000410|urinary frequency|noun|count(thr_sing)|urinary frequency|urinary frequency|Cath_Symptom
+U000411|dysuria|noun|count(thr_sing)|dysuria|dysuria|Cath_Symptom
+U000412|bilateral flank pain|noun|count(thr_sing)|bilateral flank pain|bilateral flank pain|Cath_Symptom
+U000412|bilateral flank pains|noun|count(thr_sing)|bilateral flank pain|bilateral flank pain|Cath_Symptom
+U000413|flank pain|noun|count(thr_sing)|flank pain|flank pain|Cath_Symptom
+U000413|flank pains|noun|count(thr_sing)|flank pain|flank pain|Cath_Symptom
+U000413|pressure to flank|noun|count(thr_sing)|flank pain|flank pain|Cath_Symptom
+U000414|urinary sx|noun|count(thr_sing)|urinary sx|urinary sx|Cath_Symptom
+U000416|indwelling intravenous|noun|count(thr_sing)|afebrile|afebrile|Device_Mentions|Negated
+U000417|indwelling picc|noun|count(thr_sing)|afebrile|afebrile|Device_Mentions|Negated
+U000418|indwelling stent|noun|count(thr_sing)|afebrile|afebrile|Device_Mentions|Negated

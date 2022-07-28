@@ -1,0 +1,159 @@
+// =================================================
+/**
+ * ParseUcumEssense.java Summary [TBD]
+ *
+ * @author Guy Divita
+ * @created Apr 23, 2019
+ * 
+ */
+// =================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.shapes;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.Writer;
+import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.util.List;
+
+import org.fhir.ucum.ConceptKind;
+import org.fhir.ucum.DefinedUnit;
+import org.fhir.ucum.DefinitionParser;
+import org.fhir.ucum.UcumException;
+import org.fhir.ucum.UcumModel;
+import org.fhir.ucum.Value;
+import org.xmlpull.v1.XmlPullParserException;
+
+import gov.nih.cc.rmd.nlp.framework.utils.U;
+
+
+/**
+ * @author divitag2
+ *
+ */
+public class ParseUcumEssense {
+
+  public static void main(String argv[]) {
+
+    Writer out1 = null;
+    PrintWriter out = null;
+    try {
+
+        String ucum_essenseFile = "C:/Users/divitag2/work/softwareRepos/framework-legacy/01_Sandboxes/201_mobilityProject/101_resources/src/main/resources/resources/vinciNLPFramework/ucum/ucum-essence.xml";
+        String outputFile ="C:/Users/divitag2/work/softwareRepos/framework-legacy/01_Sandboxes/201_mobilityProject/101_resources/src/main/resources/resources/vinciNLPFramework/ucum/ucum-essence.lragr";
+        out1 = new BufferedWriter(new OutputStreamWriter(  new FileOutputStream( outputFile), "UTF8"));
+        out = new PrintWriter( out1);
+        
+        DefinitionParser p = new DefinitionParser();
+       UcumModel model = p.parse( ucum_essenseFile );
+      
+       int ctr = 0;
+       List<DefinedUnit> units = model.getDefinedUnits();
+       for ( DefinedUnit unit : units ) {
+         
+         String id = "U" + U.zeroPad(ctr, 5 );
+         
+         String dClass = unit.getClass_();
+         List<String> names = unit.getNames();
+         String definition = unit.getDescription();
+         ConceptKind kind = unit.getKind();
+         String ps = unit.getPrintSymbol();
+         String prop = unit.getProperty();
+         Value value = unit.getValue();
+         
+        
+        
+         String pos = "<noun>";
+         String inflection = "<base>";
+         String key = ps;
+         String sab = "UCUM-LHC";
+         String category = "UnitOfMeasure";
+         
+         String moreUnit= null;
+         String moreDef = null;
+         String row = null;
+         String moreUnits[] = U.split(definition, "=");
+         if ( moreUnits != null && moreUnits.length > 1) {
+           moreDef = moreUnits[0];
+           moreUnit = moreUnits[1];
+           
+           row = makeLRAGRRow(  id, moreUnit, pos,inflection, moreDef, moreDef, category, sab, definition);
+           if ( row != null ) out.print(row + "\n" );
+         }
+         
+        
+         String lastName = null;
+         for ( String name : names) {
+            row = makeLRAGRRow(  id, name, pos,inflection, name, name, category, sab, definition);
+           if ( row != null ) out.print(row + "\n" );
+            lastName = name;
+          
+         }
+         row = makeLRAGRRow(  id, ps, pos,inflection, lastName, lastName, category, sab, definition);
+         
+         if ( row != null ) out.print(row + "\n" );
+           
+         
+       
+        
+        
+         ctr++;
+         
+       }
+      
+      out.close();
+     
+      
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  } // End Method Main() ---------
+
+  // =================================================
+  /**
+   * makeLRAGRRow 
+   * 
+   * @param id
+   * @param key
+   * @param pos
+   * @param inflection
+   * @param uninflected
+   * @param citation
+   * @param category
+   * @param sab
+   * @param definition
+   * @param definition2 
+   * @return String
+  */
+  // =================================================
+  private static String  makeLRAGRRow(String id, String key, String pos, String inflection, String uninflected, String citation,
+      String category, String sab, String definition ) {
+   
+    if (key == null ) return null;
+    
+    String returnVal = null;
+    StringBuffer buff = new StringBuffer();
+    buff.append( id       ); buff.append("|");
+    buff.append(key.trim()       ); buff.append("|");
+    buff.append(pos       ); buff.append("|");
+    buff.append(inflection.trim()); buff.append("|");
+    buff.append(uninflected.trim()); buff.append("|");
+    buff.append(citation.trim()  ); buff.append("|");
+    buff.append(category  ); buff.append("|");
+    buff.append(sab       ); buff.append("|");
+    buff.append(definition.trim()); 
+    
+    returnVal = buff.toString() ;
+    if ( buff.indexOf("\n") > 0 )
+      returnVal = buff.toString().replace("\n", "");
+    return returnVal ;
+  
+    
+  } // end Method makeLRAGRRow() ----------------
+
+} // End Class() --------------

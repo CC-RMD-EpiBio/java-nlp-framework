@@ -1,0 +1,54 @@
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ====================================================== -->
+  <!-- Framework Multi-module pom to build all derma projects -->
+  <!-- ====================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>04.1-nlp-vUtil</artifactId>
+  <version>2021.02.0</version>
+  <packaging>jar</packaging>
+  <description>These are utilities that build upon the uima and type descriptor dependencies</description>
+
+  <!-- ======================================================= -->
+  <!-- Parent Pom - look here for global framework settings -->
+  <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+  </parent>
+
+  <!-- ======================================================= -->
+  <!-- Dependencies -->
+  <!-- ======================================================= -->
+  <dependencies>
+    <!-- dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId> </dependency -->
+    <!-- dependency> <groupId>org.apache.uima           </groupId> <artifactId>uimaj-core               </artifactId> </dependency -->
+    <!-- dependency> <groupId>org.apache.uima           </groupId> <artifactId>uimaj-document-annotation</artifactId> </dependency -->
+    <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>04.0-nlp-util              </artifactId> </dependency>
+    <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>03-nlp-type-descriptors    </artifactId> </dependency>
+  </dependencies>
+
+</project>

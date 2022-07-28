@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>gov.nih.cc.rmd.framework.Medications</name>
+    <description>Contains labels specific to medications</description>
+    <version>2019.01.0</version>
+  <imports>
+    <import name="gov.va.vinci.ClinicalConcepts"/>
+  <import name="gov.nih.cc.rmd.framework.ShapesModel"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.nih.cc.rmd.Medication</name>
+      <description>Describes a medication</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>route</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>dosage</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>administration</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>packaging</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>status</name>
+          <description>Active/completed/filled/replaced/stopped/expired/needs refill/discontinued,
+
+This is the status of whether the medication should be taken.  
+
+See https://www.hl7.org/fhir/DSTU1/medication-prescription-status.html for values.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>medicationForm</name>
+          <description>Is this thing a tablet, suspension, capsule, suave, pack, ...</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>frequency</name>
+          <description>every 6 hours - it's a component of instructions.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>instructions</name>
+          <description>take every 6 hours orally as needed</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>duration</name>
+          <description>until rash goes away, 
+Take all the pills
+take 1 dosage
+This is part of instructions</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>indication</name>
+          <description>for pain
+for rash
+for &lt;symptom&gt;
+This is part of instructions</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>refillInfo</name>
+          <description>2 refills left. 
+Refill by phone
+no refills left</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>doseForm</name>
+          <description>DoseForm is defined by RxNorm. See https://www.nlm.nih.gov/research/umls/rxnorm/docs/2011/appendix2.html</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>strength</name>
+          <description>Strength is defined by RxNorm</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>startedDate</name>
+          <description>The date the patient started taking the medication or the date the medication started to be administered</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>stoppedDate</name>
+          <description>The date the patient stopped taking the medication or the date the medication stopped being administered</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>prescribedDate</name>
+          <description>Date the medication was ordered or prescribed</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>filledDate</name>
+          <description>The date the medication was filled by the pharmacy.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>brandName</name>
+          <description>The brand name of the medication</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.DoseForm</name>
+      <description/>
+      <supertypeName>gov.nih.cc.rmd.framework.model.Shape</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.nih.cc.rmd.ClinicalStatusEvidence</name>
+      <description>This is evidence that an entity is in a certian state like active, filled, discarded, discontinued, stopped, ...
+See the resources/gov/nih/cc/rmd/framework/assertion/clinicalStatusEvidence.lragr for values</description>
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

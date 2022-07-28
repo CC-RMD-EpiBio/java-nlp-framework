@@ -1,0 +1,1016 @@
+/*******************************************************************************
+ * ---------------------------------------------------------------------------
+ *                                   NIH Clinical Center 
+ *                             Department of Rehabilitation 
+ *                        Epidemiology and Biostatistics Branch 
+ *                                         2019
+ *    
+ *  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+ *  
+ *  This license allows you to use, share and  adapt for any purpose, provided:
+ *     Provide attribution to the creators of this work within your work.
+ *     Indicate if changes were made to this work.
+ *     No claim to merchantability, implied warranty, or liability can be made.
+ *     
+ *   When attributing this code, please make reference to
+ *    [citation/url here] .  
+ *    
+ *     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+ *  
+ *  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+ ******************************************************************************/
+/*
+ *
+ */
+/**
+ * GLogObs.java is my attempt at logging that won't interfere
+ * with other loggers.
+ *
+ * @author  divita
+ * @created Jan 13, 2016
+ *
+   
+ */
+// =======================================================
+package gov.nih.cc.rmd.nlp.framework.utils;
+
+import java.io.File;
+import java.io.PrintWriter;
+import java.lang.invoke.MethodHandles;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+
+import org.apache.log4j.Appender;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.FileAppender;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
+import org.apache.log4j.PropertyConfigurator;
+
+/**
+ * The Class GLogObs.
+ *
+ * @author Divita
+ */
+public final class GLogObs {
+
+  /** Class fields. */
+  public static final int ALL_LEVEL = 10;
+
+  /** The Constant TRACE_LEVEL. */
+  public static final int TRACE_LEVEL = 9;
+
+  /** The Constant DEBUG_LEVEL. */
+  public static final int DEBUG_LEVEL = 8; // print only when debug level is on
+
+  /** The Constant STD___LEVEL. */
+  public static final int STD___LEVEL = 7; // print always
+
+  /** The Constant INFO_LEVEL. */
+  public static final int INFO_LEVEL = 6; //
+
+  /** The Constant WARNING_LEVEL. */
+  public static final int WARNING_LEVEL = 5;
+
+  /** The Constant ERROR_LEVEL. */
+  public static final int ERROR_LEVEL = 4; // print when there is an error
+
+  /** The Constant OFF_LEVEL. */
+  public static final int OFF_LEVEL = 3;
+
+  /** The debug level. */
+  private static boolean debug_level = false;
+
+  /** The error level. */
+  private static boolean error_level = true;
+
+  /** The std level. */
+  private static boolean std_level = true;
+
+  /** The info level. */
+  private static boolean info_level = true;
+
+  /** The warning level. */
+  private static boolean warning_level = true;
+
+  /** The trace level. */
+  private static boolean trace_level = false;
+
+  /** The all level. */
+  private static boolean all_level = false;
+
+  /** The off level. */
+  private static boolean off_level = false;
+
+  /** The log to console too. */
+  @SuppressWarnings("unused")
+  private static boolean logToConsoleToo = true;
+
+  // -------------------------------
+  // Class variables
+  /** The log dir. */
+  // -------------------------------
+  private static String _logDir = null;
+
+  /** The g log appender hash. */
+  private static HashMap<String, Appender> gLogAppenderHash = null;
+
+  /** The G log default logger. */
+  private static Logger GLogDefaultLogger = null;
+
+  /** The log 4 J conversion pattern. */
+  private static String log4JConversionPattern = "%d %-4r [thread %t] %-5p %c%m%n";
+
+  /** The null print writer. */
+  private static PrintWriter nullPrintWriter = null;
+
+  /** The print to log. */
+  private static boolean printToLog = false;
+
+  // =================================================
+  /**
+   * setLogDir sets the log dir. This method will create the path to the logdir
+   * if it does not yet exist.
+   *
+   * @param pLogDir (full path to the log dir)
+   * @return PrintWriter returns a null printWriter - this is here for
+   *         compatibility with the performance meters where the output of these
+   *         are pushed into the performance meter Performance meters call gLog
+   *         in addition to the "out" print writer so if the "out" is null, this
+   *         logger will pickup the messages
+   * @throws Exception the exception
+   */
+  // =================================================
+  public final static PrintWriter setLogDir(String pLogDir) throws Exception {
+
+    _logDir = pLogDir;
+
+    if (printToLog)
+      U.mkDir(_logDir);
+    getFileName();
+    
+    // Add all appenders to the logdir/logs
+    try {
+      setLog4JAppendors( );
+    } catch ( Exception e) {
+      e.printStackTrace();
+    }
+    NullOutputStream nullOutputStream = new NullOutputStream();
+    nullPrintWriter = new PrintWriter(nullOutputStream);
+    return nullPrintWriter;
+
+  } // end Method setLogFile() ------------------
+
+  // =================================================
+  /**
+   * setLog4JAppendors 
+   *   reads in either $outputDir/config/frameworkLogging.properties (if it exists) 
+   *            or     /config/frameworkLogging.properties (in the xxxxApplication.jar file) for default values
+   *            
+   *   It loads this config file with the appendors defined (except for the file definition )
+   *   
+   *   For each appendor, it creates the physical files based on $LogDir  which is defined by default as $outputDir/logs
+   * 
+   
+   * 
+  */
+  // =================================================
+  private static void setLog4JAppendors() {
+    
+    
+    Properties frameworkLoggingProperties = getFrameworkPropertiesFile();
+    try {
+    PropertyConfigurator.configure( frameworkLoggingProperties );
+    } catch (Exception e) {
+      e.printStackTrace();
+      
+    }
+    
+    // BasicConfigurator.configure();
+    
+    List<Appender> appenders = getAppendors();
+   
+    for ( Appender anAppender : appenders )
+      
+      if ( anAppender != null 
+           &&  anAppender instanceof FileAppender  
+           &&  (((FileAppender)anAppender).getFile() == null
+             ||  !((FileAppender)anAppender).getFile().contains(_logDir )) )  {
+       
+        String appendorName = _logDir + "/" + anAppender.getName() + ".log4j.log";
+        if ( printToLog )
+          ((FileAppender)anAppender).setFile( appendorName);
+        ((FileAppender)anAppender).activateOptions();
+      }
+ 
+  } // end Method setLog4JAppendors() ----------------
+
+  // =================================================
+  /**
+   * getAppendors 
+   * 
+   * @return List<Appender>
+  */
+  // =================================================
+   private static List<Appender> getAppendors() {
+    
+     ArrayList<Appender> appenderList = new ArrayList<>();
+     
+     Logger logger = org.apache.log4j.LogManager.getRootLogger();
+     Enumeration<?> appenders = logger.getAllAppenders();
+     if (appenders != null) {
+         while (appenders.hasMoreElements()) {
+             Appender appender = (Appender) appenders.nextElement();
+             if (appender != null) {
+                 appenderList.add(appender);
+             }
+         }
+     }
+  
+     Enumeration<?> loggers = org.apache.log4j.LogManager.getCurrentLoggers();
+     while (loggers.hasMoreElements()) {
+         logger = (Logger) loggers.nextElement();
+         appenders = logger.getAllAppenders();
+         if (appenders != null) {
+             while (appenders.hasMoreElements()) {
+                 Appender appender = (Appender) appenders.nextElement();
+                 if (appender != null) {
+                     appenderList.add(appender);
+                 }
+             }
+         }
+     }
+     return appenderList;
+  }
+
+  // =================================================
+  /**
+   * getFrameworkPropertiesFile looks for a physical file
+   * via --configFile=  or $outputDir/config/frameworkLogging.properties
+   * 
+   * @return
+  */
+  // =================================================
+ private static Properties getFrameworkPropertiesFile() {
+    
+   Properties returnVal = null;
+   
+   try {
+   File configFile = new File( U.getDirFromFileName(_logDir ) + "/../config/frameworkLogging.properties" );
+   
+   if ( configFile.exists())
+   
+    returnVal = U.readProperties( configFile.getAbsolutePath() );
+   else 
+     returnVal = U.readProperties( "config/frameworkLogging.properties");
+   } catch (Exception e) {
+     e.printStackTrace();
+     System.err.println("Issue trying to read in the config file " + e.toString());
+     throw new RuntimeException();
+     
+   }
+   
+    return returnVal;
+  }
+
+  // =================================================
+  /**
+   * println writes out the message to the log file and to std-err. There is a
+   * flush that happens to ensure the logfile gets this message.
+   *
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void println(String pMsg) {
+
+    println(STD___LEVEL, pMsg);
+
+  } // End Method println() ======================
+
+  // =================================================
+  /**
+   * println prints the message depending on what the print category is, and if
+   * the category_status flag has been set.
+   *
+   * @param pPrintCategory the print category
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void println(int pPrintCategory, String pMsg) {
+
+    switch (pPrintCategory) {
+      case DEBUG_LEVEL:
+      case TRACE_LEVEL:
+        debug_println(pMsg);
+        break;
+      case ERROR_LEVEL:
+        error_println(pMsg);
+        break;
+      case STD___LEVEL:
+      default:
+        std_println(pMsg);
+        break;
+
+    }
+  } // end Method println() ---------------------------
+
+  // =================================================
+  /**
+   * println prints the message depending on what the print category is, and if
+   * the category_status flag has been set.
+   *
+   * @param pPrintCategory the print category
+   * @param pCallingClass the calling class
+   * @param pCallingMethod the calling method
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void println(int pPrintCategory, Class<?> pCallingClass,
+    String pCallingMethod, String pMsg) {
+
+    switch (pPrintCategory) {
+      case ALL_LEVEL:
+        std_println(pCallingClass, pCallingMethod, pMsg);
+        break;
+      case DEBUG_LEVEL:
+      case TRACE_LEVEL:
+        debug_println(pCallingClass, pCallingMethod, pMsg);
+        break;
+      case ERROR_LEVEL:
+        error_println(pCallingClass, pCallingMethod, pMsg);
+        break;
+      case WARNING_LEVEL:
+        warn_println(pCallingClass, pCallingMethod, pMsg);
+        break;
+      case OFF_LEVEL:
+        break;
+      case STD___LEVEL:
+      case INFO_LEVEL:
+      default:
+        std_println(pCallingClass, pCallingMethod, pMsg);
+        break;
+
+    }
+  } // end Method println() ---------------------------
+
+  // =================================================
+  /**
+   * debug_println prints the calling method plus the message.
+   *
+   * @param pCallingClass the calling class
+   * @param pCallingMethod the calling method
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void debug_println(Class<?> pCallingClass, String pCallingMethod,
+    String pMsg) {
+
+    // attachAppender( pCallingClass);
+
+    String msg = pMsg; // the calling class is picked up via the log4j layout
+                       // format "%c"
+
+    if (msg != null) {
+      String[] rows = U.split(msg, "\n");
+      for (String row : rows) {
+        Logger.getLogger(pCallingClass).debug("." + pCallingMethod + " ->> " + row);
+        // printToLog(pCallingClass + "." + pCallingMethod + "--> " + row);
+      }
+    }
+
+  } // end Method debug_println() ---------------------
+
+  // =================================================
+  /**
+   * printToLog is a last resort method to get !#$!$ print statements to a log
+   * without having a process co-opt the logger and silence statements that are
+   * being looked for for debugging purposes.
+   * 
+   * This method is triggered on by --printToLog=true passed in with the setLog
+   *
+   * @param pLogMsg the log msg
+   */
+  // =================================================
+  public final static void printToLog(String pLogMsg) {
+
+    if (printToLog) {
+      checkNullPrintWriter();
+      nullPrintWriter.print(pLogMsg + '\n');
+      nullPrintWriter.flush();
+    }
+  } // end Method printToLog() ----------------------
+
+  // =================================================
+  /**
+   * checkNullPrintWriter checks to see if the nullPrintWriter is null. If so,
+   * it checks to see if the logfile exists, if it does, it changes the log file
+   * name to .appended It opens a new printWriter with the fileName.
+   */
+  // =================================================
+  private final static void checkNullPrintWriter() {
+
+    if (nullPrintWriter == null) {
+      String fileName = getFileName();
+      File aFile = new File(fileName);
+      if (aFile.exists()) {
+        fileName = fileName + ".appended";
+        try {
+          nullPrintWriter = new PrintWriter(fileName);
+        } catch (Exception e) {
+          e.printStackTrace();
+          System.err.println("Could not open an appended log file " + fileName);
+        }
+      }
+    }
+
+  } // end Method setNullPrintWriter() ---------------
+
+  // =================================================
+  /**
+   * debug_println prints the calling method plus the message.
+   *
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void debug_println(String pMsg) {
+
+    Throwable t = new Throwable();
+    StackTraceElement[] elements = t.getStackTrace();
+    int i = 1;
+    if (elements.length > 3)
+      i = 3;
+
+    // String calleeMethod = elements[0].getMethodName();
+    String callerMethodName = elements[i].getMethodName();
+    Class<?> callerClass = elements[i].getClass();
+
+    debug_println(callerClass, callerMethodName, pMsg);
+
+  } // end Method println() ---------------------------
+
+  // =================================================
+  /**
+   * error_println prints the calling method plus the message.
+   *
+   * @param pCallingClass the calling class
+   * @param pCallingMethod the calling method
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void error_println(Class<?> pCallingClass, String pCallingMethod,
+    String pMsg) {
+
+    // attachAppender( pCallingClass);
+    String msg = pMsg;
+
+    if (msg != null) {
+      String[] rows = U.split(msg, "\n");
+      for (String row : rows) {
+        Logger.getLogger(pCallingClass).error("." + pCallingMethod + " ->> " + row);
+        printToLog(pCallingClass + "." + pCallingMethod + "--> " + row);
+      }
+
+    }
+  } // end Method error_println() ---------------------
+    // =================================================
+
+  /**
+   * error_println prints the calling method plus the message.
+   *
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void error_println(String pMsg) {
+
+    Throwable t = new Throwable();
+    StackTraceElement[] elements = t.getStackTrace();
+    int i = 1;
+    if (elements.length > 2)
+      i = 2;
+
+    // String calleeMethod = elements[0].getMethodName();
+    String callerMethodName = elements[i].getMethodName();
+    Class<?> callerClass = elements[2].getClass();
+
+    error_println(callerClass, callerMethodName, pMsg);
+
+  } // end Method error_println() ---------------------------
+
+  // =================================================
+  /**
+   * warn_println prints the calling method plus the message.
+   *
+   * @param pCallingClass the calling class
+   * @param pCallingMethod the calling method
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void warn_println(Class<?> pCallingClass, String pCallingMethod,
+    String pMsg) {
+
+    // attachAppender( pCallingClass);
+    String msg = pMsg;
+
+    if (msg != null) {
+      String[] rows = U.split(msg, "\n");
+      for (String row : rows) {
+        Logger.getLogger(pCallingClass).warn("." + pCallingMethod + " ->> " + row);
+        // printToLog(pCallingClass + "." + pCallingMethod + "--> " + row);
+      }
+    }
+
+  } // end Method error_println() ---------------------
+    // =================================================
+
+  /**
+   * warn_println prints the calling method plus the message.
+   *
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void warn_println(String pMsg) {
+
+    Throwable t = new Throwable();
+    StackTraceElement[] elements = t.getStackTrace();
+    int i = 1;
+    if (elements.length > 2)
+      i = 2;
+
+    // String calleeMethod = elements[0].getMethodName();
+    String callerMethodName = elements[i].getMethodName();
+    Class<?> callerClass = elements[i].getClass();
+
+    warn_println(callerClass, callerMethodName, pMsg);
+
+  } // end Method error_println() ---------------------------
+
+  // =================================================
+  /**
+   * std_println prints the calling method plus the message.
+   *
+   * @param pCallingClass the calling class
+   * @param pCallerMethodName the caller method name
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void std_println(Class<?> pCallingClass, String pCallerMethodName,
+    String pMsg) {
+
+    if (std_level) {
+      // attachAppender( pCallingClass);
+      String msg = pMsg;
+
+      if (msg != null) {
+        String[] rows = U.split(msg, "\n");
+        for (String row : rows) {
+          Logger.getLogger(pCallingClass).info("." + pCallerMethodName + " ->> " + row);
+          // printToLog(pCallingClass + "." + pCallerMethodName + "--> " + row);
+        }
+      }
+    }
+  } // end Method std_println() ---------------------------
+
+  // =================================================
+  /**
+   * std_println prints the calling method plus the message.
+   *
+   * @param pMsg the msg
+   */
+  // =================================================
+  public final static void std_println(String pMsg) {
+
+    if (std_level) {
+      // attachAppender( GLogObs.class);
+
+      String msg = pMsg;
+      if (msg != null) {
+        String[] rows = U.split(msg, "\n");
+        for (String row : rows)
+          Logger.getLogger(GLogObs.class).info(" ->>> " + row);
+      }
+    }
+
+  } // end Method error_println() ---------------------------
+
+  // =================================================
+  /**
+   * getFileName calculates what the filename should be (outputDir+ log +
+   * date+thread)
+   * 
+   * This also creates an appender that can be retrieved based on the filename.
+   *
+   * @return the file name
+   */
+  // =================================================
+  public final static String getFileName() {
+    String threadName = Thread.currentThread().getName();
+    String fileName = _logDir + "/log_" + threadName;
+
+    if (gLogAppenderHash == null)
+      gLogAppenderHash = new HashMap<String, Appender>();
+
+    Appender gLogAppender = gLogAppenderHash.get(fileName);
+
+    if (gLogAppender == null) {
+      try {
+        GLogDefaultLogger = Logger.getLogger(GLogObs.class);
+
+        Enumeration<?> appenders = GLogDefaultLogger.getAllAppenders();
+
+        if (appenders != null && appenders.hasMoreElements()) {
+          while (appenders.hasMoreElements()) {
+            gLogAppender = (Appender) appenders.nextElement();
+            gLogAppenderHash.put(fileName, gLogAppender);
+            System.err.println(
+                "Using log4J settings from an existing appender for this class, likely from a log4j.properties file in a path somewhere ");
+          }
+
+        } else {
+
+          PatternLayout layout = new PatternLayout();
+
+          layout.setConversionPattern(GLogObs.log4JConversionPattern);
+          
+          if ( printToLog ) 
+
+            gLogAppender = new FileAppender(layout, fileName + ".log", false);
+          else
+            gLogAppender = new ConsoleAppender( layout );
+          
+          gLogAppenderHash.put(fileName, gLogAppender);
+          // System.err.println("Setting the log4J log to " + fileName + ".log"
+          // );
+
+          // if (GLogObs.logToConsoleToo)
+          // GLogConsoleAppender = new ConsoleAppender(layout);
+
+        }
+
+      } catch (Exception e) {
+        e.printStackTrace();
+        String msg = "Can't even create an appender for file " + e.toString();
+        throw new RuntimeException(msg);
+
+      }
+    }
+
+    return fileName + ".f.log";
+  } // End Method getFileName() ======================
+
+  // =================================================
+  /**
+   * getErr returns the the file handle to the log file. if the log file does
+   * not yet exist, it will be created.
+   * 
+   * This will now always return a null print writer
+   * 
+   * @return PrintWriter The filehandle to the log file
+   * @deprecated
+   */
+  // =================================================
+  public final static PrintWriter getErr() {
+
+    return nullPrintWriter;
+  } // End Method getErr() ======================
+
+  // =================================================
+  /**
+   * getLogLevel returns the effective log level set.
+   *
+   * @return PrintWriter The filehandle to the log file
+   */
+  // =================================================
+  public final static String getLogLevel() {
+    String levels[] = GLogObs.getLoggingLevels(GLogObs.class);
+
+    StringBuffer buff = new StringBuffer();
+    for (int i = 0; i < levels.length; i++) {
+
+      buff.append(" ====> " + levels[i] + "\n");
+    }
+
+    return buff.toString();
+
+  } // End Method getErr() ======================
+
+  // =================================================
+  /**
+   * close will close the appenders and log files.
+   */
+  // =================================================
+  public final static void close() {
+
+    Set<String> keys = gLogAppenderHash.keySet();
+
+    for (String key : keys) {
+      Appender anAppender = gLogAppenderHash.get(key);
+      if (anAppender != null)
+        anAppender.close();
+    }
+
+    if (nullPrintWriter != null)
+      nullPrintWriter.close();
+    nullPrintWriter = null;
+
+  } // end Method close() ------------------------
+
+  // =================================================
+  /**
+   * finalize (calls close() ).
+   */
+  // =================================================
+  @Override
+  protected void finalize() {
+    close();
+
+  } // end Method finalize() -----------------------
+
+  // =================================================
+  /**
+   * isDebug_level() returns boolean (whether or not debug is turned on or not).
+   *
+   * @return <code>true</code> if so, <code>false</code> otherwise
+   */
+  // =================================================
+  public static final boolean isDebug_level() {
+    return debug_level;
+  }
+
+  // =================================================
+  /**
+   * isError_level() returns boolean (whether or not error is turned on or not).
+   *
+   * @return <code>true</code> if so, <code>false</code> otherwise
+   */
+  // =================================================
+  public static final boolean isError_level() {
+    return error_level;
+  }
+
+  // =================================================
+  /**
+   * setDebug_Level turns on or off the debug level.
+   *
+   * @param pDebug_level the debug level
+   */
+  // =================================================
+  public static final void setDebug_level(boolean pDebug_level) {
+    GLogObs.debug_level = pDebug_level;
+  }
+
+  // =================================================
+  /**
+   * setError_Level turns on or off the error level.
+   *
+   * @param pError_level the error level
+   */
+  // =================================================
+  public static final void setError_level(boolean pError_level) {
+    GLogObs.error_level = pError_level;
+
+  }
+
+  // =================================================
+  /**
+   * getLoggingLevels returns an array of levels that have been turned on for
+   * this class.
+   *
+   * @param pClass the class
+   * @return String[]
+   */
+  // =================================================
+  public final static String[] getLoggingLevels(Class<?> pClass) {
+
+    String[] returnVal = new String[9];
+    Logger aLogger = Logger.getLogger(pClass);
+
+    Level loggerLevel = aLogger.getLevel();
+
+    returnVal[0] = "EFFECTIVE LEVEL = " + loggerLevel.toString();
+    returnVal[1] = "All_____LEVEL=" + String.valueOf(GLogObs.all_level);
+    returnVal[2] = "TRACE___LEVEL=" + String.valueOf(GLogObs.trace_level);
+    returnVal[3] = "DEBUG___LEVEL=" + String.valueOf(GLogObs.debug_level);
+    returnVal[4] = "STD_____LEVEL=" + String.valueOf(GLogObs.std_level);
+
+    returnVal[5] = "INFO____LEVEL=" + String.valueOf(GLogObs.info_level);
+    returnVal[6] = "WARNING_LEVEL=" + String.valueOf(GLogObs.warning_level);
+    returnVal[7] = "ERROR___LEVEL=" + String.valueOf(GLogObs.error_level);
+    returnVal[8] = "OFF_____LEVEL=" + String.valueOf(GLogObs.off_level);
+
+    return returnVal;
+
+  } // end Method getLoggingLevels() -------
+
+  // =================================================
+  /**
+   * initialize sets the logDir, debug and error levels from the command line
+   * arguments.
+   * 
+   * This is looking for arguments --logDir=/some/path/to/logs
+   * --debug_level=true|false or --debug_level (true) false by default
+   * --error_level=true|false or --error_level (true) true by default
+   * --warning_level= --trace_level= --info_level= --std_level=
+   * --locToConsoleToo= --printToLog=true|false if true, will print to a .g.log
+   * file even if the appenders don't work --log4JConversionPattern=
+   *
+   * @param pArgs the args
+   * @throws Exception the exception
+   */
+  // =================================================
+  public static void set(String[] pArgs) throws Exception {
+    String _LogDir = U.getOption(pArgs, "--logDir=", "./");
+
+    GLogObs.debug_level = Boolean.valueOf(U.getOption(pArgs, "--debug_level=", "false"));
+    GLogObs.error_level = Boolean.valueOf(U.getOption(pArgs, "--error_level=", "true"));
+    GLogObs.info_level = Boolean.valueOf(U.getOption(pArgs, "--info_level=", "true"));
+    GLogObs.std_level = Boolean.valueOf(U.getOption(pArgs, "--std_level=", "true"));
+    GLogObs.warning_level = Boolean.valueOf(U.getOption(pArgs, "--warning_level=", "true"));
+    GLogObs.off_level = Boolean.valueOf(U.getOption(pArgs, "--off_level=", "false"));
+    GLogObs.all_level = Boolean.valueOf(U.getOption(pArgs, "--all_level=", "false"));
+    GLogObs.trace_level = Boolean.valueOf(U.getOption(pArgs, "--trace_level=", "false"));
+    GLogObs.log4JConversionPattern =
+        U.getOption(pArgs, "--log4JConversionPattern=", "%-4r [%t] %-5p %C %m%n");
+    GLogObs.logToConsoleToo = Boolean.valueOf(U.getOption(pArgs, "--logToConsoleToo=", "false"));
+    printToLog = Boolean.valueOf(U.getOption(pArgs, "--printToLog=", "false"));
+
+    setLogDir(_LogDir);
+    if (printToLog) {
+      String fileName = getFileName();
+      if (nullPrintWriter != null)
+        nullPrintWriter.close();
+      nullPrintWriter = new PrintWriter(fileName);
+    }
+
+    // -------set the log levels
+    if (GLogObs.all_level)
+      GLogDefaultLogger.setLevel(Level.ALL);
+    else if (GLogObs.trace_level)
+      GLogDefaultLogger.setLevel(Level.TRACE);
+    else if (GLogObs.debug_level)
+      GLogDefaultLogger.setLevel(Level.DEBUG);
+    else if (GLogObs.info_level)
+      GLogDefaultLogger.setLevel(Level.INFO);
+    else if (GLogObs.std_level)
+      GLogDefaultLogger.setLevel(Level.INFO);
+    else if (GLogObs.warning_level)
+      GLogDefaultLogger.setLevel(Level.WARN);
+    else if (GLogObs.error_level)
+      GLogDefaultLogger.setLevel(Level.ERROR);
+    else if (GLogObs.off_level)
+      GLogDefaultLogger.setLevel(Level.OFF);
+
+    // GLogDefaultLogger.setLevel( Level.ALL);
+    Level tt = GLogDefaultLogger.getEffectiveLevel();
+    // System.err.println(tt );
+    GLogObs.println(GLogObs.STD___LEVEL, GLogObs.class, "setLevels", tt.toString());
+
+  } // end Method setLevels() -----------------------
+
+  // =================================================
+  /**
+   * initialize sets the logDir, debug and error levels from the command line
+   * arguments.
+   * 
+   * This is looking for arguments --logDir=/some/path/to/logs
+   * --debug_level=true|false or --debug_level (true) false by default
+   * --error_level=true|false or --error_level (true) true by default
+   *
+   * @param pLogger the logger
+   */
+  // =================================================
+  public static void set(Logger pLogger) {
+
+    // -------set the log levels
+    if (GLogObs.all_level)
+      pLogger.setLevel(Level.ALL);
+    else if (GLogObs.trace_level)
+      pLogger.setLevel(Level.TRACE);
+    else if (GLogObs.debug_level)
+      pLogger.setLevel(Level.DEBUG);
+    else if (GLogObs.info_level)
+      pLogger.setLevel(Level.INFO);
+    else if (GLogObs.std_level)
+      pLogger.setLevel(Level.INFO);
+    else if (GLogObs.warning_level)
+      pLogger.setLevel(Level.WARN);
+    else if (GLogObs.error_level)
+      pLogger.setLevel(Level.ERROR);
+    else if (GLogObs.off_level)
+      pLogger.setLevel(Level.OFF);
+
+    // Level tt = pLogger.getEffectiveLevel();
+    // System.err.println(tt );
+    // GLogObs.println(GLogObs.STD___LEVEL, GLogObs.class, "setLevels", tt.toString());
+
+  } // end Method setLevels() -----------------------
+
+  // =================================================
+  /**
+   * main.
+   *
+   * @param pArgs the command line arguments
+   */
+  // =================================================
+  public static void main(String[] pArgs) {
+
+    try {
+
+      String[] args = setArgs(pArgs);
+
+      // --------------------
+      GLogObs.set(args); // requires --logDir=, --debug_level=true|false
+      PerformanceMeter meter = new PerformanceMeter();
+      meter.setMetric(1);
+
+      meter.begin("Starting the application");
+
+      GLogObs.println("an information messge ");
+      GLogObs.println(GLogObs.ERROR_LEVEL, "an error message");
+      GLogObs.println(GLogObs.ERROR_LEVEL, GLogObs.class, "main", "anoother way to give an error msgs ");
+      GLogObs.println(GLogObs.DEBUG_LEVEL, "a debug message");
+      GLogObs.println(GLogObs.STD___LEVEL, GLogObs.class, "main", "anoother way to give an std msgs ");
+      GLogObs.println(GLogObs.INFO_LEVEL, GLogObs.class, "main", "anoother way to give an info msgs ");
+      GLogObs.println(GLogObs.WARNING_LEVEL, GLogObs.class, "main", "anoother way to give an warning msgs ");
+
+      // GLogTest gLogTest = new GLogTest();
+      // gLogTest.foo();
+
+      // String levels[] = GLogObs.getLoggingLevels(GLogObs.class);
+
+      // for ( int i = 0; i < levels.length; i++ )
+      // System.err.println(" ====> " + levels[i]);
+
+      // PerformanceMeter meter = new PerformanceMeter(GLog3.getErr());
+
+      meter.stop("end ");
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      String msg = "Something went wrong here " + e.toString();
+      GLogObs.println(GLogObs.ERROR_LEVEL, GLogObs.class, "main", msg);
+    }
+
+  } // end method Main() -----------------------------
+
+  // ------------------------------------------
+  /**
+   * setArgs sets args for logging.
+   *
+   * @param pArgs the args
+   * @return String[]
+   */
+  // ------------------------------------------
+  public static String[] setArgs(String pArgs[]) {
+
+    String className = U.getClassName(MethodHandles.lookup().lookupClass().toString());
+    String fullClassName = U.getClassNameFull(MethodHandles.lookup().lookupClass().toString());
+    String dateStamp = U.getDateStampSimple();
+
+    // -------------------------------------
+    // Input and Output
+
+    String drive =
+        U.getOption(pArgs, "--drive=", "c:/ciitizen/softwareRepos/framework/framework-data");
+    String outputDir = U.getOption(pArgs, "--outputDir=", drive + "/glog3_Output_" + dateStamp);
+    String logDir = U.getOption(pArgs, "--logDir=", outputDir + "/logs");
+
+    String debug_level = U.getOption(pArgs, "--debug_level=", "false");
+    String error_level = U.getOption(pArgs, "--error_level=", "true");
+    String warning_level = U.getOption(pArgs, "--warning_level=", "true");
+    String trace_level = U.getOption(pArgs, "--trace_level=", "false");
+    String info_level = U.getOption(pArgs, "--info_level=", "true");
+    String std_level = U.getOption(pArgs, "--std_level=", "true");
+    String logToConsoleToo = U.getOption(pArgs, "--logToConsoleToo=", "true");
+    String log4JConversionPattern =
+        U.getOption(pArgs, "--log4JConversionPattern=", "%d %-4r [thread %t] %-5p %C%m%n");
+
+    String args[] = {
+        "--drive=" + drive, "--outputDir=" + outputDir, "--logDir=" + logDir,
+
+        "--debug_level=" + debug_level, "--error_level=" + error_level,
+        "--warning_level=" + warning_level, "--trace_level=" + trace_level,
+        "--info_level=" + info_level, "--std_level=" + std_level,
+        "--logToConsoleToo=" + logToConsoleToo,
+
+        "--log4JConversionPattern=" + log4JConversionPattern
+
+    };
+
+    String description = " \n\n\n       " + className + " tests the glog3 == log4J capabilities \n";
+
+    if (Use.usageAndExitIfHelp(fullClassName, pArgs, args)) {
+      System.out.print(description);
+      System.exit(0);
+    }
+
+    return args;
+
+  } // End Method setArgs() -----------------------
+
+} // end Class GLog

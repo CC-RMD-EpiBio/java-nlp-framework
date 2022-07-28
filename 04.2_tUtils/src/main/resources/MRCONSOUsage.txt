@@ -1,0 +1,15 @@
+
+MRCONSO reads in the content of the mrconso table and indexes 
+them on cui, aui, and str.  These three keys can be used to 
+retrieve mrconso rows.
+
+java -jar MRCONSO [Options]
+
+  Options
+    --version
+    --help
+    --testSomeFunctions
+    --cuiField=X    reads cuis in from the command line from pipe delimited field X (zero offset, first field is 0) (cui's or awi's, but not both)
+    --auiField=     reads auis in from the command line from pipe delimited field X (zero offset, first field is 0)
+    
+ 

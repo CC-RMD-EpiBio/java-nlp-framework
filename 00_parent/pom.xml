@@ -1,0 +1,415 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ====================================================== -->
+  <!-- Lists the dependencies for all framework projects      -->
+  <!-- ====================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>00-nlp-parent</artifactId>
+  <version>2022.09.0</version>
+  <packaging>pom</packaging>
+  <name>${project.groupId}: ${project.artifactId}</name>
+  <description>Contains the list of dependencies for all framework projects</description>
+
+
+  <!-- ======================================================= -->
+  <!-- Global properties - like utf-8 encoding                 --> 
+  <!-- ======================================================= -->
+  <properties>
+    <!-- Set default maven settings -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <releaseVersion>${project.version}</releaseVersion>
+    <doclint>none</doclint>
+  </properties>
+
+  <!-- ======================================================= -->
+  <!-- Where to pick up the parent poms -->
+  <!-- ======================================================= -->
+  <repositories>
+ <!--
+    <repository>
+      <id>inlp-nexus</id>
+      <name>inlp Nexus</name>
+          <        url>http://inlp.bmi.utah.edu/nexus/content/groups/public</url   >
+      <url>https://qtzeng.smhs.gwu.edu/nexus/content/groups/public</url> 
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+-->
+    <repository>
+      <id>central repository-nexus</id>
+      <name>central repo Nexus</name>
+      <url>https://repo1.maven.org/maven2</url> 
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+ <!--
+    <pluginRepository>
+      <id>inlp-nexus</id>
+      <name>inlp Nexus</name>
+      <    url>http://inlp.bmi.utah.edu/nexus/content/groups/public</url   >
+      <url>https://qtzeng.smhs.gwu.edu/nexus/content/groups/public</url>
+      <releases>
+	<enabled>true></enabled>
+	<updatePolicy>never</updatePolicy>
+      </releases>
+    </pluginRepository>
+-->
+  </pluginRepositories>
+
+  <!-- =================================================== -->
+  <!-- Distribution Management -->
+  <!-- =================================================== -->
+  <distributionManagement>
+
+    <site>
+      <id>inlp</id>
+      <name>Deployment Server</name>
+      <!-- url>scp://inlp.bmi.utah.edu/var/www/html/sites/${project.groupId}/${project.artifactId}/${project.version}/</url -->
+    </site>
+
+    <repository>
+      <id>nexus</id>
+      <name>Nexus Staging Repo</name>
+      <!-- url>http://inlp.bmi.utah.edu/nexus/service/local/repositories/releases/content</url -->
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+    </repository>
+
+    <!--
+       <repository>
+      <id>mavenCentral</id>
+      <name>Nexus Main Repo</name>
+      <url>https://repo1.maven.org/maven2/</url>
+    </repository>
+    -->
+
+    <snapshotRepository>
+       <id>nexus_snapshots</id>
+       <name>Nexus Snapshot Repo</name>
+       <url>http://inlp.bmi.utah.edu/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+
+  </distributionManagement>
+
+
+  <!-- =================================================== -->
+  <!-- Module Dependency Versions -->
+  <!-- =================================================== -->
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- =================================================== -->
+      <!-- Framework Functionalities                           -->
+      <!-- =================================================== -->
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>01-nlp-resources       </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>03-nlp-type-descriptors</artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>04.0-nlp-util          </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>04.1-nlp-vUtil         </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>04.2-nlp-tUtil         </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>05-nlp-annotators      </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>06-nlp-marshallers     </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>07.0-nlp-pUtils        </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>08-nlp-pipelines       </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>09-nlp-applications    </artifactId> <version>2022.09.0</version> </dependency>
+        <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>nlp-apis               </artifactId> <version>2022.09.0</version> </dependency> 
+
+
+      <!-- =================================================== -->
+      <!-- third party mavened project versions -->
+      <!-- =================================================== -->
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-core               </artifactId> <version>2.9.0    </version> </dependency>
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-as-core            </artifactId> <version>2.9.0    </version> </dependency>
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-as-activemq        </artifactId> <version>2.9.0    </version> </dependency>
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-document-annotation</artifactId> <version>2.9.0    </version> </dependency>
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-bootstrap          </artifactId> <version>2.9.0    </version> </dependency>
+      <dependency> <groupId>org.apache.uima         </groupId> <artifactId>uimaj-examples           </artifactId> <version>2.9.0    </version> </dependency>
+
+      <!-- =================================================== -->
+      <!--  Log4j has a vunerability to it, here is the old one -->
+      <!-- dependency  groupId>log4j                   groupId   artifactId log4j                    artifactId  version 1.2.17   version dependency -->
+      <dependency><groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-core               </artifactId>  <version>2.17.1</version> </dependency>
+
+      <dependency> <groupId>org.hsqldb              </groupId> <artifactId>hsqldb                   </artifactId> <version>2.2.7    </version> </dependency>
+      <!-- dependency><groupId>com.h2database </groupId><artifactId>h2 </artifactId><version>1.0.60 </version></dependency --> <dependency> <groupId>com.h2database          </groupId> <artifactId>h2                       </artifactId> <version>1.4.188  </version> </dependency>
+      <dependency> <groupId>mysql                   </groupId> <artifactId>mysql-connector-java     </artifactId> <version>5.1.18   </version> </dependency>
+      <dependency> <groupId>org.apache.opennlpL     </groupId> <artifactId>opennlp-tools            </artifactId> <version>1.4.0.local</version> </dependency>
+      <dependency> <groupId>org.apache.lucene       </groupId> <artifactId>lucene-core              </artifactId> <version>4.0.0    </version> </dependency>
+      <dependency> <groupId>opennlpL                </groupId> <artifactId>maxent                   </artifactId> <version>2.5.2.local </version> 
+        <exclusions>
+         <exclusion> <groupId>log4j             </groupId> <artifactId>log4j    </artifactId> </exclusion>
+         <exclusion> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-core    </artifactId> </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency> <groupId>trove                   </groupId> <artifactId>trove                    </artifactId> <version>1.0.2    </version> </dependency>
+      <dependency> <groupId>net.sf.jwordnet         </groupId> <artifactId>jwnl                     </artifactId> <version>1.3.3    </version> </dependency>
+      <dependency> <groupId>com.thoughtworks.xstream</groupId> <artifactId>xstream                  </artifactId> <version>1.4.2    </version> </dependency>
+      <!-- dependency> <groupId>weka                    </groupId> <artifactId>weka                     </artifactId> <version>3.8.0    </version> </dependency  -->
+      <dependency> <groupId>nz.ac.waikato.cms.weka  </groupId> <artifactId>weka-stable                                  </artifactId> <version>3.8.0</version> </dependency>
+      <dependency> <groupId>nz.ac.waikato.cms.weka  </groupId> <artifactId>weka-dev                 </artifactId> <version>3.9.2    </version> </dependency>
+      <!-- dependency> <groupId>nz.ac.waikato.cms.weka  </groupId> <artifactId>libSVM                   </artifactId> <version>1.0.4    </version> </dependency>
+      -->
+      <dependency> <groupId>nz.ac.waikato.cms.weka  </groupId> <artifactId>LibSVM                   </artifactId> <version>1.0.10   </version> </dependency>
+      <dependency> <groupId>cc.mallet               </groupId> <artifactId>mallet                   </artifactId> <version>2.0.7    </version> </dependency>
+      <dependency> <groupId>org.jdom                </groupId> <artifactId>jdom                     </artifactId> <version>1.1      </version> </dependency>
+      <dependency> <groupId>org.codehaus.jackson    </groupId> <artifactId>jackson-core-asl         </artifactId> <version>1.5.0    </version> </dependency> 
+      <dependency> <groupId>org.codehaus.jackson    </groupId> <artifactId>jackson-mapper-asl       </artifactId> <version>1.5.0    </version> </dependency>
+      <dependency> <groupId>gov.nih.nlm.nls         </groupId> <artifactId>vtt                      </artifactId> <version>2015.8   </version> </dependency>
+      <dependency> <groupId>gov.nih.nlm.nls.lvg     </groupId> <artifactId>lvgdist                  </artifactId> <version>2017.0   </version> </dependency>
+
+      <dependency> <groupId>com.ibm.icu             </groupId> <artifactId>icu4j                    </artifactId> <version>4.0.1    </version> </dependency>
+      <dependency> <groupId>org.hibernate           </groupId> <artifactId>hibernate-entitymanager  </artifactId> <version>4.1.5.Final</version> </dependency>
+      <dependency> <groupId>com.microsoft           </groupId> <artifactId>sqljdbc4                 </artifactId> <version>4.0      </version> </dependency>
+      <dependency> <groupId>com.microsoft.sqlserver </groupId> <artifactId>sqljdbc4                 </artifactId> <version>4.1      </version> </dependency>
+      <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-jpa          </artifactId> <version>1.2.0.RELEASE</version> </dependency>
+      <dependency> <groupId>org.springframework     </groupId> <artifactId>spring-test              </artifactId> <version>3.0.5.RELEASE</version> </dependency>
+      <dependency> <groupId>org.springframework     </groupId> <artifactId>spring-jdbc              </artifactId> <version>2.0.6     </version> </dependency>
+      <dependency> <groupId>com.healthmarketscience.jackcess</groupId> <artifactId>jackcess        </artifactId> <version>4.0.0     </version> </dependency>
+      <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-annotations</artifactId> <version>2.9.3</version> </dependency>
+      <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-databind   </artifactId> <version>2.9.3</version> </dependency>
+      <dependency> <groupId>com.fasterxml.jackson.core</groupId> <artifactId>jackson-core       </artifactId> <version>2.9.3</version> </dependency>
+      <dependency> <groupId>io.swagger.core.v3</groupId> <artifactId>swagger-annotations</artifactId> <version>2.0.0-rc4</version> </dependency>
+
+      <!-- =================================================== -->
+      <!-- for VTT -->
+      <!-- =================================================== -->
+      <dependency> <groupId>commons-logging     </groupId> <artifactId>commons-logging    </artifactId> <version>1.2  </version> </dependency>
+      <dependency> <groupId>commons-logging     </groupId> <artifactId>commons-logging-api</artifactId> <version>1.1  </version> </dependency>
+      <dependency> <groupId>commons-io          </groupId> <artifactId>commons-io         </artifactId> <version>2.1  </version> </dependency>
+      <dependency> <groupId>dom4j               </groupId> <artifactId>dom4j              </artifactId> <version>1.6.1</version> </dependency>
+      <dependency> <groupId>junit               </groupId> <artifactId>junit              </artifactId> <version>4.8.2</version> </dependency>
+      <dependency> <groupId>stax                </groupId> <artifactId>stax-api           </artifactId> <version>1.0.1</version> </dependency>
+      <dependency> <groupId>org.apache.xmlbeans </groupId> <artifactId>xmlbeans           </artifactId> <version>2.3.0</version> </dependency>
+      <dependency> <groupId>org.apache.poi      </groupId> <artifactId>poi                </artifactId> <version>3.9  </version> </dependency>
+      <dependency> <groupId>org.apache.poi      </groupId> <artifactId>poi-ooxml          </artifactId> <version>3.9  </version> </dependency>
+
+      <!-- =================================================== -->
+      <!-- for clearTK -->
+      <!-- =================================================== -->
+      <!-- dependency> <groupId>org.uimafit             </groupId> <artifactId>uimafit                  </artifactId> <version>1.4.0    </version> </dependency  this was renamed to uimafit-core      -->
+      <dependency> <groupId>com.google              </groupId> <artifactId>guava                    </artifactId> <version>13.0-SNAPSHOT</version> </dependency>
+      <dependency> <groupId>com.googlecode.json-simple</groupId> <artifactId>json-simple             </artifactId> <version>1.1.1</version> </dependency>
+      <dependency> <groupId>com.googlecode.clearparser</groupId> <artifactId>clearparser            </artifactId> <version>0.4.0-SNAPSHOT</version> </dependency>
+      <dependency> <groupId>org.cleartk             </groupId> <artifactId>cleartk-ml               </artifactId> <version>1.3.0    </version> </dependency>
+      <dependency> <groupId>org.cleartk             </groupId> <artifactId>cleartk-examples         </artifactId> <version>1.0.0-SNAPSHOT</version> </dependency>
+      <dependency> <groupId>org.cleartk             </groupId> <artifactId>cleartk-ml-mallet       </artifactId> <version>1.2.2    </version> </dependency>
+      <dependency> <groupId>org.cleartk             </groupId> <artifactId>cleartk-ml-crfsuite      </artifactId> <version>0.2.2    </version> </dependency>
+
+      <!-- =================================================== -->
+      <!-- for uimaFit -->
+      <!-- =================================================== -->
+      <!-- dependency> <groupId>org.apache.uima          </groupId> <artifactId>uimafit-core             </artifactId> <version>2.4.0    </version> </dependency -->
+
+      <!-- =================================================== -->
+      <!-- for evaluation -->
+      <!-- https://mvnrepository.com/artifact/com.googlecode.java-diff-utils/diffutils -->
+      <!-- =================================================== -->
+      <dependency> <groupId>com.googlecode.java-diff-utils</groupId> <artifactId>diffutils</artifactId> <version>1.2</version> </dependency>
+
+      <!-- =================================================== -->
+      <!-- Third party software that we have the source for -->
+      <!-- that is un-mavened or contains local changes -->
+      <!-- =================================================== -->
+
+      <!-- =================================================== -->
+      <!-- eHOST and eHOST Dependencies -->
+      <!-- =================================================== -->
+      <dependency> <groupId>gov.nih.cc.rmd.annotation</groupId> <artifactId>annotationadmin-integration</artifactId> <version>1.0.13        </version> </dependency>
+      <!-- dependency <groupId>org.jdom </groupId> <artifactId>jdom </artifactId> <version>1.1 </version> dependency -->
+      <dependency> <groupId>org.jdesktop           </groupId> <artifactId>layout                     </artifactId> <version>1.0.3         </version> </dependency>
+      <dependency> <groupId>gov.nih.nlm.uts.webservice</groupId> <artifactId>uts-api                  </artifactId> <version>0.0.2         </version> </dependency>
+      <dependency> <groupId>gov.va </groupId> <artifactId>eHOST </artifactId> <version>2017.07.2 </version> </dependency>
+
+      <!-- ============================================================================ -->
+      <!-- these are unmavened jars included in ehost that I could not find the sources -->
+      <!-- ============================================================================ -->
+
+      <dependency> <groupId>org.swinglabs          </groupId> <artifactId>swingx                     </artifactId> <version>0.0.0         </version> </dependency>
+      <dependency> <groupId>org.netbeans           </groupId> <artifactId>lib                        </artifactId> <version>3.6           </version> </dependency>
+      <dependency> <groupId>org.netbeans           </groupId> <artifactId>netbeans                   </artifactId> <version>2009          </version> </dependency>
+      <dependency> <groupId>commons-codec          </groupId> <artifactId>commons-codec              </artifactId> <version>1.4           </version> </dependency>
+      <dependency> <groupId>sourceforge</groupId> <artifactId>jswarm_pso</artifactId> <version>2_08.Local</version> </dependency> 
+
+      <!-- =================================================== -->
+      <!-- other va software versions -->
+      <!-- =================================================== -->
+      <dependency> <groupId>gov.nih.cc.rmd          </groupId> <artifactId>gateUtils                </artifactId> <version>2011.12.3</version> </dependency>
+      <dependency> <groupId>uk.ac.gate</groupId> <artifactId>gate-core</artifactId> <version>9.0</version> </dependency>
+
+      <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>knowtatorUtils </artifactId> <version>2018.05.0</version> </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>red                      </artifactId> <version>2014.02.2</version> </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd              </groupId> <artifactId>krbUtils                 </artifactId> <version>2014.08.0</version> </dependency>
+      <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>utils.snippet            </artifactId> <version>2014.9.1</version> </dependency>
+      <dependency> <groupId>gov.va.ltran              </groupId> <artifactId>obsecAnSection           </artifactId> <version>2015.04.21</version> </dependency>
+      <dependency> <groupId>gov.va.ltran              </groupId> <artifactId>obSecAn                  </artifactId> <version>2017.02.0-SNAPSHOT</version> </dependency>
+
+      <!-- OLD LIB <dependency> <groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>jdbcDrivers </artifactId> <version>2018.07.0 </version> </dependency> -->
+
+      <!-- =================================================== -->
+      <!-- Framework project versions -->
+      <!-- =================================================== -->
+
+      <!-- RAndom other dependencies -->
+      <dependency> <groupId>org.unix4j                </groupId> <artifactId>unix4j-command</artifactId> <version>0.3</version> </dependency> 
+
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- =================================================== -->
+  <!-- Plugin dependency versions -->
+  <!-- =================================================== -->
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+
+
+        <!-- ======================================================== -->
+        <!-- Maven release plugin to fix git-tag bug -->
+        <!-- Appengine deploy at end of mvn release:perform -->
+        <!-- ======================================================== -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-scm-plugin</artifactId>
+              <version>1.8.1</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+
+
+      </plugins>
+    </pluginManagement>
+
+    <!-- =================================================== -->
+    <!-- Plugins -->
+    <!-- =================================================== -->
+    <plugins>
+
+      <!-- ======================================================== -->
+      <!-- Maven source distribution plugin -->
+      <!-- ======================================================== -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- ======================================================== -->
+      <!-- Maven javadoc distribution plugin -->
+      <!-- ======================================================== -->
+      <!-- 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <!-  Keep this javadoc plugin version, later ones like 3.1.0 lead to failures   was using 2.10.3   ->
+        <version>3.0.0</version>
+            <configuration>
+              <javadocVersion>1.7</javadocVersion>
+              <doclint>none</doclint>
+              <additionalJOption>-Xdoclint:none</additionalJOption>
+              <aggregate>true</aggregate>
+              <includeDependencySources>false</includeDependencySources>
+            </configuration>
+
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <javadocVersion>1.12.02</javadocVersion>
+              <additionalJOption>-Xdoclint:none</additionalJOption>
+              <aggregate>true</aggregate>
+              <includeDependencySources>false</includeDependencySources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+     -->
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+
+   <!--
+            <source>15</source>
+            <target>15</target>
+   -->
+            <!-- release>8</release -->
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <sourceIncludes>
+            <sourceInclude>*</sourceInclude>
+          </sourceIncludes>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-plugin-plugin</artifactId>
+        <version>3.1</version>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.0</version>
+        <configuration>
+          <excludes>
+            <exclude>**/*IntegrationTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+<profiles>
+    <profile>
+        <id>disable-java8-doclint</id>
+        <activation>
+            <jdk>[1.8,)</jdk>
+        </activation>
+        <properties>
+            <additionalparam>-Xdoclint:none</additionalparam>
+        </properties>
+    </profile>
+</profiles>
+
+</project>
+

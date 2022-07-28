@@ -1,0 +1,58 @@
+# =========================================================================
+#
+# Summary: AlcoholAndSubstanceAbuse are a class of psycosocial risk factors. 
+#          Some of these were taken out of the homelessness lexicon and put
+#          into the MST related lexicon, and subsquently dropped from the MST lexicon.
+#
+# Description of Fields:
+#   LexiconID|term|POS|inflection|Baseform|CitationForm|Category|CUI|ConceptName|tui
+#     
+#          N.B.  The eui's need to be refactored. They are from the original MST lexicon.
+#
+# Created :2015-12-03
+#
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+M000318|alcohol abuse|noun|count(thr_sing)|alcohol abuse|alcohol abuse|AlcoholAndSubstanceAbuse
+M000319|etoh abuse|noun|count(thr_sing)|etoh abuse|etoh abuse|AlcoholAndSubstanceAbuse
+M000320|AD|noun|count(thr_sing)|AD|AD|AlcoholAndSubstanceAbuse
+M000321|alcohol dependence|noun|count(thr_sing)|alcohol dependence|alcohol dependence|AlcoholAndSubstanceAbuse
+M000322|alcohol detoxification|noun|count(thr_sing)|alcohol detoxification|alcohol detoxification|AlcoholAndSubstanceAbuse
+M000323|alcohol rehab|noun|count(thr_sing)|alcohol rehab|alcohol rehab|AlcoholAndSubstanceAbuse
+M000324|alcohol use|noun|count(thr_sing)|alcohol use|alcohol use|AlcoholAndSubstanceAbuse
+M000325|dui|noun|count(thr_sing)|dui|dui|AlcoholAndSubstanceAbuse
+M000326|etoh|noun|count(thr_sing)|ETOH|ETOH|AlcoholAndSubstanceAbuse
+M000328|ethyl alchohol|noun|count(thr_sing)|ethyl alchohol|ethyl alchohol|AlcoholAndSubstanceAbuse
+M000329|ethyl|noun|count(thr_sing)|ethyl|ethyl|AlcoholAndSubstanceAbuse
+M000330|etoh|noun|count(thr_sing)|etoh|etoh|AlcoholAndSubstanceAbuse
+M000331|alcohol abuse/dependence|noun|count(thr_sing)|alcohol abuse/dependence|alcohol abuse/dependence|AlcoholAndSubstanceAbuse
+M000332|etoh abuse|noun|count(thr_sing)|etoh abuse|etoh abuse|AlcoholAndSubstanceAbuse
+M000333|etoh dependence|noun|count(thr_sing)|etoh dependence|etoh dependence|AlcoholAndSubstanceAbuse
+M000334|etoh abuse/dependence|noun|count(thr_sing)|etoh abuse/dependence|etoh abuse/dependence|AlcoholAndSubstanceAbuse
+M000335|AA groups|noun|count(thr_sing)|AA groups|AA groups|AlcoholAndSubstanceAbuse
+M000336|AA group|noun|count(thr_sing)|AA group|AA group|AlcoholAndSubstanceAbuse
+M000337|binge drinking|noun|count(thr_sing)|binge drinking|binge drinking|AlcoholAndSubstanceAbuse
+H0000190|VOA|noun|count(thr_sing)|VOA|VOA|AlcoholAndSubstanceAbuse
+H0000191|vocational rehab|noun|count(thr_sing)|vocational rehab|vocational rehab|AlcoholAndSubstanceAbuse
+H0000195|withdrawal|noun|count(thr_sing)|withdrawal|withdrawal|AlcoholAndSubstanceAbuse|C2349954|Withdrawal|T052
+H0000195|withdrawal|noun|count(thr_sing)|withdrawal|withdrawal|AlcoholAndSubstanceAbuse|C2825032|Withdrawal|T048
+H0000206|rehabilitation|noun|count(thr_sing)noun|rehabilitation|rehabilitation|AlcoholAndSubstanceAbuse|C0034991|Rehabilitation|T061
+H0000217|alcohol/drug abuse|noun|count(thr_sing)|alcohol/drug abuse|alcohol/drug abuse|AlcoholAndSubstanceAbuse|||

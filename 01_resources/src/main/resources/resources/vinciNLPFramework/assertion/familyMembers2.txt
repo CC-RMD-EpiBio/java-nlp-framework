@@ -1,0 +1,815 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+abandon children|c0008095|t099
+abandoned adolescents|c1137103|t099
+abandoned adolescent|c1137103|t099
+abandoned children|c0008095|t099
+abandoned child|c0008095|t099
+adolescent mothers|c0237404|t099
+adolescent mother|c0237404|t099
+adolescent, abandoned|c1137103|t099
+adolescents mothers|c0237404|t099
+adolescents mother|c0237404|t099
+adolescents, abandoned|c1137103|t099
+adopted children|c0337541|t099
+adopted child|c0337541|t099
+adopted daughter|c0337553|t099
+adopted son|c0337565|t099
+adoptees|c0175798|t099
+adoptee|c0175798|t099
+adopting children|c0337541|t099
+adopting child|c0337541|t099
+adoptive brother|c0337529|t099
+adoptive child|c0337541|t099
+adoptive daughter|c0337553|t099
+adoptive family relation|c0682319|t099
+adoptive father|c0337495|t099
+adoptive grand-father|c0337479|t099
+adoptive grand-mother|c0337478|t099
+adoptive grand-parent|c0337473|t099
+adoptive mother|c0337487|t099
+adoptive parenting|c0337466|t099
+adoptive parents|c0337466|t099
+adoptive parent|c0337466|t099
+adoptive relation|c2347535|t099
+adoptive relative|c2347535|t099
+adoptive sibling|c0337503|t099
+adoptive sister|c0337516|t099
+adoptive son|c0337565|t099
+adult children|c0683572|t099
+adult daughters|c0683572|t099
+adult daughter|c0683572|t099
+adult offspring|c0683572|t099
+adult sons|c0683572|t099
+adult son|c0683572|t099
+adults children|c0683572|t099
+ancestors|c0870134|t099
+ancestor|c0870134|t099
+ancestresses|c0870134|t099
+ancestress|c0870134|t099
+aunt of subject|c2732646|t099
+aunts|c0337576|t099
+aunty|c0337576|t099
+aunt|c0337576|t099
+bastard brother|c0337539|t099
+bastard child|c0337551|t099
+bastard daughter|c0337562|t099
+bastard sibling|c0337513|t099
+bastard sister|c0337526|t099
+bastard son|c0337574|t099
+biological brother|c0337528|t099
+biological child|c0337540|t099
+biological daughter|c0337552|t099
+biological family relation|c0682317|t099
+biological father|c0337494|t099
+biological grand-father|c0337477|t099
+biological grand-mother|c0337476|t099
+biological grand-parent|c0337472|t099
+biological mother|c0337486|t099
+biological parent|c0337465|t099
+biological relative|c1266852|t099
+biological sibling|c0337502|t099
+biological sister|c0337515|t099
+biological son|c0337564|t099
+biracial children|c0870206|t099
+birth multiple quadruplets|c0034373|t099
+birth offspring, multiple|c0026753|t099
+birth parents|c0871667|t099
+birth parent|c0871667|t099
+birth, multiple|c0026753|t099
+blended families|c0680029|t099
+blended family|c0680029|t099
+blood relation|c1266852|t099
+blood relatives|c1266852|t099
+blood relative|c1266852|t099
+br's|c0337527|t099
+brother of subject|c2733257|t099
+brotherliness|c0337527|t099
+brothers|c0337527|t099
+brother|c0337527|t099
+broth|c0337527|t099
+brs|c0337527|t099
+br|c0337527|t099
+bs|c0337527|t099
+b|c0337527|t099
+c-h's|c0680063|t099
+c-hs|c0680063|t099
+c-h|c0680063|t099
+cancer family|c1516196|t099
+caregiver, family|c0086279|t099
+caregiver, spouse|c0087015|t099
+caregivers family|c0086279|t099
+caregivers, family|c0086279|t099
+caregivers, spouse|c0087015|t099
+carrier, gestational|c0038947|t099
+carriers, gestational|c0038947|t099
+ch's|c0680063|t099
+ch.'s|c0680063|t099
+ch.s|c0680063|t099
+ch.|c0680063|t099
+charge of the court|c0682332|t099
+child find|c0680063|t099
+child given for adoption|c0524333|t099
+child grand|c0337548|t099
+child of aod user|c0682328|t099
+child of subject|c2733583|t099
+child of substance abusing parent|c0682328|t099
+child of the court|c0682332|t099
+child of|c0680063|t099
+child parenting|c0260096|t099
+child parents|c0260096|t099
+child parent|c0260096|t099
+child without parent|c0682331|t099
+child, abandoned|c0008095|t099
+child, only|c0029039|t099
+child, unwanted|c0008101|t099
+child-like|c0237410|t099
+child-like|c0680063|t099
+childishly|c0237410|t099
+childishly|c0680063|t099
+childishness|c0237410|t099
+childishness|c0680063|t099
+childish|c0237410|t099
+childish|c0680063|t099
+childless couple|c0683567|t099
+childless family|c0680030|t099
+childlessness|c0237410|t099
+childlessness|c0680063|t099
+childless|c0237410|t099
+childless|c0680063|t099
+childlikeness|c0237410|t099
+childlikeness|c0680063|t099
+childlike|c0237410|t099
+childlike|c0680063|t099
+childrearing environment|c0680017|t099
+children adult|c0683572|t099
+children only|c0029039|t099
+children, abandoned|c0008095|t099
+children, adopted|c0337541|t099
+children, adult|c0683572|t099
+children, only|c0029039|t099
+children, unwanted|c0008101|t099
+children|c0237410|t099
+children|c0680063|t099
+childs|c0237410|t099
+childs|c0680063|t099
+child|c0237410|t099
+child|c0680063|t099
+chs|c0680063|t099
+ch|c0680063|t099
+co-parents|c0683566|t099
+co-parent|c0683566|t099
+common law husband of subject|c2732256|t099
+common law wife of subject|c2733351|t099
+compadrazgo|c0680026|t099
+compadre|c0680027|t099
+companionability|c0682323|t099
+companionable|c0682323|t099
+companioned|c0682323|t099
+companioning|c0682323|t099
+companionless|c0682323|t099
+companionship|c0682323|t099
+companions|c0682323|t099
+companion|c0682323|t099
+consanguineal relationship|c0683568|t099
+consanguineous relationships|c0683568|t099
+coparents|c0683566|t099
+coparent|c0683566|t099
+cosa's|c0682328|t099
+cosas|c0682328|t099
+cosa|c0682328|t099
+couple married|c0870848|t099
+coupled|c0010222|t099
+couplers|c0010222|t099
+coupler|c0010222|t099
+couples married|c0870848|t099
+couples|c0010222|t099
+couple|c0010222|t099
+coupling|c0010222|t099
+cousins first|c0337583|t099
+cousins second|c0337586|t099
+cousins|c0337580|t099
+cousin|c0337580|t099
+d.'s|c0011011|t099
+d.s|c0011011|t099
+d.|c0011011|t099
+da's|c0011011|t099
+das|c0011011|t099
+daughter of subject|c2733606|t099
+daughter, adult|c0683572|t099
+daughterly|c0011011|t099
+daughters, adult|c0683572|t099
+daughters|c0011011|t099
+daughter|c0011011|t099
+da|c0011011|t099
+de-scented|c0680043|t099
+de-scenting|c0680043|t099
+de-scents|c0680043|t099
+de-scent|c0680043|t099
+dependent member of household|c0682276|t099
+descendance|c0680043|t099
+descendancy|c0680043|t099
+descendants|c0680043|t099
+descendant|c0680043|t099
+descended|c0680043|t099
+descendence|c0680043|t099
+descendency|c0680043|t099
+descendents|c0680043|t099
+descendent|c0680043|t099
+descending|c0680043|t099
+descends|c0680043|t099
+descend|c0680043|t099
+descension|c0680043|t099
+descented|c0680043|t099
+descenting|c0680043|t099
+descents|c0680043|t099
+descent|c0680043|t099
+disabled relative|c0524352|t099
+distant relative|c1273526|t099
+divorced parenting|c0425149|t099
+divorced parents|c0425149|t099
+divorcing parents|c0425149|t099
+dizygotic twins|c0041429|t099
+dizygotic twin|c0041429|t099
+domestic partners|c0600393|t099
+domestic partner|c0600393|t099
+expectant mothers|c0871736|t099
+expectant mother|c0871736|t099
+extended families|c0015341|t099
+extended family member|c1274025|t099
+extended family|c0015341|t099
+f1 generation|c0314650|t099
+f2 generation|c0314651|t099
+f<sub>1</sub> generation|c0314650|t099
+f<sub>2</sub> generation|c0314651|t099
+f>1< generation|c0314650|t099
+f>2< generation|c0314651|t099
+familiae|c0015576|t099
+familialities|c0015576|t099
+familiality|c0015576|t099
+familially|c0015576|t099
+familial|c0015576|t099
+familiarities|c0015576|t099
+familiarity|c0015576|t099
+familiarly|c0015576|t099
+familiar|c0015576|t099
+familia|c0015576|t099
+family caregivers|c0086279|t099
+family caregiver|c0086279|t099
+family member-caregiver|c1545722|t099
+family members|c0086282|t099
+family member|c0086282|t099
+family or significant other|c2706616|t099
+family origins|c0870545|t099
+family, extended|c0015341|t099
+family, nuclear|c0028574|t099
+family, reconstituted|c0282174|t099
+family, single parent|c0037178|t099
+family, single-parent|c0037178|t099
+familys people|c0086282|t099
+family|c0015576|t099
+father of subject|c2732713|t099
+father|c0015671|t099
+father, unmarried|c0041745|t099
+father-in-law|c2349973|t099
+fathered|c0015671|t099
+fathering|c0015671|t099
+fatherlands|c0015671|t099
+fatherland|c0015671|t099
+fatherlessness|c0015671|t099
+fatherless|c0015671|t099
+fathers, unmarried|c0041745|t099
+fathers-in-law|c2349973|t099
+fathers|c0015671|t099
+father|c0015671|t099
+fdr's|c1517194|t099
+fdrs|c1517194|t099
+fdr|c1517194|t099
+female cousin|c0337581|t099
+female fianc? of subject|c2732516|t099
+female fiance of subject|c2732516|t099
+female first cousin|c0337584|t099
+female second cousin|c0337587|t099
+fianc?s|c1266853|t099
+fianc?|c1266853|t099
+fiances|c1266853|t099
+fiance|c1266853|t099
+first cousin once removed|c2348676|t099
+first cousin|c0337583|t099
+first degree biological relative|c1266851|t099
+first degree blood relative of subject|c2733545|t099
+first degree blood relative|c1266851|t099
+first degree relatives|c1517194|t099
+first degree relative|c1517194|t099
+first-degree relatives|c1517194|t099
+first-degree relative|c1517194|t099
+foster brother|c0337532|t099
+foster care family|c0419195|t099
+foster care|c0419195|t099
+foster children|c0337544|t099
+foster child|c0337544|t099
+foster daughters|c0337556|t099
+foster daughter|c0337556|t099
+foster family relation|c0684027|t099
+foster fathers|c0337498|t099
+foster father|c0337498|t099
+foster mothers|c0337489|t099
+foster mother|c0337489|t099
+foster parenting|c0337468|t099
+foster parents|c0337468|t099
+foster parent|c0337468|t099
+foster relationship|c0684027|t099
+foster relation|c2348710|t099
+foster relative|c2348710|t099
+foster sibling|c0337506|t099
+foster sister|c0337519|t099
+foster sons|c0337568|t099
+foster son|c0337568|t099
+foster-children|c0337544|t099
+foster-child|c0337544|t099
+fostercare|c0419195|t099
+fostered|c0344349|t099
+fosterers|c0344349|t099
+fosterer|c0344349|t099
+fostering|c0344349|t099
+fosters|c0344349|t099
+foster|c0344349|t099
+fr's|c0015671|t099
+fraternal twin brother|c0337536|t099
+fraternal twin sibling|c0337510|t099
+fraternal twin sister|c0337523|t099
+fraternal twins|c0041429|t099
+fraternal twin|c0041429|t099
+frs|c0015671|t099
+fr|c0015671|t099
+full relation|c2348717|t099
+full relative|c2348717|t099
+full sibling|c2348717|t099
+gay parenting|c0870598|t099
+gay parents|c0870598|t099
+gay parent|c0870598|t099
+gemellary|c0041427|t099
+gestational carriers|c0038947|t099
+gestational carrier|c0038947|t099
+gestational mothers|c0038947|t099
+gestational mother|c0038947|t099
+gf's|c0337475|t099
+gfs|c0337475|t099
+gf|c0337475|t099
+gm's|c0337474|t099
+gm.'s|c0337474|t099
+gm.s|c0337474|t099
+gm.|c0337474|t099
+gms|c0337474|t099
+gm|c0337474|t099
+godparents|c0680028|t099
+godparent|c0680028|t099
+grand child|c0337548|t099
+grand daughter|c0337561|t099
+grand mothers|c0337474|t099
+grand mother|c0337474|t099
+grand relation|c2348890|t099
+grand relative|c2348890|t099
+grand son|c0337573|t099
+grand-daughters|c0337561|t099
+grand-daughter|c0337561|t099
+grand-father|c0337475|t099
+grand-mothers|c0337474|t099
+grand-mother|c0337474|t099
+grand-parent|c0337471|t099
+grandchildrens|c0337548|t099
+grandchildren|c0337548|t099
+grandchild|c0337548|t099
+granddaughter #1|c0337561|t099
+granddaughters|c0337561|t099
+granddaughter|c0337561|t099
+grandfathered|c0337475|t099
+grandfathering|c0337475|t099
+grandfathers|c0337475|t099
+grandfather|c0337475|t099
+grandmothers|c0337474|t099
+grandmother|c0337474|t099
+grandparent of subject|c2732389|t099
+grandparental|c0337471|t099
+grandparented|c0337471|t099
+grandparenting|c0337471|t099
+grandparents|c0337471|t099
+grandparent|c0337471|t099
+grandsons|c0337573|t099
+grandson|c0337573|t099
+great grand child|c0337549|t099
+great grand-father|c0337482|t099
+great grand-mother|c0337481|t099
+great grand-parent|c0337480|t099
+great grandfathers|c0337482|t099
+great grandfather|c0337482|t099
+great grandmothers|c0337481|t099
+great grandmother|c0337481|t099
+great relation|c2348895|t099
+great relative|c2348895|t099
+great-aunt|c1273528|t099
+great-grandchild|c0337549|t099
+great-granddaughter|c1274024|t099
+great-grandfathers|c0337482|t099
+great-grandfather|c0337482|t099
+great-grandmothers|c0337481|t099
+great-grandmother|c0337481|t099
+great-grandparent|c0337480|t099
+great-grandson|c1274023|t099
+great-great grand child|c0337550|t099
+great-great grand-father|c0337485|t099
+great-great grand-mother|c0337484|t099
+great-great grand-parent|c0337483|t099
+great-uncles|c1273527|t099
+great-uncle|c1273527|t099
+greatgrandfathers|c0337482|t099
+greatgrandfather|c0337482|t099
+greatgrandmothers|c0337481|t099
+greatgrandmother|c0337481|t099
+greatuncles|c1273527|t099
+greatuncle|c1273527|t099
+guardianships|c1274041|t099
+guardianship|c1274041|t099
+guardians|c1274041|t099
+guardian|c1274041|t099
+half brothers|c0337531|t099
+half brother|c0337531|t099
+half relation|c0337505|t099
+half relative|c0337505|t099
+half sibling|c0337505|t099
+half sister|c0337518|t099
+half-brothers|c0337531|t099
+half-brother|c0337531|t099
+half-siblings|c0337505|t099
+half-sibling|c0337505|t099
+half-sisters|c0337518|t099
+half-sister|c0337518|t099
+heterozygotic twin|c0041429|t099
+heterozygous twin|c0041429|t099
+host mothers|c0038947|t099
+host mother|c0038947|t099
+house holds|c0020052|t099
+house hold|c0020052|t099
+house-holds|c0020052|t099
+household|c0020052|t099
+households|c0020052|t099
+house-hold|c0020052|t099
+household and family|c0015578|t099
+human surrogate parents|c0237903|t099
+husband of subject|c2732833|t099
+husband|c0242664|t099
+identical twin brother|c0337535|t099
+identical twin sibling|c0337509|t099
+identical twin sister|c0337522|t099
+identical twins|c0041432|t099
+identical twin|c0041432|t099
+illegitimate brother|c0337539|t099
+illegitimate child|c0337551|t099
+illegitimate daughter|c0337562|t099
+illegitimate sibling|c0337513|t099
+illegitimate sister|c0337526|t099
+illegitimate son|c0337574|t099
+immediate family member|c1273520|t099
+in-law family relation|c0682322|t099
+in-laws|c2349980|t099
+in-law|c2349980|t099
+inlaws|c2349980|t099
+inlaw|c2349980|t099
+#is an only child|c0029039|t099
+kids|c0680063|t099
+kid|c0680063|t099
+large family|c0424972|t099
+legal brother|c0337533|t099
+legal child|c0337545|t099
+legal daughter|c0337557|t099
+legal father|c0337501|t099
+legal mother|c0337492|t099
+legal parent|c0337470|t099
+legal relation|c2346667|t099
+legal relative|c2346667|t099
+legal sibling|c0337507|t099
+legal sister|c0337520|t099
+legal son|c0337569|t099
+male cousin|c0337582|t099
+male fiance of subject|c2732517|t099
+male first cousin|c0337585|t099
+male second cousin|c0337588|t099
+marriage or cohabitation partner|c0682323|t099
+married person|c0162409|t099
+maternal grand-father|c1273523|t099
+maternal grand-mother|c1273525|t099
+maternal grandfather of subject|c2732390|t099
+maternal grandfather|c1273523|t099
+maternal grandmother of subject|c2733123|t099
+maternal grandmothers|c1273525|t099
+maternal grandmother|c1273525|t099
+maternal relative|c2347083|t099
+maternal|c0026591|t099
+maternal|c2347083|t099
+mates|c0682323|t099
+mate|c0682323|t099
+matrifocal family|c0680036|t099
+matrilineal descent|c0683569|t099
+member of large family|c0424972|t099
+member of unstable family|c0682336|t099
+monochorial twins|c0041432|t099
+monochorial twin|c0041432|t099
+monovular twins|c0041432|t099
+monovular twin|c0041432|t099
+monozygotic twins|c0041432|t099
+monozygotic twin|c0041432|t099
+monozygous twinning|c0041432|t099
+monozygous twin|c0041432|t099
+mother of subject|c2733255|t099
+mother single|c0337491|t099
+mother substitute|c0038947|t099
+mother teenage|c0237404|t099
+mother working|c0337613|t099
+mother, gestational|c0038947|t099
+mother, host|c0038947|t099
+mother, surrogate|c0038947|t099
+mother, unmarried|c0041746|t099
+mother-in-law|c2349972|t099
+mothers-in-law|c2349972|t099
+mothers|c0026591|t099
+mothers|c2347083|t099
+mother|c0026591|t099
+multiple birth offspring|c0026753|t099
+multiple birth|c0026753|t099
+multiplets|c0920598|t099
+multiplet|c0920598|t099
+natural brother|c0337528|t099
+natural children|c0337540|t099
+natural child|c0337540|t099
+natural daughter|c0337552|t099
+natural family|c0870940|t099
+natural father|c0337494|t099
+natural grand-father|c0337477|t099
+natural grand-mother|c0337476|t099
+natural grand-parent|c0337472|t099
+natural mother|c0337486|t099
+natural parent|c0337465|t099
+natural relative|c1266852|t099
+natural sibling|c0337502|t099
+natural sister|c0337515|t099
+natural son|c0337564|t099
+nephews|c0337579|t099
+nephew|c0337579|t099
+nieces|c0337578|t099
+niece|c0337578|t099
+non-immediate family member|c1273521|t099
+nuclear family|c0028574|t099
+off-spring|c0680063|t099
+offspring|c0680063|t099
+offspring, adult|c0683572|t099
+offspring, multiple birth|c0026753|t099
+offsprings|c0680063|t099
+older brother|c0337537|t099
+older sibling|c0337511|t099
+older sister|c0337524|t099
+oldest daughter|c0337559|t099
+oldest son|c0337571|t099
+one parent family|c0917998|t099
+only children|c0029039|t099
+only child|c0029039|t099
+only daughter|c0337558|t099
+only sons|c0337570|t099
+only son|c0337570|t099
+other related persons|c1273800|t099
+parent and child|c0260096|t099
+parent of subject|c2732711|t099
+parent of|c0030551|t099
+parent single|c0037177|t099
+parent, single|c0037177|t099
+parenting single|c0037177|t099
+parents divorced|c0425149|t099
+parents single|c0037177|t099
+parents step|c0282288|t099
+parents working|c0337612|t099
+parents, single|c0037177|t099
+parents|c0030551|t099
+parent|c0030551|t099
+partner in relationship|c0682323|t099
+partner, domestic|c0600393|t099
+partners, domestic|c0600393|t099
+partner|c0682323|t099
+paternal grand-father|c1273522|t099
+paternal grand-mother|c1273524|t099
+paternal grandfather of subject|c2732698|t099
+paternal grandfather|c1273522|t099
+paternal grandmother of subject|c2733124|t099
+paternal grandmother|c1273524|t099
+paternal relative|c2347452|t099
+paternal|c2347452|t099
+patrifocal family|c0680037|t099
+people in the family|c0086282|t099
+person in family of subject|c2732431|t099
+person in the family|c0086282|t099
+person, married|c0162409|t099
+persons, married|c0162409|t099
+pro-bands|c1948021|t099
+pro-band|c1948021|t099
+probands|c1948021|t099
+proband|c1948021|t099
+progenies|c0680063|t099
+progenitors|c0870134|t099
+progenitor|c0870134|t099
+progeny|c0680063|t099
+propositus|c1948021|t099
+quadruplet multiple birth|c0034373|t099
+quadruplets|c0034373|t099
+quadruplet|c0034373|t099
+quintuplet multiple birth|c0034438|t099
+quintuplets|c0034438|t099
+quintuplet|c0034438|t099
+reconstituted families|c0282174|t099
+reconstituted family|c0282174|t099
+refugee family|c1446393|t099
+rel's|c0080103|t099
+related sperm donor for artificial insemination|c2711322|t099
+relation|c0080103|t099
+relativeness|c0080103|t099
+relatives|c0080103|t099
+relative|c0080103|t099
+second cousin|c0337586|t099
+second degree relative|c1519210|t099
+sextuplets|c0524660|t099
+sextuplet|c0524660|t099
+sibling of subject|c2733256|t099
+siblings|c0037047|t099
+sibling|c0037047|t099
+sibs|c0037047|t099
+sib|c0037047|t099
+significant others|c0682323|t099
+significant other|c0682323|t099
+single family parent|c0037178|t099
+single father|c0337500|t099
+single mothers|c0337491|t099
+single mother|c0337491|t099
+single parent families|c0037178|t099
+single parent family, father present|c0580091|t099
+single parent family|c0037178|t099
+single parents|c0037177|t099
+single parent|c0037177|t099
+single step parent|c0037180|t099
+single step-parents|c0037180|t099
+single step-parent|c0037180|t099
+single stepparents|c0037180|t099
+single stepparent|c0037180|t099
+single teenage mother|c0682327|t099
+single-child family|c0680031|t099
+single-parent families|c0037178|t099
+single-parent family|c0037178|t099
+single-parent|c0037177|t099
+singletons|c1313913|t099
+singleton|c1313913|t099
+sister of subject|c2732271|t099
+sister-in-law|c2350006|t099
+sisters-in-law|c2350006|t099
+sisters|c0337514|t099
+sister|c0337514|t099
+son of subject|c2733584|t099
+son, adult|c0683572|t099
+son-in-law|c2350007|t099
+sons, adult|c0683572|t099
+sons-in-law|c2350007|t099
+sons|c0037683|t099
+son|c0037683|t099
+spouse caregivers|c0087015|t099
+spouse caregiver|c0087015|t099
+spouse of subject|c2732307|t099
+spouse or significant other|c0682323|t099
+spouses|c0162409|t099
+spouse|c0162409|t099
+sr - sister|c0337514|t099
+step brother|c0337530|t099
+step child|c0337542|t099
+step daughter|c0337554|t099
+step families|c0282175|t099
+step family relation|c0682318|t099
+step family|c0282175|t099
+step parents|c0282288|t099
+step parent|c0282288|t099
+step relation|c2348536|t099
+step relative|c2348536|t099
+step sibling|c0337504|t099
+step sister|c0337517|t099
+step son|c0337566|t099
+step-child|c0337542|t099
+step-daughters|c0337554|t099
+step-daughter|c0337554|t099
+step-families|c0282175|t099
+step-family|c0282175|t099
+step-father|c0337496|t099
+step-mothers|c0337488|t099
+step-mother|c0337488|t099
+step-parent, single|c0037180|t099
+step-parents, single|c0037180|t099
+step-parents|c0282288|t099
+step-parent|c0282288|t099
+step-sibling|c0337504|t099
+step-sisters|c0337517|t099
+step-sister|c0337517|t099
+step-sons|c0337566|t099
+step-son|c0337566|t099
+stepbrothers|c0337530|t099
+stepbrother|c0337530|t099
+stepchildrens|c0337542|t099
+stepchildren|c0337542|t099
+stepchild|c0337542|t099
+stepdaughters|c0337554|t099
+stepdaughter|c0337554|t099
+stepfamilies|c0282175|t099
+stepfamily|c0282175|t099
+stepfathers|c0337496|t099
+stepfather|c0337496|t099
+stepmothers|c0337488|t099
+stepmother|c0337488|t099
+stepparent, single|c0037180|t099
+stepparents, single|c0037180|t099
+stepparents|c0282288|t099
+stepparent|c0282288|t099
+stepsisters|c0337517|t099
+stepsister|c0337517|t099
+stepsons|c0337566|t099
+stepson|c0337566|t099
+surrogate child|c0337543|t099
+surrogate daughter|c0337555|t099
+surrogate family relation|c0682321|t099
+surrogate father|c0337497|t099
+surrogate mothers|c0038947|t099
+surrogate mother|c0038947|t099
+surrogate parent|c0337467|t099
+surrogate son|c0337567|t099
+symmetrical family|c0680035|t099
+teenage mother|c0237404|t099
+triplet multiple birth|c0041095|t099
+triplets|c0041095|t099
+twin brothers|c0337534|t099
+twin brother|c0337534|t099
+twin sibling|c0041427|t099
+twin sisters|c0337521|t099
+twin sister|c0337521|t099
+twin, dizygotic|c0041429|t099
+twin, fraternal|c0041429|t099
+twin, identical|c0041432|t099
+twin, monozygotic|c0041432|t099
+twin/multiplet|c0872326|t099
+twinned|c0041427|t099
+twinness|c0041427|t099
+twinning|c0041427|t099
+twins fraternal|c0041429|t099
+twins growing up together|c0682333|t099
+twins separated at birth|c0682334|t099
+twins, dizygotic|c0041429|t099
+twins, fraternal|c0041429|t099
+twins, identical|c0041432|t099
+twins, monozygotic|c0041432|t099
+twins|c0041427|t099
+twin|c0041427|t099
+two-child family|c0680032|t099
+uncle of subject|c2733544|t099
+uncles|c0337577|t099
+uncle|c0337577|t099
+uniovular twins|c0041432|t099
+uniovular twin|c0041432|t099
+unmarried father|c0041745|t099
+unmarried mother|c0041746|t099
+unmarried parent|c0037177|t099
+unwanted children|c0008101|t099
+unwanted child|c0008101|t099
+unwed mothers|c0041746|t099
+widower|c0043174|t099
+widow|c0043174|t099
+wife of subject|c2732834|t099
+wifes|c0242665|t099
+wife|c0242665|t099
+wives|c0242665|t099
+working father|c0337614|t099
+working mother|c0337613|t099
+working parent|c0337612|t099
+younger brother|c0337538|t099
+younger child|c0337547|t099
+younger sibling|c0337512|t099
+younger sister|c0337525|t099
+youngest daughter|c0337560|t099
+youngest son|c0337572|t099

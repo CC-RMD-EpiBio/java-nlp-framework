@@ -1,0 +1,9 @@
+#<---------------------------------------------------------------------->
+#<Tags Configuration>
+#<Name|Category|Bold|Italic|Underline|Display|FR|FG|FB|BR|BG|BB|FontFamily|FontSize>
+#<---------------------------------------------------------------------->
+Concept||false|false|false|true|0|0|0|255|200|0|Monospaced|+0
+#<---------------------------------------------------------------------->
+Yes||false|false|false|true|0|0|0|255|0|0|Monospaced|+0
+True||false|false|false|true|0|0|0|0|204|0|Monospaced|+0
+False||true|false|false|true|255|255|153|204|0|0|Monospaced|+0

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>gov.nih.cc.rmd.nlp.framework.annotator.TermAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>TermAnnotator</name>
+    <description>TermAnnotator identifies single and multi-word terms within text. 
+This is a dictionary based lookup that relies upon the SPECIALIST Lexicon for the source of the lexemes.  This lookup mechanism is an evolution of the lookup mechanism within NLM's TextTools (and subsequently the  MMTx projects).  
+ 
+The lookup algorithm matches terms within a sentence from left to right, on grounds that more terms have their head word on the right of the string than the left (in English).
+
+  Parameters:
+    --localTerminologyFiles=   colon separated list of resources relative or fullpath to LRAGR files containing local lexica. 
+
+--termRows=  the number of rows in all the dictionaries passed in.  This is an optional argument that is used for initializing the size of the hash. </description>
+    <version>2019.09.21</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>args</name>
+        <description>The args parameter passes parameters into the this annotator. 
+
+Since this is a cross between traditional uima and uima-fit and framework annotators, the annotators are looking for parameters that are on the "args" parameter, one parameter per multi-valued element. This would be the equivelant to passing POSIX "args" thru the command line, where each element would consist of "key=value"
+
+    --localTerminologyFiles=   colon separated list of resources relative or fullpath to LRAGR files containing local lexica. 
+
+    --termRows=  the number of rows in all the dictionaries passed in.  This is an optional argument that is used for initializing the size of the hash. 
+
+Optional logging arguments that could be passed in include:
+--profilePerformanceLogging=true|false   (as a string)   default == false
+--logDir=/some/log/dir   (default == ./ )
+--printToLog=true|false  (as a string)   default == false</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>args</name>
+        <value>
+          <array>
+            <string>--logDir=./</string>
+            <string>--printToLog=false</string>
+            <string>--profilePerformanceLogging=false</string>
+          <string>--localTerminologyFiles="resources/vinciNLPFramework/term/2011/SPECIALIST_PART1.LRAGR: resources/vinciNLPFramework/term/2011/SPECIALIST_PART2.LRAGR"</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

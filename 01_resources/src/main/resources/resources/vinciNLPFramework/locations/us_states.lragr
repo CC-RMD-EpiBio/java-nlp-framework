@@ -1,0 +1,134 @@
+# =============================
+# e:/ciitizen/softwareRepos/USA-cities-and-states/us_states.lragr
+#  Generated 2018.07.08
+#                              
+# =============================
+#                              
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|subCategory
+#     where category can be state 
+#     This lexicon came from a pull from https://github.com/grammakov/USA-cities-and-states
+#                               
+# ============================= 
+ST000001|AE|<noun>|<base>|AE|AE|state|
+ST000002|AK|<noun>|<base>|AK|AK|state|
+ST000003|AL|<noun>|<base>|AL|AL|state|
+ST000004|AP|<noun>|<base>|AP|AP|state|
+ST000005|AR|<noun>|<base>|AR|AR|state|
+ST000006|AS|<noun>|<base>|AS|AS|state|
+ST000007|AZ|<noun>|<base>|AZ|AZ|state|
+ST000008|CA|<noun>|<base>|CA|CA|state|
+ST000009|CO|<noun>|<base>|CO|CO|state|
+ST000010|CT|<noun>|<base>|CT|CT|state|
+ST000011|DC|<noun>|<base>|DC|DC|state|
+ST000012|D.C.|<noun>|<base>|D.C.|D.C.|state|
+ST000013|DE|<noun>|<base>|DE|DE|state|
+ST000014|FL|<noun>|<base>|FL|FL|state|
+ST000015|FM|<noun>|<base>|FM|FM|state|
+ST000016|GA|<noun>|<base>|GA|GA|state|
+ST000017|GU|<noun>|<base>|GU|GU|state|
+ST000018|HI|<noun>|<base>|HI|HI|state|
+ST000019|IA|<noun>|<base>|IA|IA|state|
+ST000020|ID|<noun>|<base>|ID|ID|state|
+ST000021|IL|<noun>|<base>|IL|IL|state|
+ST000022|IN|<noun>|<base>|IN|IN|state|
+ST000023|KS|<noun>|<base>|KS|KS|state|
+ST000024|KY|<noun>|<base>|KY|KY|state|
+ST000025|LA|<noun>|<base>|LA|LA|state|
+ST000026|MA|<noun>|<base>|MA|MA|state|
+ST000027|MD|<noun>|<base>|MD|MD|state|
+ST000028|ME|<noun>|<base>|ME|ME|state|
+ST000029|MH|<noun>|<base>|MH|MH|state|
+ST000030|MI|<noun>|<base>|MI|MI|state|
+ST000031|MN|<noun>|<base>|MN|MN|state|
+ST000032|MO|<noun>|<base>|MO|MO|state|
+ST000033|MP|<noun>|<base>|MP|MP|state|
+ST000034|MS|<noun>|<base>|MS|MS|state|
+ST000035|MT|<noun>|<base>|MT|MT|state|
+ST000036|NC|<noun>|<base>|NC|NC|state|
+ST000037|ND|<noun>|<base>|ND|ND|state|
+ST000038|NE|<noun>|<base>|NE|NE|state|
+ST000039|NH|<noun>|<base>|NH|NH|state|
+ST000040|NJ|<noun>|<base>|NJ|NJ|state|
+ST000041|NM|<noun>|<base>|NM|NM|state|
+ST000042|NV|<noun>|<base>|NV|NV|state|
+ST000043|NY|<noun>|<base>|NY|NY|state|
+ST000044|OH|<noun>|<base>|OH|OH|state|
+ST000045|OK|<noun>|<base>|OK|OK|state|
+ST000046|OR|<noun>|<base>|OR|OR|state|
+ST000047|PA|<noun>|<base>|PA|PA|state|
+ST000048|PR|<noun>|<base>|PR|PR|state|
+ST000049|PW|<noun>|<base>|PW|PW|state|
+ST000050|RI|<noun>|<base>|RI|RI|state|
+ST000051|SC|<noun>|<base>|SC|SC|state|
+ST000052|SD|<noun>|<base>|SD|SD|state|
+ST000053|TN|<noun>|<base>|TN|TN|state|
+ST000054|TX|<noun>|<base>|TX|TX|state|
+ST000055|UT|<noun>|<base>|UT|UT|state|
+ST000056|VA|<noun>|<base>|VA|VA|state|
+ST000057|VI|<noun>|<base>|VI|VI|state|
+ST000058|VT|<noun>|<base>|VT|VT|state|
+ST000059|WA|<noun>|<base>|WA|WA|state|
+ST000060|WI|<noun>|<base>|WI|WI|state|
+ST000061|WV|<noun>|<base>|WV|WV|state|
+ST000062|WY|<noun>|<base>|WY|WY|state|
+ST000063|Alabama|<noun>|<base>|Alabama|Alabama|state|
+ST000064|Alaska|<noun>|<base>|Alaska|Alaska|state|
+ST000065|American Samoa|<noun>|<base>|American Samoa|American Samoa|state|
+ST000066|Arizona|<noun>|<base>|Arizona|Arizona|state|
+ST000067|Arkansas|<noun>|<base>|Arkansas|Arkansas|state|
+ST000068|California|<noun>|<base>|California|California|state|
+ST000069|Colorado|<noun>|<base>|Colorado|Colorado|state|
+ST000070|Connecticut|<noun>|<base>|Connecticut|Connecticut|state|
+ST000071|Delaware|<noun>|<base>|Delaware|Delaware|state|
+ST000072|Federated States of Micronesia|<noun>|<base>|Federated States of Micronesia|Federated States of Micronesia|state|
+ST000073|Florida|<noun>|<base>|Florida|Florida|state|
+ST000074|Georgia|<noun>|<base>|Georgia|Georgia|state|
+ST000075|Guam|<noun>|<base>|Guam|Guam|state|
+ST000076|Hawaii|<noun>|<base>|Hawaii|Hawaii|state|
+ST000077|Idaho|<noun>|<base>|Idaho|Idaho|state|
+ST000078|Illinois|<noun>|<base>|Illinois|Illinois|state|
+ST000079|Indiana|<noun>|<base>|Indiana|Indiana|state|
+ST000080|Iowa|<noun>|<base>|Iowa|Iowa|state|
+ST000081|Kansas|<noun>|<base>|Kansas|Kansas|state|
+ST000082|Kentucky|<noun>|<base>|Kentucky|Kentucky|state|
+ST000083|Louisiana|<noun>|<base>|Louisiana|Louisiana|state|
+ST000084|Maine|<noun>|<base>|Maine|Maine|state|
+ST000085|Marshall Islands|<noun>|<base>|Marshall Islands|Marshall Islands|state|
+ST000086|Maryland|<noun>|<base>|Maryland|Maryland|state|
+ST000087|Massachusetts|<noun>|<base>|Massachusetts|Massachusetts|state|
+ST000088|Michigan|<noun>|<base>|Michigan|Michigan|state|
+ST000089|Minnesota|<noun>|<base>|Minnesota|Minnesota|state|
+ST000090|Mississippi|<noun>|<base>|Mississippi|Mississippi|state|
+ST000091|Missouri|<noun>|<base>|Missouri|Missouri|state|
+ST000092|Montana|<noun>|<base>|Montana|Montana|state|
+ST000093|Nebraska|<noun>|<base>|Nebraska|Nebraska|state|
+ST000094|Nevada|<noun>|<base>|Nevada|Nevada|state|
+ST000095|New Hampshire|<noun>|<base>|New Hampshire|New Hampshire|state|
+ST000096|New Jersey|<noun>|<base>|New Jersey|New Jersey|state|
+ST000097|New Mexico|<noun>|<base>|New Mexico|New Mexico|state|
+ST000098|New York|<noun>|<base>|New York|New York|state|
+ST000099|North Carolina|<noun>|<base>|North Carolina|North Carolina|state|
+ST000100|North Dakota|<noun>|<base>|North Dakota|North Dakota|state|
+ST000101|Northern Mariana Islands|<noun>|<base>|Northern Mariana Islands|Northern Mariana Islands|state|
+ST000102|Ohio|<noun>|<base>|Ohio|Ohio|state|
+ST000103|Oklahoma|<noun>|<base>|Oklahoma|Oklahoma|state|
+ST000104|Oregon|<noun>|<base>|Oregon|Oregon|state|
+ST000105|Palau|<noun>|<base>|Palau|Palau|state|
+ST000106|Pennsylvania|<noun>|<base>|Pennsylvania|Pennsylvania|state|
+ST000107|Puerto Rico|<noun>|<base>|Puerto Rico|Puerto Rico|state|
+ST000108|Rhode Island|<noun>|<base>|Rhode Island|Rhode Island|state|
+ST000109|South Carolina|<noun>|<base>|South Carolina|South Carolina|state|
+ST000110|South Dakota|<noun>|<base>|South Dakota|South Dakota|state|
+ST000111|Tennessee|<noun>|<base>|Tennessee|Tennessee|state|
+ST000112|Texas|<noun>|<base>|Texas|Texas|state|
+ST000113|Utah|<noun>|<base>|Utah|Utah|state|
+ST000114|Vermont|<noun>|<base>|Vermont|Vermont|state|
+ST000115|Virgin Islands|<noun>|<base>|Virgin Islands|Virgin Islands|state|
+ST000116|Virginia|<noun>|<base>|Virginia|Virginia|state|
+ST000117|Washington|<noun>|<base>|Washington|Washington|state|
+ST000118|Washington, D.C.|<noun>|<base>|Washington, D.C.|Washington, D.C.|state|
+ST000119|Washington D.C.|<noun>|<base>|Washington D.C.|Washington D.C.|state|
+ST000120|Washington DC|<noun>|<base>|Washington DC|Washington DC|state|
+ST000121|West Virginia|<noun>|<base>|West Virginia|West Virginia|state|
+ST000122|Wisconsin|<noun>|<base>|Wisconsin|Wisconsin|state|
+ST000123|Wyoming|<noun>|<base>|Wyoming|Wyoming|state|

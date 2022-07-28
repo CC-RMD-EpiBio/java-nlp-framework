@@ -1,0 +1,733 @@
+#==============================================
+#
+# C:/ciitizen/softwareRepos/nlp/ciitizen-nlp-resources/src/main/resources/resources/com/ciitizen/framework/sections/ccdaSectionHeaders.lragr This
+#
+# Author: Divita
+# Date: 2018-08-09_16_32_05
+#  Updated 2018-08-24
+#  Updated 2018-08-29
+#
+#    id|key|pos|inflection|citationForm|uninflectedForm|Category|Things to find in these sections
+#
+#==============================================
+
+#
+# CCDA Section Names (from ciitizen-test-data)
+#
+M00001|patient demographics|<noun>|<all>|||ccdaSectionName|none
+M00001|patient detail|<noun>|<all>|patient information|patient information|ccdaSectionName|none
+M00001|patient information|<noun>|<all>|patient information|patient information|ccdaSectionName|none
+M00002|chief complaint and reason for visit|<noun>|<all>|reason for visit|reason for visit|ccdaSectionName|none
+M00002|chief complaint|<noun>|<all>|reason for visit|reason for visit|ccdaSectionName|none
+M00002|reason for referral|<noun>|<all>|reason for visit|reason for visit|ccdaSectionName|none
+M00002|reason for visit|<noun>|<all>|reason for visit|reason for visit|ccdaSectionName|none
+M00003|note from|<noun>|<all>|note from|note from|ccdaSectionName|none
+M00004|encounter details|<noun>|<all>|encounters|encounters|ccdaSectionName|Diagnosis:CancerStage
+M00004|encounters|<noun>|<all>|encounters|encounters|ccdaSectionName|Diagnosis:CancerStage
+M00005|allergies|<noun>|<all>|allergies|allergies|ccdaSectionName|none
+M00005|allergies, adverse reactions, alerts|<noun>|<all>|allergies|allergies|ccdaSectionName|none
+M00006|current medications|<noun>|<all>|medications|medications|ccdaSectionName|Medication:DoseForm:Strength:ClinicalStatus
+M00006|medications|<noun>|<all>|medications|medications|ccdaSectionName|Medication:DoseForm:Strength:ClinicalStatus
+M00006|ordered prescriptions|<noun>|<all>|medications|medications|ccdaSectionName|Medication:DoseForm:Strength:ClinicalStatus
+M00006|medications administered|<noun>|<all>|medications|medications|ccdaSectionName|Medication:DoseForm:Strength:ClinicalStatus
+M00007|active problems|<noun>|<all>|problems|problems|ccdaSectionName|Diagnosis:CancerStage
+M00007|problems|<noun>|<all>|problems|problems|ccdaSectionName|Diagnosis:CancerStage
+M00007|visit diagnoses|<noun>|<all>|visit diagnoses|visit diagnoses|ccdaSectionName|Diagnosis:CancerStage
+M00007|history of present illness|<noun>|<all>|history of present illness|history of present illness|ccdaSectionName|Diagnosis:CancerStage
+M00007|history of presenting problems|<noun>|<all>|history of present illness|history of present illness|ccdaSectionName|Diagnosis:CancerStage
+M00007|history of illness|<noun>|<all>|history of present illness|history of present illness|ccdaSectionName|Diagnosis:CancerStage
+M00008|immunizations|<noun>|<all>|immunizations|immunizations|ccdaSectionName|none
+M00008|Immunizations|<noun>|<all>|immunizations|immunizations|ccdaSectionName|none
+M00009|social history|<noun>|<all>|social history|social history|ccdaSectionName|none
+M00010|last filed vital signs|<noun>|<all>|vital signs|vital signs|ccdaSectionName|VitalsObservation
+M00010|vitals|<noun>|<all>|vital signs|vital signs|ccdaSectionName|VitalsObservation
+M00010|vital signs|<noun>|<all>|vital signs|vital signs|ccdaSectionName|VitalsObservation
+M00010|.. vital sign|<noun>|<all>|vital signs|vital signs|ccdaSectionName|VitalsObservation
+M00011|plan of treatment|<noun>|<all>|treatment plan|treatment plan|ccdaSectionName|none
+M00011|plan of care|<noun>|<all>|treatment plan|treatment plan|ccdaSectionName|none
+M00011|treatment plans|<noun>|<all>|treatment plan|treatment plan|ccdaSectionName|none
+M00012|procedures|<noun>|<all>|procedures|procedures|ccdaSectionName|Procedure:Diagnosis:CancerStage
+M00013|results|<noun>|<all>|results|results|ccdaSectionName|Observation
+M00014|document information|<noun>|<all>|document information|document information|ccdaSectionName|none
+M00014|document details|<noun>|<all>|document information|document information|ccdaSectionName|none
+M00015|health care providers|<noun>|<all>|health care providers|health care providers|ccdaSectionName|none
+M00016|instructions|<noun>|<all>|instructions|instructions|ccdaSectionName|none
+M00016|hospital c|<noun>|<all>|hospital c|hospital c|ccdaSectionName|none
+M00016|hospital d instructions|<noun>|<all>|hospital c|hospital c|ccdaSectionName|none
+M00017|table of contents|<noun>|<all>|table of contents|table of contents|ccdaSectionName|none
+M00018|advance directives|<noun>|<all>|advance directives|advance directives|ccdaSectionName|none
+M00019|family history|<noun>|<all>|family history|family history|ccdaSectionName|none
+M00020|functional status|<noun>|<all>|functional status|functional status|ccdaSectionName|none
+M00021|payers|<noun>|<all>|payers|payers|ccdaSectionName|none
+
+#
+# CCDA SUB-Section Names (from ciitizen-test-data) and other SOAP notes
+#
+M01001|encounter diagnosis|<noun>|<all>|encounters|encounter diagnosis|ccdaSectionName|none
+M01002|clinical history|<noun>|<all>|clinical history|clinical history|ccdaSectionName|none
+#M01003|impression|<noun>|<all>|||ccdaSectionName|none
+M01003|impressions|<noun>|<all>|||ccdaSectionName|none
+M01004|interpretation and diagnosis|<noun>|<all>|interpretation|interpretation|ccdaSectionName|none
+
+#
+# Result sub-section evidence
+#
+M03067|Final result|<noun>|<all>|||resultSectionEvidence|none
+
+#
+# Procedure sub-section evidence
+#
+M04068|MRI|<noun>|<all>|||procedureSectionEvidence|Procedure
+M04069|CT|<noun>|<all>|||procedureSectionEvidence|Procedure
+M04070|IR DRAIN|<noun>|<all>|||procedureSectionEvidence|Procedure
+M043071|SCAN|<noun>|<all>|||procedureSectionEvidence|Procedure
+M04074|laboratory notes|<noun>|<all>|laboratory notes|laboratory notes|ccdaSectionName|none
+
+#
+# Gene Report Section Names
+#
+M02000|genereportpageheading|<noun>|<all>|||geneSectionName|Diagnosis,EventDate,SpecimenSite
+# FoundationOne
+M02001|genomic findings detected|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02001|genomic findings|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02001|detected|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02041|detected	(in patient's tumor type)	(in another tumor type)	Potential Clinical Trials|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+# Guardant
+M02002|summary of alterations & associated treatment options|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02002|summary of somatic alterations & associated treatment options|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02002|relevant for therapy selection|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+# Caris
+M02003|✓ therapies with potential benefit|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+# Intermountain
+M02004|clinically actionable findings|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02005|specimen information|<noun>|<all>|||geneSectionName|Diagnosis
+
+# Mayo
+M02006|alteration identified|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication:Diagnosis
+M02006|alterations identified|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication:Diagnosis
+M02007|the following alteration was identified|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02008|the following alterations were identified|<noun>|<all>|||geneSectionName|GeneObservation:GeneName:Medication
+M02009|result summary|<noun>|<all>|||geneSectionName|Diagnosis
+M02010|test flag results|<noun>|<all>|||geneSectionName|SpecimenSite
+M02010|test	flag|<noun>|<all>|||geneSectionName|SpecimenSite
+M02010|test flag|<noun>|<all>|||geneSectionName|SpecimenSite
+#M02010|test|<noun>|<all>|||geneSectionName|SpecimenSite
+#
+#
+# Gene Report Section Names - DO NOT look for data
+#
+M02030|therapies with potential benefit|<noun>|<all>|||geneSectionName|none
+M02031|interpretation|<noun>|<all>|||geneSectionName|none
+M02037|therapies with potential lack of benefit|<noun>|<all>|||geneSectionName|none
+M02037|x therapies with potential lack of benefit|<noun>|<all>|||geneSectionName|none
+M02038|therapies with indeterminate benefit|<noun>|<all>|||geneSectionName|none
+M02039|about the test|<noun>|<all>|||geneSectionName|none
+M02040|patient results|<noun>|<all>|||geneSectionName|none
+M02042|therapeutic implications|<noun>|<all>|||geneSectionName|none
+M02043|genomic alterations|<noun>|<all>|||geneSectionName|none
+M02044|fda-approved therapies|<noun>|<all>|||geneSectionName|none
+M02046|in patient's tumor type|<noun>|<all>|||geneSectionName|none
+M02047|in another tumor type|<noun>|<all>|||geneSectionName|none
+M02048|potential clinical strials|<noun>|<all>|||geneSectionName|none
+M02049|additional findings|<noun>|<all>|||geneSectionName|none
+M02050|additional disease-relevant genes with no reportable alterations identified|<noun>|<all>|||geneSectionName|none
+M02050|additional disease-relevant genes with no reportable|<noun>|<all>|||geneSectionName|none
+M02054|guardant360 tumor response map|<noun>|<all>|||geneSectionName|none
+M02055|clinical diagnosis|<noun>|<all>|||geneSectionName|none
+M02056|sample report|<noun>|<all>|||geneSectionName|none
+M02060|all therapeutic annotations are based on publicly available information|<noun>|<all>|||geneSectionName|none
+M02063|additional alterations|<noun>|<all>|||geneSectionName|none
+M02065|performing site legend|<noun>|<all>|||geneSectionName|none
+M02066|sample clinical trials|<noun>|<all>|||geneSectionName|none
+M00067|references|<noun>|<all>|references|references|ccdaSectionName:geneSectionName|none
+M00068|summary of biomarker results|<noun>|<all>|||geneSectionName|none
+M00069|clinical significance and test description|<noun>|<all>|||geneSectionName|none
+M00070|targeted therapy clinical trials|<noun>|<all>|||geneSectionName|none
+M00071|clinical trials connector|<noun>|<all>|||geneSectionName|none
+M00072|variants of uncertain clinical significance|<noun>|<all>|||geneSectionName|none
+M00073|methodology|<noun>|<all>|||geneSectionName|none
+
+#
+# sections seen in beta, not yet classified
+#
+#   Narrative, potential treatment, supporting data, gene interpretation, alteration, impression,  dob, comment,  comparison
+#   note, report,  additional therapies, important, indication, history,  complications, interpretation and diagnosis, specimens, conclusions
+#   visualized brain, exam, diagnosis
+#
+#  from the original file
+M00067|unlabeled section|<noun>|<all>|||unlabeledSection|none
+M00067|section|<noun>|<all>|||ccdaSectionName|none
+M00067|narrative|<noun>|<all>|||ccdaSectionName|none
+M00067|potential treatment|<noun>|<all>|||ccdaSectionName|none
+M00067|comment|<noun>|<all>|||ccdaSectionName|none
+M00067|comparison|<noun>|<all>|||ccdaSectionName|none
+M00067|report|<noun>|<all>|||ccdaSectionName|none
+M00067|additional therapies|<noun>|<all>|||ccdaSectionName|none
+M00067|important|<noun>|<all>|||ccdaSectionName|none
+M00067|indication|<noun>|<all>|||ccdaSectionName|none
+M00067|complications|<noun>|<all>|||ccdaSectionName|none
+M00067|specimens|<noun>|<all>|||ccdaSectionName|none
+
+
+
+
+#
+# Page Footer section headings
+#
+M04000|signed by|<noun>|<all>|||pageFooterSectionName|none
+M04001|released by|<noun>|<all>|||pageFooterSectionName|none
+M04002|printed by|<noun>|<all>|||pageFooterSectionName|none
+M04003|final report|<noun>|<all>|||pageFooterSectionName:pageHeaderSectionName|none
+M04004|cc recipients|<noun>|<all>|||pageFooterSectionName|none
+M04005|patient name|<noun>|<all>|||pageFooterSectionName|none
+M04006|primary care provider|<noun>|<all>|||pageFooterSectionName|none
+M04007|custodian organization|<noun>|<all>|||pageFooterSectionName|none
+M04008|encounter providers|<noun>|<all>|||pageFooterSectionName|none
+M04009|biomarker results continued on the next page|<noun>|<all>|||pageFooterSectionName|none
+M04010|additional therapies associated with potential benefit continued on the next page|<noun>|<all>|||pageFooterSectionName|none
+M04011|Refer to Appendix for detailed Result and Value information for each biomarker,including appropriate cutoffs,unit of measure, etc.|<noun>|<all>|||pageFooterSectionName|none
+M04012|* the level of evidence for all references|<noun>|<all>|||pageFooterSectionName|none
+M04013|# evidence reference includes data from the same lineage as the tested specimen|<noun>|<all>|||pageFooterSectionName|none
+M04014|refer to appendix|<noun>|<all>|||pageFooterSectionName|none
+M04015|RI SAMPLE|<noun>|<all>|||pageFooterSectionName|none
+M04016|therapies associated with potential benefit|<noun>|<all>|||pageFooterSectionName|none
+M04017|report sample|<noun>|<all>|||geneSectionName:pageFooterSectionName:pageFooterSectionName|none
+M04018|for more comprehensive information|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04019|for a more detailed|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04020|the chart above|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04021|evidence III clinical/ by Intermountain Cancer Genomics|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04022|report reviewed and approved by|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04023|this test was developed and its performance characteristics determined by intermountain precision genomics laboratory|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+M04024|note|<noun>|<all>|||geneSectionName:pageFooterSectionName|none
+
+#
+# Page header section headings (for testing only)
+#
+M05001|pageheader|<noun>|<all>|||pageHeaderSectionName|Diagnosis:CancerStage:SpecimenSite
+M05002|mi profile caris|<noun>|<all>|||pageHeaderSectionName|none
+
+#
+# Sections not yet handled from MTSamples [TBD] 
+#
+M050000|academic achievement|<noun>|<all>|||ccdaSectionName|none
+M050000|academic function|<noun>|<all>|||ccdaSectionName|none
+M050000|active range of motion of lumbar spine|<noun>|<all>|||ccdaSectionName|none
+M050000|affect|<noun>|<all>|||ccdaSectionName|none
+M050000|alcohol use|<noun>|<all>|||ccdaSectionName|none
+M050000|allergies|<noun>|<all>|||ccdaSectionName|none
+M050000|allowed condition|<noun>|<all>|||ccdaSectionName|none
+M050000|allowed conditions|<noun>|<all>|||ccdaSectionName|none
+M050000|answer|<noun>|<all>|||ccdaSectionName|none
+M050000|appearance|<noun>|<all>|||ccdaSectionName|none
+M050000|assessment|<noun>|<all>|||ccdaSectionName|none
+M050000|assets|<noun>|<all>|||ccdaSectionName|none
+M050000|attention|<noun>|<all>|||ccdaSectionName|none
+M050000|attention/ executive function|<noun>|<all>|||ccdaSectionName|none
+M050000|attitude|<noun>|<all>|||ccdaSectionName|none
+M050000|axis i|<noun>|<all>|||ccdaSectionName|none
+M050000|axis ii|<noun>|<all>|||ccdaSectionName|none
+M050000|axis iii|<noun>|<all>|||ccdaSectionName|none
+M050000|axis iv|<noun>|<all>|||ccdaSectionName|none
+M050000|axis v|<noun>|<all>|||ccdaSectionName|none
+M050000|balance|<noun>|<all>|||ccdaSectionName|none
+M050000|behavior observations|<noun>|<all>|||ccdaSectionName|none
+M050000|behavioral observations|<noun>|<all>|||ccdaSectionName|none
+M050000|behavioral/emotional function|<noun>|<all>|||ccdaSectionName|none
+M050000|brief summary & impressions|<noun>|<all>|||ccdaSectionName|none
+M050000|capability|<noun>|<all>|||ccdaSectionName|none
+M050000|cardiopulmonary|<noun>|<all>|||ccdaSectionName|none
+M050000|causation and apportionment|<noun>|<all>|||ccdaSectionName|none
+M050000|chief complaint|<noun>|<all>|||ccdaSectionName|none
+M050000|chief complaint and reaction to hospitalization|<noun>|<all>|||ccdaSectionName|none
+M050000|cognitive assessment|<noun>|<all>|||ccdaSectionName|none
+M050000|cognitive responses|<noun>|<all>|||ccdaSectionName|none
+M050000|compensable injury|<noun>|<all>|||ccdaSectionName|none
+M050000|contested condition|<noun>|<all>|||ccdaSectionName|none
+M050000|contested conditions|<noun>|<all>|||ccdaSectionName|none
+M050000|controlled oral word association test (cowat|<noun>|<all>|||ccdaSectionName|none
+M050000|current functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|current medications|<noun>|<all>|||ccdaSectionName|none
+M050000|current symptoms|<noun>|<all>|||ccdaSectionName|none
+M050000|daily activities and functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|date of examination |<noun>|<all>|||ccdaSectionName|none
+M050000|date of injury |<noun>|<all>|||ccdaSectionName|none
+M050000|deep tendon reflexes with reinforcement|<noun>|<all>|||ccdaSectionName|none
+M050000|description|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnoses|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnosis|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic data|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic imaging|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic impression|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic impression on admission|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic impression on admission/plan|<noun>|<all>|||ccdaSectionName|none
+M050000|problems/diagnostic impression on admission|<noun>|<all>|||ccdaSectionName|none
+M050000|problems/diagnostic impression on admission/plan|<noun>|<all>|||ccdaSectionName|none
+M050000|diagnostic studies|<noun>|<all>|||ccdaSectionName|none
+M050000|dictated by|<noun>|<all>|||ccdaSectionName|none
+M050000|disallowed condition|<noun>|<all>|||ccdaSectionName|none
+M050000|discharge medications|<noun>|<all>|||ccdaSectionName|none
+M050000|discussion|<noun>|<all>|||ccdaSectionName|none
+M050000|drug allergies|<noun>|<all>|||ccdaSectionName|none
+M050000|emotional functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|employer|<noun>|<all>|||ccdaSectionName|none
+M050000|estimated length of stay|<noun>|<all>|||ccdaSectionName|none
+M050000|evaluation findings|<noun>|<all>|||ccdaSectionName|none
+M050000|examination|<noun>|<all>|||ccdaSectionName|none
+M050000|exam|<noun>|<all>|||ccdaSectionName|none
+M050000|examining physician |<noun>|<all>|||ccdaSectionName|none
+M050000|executive functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|factors for disability|<noun>|<all>|||ccdaSectionName|none
+M050000|family history|<noun>|<all>|||ccdaSectionName|none
+M050000|family medical history|<noun>|<all>|||ccdaSectionName|none
+M050000|files review|<noun>|<all>|||ccdaSectionName|none
+M050000|formulation|<noun>|<all>|||ccdaSectionName|none
+M050000|forward flexion|<noun>|<all>|||ccdaSectionName|none
+M050000|functional activities and hobbies|<noun>|<all>|||ccdaSectionName|none
+M050000|future medical care|<noun>|<all>|||ccdaSectionName|none
+M050000|gait|<noun>|<all>|||ccdaSectionName|none
+M050000|gastrointestinal|<noun>|<all>|||ccdaSectionName|none
+M050000|general|<noun>|<all>|||ccdaSectionName|none
+M050000|general cognitive ability|<noun>|<all>|||ccdaSectionName|none
+M050000|general observations|<noun>|<all>|||ccdaSectionName|none
+M050000|genetic psychiatric history|<noun>|<all>|||ccdaSectionName|none
+M050000|genitourinary|<noun>|<all>|||ccdaSectionName|none
+M050000|heent|<noun>|<all>|||ccdaSectionName|none
+M050000|general/skin/heent|<noun>|<all>|||ccdaSectionName|none
+M050000|highest level of education|<noun>|<all>|||ccdaSectionName|none
+M050000|history|<noun>|<all>|||ccdaSectionName|none
+M050000|history of injury and present complaints|<noun>|<all>|||ccdaSectionName|none
+M050000|history of other pertinent medical events|<noun>|<all>|||ccdaSectionName|none
+M050000|history of present illness|<noun>|<all>|||ccdaSectionName|none
+M050000|history of present injury|<noun>|<all>|||ccdaSectionName|none
+M050000|history of presenting problem|<noun>|<all>|||ccdaSectionName|none
+M050000|homicidal/suicidal ideation|<noun>|<all>|||ccdaSectionName|none
+M050000|identifying data|<noun>|<all>|||ccdaSectionName|none
+M050000|illnesses|<noun>|<all>|||ccdaSectionName|none
+M050000|imaging studies|<noun>|<all>|||ccdaSectionName|none
+M050000|impression and plan|<noun>|<all>|||ccdaSectionName|none
+M050000|impression|<noun>|<all>|||ccdaSectionName|none
+M050000|information processing speed|<noun>|<all>|||ccdaSectionName|none
+M050000|insight/judgment|<noun>|<all>|||ccdaSectionName|none
+M050000|inspection|<noun>|<all>|||ccdaSectionName|none
+M050000|intellectual functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|judgment and insight|<noun>|<all>|||ccdaSectionName|none
+M050000|keywords|<noun>|<all>|||ccdaSectionName|none
+M050000|language|<noun>|<all>|||ccdaSectionName|none
+M050000|language function|<noun>|<all>|||ccdaSectionName|none
+M050000|learning & memory skills|<noun>|<all>|||ccdaSectionName|none
+M050000|legal history|<noun>|<all>|||ccdaSectionName|none
+M050000|limitations|<noun>|<all>|||ccdaSectionName|none
+M050000|long term goal to be achieved in 8 weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|long-term goals to be completed in six weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|loss of pre-injury capacity|<noun>|<all>|||ccdaSectionName|none
+M050000|marital status|<noun>|<all>|||ccdaSectionName|none
+M050000|measurements right/left|<noun>|<all>|||ccdaSectionName|none
+M050000|medical|<noun>|<all>|||ccdaSectionName|none
+M050000|medical history|<noun>|<all>|||ccdaSectionName|none
+M050000|medical imaging|<noun>|<all>|||ccdaSectionName|none
+M050000|medical records review|<noun>|<all>|||ccdaSectionName|none
+M050000|medications|<noun>|<all>|||ccdaSectionName|none
+M050000|mental health history|<noun>|<all>|||ccdaSectionName|none
+M050000|mental status|<noun>|<all>|||ccdaSectionName|none
+M050000|comprhensive mental status evaluation|<noun>|<all>|||ccdaSectionName|none
+M050000|mental status evaluation|<noun>|<all>|||ccdaSectionName|none
+M050000|mental status exam|<noun>|<all>|||ccdaSectionName|none
+M050000|mental status examination|<noun>|<all>|||ccdaSectionName|none
+M050000|military history|<noun>|<all>|||ccdaSectionName|none
+M050000|mini-mental status exam|<noun>|<all>|||ccdaSectionName|none
+M050000|mood|<noun>|<all>|||ccdaSectionName|none
+M050000|mood assessment scale|<noun>|<all>|||notSctnNm|none
+M050000|motor functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|motor function|<noun>|<all>|||ccdaSectionName|none
+M050000|motor strength in the upper extremity|<noun>|<all>|||ccdaSectionName|none
+M050000|motor strength|<noun>|<all>|||ccdaSectionName|none
+M050000|upper extremity|<noun>|<all>|||ccdaSectionName|none
+M050000|right upper extremity|<noun>|<all>|||ccdaSectionName|none
+M050000|left upper extremity|<noun>|<all>|||ccdaSectionName|none
+M050000|motor/psychomotor functioning|<noun>|<all>|||ccdaSectionName|none
+M050000|neck examination|<noun>|<all>|||ccdaSectionName|none
+M050000|neurological symptoms|<noun>|<all>|||ccdaSectionName|BodyReflex
+M050000|neurological comments|<noun>|<all>|||ccdaSectionName|BodyReflex
+M050000|neurological details|<noun>|<all>|||ccdaSectionName|BodyReflex
+M050000|neurological|<noun>|<all>|||ccdaSectionName|BodyReflex
+M050000|non-verbal/visual learning and memory|<noun>|<all>|||ccdaSectionName|none
+M050000|objective|<noun>|<all>|||ccdaSectionName|none
+M050000|objective findings|<noun>|<all>|||ccdaSectionName|none
+M050000|objective findings (completed w/ Physiatrist)|<noun>|<all>|||ccdaSectionName|none
+M050000|occupational|<noun>|<all>|||ccdaSectionName|none
+M050000|opinion and summary|<noun>|<all>|||ccdaSectionName|none
+M050000|orientation|<noun>|<all>|||ccdaSectionName|none
+M050000|oswestry pain inventory|<noun>|<all>|||ccdaSectionName|none
+M050000|other medical history|<noun>|<all>|||ccdaSectionName|none
+M050000|outpatient care|<noun>|<all>|||ccdaSectionName|none
+M050000|palpation|<noun>|<all>|||ccdaSectionName|none
+M050000|past medical history|<noun>|<all>|||ccdaSectionName|none
+M050000|past psychiatric history|<noun>|<all>|||ccdaSectionName|none
+M050000|past surgical history|<noun>|<all>|||ccdaSectionName|none
+M050000|patient goal|<noun>|<all>|||ccdaSectionName|none
+M050000|patient's goal|<noun>|<all>|||ccdaSectionName|none
+M050000|permanent and stationary status|<noun>|<all>|||ccdaSectionName|none
+M050000|photographs depicting damage to vehicles|<noun>|<all>|||ccdaSectionName|none
+M050000|physical examination|<noun>|<all>|||ccdaSectionName|none
+M050000|plan|<noun>|<all>|||ccdaSectionName|none
+M050000|plan of care|<noun>|<all>|||ccdaSectionName|none
+M050000|present illness|<noun>|<all>|||ccdaSectionName|none
+M050000|present problems|<noun>|<all>|||ccdaSectionName|none
+M050000|problem list|<noun>|<all>|||ccdaSectionName|none
+M050000|prognosis|<noun>|<all>|||ccdaSectionName|none
+M050000|psychiatric history|<noun>|<all>|||ccdaSectionName|none
+M050000|psychological|<noun>|<all>|||ccdaSectionName|none
+M050000|psychomotor|<noun>|<all>|||ccdaSectionName|none
+M050000|question|<noun>|<all>|||ccdaSectionName|none
+M050000|range of motion|<noun>|<all>|||ccdaSectionName|none
+M050000|re|<noun>|<all>|||ccdaSectionName|none
+M050000|reason for consult|<noun>|<all>|||ccdaSectionName|none
+M050000|reason for evaluation|<noun>|<all>|||ccdaSectionName|none
+M050000|evaluation|<noun>|<all>|||ccdaSectionName|none
+M050000|reason for referral|<noun>|<all>|||ccdaSectionName|none
+M050000|reason for referral/general observations|<noun>|<all>|||ccdaSectionName|none
+M050000|recommendations|<noun>|<all>|||ccdaSectionName|none
+M050000|recommendations/capability|<noun>|<all>|||ccdaSectionName|none
+M050000|records review|<noun>|<all>|||ccdaSectionName|none
+M050000|records reviewed|<noun>|<all>|||ccdaSectionName|none
+M050000|recreational drug use|<noun>|<all>|||ccdaSectionName|none
+M050000|relevant background information|<noun>|<all>|||ccdaSectionName|none
+M050000|relevant history|<noun>|<all>|||ccdaSectionName|none
+M050000|requested allowance|<noun>|<all>|||ccdaSectionName|none
+M050000|requesting party|<noun>|<all>|||ccdaSectionName|none
+M050000|review of systems|<noun>|<all>|||ccdaSectionName|none
+M050000|sample name|<noun>|<all>|||ccdaSectionName|none
+M050000|sensory examination|<noun>|<all>|||ccdaSectionName|none
+M050000|low back examination|<noun>|<all>|||ccdaSectionName|none
+
+M050000|short term goal to be completed in 4 weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|short-term goals to be completed in three weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|short term goals to be completed in three weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|short-term goals to be completed in six weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|long-term goals to be completed in six weeks|<noun>|<all>|||ccdaSectionName|none
+M050000|long term goals to be completed in six weeks|<noun>|<all>|||ccdaSectionName|none
+
+M050000|shoulder|<noun>|<all>|||ccdaSectionName|none
+M050000|social and developmental history|<noun>|<all>|||ccdaSectionName|none
+M050000|social history|<noun>|<all>|||ccdaSectionName|none
+M050000|socio-economic history|<noun>|<all>|||ccdaSectionName|none
+M050000|speech|<noun>|<all>|||ccdaSectionName|none
+M050000|strength|<noun>|<all>|||ccdaSectionName|none
+M050000|subjective|<noun>|<all>|||ccdaSectionName|none
+M050000|subjective comments|<noun>|<all>|||ccdaSectionName|none
+M050000|other subjective comments|<noun>|<all>|||ccdaSectionName|none
+M050000|pain/ /other subjective comments|<noun>|<all>|||ccdaSectionName|none
+M050000|substance abuse|<noun>|<all>|||ccdaSectionName|none
+M050000|substance and alcohol history|<noun>|<all>|||ccdaSectionName|none
+M050000|substance use|<noun>|<all>|||ccdaSectionName|none
+M050000|substance use history|<noun>|<all>|||ccdaSectionName|none
+M050000|summary & impressions|<noun>|<all>|||ccdaSectionName|none
+M050000|summary and conclusions|<noun>|<all>|||ccdaSectionName|none
+M050000|conclusions|<noun>|<all>|||ccdaSectionName|none
+M050000|surgeries|<noun>|<all>|||ccdaSectionName|none
+M050000|surgical history|<noun>|<all>|||ccdaSectionName|none
+M050000|tasks administered|<noun>|<all>|||ccdaSectionName|none
+M050000|tests administered|<noun>|<all>|||ccdaSectionName|none
+M050000|the patient is discharged with|<noun>|<all>|||notSnNme|none
+M050000|thoracic spine examination|<noun>|<all>|||ccdaSectionName|none
+M050000|thought content|<noun>|<all>|||ccdaSectionName|none
+M050000|thought process|<noun>|<all>|||ccdaSectionName|none
+M050000|thought processes|<noun>|<all>|||ccdaSectionName|none
+M050000|tobacco use|<noun>|<all>|||ccdaSectionName|none
+M050000|total temporary disability|<noun>|<all>|||ccdaSectionName|none
+M050000|treatment history|<noun>|<all>|||ccdaSectionName|none
+M050000|treatment plan|<noun>|<all>|||ccdaSectionName|none
+M050000|verbal learning and memory|<noun>|<all>|||ccdaSectionName|none
+M050000|visual learning and memory|<noun>|<all>|||ccdaSectionName|none
+M050000|visual-spatial & visual-motor function|<noun>|<all>|||ccdaSectionName|none
+M050000|visuospatial perception and construction|<noun>|<all>|||ccdaSectionName|none
+M050000|visuospatial perception and organization|<noun>|<all>|||ccdaSectionName|none
+M050000|vocational rehabilitation|<noun>|<all>|||ccdaSectionName|none
+M050000|work history|<noun>|<all>|||ccdaSectionName|none
+M050000|work restrictions and disability|<noun>|<all>|||ccdaSectionName|none
+M050000|(medical transcription sample report)|<noun>|<all>|||ccdaSectionName|none
+M050000|A Title|<noun>|<all>|||ccdaSectionName|none
+M050000|SlotValues|<noun>|<all>|||ccdaSectionName|none
+M050000|Column|<noun>|<all>|||ccdaSectionName|none
+M050000|observations|<noun>|<all>|||ccdaSectionName|none
+M050000|assessment and plan|<noun>|<all>|||ccdaSectionName|none
+M050000|plan and assessment|<noun>|<all>|||ccdaSectionName|none
+#
+# Observations from PT/OT Notes
+#
+M050000|Functional Mobility|<noun>|<all>|||ccdaSectionName|none
+M050000|ambulation/gait|<noun>|<all>|||ccdaSectionName|none
+M050000|transfer score|<noun>|<all>|||ccdaSectionName|none
+M050000|balance|<noun>|<all>|||ccdaSectionName|none
+M050000|Locomotion/Mobility/Gait|<noun>|<all>|||ccdaSectionName|none
+M050000|proproception|<noun>|<all>|||ccdaSectionName|none
+M050000|Emotional/Behavioral Responses|<noun>|<all>|||ccdaSectionName|none
+M050000|Speech|<noun>|<all>|||ccdaSectionName|none
+M050000|Cognition|<noun>|<all>|||ccdaSectionName|none
+M050000|Comprehension|<noun>|<all>|||ccdaSectionName|none
+M050000|Learning Barriers|<noun>|<all>|||ccdaSectionName|none
+M050000|heart rate|<noun>|<all>|||ccdaSectionName|none
+M050000|respiratory rate|<noun>|<all>|||ccdaSectionName|none
+M050000|blood pressure (BP)|<noun>|<all>|||ccdaSectionName|none
+M050000|Oxygen Saturation|<noun>|<all>|||ccdaSectionName|none
+M050000|open areas|<noun>|<all>|||ccdaSectionName|none
+M050000|symmetry (sitting,standing,activity specific)|<noun>|<all>|||ccdaSectionName|none
+M050000|symmetry|<noun>|<all>|||ccdaSectionName|none
+M050000|Integumentary|<noun>|<all>|||ccdaSectionName|none
+M050000|Other Relevant Clinical Tests|<noun>|<all>|||ccdaSectionName|none
+M050000|Precautions|<noun>|<all>|||ccdaSectionName|none
+M050000|systems review|<noun>|<all>|||ccdaSectionName|none
+M050000|Coordination|<noun>|<all>|||ccdaSectionName|none
+M050000|func vision|<noun>|<all>|||ccdaSectionName|none
+M050000|activities of daily living|<noun>|<all>|||ccdaSectionName|none
+M050000|groomng|<noun>|<all>|||ccdaSectionName|none
+M050000|bathing|<noun>|<all>|||ccdaSectionName|none
+M050000|upper dressing|<noun>|<all>|||ccdaSectionName|none
+M050000|lower dressing|<noun>|<all>|||ccdaSectionName|none
+M050000|toileting|<noun>|<all>|||ccdaSectionName|none
+M050000|comments|<noun>|<all>|||ccdaSectionName|none
+M050000|Signatures|<noun>|<all>|||ccdaSectionName|none
+M050000|Electronic Signatures|<noun>|<all>|||ccdaSectionName|none
+M050000|Electronic Signature|<noun>|<all>|||ccdaSectionName|none
+M050000|last updated|<noun>|<all>|||ccdaSectionName|none
+M050000|tests and measures|<noun>|<all>|||ccdaSectionName|none
+M050000|intervention/education|<noun>|<all>|||ccdaSectionName|none
+M050000|intervention|<noun>|<all>|||ccdaSectionName|none
+M050000|education|<noun>|<all>|||ccdaSectionName|none
+M050000|drug and therapeutic history|<noun>|<all>|||ccdaSectionName|none
+M050000|medical/surgical history|<noun>|<all>|||ccdaSectionName|none
+M050000|skin|<noun>|<all>|||ccdaSectionName|none
+M050000|admission/plan|<noun>|<all>|||ccdaSectionName|none
+M050000|functional assessment|<noun>|<all>|||ccdaSectionName|none
+M050000|muscle tone|<noun>|<all>|||ccdaSectionName|none
+M050000|pain|<noun>|<all>|||ccdaSectionName|none
+M050000|grinding or grating|<noun>|<all>|||ccdaSectionName|none
+M050000|stiffness|<noun>|<all>|||ccdaSectionName|none
+M050000|swelling|<noun>|<all>|||ccdaSectionName|none
+M050000|slipping or buckling giving way of knee|<noun>|<all>|||ccdaSectionName|none
+M050000|weakness|<noun>|<all>|||ccdaSectionName|none
+M050000|limping|<noun>|<all>|||ccdaSectionName|none
+M050000|function|<noun>|<all>|||ccdaSectionName|none
+M050000|going up stairs|<noun>|<all>|||ccdaSectionName|none
+M050000|going down stairs|<noun>|<all>|||ccdaSectionName|none
+M050000|standing|<noun>|<all>|||ccdaSectionName|none
+M050000|squating|<noun>|<all>|||ccdaSectionName|none
+M050000|sitting with your knee bent|<noun>|<all>|||ccdaSectionName|none
+M050000|rising from a chair|<noun>|<all>|||ccdaSectionName|none
+M050000|Miminal Clinically Important Diference|<noun>|<all>|||ccdaSectionName|none
+M050000|special tests|<noun>|<all>|||ccdaSectionName|none
+M050000|Varus tests|<noun>|<all>|||ccdaSectionName|none
+M050000|anterior drawer|<noun>|<all>|||ccdaSectionName|none
+M050000|posterior drawer|<noun>|<all>|||ccdaSectionName|none
+M050000|apply compression|<noun>|<all>|||ccdaSectionName|none
+M050000|thessaly test|<noun>|<all>|||ccdaSectionName|none
+M050000|treatment|<noun>|<all>|||ccdaSectionName|none
+M050000|icing|<noun>|<all>|||ccdaSectionName|none
+M050000|ROM|<noun>|<all>|||ccdaSectionName|none
+M050000|reflexes|<noun>|<all>|||ccdaSectionName|none
+M050000|scale|<noun>|<all>|||ccdaSectionName|none
+M050000|assistive device|<noun>|<all>|||ccdaSectionName|none
+M050000|musculoskeletal comments|<noun>|<all>|||ccdaSectionName|none
+M050000|musculoskeletal system|<noun>|<all>|||ccdaSectionName|none
+M050000|r hand dominant coordination|<noun>|<base>|R hand dominant Coordination|R hand dominant Coordination|ccdaSectionName|none
+M050000|l hand dominant coordination|<noun>|<base>|R hand dominant Coordination|R hand dominant Coordination|ccdaSectionName|none
+M050000|Occupational Performance Skills/Patterns|<noun>|<base>|||ccdaSectionName|none
+M050000|upper limbs|<noun>|<base>|||ccdaSectionName|none
+M050000|lower limbs|<noun>|<base>|||ccdaSectionName|none
+M050000|S|<noun>|<base>|||ccdaSectionName|none
+M050000|O|<noun>|<base>|||ccdaSectionName|none
+M050000|A|<noun>|<base>|||ccdaSectionName|none
+M050000|P|<noun>|<base>|||ccdaSectionName|none
+M050000|Motor function (motor control, motor learning)|<noun>|<base>|Motor function (motor control, motor learning)|Motor function (motor control, motor learning)|ccdaSectionName|none
+M050000|general/skin/heent|<noun>|<base>|||ccdaSectionName|none
+M050000|respiratory and thorax|<noun>|<base>|||ccdaSectionName|none
+M050000|MS/ /psych/lymph|<noun>|<base>|||ccdaSectionName|none
+M050000|MS|<noun>|<base>|||ccdaSectionName|none
+M050000|musculoskeletal|<noun>|<all>|||ccdaSectionName|none
+M050000|ears, nose, mouth, throat|<noun>|<all>|||ccdaSectionName|none
+M050000|breasts/resp/cv/gi/gu|<noun>|<all>|||ccdaSectionName|none
+M060000|abdominal|<noun>|<all>|||ccdaSectionName|none
+M060000|adm|<noun>|<all>|||ccdaSectionName|none
+M060000|admission|<noun>|<all>|||ccdaSectionName|none
+M060000|ambulation|<noun>|<all>|||ccdaSectionName|none
+M060000|ankle|<noun>|<all>|||ccdaSectionName|none
+M060000|ankles|<noun>|<all>|||ccdaSectionName|none
+M060000|arm x|<noun>|<all>|||ccdaSectionName|none
+M060000|arom|<noun>|<all>|||ccdaSectionName|none
+M060000|arom - flexion|<noun>|<all>|||ccdaSectionName|none
+M060000|assessment|<noun>|<all>|||ccdaSectionName|none
+M060000|assessment/plan|<noun>|<all>|||ccdaSectionName|none
+M060000|assets|<noun>|<all>|||ccdaSectionName|none
+M060000|back|<noun>|<all>|||ccdaSectionName|none
+M060000|brudzinski's skin|<noun>|<all>|||ccdaSectionName|none
+M060000|cardiovascular|<noun>|<all>|||ccdaSectionName|none
+M060000|cervical|<noun>|<all>|||ccdaSectionName|none
+M060000|cervical arom|<noun>|<all>|||ccdaSectionName|none
+M060000|cervical range-of-motion|<noun>|<all>|||ccdaSectionName|none
+M060000|cervical spine|<noun>|<all>|||ccdaSectionName|none
+M060000|cervical spine examination|<noun>|<all>|||ccdaSectionName|none
+M060000|cn|<noun>|<all>|||ccdaSectionName|none
+M060000|cn ii|<noun>|<all>|||ccdaSectionName|none
+M060000|cn ii-kii|<noun>|<all>|||ccdaSectionName|none
+M060000|cn iii, iv, vi|<noun>|<all>|||ccdaSectionName|none
+M060000|cn vii|<noun>|<all>|||ccdaSectionName|none
+M060000|cn xi|<noun>|<all>|||ccdaSectionName|none
+M060000|cn xi, x|<noun>|<all>|||ccdaSectionName|none
+M060000|cn xii|<noun>|<all>|||ccdaSectionName|none
+M060000|cns|<noun>|<all>|||ccdaSectionName|none
+M060000|constitutional|<noun>|<all>|||ccdaSectionName|none
+M060000|coordination|<noun>|<all>|||ccdaSectionName|none
+M060000|cranial nerve exam|<noun>|<all>|||ccdaSectionName|none
+M060000|cranial nerves|<noun>|<all>|||ccdaSectionName|none
+M060000|date of birth|<noun>|<all>|||ccdaSectionName|none
+M060000|date of service|<noun>|<all>|||ccdaSectionName|none
+M060000|deep tendon reflexes|<noun>|<all>|||ccdaSectionName|none
+M060000|dermatological|<noun>|<all>|||ccdaSectionName|none
+M060000|description|<noun>|<all>|||ccdaSectionName|none
+M060000|diagnoses|<noun>|<all>|||ccdaSectionName|none
+M060000|diagnosis|<noun>|<all>|||ccdaSectionName|none
+M060000|diagnostic impression & treatment plan|<noun>|<all>|||ccdaSectionName|none
+M060000|dift|<noun>|<all>|||ccdaSectionName|none
+M060000|discussion|<noun>|<all>|||ccdaSectionName|none
+M060000|dors lumbar|<noun>|<all>|||ccdaSectionName|none
+M060000|dorsolumilar spine|<noun>|<all>|||ccdaSectionName|none
+M060000|dressing|<noun>|<all>|||ccdaSectionName|none
+M060000|dtr|<noun>|<all>|||ccdaSectionName|none
+M060000|ears/nose/throat|<noun>|<all>|||ccdaSectionName|none
+M060000|elbows|<noun>|<all>|||ccdaSectionName|none
+M060000|exercise|<noun>|<all>|||ccdaSectionName|none
+M060000|ext|<noun>|<all>|||ccdaSectionName|none
+M060000|extension|<noun>|<all>|||ccdaSectionName|none
+M060000|extraocular motion intact,ears|<noun>|<all>|||ccdaSectionName|none
+M060000|extremities|<noun>|<all>|||ccdaSectionName|none
+M060000|extremity|<noun>|<all>|||ccdaSectionName|none
+M060000|eye|<noun>|<all>|||ccdaSectionName|none
+M060000|eyes|<noun>|<all>|||ccdaSectionName|none
+M060000|eyes comments|<noun>|<all>|||ccdaSectionName|none
+M060000|fine motor activity of hands|<noun>|<all>|||ccdaSectionName|none
+M060000|fingers and thumbs|<noun>|<all>|||ccdaSectionName|none
+M060000|foot|<noun>|<all>|||ccdaSectionName|none
+M060000|functional|<noun>|<all>|||ccdaSectionName|none
+M060000|general|<noun>|<all>|||ccdaSectionName|none
+M060000|general findings|<noun>|<all>|||ccdaSectionName|none
+M060000|genitourinary|<noun>|<all>|||ccdaSectionName|none
+M060000|halmaggie head thrust|<noun>|<all>|||ccdaSectionName|none
+M060000|halmagyie head thrust|<noun>|<all>|||ccdaSectionName|none
+M060000|hand|<noun>|<all>|||ccdaSectionName|none
+M060000|hands|<noun>|<all>|||ccdaSectionName|none
+M060000|heent|<noun>|<all>|||ccdaSectionName|none
+M060000|hematologic and lymphatic|<noun>|<all>|||ccdaSectionName|none
+M060000|hip|<noun>|<all>|||ccdaSectionName|none
+M060000|hip joints|<noun>|<all>|||ccdaSectionName|none
+M060000|hips|<noun>|<all>|||ccdaSectionName|none
+M060000|hpi comments|<noun>|<all>|||ccdaSectionName|none
+M060000|i mpressions|<noun>|<all>|||ccdaSectionName|none
+M060000|impairments/limitations|<noun>|<all>|||ccdaSectionName|none
+M060000|impression|<noun>|<all>|||ccdaSectionName|none
+M060000|inspection/palpation |<noun>|<all>|||ccdaSectionName|none
+M060000|knee|<noun>|<all>|||ccdaSectionName|none
+M060000|knees|<noun>|<all>|||ccdaSectionName|none
+M060000|laboratory data|<noun>|<all>|||ccdaSectionName|none
+M060000|le|<noun>|<all>|||ccdaSectionName|none
+M060000|le general|<noun>|<all>|||ccdaSectionName|none
+M060000|left|<noun>|<all>|||ccdaSectionName|none
+M060000|left shoulder|<noun>|<all>|||ccdaSectionName|none
+M060000|left shoulder exam|<noun>|<all>|||ccdaSectionName|none
+M060000|left upper extermity|<noun>|<all>|||ccdaSectionName|none
+M060000|left upper extremity|<noun>|<all>|||ccdaSectionName|none
+M060000|light, extraocular movements|<noun>|<all>|||ccdaSectionName|none
+M060000|lower extremities|<noun>|<all>|||ccdaSectionName|none
+M060000|lpp|<noun>|<all>|||ccdaSectionName|none
+M060000|lue|<noun>|<all>|||ccdaSectionName|none
+M060000|lumbar - forward flexion|<noun>|<all>|||ccdaSectionName|none
+M060000|lumbar spine|<noun>|<all>|||ccdaSectionName|none
+M060000|lumbosacral spine|<noun>|<all>|||ccdaSectionName|none
+M060000|lymphatic neck|<noun>|<all>|||ccdaSectionName|none
+M060000|m usculoskeletal|<noun>|<all>|||ccdaSectionName|none
+M060000|m/s|<noun>|<all>|||ccdaSectionName|none
+M060000|membrane neck|<noun>|<all>|||ccdaSectionName|none
+M060000|mental status|<noun>|<all>|||ccdaSectionName|none
+M060000|mental status/cognitionnisual perceptual|<noun>|<all>|||ccdaSectionName|none
+M060000|mks reflex|<noun>|<all>|||ccdaSectionName|none
+M060000|mmt|<noun>|<all>|||ccdaSectionName|none
+M060000|moist , neck/thyroid|<noun>|<all>|||ccdaSectionName|none
+M060000|motor|<noun>|<all>|||ccdaSectionName|none
+M060000|motor exam|<noun>|<all>|||ccdaSectionName|none
+M060000|motor. strength|<noun>|<all>|||ccdaSectionName|none
+M060000|mrn|<noun>|<all>|||ccdaSectionName|none
+M060000|muscle strength|<noun>|<all>|||ccdaSectionName|none
+M060000|muscular strength|<noun>|<all>|||ccdaSectionName|none
+M060000|musculdskeletal|<noun>|<all>|||ccdaSectionName|none
+M060000|musculoskektal|<noun>|<all>|||ccdaSectionName|none
+M060000|musculoskeletal exam|<noun>|<all>|||ccdaSectionName|none
+M060000|musculoskeletal/extremity|<noun>|<all>|||ccdaSectionName|none
+M060000|n euro|<noun>|<all>|||ccdaSectionName|none
+M060000|neck|<noun>|<all>|||ccdaSectionName|none
+M060000|neck exam|<noun>|<all>|||ccdaSectionName|none
+M060000|neuro|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|neurologic|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|neurological|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|neurological comments|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|neurological examination|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|neuroscreen|<noun>|<all>|||ccdaSectionName|BodyReflex
+M060000|objective|<noun>|<all>|||ccdaSectionName|none
+M060000|objective body systems|<noun>|<all>|||ccdaSectionName|none
+M060000|objective findings|<noun>|<all>|||ccdaSectionName|none
+M060000|office visit|<noun>|<all>|||ccdaSectionName|none
+M060000|palpation|<noun>|<all>|||ccdaSectionName|none
+M060000|patent|<noun>|<all>|||ccdaSectionName|none
+M060000|patient problems|<noun>|<all>|||ccdaSectionName|none
+M060000|pe|<noun>|<all>|||ccdaSectionName|none
+M060000|physical exam|<noun>|<all>|||ccdaSectionName|none
+M060000|physical examination|<noun>|<all>|||ccdaSectionName|none
+M060000|pinch strength|<noun>|<all>|||ccdaSectionName|none
+M060000|problem list|<noun>|<all>|||ccdaSectionName|none
+M060000|professional|<noun>|<all>|||ccdaSectionName|none
+M060000|pt diagnosis|<noun>|<all>|||ccdaSectionName|none
+M060000|pt summary note|<noun>|<all>|||ccdaSectionName|none
+M060000|pyramidal tract|<noun>|<all>|||ccdaSectionName|none
+M060000|range of motion|<noun>|<all>|||ccdaSectionName|none
+M060000|range of motion exam|<noun>|<all>|||ccdaSectionName|none
+M060000|re|<noun>|<all>|||ccdaSectionName|none
+M060000|re-evaluation|<noun>|<all>|||ccdaSectionName|none
+M060000|referring physician|<noun>|<all>|||ccdaSectionName|none
+M060000|reflexes|<noun>|<all>|||ccdaSectionName|none
+M060000|review of systems|<noun>|<all>|||ccdaSectionName|none
+M060000|right|<noun>|<all>|||ccdaSectionName|none
+M060000|right elbow|<noun>|<all>|||ccdaSectionName|none
+M060000|right hand|<noun>|<all>|||ccdaSectionName|none
+M060000|right knee|<noun>|<all>|||ccdaSectionName|none
+M060000|right shoulder|<noun>|<all>|||ccdaSectionName|none
+M060000|right upper extermity|<noun>|<all>|||ccdaSectionName|none
+M060000|right upper extremity|<noun>|<all>|||ccdaSectionName|none
+M060000|right wrist|<noun>|<all>|||ccdaSectionName|none
+M060000|right/left knee|<noun>|<all>|||ccdaSectionName|none
+M060000|rom|<noun>|<all>|||ccdaSectionName|none
+M060000|rue|<noun>|<all>|||ccdaSectionName|none
+M060000|sensation|<noun>|<all>|||ccdaSectionName|none
+M060000|sensory exam|<noun>|<all>|||ccdaSectionName|none
+M060000|shoulder|<noun>|<all>|||ccdaSectionName|none
+M060000|shoulders|<noun>|<all>|||ccdaSectionName|none
+M060000|skin|<noun>|<all>|||ccdaSectionName|none
+M060000|skin |<noun>|<all>|||ccdaSectionName|none
+M060000|special test|<noun>|<all>|||ccdaSectionName|none
+M060000|spine|<noun>|<all>|||ccdaSectionName|none
+M060000|starting with the left foot|<noun>|<all>|||ccdaSectionName|none
+M060000|strength|<noun>|<all>|||ccdaSectionName|none
+M060000|subjective|<noun>|<all>|||ccdaSectionName|none
+M060000|subjective reports|<noun>|<all>|||ccdaSectionName|none
+M060000|therapeutic activities|<noun>|<all>|||ccdaSectionName|none
+M060000|thoracic and lumbar spines|<noun>|<all>|||ccdaSectionName|none
+M060000|thoracolumbar|<noun>|<all>|||ccdaSectionName|none
+M060000|thoracolumbar spine|<noun>|<all>|||ccdaSectionName|none
+M060000|to|<noun>|<all>|||ccdaSectionName|none
+M060000|treatment plan|<noun>|<all>|||ccdaSectionName|none
+M060000|treatment time|<noun>|<all>|||ccdaSectionName|none
+M060000|upper extremities|<noun>|<all>|||ccdaSectionName|none
+M060000|vascular|<noun>|<all>|||ccdaSectionName|none
+M060000|vii|<noun>|<all>|||ccdaSectionName|none
+M060000|viii|<noun>|<all>|||ccdaSectionName|none
+M060000|vital signs|<noun>|<all>|||ccdaSectionName|none
+M060000|wrist|<noun>|<all>|||ccdaSectionName|none
+M060000|(continued)|<noun>|<all>|||ccdaSectionName|none
+M060000|notes (continued)|<noun>|<all>|||ccdaSectionName|none

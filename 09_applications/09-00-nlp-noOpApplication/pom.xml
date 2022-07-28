@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <!-- =================================================== -->
+    <!--          gov.va.vinci.nlp.framework.applications    -->
+    <!-- =================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>09-00-nlp-NoOpApplication </artifactId>
+  <packaging>jar</packaging>
+  <version>2021.02.0</version>
+
+  <description>framework noOp application  builds a noOp application  around framework components</description>
+
+    <!-- ======================================================= -->
+    <!--   Parent Pom - look here for global framework settings  -->
+    <!--   including                                             -->
+    <!--      Distribution Managment                             -->
+    <!--      Java versions                                      -->
+    <!--      Plugin Management and plugins                      -->
+    <!--      Dependencies                                       -->
+    <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+    <relativePath />
+  </parent>
+
+    <!-- =================================================== -->
+    <!-- Dependencies now specified in parent pom            -->
+    <!--    groupId                      artifactId          -->
+    <!--    =======                      ==========          -->
+    <!-- gov.va.vinci.nlp.framework     utils.general        -->
+    <!-- gov.va.vinci.nlp.framework     utils.install        -->
+    <!-- gov.va.vinci.nlp.framework     documentHeader       -->
+    <!-- gov.va.vinci                   flap                 -->
+    <!-- au.com.forward                 logging              -->
+    <!-- =================================================== -->
+    <dependencies>
+      <dependency><groupId>gov.nih.cc.rmd.framework</groupId> <artifactId>08-nlp-pipelines        </artifactId> </dependency>
+      <dependency> <groupId>org.apache.uima        </groupId> <artifactId>uimaj-core              </artifactId> </dependency> 
+    </dependencies>
+
+
+    <!-- =================================================== -->
+    <!-- Build Phase                                         -->
+    <!-- =================================================== -->
+    <build>
+        <resources>
+            <!-- ############################################# -->
+            <!-- Copy over the config files                    -->
+            <!-- to the target/config dir                      -->
+            <!-- ############################################# -->
+            <resource>
+                <directory>config</directory>
+                <targetPath>../config</targetPath>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+
+        </resources>
+
+        <!-- =================================================== -->
+        <!-- Build Plugin's                                      -->
+        <!-- =================================================== -->
+        <plugins>
+
+            <!-- ##################################################################### -->
+            <!-- Build an executable jar for main application                          -->
+            <!-- ##################################################################### -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.4</version>
+              <executions>
+
+               <execution>
+                <id>executable_1</id>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                            <mainClass>gov.nih.cc.rmd.nlp.framework.pipeline.applications.NoOpApplication</mainClass> 
+                        </manifest>
+                     </archive>
+                     <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>${project.artifactId}</finalName>
+                     <outputDirectory>${project.build.directory}/bin</outputDirectory>
+                     <dependencies>
+                       <dependency><groupId>gov.nih.cc.rmd.nlp.framework</groupId><artifactId>${project.artifactId}</artifactId></dependency>
+                     </dependencies>
+                  </configuration>
+                  <phase>install</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+               </execution>
+             </executions>
+
+      </plugin>
+     </plugins>
+    </build>
+</project>

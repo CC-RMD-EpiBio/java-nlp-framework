@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.va.vinci.Model</name>
+  <description>Labels specific to VINCI projects.  This now imports the MRSA model and a separate homelessness model.</description>
+  <version>2015.05.29</version>
+  <vendor/>
+  <imports>
+    <import name="gov.va.chir.Model"/>
+    <import name="org.apache.uima.examples.SourceDocumentInformation"/>
+    <import name="gov.va.vinci.SymptomCategories"/>
+    <import name="gov.va.vinci.ConceptModel"/>
+    <import name="gov.va.vinci.SnippetCategories"/>
+    <import name="gov.va.vinci.AssertionModel"/>
+    <import name="gov.va.vinci.Vitals"/>
+  <import name="gov.va.vinci.Diarrhea"/>
+  <import name="gov.va.vinci.MedicalConcepts"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.va.vinci.model.Phrase</name>
+      <description>This is an intermediary phrase created from cTakes chunks, before post processing happens to create the end product of a phrase.</description>
+      <supertypeName>gov.va.chir.model.Phrase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.MinimalPhrase</name>
+      <description>This is a phrase that is composed of only the tokens that might appear within tokens of entries of terms within a controlled medical vocabulary.  Determiners, and some modifiers are dropped from the noun phrases.</description>
+      <supertypeName>gov.va.chir.model.Phrase</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Symptom</name>
+      <description>Symptom</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>alleviatingFactor</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>bodyLaterality</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>bodySide</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>bodyLocation</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>course</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>duration</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>endTime</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>exacerbatingFactor</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>severity</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>startTime</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>relativeTemporalContext</name>
+          <description>Mirrors cTakes SignSymptomMention attribute</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Symptom_Assigned</name>
+      <description>Potential symptoms - are assigned by the mere fact that they have the right kind of semanitic type from a metamap'd concept.
+Assigned symptoms - are symptoms via human annotation.
+CHIR symptoms are symptoms that have been predicted to be a true symptom via a machine learning tool, or by human assignment.</description>
+      <supertypeName>gov.va.vinci.model.Symptom</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Temporality</name>
+      <description>A specific kind of clincial statement.</description>
+      <supertypeName>gov.va.chir.model.ClinicalStatement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Change_Status</name>
+      <description>A specific kind of clincial statement.</description>
+      <supertypeName>gov.va.chir.model.ClinicalStatement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Vague_mentions</name>
+      <description>A specific kind of clincial statement.</description>
+      <supertypeName>gov.va.chir.model.ClinicalStatement</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Symptom_Potential</name>
+      <description>Potential symptoms - are assigned by the mere fact that they have the right kind of semanitic type from a metamap'd concept.
+Assigned symptoms - are symptoms via human annotation.
+CHIR symptoms are symptoms that have been predicted to be a true symptom via a machine learning tool, or by human assignment.</description>
+      <supertypeName>gov.va.vinci.model.Symptom</supertypeName>
+      <features>
+        <featureDescription>
+          <name>answer</name>
+          <description>Defines if this potential symptom is a true symptom or not.  It will have the values truePositive, falsePositive, falseNegative</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.SymptomCategory</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>icdCode</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>category</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Diahrea</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Fatigue</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.VAnnotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.VagueMentionCodedEntry</name>
+      <description>Coded Entries that overlap vague mentions.</description>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.FamilyMember</name>
+      <description>Brother, sister etc.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Gold</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Copper</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    
+     <typeDescription>
+      <name>gov.va.vinci.model.GoldToken</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.CopperToken</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    
+    
+    <typeDescription>
+      <name>gov.va.vinci.model.Zone</name>
+      <description>A zone is an arbitrary area within the document.</description>
+      <supertypeName>gov.va.chir.model.Section</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Problem</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.AnatomicalPart</name>
+      <description>An anatomical part is a the body location of something.</description>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Activity</name>
+      <description>Activity, behavior, function, mental process</description>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Modifier</name>
+      <description/>
+      <supertypeName>gov.va.chir.model.CodedEntry</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Severity</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Duration</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.CEMHeader</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>id</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>name</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.CEM</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>header</name>
+          <description/>
+          <rangeTypeName>gov.va.vinci.model.CEMHeader</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>nesting</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>id</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>name</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Fever</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Ignore</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>category</name>
+          <description>The category that this term belongs to, to ignore</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>gov.va.vinci.model.Key</name>
+      <description>A key equates to something that a full text indexing query would match upon.</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>key</name>
+          <description>the normalized key for this span</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+   
+        <featureDescription>
+          <name>sectionName</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>assertionStatus</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>conditionalStatus</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>historicalStatus</name>
+          <description/>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>subjectStatus</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>inTitle</name>
+          <description>Is this key in the title of the document.</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.va.vinci.model.SearchTerm</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  <typeDescription>
+      <name>gov.va.vinci.model.SearchTermNegated</name>
+      <description>These are the non-asserted search terms.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

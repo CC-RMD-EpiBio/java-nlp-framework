@@ -1,0 +1,140 @@
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ====================================================== -->
+  <!-- Framework Multi-module pom to build all derma projects -->
+  <!-- ====================================================== -->
+  <groupId>gov.nih.cc.rmd.framework</groupId>
+  <artifactId>07.0-nlp-pUtils</artifactId>
+  <packaging>jar</packaging>
+  <version>2021.02.0</version>
+  <description>Framework NLP Pipeline Utilities</description>
+
+  <!-- ======================================================= -->
+  <!-- Parent Pom - look here for global framework settings -->
+  <!-- including -->
+  <!-- Distribution Managment -->
+  <!-- Java versions -->
+  <!-- Plugin Management and plugins -->
+  <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+  </parent>
+
+  <!-- ======================================================= -->
+  <!-- Dependencies -->
+  <!-- ======================================================= -->
+  <dependencies>
+
+    <!-- 
+         dependency> <groupId>xerces                        </groupId> <artifactId>xercesImpl               </artifactId> <version>2.4.0</version> 
+        <exclusions>
+         <exclusion> <groupId>xml-apis                    </groupId> <artifactId>xml-apis           </artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+    <dependency> <groupId>xerces</groupId> <artifactId>xerces</artifactId> <version>2.4.0</version>
+        <exclusions>
+           <exclusion> <groupId>xerces</groupId> <artifactId>xercesImpl</artifactId> </exclusion>
+           <exclusion> <groupId>xml-apis                  </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+        </exclusions>
+    </dependency>
+     -->
+
+
+    <dependency> <groupId>gov.nih.cc.rmd.framework  </groupId> <artifactId>04.0-nlp-util            </artifactId> 
+        <exclusions> <exclusion> <groupId>xml-apis                         </groupId> <artifactId>xml-apis                 </artifactId></exclusion></exclusions>
+    </dependency>
+       
+    <dependency> <groupId>gov.nih.cc.rmd.framework  </groupId> <artifactId>03-nlp-type-descriptors</artifactId> 
+        <exclusions>
+         <exclusion> <groupId>xml-apis                         </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-core               </artifactId> </exclusion> 
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-document-annotation</artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+    <dependency> <groupId>gov.nih.cc.rmd.framework  </groupId> <artifactId>06-nlp-marshallers     </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>xml-apis                         </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-core               </artifactId> </exclusion> 
+         <exclusion> <groupId>org.apache.uima                  </groupId> <artifactId>uimaj-document-annotation</artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+    <!-- dependency> <groupId>commons-logging           </groupId> <artifactId>commons-logging     </artifactId> </dependency -->
+    <!-- dependency> <groupId>org.apache.uima           </groupId> <artifactId>uimaj-core          </artifactId> </dependency -->
+    <!-- dependency> <groupId>org.apache.uima           </groupId> <artifactId>uimaj-examples      </artifactId> </dependency -->
+
+         <dependency> <groupId>xerces                        </groupId> <artifactId>xercesImpl               </artifactId> <version>2.4.0</version> </dependency>
+    <dependency> <groupId>org.apache.uima               </groupId> <artifactId>uimafit-core        </artifactId> <version>2.4.0</version>
+        <exclusions>
+         <exclusion> <groupId>xerces</groupId> <artifactId>xerces</artifactId> </exclusion>
+         <!-- exclusion> <groupId>xerces</groupId> <artifactId>xercesImpl</artifactId> </exclusion -->
+         <exclusion> <groupId>xml-apis                  </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+         <exclusion> <groupId>aopalliance       </groupId> <artifactId>aopalliance  </artifactId> </exclusion>
+         <exclusion> <groupId>org.appache.uima  </groupId> <artifactId>uimaj-core  </artifactId> </exclusion>
+         <exclusion> <groupId>org.appache.uima  </groupId> <artifactId>uimaj-document.annotation  </artifactId> </exclusion>
+         <exclusion> <groupId>org.appache.uima  </groupId> <artifactId>jcas.tcas  </artifactId> </exclusion>
+         <exclusion> <groupId>commons-logging   </groupId> <artifactId>commons-logging-api </artifactId> </exclusion>
+         <exclusion> <groupId>commons-logging   </groupId> <artifactId>commons-logging </artifactId> </exclusion>
+         <exclusion> <groupId>org.springframework</groupId><artifactId>spring-aop </artifactId> </exclusion>
+        </exclusions>
+    </dependency>
+
+    <!-- 
+         The ordering of what gets seen in the jvm based on the dependencies changed between Oracle's 8 and OpenJava's 11+
+         There is an ambiguity within the uimafit-core as to which DocumentImpl gets used (it's in several packages).  This 
+         shows up when compiled to java 11+ code.  
+         See https://stackoverflow.com/questions/62006284/noclassdeffounderror-org-w3c-dom-ls-documentls-issue-occurring-only-on-deploy
+
+     -->
+
+
+
+    <dependency> <groupId>gov.nih.nlm.nls           </groupId> <artifactId>vtt                 </artifactId> 
+        <exclusions>
+         <exclusion> <groupId>xml-apis                  </groupId> <artifactId>xml-apis                 </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.xmlbeans       </groupId> <artifactId>xmlbeans                 </artifactId></exclusion>
+         <exclusion> <groupId>org.slf4j                 </groupId> <artifactId>slf4j-log4j12            </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.maven.surefire </groupId> <artifactId>surefire-booter          </artifactId></exclusion>
+         <exclusion> <groupId>org.apache.maven.plugins  </groupId> <artifactId>maven-surefire-plugin    </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-artifact-manager   </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-artifact           </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-repository-metadata</artifactId></exclusion>
+         <exclusion><groupId>stax                       </groupId> <artifactId>stax-api                 </artifactId></exclusion>
+         <exclusion><groupId> org.apache.poi            </groupId> <artifactId>poi-ooxml                </artifactId></exclusion>
+         <exclusion><groupId> org.apache.poi            </groupId> <artifactId>poi                      </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-plugin-api         </artifactId></exclusion>
+         <exclusion><groupId>org.apache.maven           </groupId> <artifactId>maven-model-builder      </artifactId></exclusion>
+         <exclusion><groupId>dom4j                      </groupId> <artifactId>dom4j                    </artifactId></exclusion>
+
+        </exclusions>
+    </dependency>
+
+  </dependencies>
+
+</project>

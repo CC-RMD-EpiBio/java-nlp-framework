@@ -1,0 +1,7 @@
+This is a test.  it has windows 1252 (latin-8) characters in it.  á¸ž  ás?  AŠ Aš
+
+windows 1252  | Name    | as seen in Utf-8
+ƒ             | f       |     x83    
+†             | dagger  |     x86
+€             |euro sign|     x80
+Œ             | OE      |     x8C

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    
+  <name>gov.va.vinci.Assertion.Model</name>
+    
+  <description>Labels specific to asserton evidence
+With attribution (who said the mention - patient/provider/other/unknown)</description>
+    
+  <version>2020.08</version>
+    
+  <vendor/>
+    
+  <types>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AssertionStatus</name>
+            
+      <description>Assertion Status has values of Negated or Asserted</description>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.ConditionalStatus</name>
+            
+      <description>ConditionalStatus is either true or false</description>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.Assertion</name>
+            
+      <description>Top class that includes all assertion, conditional, subject subclasses</description>
+            
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.SubjectStatus</name>
+            
+      <description>The subject status is the experiencer - with values of patient or other.</description>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AssertionEvidence</name>
+            
+      <description>AssertionEvidence includes all values for Assertion types.</description>
+            
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+          
+      <features>
+                
+        <featureDescription>
+                    
+          <name>triggerType</name>
+                    
+          <description>the trigger type can be pre,post,termin.</description>
+                    
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+                  
+        </featureDescription>
+              
+      </features>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.NegationEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AssertedEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.ConditionalEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.SubjectIsPatientEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.SubjectIsOtherEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.HistoricalEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.HistoricalStatus</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.FamilyHistoryEvidence</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.FamilyHistoryStatus</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+      
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.NoEvidence</name>
+            
+      <description>This categegory covers those terms that have a negatve term in them, but are not trigger words.  We need to have such terms in the lexicon to absorb these, without making the negatve token in them a trigger.</description>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.ScopeBreakEvidence</name>
+            
+      <description>This is evidence that there is a scope limiting barrier for negation</description>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+      
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AttributionIsPatientEvidence</name>
+            
+      <description>Evidence to who is the attributed to giving a piece of information.  Who said it.  Was it the patient as in Patient reports .... or the provider, or other.  By default, it will be the provider. Other might be used when something like "wife states that  ...."</description>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AttributionStatus</name>
+            
+      <description/>
+            
+      <supertypeName>gov.va.vinci.model.Assertion</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AttributionIsProviderEvidence</name>
+            
+      <description>The provider is the person who is attributed to the mention.  This is the default, if there is no other evidence.  The provider wrote the record. </description>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+        
+    <typeDescription>
+            
+      <name>gov.va.vinci.model.AttributionIsOther</name>
+            
+      <description>Who is attributed to this piece of information - Wife reports, or husband states, or "mother states" as examples of another entity who is attributed to saying the mention.</description>
+            
+      <supertypeName>gov.va.vinci.model.AssertionEvidence</supertypeName>
+          
+    </typeDescription>
+  </types>
+  
+</typeSystemDescription>

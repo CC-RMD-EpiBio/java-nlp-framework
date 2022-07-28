@@ -1,0 +1,113 @@
+# ----------------------------------------------------------
+# MST_Lexicon_v2.largr
+#     
+#   This table contains terms that are always going to be 
+#   false positives - so they are marked in a similar
+#   fashion to pertanant negatives - they get marked as IGNORE 
+#   for the category of MST
+#     
+#
+#    EUI|MST Term|pos|inflection|baseForm|citationForm|category|sub category
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-28
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+MST_1|assault of a sexual nature|noun|count(thr_sing)|assault of a sexual nature|assault of a sexual nature|MilitarySexualTrauma|contact
+MST_2|coerced sex|noun|count(thr_sing)|coerced sex|coerced sex|MilitarySexualTrauma|contact
+MST_3|fondle|noun|count(thr_sing)|fondle|fondle|MilitarySexualTrauma|contact
+MST_4|fondled|noun|count(thr_sing)|fondled|fondled|MilitarySexualTrauma|contact
+MST_5|fondling|noun|count(thr_sing)|fondling|fondling|MilitarySexualTrauma|contact
+MST_6|forced oral sex|noun|count(thr_sing)|forced oral sex|forced oral sex|MilitarySexualTrauma|contact
+MST_7|forced sex|noun|count(thr_sing)|forced sex|forced sex|MilitarySexualTrauma|contact
+MST_8|gang rape|noun|count(thr_sing)|gang rape|gang rape|MilitarySexualTrauma|contact
+MST_9|grope|noun|count(thr_sing)|grope|grope|MilitarySexualTrauma|contact
+MST_10|groped|noun|count(thr_sing)|groped|groped|MilitarySexualTrauma|contact
+MST_11|groping|noun|count(thr_sing)|groping|groping|MilitarySexualTrauma|contact
+MST_12|hazing|noun|count(thr_sing)|hazing|hazing|MilitarySexualTrauma|unknown
+MST_13|hazing ritual|noun|count(thr_sing)|hazing ritual|hazing ritual|MilitarySexualTrauma|unknown
+MST_14|history of abuse|noun|count(thr_sing)|history of abuse|history of abuse|MilitarySexualTrauma|unknown
+MST_15|interpersonal violence|noun|count(thr_sing)|interpersonal violence|interpersonal violence|MilitarySexualTrauma|contact
+MST_16|marital rape|noun|count(thr_sing)|marital rape|marital rape|MilitarySexualTrauma|contact
+MST_17|military sex abuse|noun|count(thr_sing)|military sex abuse|military sex abuse|MilitarySexualTrauma|unknown
+MST_18|military sex assault|noun|count(thr_sing)|military sex assault|military sex assault|MilitarySexualTrauma|unknown
+MST_19|military sex trauma|noun|count(thr_sing)|military sex trauma|military sex trauma|MilitarySexualTrauma|unknown
+MST_20|military sexual abuse|noun|count(thr_sing)|military sexual abuse|military sexual abuse|MilitarySexualTrauma|contact
+MST_21|military sexual assault|noun|count(thr_sing)|military sexual assault|military sexual assault|MilitarySexualTrauma|contact
+MST_22|military sexual trauma|noun|count(thr_sing)|military sexual trauma|military sexual trauma|MilitarySexualTrauma|contact
+MST_23|military sexual violence|noun|count(thr_sing)|military sexual violence|military sexual violence|MilitarySexualTrauma|contact
+MST_24|military verbal abuse|noun|count(thr_sing)|military verbal abuse|military verbal abuse|MilitarySexualTrauma|non-contact
+MST_25|military verbal assault|noun|count(thr_sing)|military verbal assault|military verbal assault|MilitarySexualTrauma|non-contact
+MST_26|molestation|noun|count(thr_sing)|molestation|molestation|MilitarySexualTrauma|contact
+MST_27|molested|noun|count(thr_sing)|molested|molested|MilitarySexualTrauma|contact
+MST_28|mst|noun|count(thr_sing)|mst|mst|MilitarySexualTrauma|unknown
+MST_29|MST|noun|count(thr_sing)|MST|MST|MilitarySexualTrauma|unknown
+MST_30|nonconsensual sex|noun|count(thr_sing)|nonconsensual sex|nonconsensual sex|MilitarySexualTrauma|contact
+MST_31|partner violence|noun|count(thr_sing)|partner violence|partner violence|MilitarySexualTrauma|contact
+MST_32|rape|noun|count(thr_sing)|rape|rape|MilitarySexualTrauma|contact
+MST_33|rape survivor|noun|count(thr_sing)|rape survivor|rape survivor|MilitarySexualTrauma|contact
+MST_34|rape threats|noun|count(thr_sing)|rape threats|rape threats|MilitarySexualTrauma|non-contact
+MST_35|rape victim|noun|count(thr_sing)|rape victim|rape victim|MilitarySexualTrauma|contact
+MST_36|raped|noun|count(thr_sing)|raped|raped|MilitarySexualTrauma|contact
+MST_37|sex abuse|noun|count(thr_sing)|sex abuse|sex abuse|MilitarySexualTrauma|contact
+MST_38|sex abuse history|noun|count(thr_sing)|sex abuse history|sex abuse history|MilitarySexualTrauma|contact
+MST_39|sex assault|noun|count(thr_sing)|sex assault|sex assault|MilitarySexualTrauma|contact
+MST_40|sex crime|noun|count(thr_sing)|sex crime|sex crime|MilitarySexualTrauma|contact
+MST_41|sexual abuse|noun|count(thr_sing)|sexual abuse|sexual abuse|MilitarySexualTrauma|contact
+MST_42|sexual advances|noun|count(thr_sing)|sexual advances|sexual advances|MilitarySexualTrauma|unknown
+MST_43|sexual assault|noun|count(thr_sing)|sexual assault|sexual assault|MilitarySexualTrauma|contact
+MST_44|sexual battery|noun|count(thr_sing)|sexual battery|sexual battery|MilitarySexualTrauma|contact
+MST_45|sexual coercion|noun|count(thr_sing)|sexual coercion|sexual coercion|MilitarySexualTrauma|contact
+MST_46|sexual extortion|noun|count(thr_sing)|sexual extortion|sexual extortion|MilitarySexualTrauma|contact
+MST_47|sexual favors|noun|count(thr_sing)|sexual favors|sexual favors|MilitarySexualTrauma|unknown
+MST_48|favors of a sexual nature|noun|count(thr_sing)|favors of a sexual nature|favors of a sexual nature|MilitarySexualTrauma|unknown
+MST_49|harassment of a sexual nature|noun|count(thr_sing)|harassment of a sexual nature|harassment of a sexual nature|MilitarySexualTrauma|non-contact
+MST_50|sexual harassment|noun|count(thr_sing)|sexual harassment|sexual harassment|MilitarySexualTrauma|unknown
+MST_51|sexual intimidation|noun|count(thr_sing)|sexual intimidation|sexual intimidation|MilitarySexualTrauma|unknown
+MST_52|sexual threats|noun|count(thr_sing)|sexual threats|sexual threats|MilitarySexualTrauma|non-contact
+MST_53|sexual trauma|noun|count(thr_sing)|sexual trauma|sexual trauma|MilitarySexualTrauma|unknown
+MST_54|sexual trauma abuse|noun|count(thr_sing)|sexual trauma abuse|sexual trauma abuse|MilitarySexualTrauma|contact
+MST_55|sexual trauma assessment|noun|count(thr_sing)|sexual trauma assessment|sexual trauma assessment|MilitarySexualTrauma|unknown
+MST_56|sexual trauma during military service|noun|count(thr_sing)|sexual trauma during military service|sexual trauma during military service|MilitarySexualTrauma|unknown
+MST_57|sexual violence|noun|count(thr_sing)|sexual violence|sexual violence|MilitarySexualTrauma|contact
+MST_58|sexually abused|noun|count(thr_sing)|sexually abused|sexually abused|MilitarySexualTrauma|contact
+MST_59|sexually assaulted|noun|count(thr_sing)|sexually assaulted|sexually assaulted|MilitarySexualTrauma|contact
+MST_60|sexually coerced|noun|count(thr_sing)|sexually coerced|sexually coerced|MilitarySexualTrauma|contact
+MST_61|sexually extorted|noun|count(thr_sing)|sexually extorted|sexually extorted|MilitarySexualTrauma|contact
+MST_62|sexually harassed|noun|count(thr_sing)|sexually harassed|sexually harassed|MilitarySexualTrauma|non-contact
+MST_63|sexually intimidated|noun|count(thr_sing)|sexually intimidated|sexually intimidated|MilitarySexualTrauma|unknown
+MST_64|sodomized|noun|count(thr_sing)|sodomized|sodomized|MilitarySexualTrauma|contact
+MST_65|sodomy|noun|count(thr_sing)|sodomy|sodomy|MilitarySexualTrauma|contact
+MST_66|survivor of abuse|noun|count(thr_sing)|survivor of abuse|survivor of abuse|MilitarySexualTrauma|unknown
+MST_67|survivor of rape|noun|count(thr_sing)|survivor of rape|survivor of rape|MilitarySexualTrauma|contact
+MST_68|suspected abuse|noun|count(thr_sing)|suspected abuse|suspected abuse|MilitarySexualTrauma|unknown
+MST_69|suspected sexual abuse|noun|count(thr_sing)|suspected sexual abuse|suspected sexual abuse|MilitarySexualTrauma|contact
+MST_70|symptoms of abuse|noun|count(thr_sing)|symptoms of abuse|symptoms of abuse|MilitarySexualTrauma|unknown
+MST_71|threat of rape|noun|count(thr_sing)|threat of rape|threat of rape|MilitarySexualTrauma|non-contact
+MST_72|threats of a sexual  nature|noun|count(thr_sing)|threats of a sexual  nature|threats of a sexual  nature|MilitarySexualTrauma|non-contact
+MST_73|unwanted sexual attention|noun|count(thr_sing)|unwanted sexual attention|unwanted sexual attention|MilitarySexualTrauma|unknown
+MST_74|verbal assault|noun|count(thr_sing)|verbal assault|verbal assault|MilitarySexualTrauma|non-contact
+MST_75|verbal attacks|noun|count(thr_sing)|verbal attacks|verbal attacks|MilitarySexualTrauma|non-contact
+MST_76|verbal harassment|noun|count(thr_sing)|verbal harassment|verbal harassment|MilitarySexualTrauma|non-contact
+MST_77|verbal sexual harassment|noun|count(thr_sing)|verbal sexual harassment|verbal sexual harassment|MilitarySexualTrauma|non-contact
+MST_78|verbally assaulted|noun|count(thr_sing)|verbally assaulted|verbally assaulted|MilitarySexualTrauma|non-contact
+MST_79|verbally attacked|noun|count(thr_sing)|verbally attacked|verbally attacked|MilitarySexualTrauma|non-contact
+MST_80|verbally harassed|noun|count(thr_sing)|verbally harassed|verbally harassed|MilitarySexualTrauma|non-contact
+MST_81|victim of abuse |noun|count(thr_sing)|victim of abuse |victim of abuse |MilitarySexualTrauma|unknown
+MST_82|victim of rape|noun|count(thr_sing)|victim of rape|victim of rape|MilitarySexualTrauma|contact
+MST_83|nonconsensual|noun|count(thr_sing)|nonconsensual|nonconsensual|MilitarySexualTrauma|unknown

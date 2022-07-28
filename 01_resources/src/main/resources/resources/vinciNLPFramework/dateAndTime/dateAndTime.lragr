@@ -1,0 +1,228 @@
+E0004188|Monday|noun|count(thr_sing)|Monday|Monday|DateTime
+E0004188|Monday|noun|uncount(thr_sing)|Monday|Monday|DateTime
+E0004188|Mondays|noun|count(thr_plur)|Monday|Monday|DateTime
+E0228092|Monday fever|noun|uncount(thr_sing)|Monday fever|Monday fever|DateTime
+E0239033|monday morning disease|noun|uncount(thr_sing)|monday morning disease|monday morning disease|DateTime
+E0005805|Tuesday|noun|count(thr_sing)|Tuesday|Tuesday|DateTime
+E0005805|Tuesday|noun|uncount(thr_sing)|Tuesday|Tuesday|DateTime
+E0005805|Tuesdays|noun|count(thr_plur)|Tuesday|Tuesday|DateTime
+E0006176|Wednesday|noun|count(thr_sing)|Wednesday|Wednesday|DateTime
+E0006176|Wednesday|noun|uncount(thr_sing)|Wednesday|Wednesday|DateTime
+E0006176|Wednesdays|noun|count(thr_plur)|Wednesday|Wednesday|DateTime
+E0005712|Thursday|noun|count(thr_sing)|Thursday|Thursday|DateTime
+E0005712|Thursday|noun|uncount(thr_sing)|Thursday|Thursday|DateTime
+E0005712|Thursdays|noun|count(thr_plur)|Thursday|Thursday|DateTime
+E0002622|Friday|noun|count(thr_sing)|Friday|Friday|DateTime
+E0002622|Friday|noun|uncount(thr_sing)|Friday|Friday|DateTime
+E0002622|Fridays|noun|count(thr_plur)|Friday|Friday|DateTime
+E0005322|Saturday|noun|count(thr_sing)|Saturday|Saturday|DateTime
+E0005322|Saturdays|noun|count(thr_plur)|Saturday|Saturday|DateTime
+E0005562|Sunday|noun|count(thr_sing)|Sunday|Sunday|DateTime
+E0005562|Sunday|noun|uncount(thr_sing)|Sunday|Sunday|DateTime
+E0005562|Sundays|noun|count(thr_plur)|Sunday|Sunday|DateTime
+E0002622|Friday|noun|count(thr_sing)|Friday|Friday|DateTime
+E0002622|Friday|noun|uncount(thr_sing)|Friday|Friday|DateTime
+E0002622|Fridays|noun|count(thr_plur)|Friday|Friday|DateTime
+E0004188|Monday|noun|count(thr_sing)|Monday|Monday|DateTime
+E0004188|Monday|noun|uncount(thr_sing)|Monday|Monday|DateTime
+E0004188|Mondays|noun|count(thr_plur)|Monday|Monday|DateTime
+E0005322|Saturday|noun|count(thr_sing)|Saturday|Saturday|DateTime
+E0005322|Saturdays|noun|count(thr_plur)|Saturday|Saturday|DateTime
+E0005562|Sunday|noun|count(thr_sing)|Sunday|Sunday|DateTime
+E0005562|Sunday|noun|uncount(thr_sing)|Sunday|Sunday|DateTime
+E0005562|Sundays|noun|count(thr_plur)|Sunday|Sunday|DateTime
+E0005712|Thursday|noun|count(thr_sing)|Thursday|Thursday|DateTime
+E0005712|Thursday|noun|uncount(thr_sing)|Thursday|Thursday|DateTime
+E0005712|Thursdays|noun|count(thr_plur)|Thursday|Thursday|DateTime
+E0005805|Tuesday|noun|count(thr_sing)|Tuesday|Tuesday|DateTime
+E0005805|Tuesday|noun|uncount(thr_sing)|Tuesday|Tuesday|DateTime
+E0005805|Tuesdays|noun|count(thr_plur)|Tuesday|Tuesday|DateTime
+E0006176|Wednesday|noun|count(thr_sing)|Wednesday|Wednesday|DateTime
+E0006176|Wednesday|noun|uncount(thr_sing)|Wednesday|Wednesday|DateTime
+E0006176|Wednesdays|noun|count(thr_plur)|Wednesday|Wednesday|DateTime
+E0013160|birthday|noun|count(thr_sing)|birthday|birthday|DateTime
+E0013160|birthdays|noun|count(thr_plur)|birthday|birthday|DateTime
+E0020858|day|noun|count(thr_sing)|day|day|DateTime
+E0020858|day|noun|uncount(thr_sing)|day|day|DateTime
+E0020858|days|noun|count(thr_plur)|day|day|DateTime
+E0026453|every-day|adj|positive|every-day|everyday|DateTime
+E0026453|everyday|adj|positive|everyday|everyday|DateTime
+E0031818|holiday|noun|count(thr_sing)|holiday|holiday|DateTime
+E0031818|holidays|noun|count(thr_plur)|holiday|holiday|DateTime
+E0031819|holidayed|verb|past|holiday|holiday|DateTime
+E0031819|holidayed|verb|past_part|holiday|holiday|DateTime
+E0031819|holidaying|verb|pres_part|holiday|holiday|DateTime
+E0031819|holidays|verb|pres(thr_sing)|holiday|holiday|DateTime
+E0031819|holiday|verb|infinitive|holiday|holiday|DateTime
+E0031819|holiday|verb|pres(fst_sing,fst_plur,thr_plur,second)|holiday|holiday|DateTime
+E0040197|mid-day|noun|uncount(thr_sing)|mid-day|midday|DateTime
+E0040197|midday|noun|uncount(thr_sing)|midday|midday|DateTime
+E0049846|present day|adj|positive|present day|present-day|DateTime
+E0049846|present-day|adj|positive|present-day|present-day|DateTime
+E0054604|school day|noun|count(thr_sing)|school day|school day|DateTime
+E0054604|school days|noun|count(thr_plur)|school day|school day|DateTime
+E0056731|some day|adv|positive|some day|someday|DateTime
+E0056731|someday|adv|positive|someday|someday|DateTime
+E0061249|today|adv|positive|today|today|DateTime
+E0061250|today|noun|count(thr_sing)|today|today|DateTime
+E0061250|today|noun|uncount(thr_sing)|today|today|DateTime
+E0061250|todays|noun|count(thr_plur)|today|today|DateTime
+E0065866|yesterday|adv|positive|yesterday|yesterday|DateTime
+E0065867|yesterday|noun|count(thr_sing)|yesterday|yesterday|DateTime
+E0065867|yesterdays|noun|count(thr_plur)|yesterday|yesterday|DateTime
+E0236246|Holliday|noun|count(thr_sing)|Holliday|Holliday|DateTime
+E0236246|Holliday|noun|uncount(thr_sing)|Holliday|Holliday|DateTime
+E0236246|Hollidays|noun|count(thr_plur)|Holliday|Holliday|DateTime
+E0237435|day-to-day|adj|positive|day-to-day|day-to-day|DateTime
+E0320438|workday|noun|count(thr_sing)|workday|workday|DateTime
+E0320438|workdays|noun|count(thr_plur)|workday|workday|DateTime
+E0321109|week day|noun|count(thr_sing)|week day|weekday|DateTime
+E0321109|week-day|noun|count(thr_sing)|week-day|weekday|DateTime
+E0321109|weekday|noun|count(thr_sing)|weekday|weekday|DateTime
+E0321109|week days|noun|count(thr_plur)|week day|weekday|DateTime
+E0321109|week-days|noun|count(thr_plur)|week-day|weekday|DateTime
+E0321109|weekdays|noun|count(thr_plur)|weekday|weekday|DateTime
+E0355932|postinjection day|noun|count(thr_sing)|postinjection day|postinjection day|DateTime
+E0355932|postinjection days|noun|count(thr_plur)|postinjection day|postinjection day|DateTime
+E0359517|payday|noun|count(thr_sing)|payday|payday|DateTime
+E0359517|paydays|noun|count(thr_plur)|payday|payday|DateTime
+E0419607|postnatal day|noun|count(thr_sing)|postnatal day|postnatal day|DateTime
+E0419607|postnatal days|noun|count(thr_plur)|postnatal day|postnatal day|DateTime
+E0482356|post-burn day|noun|count(thr_sing)|post-burn day|postburn day|DateTime
+E0482356|postburn day|noun|count(thr_sing)|postburn day|postburn day|DateTime
+E0482356|post-burn days|noun|count(thr_plur)|post-burn day|postburn day|DateTime
+E0482356|postburn days|noun|count(thr_plur)|postburn day|postburn day|DateTime
+E0528083|Noriday|noun|uncount(thr_sing)|Noriday|Noriday|DateTime
+E0531372|Halliday|noun|count(thr_sing)|Halliday|Halliday|DateTime
+E0531372|Halliday|noun|uncount(thr_sing)|Halliday|Halliday|DateTime
+E0531372|Hallidays|noun|count(thr_plur)|Halliday|Halliday|DateTime
+E0554554|intra day|adj|positive|intra day|intraday|DateTime
+E0554554|intra-day|adj|positive|intra-day|intraday|DateTime
+E0554554|intraday|adj|positive|intraday|intraday|DateTime
+E0571420|inter-day|adj|positive|inter-day|interday|DateTime
+E0571420|interday|adj|positive|interday|interday|DateTime
+E0574282|long-day|adj|positive|long-day|long-day|DateTime
+E0574957|pre-holiday|adj|positive|pre-holiday|preholiday|DateTime
+E0574957|preholiday|adj|positive|preholiday|preholiday|DateTime
+E0575342|thirty day|adj|positive|thirty day|thirty-day|DateTime
+E0575342|thirty-day|adj|positive|thirty-day|thirty-day|DateTime
+E0578774|half-day|adj|positive|half-day|half-day|DateTime
+E0581263|fetal day|noun|count(thr_sing)|fetal day|fetal day|DateTime
+E0581263|fetal days|noun|count(thr_plur)|fetal day|fetal day|DateTime
+E0581263|foetal day|noun|count(thr_sing)|foetal day|fetal day|DateTime
+E0581263|fœtal day|noun|count(thr_sing)|fœtal day|fetal day|DateTime
+E0581263|foetal days|noun|count(thr_plur)|foetal day|fetal day|DateTime
+E0581263|fœtal days|noun|count(thr_plur)|fœtal day|fetal day|DateTime
+E0583888|national holiday|noun|count(thr_sing)|national holiday|national holiday|DateTime
+E0583888|national holidays|noun|count(thr_plur)|national holiday|national holiday|DateTime
+E0587003|all-day|adj|positive|all-day|all-day|DateTime
+E0588159|short day|noun|count(thr_sing)|short day|short-day|DateTime
+E0588159|short-day|noun|count(thr_sing)|short-day|short-day|DateTime
+E0588159|short days|noun|count(thr_plur)|short day|short-day|DateTime
+E0588159|short-days|noun|count(thr_plur)|short-day|short-day|DateTime
+E0590548|doomsday|noun|uncount(thr_sing)|doomsday|doomsday|DateTime
+E0590659|degree day|noun|count(thr_sing)|degree day|degree day|DateTime
+E0590659|degree-day|noun|count(thr_sing)|degree-day|degree day|DateTime
+E0590659|degree days|noun|count(thr_plur)|degree day|degree day|DateTime
+E0590659|degree-days|noun|count(thr_plur)|degree-day|degree day|DateTime
+E0592740|heyday|noun|count(thr_sing)|heyday|heyday|DateTime
+E0592740|heydays|noun|count(thr_plur)|heyday|heyday|DateTime
+E0592740|heydey|noun|count(thr_sing)|heydey|heyday|DateTime
+E0592740|heydeys|noun|count(thr_plur)|heydey|heyday|DateTime
+E0603333|non-workday|noun|count(thr_sing)|non-workday|nonworkday|DateTime
+E0603333|nonworkday|noun|count(thr_sing)|nonworkday|nonworkday|DateTime
+E0603333|non-workdays|noun|count(thr_plur)|non-workday|nonworkday|DateTime
+E0603333|nonworkdays|noun|count(thr_plur)|nonworkday|nonworkday|DateTime
+E0609114|multi-day|adj|positive|multi-day|multiday|DateTime
+E0609114|multiday|adj|positive|multiday|multiday|DateTime
+E0616062|post-holiday|adj|positive|post-holiday|postholiday|DateTime
+E0616062|postholiday|adj|positive|postholiday|postholiday|DateTime
+E0625648|mean solar day|noun|count(thr_sing)|mean solar day|mean solar day|DateTime
+E0625648|mean solar days|noun|count(thr_plur)|mean solar day|mean solar day|DateTime
+E0627999|drug holiday|noun|count(thr_sing)|drug holiday|drug holiday|DateTime
+E0627999|drug holidays|noun|count(thr_plur)|drug holiday|drug holiday|DateTime
+E0681081|Holladay|noun|count(thr_sing)|Holladay|Holladay|DateTime
+E0681081|Holladay|noun|uncount(thr_sing)|Holladay|Holladay|DateTime
+E0681081|Holladays|noun|count(thr_plur)|Holladay|Holladay|DateTime
+E0688897|incubation day|noun|count(thr_sing)|incubation day|incubation day|DateTime
+E0688897|incubation days|noun|count(thr_plur)|incubation day|incubation day|DateTime
+E0697110|national immunisation day|noun|count(thr_sing)|national immunisation day|national immunization day|DateTime
+E0697110|National Immunisation Day|noun|count(thr_sing)|National Immunisation Day|national immunization day|DateTime
+E0697110|national immunisation days|noun|count(thr_plur)|national immunisation day|national immunization day|DateTime
+E0697110|National Immunisation Days|noun|count(thr_plur)|National Immunisation Day|national immunization day|DateTime
+E0697110|national immunization day|noun|count(thr_sing)|national immunization day|national immunization day|DateTime
+E0697110|National Immunization Day|noun|count(thr_sing)|National Immunization Day|national immunization day|DateTime
+E0697110|national immunization days|noun|count(thr_plur)|national immunization day|national immunization day|DateTime
+E0697110|National Immunization Days|noun|count(thr_plur)|National Immunization Day|national immunization day|DateTime
+E0698060|occupied bed day|noun|count(thr_sing)|occupied bed day|occupied bed day|DateTime
+E0698060|occupied bed-day|noun|count(thr_sing)|occupied bed-day|occupied bed day|DateTime
+E0698060|occupied bed days|noun|count(thr_plur)|occupied bed day|occupied bed day|DateTime
+E0698060|occupied bed-days|noun|count(thr_plur)|occupied bed-day|occupied bed day|DateTime
+E0699527|post-partum day|noun|count(thr_sing)|post-partum day|postpartum day|DateTime
+E0699527|postpartum day|noun|count(thr_sing)|postpartum day|postpartum day|DateTime
+E0699527|post-partum days|noun|count(thr_plur)|post-partum day|postpartum day|DateTime
+E0699527|postpartum days|noun|count(thr_plur)|postpartum day|postpartum day|DateTime
+E0699587|post-inoculation day|noun|count(thr_sing)|post-inoculation day|postinoculation day|DateTime
+E0699587|postinoculation day|noun|count(thr_sing)|postinoculation day|postinoculation day|DateTime
+E0699587|post-inoculation days|noun|count(thr_plur)|post-inoculation day|postinoculation day|DateTime
+E0699587|postinoculation days|noun|count(thr_plur)|postinoculation day|postinoculation day|DateTime
+E0699594|post injury day|noun|count(thr_sing)|post injury day|post-injury day|DateTime
+E0699594|post-injury day|noun|count(thr_sing)|post-injury day|post-injury day|DateTime
+E0699594|postinjury day|noun|count(thr_sing)|postinjury day|post-injury day|DateTime
+E0699594|post injury days|noun|count(thr_plur)|post injury day|post-injury day|DateTime
+E0699594|post-injury days|noun|count(thr_plur)|post-injury day|post-injury day|DateTime
+E0699594|postinjury days|noun|count(thr_plur)|postinjury day|post-injury day|DateTime
+E0699598|post infection day|noun|count(thr_sing)|post infection day|postinfection day|DateTime
+E0699598|post-infection day|noun|count(thr_sing)|post-infection day|postinfection day|DateTime
+E0699598|postinfection day|noun|count(thr_sing)|postinfection day|postinfection day|DateTime
+E0699598|post infection days|noun|count(thr_plur)|post infection day|postinfection day|DateTime
+E0699598|post-infection days|noun|count(thr_plur)|post-infection day|postinfection day|DateTime
+E0699598|postinfection days|noun|count(thr_plur)|postinfection day|postinfection day|DateTime
+E0700006|post-operative day|noun|count(thr_sing)|post-operative day|postoperative day|DateTime
+E0700006|postoperative day|noun|count(thr_sing)|postoperative day|postoperative day|DateTime
+E0700006|post-operative days|noun|count(thr_plur)|post-operative day|postoperative day|DateTime
+E0700006|postoperative days|noun|count(thr_plur)|postoperative day|postoperative day|DateTime
+E0701284|post treatment day|noun|count(thr_sing)|post treatment day|post-treatment day|DateTime
+E0701284|post-treatment day|noun|count(thr_sing)|post-treatment day|post-treatment day|DateTime
+E0701284|posttreatment day|noun|count(thr_sing)|posttreatment day|post-treatment day|DateTime
+E0701284|post treatment days|noun|count(thr_plur)|post treatment day|post-treatment day|DateTime
+E0701284|post-treatment days|noun|count(thr_plur)|post-treatment day|post-treatment day|DateTime
+E0701284|posttreatment days|noun|count(thr_plur)|posttreatment day|post-treatment day|DateTime
+E0003525|Januaries|noun|count(thr_plur)|January|January|DateTime
+E0003525|January|noun|count(thr_sing)|January|January|DateTime
+E0003525|January|noun|uncount(thr_sing)|January|January|DateTime
+E0003525|Januarys|noun|count(thr_plur)|January|January|DateTime
+E0002501|Februaries|noun|count(thr_plur)|February|February|DateTime
+E0002501|February|noun|count(thr_sing)|February|February|DateTime
+E0002501|February|noun|uncount(thr_sing)|February|February|DateTime
+E0002501|Februarys|noun|count(thr_plur)|February|February|DateTime
+E0004044|March|noun|count(thr_sing)|March|March|DateTime
+E0004044|March|noun|uncount(thr_sing)|March|March|DateTime
+E0221685|ides of March|noun|count(thr_sing)|ides of March|ides of March|DateTime
+E0000403|April|noun|count(thr_sing)|April|April|DateTime
+E0000403|April|noun|uncount(thr_sing)|April|April|DateTime
+E0000403|Aprils|noun|count(thr_plur)|April|April|DateTime
+E0004075|May|noun|count(thr_sing)|May|May|DateTime
+E0004075|May|noun|uncount(thr_sing)|May|May|DateTime
+E0004075|Mays|noun|count(thr_plur)|May|May|DateTime
+E0003557|June|noun|count(thr_sing)|June|June|DateTime
+E0003557|June|noun|uncount(thr_sing)|June|June|DateTime
+E0003557|Junes|noun|count(thr_plur)|June|June|DateTime
+E0003556|July|noun|count(thr_sing)|July|July|DateTime
+E0003556|July|noun|uncount(thr_sing)|July|July|DateTime
+E0003556|Julys|noun|count(thr_plur)|July|July|DateTime
+E0000510|August|noun|count(thr_sing)|August|August|DateTime
+E0000510|August|noun|uncount(thr_sing)|August|August|DateTime
+E0000510|Augusts|noun|count(thr_plur)|August|August|DateTime
+E0300033|September|noun|count(thr_sing)|September|September|DateTime
+E0300033|September|noun|uncount(thr_sing)|September|September|DateTime
+E0300033|Septembers|noun|count(thr_plur)|September|September|DateTime
+E0004560|October|noun|count(thr_sing)|October|October|DateTime
+E0004560|October|noun|uncount(thr_sing)|October|October|DateTime
+E0004560|Octobers|noun|count(thr_plur)|October|October|DateTime
+E0004505|November|noun|count(thr_sing)|November|November|DateTime
+E0004505|November|noun|uncount(thr_sing)|November|November|DateTime
+E0004505|Novembers|noun|count(thr_plur)|November|November|DateTime
+E0001980|December|noun|count(thr_sing)|December|December|DateTime
+E0001980|December|noun|uncount(thr_sing)|December|December|DateTime
+E0001980|Decembers|noun|count(thr_plur)|December|December|DateTime

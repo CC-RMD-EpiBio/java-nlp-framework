@@ -1,0 +1,245 @@
+// =================================================
+/**
+ * LargePhraseAnnotator identifies the large phrases within sentences. These phrases 
+ * are bounded by conjunction, semi-colon and comma delimiters
+ *
+ *
+ * @author  Guy Divita 
+ * @created May 6, 2019
+ *
+
+ */
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+import org.apache.uima.UimaContext;
+import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
+import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.cas.text.AnnotationIndex;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.cas.FSArray;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import gov.va.chir.model.ContentHeading;
+import gov.va.chir.model.LargePhrase;
+import gov.va.chir.model.LexicalElement;
+import gov.va.chir.model.MinimalPhrase;
+import gov.va.chir.model.PartOfSpeech;
+import gov.va.chir.model.Sentence;
+import gov.va.chir.model.SlotValue;
+import gov.va.chir.model.Snippet;
+import gov.va.chir.model.Token;
+import gov.va.chir.model.Utterance;
+import gov.va.chir.model.WordToken;
+import gov.nih.cc.rmd.nlp.framework.utils.DTaggerUtilities;
+import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.U;
+
+import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
+import opennlpL.tools.chunker.Chunker;
+import opennlpL.tools.lang.english.TreebankChunker;
+
+
+public class LargePhraseAnnotator extends JCasAnnotator_ImplBase {
+ 
+  
+  // -----------------------------------------
+  /**
+   * process uses the openNLP chunker to label tokens with phrase tags. 
+   * The phrase tags are used to create "chunk" phrases.  (I call these
+   * vinci phrases).  "Chunk" phrases are then reviewed and some are
+   * (optionally) combined to make longer phrases. The reviewed phrases
+   * are the final (chir) phrases.  
+   */
+  // -----------------------------------------
+  public void process(JCas pJCas) throws AnalysisEngineProcessException {
+                
+    this.performanceMeter.startCounter();
+
+   List<Annotation> sentences = UIMAUtil.getAnnotations(pJCas, Sentence.typeIndexID, false );
+    
+    if (sentences != null && !sentences.isEmpty()) {
+      // --------------------------------
+      // Iterate through the utterances
+      // --------------------------------
+      for (Annotation sentence : sentences) {
+
+        processSentence( pJCas, sentence);
+
+      } // end loop through each sentence
+
+    
+  } // end if there are any sentences
+    
+  
+
+  this.performanceMeter.stopCounter();
+
+  }  //end Method process() --------------------
+  
+   
+  // =================================================
+  /**
+   * processSentence itterates through the terms and punctuation
+   * of the sentence - making LargePhrases from the sequences
+   * between the large phrase barriers
+   * 
+   * @param pJCas
+   * @param pSentence
+  */
+  // =================================================
+  private void processSentence(JCas pJCas, Annotation pSentence) {
+    
+    List<Annotation> terms = UIMAUtil.getAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pSentence.getBegin(),
+        pSentence.getEnd());
+
+    if (terms != null && !terms.isEmpty()) {
+      terms = UIMAUtil.uniqueAnnotations(terms);
+      UIMAUtil.sortByOffset(terms);
+
+      ArrayList<Annotation> largePhraseTerms = new ArrayList<Annotation>();
+      for (Annotation term : terms) {
+
+        PartOfSpeech posz = ((LexicalElement) term).getPartOfSpeech();
+        if (posz != null) {
+          String pos = posz.getPos();
+          String t = term.getCoveredText();
+          
+          if ( pos.contentEquals("CC") || // coordinating conjunction (and/or)
+               pos.equals("EX") || // existential there
+              pos.equals("WDT") || // wh-determiner
+              t.equals("WP") || // wh-pronoun
+              t.equals("WRB") ||
+           
+              t.contentEquals(",") ||
+              t.contentEquals(";")
+          ) {
+            if ( largePhraseTerms.size() > 0 )
+              createLargePhrase(pJCas, largePhraseTerms, pSentence);
+            largePhraseTerms = new ArrayList<Annotation>();
+            largePhraseTerms.add( term);
+          
+         } else 
+           largePhraseTerms.add(term);
+        } else
+          largePhraseTerms.add(term);
+      }
+
+      if (largePhraseTerms != null && largePhraseTerms.size() > 0) 
+        createLargePhrase(pJCas, largePhraseTerms, pSentence);
+
+    }
+  
+    
+  } // end Method processSentence() ----------
+
+
+  // -----------------------------------------
+  /**
+   * createLargePhrase 
+   * 
+   * @param pPhraseTerms
+   * 
+   */
+  // -----------------------------------------
+  private void createLargePhrase(JCas pJCas, List<Annotation> pPhraseTerms, Annotation pSentence) {
+    
+  
+      int[] spans = UIMAUtil.getMaxSpans(pPhraseTerms);
+  
+      LargePhrase statement = new LargePhrase(pJCas);
+      
+      statement.setBegin( spans[0] );
+      statement.setEnd( spans[1]);
+      statement.setDisplayString(U.normalize(statement.getCoveredText()));
+      statement.setParent(pSentence);
+      statement.setId("LargePhrase_" + this.largePhraseCounter++);
+      statement.setPhraseKind("LargePhrase");
+      statement.addToIndexes();
+     
+  } // end Method createLargePhrase() ------
+
+  
+//----------------------------------
+  /**
+   * initialize loads in the resources needed for phrase chunking. 
+   * 
+   * @param aContext
+   * @throws ResourceInitializationException
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(UimaContext aContext) throws ResourceInitializationException {
+    
+    String[] args = null;
+     try {
+       args                 = (String[]) aContext.getConfigParameterValue("args");  
+       
+       initialize( args);
+       
+      
+      
+     } catch (Exception e ) {
+       
+     }
+     
+   
+    
+  } // End Method initialize() ------
+  
+  
+  //----------------------------------
+  /**
+   * initialize loads in the resources needed for phrase chunking. 
+   * 
+   * @throws ResourceInitializationException
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(String[] pArgs) throws ResourceInitializationException {
+    
+    
+      this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getName()  );
+     
+   
+    
+      
+  } // end Method initialize() -------
+  
+
+
+
+  // =======================================================
+  /**
+   * destroy 
+   * 
+   */
+  // =======================================================
+  public void destroy() {
+   
+    this.performanceMeter.writeProfile( this.getClass().getSimpleName());
+
+  }// End Method destroy() ======================
+  
+
+  // ---------------------------------------
+  // Global Variables
+  // ---------------------------------------
+  
+  private int largePhraseCounter = 0;
+  private ProfilePerformanceMeter              performanceMeter = null;
+  
+  
+  
+} // end Class Phrase() -------
+

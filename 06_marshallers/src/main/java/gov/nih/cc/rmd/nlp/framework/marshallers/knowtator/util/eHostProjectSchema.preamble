@@ -1,0 +1,62 @@
+// =================== These are comments ===================
+// [1] All parameters are surround by [ and ]; 
+// [2] Parameters are separated by one or more space line; 
+// [3] Each parameter can have one or more values; 
+// [4] Each value is one line; 
+// [5] Values belong to one specific parameter should be 
+//     connected lines, and no space line between them.
+// ==========================================================
+
+[CONCEPT_LIB]
+
+
+[CONCEPT_LIB_SEPARTOR]
+
+
+[OUTPUT_CONTROL_CONCEPT_ENABLED]
+
+
+[COMPLEX_NOTES_FORMAT_IN_PTID_NOTEID_NOTES]
+NO
+
+[ORACLE_SEEKER_TO_SIMILAR_ANNOTATIONS_ENABLED]
+NO
+
+[ENABLE_QUICKLY_ATTRIBUTE_EDITOR]
+NO
+
+[CREATE_ANNOTATION_BY_EXACT_SELECTED_SPAN]
+NO
+
+[ORACLE_NLP_for_WholeWord]
+YES
+
+[GRAPHICPATH_ENABLED]
+YES
+
+[DIFFERENCE_MATCHING_ENABLED]
+YES
+
+[DIFFERENCE_MATCHING_CROSS]
+YES
+
+[DIFFERENCE_MATCHING_SAME]
+NO
+
+[NLP_USE_STOPWORDS]
+NO
+
+[OUTPUT_SUGGESTIONS_TOXML]
+NO
+
+[PRE_ANNOTATED_CONCEPT_DICTIONARIES_HAVE_DIFFERENT_WEIGHT]
+FALSE
+
+[ATTRIBUTES]
+@@@@AssertionStatus---Negated---Asserted---
+[RELATIONSHIPS]
+
+[VERIFIER_DICTIONARIES]
+
+[VERIFIER_COMPARE_SETTINGS]
+@@@@@@@@false@@@@false@@@@false@@@@false@@@@false@@@@false

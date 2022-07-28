@@ -1,0 +1,70 @@
+# ----------------------------------------------------------
+# Assertion Lexica
+#     
+#   AssertedEvidence  
+#
+#   This table contains terms that are direct evidence 
+#   of asserted Evidence.   
+#   For instance - TBD
+#
+#
+#   This file contains the category AssertedEvidence  and subcategories post and pre 
+#
+#    These patterns came from Wendy Chapman's conTEXT regular expressions. [citation needed here]
+#    
+#    EUI|term|pos|inflection|baseForm|citationForm|Assertion Evidence category|evidence trigger place
+#
+#  Author:        Guy Divita
+#  Last modified: 2015-09-23
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+AS0001|not been ruled out|noun|count(thr_sing)|not been ruled out|not been ruled out|AssertedEvidence|post
+AS0002|will be ruled out|noun|count(thr_sing)|will be ruled out|will be ruled out|AssertedEvidence|pre
+AS0003|x|noun|count(thr_sing)|x|x|AssertedEvidence|pre
+AS0004|x|noun|count(thr_sing)|x|x|AssertedEvidence|post
+AS0003|X|noun|count(thr_sing)|x|x|AssertedEvidence|pre
+AS0004|X|noun|count(thr_sing)|x|x|AssertedEvidence|post
+AS0005|y|noun|count(thr_sing)|y|y|AssertedEvidence|pre
+AS0006|y|noun|count(thr_sing)|y|y|AssertedEvidence|post
+AS0005|Y|noun|count(thr_sing)|y|y|AssertedEvidence|pre
+AS0006|Y|noun|count(thr_sing)|y|y|AssertedEvidence|post
+AS0007|yes|noun|count(thr_sing)|yes|yes|AssertedEvidence|pre
+AS0008|yes|noun|count(thr_sing)|yes|yes|AssertedEvidence|post
+AS0009|correct|noun|count(thr_sing)|correct|correct|AssertedEvidence|pre
+AS0010|correct|noun|count(thr_sing)|correct|correct|AssertedEvidence|post
+AS0011|positive|noun|count(thr_sing)|positive|positive|AssertedEvidence|pre
+AS0012|positive|noun|count(thr_sing)|positive|positive|AssertedEvidence|post
+AS0013|pos|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0014|pos|noun|count(thr_sing)|pos|pos|AssertedEvidence|post
+AS0015|+|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0016|+|noun|count(thr_sing)|pos|pos|AssertedEvidence|post
+AS0017|>|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0018|>|noun|count(thr_sing)|pos|pos|AssertedEvidence|post
+AS0014|asserted|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0014|asserted|noun|count(thr_sing)|pos|pos|AssertedEvidence|post
+AS0014|affirmed|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0014|affirmed|noun|count(thr_sing)|pos|pos|AssertedEvidence|post
+AS0014|able|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0014|able to|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|independent|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|ind|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|indep|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|mod ind|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|mod i|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+AS0015|full function|noun|count(thr_sing)|pos|pos|AssertedEvidence|pre
+

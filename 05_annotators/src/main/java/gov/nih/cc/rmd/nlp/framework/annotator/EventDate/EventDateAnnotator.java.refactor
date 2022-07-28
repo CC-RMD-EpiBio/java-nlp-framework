@@ -1,0 +1,491 @@
+// =================================================
+/**
+ * EventDate annotator finds dates and labels surrounding
+ * elements with this date as the event date
+ *
+ *
+ * @author  Guy Divita 
+ * @created July 07, 2018
+ *
+ **/
+// ================================================
+package gov.nih.cc.rmd.nlp.framework.annotator.EventDate;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.apache.uima.UimaContext;
+import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
+import org.apache.uima.analysis_engine.AnalysisEngineProcessException;
+import org.apache.uima.cas.CASException;
+import org.apache.uima.jcas.JCas;
+import org.apache.uima.jcas.tcas.Annotation;
+import org.apache.uima.resource.ResourceInitializationException;
+
+import com.ciitizen.framework.SectionZone;
+import com.ciitizen.framework.containers.json.DocumentHeader;
+import com.ciitizen.framework.model.DateTime;
+import com.ciitizen.framework.model.Shape;
+import com.ciitizen.handlers.impl.DefaultDataTypeMatcher;
+
+import gov.va.vinci.model.Concept;
+import gov.va.chir.model.ContentHeading;
+import gov.va.chir.model.Line;
+import gov.va.chir.model.VAnnotation;
+import gov.nih.cc.rmd.nlp.framework.utils.GLog;
+import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.U;
+import gov.nih.cc.rmd.nlp.framework.utils.framework.uima.VUIMAUtil;
+import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
+
+public class EventDateAnnotator extends JCasAnnotator_ImplBase {
+
+  // -----------------------------------------
+  /**
+   * process annotator finds dates and labels surrounding elements with this
+   * date as the event date
+   * 
+   * 
+   */
+  // -----------------------------------------
+  public void process(JCas pJCas) throws AnalysisEngineProcessException {
+
+    try {
+      this.performanceMeter.startCounter();
+
+      // put all event date attributes on annotations to the reference date as a default
+      setDefaultEventDateToReferenceDate(pJCas);
+
+      List<Annotation> dates = UIMAUtil.getAnnotations(pJCas, DateTime.typeIndexID, true);
+
+      if (dates != null && !dates.isEmpty()) {
+        for (Annotation date : dates) {
+          processDateByLine(pJCas, date);
+        }
+      }
+
+      
+      
+      this.performanceMeter.stopCounter();
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      System.err.println("Issue with " + this.getClass().getName() + " " + e.toString());
+      // throw new AnalysisEngineProcessException();
+    }
+  } // end Method process() ----------------
+
+  // =================================================
+  /**
+   * setDefaultEventDateToReferenceDate sets all concept event date's to the
+   * document referenceDate. Sets all statementDates to the document
+   * referenceDate.
+   *
+   * If the document event date has been filled out, all annotations
+   * are set to the document event date rather than the reference date;
+   * This is to be overwritten by specific evidence otherwise.
+   * 
+   * @param pJCas
+   * @param referenceDate2
+   * @param list
+   */
+  // =================================================
+  private void setDefaultEventDateToReferenceDate(JCas pJCas) {
+
+    
+     gov.va.chir.model.DocumentHeader documentHeader = VUIMAUtil.getDocumentHeader(pJCas);
+     
+     String documentEventDate = documentHeader.getEventDate();
+     String documentReferenceDate = documentHeader.getReferenceDate();
+     String eventDate = null;
+     
+     if ( documentEventDate != null ) {
+       eventDate = documentEventDate;
+       setDefaultEventDate(pJCas, UIMAUtil.getAnnotations(pJCas, VAnnotation.typeIndexID, true), eventDate);
+       setDefaultEventDate(pJCas, UIMAUtil.getAnnotations(pJCas, Concept.typeIndexID, true), eventDate);
+       setDefaultEventDate(pJCas, UIMAUtil.getAnnotations(pJCas, Shape.typeIndexID, true), eventDate);
+       setDefaultEventDate(pJCas, UIMAUtil.getAnnotations(pJCas, SectionZone.typeIndexID, true), eventDate);
+     
+       
+       
+     }
+     else if ( documentReferenceDate != null )
+       eventDate = documentReferenceDate;
+   
+    setDefaultEventDateToReferenceDate(pJCas, UIMAUtil.getAnnotations(pJCas, VAnnotation.typeIndexID, true), eventDate);
+    setDefaultEventDateToReferenceDate(pJCas, UIMAUtil.getAnnotations(pJCas, Concept.typeIndexID, true), eventDate);
+    setDefaultEventDateToReferenceDate(pJCas, UIMAUtil.getAnnotations(pJCas, Shape.typeIndexID, true), eventDate);
+    setDefaultEventDateToReferenceDate(pJCas, UIMAUtil.getAnnotations(pJCas, SectionZone.typeIndexID, true), eventDate);
+
+  } // end Method setDefaultEventDateToReferenceDate()
+
+  // =================================================
+  /**
+   * setDefaultEventDateToReferenceDate
+   * 
+   * @param pJCas
+   * @param pAnnotations
+   * @param pReferenceDate
+   */
+  // =================================================
+  private void setDefaultEventDateToReferenceDate(JCas pJCas, List<Annotation> pAnnotations,
+    String pReferenceDate) {
+
+    if (pAnnotations != null && !pAnnotations.isEmpty()) {
+      for (Annotation annotation : pAnnotations)
+        VUIMAUtil.setReferenceDate(annotation, pReferenceDate);
+    }
+
+  } // end Method setDefaultEventDateToReferenceDate()
+
+//=================================================
+ /**
+  * setDefaultEventDate
+  * 
+  * @param pJCas
+  * @param pAnnotations
+  * @param pReferenceDate
+  */
+ // =================================================
+ private void setDefaultEventDate(JCas pJCas, List<Annotation> pAnnotations, String pDate) {
+
+   if (pAnnotations != null && !pAnnotations.isEmpty()) {
+     for (Annotation annotation : pAnnotations) {
+       String eventDate = VUIMAUtil.getEventDate(annotation, null);
+       if ( eventDate == null )
+         VUIMAUtil.setEventDate(annotation, pDate);
+    
+         
+     }
+   }
+
+ } // end Method setDefaultEventDate()
+  
+  // =================================================
+  /**
+   * processDate finds concepts, section that are to the left of this date, and
+   * assigns event date to this date
+   * 
+   * @param pJCas
+   * @param pDate
+   */
+  // =================================================
+  private void processDateByLine(JCas pJCas, Annotation pDate) {
+
+    // find the line this date is in
+    // find all the concepts that are in this line
+    // mark those concepts with this date as the event date
+
+    List<Annotation> lines = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, Line.typeIndexID,
+        pDate.getBegin(), pDate.getEnd());
+
+    if (lines != null && !lines.isEmpty()) {
+      List<Annotation> concepts = new ArrayList<Annotation>();
+      for (Annotation line : lines) {
+        List<Annotation> someConcepts = UIMAUtil.getAnnotationsBySpan(pJCas,VAnnotation.typeIndexID, line.getBegin(), line.getEnd(), true);
+        List<Annotation> moreConcepts = UIMAUtil.getAnnotationsBySpan(pJCas, Concept.typeIndexID,line.getBegin(), line.getEnd(), true);
+
+        if (someConcepts != null && !someConcepts.isEmpty())
+          concepts.addAll(someConcepts);
+        if (moreConcepts != null && !moreConcepts.isEmpty())
+          concepts.addAll(moreConcepts);
+      }
+
+      UIMAUtil.sortByOffset(concepts);
+      // concepts = UIMAUtil.uniqueAnnotations(concepts);
+      
+      markAnnotationsWithEventDate(pJCas, pDate, concepts);
+    }
+
+  } // end Method processDate()
+
+  // =================================================
+  /**
+   * markAnnotationsWithEventDate
+   * 
+   * @param pDate
+   * @param pConcepts
+   */
+  // =================================================
+  private final void markAnnotationsWithEventDate(JCas pJCas, Annotation pDate, List<Annotation> pConcepts) {
+
+    if (pDate != null && pConcepts != null && !pConcepts.isEmpty()) {
+      String eventDateCoveredString = pDate.getCoveredText();
+      if (eventDateCoveredString != null && eventDateCoveredString.trim().length() > 0) {
+
+        try {
+          Date eventDated = this.dataMatcher.getDate(eventDateCoveredString);
+          if (eventDated != null) {
+            String eventDateString = eventDated.toString();
+
+            for (Annotation concept : pConcepts) {
+              try {
+                if (concept != null) {
+                	
+                	setEventDate(concept, eventDateString);
+                    // do something special with content headings 
+                	// that have dates in them
+                	
+                    if (  concept.getClass().getSimpleName().equals("ContentHeading")) {
+                    	processContentHeadingWithDateInIt(pJCas, eventDateCoveredString, eventDateString,  concept);
+                    }
+                  
+                }
+              } catch (Exception e2) {
+                // n/a
+              }
+            }
+          }
+        } catch (Exception e) {
+          // e.printStackTrace();
+          String msg = "Issue trying to convert the event date to a normalized date "
+              + eventDateCoveredString + " | " + e.toString();
+          GLog.println(GLog.ERROR_LEVEL, this.getClass(), "markAnnotationsWithEventDate", msg);
+        }
+      }
+    }
+
+  } // end Method markAnnotationsWithEventDate()
+
+
+//=================================================
+ /**
+  * processContentHeadingWithDateInIt
+  * 
+  * @param pJCas
+  * @param pStatementDate
+  * @param pContentHeading
+  * @param pLine
+ * @throws CASException 
+  */
+ // =================================================
+ private final void processContentHeadingWithDateInIt(JCas pJCas, String pEventDateCoveredString, String pStatementDate, Annotation pContentHeading ) throws CASException {
+	
+	 // look to see if the date is at the beginning of the line
+	 // if so,  it's not a contentHeading and this needs some repair
+	 
+	 // String buff = pContentHeading.getCoveredText();
+	 JCas jcas = pContentHeading.getCAS().getJCas  ();
+	 Annotation line = VUIMAUtil.getLine(pJCas,  pContentHeading);
+	 String  buff = line.getCoveredText();
+	 
+	 if ( buff.startsWith( pEventDateCoveredString ))
+		 VUIMAUtil.repairUnknownSectionZones( jcas, pContentHeading  );  
+	 
+	
+	 
+	 
+	 // look to see if the date is at the end of the line
+	 // if the date is at the end of the line, this is a statement date
+	 //  Mark everything in this section with the this date as the statement date
+	 else if ( buff.endsWith( pEventDateCoveredString )) {
+		 ( (ContentHeading) pContentHeading).setStatementDate( pStatementDate);
+		 propogateStatementDateToSectionZone( pContentHeading, pStatementDate);
+	 } else {
+	  // this isnt really a content heading - the date isn't at the beginning or end of the line
+	       VUIMAUtil.repairUnknownSectionZones( jcas, pContentHeading  );  
+	     
+	 }
+	
+} // end Method procwssContentHeadingWithDateInIt() ---
+
+
+
+//=================================================
+/**
+* repairContentHeading 
+*   finds the sectionzone from above, that has a valid section name
+*   combines these all into one section zone, making the individual
+*   section zones nested sections
+*   makes the date in the contentHeading be the statement date
+*   for all things in the nested section it came from.
+
+* @param pContentHeading
+* @param pStatementDate
+ * @throws CASException 
+*/
+//=================================================
+private final void repairContentHeading(Annotation pContentHeading, String pStatementDate) throws CASException {
+	
+	JCas pJCas = pContentHeading.getCAS().getJCas();
+	
+	SectionZone newSection = VUIMAUtil.repairUnknownSectionZones( pJCas, pContentHeading) ;
+	
+} // end Method repairContentHeading() -------------
+
+//=================================================
+/**
+ * propogateStatementDateToSectionZone finds the section this content
+ * heading is in, and sets all the statementDate attributes for all
+ * the annotations that fall within the content zone bounds. 
+ 
+ * @param pConcept
+ * @param pEventDate
+ */
+// =================================================
+private final void propogateStatementDateToSectionZone(Annotation pContentHeading, String pStatementDate)  {
+	
+	try {
+		JCas jcas = pContentHeading.getCAS().getJCas();
+		
+		List<Annotation> sectionZones = UIMAUtil.fuzzyFindAnnotationsBySpan(jcas,  SectionZone.typeIndexID, pContentHeading.getBegin(), pContentHeading.getEnd() );
+		
+		if ( sectionZones != null && !sectionZones.isEmpty() )
+			for ( Annotation sectionZone : sectionZones ) // there should only be one here
+				propogateStatementDateToSectionZone( jcas, sectionZone, pStatementDate);
+		
+	} catch (Exception e) {
+		e.printStackTrace();
+		String msg = "Something went wrong trying to propogate the statement date to section zone annotations " + e.toString() ;
+		GLog.println(GLog.ERROR_LEVEL, this.getClass(), "propogateStatementDateToSectionZone", msg);
+	}
+		
+	
+} // end Method propogateStatementDateToSectionZone() ---
+
+//=================================================
+/**
+* propogateStatementDateToSectionZone sets all the statementDate attributes for all
+* the annotations that fall within the section zone bounds. 
+
+* @param pConcept
+* @param pEventDate
+*/
+//=================================================
+private final void propogateStatementDateToSectionZone(JCas pJCas, Annotation pSectionZone, String pStatementDate)  {
+	
+	List<Annotation> annotations = UIMAUtil.getAnnotationsBySpan( pJCas, pSectionZone.getBegin(), pSectionZone.getEnd() ) ; 
+	
+	((SectionZone) pSectionZone).setStatementDate( pStatementDate);
+	if ( annotations != null && !annotations.isEmpty() ) {
+		for ( Annotation annotation : annotations ) {
+			setStatementDate( annotation , pStatementDate);
+		}
+			
+	}
+	
+} // end Method propogateStatementDateToSectionZone() ---
+
+
+// =================================================
+  /**
+   * setEventDate
+   * 
+   * @param pConcept
+   * @param pEventDate
+   */
+  // =================================================
+  private final void setEventDate(Annotation pConcept, String pEventDate) {
+
+    try {
+
+      ((VAnnotation) pConcept).setEventDate(pEventDate);
+    } catch (Exception e) {
+      try {
+        ((Concept) pConcept).setEventDate(pEventDate);
+      } catch (Exception e2) {
+        try {
+          ((Shape) pConcept).setEventDate(pEventDate);
+        } catch (Exception e3) {
+        }
+      }
+    }
+
+  } // end Method setEventDate()
+  
+
+//=================================================
+ /**
+  * setStatementDate
+  * 
+  * @param pConcept
+  * @param pEventDate
+  */
+ // =================================================
+ private final void setStatementDate(Annotation pConcept, String pEventDate) {
+
+   try {
+
+     ((VAnnotation) pConcept).setStatementDate(pEventDate);
+   } catch (Exception e) {
+     try {
+       ((Concept) pConcept).setStatementDate(pEventDate);
+     } catch (Exception e2) {
+       try {
+         ((Shape) pConcept).setStatementDate(pEventDate);
+       } catch (Exception e3) {
+       }
+     }
+   }
+
+ } // end Method setStatementDate()
+
+  // ----------------------------------
+  /**
+   * destroy
+   * 
+   **/
+  // ----------------------------------
+  public void destroy() {
+    this.performanceMeter.writeProfile(this.getClass().getSimpleName());
+  }
+
+  // ----------------------------------
+  /**
+   * initialize loads in the resources.
+   * 
+   * @param aContext
+   * 
+   **/
+  // ----------------------------------
+  public void initialize(UimaContext aContext) throws ResourceInitializationException {
+
+    String[] args = null;
+    try {
+      args = (String[]) aContext.getConfigParameterValue("args");
+
+    } catch (Exception e) {
+      System.err.println(
+          "Issue - no args were passed in to the initialize, and the outputDir needs to be passed in ");
+      throw new ResourceInitializationException();
+    }
+
+    this.performanceMeter = new ProfilePerformanceMeter(args, this.getClass().getSimpleName());
+
+    initialize();
+
+  } // end Method initialize() -------
+
+  // ----------------------------------
+  /**
+   * initialize loads in the resources.
+   * 
+   * 
+   **/
+  // ----------------------------------
+  public void initialize() throws ResourceInitializationException {
+
+    try {
+      this.dataMatcher = new DefaultDataTypeMatcher();
+    } catch (Exception e) {
+      e.getStackTrace();
+      String msg = "Issue trying to create a datamatcher in the json writer " + e.getMessage();
+      GLog.println(GLog.ERROR_LEVEL, this.getClass(), "initialize", msg);
+      throw new ResourceInitializationException();
+    }
+
+  } // end Method initialize() -------
+
+  // ---------------------------------------
+  // Global Variables
+  // ---------------------------------------
+  protected int lineCtr = 0;
+
+  ProfilePerformanceMeter performanceMeter = null;
+
+  private DefaultDataTypeMatcher dataMatcher;
+
+  private String outputDir = null;
+
+} // end Class LineAnnotator() ---------------

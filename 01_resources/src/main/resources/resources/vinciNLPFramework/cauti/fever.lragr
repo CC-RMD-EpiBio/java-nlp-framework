@@ -1,0 +1,116 @@
+# =========================================================================
+#
+# Summary:
+#  fever.lragr Lexicon came from terms gathered from the UMLS, ngrams around temperature
+#  from a sample from the VINCI corpus, and from the CAUTI project.
+#
+# Description of Fields:
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category
+#
+#
+# Created :2014-03-09_17_50_22
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+F000001|febrile|noun|count(thr_sing)|febrile|febrile|Fever_Mentions|
+F000002|temp elevation|noun|count(thr_sing)|febrile|febrile|Fever_Mentions|
+F000003|temp elevated|noun|count(thr_sing)|febrile|febrile|Fever_Mentions|
+F000004|elevated temp|noun|count(thr_sing)|febrile|febrile|Fever_Mentions|
+F000005|febris|noun|count(thr_sing)|febris|febris|Fever_Mentions|
+F000006|fever/chills|noun|count(thr_sing)|feeling feverish|feeling feverish|Fever_Mentions|
+F000007|feeling feverish|noun|count(thr_sing)|feeling feverish|feeling feverish|Fever_Mentions|
+F000008|chills|noun|count(thr_sing)|feeling feverish|feeling feverish|Fever_Mentions|
+F000009|fevers/chills|noun|count(thr_sing)|feeling feverish|feeling feverish|Fever_Mentions|
+F000010|fever|noun|count(thr_sing)|fever|fever|Fever_Mentions|
+F000012|fever nos|noun|count(thr_sing)|fever nos|fever nos|Fever_Mentions|
+F000013|fever symptoms|noun|count(thr_sing)|fever symptoms|fever symptoms|Fever_Mentions|
+F000014|fevered|noun|count(thr_sing)|fevered|fevered|Fever_Mentions|
+F000015|feverish|noun|count(thr_sing)|feverish|feverish|Fever_Mentions|
+F000016|fevers|noun|count(thr_sing)|fevers|fevers|Fever_Mentions|
+F000017|subjective fevers|noun|count(thr_sing)|fevers|fevers|Fever_Mentions|
+F000018|fever overnight|noun|count(thr_sing)|fevers|fevers|Fever_Mentions|
+F000019|new fever|noun|count(thr_sing)|fevers|fevers|Fever_Mentions|
+# ------------------------
+#  now in temperature file
+#F000020|has a temperature of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+#F000020|had a temperature of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+#F000020|has a temp of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+#F000020|had a temp of|noun|count(thr_sing)|has a temperature|has a temperature|Temperature|
+#
+F000020|has a temperature|noun|count(thr_sing)|has a temperature|has a temperature|Fever_Mentions|
+F000020|had a temperature|noun|count(thr_sing)|has a temperature|has a temperature|Fever_Mentions|
+F000020|has a temp|noun|count(thr_sing)|has a temperature|has a temperature|Fever_Mentions|
+F000020|had a temp|noun|count(thr_sing)|has a temperature|has a temperature|Fever_Mentions|
+F000020|has a temp|noun|count(thr_sing)|has a temperature|has a temperature|Fever_Mentions|
+F000021|high body temperature|noun|count(thr_sing)|high body temperature|high body temperature|Fever_Mentions|
+F000022|high temperature|noun|count(thr_sing)|high temperature|high temperature|Fever_Mentions|
+F000022|high temp|noun|count(thr_sing)|high temperature|high temperature|Fever_Mentions|
+F000022|temp: high|noun|count(thr_sing)|high temperature|high temperature|Fever_Mentions|
+F000022|temperature: high|noun|count(thr_sing)|high temperature|high temperature|Fever_Mentions|
+F000023|high; temperature|noun|count(thr_sing)|high; temperature|high; temperature|Fever_Mentions|
+F000024|hyperthermia|noun|count(thr_sing)|hyperthermia|hyperthermia|Fever_Mentions|
+F000025|hyperthermias|noun|count(thr_sing)|hyperthermias|hyperthermias|Fever_Mentions|
+F000026|hyperthermic|noun|count(thr_sing)|hyperthermic|hyperthermic|Fever_Mentions|
+F000027|hyperthermic|noun|count(thr_sing)|hyperthermic|hyperthermic|Fever_Mentions|
+F000028|increase temperature|noun|count(thr_sing)|increase temperature|increase temperature|Fever_Mentions|
+F000029|increased body temperature|noun|count(thr_sing)|increased body temperature|increased body temperature|Fever_Mentions|
+F000030|increased; body temperature|noun|count(thr_sing)|increased; body temperature|increased; body temperature|Fever_Mentions|
+F000031|increases temperature|noun|count(thr_sing)|increases temperature|increases temperature|Fever_Mentions|
+F000032|pyrexia|noun|count(thr_sing)|pyrexia|pyrexia|Fever_Mentions|
+F000033|pyrexia nos|noun|count(thr_sing)|pyrexia nos|pyrexia nos|Fever_Mentions|
+F000034|pyrexial|noun|count(thr_sing)|pyrexial|pyrexial|Fever_Mentions|
+F000035|pyrexias|noun|count(thr_sing)|pyrexias|pyrexias|Fever_Mentions|
+F000036|raised temperature|noun|count(thr_sing)|raised temperature|raised temperature|Fever_Mentions|
+F000037|sweating sickness|noun|count(thr_sing)|sweating sickness|sweating sickness|Fever_Mentions|
+F000038|temperature elevated|noun|count(thr_sing)|temperature elevated|temperature elevated|Fever_Mentions|
+F000038|temp elevated|noun|count(thr_sing)|temperature elevated|temperature elevated|Fever_Mentions|
+F000038|o/e temperature elevated|noun|count(thr_sing)|temperature elevated|temperature elevated|Fever_Mentions|
+F000039|temperature elevation|noun|count(thr_sing)|temperature elevation|temperature elevation|Fever_Mentions|
+F000040|temperature increase|noun|count(thr_sing)|temperature increase|temperature increase|Fever_Mentions|
+F000041|temperature raised|noun|count(thr_sing)|temperature raised|temperature raised|Fever_Mentions|
+F000041|temp raised|noun|count(thr_sing)|temperature raised|temperature raised|Fever_Mentions|
+F000042|temperature symptoms|noun|count(thr_sing)|temperature symptoms|temperature symptoms|Fever_Mentions|
+F000043|temperature; high|noun|count(thr_sing)|temperature; high|temperature; high|Fever_Mentions|
+F000044|f/c/n/v|noun|count(thr_sing)|fever/chills/nausa/vomiting|fever/chills/nausa/vomiting|Fever_Mentions|
+F000045|fever/chills/nausa/vomiting|noun|count(thr_sing)|fever/chills/nausa/vomiting|fever/chills/nausa/vomiting|Fever_Mentions|
+F000046|body temperature above normal|noun|count(thr_sing)|body temperature above normal|body temperature above normal|Fever_Mentions|
+F000047|body temperature increased|noun|count(thr_sing)|body temperature increased|body temperature increased|Fever_Mentions|
+F000048|body temperature, increased|noun|count(thr_sing)|"body temperature, increased"|"body temperature, increased"|Fever_Mentions|
+F000049|body temperature; increased|noun|count(thr_sing)|body temperature; increased|body temperature; increased|Fever_Mentions|
+F000050|elevated temperature|noun|count(thr_sing)|elevated temperature|elevated temperature|Fever_Mentions|
+# added terms 10/15/2015
+F000051|temp warm skin|noun|count(thr_sing)|temp warm skin|temp warm skin|Fever_Mentions|
+F000052|skin temp warm|noun|count(thr_sing)|skin temp warm|skin temp warm|Fever_Mentions|
+F000053|temperature temp warm|noun|count(thr_sing)|temperature temp warm|temperature temp warm|Fever_Mentions|
+F000054|temperature warm|noun|count(thr_sing)|temperature warm|temperature warm|Fever_Mentions|
+F000055|temperature is warm|noun|count(thr_sing)|temperature is warm|temperature is warm|Fever_Mentions|
+F000056|hyperpyrexia|noun|count(thr_sing)|hyperpyrexia|hyperpyrexia|Fever_Mentions|
+F000057|elevated core body temperature|noun|count(thr_sing)|elevated core body temperature|elevated core body temperature|Fever_Mentions|
+F000057|elevated core body temp|noun|count(thr_sing)|elevated core body temperature|elevated core body temperature|Fever_Mentions|
+F000046|body temperature above reference range|noun|count(thr_sing)|body temperature above normal|body temperature above normal|Fever_Mentions|
+F000047|rndx hyperthermia|noun|count(thr_sing)|rndx hyperthermia|rndx hyperthermia|Fever_Mentions|
+F000048|abnormal high body temperature|noun|count(thr_sing)|abnormal high body temperature|abnormal high body temperature|Fever_Mentions|
+F000049|abnormal elevation of body temperature|noun|count(thr_sing)|abnormal high body temperature|abnormal high body temperature|Fever_Mentions|
+F000050|body temperature that is higher than normal|noun|count(thr_sing)|abnormal high body temperature|abnormal high body temperature|Fever_Mentions|
+#
+#F000057|color pink temperature|noun|count(thr_sing)|color pink temperature|color pink temperature|Fever_Mentions|
+F000058|low grade fever|noun|count(thr_sing)|low grade fever|low grade fever|Fever_Mentions|
+# Negated terms
+F000057|afebrile|noun|count(thr_sing)|afebrile|afebrile|Fever_Mentions|Negated

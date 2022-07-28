@@ -1,0 +1,201 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ CURRENT \s{1,50}DIAGNOSES
+ After\s{1,50}sedation\s{1,50}and\s{1,50}local\s{1,50}Xylocaine\s{1,50}anesthesia 
+ after\s{1,50}the\s{1,50}completion\s{1,50}of\s{1,50}vitamin\s{1,50}D\s{1,50}replacement 
+ In\s{1,50}the\s{1,50}meanwhile 
+performed\s{1,50} this\s{1,50}time 
+ at\s{1,50}this\s{1,50}time 
+ after\s{1,50}skiing 
+ at\s{1,50}the\s{1,50}moment 
+ present \s{1,50}and
+ prior\s{1,50}to\s{1,50}that 
+ until\s{1,50}we\s{1,50}have\s{1,50}resolved\s{1,50}the\s{1,50}situation\s{1,50}and\s{1,50}find\s{1,50}out\s{1,50}what\s{1,50}is\s{1,50}the\s{1,50}underlying\s{1,50}cause\s{1,50}of\s{1,50}her\s{1,50}disease 
+ until\s{1,50}I\s{1,50}took\s{1,50}over\s{1,50}her\s{1,50}care 
+ recently \s{1,50}and
+ Prior\s{1,50}to\s{1,50}the\s{1,50}onset\s{1,50}of\s{1,50}her\s{1,50}erythema\s{1,50}nodosum 
+ once\s{1,50}her\s{1,50}kidney\s{1,50}function\s{1,50}improves 
+ Currently 
+ at\s{1,50}the\s{1,50}last\s{1,50}visit 
+ the\s{1,50}last\s{1,50}visit 
+ night \s{1,50}sweats
+\s{1,50} \d+\s{1,50}weeks\s{1,50}ago 
+use\p{Punct}\s{1,50} PAST 
+clinic\p{Punct}\s{1,50} PAST 
+ When\s{1,50}she\s{1,50}did\s{1,50}cough 
+ this\s{1,50}time \s{1,50}and
+ After\s{1,50}adequate\s{1,50}sedation\s{1,50}was\s{1,50}achieved\s{1,50}by\s{1,50}the\s{1,50}anesthesia\s{1,50}team 
+ on\s{1,50}time 
+ at\s{1,50}that\s{1,50}time 
+mg\s{1,50} in\s{1,50}the\s{1,50}afternoon 
+ at\s{1,50}lunch\s{1,50}time 
+ lunch\s{1,50}time 
+ at\s{1,50}present 
+ now \p{Punct}
+ early\s{1,50}morning 
+ the\s{1,50}time \s{1,50}he
+s\s{1,50} immediate \s{1,50}
+range\s{1,50} immediately 
+items\s{1,50} immediately 
+When\s{1,50} immediately 
+motivated\s{1,50} previously 
+ \d+\s{1,50}to\s{1,50}\d+\s{1,50}years\s{1,50}ago 
+ shortly\s{1,50}after\s{1,50}this\s{1,50}evaluation 
+ prior\s{1,50}to\s{1,50}his\s{1,50}hospitalization 
+ until\s{1,50}the\s{1,50}middle\s{1,50}of\s{1,50}the\s{1,50}night 
+ the\s{1,50}middle\s{1,50}of\s{1,50}the\s{1,50}night \s{1,50}
+ when\s{1,50}his\s{1,50}wife\s{1,50}came\s{1,50}home 
+ at\s{1,50}\d+\s{1,50}p\p{Punct}m\p{Punct} 
+He\s{1,50} later 
+ after\s{1,50}a\s{1,50}recent\s{1,50}hospitalization 
+incision\s{1,50} now 
+ currently \s{1,50}retired
+ At\s{1,50}that\s{1,50}time 
+ after\s{1,50}falling 
+from\s{1,50} that\s{1,50}time 
+to\s{1,50} that \s{1,50}
+ after\s{1,50}his\s{1,50}legs\s{1,50}gave\s{1,50}way 
+ after\s{1,50}which 
+ after\s{1,50}this \p{Punct}
+ currently \s{1,50}in
+ a\s{1,50}half\s{1,50}years\s{1,50}ago \p{Punct}\s{1,50}patient
+ after\s{1,50}checking\s{1,50}the\s{1,50}construct\s{1,50}closely\s{1,50}and\s{1,50}fluoroscopically 
+ After\s{1,50}completing\s{1,50}this\s{1,50}disk\s{1,50}space\s{1,50}preparation 
+ After\s{1,50}completing\s{1,50}the\s{1,50}disk\s{1,50}space\s{1,50}preparation 
+ After\s{1,50}local\s{1,50}infiltration 
+ After\s{1,50}obtaining\s{1,50}proper\s{1,50}patient\s{1,50}identification\s{1,50}and\s{1,50}appropriate\s{1,50}preoperative\s{1,50}informed\s{1,50}consent 
+ After\s{1,50}the\s{1,50}induction\s{1,50}of\s{1,50}satisfactory\s{1,50}general\s{1,50}endotracheal\s{1,50}anesthesia\s{1,50}and\s{1,50}placement\s{1,50}of\s{1,50}appropriate\s{1,50}monitoring\s{1,50}equipment\s{1,50}by\s{1,50}Anesthesiology\s{1,50}as\s{1,50}well\s{1,50}as\s{1,50}placement\s{1,50}of\s{1,50}electrophysiological\s{1,50}monitoring\s{1,50}equipment\s{1,50}by\s{1,50}the\s{1,50}Neurology\s{1,50}team 
+ After\s{1,50}a\s{1,50}detailed\s{1,50}review\s{1,50}of\s{1,50}management\s{1,50}considerations\s{1,50}with\s{1,50}the\s{1,50}patient\s{1,50}and\s{1,50}his\s{1,50}wife 
+who\s{1,50} now 
+ once\s{1,50}his\s{1,50}pain\s{1,50}is\s{1,50}under\s{1,50}better\s{1,50}control 
+ that\s{1,50}time \s{1,50}he
+ approximately\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+\p{Punct}\d+\s{1,50}weeks\s{1,50}ago 
+ Eventually 
+ from\s{1,50}the\s{1,50}time\s{1,50}of\s{1,50}the\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+ the\s{1,50}time\s{1,50}of\s{1,50}the\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+ anytime\s{1,50}in\s{1,50}the\s{1,50}past 
+ currently \s{1,50}working
+ immediately\s{1,50}after\s{1,50}the\s{1,50}accident 
+ after\s{1,50}sitting\s{1,50}for\s{1,50}four\s{1,50}to\s{1,50}five\s{1,50}hours 
+ four\s{1,50}to\s{1,50}five\s{1,50}hours \p{Punct}
+ immediate \s{1,50}discomfort
+ after\s{1,50}the\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+since\s{1,50} that\s{1,50}time 
+noted\s{1,50} after\s{1,50}the\s{1,50}accident 
+not\s{1,50} currently 
+ After\s{1,50}approximately\s{1,50}two\s{1,50}hours\s{1,50}of\s{1,50}sitting 
+ Prior\s{1,50}to\s{1,50}the\s{1,50}beginning\s{1,50}of\s{1,50}the\s{1,50}examination 
+ On\s{1,50}the\s{1,50}date\s{1,50}of\s{1,50}the\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+ at\s{1,50}the\s{1,50}time\s{1,50}of\s{1,50}impact 
+was\s{1,50} later 
+ Once\s{1,50}this\s{1,50}was\s{1,50}completed 
+ Once\s{1,50}this\s{1,50}was\s{1,50}removed 
+ Once\s{1,50}the\s{1,50}plane\s{1,50}between\s{1,50}the\s{1,50}deltoid\s{1,50}and\s{1,50}underlying\s{1,50}tissue\s{1,50}was\s{1,50}found 
+extremity\s{1,50}was\s{1,50} then 
+ after\s{1,50}he\s{1,50}had\s{1,50}been\s{1,50}draped 
+ At\s{1,50}this\s{1,50}time \p{Punct}\s{1,50}while
+ After\s{1,50}all\s{1,50}these\s{1,50}cuts\s{1,50}were\s{1,50}taken 
+ Once\s{1,50}this\s{1,50}was\s{1,50}obtained 
+ when\s{1,50}last\s{1,50}a\s{1,50}urine\s{1,50}drug\s{1,50}screen\s{1,50}was\s{1,50}done 
+no\s{1,50} recent 
+his\s{1,50} day 
+ a\s{1,50}short\s{1,50}while\s{1,50}later 
+ After\s{1,50}approximation\s{1,50}of\s{1,50}the\s{1,50}edges 
+ at\s{1,50}the\s{1,50}time\s{1,50}of\s{1,50}autopsy 
+ after\s{1,50}approximation\s{1,50}of\s{1,50}the\s{1,50}edges 
+ before\s{1,50}and\s{1,50}after\s{1,50}removal 
+ currently \s{1,50}on
+ prior\s{1,50}to\s{1,50}his\s{1,50}industrial\s{1,50}injuries 
+ eight\s{1,50}hours 
+than\s{1,50} \d+\s{1,50}minutes 
+until\s{1,50} present 
+ following\s{1,50}the\s{1,50}injury 
+ following\s{1,50}the\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+\s{1,50}injury 
+ at\s{1,50}which\s{1,50}time \p{Punct}
+ now \s{1,50}is
+ following\s{1,50}his\s{1,50}initial\s{1,50}injury\s{1,50}date 
+ when\s{1,50}he\s{1,50}was\s{1,50}loading\s{1,50}some\s{1,50}pallets\s{1,50}on\s{1,50}the\s{1,50}back\s{1,50}of\s{1,50}a\s{1,50}trailer 
+ previously \s{1,50}for
+ \d+\p{Punct}minute 
+in\s{1,50} immediate 
+overall\s{1,50} immediate 
+ Following\s{1,50}a\s{1,50}short\s{1,50}delay 
+ upcoming 
+\p{Punct}\p{Punct}\s{1,50} CURRENT 
+ after\s{1,50}it\s{1,50}was\s{1,50}determined\s{1,50}that\s{1,50}this\s{1,50}event\s{1,50}was\s{1,50}not\s{1,50}neurological\s{1,50}in\s{1,50}origin 
+ at\s{1,50}which\s{1,50}time\s{1,50}a\s{1,50}brief\s{1,50}neuropsychological\s{1,50}screening\s{1,50}was\s{1,50}also\s{1,50}conducted 
+ at\s{1,50}night 
+ daytime 
+ that\s{1,50}morning 
+ At\s{1,50}the\s{1,50}time\s{1,50}of\s{1,50}the\s{1,50}exam 
+ At\s{1,50}which\s{1,50}time 
+ when\s{1,50}the\s{1,50}whole\s{1,50}hand\s{1,50}becomes\s{1,50}very\s{1,50}numb 
+ At\s{1,50}the\s{1,50}present\s{1,50}time 
+ Once\s{1,50}the\s{1,50}stable\s{1,50}device\s{1,50}configuration\s{1,50}was\s{1,50}confirmed 
+ After\s{1,50}angiography 
+ prior\s{1,50}to\s{1,50}spontaneous\s{1,50}tear\s{1,50}of\s{1,50}the\s{1,50}balloon 
+ Before\s{1,50}prep\s{1,50}and\s{1,50}drape\s{1,50}was\s{1,50}performed 
+ when\s{1,50}the\s{1,50}skin\s{1,50}could\s{1,50}be\s{1,50}wrinkled\s{1,50}anteriorly 
+ many\s{1,50}hours 
+ At\s{1,50}this\s{1,50}time \p{Punct}\s{1,50}he
+ At\s{1,50}this\s{1,50}time \p{Punct}\s{1,50}it
+ At\s{1,50}this\s{1,50}time \p{Punct}\s{1,50}Mr
+\p{Punct} Immediate 
+ last\s{1,50}night 
+\d+\p{Punct}\s{1,50} Immediate 
+ after\s{1,50}\d+\s{1,50}minutes 
+He\s{1,50} currently 
+ after\s{1,50}becoming\s{1,50}faint 
+ in\s{1,50}the\s{1,50}middle\s{1,50}of\s{1,50}the\s{1,50}night 
+ after\s{1,50}walking\s{1,50}up\s{1,50}the\s{1,50}stairs 
+\p{Punct}\s{1,50} PRESENT 
+ five\s{1,50}minutes\s{1,50}late 
+ five\s{1,50}minutes 
+ on\s{1,50}Tuesday\s{1,50}morning 
+ at\s{1,50}\d+\p{Punct}o\s{1,50}clock 
+ \d+\p{Punct}o\s{1,50}clock 
+ After\s{1,50}this \p{Punct}
+bite\p{Punct}\s{1,50} Following\s{1,50}this 
+sucked\p{Punct}\s{1,50} Following\s{1,50}this 
+ Following\s{1,50}this \p{Punct}\s{1,50}a
+cut\p{Punct}\s{1,50} Following\s{1,50}this 
+ Following\s{1,50}this \p{Punct}\s{1,50}attention
+bone\p{Punct}\s{1,50} Following\s{1,50}this 
+ until\s{1,50}it\s{1,50}was\s{1,50}noted\s{1,50}to\s{1,50}be\s{1,50}in\s{1,50}good\s{1,50}position\s{1,50}and\s{1,50}no\s{1,50}chopping\s{1,50}was\s{1,50}present\s{1,50}in\s{1,50}the\s{1,50}medullary\s{1,50}canal\s{1,50}of\s{1,50}the\s{1,50}bone 
+well\p{Punct}\s{1,50} Following\s{1,50}this 
+ After\s{1,50}reaching\s{1,50}the\s{1,50}distal\s{1,50}as\s{1,50}well\s{1,50}as\s{1,50}the\s{1,50}proximal\s{1,50}portions\s{1,50}of\s{1,50}the\s{1,50}bone\s{1,50}and\s{1,50}ensuring\s{1,50}that\s{1,50}cortex\s{1,50}was\s{1,50}cut\s{1,50}on\s{1,50}both\s{1,50}the\s{1,50}medial\s{1,50}as\s{1,50}well\s{1,50}as\s{1,50}lateral\s{1,50}side 
+ Following\s{1,50}this \p{Punct}\s{1,50}using
+ After\s{1,50}sufficient\s{1,50}anesthesia 
+ after\s{1,50}all\s{1,50}small\s{1,50}traversing\s{1,50}veins\s{1,50}were\s{1,50}ligated 
+ After\s{1,50}an\s{1,50}IV\s{1,50}established\s{1,50}by\s{1,50}the\s{1,50}Department\s{1,50}of\s{1,50}Anesthesia 
+ After\s{1,50}adequate\s{1,50}IV\s{1,50}sedation\s{1,50}was\s{1,50}applied 
+ after\s{1,50}keeping\s{1,50}herself\s{1,50}n\p{Punct}p\p{Punct}o\p{Punct} 
+ mid\s{1,50}night 
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}lisinopril
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}\p{Punct}
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}quetiapine
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}insulin
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}Current
+ in\s{1,50}the\s{1,50}morning 
+ in\s{1,50}the\s{1,50}evening 
+ at\s{1,50}the\s{1,50}time\s{1,50}which\s{1,50}was\s{1,50}normal 
+ After\s{1,50}a\s{1,50}few\s{1,50}days\s{1,50}\p{Punct}\s{1,50}stay 

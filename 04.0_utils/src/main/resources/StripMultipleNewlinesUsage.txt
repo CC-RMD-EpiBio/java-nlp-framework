@@ -1,0 +1,4 @@
+StripMultipleNewlines removes \n\n and replaces it with \n
+  
+  assuming the input is coming from stdin  unless --inputFile= is on the command line
+  assuming the output is going to stdout unless   --outputFile= is on the command line

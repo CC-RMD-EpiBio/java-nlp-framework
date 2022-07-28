@@ -1,0 +1,2501 @@
+# ---------------------------------
+# KnownSlots
+#    
+# 
+#   This is a file containing
+#   slot names from slot:value pairs.
+#   The slot names in this file are
+#   those that do not fit the normal
+#   pattern, and would otherwise be missed.
+#
+#   The format for this file is
+#     name|[SLOT|HEADING|SECTION|FALSE]|[PROCESS|DONT_PROCESS] 
+#         
+#     where names labeled with SLOT are really slot names
+#                              HEADING are not slot names but content heading names.
+#                              FALSE are names that should not be slot or heading names.
+#     Where the field PROCESS indicates further NLP processing
+#                     should take place on the content.
+#                     and DONT_PROCESS indicates the content for
+#                     this slot is quantitative value or sensitive
+#                     data, and should be ignored by other processes.
+#
+#  Author:          Guy Divita
+#  Created:         02/17/2011
+#  Last Modified:   11/30/2011 Added in known section headings from Hitex
+#                              This should be further refined.  There are
+#                              headings that are both slots and section
+#                              headings, there are disease names, 
+#                              there are questions in this list.
+#                   01/21/2014 Added Appliance (i.e. ostomy, foley):
+#                   02/14/2014 Added Evidence of absense slot values 
+#                   02/27/2014 Added values based on bugs found
+#                   01/28/2022 Added Values based on seen annotations 
+#                   04/28/2022 Transformed to LRAGR format for lookup purposes 
+#----------------------------------
+KS000000||cc|<noun>|<base>||SLOT|DONT_PROCESS
+KS000000|dictating for|<noun>|<base>|||SLOT|dont_process
+KS000000|alergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|principal procedure|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|associated procedures|<noun>|<base>|||ccdaSectionName|process
+KS000000|associated procedure|<noun>|<base>|||SLOT|process
+KS000000|a/p|<noun>|<base>|||ccdaSectionName|process
+KS000000|aandp|<noun>|<base>|||ccdaSectionName|process
+KS000000|abd|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdo|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdomen|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdominal|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdominal aortic aneurysm|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdominal exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|abdominal pain|<noun>|<base>|||SLOT|process
+KS000000|abnormal liver function tests|<noun>|<base>|||ccdaSectionName|process
+KS000000|abnormal mammogram|<noun>|<base>|||ccdaSectionName|process
+KS000000|abnormal pap test|<noun>|<base>|||ccdaSectionName|process
+KS000000|accession number|<noun>|<base>|||SLOT|process
+KS000000|accession|<noun>|<base>|||SLOT|process
+KS000000|active diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|active medical issues include|<noun>|<base>|||ccdaSectionName|process
+KS000000|active medication list|<noun>|<base>|||ccdaSectionName|process
+KS000000|active medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|active therapy|<noun>|<base>|||ccdaSectionName|process
+KS000000|activity|<noun>|<base>|||ccdaSectionName|process
+KS000000|activity level|<noun>|<base>|||SLOT|process
+KS000000|addendum|<noun>|<base>|||ccdaSectionName|process
+KS000000|address|<noun>|<base>|||SLOT|process
+KS000000|adenomatous polyp|<noun>|<base>|||ccdaSectionName|process
+KS000000|adenopathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|admission date|<noun>|<base>|||SLOT|process
+KS000000|admission diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|admission medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|admission meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|admit date|<noun>|<base>|||SLOT|process
+KS000000|admit meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|admitting diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|adnexa|<noun>|<base>|||ccdaSectionName|process
+KS000000|adverse reactions to medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|advised|<noun>|<base>|||ccdaSectionName|process
+KS000000|affect|<noun>|<base>|||SLOT|process
+KS000000|ag|<noun>|<base>|||ccdaSectionName|process
+KS000000|age|<noun>|<base>|||SLOT|process
+KS000000|age/sex|<noun>|<base>|||SLOT|process
+KS000000|airway|<noun>|<base>|||ccdaSectionName|process
+KS000000|ak|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol|<noun>|<base>|||SLOT|process
+KS000000|alcohol abuse|<noun>|<base>|||SLOT|process
+KS000000|alcohol dependence|<noun>|<base>|||SLOT|process
+KS000000|alcohol history|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol use|<noun>|<base>|||SLOT|process
+KS000000|alcohol screening|<noun>|<base>|||SLOT|process
+KS000000|alcoholism|<noun>|<base>|||ccdaSectionName|process
+KS000000|all|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergic rhinitis|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergies to drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergies to medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergies to medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergies to medicines|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergy|<noun>|<base>|||ccdaSectionName|process
+KS000000|an appointment has been made for|<noun>|<base>|||SLOT|process
+KS000000|an independent review of a urinalysis shows|<noun>|<base>|||ccdaSectionName|process
+KS000000|analgesic medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|ancillary studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|anemia|<noun>|<base>|||ccdaSectionName|process
+KS000000|anesthesia|<noun>|<base>|||ccdaSectionName|process
+KS000000|angina|<noun>|<base>|||ccdaSectionName|process
+KS000000|ant tibial|<noun>|<base>|||ccdaSectionName|process
+KS000000|anxiety|<noun>|<base>|||ccdaSectionName|process
+KS000000|any allergies to medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|aortic stenosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|appearance|<noun>|<base>|||ccdaSectionName|process
+KS000000|appliance (i.e. ostomy, foley)|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|appliance care given|<noun>|<base>|||SLOT|process
+KS000000|appointments|<noun>|<base>|||ccdaSectionName|process
+KS000000|arthritis|<noun>|<base>|||ccdaSectionName|process
+KS000000|asa physical status|<noun>|<base>|||SLOT|process
+KS000000|ascus|<noun>|<base>|||ccdaSectionName|process
+KS000000|ask current and past smoking behavior|<noun>|<base>|||ccdaSectionName|process
+KS000000|aspirin|<noun>|<base>|||ccdaSectionName|process
+KS000000|aspirin or nsaid use|<noun>|<base>|||ccdaSectionName|process
+KS000000|ass|<noun>|<base>|||ccdaSectionName|process
+KS000000|asses|<noun>|<base>|||ccdaSectionName|process
+KS000000|assesment|<noun>|<base>|||ccdaSectionName|process
+KS000000|assesment and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assesment and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|assess|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessement and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and current plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan and emergency department course|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan assessment and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan healthy female with following issues|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan of management|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan other test|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan rapid strep|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan well adolescent|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plan well child|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and plans|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and recommendation|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and suggestions|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment and treatment plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment note|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|assessment routine well child care except|<noun>|<base>|||ccdaSectionName|process
+KS000000|associated diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|associated diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|asthma|<noun>|<base>|||ccdaSectionName|process
+KS000000|atrial fibrillation|<noun>|<base>|||ccdaSectionName|process
+KS000000|attending|<noun>|<base>|||SLOT|process
+KS000000|attending anesthesiologist reassessment note|<noun>|<base>|||ccdaSectionName|process
+KS000000|attending note|<noun>|<base>|||ccdaSectionName|process
+KS000000|attending physician|<noun>|<base>|||SLOT|process
+KS000000|examining physician|<noun>|<base>|||SLOT|process
+KS000000|attending surgeon reassessment note|<noun>|<base>|||ccdaSectionName|process
+KS000000|attention|<noun>|<base>|||SLOT|process
+KS000000|attn|<noun>|<base>|||SLOT|process
+KS000000|atypical chest pain|<noun>|<base>|||ccdaSectionName|process
+KS000000|author|<noun>|<base>|||SLOT|process
+KS000000|author type|<noun>|<base>|||SLOT|process
+KS000000|authored by|<noun>|<base>|||SLOT|process
+KS000000|coauthor|<noun>|<base>|||SLOT|process
+KS000000|co-author|<noun>|<base>|||SLOT|process
+KS000000|co author|<noun>|<base>|||SLOT|process
+KS000000|author_mrn|<noun>|<base>|||SLOT|process
+KS000000|author_mrn|<noun>|<base>|||SLOT|process
+KS000000|autologous blood|<noun>|<base>|||ccdaSectionName|process
+KS000000|axis i|<noun>|<base>|||SLOT|process
+KS000000|axis ii|<noun>|<base>|||SLOT|process
+KS000000|axis iii|<noun>|<base>|||SLOT|process
+KS000000|axis iv|<noun>|<base>|||SLOT|process
+KS000000|axis v|<noun>|<base>|||SLOT|process
+KS000000|xi|<noun>|<base>|||SLOT|process
+KS000000|xii|<noun>|<base>|||SLOT|process
+KS000000|back|<noun>|<base>|||ccdaSectionName|process
+KS000000|back pain|<noun>|<base>|||SLOT|process
+KS000000|basal cell carcinoma|<noun>|<base>|||ccdaSectionName|process
+KS000000|based on these results it is recommended|<noun>|<base>|||ccdaSectionName|process
+KS000000|bcm|<noun>|<base>|||ccdaSectionName|process
+KS000000|behavior|<noun>|<base>|||ccdaSectionName|process
+KS000000|benign prostatic hypertrophy|<noun>|<base>|||ccdaSectionName|process
+KS000000|bimanual|<noun>|<base>|||ccdaSectionName|process
+KS000000|bipolar disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|birthdate|<noun>|<base>|||SLOT|process
+KS000000|blood pressure|<noun>|<base>|||SLOT|process
+KS000000|blood sugar|<noun>|<base>|||SLOT|process
+KS000000|bloodwork|<noun>|<base>|||ccdaSectionName|process
+KS000000|bmi|<noun>|<base>|||SLOT|dont_process
+KS000000|bp|<noun>|<base>|||SLOT|process
+KS000000|b/p|<noun>|<base>|||SLOT|process
+KS000000|bp standing|<noun>|<base>|||SLOT|process
+KS000000|bp sitting|<noun>|<base>|||SLOT|process
+KS000000|bp lying|<noun>|<base>|||SLOT|process
+KS000000|bph|<noun>|<base>|||SLOT|process
+KS000000|breast|<noun>|<base>|||ccdaSectionName|process
+KS000000|breast cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|breast exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|breast mass|<noun>|<base>|||ccdaSectionName|process
+KS000000|breasts|<noun>|<base>|||ccdaSectionName|process
+KS000000|briefly my impression is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|brother|<noun>|<base>|||ccdaSectionName|process
+KS000000|cad|<noun>|<base>|||ccdaSectionName|process
+KS000000|caffeine|<noun>|<base>|||ccdaSectionName|process
+KS000000|calcium|<noun>|<base>|||ccdaSectionName|process
+KS000000|calgb performance status|<noun>|<base>|||SLOT|process
+KS000000|call from|<noun>|<base>|||SLOT|process
+KS000000|call to|<noun>|<base>|||SLOT|process
+KS000000|called in by|<noun>|<base>|||SLOT|process
+KS000000|card|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiac|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiac exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiologist|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiology|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiomyopathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiovasc|<noun>|<base>|||ccdaSectionName|process
+KS000000|cardiovascular|<noun>|<base>|||ccdaSectionName|process
+KS000000|cards|<noun>|<base>|||ccdaSectionName|process
+KS000000|carotid stenosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|carotids|<noun>|<base>|||ccdaSectionName|process
+KS000000|carpal tunnel syndrome|<noun>|<base>|||ccdaSectionName|process
+KS000000|cataract|<noun>|<base>|||ccdaSectionName|process
+KS000000|cbc|<noun>|<base>|||ccdaSectionName|process
+KS000000|cc|<noun>|<base>|||SLOT|process
+KS000000|ccu course|<noun>|<base>|||ccdaSectionName|process
+KS000000|cerebrovascular accident|<noun>|<base>|||ccdaSectionName|process
+KS000000|cervical dysplasia|<noun>|<base>|||ccdaSectionName|process
+KS000000|cervix|<noun>|<base>|||ccdaSectionName|process
+KS000000|chemistry|<noun>|<base>|||ccdaSectionName|process
+KS000000|chest|<noun>|<base>|||ccdaSectionName|process
+KS000000|chest ct|<noun>|<base>|||ccdaSectionName|process
+KS000000|chest pain|<noun>|<base>|||SLOT|process
+KS000000|chest pain of unclear etiology|<noun>|<base>|||SLOT|process
+KS000000|chf|<noun>|<base>|||ccdaSectionName|process
+KS000000|chief complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|chief complaint and present illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|chief complaint of|<noun>|<base>|||ccdaSectionName|process
+KS000000|chief complaints of|<noun>|<base>|||ccdaSectionName|process
+KS000000|chief pain complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|children|<noun>|<base>|||SLOT|process
+KS000000|cholecystectomy|<noun>|<base>|||ccdaSectionName|process
+KS000000|chronic obstructive pulmonary disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|chronic pain meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|cig|<noun>|<base>|||ccdaSectionName|process
+KS000000|cigar smoking|<noun>|<base>|||SLOT|process
+KS000000|cigarette|<noun>|<base>|||SLOT|process
+KS000000|cigarette abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|cigarette smoking|<noun>|<base>|||SLOT|process
+KS000000|cigarette use|<noun>|<base>|||SLOT|process
+KS000000|cigarettes|<noun>|<base>|||SLOT|process
+KS000000|cigaretts|<noun>|<base>|||SLOT|process
+KS000000|cigs|<noun>|<base>|||ccdaSectionName|process
+KS000000|cjk|<noun>|<base>|||ccdaSectionName|process
+KS000000|clinic|<noun>|<base>|||SLOT:InstitutionEvidence|process
+KS000000|clinical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|clinical impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|cn|<noun>|<base>|||ccdaSectionName|process
+KS000000|cns|<noun>|<base>|||ccdaSectionName|process
+KS000000|coags|<noun>|<base>|||ccdaSectionName|process
+KS000000|cod|<noun>|<base>|||SLOT|process
+KS000000|code|<noun>|<base>|||SLOT|process
+KS000000|code status|<noun>|<base>|||SLOT|process
+KS000000|colon cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|colonic polyps|<noun>|<base>|||ccdaSectionName|process
+KS000000|comment|<noun>|<base>|||ccdaSectionName|process
+KS000000|comments|<noun>|<base>|||SLOT|process
+KS000000|comparison|<noun>|<base>|||SLOT|process
+KS000000|complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|complaints|<noun>|<base>|||ccdaSectionName|process
+KS000000|complaints today include|<noun>|<base>|||ccdaSectionName|process
+KS000000|complete genitourinary examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|complete skin exam performed|<noun>|<base>|||ccdaSectionName|process
+KS000000|complications|<noun>|<base>|||ccdaSectionName|process
+KS000000|complications of obesity|<noun>|<base>|||ccdaSectionName|process
+KS000000|computer impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|condition|<noun>|<base>|||ccdaSectionName|process
+KS000000|condoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|congestive heart failure|<noun>|<base>|||ccdaSectionName|process
+KS000000|consent|<noun>|<base>|||ccdaSectionName|process
+KS000000|const|<noun>|<base>|||ccdaSectionName|process
+KS000000|constipation|<noun>|<base>|||ccdaSectionName|process
+KS000000|constitutional|<noun>|<base>|||ccdaSectionName|process
+KS000000|consult requested by|<noun>|<base>|||SLOT|process
+KS000000|consultant name|<noun>|<base>|||SLOT|process
+KS000000|cont current cardiac meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|contact|<noun>|<base>|||ccdaSectionName|process
+KS000000|contraception|<noun>|<base>|||SLOT|process
+KS000000|contraceptives|<noun>|<base>|||SLOT|process
+KS000000|contraception management|<noun>|<base>|||ccdaSectionName|process
+KS000000|coord|<noun>|<base>|||ccdaSectionName|process
+KS000000|coordination|<noun>|<base>|||ccdaSectionName|process
+KS000000|copd|<noun>|<base>|||ccdaSectionName|process
+KS000000|copies to|<noun>|<base>|||SLOT|process
+KS000000|copy|<noun>|<base>|||ccdaSectionName|process
+KS000000|cor|<noun>|<base>|||ccdaSectionName|process
+KS000000|coronary artery disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|cough|<noun>|<base>|||ccdaSectionName|process
+KS000000|cpt code|<noun>|<base>|||SLOT|process
+KS000000|cranial nerves|<noun>|<base>|||ccdaSectionName|process
+KS000000|ct|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medical problems include|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medications and complementary therapies|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medications are|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|current medicines|<noun>|<base>|||ccdaSectionName|process
+KS000000|current meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|current meds are|<noun>|<base>|||ccdaSectionName|process
+KS000000|current meds in hospital|<noun>|<base>|||ccdaSectionName|process
+KS000000|current meds include|<noun>|<base>|||ccdaSectionName|process
+KS000000|current pain medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|current pain medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|current pain meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|current therapy|<noun>|<base>|||ccdaSectionName|process
+KS000000|current treatment|<noun>|<base>|||ccdaSectionName|process
+KS000000|currents meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|cv|<noun>|<base>|||ccdaSectionName|process
+KS000000|cvs|<noun>|<base>|||ccdaSectionName|process
+KS000000|cxr|<noun>|<base>|||ccdaSectionName|process
+KS000000|cxr impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|cz|<noun>|<base>|||ccdaSectionName|process
+KS000000|d|<noun>|<base>|||ccdaSectionName|process
+KS000000|data review|<noun>|<base>|||ccdaSectionName|process
+KS000000|date|<noun>|<base>|||SLOT|process
+KS000000|date letter sent|<noun>|<base>|||SLOT|process
+KS000000|date meds are pulled from lmr|<noun>|<base>|||SLOT|process
+KS000000|date of admission|<noun>|<base>|||SLOT|process
+KS000000|date of admission to micu|<noun>|<base>|||SLOT|process
+KS000000|date of admit|<noun>|<base>|||SLOT|process
+KS000000|date of birth|<noun>|<base>|||SLOT|process
+KS000000|date of consult|<noun>|<base>|||SLOT|process
+KS000000|date of diagnosis|<noun>|<base>|||SLOT|process
+KS000000|date of discharge|<noun>|<base>|||SLOT|process
+KS000000|date of injury|<noun>|<base>|||SLOT|process
+KS000000|date of procedure|<noun>|<base>|||SLOT|process
+KS000000|date of request|<noun>|<base>|||SLOT|process
+KS000000|date of service|<noun>|<base>|||SLOT|process
+KS000000|date of study|<noun>|<base>|||SLOT|process
+KS000000|date of surgery|<noun>|<base>|||SLOT|process
+KS000000|date of transfer|<noun>|<base>|||SLOT|process
+KS000000|date of transfer to ccu|<noun>|<base>|||SLOT|process
+KS000000|date of transfer to floor|<noun>|<base>|||SLOT|process
+KS000000|date of transfer to micu|<noun>|<base>|||SLOT|process
+KS000000|date of transfer to sdu|<noun>|<base>|||SLOT|process
+KS000000|date of visit|<noun>|<base>|||SLOT|process
+KS000000|day|<noun>|<base>|||SLOT|process
+KS000000|db|<noun>|<base>|||SLOT|process
+KS000000|dd|<noun>|<base>|||SLOT|process
+KS000000|decision|<noun>|<base>|||ccdaSectionName|process
+KS000000|degenerative joint disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|dental assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression|<noun>|<base>|||ccdaSectionName|process
+KS000000|derm|<noun>|<base>|||ccdaSectionName|process
+KS000000|dermatoheliosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|dermatologic diagnosis and treatment|<noun>|<base>|||ccdaSectionName|process
+KS000000|dermatological|<noun>|<base>|||ccdaSectionName|process
+KS000000|description of procedure|<noun>|<base>|||ccdaSectionName|process
+KS000000|desirable|<noun>|<base>|||ccdaSectionName|process
+KS000000|detail|<noun>|<base>|||ccdaSectionName|process
+KS000000|dh|<noun>|<base>|||ccdaSectionName|process
+KS000000|diabetes|<noun>|<base>|||ccdaSectionName|process
+KS000000|diabetes mellitus|<noun>|<base>|||ccdaSectionName|process
+KS000000|diabetic medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnoses or symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnosis and therapy|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnositic studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic and therapeutic recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic data|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic impression in emergency department|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic impression in the emergency department|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic procedure|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic radiology|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic testing|<noun>|<base>|||ccdaSectionName|process
+KS000000|diagnostic tests|<noun>|<base>|||ccdaSectionName|process
+KS000000|dictated at|<noun>|<base>|||SLOT|process
+KS000000|dictated by|<noun>|<base>|||SLOT|process
+KS000000|dictated date|<noun>|<base>|||SLOT|process
+KS000000|dictated on|<noun>|<base>|||SLOT|process
+KS000000|dictator|<noun>|<base>|||SLOT|process
+KS000000|diet|<noun>|<base>|||ccdaSectionName|process
+KS000000|diet assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|diet history|<noun>|<base>|||ccdaSectionName|process
+KS000000|dietary recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|differential diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|differential diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|differential diagnosis and impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|differential diagnosis as|<noun>|<base>|||ccdaSectionName|process
+KS000000|diffusion|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge date|<noun>|<base>|||SLOT|process
+KS000000|discharge diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge status|<noun>|<base>|||SLOT|process
+KS000000|discharge time|<noun>|<base>|||SLOT|process
+KS000000|discussion|<noun>|<base>|||ccdaSectionName|process
+KS000000|dispo|<noun>|<base>|||ccdaSectionName|process
+KS000000|disposition|<noun>|<base>|||ccdaSectionName|process
+KS000000|disposition and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|diverticulitis|<noun>|<base>|||ccdaSectionName|process
+KS000000|diverticulosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|djd|<noun>|<base>|||ccdaSectionName|process
+KS000000|dm|<noun>|<base>|||ccdaSectionName|process
+KS000000|doa|<noun>|<base>|||SLOT|process
+KS000000|dob|<noun>|<base>|||SLOT|process
+KS000000|doe|<noun>|<base>|||SLOT|process
+KS000000|dos|<noun>|<base>|||SLOT|process
+KS000000|domestic violence|<noun>|<base>|||ccdaSectionName|process
+KS000000|domestic violence screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|dorsalis pedis|<noun>|<base>|||ccdaSectionName|process
+KS000000|dos|<noun>|<base>|||SLOT|process
+KS000000|dose|<noun>|<base>|||SLOT|process
+KS000000|dov|<noun>|<base>|||SLOT|process
+KS000000|dr|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug allergies and sensitivities|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug allergy|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug completed|<noun>|<base>|||SLOT|process
+KS000000|completed|<noun>|<base>|||SLOT|process
+KS000000|drug history|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug use|<noun>|<base>|||SLOT|process
+KS000000|recreational drug use|<noun>|<base>|||SLOT|process
+KS000000|drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|dt|<noun>|<base>|||ccdaSectionName|process
+KS000000|duodenum|<noun>|<base>|||ccdaSectionName|process
+KS000000|dv|<noun>|<base>|||ccdaSectionName|process
+KS000000|dx|<noun>|<base>|||ccdaSectionName|process
+KS000000|dyspepsia|<noun>|<base>|||ccdaSectionName|process
+KS000000|dysphagia|<noun>|<base>|||ccdaSectionName|process
+KS000000|ears|<noun>|<base>|||ccdaSectionName|process
+KS000000|eating habits|<noun>|<base>|||ccdaSectionName|process
+KS000000|ecg|<noun>|<base>|||ccdaSectionName|process
+KS000000|ecg analysis|<noun>|<base>|||ccdaSectionName|process
+KS000000|echo|<noun>|<base>|||ccdaSectionName|process
+KS000000|ed course|<noun>|<base>|||ccdaSectionName|process
+KS000000|edema|<noun>|<base>|||ccdaSectionName|process
+KS000000|education|<noun>|<base>|||ccdaSectionName|process
+KS000000|educational materials provided|<noun>|<base>|||ccdaSectionName|process
+KS000000|ekg|<noun>|<base>|||ccdaSectionName|process
+KS000000|electrocardiogram|<noun>|<base>|||ccdaSectionName|process
+KS000000|elevated cholesterol|<noun>|<base>|||ccdaSectionName|process
+KS000000|ellicit drug use|<noun>|<base>|||ccdaSectionName|process
+KS000000|email|<noun>|<base>|||ccdaSectionName|process
+KS000000|emergency department course|<noun>|<base>|||ccdaSectionName|process
+KS000000|empi|<noun>|<base>|||ccdaSectionName|process
+KS000000|endo|<noun>|<base>|||ccdaSectionName|process
+KS000000|endocrine|<noun>|<base>|||ccdaSectionName|process
+KS000000|endometriosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|ent|<noun>|<base>|||ccdaSectionName|process
+KS000000|epididymus|<noun>|<base>|||ccdaSectionName|process
+KS000000|escription document|<noun>|<base>|||ccdaSectionName|process
+KS000000|esophagus|<noun>|<base>|||ccdaSectionName|process
+KS000000|ethanol use|<noun>|<base>|||ccdaSectionName|process
+KS000000|etoh|<noun>|<base>|||ccdaSectionName|process
+KS000000|etoh abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|etoh consumption|<noun>|<base>|||ccdaSectionName|process
+KS000000|etoh use|<noun>|<base>|||ccdaSectionName|process
+KS000000|exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|exam number|<noun>|<base>|||SLOT|process
+KS000000|exam requested|<noun>|<base>|||ccdaSectionName|process
+KS000000|examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|exercise|<noun>|<base>|||ccdaSectionName|process
+KS000000|ext|<noun>|<base>|||ccdaSectionName|process
+KS000000|external genitalia|<noun>|<base>|||ccdaSectionName|process
+KS000000|extr|<noun>|<base>|||ccdaSectionName|process
+KS000000|extrem|<noun>|<base>|||ccdaSectionName|process
+KS000000|extreminites|<noun>|<base>|||ccdaSectionName|process
+KS000000|extremities|<noun>|<base>|||ccdaSectionName|process
+KS000000|extremity|<noun>|<base>|||ccdaSectionName|process
+KS000000|extrems|<noun>|<base>|||ccdaSectionName|process
+KS000000|exts|<noun>|<base>|||ccdaSectionName|process
+KS000000|eyes|<noun>|<base>|||ccdaSectionName|process
+KS000000|face|<noun>|<base>|||ccdaSectionName|process
+KS000000|fam hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|famhx|<noun>|<base>|||ccdaSectionName|process
+KS000000|family|<noun>|<base>|||ccdaSectionName|process
+KS000000|family and social history|<noun>|<base>|||ccdaSectionName|process
+KS000000|family history|<noun>|<base>|||ccdaSectionName|process
+KS000000|family history and social history|<noun>|<base>|||ccdaSectionName|process
+KS000000|family history family consists of|<noun>|<base>|||ccdaSectionName|process
+KS000000|family history no family history of|<noun>|<base>|||ccdaSectionName|process
+KS000000|family hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|family medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|father|<noun>|<base>|||SLOT|process
+KS000000|fatigue|<noun>|<base>|||ccdaSectionName|process
+KS000000|fatty liver disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|fax|<noun>|<base>|||SLOT|process
+KS000000|feet|<noun>|<base>|||SLOT|process
+KS000000|fellow|<noun>|<base>|||SLOT|process
+KS000000|femoral|<noun>|<base>|||ccdaSectionName|process
+KS000000|fen|<noun>|<base>|||ccdaSectionName|process
+KS000000|fertility drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|fh|<noun>|<base>|||SLOT|process
+KS000000|fh breast cancer|<noun>|<base>|||SLOT|process
+KS000000|fh colon cancer|<noun>|<base>|||SLOT|process
+KS000000|fhr|<noun>|<base>|||ccdaSectionName|process
+KS000000|fhx|<noun>|<base>|||ccdaSectionName|process
+KS000000|fi|<noun>|<base>|||ccdaSectionName|process
+KS000000|final diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|final diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|final impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|findings|<noun>|<base>|||ccdaSectionName|process
+KS000000|floor course|<noun>|<base>|||ccdaSectionName|process
+KS000000|follow up|<noun>|<base>|||ccdaSectionName|process
+KS000000|following medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|followup|<noun>|<base>|||SLOT|process
+KS000000|former smoker|<noun>|<base>|||SLOT|process
+KS000000|smoker|<noun>|<base>|||SLOT|process
+KS000000|forward|<noun>|<base>|||ccdaSectionName|process
+KS000000|from|<noun>|<base>|||SLOT|process
+KS000000|fundi|<noun>|<base>|||ccdaSectionName|process
+KS000000|fup one month for meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|gait|<noun>|<base>|||ccdaSectionName|process
+KS000000|gallstones|<noun>|<base>|||ccdaSectionName|process
+KS000000|gastritis|<noun>|<base>|||ccdaSectionName|process
+KS000000|gastroesophageal reflux disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|gastrointestinal|<noun>|<base>|||ccdaSectionName|process
+KS000000|gen|<noun>|<base>|||ccdaSectionName|process
+KS000000|general|<noun>|<base>|||ccdaSectionName|process
+KS000000|general appearance|<noun>|<base>|||ccdaSectionName|process
+KS000000|general examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|general impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|general review|<noun>|<base>|||ccdaSectionName|process
+KS000000|genitalia|<noun>|<base>|||ccdaSectionName|process
+KS000000|genitourinary|<noun>|<base>|||ccdaSectionName|process
+KS000000|gerd|<noun>|<base>|||ccdaSectionName|process
+KS000000|gi|<noun>|<base>|||ccdaSectionName|process
+KS000000|glaucoma|<noun>|<base>|||ccdaSectionName|process
+KS000000|glucose|<noun>|<base>|||ccdaSectionName|process
+KS000000|gout|<noun>|<base>|||ccdaSectionName|process
+KS000000|gu|<noun>|<base>|||ccdaSectionName|process
+KS000000|guaiac positive stool|<noun>|<base>|||ccdaSectionName|process
+KS000000|gyn|<noun>|<base>|||ccdaSectionName|process
+KS000000|gyn history|<noun>|<base>|||ccdaSectionName|process
+KS000000|gyn hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|gyn screening last pap|<noun>|<base>|||ccdaSectionName|process
+KS000000|gynecologic history|<noun>|<base>|||ccdaSectionName|process
+KS000000|gynecological history|<noun>|<base>|||ccdaSectionName|process
+KS000000|hab tobacco|<noun>|<base>|||SLOT|process
+KS000000|habits|<noun>|<base>|||ccdaSectionName|process
+KS000000|habits cigarettes|<noun>|<base>|||ccdaSectionName|process
+KS000000|habits cigs|<noun>|<base>|||ccdaSectionName|process
+KS000000|habits tob|<noun>|<base>|||ccdaSectionName|process
+KS000000|habits tobacco|<noun>|<base>|||ccdaSectionName|process
+KS000000|handn|<noun>|<base>|||ccdaSectionName|process
+KS000000|hcm|<noun>|<base>|||ccdaSectionName|process
+KS000000|hct|<noun>|<base>|||ccdaSectionName|process
+KS000000|he is on the following medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|he is on the following medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|head|<noun>|<base>|||ccdaSectionName|process
+KS000000|head and neck|<noun>|<base>|||ccdaSectionName|process
+KS000000|head ct|<noun>|<base>|||ccdaSectionName|process
+KS000000|headache|<noun>|<base>|||ccdaSectionName|process
+KS000000|health care maintenance|<noun>|<base>|||ccdaSectionName|process
+KS000000|health habits|<noun>|<base>|||ccdaSectionName|process
+KS000000|health habits tobacco|<noun>|<base>|||ccdaSectionName|process
+KS000000|health maintenance|<noun>|<base>|||ccdaSectionName|process
+KS000000|health related habits|<noun>|<base>|||ccdaSectionName|process
+KS000000|hearing impairment|<noun>|<base>|||SLOT|process
+KS000000|heart|<noun>|<base>|||ccdaSectionName|process
+KS000000|heart murmur|<noun>|<base>|||SLOT|process
+KS000000|heenandt|<noun>|<base>|||ccdaSectionName|process
+KS000000|heent|<noun>|<base>|||ccdaSectionName|process
+KS000000|heent exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|height|<noun>|<base>|||SLOT|process
+KS000000|helicobacter pylori|<noun>|<base>|||ccdaSectionName|process
+KS000000|hematologic|<noun>|<base>|||ccdaSectionName|process
+KS000000|hematological|<noun>|<base>|||ccdaSectionName|process
+KS000000|hematology|<noun>|<base>|||ccdaSectionName|process
+KS000000|hematuria|<noun>|<base>|||ccdaSectionName|process
+KS000000|heme|<noun>|<base>|||ccdaSectionName|process
+KS000000|hemorrhoids|<noun>|<base>|||ccdaSectionName|process
+KS000000|hent|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatitis c|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatobiliary|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current medications are|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current medications are as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|her current meds are|<noun>|<base>|||ccdaSectionName|process
+KS000000|her medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|her meds are|<noun>|<base>|||ccdaSectionName|process
+KS000000|her meds include|<noun>|<base>|||ccdaSectionName|process
+KS000000|hiatal hernia|<noun>|<base>|||ccdaSectionName|process
+KS000000|highest weight|<noun>|<base>|||SLOT|process
+KS000000|highest level of education|<noun>|<base>|||SLOT|process
+KS000000|his current medications are|<noun>|<base>|||ccdaSectionName|process
+KS000000|his current medications are as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|his current medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|his current meds are|<noun>|<base>|||ccdaSectionName|process
+KS000000|his medications are|<noun>|<base>|||ccdaSectionName|process
+KS000000|his medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|his meds are|<noun>|<base>|||ccdaSectionName|process
+KS000000|history|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of present illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of presenting complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of sun exposure|<noun>|<base>|||ccdaSectionName|process
+KS000000|history of the present illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|hld|<noun>|<base>|||ccdaSectionName|process
+KS000000|hm|<noun>|<base>|||ccdaSectionName|process
+KS000000|hmeds|<noun>|<base>|||ccdaSectionName|process
+KS000000|home blood tests|<noun>|<base>|||ccdaSectionName|process
+KS000000|home medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|home meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|home meds include|<noun>|<base>|||ccdaSectionName|process
+KS000000|hormone replacement therapy|<noun>|<base>|||ccdaSectionName|process
+KS000000|hospital course|<noun>|<base>|||ccdaSectionName|process
+KS000000|hospital meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|hpi|<noun>|<base>|||ccdaSectionName|process
+KS000000|hr|<noun>|<base>|||ccdaSectionName|process
+KS000000|ht|<noun>|<base>|||SLOT|process
+KS000000|htn|<noun>|<base>|||ccdaSectionName|process
+KS000000|hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|hx of cigarettes|<noun>|<base>|||ccdaSectionName|process
+KS000000|hx smoking|<noun>|<base>|||ccdaSectionName|process
+KS000000|hyperlipidemia|<noun>|<base>|||ccdaSectionName|process
+KS000000|hyperlipidemia off meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|hypertension|<noun>|<base>|||ccdaSectionName|process
+KS000000|hyperthyroidism|<noun>|<base>|||ccdaSectionName|process
+KS000000|hypothyroidism|<noun>|<base>|||ccdaSectionName|process
+KS000000|hysterectomy|<noun>|<base>|||ccdaSectionName|process
+KS000000|i recommend the following|<noun>|<base>|||ccdaSectionName|process
+KS000000|iandp|<noun>|<base>|||ccdaSectionName|process
+KS000000|id|<noun>|<base>|||ccdaSectionName|process
+KS000000|identification|<noun>|<base>|||ccdaSectionName|process
+KS000000|illicit drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|illicits|<noun>|<base>|||ccdaSectionName|process
+KS000000|imaging|<noun>|<base>|||ccdaSectionName|process
+KS000000|imaging studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|img|<noun>|<base>|||ccdaSectionName|process
+KS000000|immediate family history of overweight and obesity|<noun>|<base>|||ccdaSectionName|process
+KS000000|immunizations|<noun>|<base>|||ccdaSectionName|process
+KS000000|imp|<noun>|<base>|||ccdaSectionName|process
+KS000000|impr|<noun>|<base>|||ccdaSectionName|process
+KS000000|impresion|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and plans|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and recommendation|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression and recs|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression by problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression is|<noun>|<base>|||ccdaSectionName|process
+KS000000|impression is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|impressionplan|<noun>|<base>|||ccdaSectionName|process
+KS000000|impressions|<noun>|<base>|||ccdaSectionName|process
+KS000000|impressions and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|impressions and plans|<noun>|<base>|||ccdaSectionName|process
+KS000000|impressions and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|impresssion|<noun>|<base>|||ccdaSectionName|process
+KS000000|inactive medication list|<noun>|<base>|||ccdaSectionName|process
+KS000000|indications|<noun>|<base>|||ccdaSectionName|process
+KS000000|individual recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|informed consent|<noun>|<base>|||ccdaSectionName|process
+KS000000|initial vital signs|<noun>|<base>|||ccdaSectionName|process
+KS000000|initials|<noun>|<base>|||ccdaSectionName|process
+KS000000|inpatient medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|inpatient meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|inpt meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|insomnia|<noun>|<base>|||ccdaSectionName|process
+KS000000|institution|<noun>|<base>|||ccdaSectionName|process
+KS000000|instructions|<noun>|<base>|||ccdaSectionName|process
+KS000000|integument|<noun>|<base>|||ccdaSectionName|process
+KS000000|integumentary|<noun>|<base>|||ccdaSectionName|process
+KS000000|interim history|<noun>|<base>|||ccdaSectionName|process
+KS000000|intern|<noun>|<base>|||ccdaSectionName|process
+KS000000|interpretation|<noun>|<base>|||ccdaSectionName|process
+KS000000|interpreted by|<noun>|<base>|||SLOT|process
+KS000000|interval history|<noun>|<base>|||ccdaSectionName|process
+KS000000|interval history and physical|<noun>|<base>|||ccdaSectionName|process
+KS000000|interval medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|interval review of systems|<noun>|<base>|||ccdaSectionName|process
+KS000000|interval social history|<noun>|<base>|||ccdaSectionName|process
+KS000000|intolerance to medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|introduction|<noun>|<base>|||ccdaSectionName|process
+KS000000|iron deficiency anemia|<noun>|<base>|||ccdaSectionName|process
+KS000000|irritable bowel syndrome|<noun>|<base>|||ccdaSectionName|process
+KS000000|ischemia|<noun>|<base>|||ccdaSectionName|process
+KS000000|issues|<noun>|<base>|||ccdaSectionName|process
+KS000000|ivdu|<noun>|<base>|||ccdaSectionName|process
+KS000000|jb|<noun>|<base>|||ccdaSectionName|process
+KS000000|jg|<noun>|<base>|||ccdaSectionName|process
+KS000000|jj|<noun>|<base>|||ccdaSectionName|process
+KS000000|jl|<noun>|<base>|||ccdaSectionName|process
+KS000000|jm|<noun>|<base>|||ccdaSectionName|process
+KS000000|job id|<noun>|<base>|||ccdaSectionName|process
+KS000000|jr|<noun>|<base>|||ccdaSectionName|process
+KS000000|jt|<noun>|<base>|||ccdaSectionName|process
+KS000000|jw|<noun>|<base>|||ccdaSectionName|process
+KS000000|kidney stone|<noun>|<base>|||ccdaSectionName|process
+KS000000|km|<noun>|<base>|||ccdaSectionName|process
+KS000000|kn|<noun>|<base>|||ccdaSectionName|process
+KS000000|knee pain|<noun>|<base>|||ccdaSectionName|process
+KS000000|lab|<noun>|<base>|||SLOT|process
+KS000000|lab data|<noun>|<base>|||ccdaSectionName|process
+KS000000|lab results for|<noun>|<base>|||SLOT|process
+KS000000|lab tests|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratories|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratory|<noun>|<base>|||SLOT|process
+KS000000|laboratory data|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratory evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratory studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratory tests|<noun>|<base>|||ccdaSectionName|process
+KS000000|laboratory values|<noun>|<base>|||ccdaSectionName|process
+KS000000|labs|<noun>|<base>|||ccdaSectionName|process
+KS000000|labs and diagnostic testing|<noun>|<base>|||ccdaSectionName|process
+KS000000|lad|<noun>|<base>|||ccdaSectionName|process
+KS000000|lancets blank use as directed|<noun>|<base>|||ccdaSectionName|process
+KS000000|language|<noun>|<base>|||SLOT|process
+KS000000|last mammogram|<noun>|<base>|||ccdaSectionName|process
+KS000000|last pap|<noun>|<base>|||ccdaSectionName|process
+KS000000|le|<noun>|<base>|||ccdaSectionName|process
+KS000000|left arm|<noun>|<base>|||ccdaSectionName|process
+KS000000|lesions of concern|<noun>|<base>|||ccdaSectionName|process
+KS000000|lesions of no concern|<noun>|<base>|||ccdaSectionName|process
+KS000000|lipids|<noun>|<base>|||ccdaSectionName|process
+KS000000|lives|<noun>|<base>|||ccdaSectionName|process
+KS000000|lives with|<noun>|<base>|||ccdaSectionName|process
+KS000000|lmp|<noun>|<base>|||ccdaSectionName|process
+KS000000|lmrnote_date_time|<noun>|<base>|||SLOT|process
+KS000000|lmrnote_date_time|<noun>|<base>|||SLOT|process
+KS000000|ln|<noun>|<base>|||ccdaSectionName|process
+KS000000|located at|<noun>|<base>|||SLOT|process
+KS000000|location|<noun>|<base>|||SLOT|process
+KS000000|patient location|<noun>|<base>|||SLOT|process
+KS000000|low back pain|<noun>|<base>|||ccdaSectionName|process
+KS000000|lower extremities|<noun>|<base>|||ccdaSectionName|process
+KS000000|lumbar disc disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|lumen and vascular|<noun>|<base>|||ccdaSectionName|process
+KS000000|lung cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|lung nodule|<noun>|<base>|||ccdaSectionName|process
+KS000000|lung volumes|<noun>|<base>|||ccdaSectionName|process
+KS000000|lungs|<noun>|<base>|||ccdaSectionName|process
+KS000000|lymph|<noun>|<base>|||ccdaSectionName|process
+KS000000|lymph nodes|<noun>|<base>|||ccdaSectionName|process
+KS000000|lymphatics|<noun>|<base>|||ccdaSectionName|process
+KS000000|ma signature|<noun>|<base>|||SLOT|process
+KS000000|mac meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|maintenance calorie needs|<noun>|<base>|||ccdaSectionName|process
+KS000000|major diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|major diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|mammogram|<noun>|<base>|||ccdaSectionName|process
+KS000000|marital status|<noun>|<base>|||SLOT|process
+KS000000|masses|<noun>|<base>|||ccdaSectionName|process
+KS000000|masses and polyps|<noun>|<base>|||ccdaSectionName|process
+KS000000|mb|<noun>|<base>|||ccdaSectionName|process
+KS000000|mc|<noun>|<base>|||ccdaSectionName|process
+KS000000|med|<noun>|<base>|||ccdaSectionName|process
+KS000000|med allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|med hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|med record number|<noun>|<base>|||SLOT|process
+KS000000|medical|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical complications that may have triggered weight gain|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical decision making|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical history and current health problems|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical oncologist|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical problems|<noun>|<base>|||ccdaSectionName|process
+KS000000|medical record number|<noun>|<base>|||SLOT|process
+KS000000|medically supervised diets|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication administration|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication changes|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication changes included|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication intolerance|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication list|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication name|<noun>|<base>|||SLOT|process
+KS000000|medication on discharge|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication on transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication per pt report|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication renewals|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication review|<noun>|<base>|||ccdaSectionName|process
+KS000000|medication side effects|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications and allergies|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications are|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at discharge|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at home|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at nursing home|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at present|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at present include|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at this time|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications at transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications currently|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications discontinued|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications given in triage|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications held on day of surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications here|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications in hospital|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications in house|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications now|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on admit|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on discharge|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on discharge unchanged except for|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on transfer to floor|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on transfer to micu|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on transfer to rehab|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on transfer to sdu|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications on visit|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications per pt report|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications prior to admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications prior to the visit|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications that may have triggered weight gain|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications to be held|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications to be held on day of surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications to be taken on day of surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications upon admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications upon transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications while npo|<noun>|<base>|||ccdaSectionName|process
+KS000000|medicines|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds and supplements|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds at admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds at home|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds at osh|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds at transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds currently|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds here|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds home|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds in hospital|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds in house|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds include|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds now|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on admission to osh|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on admit|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on arrival|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on discharge|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on tranfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer from ccu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer from floor|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer from micu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer from osh|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer from sdu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to ccu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to floor|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to mgh|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to micu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to sdu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on transfer to the floor|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on tx|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds on xfer|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds prior to surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds prior to transfer to ccu|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds tried|<noun>|<base>|||ccdaSectionName|process
+KS000000|meds x 1|<noun>|<base>|||ccdaSectionName|process
+KS000000|medsall|<noun>|<base>|||ccdaSectionName|process
+KS000000|medullary sponge kidney disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|melanoma|<noun>|<base>|||ccdaSectionName|process
+KS000000|memory|<noun>|<base>|||ccdaSectionName|process
+KS000000|menarche|<noun>|<base>|||ccdaSectionName|process
+KS000000|meniscal tear|<noun>|<base>|||ccdaSectionName|process
+KS000000|menopause|<noun>|<base>|||ccdaSectionName|process
+KS000000|mental status|<noun>|<base>|||SLOT|process
+KS000000|mental status examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|message|<noun>|<base>|||ccdaSectionName|process
+KS000000|method of study|<noun>|<base>|||ccdaSectionName|process
+KS000000|method used|<noun>|<base>|||ccdaSectionName|process
+KS000000|mgh|<noun>|<base>|||ccdaSectionName|process
+KS000000|mgh cancer center medication renewal sheet date|<noun>|<base>|||SLOT|process
+KS000000|mgh mrn|<noun>|<base>|||SLOT|process
+KS000000|mgh revere healthcare center date|<noun>|<base>|||SLOT|process
+KS000000|mgh unit no|<noun>|<base>|||SLOT|process
+KS000000|mgh unit number|<noun>|<base>|||SLOT|process
+KS000000|micro|<noun>|<base>|||ccdaSectionName|process
+KS000000|microbiology|<noun>|<base>|||ccdaSectionName|process
+KS000000|micu course|<noun>|<base>|||ccdaSectionName|process
+KS000000|migraine headache|<noun>|<base>|||ccdaSectionName|process
+KS000000|mm|<noun>|<base>|||ccdaSectionName|process
+KS000000|mo|<noun>|<base>|||ccdaSectionName|process
+KS000000|modifying factors|<noun>|<base>|||ccdaSectionName|process
+KS000000|monitoring|<noun>|<base>|||ccdaSectionName|process
+KS000000|monitors|<noun>|<base>|||ccdaSectionName|process
+KS000000|mood|<noun>|<base>|||ccdaSectionName|process
+KS000000|mother|<noun>|<base>|||SLOT|process
+KS000000|motor|<noun>|<base>|||ccdaSectionName|process
+KS000000|motor exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|mouth|<noun>|<base>|||ccdaSectionName|process
+KS000000|mr|<noun>|<base>|||ccdaSectionName|process
+KS000000|mri|<noun>|<base>|||ccdaSectionName|process
+KS000000|mrn|<noun>|<base>|||SLOT|process
+KS000000|m rn|<noun>|<base>|||SLOT|process
+KS000000|mr#|<noun>|<base>|||SLOT|process
+KS000000|mrn_type|<noun>|<base>|||SLOT|process
+KS000000|mrn_type|<noun>|<base>|||SLOT|process
+KS000000|mse|<noun>|<base>|||ccdaSectionName|process
+KS000000|msk|<noun>|<base>|||ccdaSectionName|process
+KS000000|musc|<noun>|<base>|||ccdaSectionName|process
+KS000000|musculoskel|<noun>|<base>|||ccdaSectionName|process
+KS000000|musculoskeletal|<noun>|<base>|||ccdaSectionName|process
+KS000000|musculoskeletal|<noun>|<base>|||SLOT|process
+KS000000|musculoskeltal|<noun>|<base>|||ccdaSectionName|process
+KS000000|my impression is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|my impression is that he has|<noun>|<base>|||ccdaSectionName|process
+KS000000|my impression is that she has|<noun>|<base>|||ccdaSectionName|process
+KS000000|my impression of the patient is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|my impression of this patient is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|my overall impression is|<noun>|<base>|||ccdaSectionName|process
+KS000000|my recommendation is as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|my recommendations are|<noun>|<base>|||ccdaSectionName|process
+KS000000|my recommendations are as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|myocardial infarction|<noun>|<base>|||ccdaSectionName|process
+KS000000|name of medication|<noun>|<base>|||SLOT|process
+KS000000|name of resident|<noun>|<base>|||SLOT|process
+KS000000|narrative|<noun>|<base>|||ccdaSectionName|process
+KS000000|neck|<noun>|<base>|||ccdaSectionName|process
+KS000000|neck pain|<noun>|<base>|||ccdaSectionName|process
+KS000000|ms/ /psych/lymph|<noun>|<base>|||ccdaSectionName|process
+KS000000|psych/lymph|<noun>|<base>|||ccdaSectionName|process
+KS000000|psych/lymph|<noun>|<base>|||ccdaSectionName|process
+KS000000|ms|<noun>|<base>|||ccdaSectionName|process
+KS000000|nephropathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|neuro|<noun>|<base>|||ccdaSectionName|process
+KS000000|neuro exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|neurologic|<noun>|<base>|||ccdaSectionName|process
+KS000000|neurologic exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|neurologic examination|<noun>|<base>|||ccdaSectionName|process
+#KS000000|neurological|<noun>|<base>|||ccdaSectionName|process
+KS000000|neurological|<noun>|<base>|||SLOT|process
+KS000000|neurological exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|neurological examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|neuropathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|new medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|new medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|new meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|next appointment date|<noun>|<base>|||SLOT|process
+KS000000|nicotin use|<noun>|<base>|||ccdaSectionName|process
+KS000000|nipples|<noun>|<base>|||ccdaSectionName|process
+KS000000|nka|<noun>|<base>|||ccdaSectionName|process
+KS000000|nkdameds|<noun>|<base>|||ccdaSectionName|process
+KS000000|nm resident|<noun>|<base>|||ccdaSectionName|process
+KS000000|nodes|<noun>|<base>|||ccdaSectionName|process
+KS000000|nose|<noun>|<base>|||ccdaSectionName|process
+KS000000|note|<noun>|<base>|||ccdaSectionName|process
+KS000000|np|<noun>|<base>|||ccdaSectionName|process
+KS000000|npo|<noun>|<base>|||ccdaSectionName|process
+KS000000|nsaids|<noun>|<base>|||ccdaSectionName|process
+KS000000|number of refills|<noun>|<base>|||SLOT|process
+KS000000|nursing assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|nursing diagnoses or problem list|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition assessment and review|<noun>|<base>|||ccdaSectionName|process
+KS000000|nw|<noun>|<base>|||ccdaSectionName|process
+KS000000|oa of knees|<noun>|<base>|||ccdaSectionName|process
+KS000000|obesity|<noun>|<base>|||ccdaSectionName|process
+KS000000|obj|<noun>|<base>|||ccdaSectionName|process
+KS000000|objective|<noun>|<base>|||ccdaSectionName|process
+KS000000|objective data|<noun>|<base>|||ccdaSectionName|process
+KS000000|objective note|<noun>|<base>|||ccdaSectionName|process
+KS000000|objectives|<noun>|<base>|||ccdaSectionName|process
+KS000000|obstetrical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|occup|<noun>|<base>|||SLOT|process
+KS000000|occupation|<noun>|<base>|||SLOT|process
+KS000000|oetoh|<noun>|<base>|||ccdaSectionName|process
+KS000000|office note|<noun>|<base>|||ccdaSectionName|process
+KS000000|office visit|<noun>|<base>|||ccdaSectionName|process
+KS000000|on exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|on examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|on ros|<noun>|<base>|||ccdaSectionName|process
+KS000000|oncologic diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|oncologic history|<noun>|<base>|||ccdaSectionName|process
+KS000000|oncology history|<noun>|<base>|||ccdaSectionName|process
+KS000000|oncology social work note|<noun>|<base>|||ccdaSectionName|process
+KS000000|op|<noun>|<base>|||ccdaSectionName|process
+KS000000|operation performed|<noun>|<base>|||ccdaSectionName|process
+KS000000|oral medications for diabetes|<noun>|<base>|||ccdaSectionName|process
+KS000000|orientation|<noun>|<base>|||SLOT|process
+KS000000|oropharynx|<noun>|<base>|||ccdaSectionName|process
+KS000000|osteoarthritis|<noun>|<base>|||ccdaSectionName|process
+KS000000|osteopenia|<noun>|<base>|||ccdaSectionName|process
+KS000000|osteoporosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|otc medication abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|other|<noun>|<base>|||ccdaSectionName|process
+KS000000|other drug abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|other drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|other issues|<noun>|<base>|||ccdaSectionName|process
+KS000000|other medical problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|other medical problems|<noun>|<base>|||ccdaSectionName|process
+KS000000|other medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|other medications include|<noun>|<base>|||ccdaSectionName|process
+KS000000|other meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|other past medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|other pmh|<noun>|<base>|||ccdaSectionName|process
+KS000000|other problems|<noun>|<base>|||ccdaSectionName|process
+KS000000|other recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|otitis media|<noun>|<base>|||ccdaSectionName|process
+KS000000|outpatient medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|outpatient meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|outpt meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|ovarian cyst|<noun>|<base>|||ccdaSectionName|process
+KS000000|overall impression|<noun>|<base>|||ccdaSectionName|process
+KS000000|pager|<noun>|<base>|||SLOT|process
+KS000000|pain|<noun>|<base>|||SLOT|process
+KS000000|pain assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain assessment form|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain management|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|palpation|<noun>|<base>|||SLOT|process
+KS000000|palpitations|<noun>|<base>|||ccdaSectionName|process
+KS000000|pap|<noun>|<base>|||ccdaSectionName|process
+KS000000|paroxysmal atrial fibrillation|<noun>|<base>|||ccdaSectionName|process
+KS000000|past history|<noun>|<base>|||ccdaSectionName|process
+KS000000|past history menarche|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical and surgical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history and medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history and ros cardiovascular|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history cardiovascular disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history menstrual history|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical history respiratory disorders|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medical hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|past medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|past oncologic history|<noun>|<base>|||ccdaSectionName|process
+KS000000|past psychiatric hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|past smoking|<noun>|<base>|||ccdaSectionName|process
+KS000000|past surgical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|pata medical director|<noun>|<base>|||ccdaSectionName|process
+KS000000|pata medical director note|<noun>|<base>|||ccdaSectionName|process
+KS000000|pathology|<noun>|<base>|||ccdaSectionName|process
+KS000000|patient|<noun>|<base>|||SLOT|process
+KS000000|patient complains of|<noun>|<base>|||ccdaSectionName|process
+KS000000|patient education|<noun>|<base>|||ccdaSectionName|process
+KS000000|patient id|<noun>|<base>|||SLOT|process
+KS000000|patient identification|<noun>|<base>|||SLOT|process
+KS000000|patient name|<noun>|<base>|||SLOT|process
+KS000000|patient's name|<noun>|<base>|||SLOT|process
+KS000000|patient referred to|<noun>|<base>|||SLOT|process
+KS000000|patient requesting med renewal on|<noun>|<base>|||SLOT|process
+KS000000|patient returns on the following medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|patient returns on the following medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|pc|<noun>|<base>|||ccdaSectionName|process
+KS000000|pcp|<noun>|<base>|||SLOT|process
+KS000000|pcp per patient|<noun>|<base>|||SLOT|process
+KS000000|pe|<noun>|<base>|||ccdaSectionName|process
+KS000000|pe notable for|<noun>|<base>|||ccdaSectionName|process
+KS000000|peak flow|<noun>|<base>|||SLOT|process
+KS000000|pelvic|<noun>|<base>|||ccdaSectionName|process
+KS000000|pelvic exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|pelvic examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|penis|<noun>|<base>|||ccdaSectionName|process
+KS000000|peptic ulcer disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|performed by|<noun>|<base>|||SLOT|process
+KS000000|performed on|<noun>|<base>|||SLOT|process
+KS000000|periodic limb movement analysis|<noun>|<base>|||ccdaSectionName|process
+KS000000|peripheral edema|<noun>|<base>|||ccdaSectionName|process
+KS000000|peripheral neuropathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|peripheral vascular|<noun>|<base>|||ccdaSectionName|process
+KS000000|peripheral vascular disease|<noun>|<base>|||ccdaSectionName|process
+KS000000|person calling|<noun>|<base>|||ccdaSectionName|process
+KS000000|personal and social history|<noun>|<base>|||ccdaSectionName|process
+KS000000|personal data|<noun>|<base>|||ccdaSectionName|process
+KS000000|personal data and overall health|<noun>|<base>|||ccdaSectionName|process
+KS000000|pertinent labs|<noun>|<base>|||ccdaSectionName|process
+KS000000|pertinent medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|pertinent meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|pertinent pmh|<noun>|<base>|||ccdaSectionName|process
+KS000000|pertinent pmhx|<noun>|<base>|||ccdaSectionName|process
+KS000000|pex|<noun>|<base>|||ccdaSectionName|process
+KS000000|pfts|<noun>|<base>|||ccdaSectionName|process
+KS000000|pg|<noun>|<base>|||ccdaSectionName|process
+KS000000|ph|<noun>|<base>|||ccdaSectionName|process
+KS000000|pharmacy|<noun>|<base>|||SLOT|process
+KS000000|pharmacy name and phone number|<noun>|<base>|||SLOT|process
+KS000000|pharmacy requesting med renewal on|<noun>|<base>|||SLOT|process
+KS000000|pharynx|<noun>|<base>|||ccdaSectionName|process
+KS000000|phone|<noun>|<base>|||SLOT|process
+KS000000|phone call|<noun>|<base>|||ccdaSectionName|process
+KS000000|phone number|<noun>|<base>|||SLOT|process
+KS000000|phone number per patient|<noun>|<base>|||SLOT|process
+KS000000|physical abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|physical activity|<noun>|<base>|||ccdaSectionName|process
+KS000000|physical exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|physical exam general|<noun>|<base>|||ccdaSectionName|process
+KS000000|physical examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|physician|<noun>|<base>|||SLOT|process
+KS000000|physician medication orders|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan medication adjustment|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan note|<noun>|<base>|||ccdaSectionName|process
+KS000000|plan of care|<noun>|<base>|||ccdaSectionName|process
+KS000000|plans|<noun>|<base>|||ccdaSectionName|process
+KS000000|pmh|<noun>|<base>|||ccdaSectionName|process
+KS000000|pmhx|<noun>|<base>|||ccdaSectionName|process
+KS000000|pneumonia|<noun>|<base>|||ccdaSectionName|process
+KS000000|polysubstance abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|positive ana|<noun>|<base>|||ccdaSectionName|process
+KS000000|positive ppd|<noun>|<base>|||ccdaSectionName|process
+KS000000|post operative diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|post vital signs|<noun>|<base>|||ccdaSectionName|process
+KS000000|postobstructive pneumonia|<noun>|<base>|||ccdaSectionName|process
+KS000000|postop diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|postoperative diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|potassium|<noun>|<base>|||ccdaSectionName|process
+KS000000|pre operative diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|preliminary diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|premed|<noun>|<base>|||ccdaSectionName|process
+KS000000|premedication|<noun>|<base>|||ccdaSectionName|process
+KS000000|preop diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|preoperative diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|preparation|<noun>|<base>|||ccdaSectionName|process
+KS000000|prescription|<noun>|<base>|||ccdaSectionName|process
+KS000000|prescriptions|<noun>|<base>|||ccdaSectionName|process
+KS000000|present illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|present medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|present meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|presenting complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|presenting complaint and history of presenting complaint|<noun>|<base>|||ccdaSectionName|process
+KS000000|presents for acute visit for|<noun>|<base>|||ccdaSectionName|process
+KS000000|previous medical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|previous use of weight loss medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|primary care physician|<noun>|<base>|||SLOT|process
+KS000000|primary care provider|<noun>|<base>|||SLOT|process
+KS000000|primary care screening and preventative care|<noun>|<base>|||ccdaSectionName|process
+KS000000|primary diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|primary diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|principal diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|principle diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|prior medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|prior medications of potential impact on weight|<noun>|<base>|||ccdaSectionName|process
+KS000000|prior surgery includes|<noun>|<base>|||ccdaSectionName|process
+KS000000|prior treatment|<noun>|<base>|||ccdaSectionName|process
+KS000000|prn meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|problem 1|<noun>|<base>|||ccdaSectionName|process
+KS000000|problem list|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems alcohol abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems alcohol abuse s|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems asthma|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems hypertension s|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems past smoking|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems smoking|<noun>|<base>|||ccdaSectionName|process
+KS000000|problems smoking s|<noun>|<base>|||ccdaSectionName|process
+KS000000|procedure|<noun>|<base>|||ccdaSectionName|process
+KS000000|procedure note|<noun>|<base>|||ccdaSectionName|process
+KS000000|procedure performed|<noun>|<base>|||ccdaSectionName|process
+KS000000|procedures|<noun>|<base>|||ccdaSectionName|process
+KS000000|progress note|<noun>|<base>|||ccdaSectionName|process
+KS000000|progress notes|<noun>|<base>|||SLOT|process
+KS000000|proph|<noun>|<base>|||ccdaSectionName|process
+KS000000|prophy|<noun>|<base>|||ccdaSectionName|process
+KS000000|prophylaxis|<noun>|<base>|||ccdaSectionName|process
+KS000000|proposed anesthetic|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|protein|<noun>|<base>|||ccdaSectionName|process
+KS000000|provider|<noun>|<base>|||SLOT|process
+KS000000|provider response|<noun>|<base>|||ccdaSectionName|process
+KS000000|provisional diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|psh|<noun>|<base>|||ccdaSectionName|process
+KS000000|pshx|<noun>|<base>|||ccdaSectionName|process
+KS000000|psych|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychiatric|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychosocial|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychosocial history|<noun>|<base>|||ccdaSectionName|process
+KS000000|pt|<noun>|<base>|||ccdaSectionName|process
+KS000000|pt name|<noun>|<base>|||SLOT|process
+KS000000|pt. name|<noun>|<base>|||SLOT|process
+KS000000|pt response|<noun>|<base>|||ccdaSectionName|process
+KS000000|pt supplied with dph state medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulm|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulmonary|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulmonary diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulmonary diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulmonary nodule|<noun>|<base>|||ccdaSectionName|process
+KS000000|pulse|<noun>|<base>|||SLOT|process
+KS000000|pulses|<noun>|<base>|||SLOT|process
+KS000000|pump|<noun>|<base>|||ccdaSectionName|process
+KS000000|question|<noun>|<base>|||SLOT|process
+KS000000|answer|<noun>|<base>|||SLOT|process
+KS000000|radials|<noun>|<base>|||ccdaSectionName|process
+KS000000|radiation oncologist|<noun>|<base>|||ccdaSectionName|process
+KS000000|radiographs|<noun>|<base>|||ccdaSectionName|process
+KS000000|radiologic studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|attending radiologist|<noun>|<base>|||SLOT|process
+KS000000|supervising radiologist|<noun>|<base>|||SLOT|process
+KS000000|radiologist|<noun>|<base>|||SLOT|process
+KS000000|radiologists|<noun>|<base>|||ccdaSectionName|process
+KS000000|radiology|<noun>|<base>|||ccdaSectionName|process
+KS000000|range of motion|<noun>|<base>|||ccdaSectionName|process
+KS000000|rom|<noun>|<base>|||SLOT|process
+KS000000|re|<noun>|<base>|||SLOT|process
+KS000000|regarding|<noun>|<base>|||SLOT|process
+KS000000|reason|<noun>|<base>|||SLOT|process
+KS000000|reason for visit|<noun>|<base>|||SLOT|process
+KS000000|reason for exam|<noun>|<base>|||SLOT|process
+KS000000|reason for admission|<noun>|<base>|||ccdaSectionName|process
+KS000000|reason for call|<noun>|<base>|||ccdaSectionName|process
+KS000000|reason for consult|<noun>|<base>|||ccdaSectionName|process
+KS000000|reason for referral|<noun>|<base>|||ccdaSectionName|process
+KS000000|reason for visit|<noun>|<base>|||ccdaSectionName|process
+KS000000|rec|<noun>|<base>|||ccdaSectionName|process
+KS000000|recom|<noun>|<base>|||ccdaSectionName|process
+KS000000|recomendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommedations|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommend|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommend the following|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommendation|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommendation and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommendations and plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommendations are checked below with comments|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommended|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommended additional visits|<noun>|<base>|||ccdaSectionName|process
+KS000000|recreational drug|<noun>|<base>|||ccdaSectionName|process
+KS000000|recreational drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|rectal|<noun>|<base>|||ccdaSectionName|process
+KS000000|rectal exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|rectal examination|<noun>|<base>|||ccdaSectionName|process
+KS000000|rectal masses|<noun>|<base>|||ccdaSectionName|process
+KS000000|referral|<noun>|<base>|||ccdaSectionName|process
+KS000000|referrals|<noun>|<base>|||ccdaSectionName|process
+KS000000|referred by|<noun>|<base>|||SLOT|process
+KS000000|referring md|<noun>|<base>|||SLOT|process
+KS000000|referring physician|<noun>|<base>|||SLOT|process
+KS000000|referring provider|<noun>|<base>|||SLOT|process
+KS000000|refl|<noun>|<base>|||ccdaSectionName|process
+KS000000|reflex|<noun>|<base>|||ccdaSectionName|process
+KS000000|reflexes|<noun>|<base>|||ccdaSectionName|process
+KS000000|renal|<noun>|<base>|||ccdaSectionName|process
+KS000000|renal insufficiency|<noun>|<base>|||ccdaSectionName|process
+KS000000|reply|<noun>|<base>|||ccdaSectionName|process
+KS000000|report|<noun>|<base>|||SLOT|process
+KS000000|report type|<noun>|<base>|||SLOT|process
+KS000000|reported intake of clear liquids consumed per day|<noun>|<base>|||ccdaSectionName|process
+KS000000|report_id|<noun>|<base>|||SLOT|process
+KS000000|resident|<noun>|<base>|||SLOT|process
+KS000000|resp|<noun>|<base>|||SLOT|process
+KS000000|respirations|<noun>|<base>|||ccdaSectionName|process
+KS000000|respiratory|<noun>|<base>|||ccdaSectionName|process
+KS000000|respiratory analysis|<noun>|<base>|||ccdaSectionName|process
+KS000000|respiratory diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|respiratory rate|<noun>|<base>|||SLOT|process
+KS000000|rate|<noun>|<base>|||SLOT|process
+KS000000|response to medication between visits|<noun>|<base>|||ccdaSectionName|process
+KS000000|retinopathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|retired tobacco|<noun>|<base>|||ccdaSectionName|process
+KS000000|return to clinic|<noun>|<base>|||ccdaSectionName|process
+KS000000|review of meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|review of symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|review of system|<noun>|<base>|||ccdaSectionName|process
+KS000000|review of systems|<noun>|<base>|||ccdaSectionName|process
+KS000000|rhcm|<noun>|<base>|||ccdaSectionName|process
+KS000000|rheumatoid arthritis|<noun>|<base>|||ccdaSectionName|process
+KS000000|rhm|<noun>|<base>|||ccdaSectionName|process
+KS000000|rhythm|<noun>|<base>|||ccdaSectionName|process
+KS000000|right arm|<noun>|<base>|||ccdaSectionName|process
+KS000000|room|<noun>|<base>|||SLOT|process
+KS000000|room number|<noun>|<base>|||SLOT|process
+KS000000|room #|<noun>|<base>|||SLOT|process
+KS000000|ros|<noun>|<base>|||ccdaSectionName|process
+KS000000|rr|<noun>|<base>|||SLOT|process
+KS000000|rtc|<noun>|<base>|||SLOT|process
+KS000000|rto|<noun>|<base>|||SLOT|process
+KS000000|rx|<noun>|<base>|||ccdaSectionName|process
+KS000000|rz|<noun>|<base>|||ccdaSectionName|process
+KS000000|sao2|<noun>|<base>|||ccdaSectionName|process
+KS000000|sciatica|<noun>|<base>|||ccdaSectionName|process
+KS000000|scrotum|<noun>|<base>|||ccdaSectionName|process
+KS000000|sdu course|<noun>|<base>|||ccdaSectionName|process
+KS000000|secondary diagnoses|<noun>|<base>|||ccdaSectionName|process
+KS000000|secondary diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|seminal vesicles|<noun>|<base>|||ccdaSectionName|process
+KS000000|sens|<noun>|<base>|||ccdaSectionName|process
+KS000000|sensation|<noun>|<base>|||ccdaSectionName|process
+KS000000|sensory|<noun>|<base>|||ccdaSectionName|process
+KS000000|sent|<noun>|<base>|||SLOT|process
+KS000000|sex|<noun>|<base>|||SLOT|process
+KS000000|sexual abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|sexual history|<noun>|<base>|||ccdaSectionName|process
+KS000000|sg|<noun>|<base>|||ccdaSectionName|process
+KS000000|sh|<noun>|<base>|||ccdaSectionName|process
+KS000000|she is on the following medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|she is on the following medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|shortness of breath|<noun>|<base>|||ccdaSectionName|process
+KS000000|shoulder pain|<noun>|<base>|||ccdaSectionName|process
+KS000000|shtob|<noun>|<base>|||ccdaSectionName|process
+KS000000|shx|<noun>|<base>|||ccdaSectionName|process
+KS000000|siblings|<noun>|<base>|||SLOT|process
+KS000000|sibling(s)|<noun>|<base>|||SLOT|process
+KS000000|side effects of medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|electronic signature|<noun>|<base>|||SLOT|process
+KS000000|electronic signatures|<noun>|<base>|||SLOT|process
+KS000000|signature|<noun>|<base>|||SLOT|process
+KS000000|signatures|<noun>|<base>|||SLOT|process
+KS000000|signed|<noun>|<base>|||SLOT|dont_process
+KS000000|signed by|<noun>|<base>|||SLOT|dont_process
+KS000000|significant findings|<noun>|<base>|||ccdaSectionName|process
+KS000000|significant meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|sinuses|<noun>|<base>|||ccdaSectionName|process
+KS000000|sinusitis|<noun>|<base>|||ccdaSectionName|process
+KS000000|site|<noun>|<base>|||SLOT|process
+KS000000|skin|<noun>|<base>|||ccdaSectionName|process
+KS000000|sleep|<noun>|<base>|||ccdaSectionName|process
+KS000000|sleep apnea|<noun>|<base>|||ccdaSectionName|process
+KS000000|sleep study|<noun>|<base>|||ccdaSectionName|process
+KS000000|smh|<noun>|<base>|||ccdaSectionName|process
+KS000000|smoke|<noun>|<base>|||ccdaSectionName|process
+KS000000|smoker|<noun>|<base>|||SLOT|process
+KS000000|smokes|<noun>|<base>|||SLOT|process
+KS000000|smoking|<noun>|<base>|||SLOT|process
+KS000000|smoking cessation|<noun>|<base>|||ccdaSectionName|process
+KS000000|smoking history|<noun>|<base>|||SLOT|process
+KS000000|smoking status|<noun>|<base>|||SLOT|process
+KS000000|snack|<noun>|<base>|||ccdaSectionName|process
+KS000000|so|<noun>|<base>|||ccdaSectionName|process
+KS000000|soc|<noun>|<base>|||ccdaSectionName|process
+KS000000|soc hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|sochx|<noun>|<base>|||ccdaSectionName|process
+KS000000|social|<noun>|<base>|||ccdaSectionName|process
+KS000000|social and environmental history|<noun>|<base>|||ccdaSectionName|process
+KS000000|social and family history|<noun>|<base>|||ccdaSectionName|process
+KS000000|social habits|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history and family history|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history and supports|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history cigarettes|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history marital status|<noun>|<base>|||SLOT|process
+KS000000|social history no interval change since|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history occupation|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history smokes|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history smoking|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history tob|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history tob use|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history tobacco|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history tobacco use|<noun>|<base>|||ccdaSectionName|process
+KS000000|social history work|<noun>|<base>|||ccdaSectionName|process
+KS000000|social hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|social issue|<noun>|<base>|||ccdaSectionName|process
+KS000000|social support|<noun>|<base>|||ccdaSectionName|process
+KS000000|social work|<noun>|<base>|||ccdaSectionName|process
+KS000000|socialization|<noun>|<base>|||ccdaSectionName|process
+KS000000|source|<noun>|<base>|||SLOT|process
+KS000000|special needs|<noun>|<base>|||ccdaSectionName|process
+KS000000|specific time frame|<noun>|<base>|||ccdaSectionName|process
+KS000000|speech|<noun>|<base>|||SLOT|process
+KS000000|sphincter tone|<noun>|<base>|||ccdaSectionName|process
+KS000000|spinal stenosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|spine|<noun>|<base>|||ccdaSectionName|process
+KS000000|spirometry|<noun>|<base>|||ccdaSectionName|process
+KS000000|staff code|<noun>|<base>|||SLOT|process
+KS000000|staff|<noun>|<base>|||SLOT|process
+KS000000|status|<noun>|<base>|||SLOT|process
+KS000000| o status|<noun>|<base>|||SLOT|process
+KS000000|status|<noun>|<base>|||SLOT|process
+KS000000|stomach|<noun>|<base>|||ccdaSectionName|process
+KS000000|strength|<noun>|<base>|||SLOT|process
+KS000000|stress|<noun>|<base>|||ccdaSectionName|process
+KS000000|studies|<noun>|<base>|||ccdaSectionName|process
+KS000000|subject|<noun>|<base>|||SLOT|process
+KS000000|subjective|<noun>|<base>|||ccdaSectionName|process
+KS000000|subset|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance abuse|<noun>|<base>|||SLOT|process
+KS000000|iv. substance abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance abuse history|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance abuse hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance use|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance use history|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance use or consumption|<noun>|<base>|||ccdaSectionName|process
+KS000000|suggest|<noun>|<base>|||ccdaSectionName|process
+KS000000|summary|<noun>|<base>|||ccdaSectionName|process
+KS000000|summary and impressions|<noun>|<base>|||ccdaSectionName|process
+KS000000|summary and recommendation|<noun>|<base>|||ccdaSectionName|process
+KS000000|summary and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|summary of past history|<noun>|<base>|||ccdaSectionName|process
+KS000000|surface and mucosa|<noun>|<base>|||ccdaSectionName|process
+KS000000|surgeon|<noun>|<base>|||ccdaSectionName|process
+KS000000|surgeries|<noun>|<base>|||ccdaSectionName|process
+KS000000|surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|surgery date|<noun>|<base>|||SLOT|process
+KS000000|surgery procedure|<noun>|<base>|||ccdaSectionName|process
+KS000000|surgical history|<noun>|<base>|||ccdaSectionName|process
+KS000000|symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|syncope|<noun>|<base>|||ccdaSectionName|process
+KS000000|t|<noun>|<base>|||SLOT|process
+KS000000|tape color|<noun>|<base>|||SLOT|process
+KS000000|td|<noun>|<base>|||SLOT|process
+KS000000|team recommendation|<noun>|<base>|||ccdaSectionName|process
+KS000000|technique|<noun>|<base>|||SLOT|process
+KS000000|teeth|<noun>|<base>|||ccdaSectionName|process
+KS000000|tel|<noun>|<base>|||SLOT|process
+KS000000|telephone|<noun>|<base>|||SLOT|process
+KS000000|telephone call|<noun>|<base>|||ccdaSectionName|process
+KS000000|telephone note|<noun>|<base>|||ccdaSectionName|process
+KS000000|temp|<noun>|<base>|||SLOT|process
+KS000000|temperature|<noun>|<base>|||SLOT|process
+KS000000|tentative plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|tertiary diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|test|<noun>|<base>|||ccdaSectionName|process
+KS000000|testes|<noun>|<base>|||ccdaSectionName|process
+KS000000|the discharge medications were|<noun>|<base>|||ccdaSectionName|process
+KS000000|the history of the present illness|<noun>|<base>|||ccdaSectionName|process
+KS000000|the medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|the patient is on the following medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|the patient returns on the following medication|<noun>|<base>|||ccdaSectionName|process
+KS000000|the patient returns on the following medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|the patient was given|<noun>|<base>|||ccdaSectionName|process
+KS000000|the source|<noun>|<base>|||SLOT|process
+KS000000|third diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|thought content|<noun>|<base>|||ccdaSectionName|process
+KS000000|throat|<noun>|<base>|||ccdaSectionName|process
+KS000000|thyroid|<noun>|<base>|||ccdaSectionName|process
+KS000000|thyroid nodule|<noun>|<base>|||ccdaSectionName|process
+KS000000|time|<noun>|<base>|||SLOT|process
+KS000000|time of call|<noun>|<base>|||SLOT|process
+KS000000|time of dictation|<noun>|<base>|||SLOT|process
+KS000000|time of return call|<noun>|<base>|||SLOT|process
+KS000000|time spent with the patient|<noun>|<base>|||SLOT|process
+KS000000|tl|<noun>|<base>|||ccdaSectionName|process
+KS000000|to|<noun>|<base>|||SLOT|process
+KS000000|t0|<noun>|<base>|||SLOT|process
+KS000000|to whom it may concern|<noun>|<base>|||ccdaSectionName|process
+KS000000|tob|<noun>|<base>|||ccdaSectionName|process
+KS000000|tob cessation|<noun>|<base>|||ccdaSectionName|process
+KS000000|tob use|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobac|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacc|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco|<noun>|<base>|||SLOT|process
+KS000000|tobacco abuse|<noun>|<base>|||SLOT|process
+KS000000|tobacco use|<noun>|<base>|||SLOT|process
+KS000000|tobacco dependence|<noun>|<base>|||SLOT|process
+KS000000|tobacco history|<noun>|<base>|||ccdaSectionName|process
+KS000000|total skin examination was performed|<noun>|<base>|||ccdaSectionName|process
+KS000000|transfer medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|transfer meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment given|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment history|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment plan and recommendations|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment time|<noun>|<base>|||SLOT|process
+KS000000|treatment tolerance|<noun>|<base>|||ccdaSectionName|process
+KS000000|treatment facility|<noun>|<base>|||ccdaSectionName:institutionEvidence|dontProcess
+KS000000|tremor|<noun>|<base>|||ccdaSectionName|process
+KS000000|type|<noun>|<base>|||SLOT|process
+KS000000|type of service|<noun>|<base>|||SLOT|process
+KS000000|type of visit|<noun>|<base>|||SLOT|process
+KS000000|visit type|<noun>|<base>|||SLOT|process
+KS000000|typed with voice recognition software|<noun>|<base>|||ccdaSectionName|process
+KS000000|ua|<noun>|<base>|||ccdaSectionName|process
+KS000000|ucg|<noun>|<base>|||ccdaSectionName|process
+KS000000|ultrasound appointment|<noun>|<base>|||ccdaSectionName|process
+KS000000|unit number|<noun>|<base>|||SLOT|process
+KS000000|updated medication list|<noun>|<base>|||ccdaSectionName|process
+KS000000|urethral meatus|<noun>|<base>|||ccdaSectionName|process
+KS000000|urinalysis|<noun>|<base>|||ccdaSectionName|process
+KS000000|urinary incontinence|<noun>|<base>|||ccdaSectionName|process
+KS000000|urinary tract infection|<noun>|<base>|||ccdaSectionName|process
+KS000000|urine dip|<noun>|<base>|||ccdaSectionName|process
+KS000000|urologist|<noun>|<base>|||ccdaSectionName|process
+KS000000|usual medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|uterine fibroids|<noun>|<base>|||ccdaSectionName|process
+KS000000|uterus|<noun>|<base>|||ccdaSectionName|process
+KS000000|vagina|<noun>|<base>|||ccdaSectionName|process
+KS000000|varicose veins|<noun>|<base>|||ccdaSectionName|process
+KS000000|vasc|<noun>|<base>|||ccdaSectionName|process
+KS000000|vascular|<noun>|<base>|||ccdaSectionName|process
+KS000000|vascular exam|<noun>|<base>|||ccdaSectionName|process
+KS000000|venous insufficiency|<noun>|<base>|||ccdaSectionName|process
+KS000000|vertigo|<noun>|<base>|||ccdaSectionName|process
+KS000000|visit date|<noun>|<base>|||SLOT|process
+KS000000|visit information visit type|<noun>|<base>|||SLOT|process
+KS000000|visual impairment|<noun>|<base>|||ccdaSectionName|process
+KS000000|vital signs|<noun>|<base>|||ccdaSectionName|process
+KS000000|vitals|<noun>|<base>|||ccdaSectionName|process
+KS000000|vitamin b12 deficiency|<noun>|<base>|||ccdaSectionName|process
+KS000000|voicemail from|<noun>|<base>|||SLOT|process
+KS000000|vs|<noun>|<base>|||ccdaSectionName|process
+KS000000|vstemp|<noun>|<base>|||ccdaSectionName|process
+KS000000|wall motion abbreviations|<noun>|<base>|||ccdaSectionName|process
+KS000000|wbc|<noun>|<base>|||ccdaSectionName|process
+KS000000|we discovered the following medication issues|<noun>|<base>|||ccdaSectionName|process
+KS000000|we recommend|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight|<noun>|<base>|||SLOT|process
+KS000000|wt/ht|<noun>|<base>|||SLOT|process
+KS000000|wgt|<noun>|<base>|||SLOT|process
+KS000000|weight as of this encounter|<noun>|<base>|||SLOT|process
+KS000000|weight assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight center team|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight history|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight loss medications|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight loss meds|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight parameters|<noun>|<base>|||ccdaSectionName|process
+KS000000|well prepared for surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|work|<noun>|<base>|||SLOT|process
+KS000000|working diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|would recommend|<noun>|<base>|||ccdaSectionName|process
+KS000000|wt|<noun>|<base>|||SLOT|process
+KS000000|weight (lbs)|<noun>|<base>|||SLOT|process
+KS000000|w (lbs)|<noun>|<base>|||SLOT|process
+KS000000|w|<noun>|<base>|||SLOT|process
+#
+#
+KS000000|alcohol screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|advance directive screen|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|alcohol screen (audit-c)|<noun>|<base>|||ccdaSectionName|process
+KS000000|audit-c|<noun>|<base>|||ccdaSectionName|process
+KS000000|mst screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use cessation|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatitis c risk assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for gi symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for fever|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for skin rash/lesions|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for embedded fragments|<noun>|<base>|||ccdaSectionName|process
+KS000000|tbi screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|traumatic brain injury screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|ptsd screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for depression|<noun>|<base>|||ccdaSectionName|process
+KS000000|v1-pc depression screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|ptsd checklist|<noun>|<base>|||ccdaSectionName|process
+KS000000|ptsd checklist - military version (pcl-m)|<noun>|<base>|||ccdaSectionName|process
+KS000000|clinical reminders|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|alchohol abuse eval & f/u|<noun>|<base>|||ccdaSectionName|process
+KS000000|recommended drinking limits|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|depression evaluation & f/u|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge|<noun>|<base>|||SLOT|process
+KS000000|inpatient medication reconciliation|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|preventive health review|<noun>|<base>|||ccdaSectionName|process
+KS000000|hpi|<noun>|<base>|||ccdaSectionName|process
+KS000000|mood|<noun>|<base>|||SLOT|process
+KS000000|assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|iraq&afghan post-deployment screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|ptsd evaluation & follow-up and suicide assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|patient instructions|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide assessment & follow-up|<noun>|<base>|||ccdaSectionName|process
+KS000000|primary care provider search|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|outpt. medication reconcilliation|<noun>|<base>|||ccdaSectionName|process
+KS000000|acs nursing assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|nursing assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|activity/care|<noun>|<base>|||ccdaSectionName|process
+KS000000|fall risk factors|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|religion|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|education needs|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|need for continued nursing care|<noun>|<base>|||ccdaSectionName|process
+KS000000|comments|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychiatric medication history|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide attempts|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide/homicide risk assessment|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide/homicidial ideation|<noun>|<base>|||SLOT|process
+KS000000|violence|<noun>|<base>|||ccdaSectionName|process
+KS000000|inpatient|<noun>|<base>|||ccdaSectionName|process
+KS000000|outpatient|<noun>|<base>|||SLOT|process
+KS000000|depressive episode screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|manic episode screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|anxiety screens|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychosis screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|developmental problem screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|trauma/abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|substance use history|<noun>|<base>|||ccdaSectionName|process
+KS000000|religion|<noun>|<base>|||SLOT|process
+KS000000|period of service|<noun>|<base>|||SLOT|dont_process
+KS000000|branch of serviceservice|<noun>|<base>|||SLOT|dont_process
+KS000000|combat|<noun>|<base>|||SLOT|process
+KS000000|s/c disabilities|<noun>|<base>|||SLOT|process
+KS000000|adult relationships|<noun>|<base>|||ccdaSectionName|process
+KS000000|legal|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|cns tumors|<noun>|<base>|||SLOT|process
+KS000000|mcv|<noun>|<base>|||ccdaSectionName|process
+KS000000|thought process|<noun>|<base>|||SLOT|process
+KS000000|perceptions|<noun>|<base>|||SLOT|process
+KS000000|cognition|<noun>|<base>|||SLOT|process
+KS000000|insight|<noun>|<base>|||SLOT|process
+KS000000|judgement|<noun>|<base>|||SLOT|process
+KS000000|objective 1|<noun>|<base>|||ccdaSectionName|process
+KS000000|intervention|<noun>|<base>|||ccdaSectionName|process
+KS000000|medications prescribed at this visit|<noun>|<base>|||ccdaSectionName|process
+KS000000|psychopharm education/informed concent|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|perform audit-c|<noun>|<base>|||ccdaSectionName|process
+KS000000|phq-9|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screen (phq-2)|<noun>|<base>|||ccdaSectionName|process
+KS000000|record phq-2|<noun>|<base>|||ccdaSectionName|process
+KS000000|record pc ptsd|<noun>|<base>|||ccdaSectionName|process
+KS000000|pc ptsd|<noun>|<base>|||ccdaSectionName|process
+KS000000|center for returning veterans intake report|<noun>|<base>|||ccdaSectionName|process
+KS000000|gaf|<noun>|<base>|||SLOT|process
+KS000000|gaf screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|gaf (mental health instrument)|<noun>|<base>|||ccdaSectionName|process
+KS000000|gaf score|<noun>|<base>|||SLOT|process
+KS000000|section 1|<noun>|<base>|||ccdaSectionName|process
+KS000000|dem|<noun>|<base>|||ccdaSectionName|process
+KS000000|ethnicity|<noun>|<base>|||SLOT|process
+KS000000|race|<noun>|<base>|||SLOT|process
+KS000000|marital status|<noun>|<base>|||SLOT|process
+KS000000|readiness to change/clinical perspective|<noun>|<base>|||SLOT|process
+KS000000|*depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|*mammogram screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|*prostate ca screening education|<noun>|<base>|||ccdaSectionName|process
+KS000000|*tbi screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|advance directives screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening results|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|allergy screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|annual alcohol use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|abuse screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|advance directive screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening (aud-c)|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening (audit-c)|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol screening (initial/nurse)|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|alcohol use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|annual alcohol screening - audit c|<noun>|<base>|||ccdaSectionName|process
+KS000000|annual screening completed as follows|<noun>|<base>|||ccdaSectionName|process
+KS000000|audit c - alcohol use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|behavior screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|breast cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|case management screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|colon cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|cervical cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|colorectal ca screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|colorectal cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|colorectal screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening (phq-2)|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening with phq-2|<noun>|<base>|||ccdaSectionName|process
+KS000000|drug use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening (based on mental health index 5 item screener)|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening fy09|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening primary care|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening, primary care|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening-local|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression screening-v11|<noun>|<base>|||ccdaSectionName|process
+KS000000|ech pap smear screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|exercise screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|fall risk screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|functional screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|functional screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|gaf screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|health  screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|hiv infection screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|htn screening (nurse)|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatitis c risk factor screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatitis c risk factor screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|hepatitis risk screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|hyperlipidemia screening (m)|<noun>|<base>|||ccdaSectionName|process
+KS000000|i.   screening assessment of danger to self|<noun>|<base>|||ccdaSectionName|process
+KS000000|immunizations/health screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|initial screening tool follow up|<noun>|<base>|||ccdaSectionName|process
+KS000000|lipid screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mdd screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|move weight screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mrsa screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mst screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mst screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|maintenance / prevention / screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|medically unexplained symptoms screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mental health screening administered|<noun>|<base>|||ccdaSectionName|process
+KS000000|n-tobacco use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutritional screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutritional screening in opd|<noun>|<base>|||ccdaSectionName|process
+KS000000|nursing depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutrition screening and education|<noun>|<base>|||ccdaSectionName|process
+KS000000|nutritional screening-opt|<noun>|<base>|||ccdaSectionName|process
+KS000000|oral screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|osteoporosis screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|pap smear screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|past screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|phe learning needs screening done|<noun>|<base>|||ccdaSectionName|process
+KS000000|phe learning needs screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|post screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|pre screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate ca screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate cancer screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate ca screening education|<noun>|<base>|||ccdaSectionName|process
+KS000000|ptsd screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain screening & education provided (check all that apply|<noun>|<base>|||ccdaSectionName|process
+KS000000|perform audit screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|preliminary primary care depression screening questions|<noun>|<base>|||ccdaSectionName|process
+KS000000|presenting problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|preventative health measures|<noun>|<base>|||ccdaSectionName|process
+KS000000|primary care depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|problem drinking screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostate cancer screening education|<noun>|<base>|||ccdaSectionName|process
+KS000000|prostrate screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|results of ptsd screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|sad personas suicide risk screening outcome|<noun>|<base>|||ccdaSectionName|process
+KS000000|screening assessment of danger to others|<noun>|<base>|||ccdaSectionName|process
+KS000000|screening assessment of danger to self|<noun>|<base>|||ccdaSectionName|process
+KS000000|screening for nutrition|<noun>|<base>|||ccdaSectionName|process
+KS000000|social screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide risk screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide risk screening questions|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|suspected abuse/neglect screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|screening (nurse)|<noun>|<base>|||ccdaSectionName|process
+KS000000|screening for etoh use|<noun>|<base>|||ccdaSectionName|process
+KS000000|seat belt screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|spiritual/religious screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide prevention screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|suicide risk screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|swallowing screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tb screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tbi screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tbi screening has been completed previously.|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|traumatic brain injury screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|tobacco use screening-counseling|<noun>|<base>|||ccdaSectionName|process
+KS000000|tuberculosis screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|v1-gaf screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|v1-mst screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|weight/nutrition screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|n-depression screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|positive audit-c needs evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|depression evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|date of evaluation|<noun>|<base>|||SLOT|process
+KS000000|ptsd evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|electrodiagnostic evaluation|<noun>|<base>|||ccdaSectionName|process 
+KS000000|electrodiagnostic evaluation|<noun>|<base>|||ccdaSectionName|process emg study
+KS000000|pain evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|oral evaluation|<noun>|<base>|||ccdaSectionName|process yes
+KS000000|annual learning evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|date of evaluation|<noun>|<base>|||SLOT|process
+KS000000|date of examination|<noun>|<base>|||SLOT|process
+KS000000|exam date|<noun>|<base>|||SLOT|process
+KS000000|exm date|<noun>|<base>|||SLOT|process
+KS000000|date of injury|<noun>|<base>|||SLOT|process
+KS000000|positive audit-c needs evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|electrodiagnostic evaluation|<noun>|<base>|||ccdaSectionName|process 
+KS000000|braden scale evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|annual medical evaluation|<noun>|<base>|||ccdaSectionName|process 
+KS000000|evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|non-va and otc meds evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|back pain examination & evaluation|<noun>|<base>|||ccdaSectionName|process
+KS000000|comments|<noun>|<base>|||SLOT|process
+KS000000|additional comments|<noun>|<base>|||SLOT|process
+KS000000|toileting plan|<noun>|<base>|||SLOT|process
+KS000000|brp                     total amount|<noun>|<base>|||SLOT|process
+KS000000|urinal total amount|<noun>|<base>|||SLOT|process
+KS000000|bowel/bladder|<noun>|<base>|||ccdaSectionName|process
+KS000000|diapers                     number per shift|<noun>|<base>|||SLOT|process
+KS000000|toileting plan|<noun>|<base>|||SLOT|process
+KS000000|brp|<noun>|<base>|||SLOT|process
+KS000000|urinal       total amount|<noun>|<base>|||SLOT|process
+KS000000|uti|<noun>|<base>|||SLOT|process
+KS000000|urinary tract infection|<noun>|<base>|||SLOT|process
+KS000000|output|<noun>|<base>|||ccdaSectionName|process
+KS000000|diapers|<noun>|<base>|||ccdaSectionName|process
+KS000000|diapers/briefs|<noun>|<base>|||SLOT|process
+KS000000|mrsa screening|<noun>|<base>|||ccdaSectionName|process
+KS000000|mrsa screen|<noun>|<base>|||ccdaSectionName|process
+KS000000|mrsa|<noun>|<base>|||SLOT|process
+KS000000|mrsa nasal swabbing|<noun>|<base>|||SLOT|process
+KS000000|mrsa screening nasal swab|<noun>|<base>|||SLOT|process
+KS000000|mrsa screening|<noun>|<base>|||SLOT|process
+KS000000|mrsa screening done|<noun>|<base>|||SLOT|process
+KS000000|mrsa swab at discharge|<noun>|<base>|||SLOT|process
+KS000000|---- mrsa ----|<noun>|<base>|||ccdaSectionName|process
+KS000000|mrsa nasal surveillance culture|<noun>|<base>|||SLOT|process
+KS000000|mrsa surveillance|<noun>|<base>|||SLOT|process
+KS000000|mrsa isolation info|<noun>|<base>|||SLOT|process
+KS000000|*mrsa|<noun>|<base>|||SLOT|process
+KS000000|mrsa nasal screen|<noun>|<base>|||SLOT|process
+KS000000|mrsa swab|<noun>|<base>|||SLOT|process
+KS000000|evaluation for mrsapcr|<noun>|<base>|||SLOT|process
+KS000000|pain score|<noun>|<base>|||SLOT|process
+KS000000|score|<noun>|<base>|||SLOT|process
+KS000000|pain level|<noun>|<base>|||SLOT|process
+KS000000|neurologic|<noun>|<base>|||ccdaSectionName|process
+KS000000|gastrointestinal|<noun>|<base>|||ccdaSectionName|process
+KS000000|ibraden scale - for predicting pressure sore risk|<noun>|<base>|||ccdaSectionName|process
+KS000000|pain education|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge summary|<noun>|<base>|||ccdaSectionName|process
+KS000000|name|<noun>|<base>|||SLOT|dont_process
+KS000000|report status|<noun>|<base>|||SLOT|dont_process
+KS000000|document status|<noun>|<base>|||SLOT|dont_process
+KS000000|ed discharge notification / summary|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|provider|<noun>|<base>|||SLOT|dont_process
+KS000000|provider number|<noun>|<base>|||SLOT|dont_process
+KS000000|admission date|<noun>|<base>|||SLOT|dont_process
+KS000000|report status|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|discharge date|<noun>|<base>|||SLOT|dont_process
+KS000000|****** final discharge orders ******|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|room|<noun>|<base>|||SLOT|dont_process
+KS000000|service|<noun>|<base>|||SLOT|dont_process
+KS000000|discharge patient on|<noun>|<base>|||SLOT|dont_process
+KS000000|contingent upon|<noun>|<base>|||SLOT|process
+KS000000|attending|<noun>|<base>|||SLOT|dont_process
+KS000000|principal discharge diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|other diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|operations and procedures|<noun>|<base>|||ccdaSectionName|process
+KS000000|other treatments / procedures ( not in o.r. )|<noun>|<base>|||ccdaSectionName|process
+KS000000|brief resume of hospital course|<noun>|<base>|||ccdaSectionName|process
+KS000000|admission status|<noun>|<base>|||ccdaSectionName|process
+KS000000|ed|<noun>|<base>|||ccdaSectionName|process
+KS000000|vitals|<noun>|<base>|||ccdaSectionName|process
+KS000000|daily status|<noun>|<base>|||ccdaSectionName|process
+KS000000|problem list|<noun>|<base>|||ccdaSectionName|process
+KS000000|additional comments|<noun>|<base>|||ccdaSectionName|process
+KS000000|discharge condition|<noun>|<base>|||ccdaSectionName|process
+KS000000|to do / plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|todo / plan|<noun>|<base>|||ccdaSectionName|process
+KS000000|todo|<noun>|<base>|||ccdaSectionName|process
+KS000000|entered by|<noun>|<base>|||SLOT|dont_process
+KS000000|****** end of discharge orders ******|<noun>|<base>|||ccdaSectionName|dont_process
+KS000000|preliminary report|<noun>|<base>|||ccdaSectionName|process
+KS000000|pcp notified by md|<noun>|<base>|||SLOT|dont_process
+KS000000|pcp notified by|<noun>|<base>|||SLOT|dont_process
+KS000000|condition on discharge|<noun>|<base>|||SLOT|process
+KS000000|disposition , follow up and instructions to patient|<noun>|<base>|||ccdaSectionName|process
+KS000000|ed discharge summary|<noun>|<base>|||ccdaSectionName|process
+KS000000|age|<noun>|<base>|||SLOT|dont_process
+KS000000|****** final discharge orders ******|<noun>|<base>|||ccdaSectionName|process
+KS000000|principal discharge diagnosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|conditions , infections , complications , affecting treatment / stay|<noun>|<base>|||ccdaSectionName|process
+KS000000|follow up service|<noun>|<base>|||ccdaSectionName|process
+KS000000|disposition , follow up and instructions to patient|<noun>|<base>|||ccdaSectionName|process
+KS000000|****** discharge orders ******|<noun>|<base>|||ccdaSectionName|process
+KS000000|****** end of discharge orders ******|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for depression|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for alcohol|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for ptsd|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for abd|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for tobacco|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for gi symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for fever|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hiv infection|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hiv|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for embedded fragments|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hepatitis|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hepatitis c|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hepatitis b|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for mood|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for mood disorder|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hypertension|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hypertension hx|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hypertension epilep|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hypertension lumbago|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for colorectal cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for physical psychological sexual abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for physical psychological sexual|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for aaa bmi|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for infectious diseases|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for cognitive impairment|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for mdd sa|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for bhc|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for bhc suicide|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for colon polyps|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for colon cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for colon ca|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for diabetes|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for diabetes mellitus|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for dm|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for pcp|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for cocaine|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for alcoholism|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for opiates|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hcc|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for recurrence|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for thc|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for warning signs|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for abdominal aortic|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for falls|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for surveillance risk|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for protein c|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for gambling|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for marijuana|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for side effects|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for retinopathy|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for bezodiazepines|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for osteoporosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for opsteoporosis|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for tbi|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for illicit substances|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for recreational drugs|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for adhd|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for benzos|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for amphetamines|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for canabinoids|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hep|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for blood disorders|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for infection|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for chlamydia|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for osteopenia|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for thyphoid|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for treatable|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for temporal|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for prbcs|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hcv|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for fhh|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for nocturnal|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for myogloninuria|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for cancer|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for cannibis|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for barbiturates|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for cannabis|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for opiods|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for surgery|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for barrett|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for substance abuse|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for outside surgeries|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for other symptoms|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for risk factors|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for h pylori|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for high cholesterol|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for gambling problem|<noun>|<base>|||ccdaSectionName|process
+KS000000|screen for hep|<noun>|<base>|||ccdaSectionName|process
+KS000000|tests and measures|<noun>|<base>|||ccdaSectionName|process
+KS000000|locomotion/mobility/gait|<noun>|<base>|||ccdaSectionName|process
+#
+# added 2022-01-28
+KS000000|last updated|<noun>|<base>|||SLOT|process
+KS000000|urgency|<noun>|<base>|||SLOT|process
+KS000000|u rgency|<noun>|<base>|||SLOT|process
+KS000000|note from|<noun>|<base>|||SLOT|process
+KS000000|date of note|<noun>|<base>|||SLOT|process
+KS000000|entry date|<noun>|<base>|||SLOT|process
+KS000000|entry time|<noun>|<base>|||SLOT|process
+KS000000|event date|<noun>|<base>|||SLOT|process
+KS000000|event time|<noun>|<base>|||SLOT|process
+KS000000|exp cosigner|<noun>|<base>|||SLOT|process
+KS000000|cosigner|<noun>|<base>|||SLOT|process
+KS000000|re|<noun>|<base>|||SLOT|process
+KS000000|adm|<noun>|<base>|||SLOT|process
+KS000000|health care providers|<noun>|<base>|||SLOT|process
+KS000000|balance due|<noun>|<base>|||SLOT|dont_process
+KS000000|balance|<noun>|<base>|||SLOT|dont_process
+KS000000|printed|<noun>|<base>|||SLOT|dont_process
+KS000000|printed by|<noun>|<base>|||SLOT|dont_process
+KS000000|printed on|<noun>|<base>|||SLOT|dont_process
+KS000000|printed at|<noun>|<base>|||SLOT|dont_process
+KS000000|value|<noun>|<base>|||SLOT|process
+KS000000|customer number|<noun>|<base>|||SLOT|dont_process
+KS000000|service|<noun>|<base>|||SLOT|process
+KS000000|notes entered by|<noun>|<base>|||SLOT|process
+KS000000|ref range|<noun>|<base>|||SLOT|process
+KS000000|we accept|<noun>|<base>|||SLOT|dont_process
+KS000000|tax|<noun>|<base>|||SLOT|dont_process
+KS000000|sub total|<noun>|<base>|||SLOT|dont_process
+KS000000|ssn|<noun>|<base>|||SLOT|dont_process
+KS000000|social security number|<noun>|<base>|||SLOT|dont_process
+KS000000|specimen|<noun>|<base>|||SLOT|process
+KS000000|specimen description|<noun>|<base>|||SLOT|process
+KS000000|please remit payment to|<noun>|<base>|||SLOT|dont_process
+KS000000|fin|<noun>|<base>|||SLOT|process
+KS000000|fin #|<noun>|<base>|||SLOT|process
+KS000000|fin#|<noun>|<base>|||SLOT|process
+KS000000|fin number|<noun>|<base>|||SLOT|process
+KS000000|expiration date|<noun>|<base>|||SLOT|process
+KS000000|electronically signed by|<noun>|<base>|||SLOT|dont_process
+KS000000|transcribed by|<noun>|<base>|||SLOT|dont_process
+KS000000|due|<noun>|<base>|||SLOT|dont_process
+KS000000|client|<noun>|<base>|||SLOT|dont_process
+KS000000|client signiture|<noun>|<base>|||SLOT|dont_process
+KS000000|client's current gaf|<noun>|<base>|||SLOT|dont_process
+KS000000|card #|<noun>|<base>|||SLOT|dont_process
+KS000000|applied|<noun>|<base>|||SLOT|dont_process
+KS000000|verified by|<noun>|<base>|||SLOT|process
+KS000000|sig|<noun>|<base>|||SLOT|process
+KS000000|patient type|<noun>|<base>|||SLOT|process
+KS000000|organization|<noun>|<base>|||SLOT|process
+KS000000|ordering physician|<noun>|<base>|||SLOT|process
+KS000000|ordering phys|<noun>|<base>|||SLOT|process
+KS000000|ordering dr|<noun>|<base>|||SLOT|process
+KS000000|ordering md|<noun>|<base>|||SLOT|process
+KS000000|facility|<noun>|<base>|||SLOT|process
+KS000000|electronic transmission|<noun>|<base>|||SLOT|process
+KS000000|document type|<noun>|<base>|||SLOT|process
+KS000000|document name|<noun>|<base>|||SLOT|process
+KS000000|by|<noun>|<base>|||SLOT|process
+KS000000|appointment provider|<noun>|<base>|||SLOT|process
+KS000000|test performed at|<noun>|<base>|||SLOT|process
+KS000000|result type|<noun>|<base>|||SLOT|process
+KS000000|result date|<noun>|<base>|||SLOT|process
+KS000000|requesting provider|<noun>|<base>|||SLOT|process
+KS000000|peak velocity|<noun>|<base>|||SLOT|process
+KS000000|peak gradient|<noun>|<base>|||SLOT|process
+KS000000|page|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 1|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 2|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 3|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 4|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 5|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+#KS000000|page 6|<noun>|<base>|||SLOT:PageHeaderEvidence:PageFooterEvidence|dont_process
+KS000000|ordering user|<noun>|<base>|||SLOT|dont_process
+KS000000|orderable item|<noun>|<base>|||SLOT|process
+KS000000|legend|<noun>|<base>|||SLOT|process
+KS000000|lapse date|<noun>|<base>|||SLOT|process
+KS000000|from service|<noun>|<base>|||SLOT|process
+KS000000|keywords|<noun>|<base>|||SLOT|process
+KS000000|formulation|<noun>|<base>|||SLOT|process
+KS000000|attitutde|<noun>|<base>|||SLOT|process
+KS000000|posture|<noun>|<base>|||SLOT|process
+KS000000|assets|<noun>|<base>|||SLOT|process
+KS000000|affect|<noun>|<base>|||SLOT|process
+KS000000|first sample of differences|<noun>|<base>|||SLOT|process
+KS000000|second sample of differences|<noun>|<base>|||SLOT|process
+KS000000|third sample of differences|<noun>|<base>|||SLOT|process
+KS000000|forth sample of differences|<noun>|<base>|||SLOT|process
+KS000000|fifth sample of differences|<noun>|<base>|||SLOT|process
+KS000000|sixth sample of differences|<noun>|<base>|||SLOT|process
+KS000000|seventh sample of differences|<noun>|<base>|||SLOT|process
+KS000000|eigth sample of differences|<noun>|<base>|||SLOT|process
+KS000000|estimated length of stay|<noun>|<base>|||SLOT|process
+KS000000|oswestry pain inventory|<noun>|<base>|||SLOT|process
+KS000000|measurements right/left|<noun>|<base>|||SLOT|process
+KS000000|functional status score|<noun>|<base>|||SLOT|process
+KS000000|scoreing|<noun>|<base>|||SLOT|process
+KS000000|functional status measurement|<noun>|<base>|||SLOT|process
+KS000000|outcome measures|<noun>|<base>|||SLOT|process
+KS000000|nihfa mobility score |<noun>|<base>|||SLOT|process
+KS000000|nihfa mobility score*|<noun>|<base>|||SLOT|process
+KS000000|left lower extremity|<noun>|<base>|||SLOT|process
+KS000000|allowed conditions|<noun>|<base>|||SLOT|process
+KS000000|disallowed conditions|<noun>|<base>|||SLOT|process
+KS000000|allowed condition|<noun>|<base>|||SLOT|process
+KS000000|disallowed condition|<noun>|<base>|||SLOT|process
+KS000000|contested conditions|<noun>|<base>|||SLOT|process
+KS000000|contested condition|<noun>|<base>|||SLOT|process
+KS000000|academic achievement|<noun>|<base>|||SLOT|process
+KS000000|requested allowance|<noun>|<base>|||SLOT|process
+KS000000|tests administered|<noun>|<base>|||SLOT|process
+KS000000|stairs/steps|<noun>|<base>|||SLOT|process
+KS000000|swelling|<noun>|<base>|||SLOT|process
+KS000000|mmt|<noun>|<base>|||SLOT|process
+KS000000|k1d|<noun>|<base>|||SLOT|process
+KS000000|doz|<noun>|<base>|||SLOT|process
+KS000000|lives with|<noun>|<base>|||SLOT|process
+KS000000|scoring|<noun>|<base>|||SLOT|process
+KS000000|invoice number|<noun>|<base>|||SLOT|dont_process
+KS000000|abnormal movements|<noun>|<base>|||SLOT|process
+KS000000|place|<noun>|<base>|||SLOT|process
+KS000000|loc|<noun>|<base>|||SLOT|process
+KS000000|historian|<noun>|<base>|||SLOT|process
+KS000000|fin#|<noun>|<base>|||SLOT|process
+KS000000|editor|<noun>|<base>|||SLOT|process
+KS000000|domain|<noun>|<base>|||SLOT|process
+KS000000|document date|<noun>|<base>|||SLOT|process
+KS000000|document date/time|<noun>|<base>|||SLOT|process
+KS000000|when|<noun>|<base>|||SLOT|process
+KS000000|voice|<noun>|<base>|||SLOT|process
+KS000000|total dose|<noun>|<base>|||SLOT|process
+KS000000|time spent with veteran|<noun>|<base>|||SLOT|process
+KS000000|sign information|<noun>|<base>|||SLOT|process
+KS000000|setting|<noun>|<base>|||SLOT|process
+KS000000|result status|<noun>|<base>|||SLOT|process
+KS000000|referring doctor|<noun>|<base>|||SLOT|process
+KS000000|recorded by|<noun>|<base>|||SLOT|process
+KS000000|receipt acknowledged by|<noun>|<base>|||SLOT|dont_process
+KS000000|rank|<noun>|<base>|||SLOT|dont_process
+KS000000|print time|<noun>|<base>|||SLOT|process
+KS000000|preliminary md|<noun>|<base>|||SLOT|process
+KS000000|pregnant|<noun>|<base>|||SLOT|process
+KS000000|postmenopausal|<noun>|<base>|||SLOT|process
+KS000000|poc certification dates|<noun>|<base>|||SLOT|process
+KS000000|plague in ica|<noun>|<base>|||SLOT|process
+KS000000|person|<noun>|<base>|||SLOT|process
+KS000000|ordering provider|<noun>|<base>|||SLOT|process
+KS000000|order phys|<noun>|<base>|||SLOT|process
+KS000000|ordering phys|<noun>|<base>|||SLOT|process
+KS000000|ordering md|<noun>|<base>|||SLOT|process
+KS000000|ordered for|<noun>|<base>|||SLOT|process
+KS000000|orderable item|<noun>|<base>|||SLOT|process
+KS000000|oef/oif|<noun>|<base>|||SLOT|process
+KS000000|make invoice out to|<noun>|<base>|||SLOT|dont_process
+KS000000|lab legend|<noun>|<base>|||SLOT|dont_process
+KS000000|id number at facility|<noun>|<base>|||SLOT|dont_process
+KS000000|guarantor|<noun>|<base>|||SLOT|dont_process
+KS000000|gender|<noun>|<base>|||SLOT|process
+KS000000|sexual orientation|<noun>|<base>|||SLOT|process
+KS000000|fvc|<noun>|<base>|||SLOT|process
+KS000000|fasting|<noun>|<base>|||SLOT|process
+KS000000|date/time of exam|<noun>|<base>|||SLOT|process
+KS000000|date/time|<noun>|<base>|||SLOT|process
+KS000000|date reported|<noun>|<base>|||SLOT|process
+KS000000|collected|<noun>|<base>|||SLOT|process
+KS000000|charted by|<noun>|<base>|||SLOT|process
+KS000000|bsa|<noun>|<base>|||SLOT|process
+KS000000|attending dr|<noun>|<base>|||SLOT|process
+KS000000|attending md|<noun>|<base>|||SLOT|process
+KS000000|attending surgion|<noun>|<base>|||SLOT|process
+KS000000|att physician|<noun>|<base>|||SLOT|process
+KS000000|att.physician|<noun>|<base>|||SLOT|process
+KS000000|assessed by|<noun>|<base>|||SLOT|process
+KS000000|approved by|<noun>|<base>|||SLOT|process
+KS000000|approval status|<noun>|<base>|||SLOT|process
+KS000000|admit|<noun>|<base>|||SLOT|process
+KS000000|acct|<noun>|<base>|||SLOT|dont_process
+KS000000|acct #|<noun>|<base>|||SLOT|dont_process
+KS000000|acct no|<noun>|<base>|||SLOT|dont_process
+KS000000|account|<noun>|<base>|||SLOT|dont_process
+KS000000|account number|<noun>|<base>|||SLOT|dont_process
+KS000000|account #|<noun>|<base>|||SLOT|dont_process
+KS000000|visit number|<noun>|<base>|||SLOT|process
+KS000000|vendor|<noun>|<base>|||SLOT|process
+KS000000|units|<noun>|<base>|||SLOT|process
+KS000000|unit #/accl #|<noun>|<base>|||SLOT|process
+KS000000|unit #|<noun>|<base>|||SLOT|process
+KS000000|transcriptionist|<noun>|<base>|||SLOT|process
+KS000000|t ranscriptionist|<noun>|<base>|||SLOT|process
+KS000000|today's date|<noun>|<base>|||SLOT|process
+KS000000|tloc|<noun>|<base>|||SLOT|process
+KS000000|therapist|<noun>|<base>|||SLOT|process
+KS000000|technologist|<noun>|<base>|||SLOT|process
+KS000000|t echnologist|<noun>|<base>|||SLOT|process
+KS000000|technician|<noun>|<base>|||SLOT|process
+KS000000|t2|<noun>|<base>|||SLOT|process
+KS000000|t3|<noun>|<base>|||SLOT|process
+KS000000|t4|<noun>|<base>|||SLOT|process
+KS000000|t5|<noun>|<base>|||SLOT|process
+KS000000|t6|<noun>|<base>|||SLOT|process
+KS000000|t7|<noun>|<base>|||SLOT|process
+KS000000|supervised date|<noun>|<base>|||SLOT|process
+KS000000|suicidality|<noun>|<base>|||SLOT|process
+KS000000|subm dr|<noun>|<base>|||SLOT|process
+KS000000|sterile dressing change|<noun>|<base>|||SLOT|process
+KS000000|staff initials|<noun>|<base>|||SLOT|process
+KS000000|sponsor name|<noun>|<base>|||SLOT|process
+KS000000|sponsor ssn|<noun>|<base>|||SLOT|process
+KS000000|sponsor/ssn|<noun>|<base>|||SLOT|process
+KS000000|speech-language status|<noun>|<base>|||SLOT|process
+KS000000|speech language status|<noun>|<base>|||SLOT|process
+KS000000|sonographer|<noun>|<base>|||SLOT|process
+KS000000|signed electronically by|<noun>|<base>|||SLOT|process
+KS000000|signature date|<noun>|<base>|||SLOT|process
+KS000000|signature #1|<noun>|<base>|||SLOT|process
+KS000000|service rendered as|<noun>|<base>|||SLOT|process
+KS000000|service area|<noun>|<base>|||SLOT|process
+KS000000|serv|<noun>|<base>|||SLOT|process
+KS000000|seen on|<noun>|<base>|||SLOT|process
+KS000000|scheduled|<noun>|<base>|||SLOT|process
+KS000000|run user|<noun>|<base>|||SLOT|process
+KS000000|run|<noun>|<base>|||SLOT|process
+KS000000|rle|<noun>|<base>|||SLOT|process
+KS000000|reviewed by|<noun>|<base>|||SLOT|process
+KS000000|resulted by|<noun>|<base>|||SLOT|process
+KS000000|result date/time|<noun>|<base>|||SLOT|process
+KS000000|resident surgeon|<noun>|<base>|||SLOT|process
+KS000000|resident physician|<noun>|<base>|||SLOT|process
+KS000000|requested by|<noun>|<base>|||SLOT|process
+KS000000|requested physician|<noun>|<base>|||SLOT|process
+KS000000|req phys|<noun>|<base>|||SLOT|process
+KS000000|reported and signed by|<noun>|<base>|||SLOT|process
+KS000000|report mailed to|<noun>|<base>|||SLOT|process
+KS000000|removal/fianl assessment date|<noun>|<base>|||SLOT|process
+KS000000|removal date|<noun>|<base>|||SLOT|process
+KS000000|released by|<noun>|<base>|||SLOT|process
+KS000000|registration time|<noun>|<base>|||SLOT|process
+KS000000|referring zip|<noun>|<base>|||SLOT|process
+KS000000|referring state|<noun>|<base>|||SLOT|dont_process
+KS000000|referring city|<noun>|<base>|||SLOT|dont_process
+KS000000|referring address|<noun>|<base>|||SLOT|dont_process
+KS000000|referring fax #|<noun>|<base>|||SLOT|dont_process
+KS000000|referral source code|<noun>|<base>|||SLOT|process
+KS000000|refer patient to|<noun>|<base>|||SLOT|process
+KS000000|received in lab|<noun>|<base>|||SLOT|process
+KS000000|reading radiologist|<noun>|<base>|||SLOT|process
+KS000000|read by|<noun>|<base>|||SLOT|process
+KS000000|race|<noun>|<base>|||SLOT|process
+KS000000|quality|<noun>|<base>|||SLOT|process
+KS000000|pulse standing|<noun>|<base>|||SLOT|process
+KS000000|pulse sitting|<noun>|<base>|||SLOT|process
+KS000000|pulse lying|<noun>|<base>|||SLOT|process
+KS000000|pt loc|<noun>|<base>|||SLOT|process
+KS000000|psychology intern|<noun>|<base>|||SLOT|process
+KS000000|private physician|<noun>|<base>|||SLOT|process
+KS000000|private phys|<noun>|<base>|||SLOT|process
+KS000000|printed/typed name|<noun>|<base>|||SLOT|process
+KS000000|physician signature|<noun>|<base>|||SLOT|process
+KS000000|pets|<noun>|<base>|||SLOT|process
+KS000000|pay to|<noun>|<base>|||SLOT|process
+KS000000|patient verbally verified|<noun>|<base>|||SLOT|process
+KS000000|patient status|<noun>|<base>|||SLOT|process
+KS000000|current patient status|<noun>|<base>|||SLOT|process
+KS000000|current pat status|<noun>|<base>|||SLOT|process
+KS000000|current pat. status|<noun>|<base>|||SLOT|process
+KS000000|c urrent pat. status|<noun>|<base>|||SLOT|process
+KS000000|patient number|<noun>|<base>|||SLOT|dont_process
+KS000000|patient #|<noun>|<base>|||SLOT|dont_process
+KS000000|patient no|<noun>|<base>|||SLOT|dont_process
+KS000000|patient identification|<noun>|<base>|||SLOT|dont_process
+KS000000|patient id|<noun>|<base>|||SLOT|dont_process
+KS000000|patientid|<noun>|<base>|||SLOT|dont_process
+KS000000|patient dob|<noun>|<base>|||SLOT|dont_process
+KS000000|patient address|<noun>|<base>|||SLOT|dont_process
+KS000000|owner|<noun>|<base>|||SLOT|dont_process
+KS000000|outside md name|<noun>|<base>|||SLOT|dont_process
+KS000000|outpatient dates|<noun>|<base>|||SLOT|dont_process
+KS000000|order time|<noun>|<base>|||SLOT|process
+KS000000|order date|<noun>|<base>|||SLOT|process
+KS000000|location of care|<noun>|<base>|||SLOT|dont_process
+KS000000|location address|<noun>|<base>|||SLOT|dont_process
+KS000000|location phone|<noun>|<base>|||SLOT|dont_process
+KS000000|living arrangements|<noun>|<base>|||SLOT|process
+KS000000|lipase level|<noun>|<base>|||SLOT|process
+KS000000|life support devices|<noun>|<base>|||SLOT|process
+KS000000|lids/anexa|<noun>|<base>|||SLOT|process
+KS000000|level of activity|<noun>|<base>|||SLOT|process
+KS000000|lens|<noun>|<base>|||SLOT|process
+KS000000|legal|<noun>|<base>|||SLOT|process
+KS000000|learnind needs completed by|<noun>|<base>|||SLOT|process
+KS000000|last used|<noun>|<base>|||SLOT|process
+KS000000|last use|<noun>|<base>|||SLOT|process
+KS000000|last solid food|<noun>|<base>|||SLOT|process
+KS000000|last revised|<noun>|<base>|||SLOT|process
+KS000000|last menstrual period|<noun>|<base>|||SLOT|process
+KS000000|last letter|<noun>|<base>|||SLOT|process
+KS000000|last action|<noun>|<base>|||SLOT|process
+KS000000|job #|<noun>|<base>|||SLOT|dont_process
+KS000000|job number|<noun>|<base>|||SLOT|dont_process
+KS000000|job no|<noun>|<base>|||SLOT|dont_process
+KS000000|financial #|<noun>|<base>|||SLOT|dont_process
+KS000000|financial number|<noun>|<base>|||SLOT|dont_process
+KS000000|financial no|<noun>|<base>|||SLOT|dont_process
+KS000000|final report verifier|<noun>|<base>|||SLOT|process
+KS000000|male|<noun>|<base>|||SLOT|process
+KS000000|female|<noun>|<base>|||SLOT|process
+KS000000|fatigue|<noun>|<base>|||SLOT|process
+KS000000|examining provider|<noun>|<base>|||SLOT|process
+KS000000|exacerbated by|<noun>|<base>|||SLOT|process
+KS000000|employee fit for duty|<noun>|<base>|||SLOT|process
+KS000000|employee departed|<noun>|<base>|||SLOT|process
+KS000000|equipment owned|<noun>|<base>|||SLOT|process
+KS000000|current physician|<noun>|<base>|||SLOT|process
+KS000000|date needed|<noun>|<base>|||SLOT|process
+KS000000|current pc team|<noun>|<base>|||SLOT|process
+KS000000|current pc provider|<noun>|<base>|||SLOT|process
+KS000000|c urrent pc provider|<noun>|<base>|||SLOT|process
+KS000000|cpt code|<noun>|<base>|||SLOT|process
+KS000000|clinician|<noun>|<base>|||SLOT|process
+KS000000|claimant|<noun>|<base>|||SLOT|process
+KS000000|claim|<noun>|<base>|||SLOT|process
+KS000000|claim number|<noun>|<base>|||SLOT|dont_process
+KS000000|claim no|<noun>|<base>|||SLOT|dont_process
+KS000000|claim #|<noun>|<base>|||SLOT|dont_process
+KS000000|collection date|<noun>|<base>|||SLOT|process
+KS000000|carrier file no|<noun>|<base>|||SLOT|dont_process
+KS000000|carrier|<noun>|<base>|||SLOT|dont_process
+KS000000|cardiologist|<noun>|<base>|||SLOT|process
+KS000000|billing line|<noun>|<base>|||SLOT|dont_process
+KS000000|billing #|<noun>|<base>|||SLOT|dont_process
+KS000000|billing number|<noun>|<base>|||SLOT|dont_process
+KS000000|billing no|<noun>|<base>|||SLOT|dont_process
+KS000000|bed no|<noun>|<base>|||SLOT|dont_process
+KS000000|bed #|<noun>|<base>|||SLOT|dont_process
+KS000000|bed number|<noun>|<base>|||SLOT|dont_process
+KS000000|authenticated by|<noun>|<base>|||SLOT|process
+KS000000|assigning staff|<noun>|<base>|||SLOT|process
+KS000000|arrivial mode|<noun>|<base>|||SLOT|process
+KS000000|ambulance co|<noun>|<base>|||SLOT|dont_process
+KS000000|anesthesia type|<noun>|<base>|||SLOT|process
+KS000000|alleged onset date|<noun>|<base>|||SLOT|process
+KS000000|adm physician|<noun>|<base>|||SLOT|process
+KS000000|advanced practice nurse|<noun>|<base>|||SLOT|process
+KS000000|admitting physician|<noun>|<base>|||SLOT|process
+KS000000|admit provider|<noun>|<base>|||SLOT|process
+KS000000|admit/disch|<noun>|<base>|||SLOT|process
+KS000000|admit category|<noun>|<base>|||SLOT|process
+KS000000|admission type|<noun>|<base>|||SLOT|process
+KS000000|admission date|<noun>|<base>|||SLOT|process
+KS000000|admis type|<noun>|<base>|||SLOT|process
+KS000000|add-on code 1|<noun>|<base>|||SLOT|dont_process
+KS000000|add-on code 2|<noun>|<base>|||SLOT|dont_process
+KS000000|access to firearms|<noun>|<base>|||SLOT|process
+KS000000|thought content|<noun>|<base>|||SLOT|process
+KS000000|reporter status|<noun>|<base>|||SLOT|process
+KS000000|0 1 =|<noun>|<base>|||SLOT|dont_process
+KS000000|hearing|<noun>|<base>|||SLOT|process
+KS000000|constitutional|<noun>|<base>|||SLOT|process
+KS000000|result title|<noun>|<base>|||SLOT|process
+KS000000|resulting lab|<noun>|<base>|||SLOT|process
+KS000000|phone|<noun>|<base>|||SLOT|process
+KS000000|mrn|<noun>|<base>|||SLOT|process
+KS000000|legend|<noun>|<base>|||SLOT|process
+KS000000|depression|<noun>|<base>|||SLOT|process
+KS000000|cc|<noun>|<base>|||SLOT|process
+KS000000|cardiovascular|<noun>|<base>|||SLOT|process
+KS000000|back|<noun>|<base>|||SLOT|process
+KS000000|appearance|<noun>|<base>|||SLOT|process
+KS000000|activity|<noun>|<base>|||SLOT|process
+KS000000|skin|<noun>|<base>|||SLOT|process
+KS000000|sig|<noun>|<base>|||SLOT|process
+KS000000|reason|<noun>|<base>|||SLOT|process
+KS000000|psychiatric|<noun>|<base>|||SLOT|process
+KS000000|perform information|<noun>|<base>|||SLOT|process
+KS000000|other|<noun>|<base>|||SLOT|process
+KS000000|neuro|<noun>|<base>|||SLOT|process
+KS000000|.mp|<noun>|<base>|||SLOT|process
+KS000000|motor|<noun>|<base>|||SLOT|process
+KS000000|memory|<noun>|<base>|||SLOT|process
+KS000000|mcv|<noun>|<base>|||SLOT|process
+KS000000|incision|<noun>|<base>|||SLOT|process
+KS000000|hospital course|<noun>|<base>|||SLOT|process
+KS000000|head|<noun>|<base>|||SLOT|process
+KS000000|glucose|<noun>|<base>|||SLOT|process|<noun>|<base>|||SLOT|process
+KS000000|from|<noun>|<base>|||SLOT|process
+KS000000|eyes|<noun>|<base>|||SLOT|process
+KS000000|effective date|<noun>|<base>|||SLOT|process
+KS000000|editor|<noun>|<base>|||SLOT|process
+KS000000|disposition|<noun>|<base>|||SLOT|process
+KS000000|bp|<noun>|<base>|||SLOT|process
+KS000000|behavior|<noun>|<base>|||SLOT|process
+KS000000|address|<noun>|<base>|||SLOT|process
+KS000000|with|<noun>|<base>|||SLOT|process
+KS000000|vascular|<noun>|<base>|||SLOT|process
+KS000000|tongue|<noun>|<base>|||SLOT|process
+KS000000|tobacco|<noun>|<base>|||SLOT|process
+KS000000|temp|<noun>|<base>|||SLOT|process
+KS000000|temp.|<noun>|<base>|||SLOT|process
+KS000000|t|<noun>|<base>|||SLOT|process
+KS000000|tel pcm|<noun>|<base>|||SLOT|process
+KS000000|technique|<noun>|<base>|||SLOT|process
+KS000000|submitting|<noun>|<base>|||SLOT|process
+KS000000|sex|<noun>|<base>|||SLOT|process
+KS000000|service date|<noun>|<base>|||SLOT|process
+KS000000|ros|<noun>|<base>|||SLOT|process
+KS000000|ref range|<noun>|<base>|||SLOT|process
+KS000000|pul-funct|<noun>|<base>|||SLOT|process
+KS000000|prior hospitalization|<noun>|<base>|||SLOT|process
+KS000000|primary md|<noun>|<base>|||SLOT|process
+KS000000|primary diagnosis|<noun>|<base>|||SLOT|process
+KS000000|potassium|<noun>|<base>|||SLOT|process
+KS000000|payer|<noun>|<base>|||SLOT|process
+KS000000|other body parts|<noun>|<base>|||SLOT|process
+KS000000|ordered; for|<noun>|<base>|||SLOT|process
+KS000000|office visit|<noun>|<base>|||SLOT|process
+KS000000|ni|<noun>|<base>|||SLOT|process
+KS000000|neurological|<noun>|<base>|||SLOT|process
+KS000000|neurologic|<noun>|<base>|||SLOT|process
+KS000000|m type|<noun>|<base>|||SLOT|process
+KS000000|medication name|<noun>|<base>|||SLOT|process
+KS000000|mc status|<noun>|<base>|||SLOT|process
+KS000000|local title|<noun>|<base>|||SLOT|process
+KS000000|jaw|<noun>|<base>|||SLOT|process
+KS000000|insomomnia|<noun>|<base>|||SLOT|process
+KS000000|insight/judgment|<noun>|<base>|||SLOT|process
+KS000000|indications|<noun>|<base>|||SLOT|process
+KS000000|ep|<noun>|<base>|||SLOT|process
+KS000000|date first seen|<noun>|<base>|||SLOT|process
+KS000000|hypertension|<noun>|<base>|||SLOT|process
+KS000000|hpi|<noun>|<base>|||SLOT|process
+KS000000|gerd|<noun>|<base>|||SLOT|process
+KS000000|frequency of use(severity)|<noun>|<base>|||SLOT|process
+KS000000|follow up|<noun>|<base>|||SLOT|process
+KS000000|fev1|<noun>|<base>|||SLOT|process
+KS000000|father|<noun>|<base>|||SLOT|process
+KS000000|ext|<noun>|<base>|||SLOT|process
+KS000000|ent|<noun>|<base>|||SLOT|process
+KS000000|ending time|<noun>|<base>|||SLOT|process
+KS000000|encounter|<noun>|<base>|||SLOT|process
+KS000000|efw|<noun>|<base>|||SLOT|process
+KS000000|eariiest appr. date|<noun>|<base>|||SLOT|process
+KS000000|duration|<noun>|<base>|||SLOT|process
+KS000000|disch date|<noun>|<base>|||SLOT|process
+KS000000|date physician last seen|<noun>|<base>|||SLOT|process
+KS000000|cv|<noun>|<base>|||SLOT|process
+KS000000|consiousness|<noun>|<base>|||SLOT|process
+KS000000|co-morbidities|<noun>|<base>|||SLOT|process
+KS000000|common velosity|<noun>|<base>|||SLOT|process
+KS000000|body surface area|<noun>|<base>|||SLOT|process
+KS000000|body part 1|<noun>|<base>|||SLOT|process
+KS000000|body part 2|<noun>|<base>|||SLOT|process
+KS000000|body part 3|<noun>|<base>|||SLOT|process
+KS000000|body part 4|<noun>|<base>|||SLOT|process
+KS000000|body part 5|<noun>|<base>|||SLOT|process
+KS000000|anxiety|<noun>|<base>|||SLOT|process
+KS000000|anesthesia|<noun>|<base>|||SLOT|process
+KS000000|allegations|<noun>|<base>|||SLOT|process
+KS000000|airway|<noun>|<base>|||SLOT|process
+KS000000|abd|<noun>|<base>|||SLOT|process
+KS000000|who was interviewed|<noun>|<base>|||SLOT|process
+KS000000|when|<noun>|<base>|||SLOT|process
+KS000000|vitreous|<noun>|<base>|||SLOT|process
+KS000000|visit for|<noun>|<base>|||SLOT|process
+KS000000|violence|<noun>|<base>|||SLOT|process
+KS000000|verified by|<noun>|<base>|||SLOT|process
+KS000000|ventricular heart rate|<noun>|<base>|||SLOT|process
+KS000000|vascular|<noun>|<base>|||SLOT|process
+KS000000|valuables|<noun>|<base>|||SLOT|process
+KS000000|urinalysis|<noun>|<base>|||SLOT|process
+KS000000|unit #|<noun>|<base>|||SLOT|process
+KS000000|u nits|<noun>|<base>|||SLOT|process
+KS000000|unit|<noun>|<base>|||SLOT|process
+KS000000|tr velocity|<noun>|<base>|||SLOT|process
+KS000000|tr gradient|<noun>|<base>|||SLOT|process
+KS000000|tremors|<noun>|<base>|||SLOT|process
+KS000000|treatment facility|<noun>|<base>|||SLOT|process
+KS000000|transfer source|<noun>|<base>|||SLOT|process
+KS000000|touch/vibration/position|<noun>|<base>|||SLOT|process
+KS000000|total temporary disability|<noun>|<base>|||SLOT|process
+KS000000|time course|<noun>|<base>|||SLOT|process
+KS000000|tics|<noun>|<base>|||SLOT|process
+KS000000|ti|<noun>|<base>|||SLOT|process
+KS000000|temperature|<noun>|<base>|||SLOT|process
+KS000000|tel w|<noun>|<base>|||SLOT|process
+KS000000|teeth|<noun>|<base>|||SLOT|process
+KS000000|teat|<noun>|<base>|||SLOT|process
+KS000000|study performed|<noun>|<base>|||SLOT|process
+KS000000|strengths|<noun>|<base>|||SLOT|process
+KS000000|stimuli verbal|<noun>|<base>|||SLOT|process
+KS000000|stalus|<noun>|<base>|||SLOT|process|<noun>|<base>|||SLOT|process
+KS000000|staff|<noun>|<base>|||SLOT|process
+KS000000|specimens sectioned by|<noun>|<base>|||SLOT|process
+KS000000|specimen*|<noun>|<base>|||SLOT|process
+KS000000|slop data|<noun>|<base>|||SLOT|process
+KS000000|sleep|<noun>|<base>|||SLOT|process
+KS000000|siq|<noun>|<base>|||SLOT|process
+KS000000|sio|<noun>|<base>|||SLOT|process
+KS000000|secondary diagnosis|<noun>|<base>|||SLOT|process
+KS000000|sc precent|<noun>|<base>|||SLOT|process
+KS000000|scif recd date|<noun>|<base>|||SLOT|process
+KS000000|sciatica|<noun>|<base>|||SLOT|process
+KS000000|saline lock|<noun>|<base>|||SLOT|process
+KS000000|saline flush (sl)|<noun>|<base>|||SLOT|process
+KS000000|route slip |<noun>|<base>|||SLOT|process
+KS000000|rescrictions|<noun>|<base>|||SLOT|process
+KS000000|responsiveness|<noun>|<base>|||SLOT|process
+KS000000|respirations|<noun>|<base>|||SLOT|process
+KS000000|resp|<noun>|<base>|||SLOT|process
+KS000000|reside|<noun>|<base>|||SLOT|process
+KS000000|requesting location|<noun>|<base>|||SLOT|process
+KS000000|report ft|<noun>|<base>|||SLOT|process
+KS000000|(repeating phrase)|<noun>|<base>|||SLOT|process
+KS000000|referred by|<noun>|<base>|||SLOT|process
+KS000000|referral source code|<noun>|<base>|||SLOT|process
+KS000000|rectal|<noun>|<base>|||SLOT|process
+KS000000|recorded by|<noun>|<base>|||SLOT|process
+KS000000|recent memory|<noun>|<base>|||SLOT|process
+KS000000|recent|<noun>|<base>|||SLOT|process
+KS000000|prosthesis|<noun>|<base>|||SLOT|process
+KS000000|free text dx|<noun>|<base>|||SLOT|process
+KS000000|external peak systolic velocity|<noun>|<base>|||SLOT|process
+KS000000|distal internal peak systolic velocity|<noun>|<base>|||SLOT|process
+KS000000|systolic dimension|<noun>|<base>|||SLOT|process
+KS000000|septum diastolic|<noun>|<base>|||SLOT|process
+KS000000|common velocity|<noun>|<base>|||SLOT|process
+KS000000|vessels|<noun>|<base>|||SLOT|process
+KS000000|verterbral flow|<noun>|<base>|||SLOT|process
+KS000000|toungue biting|<noun>|<base>|||SLOT|process
+KS000000|tab|<noun>|<base>|||SLOT|process
+KS000000|surgical incision|<noun>|<base>|||SLOT|process
+KS000000|stage|<noun>|<base>|||SLOT|process
+KS000000|spectral broadening|<noun>|<base>|||SLOT|process
+KS000000|si (a4c)|<noun>|<base>|||SLOT|process
+KS000000|shoulders|<noun>|<base>|||SLOT|process
+KS000000|risk adjusted score|<noun>|<base>|||SLOT|process
+KS000000|right tricep|<noun>|<base>|||SLOT|process
+KS000000|right mca|<noun>|<base>|||SLOT|process
+KS000000|right lateral bending|<noun>|<base>|||SLOT|process
+KS000000|right brachioradialas|<noun>|<base>|||SLOT|process
+KS000000|reports hx of|<noun>|<base>|||SLOT|process
+KS000000|rc number of insertion|<noun>|<base>|||SLOT|process
+#
+# added 3/30/2022 based on fn analysis
+#
+KS000000|vertebral flow|<noun>|<base>|||SLOT|process
+KS000000|patient's age|<noun>|<base>|||SLOT|process
+KS000000|palate|<noun>|<base>|||SLOT|process
+KS000000|mean (mm)|<noun>|<base>|||SLOT|process
+KS000000|mean (20)|<noun>|<base>|||SLOT|process
+KS000000|level of pain|<noun>|<base>|||SLOT|process
+KS000000|learning needs completed by|<noun>|<base>|||SLOT|process
+KS000000|jehovah's witness|<noun>|<base>|||SLOT|process
+KS000000|ivda|<noun>|<base>|||SLOT|process
+KS000000|ht|<noun>|<base>|||SLOT|process
+KS000000|denies hx of|<noun>|<base>|||SLOT|process
+KS000000|body mass index|<noun>|<base>|||SLOT|process

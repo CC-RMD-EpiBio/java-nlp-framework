@@ -1,0 +1,187 @@
+#==============================================
+#
+# C:/ciitizen/softwareRepos/nlp/ciitizen-nlp-resources/src/main/resources/resources/com/ciitizen/framework/medications/doseForm.lragr This resource details dose forms taken from rxnorm tty categories
+#
+# Author: divita
+# Date: 2018-08-05_14_53_01
+#
+#    id|key|pos|inflection|citationForm|uninflectedForm|Category|subCategory
+#
+#==============================================
+M00000|augmented topical cream|<noun>|<all>|augmented topical cream|augmented topical cream|DoseForm|
+M00001|augmented topical gel|<noun>|<all>|augmented topical gel|augmented topical gel|DoseForm|
+M00002|augmented topical lotion|<noun>|<all>|augmented topical lotion|augmented topical lotion|DoseForm|
+M00003|augmented topical ointment|<noun>|<all>|augmented topical ointment|augmented topical ointment|DoseForm|
+M00004|auto-injector|<noun>|<all>|auto-injector|auto-injector|DoseForm|
+M00005|bar|<noun>|<all>|bar|bar|DoseForm|
+M00006|bar soap|<noun>|<all>|bar soap|bar soap|DoseForm|
+M00007|bubbles of gas that are introduced into a liquid|<noun>|<all>|bubbles of gas that are introduced into a liquid|bubbles of gas that are introduced into a liquid|DoseForm|
+M00008|buccal film|<noun>|<all>|buccal film|buccal film|DoseForm|
+M00009|buccal tablet|<noun>|<all>|buccal tablet|buccal tablet|DoseForm|
+M00010|capsule|<noun>|<all>|capsule|capsule|DoseForm|
+M00011|cartridge|<noun>|<all>|cartridge|cartridge|DoseForm|
+M00012|chewable tablet|<noun>|<all>|chewable tablet|chewable tablet|DoseForm|
+M00013|chewing gum|<noun>|<all>|chewing gum|chewing gum|DoseForm|
+M00014|cream|<noun>|<all>|cream|cream|DoseForm|
+M00015|delayed release oral capsule|<noun>|<all>|delayed release oral capsule|delayed release oral capsule|DoseForm|
+M00016|delayed release oral tablet|<noun>|<all>|delayed release oral tablet|delayed release oral tablet|DoseForm|
+M00017|disintegrating oral tablet|<noun>|<all>|disintegrating oral tablet|disintegrating oral tablet|DoseForm|
+M00018|douche|<noun>|<all>|douche|douche|DoseForm|
+M00019|drug implant|<noun>|<all>|drug implant|drug implant|DoseForm|
+M00020|dry powder inhaler|<noun>|<all>|dry powder inhaler|dry powder inhaler|DoseForm|
+M00021|effervescent oral tablet|<noun>|<all>|effervescent oral tablet|effervescent oral tablet|DoseForm|
+M00022|enema|<noun>|<all>|enema|enema|DoseForm|
+M00022|rectal solution|<noun>|<all>|enema|enema|DoseForm|
+M00022|rectal suspension|<noun>|<all>|enema|enema|DoseForm|
+M00023|extended release oral capsule|<noun>|<all>|extended release oral capsule|extended release oral capsule|DoseForm|
+M00024|extended release oral tablet|<noun>|<all>|extended release oral tablet|extended release oral tablet|DoseForm|
+M00025|extended release suspension|<noun>|<all>|extended release suspension|extended release suspension|DoseForm|
+M00026|fine particles dispersed in a medium resulting in a solid substance|<noun>|<all>|fine particles dispersed in a medium resulting in a solid substance|fine particles dispersed in a medium resulting in a solid substance|DoseForm|
+M00027|foam|<noun>|<all>|foam|foam|DoseForm|
+M00028|gas for inhalation|<noun>|<all>|gas for inhalation|gas for inhalation|DoseForm|
+M00029|gel|<noun>|<all>|gel|gel|DoseForm|
+M00029|jelly|<noun>|<all>|gel|gel|DoseForm|
+M00030|granules|<noun>|<all>|granules|granules|DoseForm|
+M00031|granules for oral solution|<noun>|<all>|granules for oral solution|granules for oral solution|DoseForm|
+M00032|granules for oral suspension|<noun>|<all>|granules for oral suspension|granules for oral suspension|DoseForm|
+M00033|granules intended to be taken by mouth|<noun>|<all>|granules intended to be taken by mouth|granules intended to be taken by mouth|DoseForm|
+M00034|inhalant|<noun>|<all>|inhalant|inhalant|DoseForm|
+M00035|inhalant powder|<noun>|<all>|inhalant powder|inhalant powder|DoseForm|
+M00035|powdered dose inhaler|<noun>|<all>|inhalant powder|inhalant powder|DoseForm|
+M00036|inhalant solution|<noun>|<all>|inhalant solution|inhalant solution|DoseForm|
+M00037|inhalants|<noun>|<all>|inhalants|inhalants|DoseForm|
+M00038|injectable foam|<noun>|<all>|injectable foam|injectable foam|DoseForm|
+M00039|injectable solution|<noun>|<all>|injectable solution|injectable solution|DoseForm|
+M00040|injectable suspension|<noun>|<all>|injectable suspension|injectable suspension|DoseForm|
+M00041|injection|<noun>|<all>|injection|injection|DoseForm|
+M00042|intraperitoneal solution|<noun>|<all>|intraperitoneal solution|intraperitoneal solution|DoseForm|
+M00043|intratracheal suspension|<noun>|<all>|intratracheal suspension|intratracheal suspension|DoseForm|
+M00044|intrauterine system|<noun>|<all>|intrauterine system|intrauterine system|DoseForm|
+M00045|irrigation solution|<noun>|<all>|irrigation solution|irrigation solution|DoseForm|
+M00046|jet injector|<noun>|<all>|jet injector|jet injector|DoseForm|
+M00047|liquid cleanser|<noun>|<all>|liquid cleanser|liquid cleanser|DoseForm|
+M00048|liquids|<noun>|<all>|liquids|liquids|DoseForm|
+M00049|lotion|<noun>|<all>|lotion|lotion|DoseForm|
+M00050|medicated bar soap|<noun>|<all>|medicated bar soap|medicated bar soap|DoseForm|
+M00051|medicated liquid soap|<noun>|<all>|medicated liquid soap|medicated liquid soap|DoseForm|
+M00052|medicated pad)|<noun>|<all>|medicated pad|medicated pad|DoseForm|
+M00052|medicated swab|<noun>|<all>|medicated pad|medicated pad|DoseForm|
+M00053|medicated patch|<noun>|<all>|medicated patch|medicated patch|DoseForm|
+M00054|medicated shampoo|<noun>|<all>|medicated shampoo|medicated shampoo|DoseForm|
+M00055|medicated tape|<noun>|<all>|medicated tape|medicated tape|DoseForm|
+M00056|metered dose inhaler|<noun>|<all>|metered dose inhaler|metered dose inhaler|DoseForm|
+M00057|metered dose nasal spray|<noun>|<all>|metered dose nasal spray|metered dose nasal spray|DoseForm|
+M00058|mouthwash|<noun>|<all>|mouthwash|mouthwash|DoseForm|
+M00058|oral rinse|<noun>|<all>|mouthwash|mouthwash|DoseForm|
+M00058|topical dental solution|<noun>|<all>|mouthwash|mouthwash|DoseForm|
+M00059|mucosal spray|<noun>|<all>|mucosal spray|mucosal spray|DoseForm|
+M00060|mucous membrane topical solution|<noun>|<all>|mucous membrane topical solution|mucous membrane topical solution|DoseForm|
+M00061|nasal gel|<noun>|<all>|nasal gel|nasal gel|DoseForm|
+M00061|nasal jelly|<noun>|<all>|nasal gel|nasal gel|DoseForm|
+M00062|nasal inhalant|<noun>|<all>|nasal inhalant|nasal inhalant|DoseForm|
+M00063|nasal ointment|<noun>|<all>|nasal ointment|nasal ointment|DoseForm|
+M00064|nasal powder|<noun>|<all>|nasal powder|nasal powder|DoseForm|
+M00065|nasal solution|<noun>|<all>|nasal solution|nasal solution|DoseForm|
+M00065|nasal drops|<noun>|<all>|nasal solution|nasal solution|DoseForm|
+M00065|nose drops|<noun>|<all>|nasal solution|nasal solution|DoseForm|
+M00066|nasal spray|<noun>|<all>|nasal spray|nasal spray|DoseForm|
+M00067|nasal suspension|<noun>|<all>|nasal suspension|nasal suspension|DoseForm|
+M00068|numerous particles forming a larger unit|<noun>|<all>|numerous particles forming a larger unit|numerous particles forming a larger unit|DoseForm|
+M00069|oil|<noun>|<all>|oil|oil|DoseForm|
+M00070|ointment|<noun>|<all>|ointment|ointment|DoseForm|
+M00071|ophthalmic cream|<noun>|<all>|ophthalmic cream|ophthalmic cream|DoseForm|
+M00072|ophthalmic gel|<noun>|<all>|ophthalmic gel|ophthalmic gel|DoseForm|
+M00072|ophthalmic jelly<noun>|<all>|ophthalmic gel|ophthalmic gel|DoseForm|
+M00073|ophthalmic irrigation solution|<noun>|<all>|ophthalmic irrigation solution|ophthalmic irrigation solution|DoseForm|
+M00074|ophthalmic ointment|<noun>|<all>|ophthalmic ointment|ophthalmic ointment|DoseForm|
+M00075|ophthalmic solution|<noun>|<all>|ophthalmic solution|ophthalmic solution|DoseForm|
+M00075|ophthalmic drops|<noun>|<all>|ophthalmic solution|ophthalmic solution|DoseForm|
+M00075|eye drops|<noun>|<all>|ophthalmic solution|ophthalmic solution|DoseForm|
+M00075|ophthalmic suspension|<noun>|<all>|ophthalmic solution|ophthalmic solution|DoseForm|
+M00077|oral capsule|<noun>|<all>|oral capsule|oral capsule|DoseForm|
+M00078|oral cream|<noun>|<all>|oral cream|oral cream|DoseForm|
+M00079|oral flakes|<noun>|<all>|oral flakes|oral flakes|DoseForm|
+M00080|oral foam|<noun>|<all>|oral foam|oral foam|DoseForm|
+M00081|oral gel|<noun>|<all>|oral gel|oral gel|DoseForm|
+M00081|oral jelly|<noun>|<all>|oral gel|oral gel|DoseForm|
+M00082|oral granules|<noun>|<all>|oral granules|oral granules|DoseForm|
+M00083|oral lozenge|<noun>|<all>|oral lozenge|oral lozenge|DoseForm|
+M00083|oral troche|<noun>|<all>|oral lozenge|oral lozenge|DoseForm|
+M00084|oral ointment|<noun>|<all>|oral ointment|oral ointment|DoseForm|
+M00085|oral paste|<noun>|<all>|oral paste|oral paste|DoseForm|
+M00086|oral pellet|<noun>|<all>|oral pellet|oral pellet|DoseForm|
+M00087|oral powder|<noun>|<all>|oral powder|oral powder|DoseForm|
+M00088|oral solution|<noun>|<all>|oral solution|oral solution|DoseForm|
+M00088|oral drops|<noun>|<all>|oral solution|oral solution|DoseForm|
+M00089|oral spray|<noun>|<all>|oral spray|oral spray|DoseForm|
+M00090|oral strip|<noun>|<all>|oral strip|oral strip|DoseForm|
+M00091|oral suspension|<noun>|<all>|oral suspension|oral suspension|DoseForm|
+M00092|oral tablet|<noun>|<all>|oral tablet|oral tablet|DoseForm|
+M00092|caplet|<noun>|<all>|oral tablet|oral tablet|DoseForm|
+M00093|oral tablet with sensor|<noun>|<all>|oral tablet with sensor|oral tablet with sensor|DoseForm|
+M00094|oral wafer|<noun>|<all>|oral wafer|oral wafer|DoseForm|
+M00095|otic ointment|<noun>|<all>|otic ointment|otic ointment|DoseForm|
+M00096|otic solution|<noun>|<all>|otic solution (otic drops; ear drops)|otic solution (otic drops; ear drops)|DoseForm|
+M00096|otic drops|<noun>|<all>|otic solution (otic drops; ear drops)|otic solution (otic drops; ear drops)|DoseForm|
+M00096|ear drops|<noun>|<all>|otic solution (otic drops; ear drops)|otic solution (otic drops; ear drops)|DoseForm|
+M00097|otic suspension|<noun>|<all>|otic suspension (otic drops; ear drops)|otic suspension (otic drops; ear drops)|DoseForm|
+M00098|pack|<noun>|<all>|pack|pack|DoseForm|
+M00099|paste|<noun>|<all>|paste|paste|DoseForm|
+M00100|patch|<noun>|<all>|patch|patch|DoseForm|
+M00101|pen injector|<noun>|<all>|pen injector|pen injector|DoseForm|
+M00102|powder|<noun>|<all>|powder|powder|DoseForm|
+M00103|powder for nasal solution|<noun>|<all>|powder for nasal solution|powder for nasal solution|DoseForm|
+M00104|powder for oral solution|<noun>|<all>|powder for oral solution|powder for oral solution|DoseForm|
+M00105|powder for oral suspension|<noun>|<all>|powder for oral suspension|powder for oral suspension|DoseForm|
+M00106|powder spray|<noun>|<all>|powder spray|powder spray|DoseForm|
+M00107|prefilled applicator|<noun>|<all>|prefilled applicator|prefilled applicator|DoseForm|
+M00108|prefilled syringe|<noun>|<all>|prefilled syringe|prefilled syringe|DoseForm|
+M00109|rectal cream|<noun>|<all>|rectal cream|rectal cream|DoseForm|
+M00110|rectal foam|<noun>|<all>|rectal foam|rectal foam|DoseForm|
+M00111|rectal gel|<noun>|<all>|rectal gel (rectal jelly)|rectal gel (rectal jelly)|DoseForm|
+M00111|rectal jelly|<noun>|<all>|rectal gel (rectal jelly)|rectal gel (rectal jelly)|DoseForm|
+M00112|rectal ointment|<noun>|<all>|rectal ointment|rectal ointment|DoseForm|
+M00113|rectal solution|<noun>|<all>|rectal solution|rectal solution|DoseForm|
+M00114|rectal spray|<noun>|<all>|rectal spray|rectal spray|DoseForm|
+M00115|rectal suppository|<noun>|<all>|rectal suppository|rectal suppository|DoseForm|
+M00116|solid|<noun>|<all>|solid|solid|DoseForm|
+M00117|solution|<noun>|<all>|solution|solution|DoseForm|
+M00118|spray|<noun>|<all>|spray|spray|DoseForm|
+M00119|sublingual powder|<noun>|<all>|sublingual powder|sublingual powder|DoseForm|
+M00120|sublingual tablet|<noun>|<all>|sublingual tablet|sublingual tablet|DoseForm|
+M00121|suppository|<noun>|<all>|suppository|suppository|DoseForm|
+M00122|suspension|<noun>|<all>|suspension|suspension|DoseForm|
+M00123|sustained release buccal tablet|<noun>|<all>|sustained release buccal tablet|sustained release buccal tablet|DoseForm|
+M00124|tablet|<noun>|<all>|tablet|tablet|DoseForm|
+M00125|tablet for oral suspension|<noun>|<all>|tablet for oral suspension|tablet for oral suspension|DoseForm|
+M00126|toothpaste|<noun>|<all>|toothpaste|toothpaste|DoseForm|
+M00127|topical cake|<noun>|<all>|topical cake|topical cake|DoseForm|
+M00128|topical cream|<noun>|<all>|topical cream|topical cream|DoseForm|
+M00129|topical foam|<noun>|<all>|topical foam|topical foam|DoseForm|
+M00130|topical gel|<noun>|<all>|topical gel (topical jelly)|topical gel (topical jelly)|DoseForm|
+M00130|topical jelly|<noun>|<all>|topical gel (topical jelly)|topical gel (topical jelly)|DoseForm|
+M00131|topical liquefied gas|<noun>|<all>|topical liquefied gas|topical liquefied gas|DoseForm|
+M00132|topical lotion|<noun>|<all>|topical lotion|topical lotion|DoseForm|
+M00133|topical oil|<noun>|<all>|topical oil|topical oil|DoseForm|
+M00134|topical ointment|<noun>|<all>|topical ointment|topical ointment|DoseForm|
+M00135|topical powder|<noun>|<all>|topical powder|topical powder|DoseForm|
+M00136|topical solution|<noun>|<all>|topical solution (tincture; liniment)|topical solution (tincture; liniment)|DoseForm|
+M00136|tincture|<noun>|<all>|topical solution (tincture; liniment)|topical solution (tincture; liniment)|DoseForm|
+M00136|liniment|<noun>|<all>|topical solution (tincture; liniment)|topical solution (tincture; liniment)|DoseForm|
+M00137|topical spray|<noun>|<all>|topical spray (dermal spray)|topical spray (dermal spray)|DoseForm|
+M00137|dermal spray|<noun>|<all>|topical spray (dermal spray)|topical spray (dermal spray)|DoseForm|
+M00138|topical suspension|<noun>|<all>|topical suspension|topical suspension|DoseForm|
+M00139|transdermal system|<noun>|<all>|transdermal system|transdermal system|DoseForm|
+M00140|urethral gel|<noun>|<all>|urethral gel (urethral jelly)|urethral gel (urethral jelly)|DoseForm|
+M00140|urethral jelly|<noun>|<all>|urethral gel (urethral jelly)|urethral gel (urethral jelly)|DoseForm|
+M00141|urethral suppository|<noun>|<all>|urethral suppository|urethral suppository|DoseForm|
+M00142|vaginal cream|<noun>|<all>|vaginal cream|vaginal cream|DoseForm|
+M00143|vaginal film|<noun>|<all>|vaginal film|vaginal film|DoseForm|
+M00144|vaginal foam|<noun>|<all>|vaginal foam|vaginal foam|DoseForm|
+M00145|vaginal gel|<noun>|<all>|vaginal gel (vaginal jelly)|vaginal gel (vaginal jelly)|DoseForm|
+M00145|vaginal jelly|<noun>|<all>|vaginal gel (vaginal jelly)|vaginal gel (vaginal jelly)|DoseForm|
+M00146|vaginal ointment|<noun>|<all>|vaginal ointment|vaginal ointment|DoseForm|
+M00147|vaginal ring|<noun>|<all>|vaginal ring|vaginal ring|DoseForm|
+M00148|vaginal suppository|<noun>|<all>|vaginal suppository|vaginal suppository|DoseForm|
+M00149|vaginal tablet|<noun>|<all>|vaginal tablet|vaginal tablet|DoseForm|
+M00150||<noun>|<all>|||DoseForm|

@@ -1,0 +1,315 @@
+/*******************************************************************************
+ * ---------------------------------------------------------------------------
+ *                                   NIH Clinical Center 
+ *                             Department of Rehabilitation 
+ *                        Epidemiology and Biostatistics Branch 
+ *                                         2019
+ *    
+ *  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+ *  
+ *  This license allows you to use, share and  adapt for any purpose, provided:
+ *     Provide attribution to the creators of this work within your work.
+ *     Indicate if changes were made to this work.
+ *     No claim to merchantability, implied warranty, or liability can be made.
+ *     
+ *   When attributing this code, please make reference to
+ *    [citation/url here] .  
+ *    
+ *     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+ *  
+ *  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+ ******************************************************************************/
+// ------------------------------------------------------------
+/**
+ * FrameworkLogging is a wrapper around the common things one
+ * needs to do with the java.utils.logging facilities.
+ * 
+ * Attempts to set up a file based handler (using the xmlFormatter
+ * by default for use with a logging viewer like jlogviewer
+ * (see thirdParty/loggers)
+ * 
+ * It will also set up a console handler using simpleFormatter
+ * 
+ * @author Guy Divita
+ *         Apr 2, 2013
+ * 
+ *         ------------------------------------------------------------
+ * 
+ * 
+ * 
+ *         -------------------------------------------------------------
+ */
+// -------------------------------------------------------------
+package gov.nih.cc.rmd.nlp.framework.utils;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import org.apache.log4j.Appender;
+import org.apache.log4j.FileAppender;
+import org.apache.log4j.Layout;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
+import org.apache.log4j.PropertyConfigurator;
+
+
+public class FrameworkLogging {
+
+   
+  // End FrameworkLogging Class -------------------------------
+  
+  
+  
+  // =======================================================
+  /**
+   * initializeLogging initializes the logging based on the following
+   * arguments 
+   * 
+   * @param pArgs
+   * @throws Exception 
+   */
+  // =======================================================
+  public static PrintWriter initializeLogging(String[] pArgs) throws Exception {
+    
+   String   logDir = U.getOption(pArgs, "--logDir=", "./logs");
+    
+    // --------------------
+    // Set up a log file
+    // --------------------
+    try {
+      U.mkDir(logDir );
+    } catch (Exception e) {
+      e.printStackTrace();
+      String msg = "Issue with creating the log files " + e.getMessage();
+       GLog.println( GLog.ERROR_LEVEL, FrameworkLogging.class, "initializeLogging",  msg );
+       throw new RuntimeException(msg);
+    
+    }
+    
+   //Logger logger = FrameworkLogging.initializeLogging(logFileName, loggerConfigName, "gov.nih.cc.rmd.framework");
+   PrintWriter out = GLog.setLogDir( logDir);
+   return out;
+  }  // End Method initializeLogging() ======================
+  
+
+
+  // ------------------------------------------
+  /**
+   * initializeLogging creates log for the class, and sets up
+   * a filename to write to (an appender) 
+   *
+   *
+   * @param pLogFileName
+   * @param pLoggerConfigFileName
+   * @param pClassName
+   * @return Logger
+   */
+  // ------------------------------------------
+   public static void initializeLogging(String pLogFileName, 
+                                          String pLoggerConfigFileName, 
+                                          String pClassName) {
+    
+    
+      // ----------------------------------
+     // Create an output file name
+     String dateStamp = U.getDateStampSimple();
+     String logFileName = pLogFileName + "_" + dateStamp + ".log";
+     String lastName = makeAppenderName( pLogFileName);
+     gLogFileName = logFileName;
+     
+     String msg = "================================================================================\n" +
+                  "====   Log is going to " + gLogFileName +                                " =====\n" +
+                  "=================================================================================" ;
+     GLog.println( GLog.STD___LEVEL, FrameworkLogging.class, "initializeLogging", msg);
+     
+     msg = "================================================================================\n" +
+           "====   The configuration file came from " +   pLoggerConfigFileName +     " =====\n" +
+           "=================================================================================" ;
+     GLog.println( GLog.STD___LEVEL, FrameworkLogging.class, "initializeLogging",msg);
+     gConfigFileName = pLoggerConfigFileName;
+     
+     // -----------------------------------
+     // Read in the configuration file
+     PropertyConfigurator.configure( pLoggerConfigFileName );
+
+     // ----------------------------------
+     // create a layout
+     Layout layout = new PatternLayout( fancyFormat );
+     
+     // ----------------------------------
+     // Create a formatted log file (appender) 
+     gAppender = null;
+     try {
+      
+       gAppender = new FileAppender(layout, logFileName);
+       ((FileAppender)gAppender).setName(lastName);
+       ((FileAppender) gAppender).setAppend(false);
+       
+       GLog.println( GLog.STD___LEVEL, FrameworkLogging.class, "initializeLogging","Set the file name to the log file :" + logFileName + "| for the appender named "+ lastName);
+       
+     } catch (IOException e1) {
+       GLog.println( GLog.ERROR_LEVEL, FrameworkLogging.class, "initializeLogging","Not able to add the filename to the logger " + e1.getMessage());
+     }  
+     
+   
+    
+    
+   }  // End Method initializeLogging() -----------------------
+  
+
+  // ------------------------------------------
+  /**
+   * makeAppenderName
+   *   will return one of three names - if the logfile name contains server 
+   *   the appender name (that will match in the config file will be "server"
+   *   
+   *   Same with client, kickoff.
+   *   
+   *   If none of these match the appender name will be "logg"
+   *   
+   *   These should match the appender names in the target/config/xxx.properties file
+   *   so that one can turn on or off levels based on these appender names
+   *
+   * @param pLogFileName
+   * @return String
+   */
+  // ------------------------------------------
+  public static String makeAppenderName(String pLogFileName) {
+    
+    String name = "logg";
+    
+    if      ( pLogFileName.toLowerCase().contains("server"))
+      name = "server";
+    
+    else if ( pLogFileName.toLowerCase().contains("client"))
+      name = "client";
+    
+    else if ( pLogFileName.toLowerCase().contains("kickoff"))
+      name = "kickoff";
+    
+    return name;
+    
+    
+  }  // End Method makeAppenderName() -----------------------
+  
+
+
+  // ------------------------------------------
+  /**
+   * initialize sets up a console only logger with all logging
+   * turned on
+   *
+   *
+   * @param pClassName
+   * @return Logger
+   */
+  // ------------------------------------------
+  public static void initialize(String pClassName) {
+   
+   
+   String msg = "================================================================================\n" +
+                "====   Log is going to Standard Log4J appender                             =====\n" +
+                "=================================================================================" ;
+   GLog.println( GLog.STD___LEVEL, FrameworkLogging.class, "initialize",msg);
+   
+   // -----------------------------------
+   // Read in the configuration file
+   // PropertyConfigurator.configure( pLoggerConfigFileName );
+ 
+  
+    
+  } // End Method initialize() -----------------------
+  
+
+
+  // ------------------------------------------
+  /**
+   * getFileName returns the location of the logfile
+   *
+   * @return String
+   */
+  // ------------------------------------------
+  public static String getFileName() {
+   return gLogFileName;
+    
+    
+  }  // End Method getFileName() -----------------------
+
+  // ------------------------------------------
+  /**
+   * addLogger will add a logger to the log manager
+   *
+   *
+   * @param pClassName
+   * @throws Exception  (will barf if the a log manager doesn't exist yet
+   */
+  // ------------------------------------------
+  public static Logger addLogger(String pClassName )  {
+    
+    Logger logger = null;
+    
+    // -----------------------------------
+    // Create a logger
+    logger = org.apache.log4j.LogManager.getLogger( pClassName );
+    
+    if ( gAppender == null) {
+      logger.warn("No logfile was set up for this logger, use initialize instead to set the logfile name");
+     
+    } else {
+      
+   
+      // ----------------------------------
+      // Attach the log file to the logger
+      logger.addAppender(gAppender);
+    }
+   
+    
+    // ---------------------------------
+    // If there is no config file name turn the logging level on to trace for this class
+    if ( gConfigFileName == null )
+      logger.setLevel(Level.TRACE);
+    
+    logger.info("Created a logger for " + pClassName);
+   
+    return ( logger);
+ 
+  }  // End Method addLogger() -----------------------
+
+
+  public static void close() {
+    GLog.close();
+  } // End Method close() ======================
+  
+
+  public static PrintWriter getPrintWriter() {
+   return  GLog.getErr();
+  }   // End Method getPrintWriter() ======================
+  
+  
+  @Override
+  protected void finalize() {
+    GLog.close();
+    
+  }
+  
+  //-----------------------------------
+  /**
+   * Class Variables
+   * 
+   */
+  // ------------------------------------
+ 
+  private static String    gLogFileName = null;
+  private static String gConfigFileName = null;
+  private static Appender     gAppender = null;
+ 
+  private static final String simpleFormat = "%d{ISO8601}|%t|%c|%m%n";   // %d = dateTime %t = thread %c = loggerName %m = message
+  private static final String datedFormat  = "%m|%c|%d{ISO8601}|%t|%n";
+  private static final String fancyFormat  = "~~BEGIN~~|%d{ISO8601}|%t|~~~~~~~~~~~~%n" +
+                   "%m%n" +
+                   "~~END ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%n%n";
+                   
+  
+
+}

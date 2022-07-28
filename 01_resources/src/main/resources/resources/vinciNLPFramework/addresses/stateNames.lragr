@@ -1,0 +1,121 @@
+#|State|<noun>|<base>|Abbreviation||AddressEvidence;State,commonwealth,territory
+S000001|Alabama|<noun>|<base>|AL||AddressEvidence;State
+S000002|Alaska|<noun>|<base>|AK||AddressEvidence;State
+S000003|Arizona|<noun>|<base>|AZ||AddressEvidence;State
+S000004|Arkansas|<noun>|<base>|AR||AddressEvidence;State
+S000005|California|<noun>|<base>|CA||AddressEvidence;State
+S000006|Colorado|<noun>|<base>|CO||AddressEvidence;State
+S000007|Connecticut|<noun>|<base>|CT||AddressEvidence;State
+S000008|Delaware|<noun>|<base>|DE||AddressEvidence;State
+S000009|Florida|<noun>|<base>|FL||AddressEvidence;State
+S0000010|Georgia|<noun>|<base>|GA||AddressEvidence;State
+S0000011|Hawaii|<noun>|<base>|HI||AddressEvidence;State
+S0000012|Idaho|<noun>|<base>|ID||AddressEvidence;State
+S0000013|Illinois|<noun>|<base>|IL||AddressEvidence;State
+S0000014|Indiana|<noun>|<base>|IN||AddressEvidence;State
+S0000015|Iowa|<noun>|<base>|IA||AddressEvidence;State
+S0000016|Kansas|<noun>|<base>|KS||AddressEvidence;State
+S0000017|Kentucky|<noun>|<base>|KY||AddressEvidence;Commonwealth
+S0000018|Louisiana|<noun>|<base>|LA||AddressEvidence;State
+S0000019|Maine|<noun>|<base>|ME||AddressEvidence;State
+S0000020|Maryland|<noun>|<base>|MD||AddressEvidence;State
+S0000021|Massachusetts|<noun>|<base>|MA||AddressEvidence;Commonwealth
+S0000022|Michigan|<noun>|<base>|MI||AddressEvidence;State
+S0000023|Minnesota|<noun>|<base>|MN||AddressEvidence;State
+S0000024|Mississippi|<noun>|<base>|MS||AddressEvidence;State
+S0000025|Missouri|<noun>|<base>|MO||AddressEvidence;State
+S0000026|Montana|<noun>|<base>|MT||AddressEvidence;State
+S0000027|Nebraska|<noun>|<base>|NE||AddressEvidence;State
+S0000028|Nevada|<noun>|<base>|NV||AddressEvidence;State
+S0000029|New Hampshire|<noun>|<base>|NH||AddressEvidence;State
+S0000030|New Jersey|<noun>|<base>|NJ||AddressEvidence;State
+S0000031|New Mexico|<noun>|<base>|NM||AddressEvidence;State
+S0000032|New York|<noun>|<base>|NY||AddressEvidence;State
+S0000033|North Carolina|<noun>|<base>|NC||AddressEvidence;State
+S0000034|North Dakota|<noun>|<base>|ND||AddressEvidence;State
+S0000035|Ohio|<noun>|<base>|OH||AddressEvidence;State
+S0000036|Oklahoma|<noun>|<base>|OK||AddressEvidence;State
+S0000037|Oregon|<noun>|<base>|OR||AddressEvidence;State
+S0000038|Pennsylvania|<noun>|<base>|PA||AddressEvidence;Commonwealth
+S0000039|Rhode Island|<noun>|<base>|RI||AddressEvidence;State
+S0000040|South Carolina|<noun>|<base>|SC||AddressEvidence;State
+S0000041|South Dakota|<noun>|<base>|SD||AddressEvidence;State
+S0000042|Tennessee|<noun>|<base>|TN||AddressEvidence;State
+S0000043|Texas|<noun>|<base>|TX||AddressEvidence;State
+S0000044|Utah|<noun>|<base>|UT||AddressEvidence;State
+S0000045|Vermont|<noun>|<base>|VT||AddressEvidence;State
+S0000046|Virginia|<noun>|<base>|VA||AddressEvidence;Commonwealth
+S0000047|Washington|<noun>|<base>|WA||AddressEvidence;State
+S0000048|West Virginia|<noun>|<base>|WV||AddressEvidence;State
+S0000049|Wisconsin|<noun>|<base>|WI||AddressEvidence;State
+S0000050|Wyoming|<noun>|<base>|WY||AddressEvidence;State
+S0000052|District of Columbia|<noun>|<base>|DC||AddressEvidence;Federal District
+S000001|Kentucky|<noun>|<base>|KY||AddressEvidence;Commonwealth
+S000002|Massachusetts|<noun>|<base>|MA||AddressEvidence;Commonwealth
+S000003|Pennsylvania|<noun>|<base>|PA||AddressEvidence;Commonwealth
+S000004|Virginia|<noun>|<base>|VA||AddressEvidence;Commonwealth
+#S000001|American Samoa|<noun>|<base>|AS||AddressEvidence;Territory
+S000002|Guam|<noun>|<base>|GU||AddressEvidence;Territory
+S000003|Northern Mariana Islands|<noun>|<base>|MP||AddressEvidence;Territory
+S000004|Puerto Rico|<noun>|<base>|PR||AddressEvidence;Territory
+S000005|U.S. Virgin Islands|<noun>|<base>|VI||AddressEvidence;Territory
+S000001|AL|<noun>|<base>|Alabama||AddressEvidence;State
+S000002|AK|<noun>|<base>|Alaska||AddressEvidence;State
+S000003|AZ|<noun>|<base>|Arizona||AddressEvidence;State
+S000004|AR|<noun>|<base>|Arkansas||AddressEvidence;State
+S000005|CA|<noun>|<base>|California||AddressEvidence;State
+S000006|CO|<noun>|<base>|Colorado||AddressEvidence;State
+S000007|CT|<noun>|<base>|Connecticut||AddressEvidence;State
+S000008|DE|<noun>|<base>|Delaware||AddressEvidence;State
+S000009|FL|<noun>|<base>|Florida||AddressEvidence;State
+S0000010|GA|<noun>|<base>|Georgia||AddressEvidence;State
+S0000011|HI|<noun>|<base>|Hawaii||AddressEvidence;State
+S0000012|ID|<noun>|<base>|Idaho||AddressEvidence;State
+S0000013|IL|<noun>|<base>|Illinois||AddressEvidence;State
+#S0000014|IN|<noun>|<base>|Indiana||AddressEvidence;State
+S0000015|IA|<noun>|<base>|Iowa||AddressEvidence;State
+S0000016|KS|<noun>|<base>|Kansas||AddressEvidence;State
+S0000017|KY|<noun>|<base>|Kentucky||AddressEvidence;Commonwealth
+S0000018|LA|<noun>|<base>|Louisiana||AddressEvidence;State
+S0000019|ME|<noun>|<base>|Maine||AddressEvidence;State
+S0000020|MD|<noun>|<base>|Maryland||AddressEvidence;State
+S0000021|MA|<noun>|<base>|Massachusetts||AddressEvidence;Commonwealth
+S0000022|MI|<noun>|<base>|Michigan||AddressEvidence;State
+S0000023|MN|<noun>|<base>|Minnesota||AddressEvidence;State
+S0000024|MS|<noun>|<base>|Mississippi||AddressEvidence;State
+S0000025|MO|<noun>|<base>|Missouri||AddressEvidence;State
+S0000026|MT|<noun>|<base>|Montana||AddressEvidence;State
+S0000027|NE|<noun>|<base>|Nebraska||AddressEvidence;State
+S0000028|NV|<noun>|<base>|Nevada||AddressEvidence;State
+S0000029|NH|<noun>|<base>|New Hampshire||AddressEvidence;State
+S0000030|NJ|<noun>|<base>|New Jersey||AddressEvidence;State
+S0000031|NM|<noun>|<base>|New Mexico||AddressEvidence;State
+S0000032|NY|<noun>|<base>|New York||AddressEvidence;State
+S0000033|NC|<noun>|<base>|North Carolina||AddressEvidence;State
+S0000034|ND|<noun>|<base>|North Dakota||AddressEvidence;State
+S0000035|OH|<noun>|<base>|Ohio||AddressEvidence;State
+S0000036|OK|<noun>|<base>|Oklahoma||AddressEvidence;State
+#S0000037|OR|<noun>|<base>|Oregon||AddressEvidence;State
+S0000038|PA|<noun>|<base>|Pennsylvania||AddressEvidence;Commonwealth
+S0000039|RI|<noun>|<base>|Rhode Island||AddressEvidence;State
+S0000040|SC|<noun>|<base>|South Carolina||AddressEvidence;State
+S0000041|SD|<noun>|<base>|South Dakota||AddressEvidence;State
+S0000042|TN|<noun>|<base>|Tennessee||AddressEvidence;State
+S0000043|TX|<noun>|<base>|Texas||AddressEvidence;State
+S0000044|UT|<noun>|<base>|Utah||AddressEvidence;State
+S0000045|VT|<noun>|<base>|Vermont||AddressEvidence;State
+S0000046|VA|<noun>|<base>|Virginia||AddressEvidence;Commonwealth
+S0000047|WA|<noun>|<base>|Washington||AddressEvidence;State
+S0000048|WV|<noun>|<base>|West Virginia||AddressEvidence;State
+S0000049|WI|<noun>|<base>|Wisconsin||AddressEvidence;State
+S0000050|WY|<noun>|<base>|Wyoming||AddressEvidence;State
+S000000|DC|<noun>|<base>|District of Columbia||AddressEvidence;Federal District
+S000001|KY|<noun>|<base>|Kentucky||AddressEvidence;Commonwealth
+S000002|MA|<noun>|<base>|Massachusetts||AddressEvidence;Commonwealth
+S000003|PA|<noun>|<base>|Pennsylvania||AddressEvidence;Commonwealth
+S000004|VA|<noun>|<base>|Virginia||AddressEvidence;Commonwealth
+#S000001|AS|<noun>|<base>|American Samoa||AddressEvidence;Territory
+#S000002|GU|<noun>|<base>|Guam||AddressEvidence;Territory
+S000003|MP|<noun>|<base>|Northern Mariana Islands||AddressEvidence;Territory
+S000004|PR|<noun>|<base>|Puerto Rico||AddressEvidence;Territory
+S000005|VI|<noun>|<base>|U.S. Virgin Islands||AddressEvidence;Territory

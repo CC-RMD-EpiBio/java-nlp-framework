@@ -1,0 +1,301 @@
+#
+# These are the countries of the americas, africia, Europe, asia, Oceanic, middle east
+#  These names were scraped from Wikipedia, 2022-05-03 
+#
+AC000000|United States|<noun>|<base>|||AddressEvidence:Country
+AC000000|Brazil|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mexico|<noun>|<base>|||AddressEvidence:Country
+AC000000|Colombia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Argentina|<noun>|<base>|||AddressEvidence:Country
+AC000000|Canada|<noun>|<base>|||AddressEvidence:Country
+AC000000|Peru|<noun>|<base>|||AddressEvidence:Country
+AC000000|Venezuela|<noun>|<base>|||AddressEvidence:Country
+AC000000|Chile|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ecuador|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guatemala|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bolivia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Haiti|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cuba|<noun>|<base>|||AddressEvidence:Country
+AC000000|Dominican Republic|<noun>|<base>|||AddressEvidence:Country
+AC000000|Honduras|<noun>|<base>|||AddressEvidence:Country
+AC000000|Paraguay|<noun>|<base>|||AddressEvidence:Country
+AC000000|El Salvador|<noun>|<base>|||AddressEvidence:Country
+AC000000|Nicaragua|<noun>|<base>|||AddressEvidence:Country
+AC000000|Costa Rica|<noun>|<base>|||AddressEvidence:Country
+AC000000|Panama|<noun>|<base>|||AddressEvidence:Country
+AC000000|Uruguay|<noun>|<base>|||AddressEvidence:Country
+AC000000|Puerto Rico (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Puerto Rico|<noun>|<base>|||AddressEvidence:Country
+AC000000|Jamaica|<noun>|<base>|||AddressEvidence:Country
+AC000000|Trinidad and Tobago|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guyana|<noun>|<base>|||AddressEvidence:Country
+AC000000|Suriname|<noun>|<base>|||AddressEvidence:Country
+AC000000|Belize|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guadeloupe (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guadeloupe|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bahamas|<noun>|<base>|||AddressEvidence:Country
+AC000000|Martinique (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Martinique|<noun>|<base>|||AddressEvidence:Country
+AC000000|Barbados|<noun>|<base>|||AddressEvidence:Country
+AC000000|French Guiana (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|French Guiana|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Lucia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Curaçao (Kingdom of the Netherlands)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Curaçao|<noun>|<base>|||AddressEvidence:Country
+AC000000|Grenada|<noun>|<base>|||AddressEvidence:Country
+AC000000|Aruba (Kingdom of the Netherlands)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Aruba|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Vincent and the Grenadines|<noun>|<base>|||AddressEvidence:Country
+AC000000|United States Virgin Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Virgin Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|United States Virgin Islands (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Antigua and Barbuda|<noun>|<base>|||AddressEvidence:Country
+AC000000|Dominica|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cayman Islands (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cayman Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bermuda|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bermuda (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Greenland (Denmark)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Greenland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Kitts and Nevis|<noun>|<base>|||AddressEvidence:Country
+AC000000|Turks and Caicos Islands (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Turks and Caicos Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Turks and Caicos|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sint Maarten (Kingdom of the Netherlands)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sint Maarten|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Martin|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Martin (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|British Virgin Islands (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|British Virgin Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Caribbean Netherlands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Caribbean Netherlands (Kingdom of the Netherlands)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Anguilla (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Anguilla|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Barthélemy|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Barthélemy (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Pierre and Miquelon|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Pierre and Miquelon (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Montserrat (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Montserrat|<noun>|<base>|||AddressEvidence:Country
+AC000000|Falkland Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Falkland Islands (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Nigeria|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ethiopia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Democratic Republic of the Congo|<noun>|<base>|||AddressEvidence:Country
+AC000000|Egypt|<noun>|<base>|||AddressEvidence:Country
+AC000000|South Africa|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tanzania|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kenya|<noun>|<base>|||AddressEvidence:Country
+AC000000|Algeria|<noun>|<base>|||AddressEvidence:Country
+AC000000|Uganda|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sudan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Morocco|<noun>|<base>|||AddressEvidence:Country
+AC000000|Angola|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ghana|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cameroon|<noun>|<base>|||AddressEvidence:Country
+AC000000|Madagascar|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mozambique|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ivory Coast|<noun>|<base>|||AddressEvidence:Country
+AC000000|Niger|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mali|<noun>|<base>|||AddressEvidence:Country
+AC000000|Malawi|<noun>|<base>|||AddressEvidence:Country
+AC000000|Burkina Faso|<noun>|<base>|||AddressEvidence:Country
+AC000000|Chad|<noun>|<base>|||AddressEvidence:Country
+AC000000|Somalia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Zimbabwe|<noun>|<base>|||AddressEvidence:Country
+AC000000|Zambia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Senegal|<noun>|<base>|||AddressEvidence:Country
+AC000000|South Sudan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Rwanda|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Benin|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tunisia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Burundi|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sierra Leone|<noun>|<base>|||AddressEvidence:Country
+AC000000|Togo|<noun>|<base>|||AddressEvidence:Country
+AC000000|Libya|<noun>|<base>|||AddressEvidence:Country
+AC000000|Republic of the Congo|<noun>|<base>|||AddressEvidence:Country
+AC000000|Liberia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Central African Republic|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mauritania|<noun>|<base>|||AddressEvidence:Country
+AC000000|Eritrea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Namibia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Gambia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Botswana|<noun>|<base>|||AddressEvidence:Country
+AC000000|Gabon|<noun>|<base>|||AddressEvidence:Country
+AC000000|Lesotho|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guinea-Bissau|<noun>|<base>|||AddressEvidence:Country
+AC000000|Equatorial Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mauritius|<noun>|<base>|||AddressEvidence:Country
+AC000000|Eswatini|<noun>|<base>|||AddressEvidence:Country
+AC000000|Djibouti|<noun>|<base>|||AddressEvidence:Country
+AC000000|Réunion (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Réunion|<noun>|<base>|||AddressEvidence:Country
+AC000000|Comoros|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cape Verde|<noun>|<base>|||AddressEvidence:Country
+AC000000|Western Sahara|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mayotte (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mayotte|<noun>|<base>|||AddressEvidence:Country
+AC000000|São Tomé and Príncipe|<noun>|<base>|||AddressEvidence:Country
+AC000000|Seychelles|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Helena, Ascension and Tristan da Cunha (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Helena, Ascension and Tristan da Cunha|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saint Helena|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ascension|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tristan da Cunha|<noun>|<base>|||AddressEvidence:Country
+AC000000|Russia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Turkey|<noun>|<base>|||AddressEvidence:Country
+AC000000|Germany|<noun>|<base>|||AddressEvidence:Country
+AC000000|France|<noun>|<base>|||AddressEvidence:Country
+AC000000|United Kingdom|<noun>|<base>|||AddressEvidence:Country
+AC000000|Italy|<noun>|<base>|||AddressEvidence:Country
+AC000000|Spain|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ukraine|<noun>|<base>|||AddressEvidence:Country
+AC000000|Poland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Romania|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kazakhstan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Netherlands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Belgium|<noun>|<base>|||AddressEvidence:Country
+AC000000|Greece|<noun>|<base>|||AddressEvidence:Country
+AC000000|Czech Republic|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sweden|<noun>|<base>|||AddressEvidence:Country
+AC000000|Portugal|<noun>|<base>|||AddressEvidence:Country
+AC000000|Azerbaijan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Hungary|<noun>|<base>|||AddressEvidence:Country
+AC000000|Belarus|<noun>|<base>|||AddressEvidence:Country
+AC000000|Austria|<noun>|<base>|||AddressEvidence:Country
+AC000000|Switzerland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bulgaria|<noun>|<base>|||AddressEvidence:Country
+AC000000|Serbia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Denmark|<noun>|<base>|||AddressEvidence:Country
+AC000000|Finland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Slovakia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Norway|<noun>|<base>|||AddressEvidence:Country
+AC000000|Ireland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Croatia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Georgia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bosnia and Herzegovina|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bosnia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Herzegovina|<noun>|<base>|||AddressEvidence:Country
+AC000000|Armenia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Albania|<noun>|<base>|||AddressEvidence:Country
+AC000000|Lithuania|<noun>|<base>|||AddressEvidence:Country
+AC000000|Moldova|<noun>|<base>|||AddressEvidence:Country
+AC000000|Slovenia|<noun>|<base>|||AddressEvidence:Country
+AC000000|North Macedonia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Latvia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kosovo|<noun>|<base>|||AddressEvidence:Country
+AC000000|Estonia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cyprus|<noun>|<base>|||AddressEvidence:Country
+AC000000|Luxembourg|<noun>|<base>|||AddressEvidence:Country
+AC000000|Montenegro|<noun>|<base>|||AddressEvidence:Country
+AC000000|Malta|<noun>|<base>|||AddressEvidence:Country
+AC000000|Iceland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Jersey|<noun>|<base>|||AddressEvidence:Country
+AC000000|Isle of Man|<noun>|<base>|||AddressEvidence:Country
+AC000000|Andorra|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guernsey|<noun>|<base>|||AddressEvidence:Country
+AC000000|Faroe Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Liechtenstein|<noun>|<base>|||AddressEvidence:Country
+AC000000|Monaco|<noun>|<base>|||AddressEvidence:Country
+AC000000|Gibraltar|<noun>|<base>|||AddressEvidence:Country
+AC000000|San Marino|<noun>|<base>|||AddressEvidence:Country
+AC000000|Finland|<noun>|<base>|||AddressEvidence:Country
+AC000000|Vatican City|<noun>|<base>|||AddressEvidence:Country
+AC000000|China|<noun>|<base>|||AddressEvidence:Country
+AC000000|India|<noun>|<base>|||AddressEvidence:Country
+AC000000|Indonesia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Pakistan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bangladesh|<noun>|<base>|||AddressEvidence:Country
+AC000000|Russia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Japan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Philippines|<noun>|<base>|||AddressEvidence:Country
+AC000000|Vietnam|<noun>|<base>|||AddressEvidence:Country
+AC000000|Iran|<noun>|<base>|||AddressEvidence:Country
+AC000000|Thailand|<noun>|<base>|||AddressEvidence:Country
+AC000000|Myanmar|<noun>|<base>|||AddressEvidence:Country
+AC000000|South Korea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Iraq|<noun>|<base>|||AddressEvidence:Country
+AC000000|Afghanistan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Uzbekistan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Saudi Arabia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Malaysia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Yemen|<noun>|<base>|||AddressEvidence:Country
+AC000000|Nepal|<noun>|<base>|||AddressEvidence:Country
+AC000000|North Korea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Taiwan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Sri Lanka|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kazakhstan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Syria|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cambodia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Jordan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Azerbaijan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tajikistan|<noun>|<base>|||AddressEvidence:Country
+AC000000|United Arab Emirates|<noun>|<base>|||AddressEvidence:Country
+AC000000|Israel|<noun>|<base>|||AddressEvidence:Country
+AC000000|Hong Kong|<noun>|<base>|||AddressEvidence:Country
+AC000000|Lebanon|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kyrgyzstan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Laos|<noun>|<base>|||AddressEvidence:Country
+AC000000|Singapore|<noun>|<base>|||AddressEvidence:Country
+AC000000|Turkmenistan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Palestine|<noun>|<base>|||AddressEvidence:Country
+AC000000|Oman|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kuwait|<noun>|<base>|||AddressEvidence:Country
+AC000000|Georgia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Mongolia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Armenia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Qatar|<noun>|<base>|||AddressEvidence:Country
+AC000000|Timor-Leste (East Timor)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bahrain|<noun>|<base>|||AddressEvidence:Country
+AC000000|Bhutan|<noun>|<base>|||AddressEvidence:Country
+AC000000|Macau|<noun>|<base>|||AddressEvidence:Country
+AC000000|Maldives|<noun>|<base>|||AddressEvidence:Country
+AC000000|Brunei|<noun>|<base>|||AddressEvidence:Country
+AC000000|Indonesia Western New Guinea (Indonesia)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Indonesia Western New Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Western New Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|New Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|Indonesia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Timor-Leste|<noun>|<base>|||AddressEvidence:Country
+AC000000|East Timor|<noun>|<base>|||AddressEvidence:Country
+AC000000|Timor-Leste (East Timor)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Hawaii|<noun>|<base>|||AddressEvidence:Country
+AC000000|Hawaii (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|New Caledonia|<noun>|<base>|||AddressEvidence:Country
+AC000000|New Caledonia (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|French Polynesia (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|French Polynesia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guam (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Guam|<noun>|<base>|||AddressEvidence:Country
+AC000000|American Samoa (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|American Samoa|<noun>|<base>|||AddressEvidence:Country
+AC000000|Northern Mariana Islands (US)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Northern Mariana Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cook Islands (NZ)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Cook Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Wallis and Futuna (France)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Wallis and Futuna|<noun>|<base>|||AddressEvidence:Country
+AC000000|Norfolk Island (Australia)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Norfolk Island|<noun>|<base>|||AddressEvidence:Country
+AC000000|Niue (NZ)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Niue|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tokelau (NZ)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tokelau|<noun>|<base>|||AddressEvidence:Country
+AC000000|Pitcairn Islands (UK)|<noun>|<base>|||AddressEvidence:Country
+AC000000|Pitcairn Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Australia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Papua New Guinea|<noun>|<base>|||AddressEvidence:Country
+AC000000|New Zealand|<noun>|<base>|||AddressEvidence:Country
+AC000000|Fiji|<noun>|<base>|||AddressEvidence:Country
+AC000000|Solomon Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Vanuatu|<noun>|<base>|||AddressEvidence:Country
+AC000000|Samoa|<noun>|<base>|||AddressEvidence:Country
+AC000000|Kiribati|<noun>|<base>|||AddressEvidence:Country
+AC000000|Federated States of Micronesia|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tonga|<noun>|<base>|||AddressEvidence:Country
+AC000000|Marshall Islands|<noun>|<base>|||AddressEvidence:Country
+AC000000|Palau|<noun>|<base>|||AddressEvidence:Country
+AC000000|Tuvalu|<noun>|<base>|||AddressEvidence:Country
+AC000000|Nauru|<noun>|<base>|||AddressEvidence:Country
+

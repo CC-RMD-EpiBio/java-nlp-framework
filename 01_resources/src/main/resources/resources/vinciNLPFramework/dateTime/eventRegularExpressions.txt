@@ -1,0 +1,553 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ sedation \s{1,50}and
+ anesthesia \p{Punct}
+ completion 
+ skiing \s{1,50}
+ resolved 
+ find\s{1,50}out 
+ took\s{1,50}over 
+ stay \s{1,50}
+ kept 
+she\s{1,50} has \s{1,50}a
+ improves 
+ cough 
+on\s{1,50} examination 
+ osteotomy 
+ achieved 
+ checked \s{1,50}the
+is\s{1,50} experiencing \s{1,50}a
+ contributes 
+ discussed \s{1,50}some
+will\s{1,50} return 
+ checked \s{1,50}again
+it\s{1,50} remains 
+been\s{1,50} instructed 
+ resolves 
+ consider \s{1,50}
+ discussed \s{1,50}in
+ Return 
+ideation\p{Punct}\s{1,50}He\s{1,50} states 
+ throw 
+ speaking 
+ becomes 
+status\s{1,50} examination 
+ interpretation \p{Punct}
+is\s{1,50} oriented 
+ recalls 
+to\s{1,50} spell 
+ denies \s{1,50}\S{1,3}\s{1,50}legal
+STATUS\s{1,50} EXAMINATION 
+He\s{1,50} has \s{1,50}a
+is\s{1,50} employed 
+ died 
+ born 
+ left \s{1,50}his
+ came \s{1,50}to
+ help \s{1,50}a
+ build 
+ staying \p{Punct}
+ married 
+grandfather\s{1,50} had 
+His\s{1,50}father\s{1,50} had 
+ abused 
+ returned \s{1,50}from
+\s{1,50} met \s{1,50}
+age\p{Punct}\s{1,50}He\s{1,50} states 
+ left \s{1,50}him
+ shut 
+ put \s{1,50}down
+ told \s{1,50}his
+ quit \s{1,50}drinking
+ drinking 
+ separate 
+ chose \s{1,50}
+ give\s{1,50}up 
+This\s{1,50} resulted 
+ suffered\s{1,50}from 
+ had \s{1,50}similar
+ depression \s{1,50}on
+\s{1,50} cord 
+ believes 
+ reached 
+ caused \s{1,50}the
+was\s{1,50} involved 
+presently\s{1,50} awaiting 
+ evaluation \s{1,50}for
+ Denied \p{Punct}\s{1,50}Other
+Other\p{Punct}\s{1,50} Denied 
+ Removal 
+ dropped 
+which\s{1,50} discharged 
+ See 
+ resulted\s{1,50}in \s{1,50}a
+\s{1,50}he\s{1,50} had \s{1,50}no
+As\s{1,50} mentioned \s{1,50}
+ past \s{1,50}with
+he\s{1,50}has\s{1,50} had 
+ related\s{1,50}to \s{1,50}his
+Pulmonary\p{Punct}\s{1,50} Denied 
+is\s{1,50} thought 
+ hospitalized 
+He\s{1,50} tried 
+ helped 
+he\s{1,50} became 
+been\s{1,50} prescribed 
+ cutting \s{1,50}it
+ takes \s{1,50}the
+ relates \s{1,50}that
+ accomplish \s{1,50}
+saying\s{1,50} what 
+\s{1,50}he\s{1,50} wanted 
+ distracted 
+been\s{1,50} receiving 
+ found \s{1,50}it
+ remembers 
+remembers\s{1,50} having 
+ pointed\s{1,50}out 
+ commented 
+ included \s{1,50}difficulty
+ sustaining 
+\s{1,50} listen 
+ finish \s{1,50}
+ avoiding 
+ losing \s{1,50}things
+In\s{1,50}the\s{1,50} past 
+ tensed 
+ go \s{1,50}for
+ gained \s{1,50}about
+but\s{1,50} notes 
+was\s{1,50} taking 
+to\s{1,50} feel 
+ evaluation \s{1,50}and
+ evaluation \p{Punct}\s{1,50}and
+ hospitalization 
+wife\s{1,50} came 
+ irrigated \s{1,50}and
+ dried 
+was\s{1,50} closed 
+closed\s{1,50} using \s{1,50}\p{Punct}
+ applied \s{1,50}consisting
+ reversed 
+ transferred 
+then\s{1,50} put 
+ snapped 
+motion\s{1,50}was\s{1,50} noted 
+then\s{1,50} placed \s{1,50}
+\s{1,50} pressed 
+\s{1,50}then\s{1,50} impacted \s{1,50}into
+ cleaned 
+methacrylate\s{1,50}was\s{1,50} placed 
+ impacted \s{1,50}in\s{1,50}place
+was\s{1,50} removed \s{1,50}from
+ put \s{1,50}in
+\s{1,50} reduced 
+and\s{1,50} held \s{1,50}in
+cement\s{1,50}was\s{1,50} placed 
+ hardened 
+ examined 
+cement\s{1,50}was\s{1,50}then\s{1,50} removed 
+guide\s{1,50}was\s{1,50} placed 
+peg\s{1,50}\S{1,5}\s{1,50}were\s{1,50}then\s{1,50} drilled 
+was\s{1,50} taken \s{1,50}through
+There\s{1,50}was\s{1,50} noted \s{1,50}to\s{1,50}be\s{1,50}some
+ performed \p{Punct}\s{1,50}After
+component\s{1,50} appeared 
+ remained 
+ taken \s{1,50}with
+ viewing \s{1,50}
+it\s{1,50} appeared 
+ removed \p{Punct}\s{1,50}The
+then\s{1,50} used \s{1,50}
+ check \s{1,50}again
+there\s{1,50}was\s{1,50} noted 
+It\s{1,50}was\s{1,50} noted \s{1,50}
+component\s{1,50}was\s{1,50}then\s{1,50} placed 
+was\s{1,50} directed \s{1,50}towards
+There\s{1,50} noted 
+ selected \s{1,50}to
+was\s{1,50} sized 
+ noted \s{1,50}and
+ reflected \p{Punct}
+ confirming 
+ checked \s{1,50}and
+checked\s{1,50}and\s{1,50} appeared 
+ placed \s{1,50}as
+ make \s{1,50}the
+was\s{1,50} used \s{1,50}to
+ remove \s{1,50}this
+gaps\s{1,50} appeared 
+ removed \s{1,50}and\s{1,50}trial
+components\s{1,50}were\s{1,50} placed 
+ removed \s{1,50}and\s{1,50}osteotome
+ remove \s{1,50}all
+there\s{1,50} appeared 
+made\s{1,50} using 
+ removed \s{1,50}and\s{1,50}the\s{1,50}size
+ confirmed \s{1,50}and
+then\s{1,50} held 
+ placed \s{1,50}and
+to\s{1,50} cut 
+were\s{1,50} drilled 
+ clamped 
+ confirm \s{1,50}
+notching\s{1,50} performed 
+ checking 
+it\s{1,50}was\s{1,50} noted \s{1,50}to
+ removed \s{1,50}and\s{1,50}the\s{1,50}distal
+ placed \s{1,50}in\s{1,50}five
+ secured \s{1,50}in
+guide\s{1,50}was\s{1,50}then\s{1,50} removed 
+ taken \s{1,50}down
+ performed \s{1,50}using
+performed\s{1,50} using 
+was\s{1,50} elected 
+ extended 
+ measured 
+were\s{1,50} placed \p{Punct}
+ directed \s{1,50}to\s{1,50}establishing
+ establishing 
+ Reciprocating 
+ establish \s{1,50}
+ then \s{1,50}everted
+\p{Punct}\s{1,50} using \s{1,50}the
+ opened \s{1,50}in
+\s{1,50} sized \s{1,50}to
+drilled\s{1,50} after 
+ assessing \s{1,50}the
+ consideration \s{1,50}
+ identified \p{Punct}
+\d+\s{1,50}and\s{1,50} placed 
+ padded \s{1,50}at
+ allowed \s{1,50}in
+ applied \s{1,50}to
+ inflated \s{1,50}at
+sterilely\s{1,50} prepped 
+sterilely\s{1,50}prepped\s{1,50}and\s{1,50} draped 
+ presented \s{1,50}to
+office\s{1,50} complaining 
+ complained \s{1,50}of
+ affected \s{1,50}his
+potential\s{1,50} complications 
+ discussed \s{1,50}at
+s\s{1,50} informed 
+consent\s{1,50}was\s{1,50} obtained 
+ Include \s{1,50}
+ conjunction 
+ Rehabilitation \p{Punct}
+ falling \s{1,50}and
+ gave\s{1,50}way 
+ closed \s{1,50}using
+then\s{1,50} applied 
+place\p{Punct}\s{1,50}The\s{1,50}patient\s{1,50} tolerated 
+was\s{1,50}to\s{1,50}the\s{1,50} recovery 
+ secured \p{Punct}
+ ascertained 
+ using \s{1,50}multiple
+ reapproximate 
+ closed \s{1,50}in
+midline\s{1,50} using 
+ interrupted \s{1,50}\d+
+the\s{1,50} exposed 
+ distraction 
+ released \s{1,50}on
+the\s{1,50} connections 
+ tightened 
+ prepared \s{1,50}for
+ placed \s{1,50}in\s{1,50}the
+ contoured 
+and\s{1,50} placed \s{1,50}to
+\s{1,50} compression \s{1,50}was
+ placed \s{1,50}across\s{1,50}the
+ process \s{1,50}was
+ repeated \s{1,50}in
+ containing 
+initial\s{1,50} placement 
+also\s{1,50} checked 
+ coagulated 
+ divided 
+ exposing 
+As\s{1,50} noted 
+ placed \s{1,50}at
+ released \p{Punct}
+ Distraction 
+ completing 
+ made \s{1,50}in
+ retraction \s{1,50}was
+ employed \s{1,50}with
+ afforded 
+ procedure \p{Punct}\s{1,50}The
+ entered \p{Punct}
+ carried\s{1,50}out 
+fashion\s{1,50} using 
+ followed\s{1,50}by \s{1,50}the
+ prepare \s{1,50}
+also\s{1,50} removed 
+out\s{1,50} working 
+ preparation 
+again\s{1,50} placed 
+ decompression 
+ assessed \s{1,50}and
+ appeared\s{1,50}to\s{1,50}be \s{1,50}satisfactory
+\p{Punct}\s{1,50}and\s{1,50} attention 
+ redirected 
+preparation\p{Punct}\s{1,50} attention 
+ released \s{1,50}at
+ reapplied 
+\s{1,50} used \p{Punct}
+ chosen 
+ performed \s{1,50}from\s{1,50}the
+ working \s{1,50}from
+again\s{1,50} using 
+ created 
+ oriented \p{Punct}\s{1,50}A
+ completed \s{1,50}to
+ using \s{1,50}small
+ reprobed 
+ noted \s{1,50}as
+ placed \s{1,50}bilaterally
+findings\s{1,50}as\s{1,50} noted 
+ span \s{1,50}from
+ needed \p{Punct}\s{1,50}Cortical
+sites\s{1,50} using 
+ shaved 
+ scrubbed 
+\p{Punct}\s{1,50} prepped 
+\p{Punct}\s{1,50}prepped\s{1,50}and\s{1,50} draped 
+ infiltration 
+skin\s{1,50} incision \s{1,50}
+ made \s{1,50}extending
+made\s{1,50} extending 
+ Dissection 
+ continued \s{1,50}in
+ readjusted 
+ needed \p{Punct}\s{1,50}The
+ fixation \s{1,50}was
+were\s{1,50} placed \s{1,50}in
+ reported \p{Punct}
+ obtaining 
+ identification \s{1,50}and
+the\s{1,50}patient\s{1,50}was\s{1,50} taken 
+ induction 
+\s{1,50} turned 
+ placed \s{1,50}upon
+ reviewed \p{Punct}\s{1,50}The\s{1,50}\S{1,7}\s{1,50}
+ expressed 
+ consented 
+placement\s{1,50} appeared 
+ positioning \s{1,50}noted\s{1,50}
+ noted \s{1,50}at
+ stimulated 
+ findings \s{1,50}of
+positioning\s{1,50} appeared 
+ management \p{Punct}
+ revealed \s{1,50}the
+detailed\s{1,50} review 
+ considerations 
+ Placement 
+ under\s{1,50}better\s{1,50}control 
+ elapsed 
+ accident \s{1,50}and
+the\s{1,50} accident 
+after\s{1,50} sitting 
+ accident \p{Punct}\s{1,50}Mr
+ accident \s{1,50}at
+ visit \p{Punct}\s{1,50}a
+ sitting \p{Punct}
+ beginning \s{1,50}of
+the\s{1,50} examination \p{Punct}
+ accident \p{Punct}\s{1,50}he\s{1,50}was
+was\s{1,50} completed \p{Punct}
+was\s{1,50} removed \p{Punct}
+ found \p{Punct}
+been\s{1,50} draped 
+ fixed \s{1,50}
+ taken \p{Punct}
+ obtained \p{Punct}\s{1,50}the
+was\s{1,50} done \p{Punct}
+ autopsy \p{Punct}
+ utilized 
+ performance \s{1,50}of
+to\s{1,50} dissection 
+ preserved \s{1,50}
+and\s{1,50} placed \s{1,50}in
+ submitted 
+ saved 
+are\s{1,50} taken 
+hemorrhage\s{1,50} caused 
+ stripped 
+ show \s{1,50}a
+ unaltered 
+not\s{1,50} appear \s{1,50}to\s{1,50}be
+\s{1,50} altered 
+ weighs 
+system\p{Punct}\s{1,50} including 
+ digested 
+ found \s{1,50}in
+ reveal \s{1,50}
+ encountered 
+lung\s{1,50} shows 
+hemothorax\s{1,50} caused 
+lobe\s{1,50} described 
+ dissected \p{Punct}
+ viewed \s{1,50}
+are\s{1,50} seen 
+no\s{1,50} injuries 
+ injury \s{1,50}to
+ described \p{Punct}
+to\s{1,50} show 
+ situated 
+ enlarged \p{Punct}
+ enumerated 
+are\s{1,50} identified 
+\s{1,50} revealing 
+ considered 
+are\s{1,50} described 
+ stated \s{1,50}or
+ implied 
+ shows \s{1,50}the
+ incision \s{1,50}revealing
+ abrasion \p{Punct}\s{1,50}There
+ surrounding \s{1,50}\d+
+ involving \s{1,50}the
+ consisting\s{1,50}of \s{1,50}an
+\s{1,50} having \s{1,50}a
+ terminating 
+ measuring \s{1,50}\d+
+ surrounding \s{1,50}a
+incised\s{1,50} wound \p{Punct}
+ rounded 
+ tapered \p{Punct}
+defense\s{1,50} wound \p{Punct}
+ tapered \s{1,50}or
+or\s{1,50} pointed 
+wounds\s{1,50} described 
+ mentioned \s{1,50}stab
+ located \s{1,50}on
+ involves \s{1,50}the
+ deviation 
+muscle\s{1,50} associated 
+ terminates 
+ seen \s{1,50}in
+ including \s{1,50}hemorrhage
+ wound \s{1,50}path\s{1,50}the
+ approximation 
+ penetration \s{1,50}is\s{1,50}\d+
+without\s{1,50} angulation 
+It\s{1,50} measures 
+ penetrating 
+The\s{1,50} direction \s{1,50}is\s{1,50}right
+ angulation \s{1,50}or\s{1,50}\S{1,9}\s{1,50}determined
+ striking 
+as\s{1,50} stated 
+ angulation \s{1,50}measurable
+is\s{1,50} overlying 
+ bruising \s{1,50}in
+totally\s{1,50} incised 
+of\s{1,50} autopsy 
+ oriented \s{1,50}and
+ wound \s{1,50}there
+cut\s{1,50} measuring 
+are\s{1,50} pointed 
+ extension \s{1,50}is
+ represent 
+wound\s{1,50} described 
+which\s{1,50} measures 
+ tapered \s{1,50}on
+ forked \s{1,50}on
+ extending \s{1,50}to
+after\s{1,50}\S{1,13}\s{1,50}of\s{1,50}the\s{1,50}edges\s{1,50}it\s{1,50} measures \s{1,50}\d+\p{Punct}\d+\s{1,50}\S{1,4}\s{1,50}in\s{1,50}\S{1,6}\s{1,50}
+ defined 
+wound\s{1,50} extending 
+\p{Punct}\s{1,50} associated 
+edges\s{1,50} measures 
+ penetrate 
+ stated \p{Punct}
+ extension \s{1,50}on
+ shows \s{1,50}that\s{1,50}
+\s{1,50} appearing 
+ combination \s{1,50}stabbing
+combination\s{1,50} stabbing 
+ suggesting \s{1,50}that
+ extending \s{1,50}from\s{1,50}the
+significant\s{1,50} angulation 
+ exits \p{Punct}
+ serrated 
+ Intersecting 
+ involving \s{1,50}only
+ intervening 
+ appears \s{1,50}to
+ begins 
+ tapers 
+Dissection\s{1,50} discloses 
+trunk\s{1,50} reveals 
+ removal 
+ wearing \s{1,50}a
+ embalmed 
+be\s{1,50} described 
+neck\s{1,50} shows 
+ show \s{1,50}injuries
+ described \s{1,50}in
+ numbered 
+ correspond 
+ incurred \p{Punct}
+ specified 
+ indicate \s{1,50}
+ denotes 
+ developed \p{Punct}
+ stated \s{1,50}to
+ appear \s{1,50}hazel
+industrial\s{1,50} injuries \p{Punct}
+ worked\s{1,50}up 
+the\s{1,50} injury 
+\d+\s{1,50} injury 
+injury\s{1,50} date 
+was\s{1,50} loading 
+ encoding 
+this\s{1,50} task 
+short\s{1,50} delay 
+ instructions 
+current\s{1,50} evaluation 
+was\s{1,50} determined 
+ conducted 
+current\s{1,50} interview 
+ stripping 
+ confirmed \p{Punct}
+ tear \s{1,50}of
+ case \s{1,50}with
+were\s{1,50} applied 
+drape\s{1,50}was\s{1,50} performed 
+ performing \s{1,50}the
+ wrinkled 
+had\s{1,50} examination 
+ sliding 
+was\s{1,50} having 
+ was \s{1,50}young
+ becoming 
+ lost \s{1,50}his
+ walking \s{1,50}up
+ ligated 
+ established 
+was\s{1,50} applied \p{Punct}
+ keeping 
+ draw \s{1,50}
+ was \s{1,50}normal\s{1,50}

@@ -1,0 +1,47 @@
+# =========================================================================
+#
+# Summary:
+#  cautiAmbigLexicon.lragr Lexicon are terms that are too ambiguous to
+#  figure out if they are cartiac or urninary cath references 
+#
+# Description of Fields:
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category
+#
+#
+# Created :2014-03-09_17_50_22
+# By      :Guy Divita
+#
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+# =========================================================================
+F000001|febrile|noun|count(thr_sing)|febrile|febrile|Fever_Mentions|
+U000129|voided/catheter|noun|count(thr_sing)|voided/catheter |voided/catheter|Cath_Ambiguous|
+U0501|voided|noun|count(thr_sing)|voided x2|voided x2|Cath_Ambiguous
+U0501|voiding|noun|count(thr_sing)|voided x2|voided x2|Cath_Ambiguous
+U0502|incontinent|noun|count(thr_sing)|incontinent|incontinent|Cath_Ambiguous
+U0502|incontenent|noun|count(thr_sing)|incontinent|incontinent|Cath_Ambiguous
+U0503|contenent|noun|count(thr_sing)|incontinent|incontinent|Cath_Ambiguous
+U0503|continent|noun|count(thr_sing)|continent|continent|Cath_Ambiguous
+U0503|continent|noun|count(thr_sing)|continent|continent|Cath_Ambiguous
+U0510|urination|noun|count(thr_sing)|urination|urination|Cath_Ambiguous
+U000262|irrigation|noun|count(thr_sing)|irrigation|irrigation|Cath_Ambiguous
+# U0505|diapers|noun|count(thr_sing)|diapers|diapers|Cath_Ambiguous
+# U0508|toilet|noun|count(thr_sing)|urinal|urinal|Evidence_of_Absence|Device_Mentions
+# U0508|toileted|noun|count(thr_sing)|urinal|urinal|Evidence_of_Absence|Device_Mentions
+# U0508|toileting|noun|count(thr_sing)|urinal|urinal|Evidence_of_Absence|Device_Mentions
+# U0508|toileted times 3|noun|count(thr_sing)|urinal|urinal|Evidence_of_Absence|Device_Mentions

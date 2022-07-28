@@ -1,0 +1,192 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ in\s{1,50}\d+\s{1,50}months 
+ during\s{1,50}the\s{1,50}procedure 
+ in\s{1,50}\d+\s{1,50}month \p{Punct}
+ \d+\s{1,50}month \p{Punct}
+ weeks \s{1,50}of
+ during\s{1,50}her\s{1,50}stay 
+ In\s{1,50}the\s{1,50}initial\s{1,50}appointment 
+ While\s{1,50}this\s{1,50}kept\s{1,50}things\s{1,50}under\s{1,50}control\s{1,50}with\s{1,50}the\s{1,50}inflammatory\s{1,50}markers\s{1,50}being\s{1,50}positive 
+ since\s{1,50}she\s{1,50}has\s{1,50}a\s{1,50}livedo\s{1,50}pattern 
+ while\s{1,50}talking 
+ per\s{1,50}day \s{1,50}
+ for\s{1,50}more\s{1,50}than\s{1,50}\d+\s{1,50}years 
+ about\s{1,50}\d+\s{1,50}years 
+ While\s{1,50}in\s{1,50}the\s{1,50}emergency\s{1,50}room\s{1,50}on\s{1,50}examination 
+ on\s{1,50}examination 
+ over\s{1,50}the\s{1,50}last\s{1,50}several\s{1,50}months 
+ Over\s{1,50}the\s{1,50}last\s{1,50}\d+\s{1,50}or\s{1,50}\d+\s{1,50}days 
+ for\s{1,50}the\s{1,50}past\s{1,50}few\s{1,50}weeks 
+\s{1,50} \d+\s{1,50}minutes \p{Punct}
+ in\s{1,50}one\s{1,50}week\p{Punct}s\s{1,50}time 
+ one\s{1,50}week\p{Punct}s\s{1,50}time 
+ through\s{1,50}the\s{1,50}second\s{1,50}right\s{1,50}metatarsal\s{1,50}osteotomy 
+ within\s{1,50}the\s{1,50}next\s{1,50}few\s{1,50}days 
+ in\s{1,50}three\s{1,50}weeks 
+ in\s{1,50}the\s{1,50}past\s{1,50}year 
+ during\s{1,50}the\s{1,50}mental\s{1,50}status\s{1,50}examination 
+married\s{1,50} for\s{1,50}\d+\s{1,50}years 
+ In\s{1,50}high\s{1,50}school 
+ in\s{1,50}high\s{1,50}school 
+ for\s{1,50}perhaps\s{1,50}months 
+ for\s{1,50}a\s{1,50}month 
+ during\s{1,50}the\s{1,50}time 
+ in\s{1,50}September\s{1,50}\d+ 
+ a\s{1,50}week \p{Punct}
+ significant\s{1,50}amounts\s{1,50}of\s{1,50}time 
+ for\s{1,50}the\s{1,50}past\s{1,50}\d+\s{1,50}years \s{1,50}
+ between\s{1,50}\d+\s{1,50}and\s{1,50}\d+ 
+ the\s{1,50}past\s{1,50}\d+\s{1,50}years \s{1,50}to
+ during\s{1,50}our\s{1,50}evaluation 
+ two\s{1,50}days 
+ the\s{1,50}week \p{Punct}
+ in\s{1,50}the\s{1,50}\d+s\s{1,50}and\s{1,50}\d+s 
+ in\s{1,50}the\s{1,50}same\s{1,50}amount\s{1,50}of\s{1,50}time 
+ the\s{1,50}same\s{1,50}amount\s{1,50}of\s{1,50}time 
+lasted\s{1,50} approximately\s{1,50}two\s{1,50}hours 
+ after\s{1,50}confirming\s{1,50}the\s{1,50}proper\s{1,50}varus\s{1,50}and\s{1,50}valgus\s{1,50}position 
+ a\s{1,50}day 
+ while\s{1,50}he\s{1,50}is\s{1,50}in\s{1,50}Acute\s{1,50}Rehabilitation 
+ in\s{1,50}the\s{1,50}past\s{1,50}month \s{1,50}
+ since\s{1,50}July\s{1,50}\d+ 
+ for\s{1,50}about\s{1,50}nine\s{1,50}months 
+ for\s{1,50}approximately\s{1,50}nine\s{1,50}months 
+ over\s{1,50}the\s{1,50}years 
+ while\s{1,50}walking 
+ from\s{1,50}that\s{1,50}time 
+ throughout\s{1,50}the\s{1,50}procedure 
+ \d+\p{Punct}week 
+lasts\s{1,50} \d+\s{1,50}days 
+ in\s{1,50}one\s{1,50}year 
+ a\p{Punct}year 
+ Since\s{1,50}that\s{1,50}time 
+ over\s{1,50}the\s{1,50}last\s{1,50}couple\s{1,50}of\s{1,50}months 
+ from\s{1,50}the\s{1,50}time\s{1,50}of\s{1,50}his\s{1,50}childhood\s{1,50}through\s{1,50}his\s{1,50}adult\s{1,50}years 
+ for\s{1,50}four\s{1,50}to\s{1,50}five\s{1,50}hours 
+ since\s{1,50}a\s{1,50}\d+\s{1,50}motor\s{1,50}vehicle\s{1,50}accident 
+miles\s{1,50} per\s{1,50}hour \p{Punct}
+ two\s{1,50}full\s{1,50}days 
+ \d+\p{Punct}plus\s{1,50}partial\s{1,50}days 
+ for\s{1,50}a\s{1,50}few\s{1,50}hours 
+ During\s{1,50}the\s{1,50}visit \p{Punct}\s{1,50}he
+ During\s{1,50}the\s{1,50}visit \s{1,50}
+ for\s{1,50}two\s{1,50}weeks 
+ from\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+\p{Punct}\s{1,50}through\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ During\s{1,50}this\s{1,50}visit 
+ greater\s{1,50}than\s{1,50}approximately\s{1,50}two\s{1,50}hours 
+ for\s{1,50}nearly\s{1,50}three\s{1,50}years 
+ from\s{1,50}\d+\p{Punct}\d+\s{1,50}to\s{1,50}\d+\p{Punct}\d+ 
+ for\s{1,50}significantly\s{1,50}longer\s{1,50}periods\s{1,50}of\s{1,50}time 
+ \d+\s{1,50}to\s{1,50}\d+\s{1,50}hours 
+ up\s{1,50}to\s{1,50}\d+\s{1,50}hours 
+ \d+\s{1,50}hours \p{Punct}
+ a\s{1,50}long\s{1,50}time 
+ During\s{1,50}the\s{1,50}impact 
+ \d+\s{1,50}to\s{1,50}\d+\p{Punct}\s{1,50}more\s{1,50}length\s{1,50}of\s{1,50}time 
+ Approximately\s{1,50}\d+\s{1,50}minutes 
+for\s{1,50} \d+\s{1,50}years \p{Punct}\s{1,50}She
+ approximately\s{1,50}\d+\s{1,50}minutes 
+ another\s{1,50}\d+\s{1,50}minutes 
+ in\s{1,50}two\s{1,50}weeks\p{Punct}\s{1,50}time 
+ two\s{1,50}weeks\p{Punct}\s{1,50}time 
+ for\s{1,50}about\s{1,50}another\s{1,50}two\s{1,50}and\s{1,50}a\s{1,50}half\s{1,50}weeks 
+ the\s{1,50}amount\s{1,50}of\s{1,50}time 
+ during\s{1,50}the\s{1,50}autopsy 
+ uring\s{1,50}the\s{1,50}performance\s{1,50}of\s{1,50}the\s{1,50}autopsy 
+ \d+\p{Punct}\d+\s{1,50}minutes \s{1,50}
+ for\s{1,50}eight\s{1,50}hours 
+ one\p{Punct}half\s{1,50}the\s{1,50}time 
+ for\s{1,50}more\s{1,50}than\s{1,50}\d+\s{1,50}minutes 
+ five\s{1,50}minute\s{1,50}interval 
+ for\s{1,50}the\s{1,50}past\s{1,50}year 
+ from\s{1,50}the\s{1,50}last\s{1,50}date\s{1,50}that\s{1,50}he\s{1,50}worked\s{1,50}up\s{1,50}until\s{1,50}present 
+ for\s{1,50}six\s{1,50}months 
+ for\s{1,50}over\s{1,50}a\s{1,50}year 
+drink\s{1,50} for\s{1,50}the\s{1,50}past\s{1,50}\d+\s{1,50}years 
+ for\s{1,50}another\s{1,50}six\s{1,50}months 
+ from\s{1,50}prior\s{1,50}exam 
+ for\s{1,50}approximately\s{1,50}six\s{1,50}months 
+ for\s{1,50}approximately\s{1,50}another\s{1,50}six\s{1,50}months 
+ during\s{1,50}which\s{1,50}time 
+back\s{1,50} in\s{1,50}\d+ 
+ for\s{1,50}about\s{1,50}\d+\p{Punct}\d+\s{1,50}minutes 
+ in\s{1,50}one\s{1,50}to\s{1,50}two\s{1,50}years 
+ a\s{1,50}\d+\p{Punct}minute\s{1,50}delay 
+ over\s{1,50}time 
+ during\s{1,50}initial\s{1,50}encoding 
+ during\s{1,50}this\s{1,50}task 
+ during\s{1,50}task\s{1,50}instructions 
+ throughout\s{1,50}lunchtime 
+husband\s{1,50} in\s{1,50}\d+ 
+ during\s{1,50}this\s{1,50}current\s{1,50}evaluation 
+ six\s{1,50}months \s{1,50}of
+ two\s{1,50}to\s{1,50}five\s{1,50}hours 
+ \d+\s{1,50}to\s{1,50}\d+\s{1,50}minutes 
+ During\s{1,50}the\s{1,50}current\s{1,50}interview 
+ \d+\s{1,50}years \s{1,50}of
+ from\s{1,50}December\s{1,50}\d+\p{Punct}\s{1,50}\d+\s{1,50}through\s{1,50}February\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ for\s{1,50}the\s{1,50}next\s{1,50}couple\s{1,50}of\s{1,50}months 
+ in\s{1,50}December\s{1,50}of\s{1,50}\d+ 
+ for\s{1,50}the\s{1,50}next\s{1,50}few\s{1,50}months 
+ while\s{1,50}stripping\s{1,50}cars 
+ for\s{1,50}the\s{1,50}last\s{1,50}five\s{1,50}years 
+conservatively\s{1,50} since\s{1,50}that\s{1,50}time 
+ during\s{1,50}the\s{1,50}case\s{1,50}with\s{1,50}retracting\s{1,50}as\s{1,50}well\s{1,50}as\s{1,50}holding\s{1,50}the\s{1,50}medial\s{1,50}malleolar\s{1,50}fragment\s{1,50}and\s{1,50}fragments\s{1,50}in\s{1,50}position 
+ while\s{1,50}placement\s{1,50}screws\s{1,50}were\s{1,50}applied 
+ for\s{1,50}many\s{1,50}hours 
+ while\s{1,50}he\s{1,50}was\s{1,50}sliding 
+ for\s{1,50}long\s{1,50}periods\s{1,50}of\s{1,50}time 
+ long\s{1,50}periods\s{1,50}of\s{1,50}time 
+ over\s{1,50}the\s{1,50}past\s{1,50}year 
+ four\s{1,50}to\s{1,50}five\s{1,50}hours \s{1,50}
+ while\s{1,50}he\s{1,50}was\s{1,50}having\s{1,50}delirium\s{1,50}tremens 
+ when\s{1,50}he\s{1,50}was\s{1,50}young 
+ for\s{1,50}eight\s{1,50}years\s{1,50}and\s{1,50}five\s{1,50}months 
+ over\s{1,50}the\s{1,50}past\s{1,50}month 
+ Over\s{1,50}the\s{1,50}past\s{1,50}year 
+ for\s{1,50}four\s{1,50}years 
+ for\s{1,50}two\s{1,50}years 
+ for\s{1,50}very\s{1,50}long 
+ since\s{1,50}he\s{1,50}lost\s{1,50}his\s{1,50}job 
+ a\s{1,50}night 
+times\s{1,50} since\s{1,50}that\s{1,50}time 
+ a\s{1,50}total\s{1,50}tourniquet\s{1,50}time\s{1,50}of\s{1,50}\d+\s{1,50}minutes 
+ over\s{1,50}the\s{1,50}weekend 
+ over\s{1,50}this\s{1,50}weekend 
+ since\s{1,50}mid\s{1,50}night 
+ Overnight 
+ for\s{1,50}\d+\s{1,50}wk 
+ for\s{1,50}\d+\s{1,50}weeks 
+ for\s{1,50}\d+\s{1,50}to\s{1,50}\d+\s{1,50}weeks 
+ \d+\s{1,50}day \s{1,50}
+ Within\s{1,50}the\s{1,50}last\s{1,50}\d+\s{1,50}hrs 
+ \d+\s{1,50}p\s{1,50}to\s{1,50}\d+\s{1,50}a 
+q\s{1,50} \d+\s{1,50}hrs 
+ \d+\s{1,50}hr \s{1,50}
+ \d+\s{1,50}HR 
+ for\s{1,50}\d+\s{1,50}hours 
+ for\s{1,50}\d+\s{1,50}week\s{1,50}from\s{1,50}now 
+ during\s{1,50}her\s{1,50}hospitalization 
+ couple\s{1,50}of\s{1,50}weeks\s{1,50}prior\s{1,50}that\s{1,50}was\s{1,50}shorter\s{1,50}in\s{1,50}duration 
+\s{1,50}\S{1,3}\s{1,50}\p{Punct}\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\p{Punct}\p{Punct}\S{1,4}\p{Punct}\S{1,3}\s{1,50}\d+\s{1,50}\d+\p{Punct}\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+\s{1,50}\S{1,7}\s{1,50}\S{1,7}\s{1,50}\p{Punct}\s{1,50}\d+\s{1,50}\S{1,2}\s{1,50}\p{Punct}\s{1,50}\S{1,2}\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\S{1,3}\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\S{1,4}\s{1,50}\S{1,4}\s{1,50}\p{Punct}\s{1,50}\S{1,3}\s{1,50}\p{Punct}\s{1,50}\S{1,5}\s{1,50}\p{Punct}\s{1,50}\p{Punct}\p{Punct}\S{1,4}\p{Punct}\S{1,3}\s{1,50}\d+\s{1,50}\d+\p{Punct}\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+\s{1,50}\S{1,11}\s{1,50}\S{1,4}\s{1,50}\d+\s{1,50}\S{1,3}\s{1,50}\p{Punct}\s{1,50}\S{1,11}\s{1,50}\d+\s{1,50}\S{1,2}\s{1,50}\p{Punct}\s{1,50}\S{1,4}\s{1,50}\p{Punct}\s{1,50}\S{1,1} Thursday 
+ during\s{1,50}hospitalization 

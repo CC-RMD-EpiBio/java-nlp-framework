@@ -1,0 +1,155 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}with
+on\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+nodosum\s{1,50} in\s{1,50}\d+ 
+in\s{1,50} \d+ \p{Punct}
+from\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+ in\s{1,50}\d+ \s{1,50}based
+ \d+ \s{1,50}based
+chest\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+than\s{1,50} \d+\s{1,50}years 
+given\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}by
+ \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}by
+pressure\s{1,50} today 
+Alaska\s{1,50} in\s{1,50}\d+ 
+ September\s{1,50}\d+ \s{1,50}
+between\s{1,50} \d+ 
+and\s{1,50} \d+ \p{Punct}\s{1,50}He
+ in\s{1,50}\d+ \s{1,50}as
+in\s{1,50} \d+ \s{1,50}as
+done\s{1,50} in\s{1,50}\d+ 
+in\s{1,50} \d+ \s{1,50}and
+ in\s{1,50}\d+ \s{1,50}for
+\s{1,50} \d+ \s{1,50}for
+surgery\s{1,50} in\s{1,50}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}showed
+ June\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+CABG\s{1,50} in\s{1,50}\d+ 
+ In\s{1,50}\d+ 
+In\s{1,50} \d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}after
+ On\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+On\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}and
+\s{1,50} July\s{1,50}\d+ 
+ in\s{1,50}November\s{1,50}\d+ 
+ November\s{1,50}\d+ \s{1,50}
+ in\s{1,50}December\s{1,50}\d+ 
+ December\s{1,50}\d+ \s{1,50}
+ in\s{1,50}January\s{1,50}\d+ 
+ January\s{1,50}\d+ \s{1,50}
+ in\s{1,50}October\s{1,50}\d+ \s{1,50}
+ October\s{1,50}\d+ \s{1,50}
+ until\s{1,50}the\s{1,50}\d+rd\s{1,50}of\s{1,50}July\s{1,50}\d+ 
+ the\s{1,50}\d+rd\s{1,50}of\s{1,50}July\s{1,50}\d+ 
+ in\s{1,50}August\s{1,50}of\s{1,50}\d+ 
+ August\s{1,50}of\s{1,50}\d+ 
+ In\s{1,50}October\s{1,50}of\s{1,50}\d+ 
+ October\s{1,50}of\s{1,50}\d+ 
+ in\s{1,50}August\s{1,50}\d+ 
+in\s{1,50} August\s{1,50}\d+ 
+brain\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ the\s{1,50}last\s{1,50}couple\s{1,50}of\s{1,50}months 
+admission\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ a\s{1,50}few\s{1,50}months 
+ September\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ August\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+accident\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+occurring\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ May\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ \d+ \s{1,50}motor
+ in\s{1,50}late\s{1,50}of\s{1,50}\d+ 
+ late\s{1,50}of\s{1,50}\d+ 
+ early\s{1,50}\d+ 
+ December\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ April\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+that\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+his\s{1,50} \d+ 
+ November\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+taken\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ in\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ \d+ \s{1,50}Volvo
+ in\s{1,50}July\s{1,50}of\s{1,50}\d+ 
+ July\s{1,50}of\s{1,50}\d+ 
+ In\s{1,50}September\s{1,50}of\s{1,50}\d+ 
+ September\s{1,50}of\s{1,50}\d+ 
+done\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ in\s{1,50}June\s{1,50}of\s{1,50}\d+ 
+ June\s{1,50}of\s{1,50}\d+ 
+time\s{1,50} in\s{1,50}\d+ 
+ in\s{1,50}May\s{1,50}of\s{1,50}\d+ 
+ May\s{1,50}of\s{1,50}\d+ 
+of\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ \p{Punct}\s{1,50}
+occurred\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+of\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}
+as\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+initially\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ in\s{1,50}\d+ \p{Punct}\s{1,50}The
+the\s{1,50} \d+\p{Punct}\d+\p{Punct}\d+ 
+R\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+him\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+\s{1,50} \d+ \s{1,50}which
+approximately\s{1,50} six\s{1,50}months 
+stationary\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+Lay\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+performed\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+spine\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}which
+ER\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+CT\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}in
+X\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+discharge\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}reporting
+ February\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ on\s{1,50}January\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ January\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+obtained\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ on\s{1,50}December\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+X\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+shoulder\s{1,50} on\s{1,50}October\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ December\s{1,50}of\s{1,50}\d+ 
+performed\s{1,50} in\s{1,50}December\s{1,50}of\s{1,50}\d+ 
+ on\s{1,50}September\s{1,50}\d+\p{Punct}\s{1,50}\d+ 
+ on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ \s{1,50}demonstrated
+catheterization\s{1,50} on\s{1,50}\d+\p{Punct}\d+\p{Punct}\d+ 
+ July\s{1,50}\d+st\p{Punct}\s{1,50}\d+ 
+ in\s{1,50}\d+ \p{Punct}\s{1,50}a
+biopsy\s{1,50} in\s{1,50}\d+ 
+ four\s{1,50}years 
+ in\s{1,50}March\s{1,50}of\s{1,50}\d+ 
+ March\s{1,50}of\s{1,50}\d+ 
+GED\s{1,50} in\s{1,50}\d+ 
+cirrhosis\s{1,50} in\s{1,50}\d+ 
+from\s{1,50} \d+\p{Punct}\d+ \s{1,50}
+ May\s{1,50}\d+\s{1,50}\d+ 
+ Apr\s{1,50}\d+\s{1,50}\d+ 
+ Mar\s{1,50}\d+\s{1,50}\d+ 
+ Mar\s{1,50}\d+ \p{Punct}
+ Oct\s{1,50}\d+\s{1,50}\d+ 
+ Aug\s{1,50}\d+ \p{Punct}
+ Sep\s{1,50}\d+\s{1,50}\d+ 
+ Aug\s{1,50}\d+\s{1,50}\d+ 
+ Nov\s{1,50}\d+\s{1,50}\d+ 

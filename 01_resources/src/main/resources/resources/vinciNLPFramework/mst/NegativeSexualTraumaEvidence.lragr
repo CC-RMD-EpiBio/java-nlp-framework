@@ -1,0 +1,72 @@
+# ----------------------------------------------------------
+# NegativeSexualTraumaEvidence Lexica
+#     
+#   This table contains terms that are always going to be 
+#   false positives - so they are marked in a similar
+#   fashion to pertanant negatives - they get marked as IGNORE 
+#   for the category of MST
+#     
+#
+#    EUI|term|pos|inflection|baseForm|citationForm|category|negatedCategory
+#                                                    IGNORE|MST
+#  Author:        Guy Divita
+#  Last modified: 2015-09-28
+# --------------------------------------------------------------------------
+#   Copyright 2015 United States Department of Veterans Affairs,            
+#               Health Services Research & Development Service              
+#                                                                           
+#   Licensed under the Apache License, Version 2.0 (the "License");         
+#   you may not use this file except in compliance with the License.        
+#   You may obtain a copy of the License at                                 
+#                                                                           
+#       http://www.apache.org/licenses/LICENSE-2.0                          
+#                                                                           
+#   Unless required by applicable law or agreed to in writing, software     
+#   distributed under the License is distributed on an "AS IS" BASIS,       
+#                                                                           
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and     
+#   limitations under the License.                                          
+# --------------------------------------------------------------------------
+IGNORE_01|threats, fighting, steeling sexual harassment or use of alchohol|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_02|mst screening|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_02|screening|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_02|screen|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_03|purpose to identify signs of physical assault, sexual assault/molestation, domestic abuse, elder abuse|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_04|mst:|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_05|sexual abuse (rape/molestation)|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_06|indicate signs and symptoms of abuse or neglect are:|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_07|domestic violence|noun|count(thr_sing)|x|x|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_08|sexually abused other(s)|noun|count(thr_sing)|x|x|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_09|If MST is checked|noun|count(thr_sing)|x|x|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_10|mst. sgt|noun|count(thr_sing)|x|x|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_11|emotionally raped|noun|count(thr_sing)|x|x|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_12|rape kit|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_13|sexual trauma screen (MST)|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_13|sexual trauma screen|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_14|if mst is checked, this appointment was related to MST|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_15|Patient previously screened for MST|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_16|signs/symptoms of abuse|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_17|screening for suspected abuse and neglect|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_18|suspected abuse neglect screen|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_19|include illicit drug use, hx of sexual trauma, current living condition, occupation|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_20|prevention of sexual harassment|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_21|someone sexually assaulted you|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_22|feels like being raped|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_22|like being raped, feels|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_23|handouts|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_24|book|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_25|materials|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_26|literature|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_27|movies|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_27|movie|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_28|shows|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_29|product|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_30|published sources|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_31|suspected abuse|noun|count(thr_sing)|suspected abuse|suspected abuse|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_32|history of abuse|noun|count(thr_sing)|history of abuse|history of abuse|NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_33|examples|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_34|include|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_35|examples include: hit, shoved, scratched or sexually abused others(s); attempted suicide or other self harm, including self mutilation|noun|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_35|rape other than MST, physical assault, natural disaster, etc|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown
+IGNORE_35|Military Sexual Trauma (MST) v1:|count(thr_sing)|||NegativeEvidenceSexualTrauma|adult|unknown

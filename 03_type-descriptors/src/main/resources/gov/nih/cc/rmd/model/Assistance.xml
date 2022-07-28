@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+                                    NIH Clinical Center 
+                              Department of Rehabilitation 
+                         Epidemiology and Biostatistics Branch 
+                                          2019
+     
+   This work is licensed under the Creative Commons Attribution 4.0 International License. 
+   
+   This license allows you to use, share and  adapt for any purpose, provided:
+      Provide attribution to the creators of this work within your work.
+      Indicate if changes were made to this work.
+      No claim to merchantability, implied warranty, or liability can be made.
+      
+    When attributing this code, please make reference to
+     [citation/url here] .  
+     
+      In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+   
+   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+-->
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.nih.cc.rmd.model.Assistance</name>
+  <description>Mobility Assistance</description>
+  <version>2019.04.0</version>
+  <vendor/>
+   <imports>
+    <import name="gov.va.vinci.Model"/>
+    
+  </imports>
+  <types>
+        <typeDescription>
+          <name>gov.nih.cc.rmd.model.AssistancePolarity</name>
+          <description>does this person need assistance perform this action</description>
+          <supertypeName>uima.cas.String</supertypeName>
+          <allowedValues>
+             <value> <string>True</string> <description> </description> </value>
+             <value> <string>False</string> <description> </description> </value>
+             <value> <string>Unclear</string> <description> </description> </value>
+          </allowedValues>
+        </typeDescription>
+
+        <typeDescription>
+          <name>gov.nih.cc.rmd.model.AssistanceSource</name>
+          <description>an indication of the type of support the subject requires to complete the activity (Device Only, Person Only, Other)</description>
+          <supertypeName>uima.cas.String</supertypeName>
+          <allowedValues>
+             <value> <string>Person Only</string> <description> </description> </value>
+             <value> <string>Device Only</string> <description> </description> </value>
+             <value> <string>Other      </string> <description> </description> </value>
+          </allowedValues>
+        </typeDescription>
+
+    <typeDescription>
+      <name>gov.nih.cc.rmd.model.Assistance</name>
+      <description>Information about dependence on another person or object when performing the activity.</description>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+      <features>
+        <featureDescription>
+          <name>polarity</name>
+          <description>does this person need assistance perform this action</description>
+          <rangeTypeName>gov.nih.cc.rmd.model.AssistancePolarity</rangeTypeName>
+        </featureDescription>
+
+        <featureDescription>
+          <name>source</name>
+          <description>an indication of the type of support the subject requires to complete the activity (Device Only, Person Only, Other)</description>
+          <rangeTypeName>gov.nih.cc.rmd.model.AssistanceSource</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

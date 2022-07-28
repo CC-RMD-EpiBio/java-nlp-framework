@@ -1,0 +1,334 @@
+#eui|term|category|inflection|term|term|notes
+AP0001|armpit|<noun>|<base+singular>|armpit|armpit|anatomicalPart
+AP0001|armpits|<noun>|<plural>|armpit|armpit|anatomicalPart
+AP0002|back|<adj+adv+noun+verb>|<base+positive+singular+infinitive+pres1p23p>|back|back|anatomicalPart
+AP0003|body|<noun>|<base+singular>|body|body|anatomicalPart
+AP0004|buttock|<noun>|<base+singular>|buttock|buttock|anatomicalPart
+AP0004|buttocks|<noun>|<plural>|buttock|buttock|anatomicalPart
+AP0005|cheek|<noun+verb>|<base+singular+infinitive+pres1p23p>|cheek|cheek|anatomicalPart
+AP0005|cheeks|<noun>|<plural>|cheek|cheek|anatomicalPart
+AP0006|chin|<noun+verb>|<base+singular+infinitive+pres1p23p>|chin|chin|anatomicalPart
+AP0006|chins|<noun>|<plural>|chin|chin|anatomicalPart
+AP0007|coccyx|<noun>|<base+singular>|coccyx|coccyx|derived from Cocceal region
+AP0008|elbow|<noun+verb>|<base+singular+infinitive+pres1p23p>|elbow|elbow|anatomicalPart
+AP0008|elbows|<noun>|<plural>|elbow|elbow|anatomicalPart
+AP0009|face|<noun+verb>|<base+singular+infinitive+pres1p23p>|face|face|anatomicalPart
+AP0010|finger|<noun>|<plural>|finger (digit of hand)|finger (digit of hand)|anatomicalPart
+AP0010|fingers|<noun>|<plural>|finger (digit of hand)|finger (digit of hand)|anatomicalPart
+AP0011|foot|<noun+verb>|<base+singular+infinitive+pres1p23p>|foot|foot|anatomicalPart
+AP0011|feet|<noun>|<plural>|foot|foot|anatomicalPart
+AP0012|forehead|<noun>|<base+singular>|forehead|forehead|anatomicalPart
+AP0013|groin|<noun>|<base+singular>|groin|groin|anatomicalPart
+AP0014|head|<adj+noun+verb>|<base+positive+singular+infinitive+pres1p23p>|head|head|anatomicalPart
+AP0014|heads|<noun>|<ploral>|head|head|anatomicalPart
+AP0015|heel|<noun+verb>|<base+singular+infinitive+pres1p23p>|heel|heel|anatomicalPart
+AP0015|heels|<noun>|<plural>|heel|heel|anatomicalPart
+AP0016|larynx|<noun>|<base+singular>|larynx|larynx|anatomicalPart
+AP0017|pharynx|<noun>|<base+singular>|pharynx|pharynx|anatomicalPart
+AP0018||limb|<noun>|<singluar>|limb|limb|anatomicalPart
+AP0018||limbs|<noun>|<plural>|limb|limb|anatomicalPart
+AP0019|leg|<noun>|<base+singular>|leg|leg|anatomicalPart
+AP0019|legs|<noun>|<plural>|leg|leg|anatomicalPart
+AP0020|extremity|<noun>|<base+singular>|extremity|extremity|anatomicalPart
+AP0020|extremities|<noun>|<plural>|extremity|extremity|anatomicalPart
+AP0021|lumbar|<adj+noun>|<base+positive+singular>|lumbar|lumbar|anatomicalPart
+AP0022|motor cortex|<noun>|<base+singular>|motor cortex|motor cortex|anatomicalPart
+AP0023|mouth|<noun+verb>|<base+singular+infinitive+pres1p23p>|mouth|mouth|anatomicalPart
+AP0023|mouths|<noun>|<plural>|mouth|mouth|anatomicalPart
+AP0024|neck|<noun+verb>|<base+singular+infinitive+pres1p23p>|neck|neck|anatomicalPart
+AP0024|necks|<noun>|<plural>|neck|neck|anatomicalPart
+AP0025|pelvis|<noun>|<base+singular>|pelvis|pelvis|We may want to divide this into Greater Pelvis and Lesser Pelvis.
+AP0026|perineum|<noun>|<base+singular>|perineum|perineum|anatomicalPart
+AP0027|sacrum|<noun>|<base+singular>|sacrum|sacrum|anatomicalPart
+AP0028|shoulder|<noun+verb>|<base+singular+infinitive+pres1p23p>|shoulder|shoulder|anatomicalPart
+AP0028|shoulders|<noun>|<plural>|shoulder|shoulder|anatomicalPart
+AP0029|thigh|<noun>|<base+singular>|thigh|thigh|anatomicalPart
+AP0029|thighs|<noun>|<plural>|thigh|thigh|anatomicalPart
+AP0030|wrist|<noun>|<base+singular>|wrist|wrist|anatomicalPart
+AP0030|wrists|<noun>|<plural>|wrist|wrist|anatomicalPart
+AP0031|skull|<noun+verb>|<base+singular+infinitive+pres1p23p>|skull|skull|anatomicalPart
+AP0031|skulls|<noun>|<plural>|skull|skull|anatomicalPart
+AP0032|pleural cavity|<noun>|<base+singular>|pleural cavity|pleural cavity|anatomicalPart
+AP0033|skin|<noun+verb>|<base+singular+infinitive+pres1p23p>|skin|skin|anatomicalPart
+AP0034|buttock skin crease|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|buttock skin crease|buttock skin crease|anatomicalPart
+AP0035|suprasternal notch|<noun>|<base+singular>|suprasternal notch|suprasternal notch|anatomicalPart
+AP0036|nose|<noun+verb>|<base+singular+infinitive+pres1p23p>|nose|nose|related: nasal
+AP0036|noses|<noun>|<plural>|nose|nose|related: nasal
+AP0037|lung|<noun>|<base+singular>|lung|lung|anatomicalPart
+AP0037|lungs|<noun>|<plural>|lung|lung|anatomicalPart
+AP0038|heart|<noun>|<base+singular>|heart|heart|anatomicalPart
+AP0038|hearts|<noun>|<plural>|heart|heart|anatomicalPart
+AP0039|tongue|<noun+verb>|<base+singular+infinitive+pres1p23p>|tongue|tongue|anatomicalPart
+AP0039|tongues|<noun>|<plural>|tongue|tongue|anatomicalPart
+AP0040|stomach|<noun+verb>|<base+singular+infinitive+pres1p23p>|stomach|stomach|anatomicalPart
+AP0040|stomachs|<noun+verb>|<singular+plural+infinitive+pres1p23p>|stomach|stomach|anatomicalPart
+AP0041|ileum|<noun>|<base+singular>|ileum|ileum|terminal ileum could stand on its own
+AP0042|neck of urinary bladder|<adj+adv+noun+verb>|<base+comparative+positive+singular+infinitive>|neck of urinary bladder|neck of urinary bladder|anatomicalPart
+AP0043|labia majora|<noun>|<plural>|labia majora|labia majora|anatomicalPart
+AP0044|vagina|<noun>|<base+singular>|vagina|vagina|anatomicalPart
+AP0045|penis|<noun>|<base+singular>|penis|penis|anatomicalPart
+AP0046|eye|<noun+verb>|<base+singular+infinitive+pres1p23p>|eye|eye|anatomicalPart
+AP0046|eyes|<noun+verb>|<base+singular+plural+infinitive+pres1p23p>|eye|eye|anatomicalPart
+AP0047|canthus|<noun>|<base+singular>|canthus|canthus|anatomicalPart
+AP0048|orbit|<noun+verb>|<base+singular+infinitive+pres1p23p>|orbit|orbit|anatomicalPart
+AP0049|throat|<noun>|<base+singular>|throat|throat|anatomicalPart
+AP0050|trunk|<noun>|<base+singular>|trunk|trunk|also see Torso
+AP0051|torso|<noun>|<base+singular>|torso|torso|anatomicalPart
+AP0052|waist|<noun>|<base+singular>|waist|waist|anatomicalPart
+AP0053|thorax|<noun>|<base+singular>|thorax|thorax|anatomicalPart
+AP0054|chest|<noun>|<base+singular>|chest|chest|anatomicalPart
+AP0055|abdomen|<noun>|<base+singular>|abdomen|abdomen|anatomicalPart
+AP0056|abdominal cavity|<noun>|<base+singular>|abdominal cavity|abdominal cavity|anatomicalPart
+AP0057|flank|<noun+verb>|<base+singular+infinitive+pres1p23p>|flank|flank|anatomicalPart
+AP0057|flanks|<noun+verb>|<base+singular+infinitive+pres1p23p>|flank|flank|anatomicalPart
+AP0058|pubic region|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pubic region|pubic region|anatomicalPart
+AP0059|hand|<noun+verb>|<base+singular+infinitive+pres1p23p>|hand|hand|anatomicalPart
+AP0059|hands|<noun+verb>|<base+singular+infinitive+pres1p23p>|hand|hand|anatomicalPart
+AP0060|palm|<noun+verb>|<base+singular+infinitive+pres1p23p>|palm|palm|if considered independent from hand definition
+AP0060|palms|<noun+verb>|<base+singular+infinitive+pres1p23p>|palm|palm|if considered independent from hand definition
+AP0061|shin|<noun+verb>|<base+singular+infinitive+pres1p23p>|shin|shin|anatomicalPart
+AP0061|shins|<noun+verb>|<base+singular+infinitive+pres1p23p>|shin|shin|anatomicalPart
+AP0062|calf|<noun>|<base+singular>|calf|calf|anatomicalPart
+AP0062|calfs|<noun>|<base+singular>|calf|calf|anatomicalPart
+AP0063|ankle|<noun>|<base+singular>|ankle|ankle|anatomicalPart
+AP0063|ankles|<noun>|<base+singular>|ankle|ankle|anatomicalPart
+AP0064|pericardium|<noun>|<base+singular>|pericardium|pericardium|derived from Pericardium
+AP0065|plantar|<adj+noun>|<base+positive+singular>|plantar|plantar|also see Foot
+AP0066|ulnar|<adj+noun>|<base+positive+singular>|ulnar|ulnar|anatomicalPart
+AP0067|intervertebral|<adj>|<base+positive>|intervertebral|intervertebral|anatomicalPart
+AP0068|glottis|<noun>|<base+singular>|glottis|glottis|derived from Supraglottis
+AP0069|diaper area|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive>|diaper area|diaper area|anatomicalPart
+AP0070|shank|<noun>|<base+singular>|shank|shank|anatomicalPart
+AP0071|brain|<noun+verb>|<base+singular+infinitive+pres1p23p>|brain|brain|anatomicalPart
+AP0071|brains|<noun+verb>|<base+singular+infinitive+pres1p23p>|brain|brain|anatomicalPart
+AP0072|vertebra|<noun>|<base+singular>|vertebra|vertebra|anatomicalPart
+AP0073|clavicle|<noun>|<base+singular>|clavicle|clavicle|derived from Supraclavicular
+AP0074|loin|<noun>|<base+singular>|loin|loin|anatomicalPart
+AP0074|loins|<noun>|<base+singular>|loin|loin|anatomicalPart
+AP0075|arm|<noun+verb>|<base+singular+infinitive+pres1p23p>|arm|arm|anatomicalPart
+AP0075|arms|<noun+verb>|<base+singular+infinitive+pres1p23p>|arm|arm|anatomicalPart
+AP0076|knee|<noun+verb>|<base+singular+infinitive+pres1p23p>|knee|knee|anatomicalPart
+AP0076|knees|<noun+verb>|<base+singular+infinitive+pres1p23p>|knee|knee|anatomicalPart
+AP0077|spinal cord|<noun>|<base+singular>|spinal cord|spinal cord|anatomicalPart
+AP0079|uterine wall|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|uterine wall|uterine wall|anatomicalPart
+AP0079|uterine walls|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|uterine wall|uterine wall|anatomicalPart
+AP0080|breast|<noun+verb>|<base+singular+infinitive+pres1p23p>|breast|breast|anatomicalPart
+AP0080|breasts|<noun+verb>|<base+singular+infinitive+pres1p23p>|breast|breast|anatomicalPart
+AP0081|pleura|<noun>|<base+singular>|pleura|pleura|derived from PLE
+AP0082|artery|<noun>|<base+singular>|artery|artery|derived from Arterial anatomy
+AP0082|arteries|<noun>|<base+singular>|artery|artery|derived from Arterial anatomy
+AP0083|rectum|<noun>|<base+singular>|rectum|rectum|derived from Ileorectal
+AP0084|scar|<noun+verb>|<base+singular+infinitive+pres1p23p>|scar|scar|related to Trigger point
+AP0085|taste area|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive>|taste area|taste area|Cerebral area reference
+AP0086|jaw|<noun+verb>|<base+singular+infinitive+pres1p23p>|jaw|jaw|anatomicalPart
+AP0086|jaws|<noun+verb>|<base+singular+infinitive+pres1p23p>|jaw|jaw|anatomicalPart
+AP0087|cranium|<noun>|<base+singular>|cranium|cranium|derived from Intracranial
+AP0088|hip|<noun>|<base+singular>|hip|hip|anatomicalPart
+AP0089|cervix|<noun>|<base+singular>|cervix|cervix|anatomicalPart
+AP0090|rib|<noun+verb>|<base+singular+infinitive+pres1p23p>|rib|rib|anatomicalPart
+AP0090|ribs|<noun+verb>|<base+singular+infinitive+pres1p23p>|rib|rib|anatomicalPart
+AP0091|abdominal viscus|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive+pres>|abdominal viscus|abdominal viscus|anatomicalPart
+AP0092|hemithorax|<noun>|<base+singular>|hemithorax|hemithorax|anatomicalPart
+AP0093|aerodigestive tract|<noun>|<base+singular>|aerodigestive tract|aerodigestive tract|anatomicalPart
+AP0094|iris|<noun>|<base+singular>|iris|iris|derived from ring of iris
+AP0094|irises|<noun>|<base+singular>|iris|iris|derived from ring of iris
+AP0095|eyebrow|<noun>|<base+singular>|eyebrow|eyebrow|anatomicalPart
+AP0095|eyebrows|<noun>|<base+singular>|eyebrow|eyebrow|anatomicalPart
+AP0096|iliac crest|<noun>|<base+singular>|iliac crest|iliac crest|anatomicalPart
+AP0097|muscle|<noun+verb>|<base+singular>|muscle|muscle|anatomicalPart
+AP0097|muscles|<noun+verb>|<base+singular>|muscle|muscle|anatomicalPart
+AP0098|nerve|<noun+verb>|<base+singular+infinitive+pres1p23p>|nerve|nerve|anatomicalPart
+AP0098|nerves|<noun+verb>|<base+singular+infinitive+pres1p23p>|nerve|nerve|anatomicalPart
+AP0099|Achilles tendon|<noun>|<base+singular>|Achilles tendon|Achilles tendon|anatomicalPart
+AP0099|Achilles tendons|<noun>|<base+singular>|Achilles tendon|Achilles tendon|anatomicalPart
+AP0100|adenoids|<noun>|<plural>|adenoids|adenoids|anatomicalPart
+AP0101|uterus|<noun>|<base+singular>|uterus|uterus|derived from Uterine adnexae
+AP0102|adrenal cortex|<noun>|<base+singular>|adrenal cortex|adrenal cortex|anatomicalPart
+AP0103|adrenal gland|<noun>|<base+singular>|adrenal gland|adrenal gland|anatomicalPart
+AP0104|adrenal medula|<adj+adv+noun+verb>|<base+plural+positive+singular+infinitive>|adrenal medula|adrenal medula|anatomicalPart
+AP0105|air sacs|<noun>|<plural>|air sacs|air sacs|anatomicalPart
+AP0106|anus|<noun>|<base+singular>|anus|anus|anatomicalPart
+AP0107|aorta|<noun>|<base+singular>|aorta|aorta|anatomicalPart
+AP0108|appendix|<noun>|<base+singular>|appendix|appendix|anatomicalPart
+AP0109|artery|<noun>|<base+singular>|artery|artery|anatomicalPart
+AP0109|arteries|<noun>|<base+singular>|artery|artery|anatomicalPart
+AP0110|arteriole|<noun>|<base+singular>|arteriole|arteriole|anatomicalPart
+AP0110|arterioles|<noun>|<base+singular>|arteriole|arteriole|anatomicalPart
+AP0111|cortex|<noun>|<base+singular>|cortex|cortex|anatomicalPart
+AP0112|vein|<noun>|<base+singular>|vein|vein|anatomicalPart
+AP0112|veins|<noun>|<plural>|vein|vein|anatomicalPart
+AP0113|bile duct|<noun>|<base+singular>|bile duct|bile duct|anatomicalPart
+AP0114|urinary bladder|<noun>|<base+singular>|urinary bladder|urinary bladder|anatomicalPart
+AP0115|biliary  tract|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|biliary  tract|biliary  tract|anatomicalPart
+AP0116|blood vessel|<noun>|<base+singular>|blood vessel|blood vessel|anatomicalPart
+AP0116|blood vessels|<noun>|<base+singular>|blood vessel|blood vessel|anatomicalPart
+AP0117|brain stem|<noun>|<base+singular>|brain stem|brain stem|anatomicalPart
+AP0118|ligament|<noun>|<base+singular>|ligament|ligament|anatomicalPart
+AP0118|ligaments|<noun>|<base+singular>|ligament|ligament|anatomicalPart
+AP0119|bronchus|<noun>|<base+singular>|bronchus|bronchus|anatomicalPart
+AP0120|bronchiole|<noun>|<base+singular>|bronchiole|bronchiole|anatomicalPart
+AP0121|duodenum|<noun>|<base+singular>|duodenum|duodenum|anatomicalPart
+AP0122|bursa|<noun>|<base+plural+singular>|bursa|bursa|anatomicalPart
+AP0123|fibula|<noun>|<base+singular>|fibula|fibula|anatomicalPart
+AP0124|capillary|<adj+noun>|<base+positive+singular>|capillary|capillary|anatomicalPart
+AP0125|cecum|<noun>|<base+singular>|cecum|cecum|anatomicalPart
+AP0126|cerebellum|<noun>|<base+singular>|cerebellum|cerebellum|anatomicalPart
+AP0127|clitoris|<noun>|<base+singular>|clitoris|clitoris|anatomicalPart
+AP0128|cochlea|<noun>|<base+singular>|cochlea|cochlea|anatomicalPart
+AP0129|colon|<noun>|<base+singular>|colon|colon|anatomicalPart
+AP0130|conjunctiva|<noun>|<base+singular>|conjunctiva|conjunctiva|anatomicalPart
+AP0131|cornea|<noun>|<base+plural+singular>|cornea|cornea|anatomicalPart
+AP0131|corneas|<noun>|<base+plural+singular>|cornea|cornea|anatomicalPart
+AP0132|gallbladder|<noun>|<base+singular>|gallbladder|gallbladder|anatomicalPart
+AP0133|diaphragm|<noun+verb>|<base+singular+infinitive+pres1p23p>|diaphragm|diaphragm|anatomicalPart
+AP0134|ear|<noun+verb>|<base+singular+infinitive+pres1p23p>|ear|ear|anatomicalPart
+AP0134|ears|<noun+verb>|<base+singular+infinitive+pres1p23p>|ear|ear|anatomicalPart
+AP0135|auditory canal|<noun>|<base+singular>|auditory canal|auditory canal|anatomicalPart
+AP0136|esophagus|<noun>|<base+singular>|esophagus|esophagus|anatomicalPart
+AP0138|eyelash|<noun>|<base+singular>|eyelash|eyelash|anatomicalPart
+AP0138|eyelashes|<noun>|<base+singular>|eyelash|eyelash|anatomicalPart
+AP0139|eyelid|<noun>|<base+singular>|eyelid|eyelid|anatomicalPart
+AP0139|eyelids|<noun>|<base+singular>|eyelid|eyelid|anatomicalPart
+AP0140|fallopian tube|<noun>|<base+singular>|fallopian tube|fallopian tube|anatomicalPart
+AP0140|fallopian tubes|<noun>|<base+singular>|fallopian tube|fallopian tube|anatomicalPart
+AP0141|femur|<noun>|<base+singular>|femur|femur|anatomicalPart
+AP0141|femurs|<noun>|<base+singular>|femur|femur|anatomicalPart
+AP0142|frontal lobe|<noun>|<base+singular>|frontal lobe|frontal lobe|anatomicalPart
+AP0142|frontal lobes|<noun>|<base+singular>|frontal lobe|frontal lobe|anatomicalPart
+AP0143|genital organs|<noun>|<plural>|genital organs|genital organs|anatomicalPart
+AP0143|genital organ|<noun>|<plural>|genital organs|genital organs|anatomicalPart
+AP0143|genitals|<noun>|<plural>|genital organs|genital organs|anatomicalPart
+AP0144|gum|<noun+verb>|<base+singular+infinitive+pres1p23p>|gum|gum|anatomicalPart
+AP0144|gums|<noun+verb>|<base+singular+infinitive+pres1p23p>|gum|gum|anatomicalPart
+AP0145|gonad|<noun>|<base+singular>|gonad|gonad|anatomicalPart
+AP0145|gonads|<noun>|<base+singular>|gonad|gonad|anatomicalPart
+AP0146|ovary|<noun>|<base+singular>|ovary|ovary|anatomicalPart
+AP0146|ovaries|<noun>|<base+singular>|ovary|ovary|anatomicalPart
+AP0147|hair|<noun>|<base+singular>|hair|hair|anatomicalPart
+AP0148|toe|<noun+verb>|<base+singular+infinitive+pres1p23p>|toe|toe|anatomicalPart
+AP0148|toes|<noun+verb>|<base+singular+infinitive+pres1p23p>|toe|toe|anatomicalPart
+AP0149|cardiac valve|<noun>|<base+singular>|cardiac valve|cardiac valve|anatomicalPart
+AP0149|cardiac valves|<noun>|<base+singular>|cardiac valve|cardiac valve|anatomicalPart
+AP0150|ventricle|<noun>|<base+singular>|ventricle|ventricle|anatomicalPart
+AP0150|ventricles|<noun>|<base+singular>|ventricle|ventricle|anatomicalPart
+AP0151|humerus|<noun>|<base+singular>|humerus|humerus|anatomicalPart
+AP0152|hymen|<noun>|<base+singular>|hymen|hymen|anatomicalPart
+AP0153|large intestine|<noun>|<base+singular>|large intestine|large intestine|anatomicalPart
+AP0153|large intestines|<noun>|<base+singular>|large intestine|large intestine|anatomicalPart
+AP0154|small intestine|<noun>|<base+singular>|small intestine|small intestine|anatomicalPart
+AP0154|small intestines|<noun>|<base+singular>|small intestine|small intestine|anatomicalPart
+AP0154|intestine|<noun>|<base+singular>|small intestine|small intestine|anatomicalPart
+AP0154|intestines|<noun>|<base+singular>|small intestine|small intestine|anatomicalPart
+AP0155|bowel|<noun>|<base+singular>|bowel|bowel|anatomicalPart
+AP0155|bowels|<noun>|<base+singular>|bowel|bowel|anatomicalPart
+AP0156|pancreas|<noun>|<base+singular>|pancreas|pancreas|anatomicalPart
+AP0157|kidney|<noun>|<base+singular>|kidney|kidney|anatomicalPart
+AP0157|kidneys|<noun>|<base+singular>|kidney|kidney|anatomicalPart
+AP0158|inner ear|<noun>|<base+singular>|inner ear|inner ear|anatomicalPart
+AP0158|inner ears|<noun>|<base+singular>|inner ear|inner ear|anatomicalPart
+AP0159|lens|<noun+verb>|<base+singular+infinitive+pres1p23p>|lens|lens|anatomicalPart
+AP0160|lip|<noun+verb>|<base+singular+infinitive+pres1p23p>|lip|lip|anatomicalPart
+AP0160|lips|<noun+verb>|<base+singular+infinitive+pres1p23p>|lip|lip|anatomicalPart
+AP0161|liver|<noun>|<base+singular>|liver|liver|anatomicalPart
+AP0162|lymph node|<noun>|<base+singular>|lymph node|lymph node|anatomicalPart
+AP0162|lymph nodes|<noun>|<base+singular>|lymph node|lymph node|anatomicalPart
+AP0163|mitral valve|<noun>|<base+singular>|mitral valve|mitral valve|anatomicalPart
+AP0163|mitral valves|<noun>|<base+singular>|mitral valve|mitral valve|anatomicalPart
+AP0164|nail|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0164|nails|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0164|finger nail|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0164|finger nails|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0164|fingernail|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0164|fingernails|<noun+verb>|<base+singular+infinitive+pres1p23p>|nail|nail|anatomicalPart
+AP0165|nipple|<noun+verb>|<base+singular+infinitive+pres1p23p>|nipple|nipple|anatomicalPart
+AP0165|nipples|<noun+verb>|<base+singular+infinitive+pres1p23p>|nipple|nipple|anatomicalPart
+AP0166|soft palate|<noun>|<base+singular>|soft palate|soft palate|anatomicalPart
+AP0167|parathyroid|<adj+noun>|<base+positive+singular>|parathyroid|parathyroid|anatomicalPart
+AP0168|thyroid|<adj+noun>|<base+positive+singular>|thyroid|thyroid|anatomicalPart
+AP0169|Patella|<noun>|<base+plural+singular>|Patella|Patella|anatomicalPart
+AP0170|pituitary  gland|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pituitary  gland|pituitary  gland|anatomicalPart
+AP0170|pituitary  glands|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|pituitary  gland|pituitary  gland|anatomicalPart
+AP0171|prostate gland|<noun>|<base+singular>|prostate gland|prostate gland|anatomicalPart
+AP0172|pulmonary valve|<noun>|<base+singular>|pulmonary valve|pulmonary valve|anatomicalPart
+AP0173|pupil|<noun>|<base+singular>|pupil|pupil|anatomicalPart
+AP0173|pupils|<noun>|<base+singular>|pupil|pupil|anatomicalPart
+AP0174|radius|<noun+verb>|<base+singular+infinitive+pres1p23p>|radius|radius|anatomicalPart
+AP0175|retina|<noun>|<base+singular>|retina|retina|anatomicalPart
+AP0175|retinas|<noun>|<base+singular>|retina|retina|anatomicalPart
+AP0176|salivary gland|<noun>|<base+singular>|salivary gland|salivary gland|anatomicalPart
+AP0176|salivary glands|<noun>|<base+singular>|salivary gland|salivary gland|anatomicalPart
+AP0177|scalp|<noun+verb>|<base+singular+infinitive+pres1p23p>|scalp|scalp|anatomicalPart
+AP0177|scalps|<noun+verb>|<base+singular+infinitive+pres1p23p>|scalp|scalp|anatomicalPart
+AP0178|scapula|<noun>|<base+singular>|scapula|scapula|anatomicalPart
+AP0179|sciatic nerve|<noun>|<base+singular>|sciatic nerve|sciatic nerve|anatomicalPart
+AP0180|scrotum|<noun>|<base+singular>|scrotum|scrotum|anatomicalPart
+AP0181|sebaceous gland|<noun>|<base+singular>|sebaceous gland|sebaceous gland|anatomicalPart
+AP0181|sebaceous glands|<noun>|<base+singular>|sebaceous gland|sebaceous gland|anatomicalPart
+AP0182|sinus|<noun>|<base+plural+singular>|sinus|sinus|anatomicalPart
+AP0182|sinuses|<noun>|<base+plural+singular>|sinus|sinus|anatomicalPart
+AP0183|backbone|<noun>|<base+singular>|backbone|backbone|anatomicalPart
+AP0184|spleen|<noun>|<base+singular>|spleen|spleen|anatomicalPart
+AP0185|sternum|<noun>|<base+singular>|sternum|sternum|anatomicalPart
+AP0186|tibia|<noun>|<base+singular>|tibia|tibia|anatomicalPart
+AP0187|tarsus|<noun>|<base+singular>|tarsus|tarsus|anatomicalPart
+AP0188|taste bud|<noun>|<base+singular>|taste bud|taste bud|anatomicalPart
+AP0188|taste buds|<noun>|<base+singular>|taste bud|taste bud|anatomicalPart
+AP0189|tendon|<noun>|<base+singular>|tendon|tendon|anatomicalPart
+AP0189|tendons|<noun>|<base+singular>|tendon|tendon|anatomicalPart
+AP0190|temporal lobe|<noun>|<base+singular>|temporal lobe|temporal lobe|anatomicalPart
+AP0190|temporal lobes|<noun>|<base+singular>|temporal lobe|temporal lobe|anatomicalPart
+AP0191|testis|<noun>|<base+singular>|testis|testis|anatomicalPart
+AP0192|testicle|<noun>|<base+singular>|testicle|testicle|anatomicalPart
+AP0192|testicles|<noun>|<base+singular>|testicle|testicle|anatomicalPart
+AP0193|thalamus|<noun>|<base+singular>|thalamus|thalamus|anatomicalPart
+AP0194|thumb|<noun+verb>|<base+singular+infinitive+pres1p23p>|thumb|thumb|anatomicalPart
+AP0194|thumbs|<noun+verb>|<base+singular+infinitive+pres1p23p>|thumb|thumb|anatomicalPart
+AP0195|thymus|<noun>|<base+plural+singular>|thymus|thymus|anatomicalPart
+AP0196|tonsil|<noun>|<base+singular>|tonsil|tonsil|anatomicalPart
+AP0196|tonsils|<noun>|<base+singular>|tonsil|tonsil|anatomicalPart
+AP0197|trachea|<noun>|<base+singular>|trachea|trachea|anatomicalPart
+AP0198|eardrum|<noun>|<base+singular>|eardrum|eardrum|anatomicalPart
+AP0198|eardrums|<noun>|<base+singular>|eardrum|eardrum|anatomicalPart
+AP0198|ear drum|<noun>|<base+singular>|eardrum|eardrum|anatomicalPart
+AP0198|ear drums|<noun>|<base+singular>|eardrum|eardrum|anatomicalPart
+AP0199|ulna|<noun>|<base+singular>|ulna|ulna|anatomicalPart
+AP0200|urethra|<noun>|<base+singular>|urethra|urethra|anatomicalPart
+AP0201|urinary tract|<noun>|<base+singular>|urinary tract|urinary tract|anatomicalPart
+AP0201|urinary tracts|<noun>|<base+singular>|urinary tract|urinary tract|anatomicalPart
+AP0202|uvula|<noun>|<base+singular>|uvula|uvula|anatomicalPart
+AP0203|vocal cord|<noun>|<base+singular>|vocal cord|vocal cord|anatomicalPart
+AP0203|vocal cords|<noun>|<base+singular>|vocal cord|vocal cord|anatomicalPart
+AP0204|cheekbone|<noun>|<base+singular>|cheekbone|cheekbone|anatomicalPart
+AP0204|cheekbones|<noun>|<base+singular>|cheekbone|cheekbone|anatomicalPart
+AP0205|rotary cuff|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|rotary cuff|rotary cuff|anatomicalPart
+AP0205|rotary cuffs|<adj+adv+noun+verb>|<base+positive+singular+infinitive>|rotary cuff|rotary cuff|anatomicalPart
+AP0206|sweat pore|<noun>|<base+singular>|sweat pore|sweat pore|anatomicalPart
+AP0206|sweat pores|<noun>|<base+singular>|sweat pore|sweat pore|anatomicalPart
+AP0207|hair follicle|<noun>|<base+singular>|hair follicle|hair follicle|anatomicalPart
+AP0207|hair follicles|<noun>|<base+singular>|hair follicle|hair follicle|anatomicalPart
+AP0208|phalanx|<noun>|<base+singular>|phalanx|phalanx|anatomicalPart
+AP0209|rib cage|<noun>|<base+singular>|rib cage|rib cage|anatomicalPart
+AP0210|hard palate|<noun>|<base+singular>|hard palate|hard palate|anatomicalPart
+AP0211|ureter|<noun>|<base+singular>|ureter|ureter|anatomicalPart
+AP0212|foreskin|<noun>|<base+singular>|foreskin|foreskin|anatomicalPart
+AP0213|ear lobe|<noun>|<base+singular>|ear lobe|ear lobe|anatomicalPart
+AP0213|ear lobes|<noun>|<base+singular>|ear lobe|ear lobe|anatomicalPart
+AP0214|birth canal|<noun>|<base+singular>|birth canal|birth canal|anatomicalPart
+AP0215|gland|<noun>|<base+singular>|gland|gland|anatomicalPart
+AP0215|glands|<noun>|<base+singular>|gland|gland|anatomicalPart
+AP0216|tissue|<noun>|<base+singular>|tissue|tissue|anatomicalPart
+AP0217|macula|<noun>|<base+singular>|macula|macula|anatomicalPart
+AP0218|Adam's apple|<noun>|<base+singular>|Adam's apple|Adam's apple|anatomicalPart
+AP0219|cartilage|<noun>|<base+singular>|cartilage|cartilage|anatomicalPart
+AP0220|airway|<noun>|<base+singular>|airway|airway|anatomicalPart
+AP0221|tear duct|<noun>|<base+singular>|tear duct|tear duct|anatomicalPart
+AP0221|tear ducts|<noun>|<base+singular>|tear duct|tear duct|anatomicalPart
+AP0222|spine|<noun>|<base+singular>|spine|spine|anatomicalPart
+AP0223|hamstring|<noun+verb>|<base+singular+infinitive+pres1p23p>|hamstring|hamstring|anatomicalPart
+AP0224|belly|<noun>|<base+singular>|belly|belly|anatomicalPart
+AP0224|tummy|<noun>|<base+singular>|belly|belly|anatomicalPart
+AP0225|belly button|<noun>|<base+singular>|belly button|belly button|anatomicalPart
+AP0226|extremidies|<noun>|<plural>|extermides|extremidies|anatomicalPart
+AP0227|bladder|<noun>|<base+singular>|bladder|bladder|anatomicalPart
+AP0228|pupil|<noun>|<base+singular>|pupil|pupil|anatomicalPart
+AP0229|pupils|<noun>|<plural>|pupil|pupil|anatomicalPart

@@ -1,0 +1,25 @@
+# =============================
+# April 10, 2018
+# 
+# =============================
+#  
+#   cui|key|pos|inflection|citationForm|uninflectedForm|Category|tui
+#
+# This lexicon has medications that were not in the 2011 AA RXNorm
+#   but were subsequently added.  It is a stopgap until sophia
+#   gets re-indexed to the latest and greatest.  The information
+#   in is in a different format but equivelent to what's in sophia
+#   's index 
+# 
+#    
+# ===============================================
+# =====================================
+# Direct [VS2]synonyms for diarrhea.  
+# =====================================
+C0546861|adriamycin|<noun>|<base>|Dexorubicin Hydrocloride|Dexorubicin Hydrocloride|Medication|RXNORM|orch:antb|
+C0027597|neoadjuvant chemotherapy|<noun>|<base>|neoadjuvant chemotherapy|neoadjuvant chemotherapy|Medication|RXNORM|aapp:phsu:bacs|
+C0699319|cytoxan|<noun>|<base>|cytoxan|cytoxan|Medication|RXNORM|opco:phsu
+C0009905|birth control pills|<noun>|<plural>|birth control pill|birth control pill|Medication|RXNORM|phsu
+C0009905|birth control pill|<noun>|<base>|birth control pill|birth control pill|Medication|RXNORM|phsu
+C0030049|oxycodone|<noun>|<base>|oxycodone|oxycodone|Medication|RXNORM|orch:phsu
+C0033656|senna|<noun>|<base>|senna|senna|Medication|RXNORM|orch:phsu

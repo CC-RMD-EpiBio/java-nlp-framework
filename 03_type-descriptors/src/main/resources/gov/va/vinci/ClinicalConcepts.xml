@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <name>gov.va.vinci.ClinicalConcepts</name>
+  <description>These are clinical concepts - diagnoses, findings, ... and such like fever that are iherited from Concept.</description>
+  <version>2015.05.20</version>
+  <vendor/>
+  <imports>
+    <import name="gov.va.vinci.ConceptModel"/>
+  </imports>
+  <types>
+    <typeDescription>
+      <name>gov.va.vinci.model.Fever</name>
+      <description/>
+      <supertypeName>gov.va.vinci.model.Concept</supertypeName>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

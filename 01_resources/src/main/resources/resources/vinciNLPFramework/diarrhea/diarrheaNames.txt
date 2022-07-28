@@ -1,0 +1,166 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+diarrhea
+diarhea
+diarrhoea
+diarrea
+diarreah
+diarrhe
+diarhea
+loose stool
+loose stools
+continuous loose stools
+liquid stool
+liquid stools
+loose bm
+frequent loose stools
+frequent loose stool
+frequent loosee stools
+frequent bowel movement
+frequent bowel movements
+Bowel incontinence
+Bowel incontinent
+incontinent diarrhea
+Accidental bowel leakage
+Effortless exit of stool
+Loss of bowel control
+no control of bowel control
+no bowel control
+loss of bowel control
+bowel control loss
+dysentery
+the runs
+the trots
+the tros
+montezuma's revenge
+bloody flux
+backdoor trots 
+summer complaint
+torista
+turistas
+aztec two-step
+looseness in the bowels
+delhi belly
+scours
+shits
+ague
+blennorhea
+colon blow
+green apple nasties
+green apple quick step
+splatters
+havana omelet
+hershey squirts
+the squirts
+piss out of the ass
+assquake
+shistle belly thumps
+mud butt
+anal leakage
+squits
+skitters
+Pharaoh's revenge
+watery stool
+watery stools
+Antibiotic-associated diarrhea
+bile acid malabsorption, primary
+chronic diarrhea
+explosive diarrhea
+chronic large bowel diarrhea
+chronic small bowel diarrhea
+c.difficile diarrhea
+c.difficile diarrhoea
+clostridium difficile diarrhea
+Clostridium difficile diarrhea
+frank diarrhea
+functional diarrhea
+Hemorrhagic diarrhea
+bloody diarrhea
+iatrogenic diarrhoea
+idiopathic diarrhoea
+infantile Diarrhea
+insulin-dependent diabetes mellitus secretory diarrhea syndrome
+mocoid diarrhea
+mucous diarrhoea
+neonatal diarrhea
+nocturnal diarrhea
+gastroenteritis
+food poisoning
+food-handler's diarrhea
+parasite infection
+campylobacter infection
+ratavirus
+salmonellosis
+shigellosis
+traveler's diarrhea
+diarrhea stool
+diarrhea stools
+medication toxicity
+defecation
+defecate
+bowel movement
+bowel movements
+fecal matter
+feces
+defecation effort[VS5]
+stool
+stools
+bm
+bm this am
+bm this pm
+bm this
+dump
+Passage of feces
+shit
+poop
+crap
+report any
+report increased
+notify staff
+first sign of
+standard duration of
+monitor
+monitor frequency
+monitor frequency
+monitor for
+monitor bowel movements
+ensure
+factors that contribute to
+causes
+diarrhea toxin
+minimize the use of
+diarrhea has stop
+diarrhea has stopped
+diarrhea stopped
+diarrhea ceased
+diarrhea resolved
+diarrhea improving
+diarrhea improved
+improved diarrhea
+improved diarrhea
+diarrhea has improved
+frequency of stools decreasing
+stools decreasing in frequency
+decreasing frequency and amount of stools
+improved frequency and consistency of stools
+no stool
+soft stool

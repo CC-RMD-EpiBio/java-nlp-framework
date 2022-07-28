@@ -1,0 +1,75 @@
+E0005323|Saturday night paralyses|noun|count(thr_plur)|Saturday night paralysis|Saturday night paralysis|NotADate
+E0005323|Saturday night paralysis|noun|count(thr_sing)|Saturday night paralysis|Saturday night paralysis|NotADate
+E0005323|Saturday night paralysis|noun|uncount(thr_sing)|Saturday night paralysis|Saturday night paralysis|NotADate
+E0433337|Saturday night palsies|noun|count(thr_plur)|Saturday night palsy|Saturday night palsy|NotADate
+E0433337|Saturday night palsy|noun|count(thr_sing)|Saturday night palsy|Saturday night palsy|NotADate
+E0433337|Saturday night palsy|noun|uncount(thr_sing)|Saturday night palsy|Saturday night palsy|NotADate
+E0347775|Salmonella mayday|noun|count(thr_plur)|Salmonella mayday|Salmonella mayday|NotADate
+E0347775|Salmonella mayday|noun|count(thr_sing)|Salmonella mayday|Salmonella mayday|NotADate
+E0347775|Salmonella mayday|noun|uncount(thr_sing)|Salmonella mayday|Salmonella mayday|NotADate
+E0348312|mayday|noun|uncount(thr_sing)|mayday|mayday|NotADate
+E0349287|S. mayday|noun|count(thr_plur)|S. mayday|S. mayday|NotADate
+E0349287|S. mayday|noun|count(thr_sing)|S. mayday|S. mayday|NotADate
+E0349287|S. mayday|noun|uncount(thr_sing)|S. mayday|S. mayday|NotADate
+E0439065|Faraday|noun|count(thr_sing)|Faraday|Faraday|NotADate
+E0439065|Faraday|noun|uncount(thr_sing)|Faraday|Faraday|NotADate
+E0439065|Faraday's|noun|count(thr_plur)|Faraday|Faraday|NotADate
+E0439065|Faradays|noun|count(thr_plur)|Faraday|Faraday|NotADate
+E0574829|seventh-day|adj|positive|seventh-day|seventh-day|NotADate
+E0587939|latter-day|adj|positive|latter-day|latter-day|NotADate
+E0004047|March's disease|noun|count(thr_sing)|March's disease|March's disease|NotADate
+E0004047|March's disease|noun|uncount(thr_sing)|March's disease|March's disease|NotADate
+E0004047|March's diseases|noun|count(thr_plur)|March's disease|March's disease|NotADate
+E0038886|marches|noun|count(thr_plur)|march|march|NotADate
+E0038886|march|noun|count(thr_sing)|march|march|NotADate
+E0038886|march|noun|uncount(thr_sing)|march|march|NotADate
+E0038887|marched|verb|past|march|march|NotADate
+E0038887|marched|verb|past_part|march|march|NotADate
+E0038887|marches|verb|pres(thr_sing)|march|march|NotADate
+E0038887|marching|verb|pres_part|march|march|NotADate
+E0038887|march|verb|infinitive|march|march|NotADate
+E0038887|march|verb|pres(fst_sing,fst_plur,thr_plur,second)|march|march|NotADate
+E0212866|march haemoglobinuria|noun|uncount(thr_sing)|march haemoglobinuria|march hemoglobinuria|NotADate
+E0212866|march hemoglobinuria|noun|uncount(thr_sing)|march hemoglobinuria|march hemoglobinuria|NotADate
+E0432211|march fracture|noun|count(thr_sing)|march fracture|march fracture|NotADate
+E0432211|march fracture|noun|uncount(thr_sing)|march fracture|march fracture|NotADate
+E0432211|march fractures|noun|count(thr_plur)|march fracture|march fracture|NotADate
+E0511892|marcher|noun|count(thr_sing)|marcher|marcher|NotADate
+E0511892|marchers|noun|count(thr_plur)|marcher|marcher|NotADate
+E0511893|Marcher|noun|count(thr_sing)|Marcher|Marcher|NotADate
+E0511893|Marcher|noun|uncount(thr_sing)|Marcher|Marcher|NotADate
+E0511893|Marchers|noun|count(thr_plur)|Marcher|Marcher|NotADate
+E0000957|Bettlach May disease|noun|count(thr_sing)|Bettlach May disease|Bettlach May disease|NotADate
+E0000957|Bettlach May disease|noun|uncount(thr_sing)|Bettlach May disease|Bettlach May disease|NotADate
+E0000957|Bettlach May diseases|noun|count(thr_plur)|Bettlach May disease|Bettlach May disease|NotADate
+E0039142|may|modal|pres|may|may|NotADate
+E0039148|may apple|noun|count(thr_sing)|may apple|may apple|NotADate
+E0039148|may apple|noun|uncount(thr_sing)|may apple|may apple|NotADate
+E0039148|may apples|noun|count(thr_plur)|may apple|may apple|NotADate
+E0228705|Cape May warbler|noun|count(thr_sing)|Cape May warbler|Cape May warbler|NotADate
+E0228705|Cape May warblers|noun|count(thr_plur)|Cape May warbler|Cape May warbler|NotADate
+E0238714|May-White syndrome|noun|uncount(thr_sing)|May-White syndrome|May-White syndrome|NotADate
+E0353000|Zea mays|noun|count(thr_plur)|Zea mays|Zea mays|NotADate
+E0353000|Zea mays|noun|count(thr_sing)|Zea mays|Zea mays|NotADate
+E0353000|Zea mays|noun|uncount(thr_sing)|Zea mays|Zea mays|NotADate
+E0355393|Ommaya's reservoir|noun|count(thr_sing)|Ommaya's reservoir|Ommaya's reservoir|NotADate
+E0524525|May-Grunwald-Giemsa stain|noun|uncount(thr_sing)|May-Grunwald-Giemsa stain|May-Grunwald-Giemsa stain|NotADate
+E0524525|May-Grünwald-Giemsa stain|noun|uncount(thr_sing)|May-Grünwald-Giemsa stain|May-Grunwald-Giemsa stain|NotADate
+E0524536|May-Grunwald-Giemsa|noun|uncount(thr_sing)|May-Grunwald-Giemsa|May-Grunwald-Giemsa|NotADate
+E0524536|May-Grünwald-Giemsa|noun|uncount(thr_sing)|May-Grünwald-Giemsa|May-Grunwald-Giemsa|NotADate
+E0525476|Traube-Hering-Mayer wave|noun|count(thr_sing)|Traube-Hering-Mayer wave|Traube-Hering-Mayer wave|NotADate
+E0529766|May-Grunwald's stain|noun|uncount(thr_sing)|May-Grunwald's stain|May-Grunwald stain|NotADate
+E0529766|May-Grünwald's stain|noun|uncount(thr_sing)|May-Grünwald's stain|May-Grunwald stain|NotADate
+E0529766|May Grunwald stain|noun|uncount(thr_sing)|May Grunwald stain|May-Grunwald stain|NotADate
+E0529766|May-Grunwald stain|noun|uncount(thr_sing)|May-Grunwald stain|May-Grunwald stain|NotADate
+E0529766|May Grünwald stain|noun|uncount(thr_sing)|May Grünwald stain|May-Grunwald stain|NotADate
+E0529766|May-Grünwald stain|noun|uncount(thr_sing)|May-Grünwald stain|May-Grunwald stain|NotADate
+E0533184|Andricus mayri|noun|count(thr_plur)|Andricus mayri|Andricus mayri|NotADate
+E0221492|June sucker|noun|count(thr_plur)|June sucker|June sucker|NotADate
+E0221492|June sucker|noun|count(thr_sing)|June sucker|June sucker|NotADate
+E0221492|June suckers|noun|count(thr_plur)|June sucker|June sucker|NotADate
+E0416035|jejunectomised|verb|past|jejunectomise|jejunectomize|NotADate
+E0475273|june grass|noun|uncount(thr_sing)|june grass|June grass|NotADate
+E0475273|June grass|noun|uncount(thr_sing)|June grass|June grass|NotADate
+E0512505|gurjunene|noun|uncount(thr_sing)|gurjunene|gurjunene|NotADate
+E0011197|august|adj|positive;periph|august|august|NotADate

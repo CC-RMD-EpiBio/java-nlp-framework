@@ -1,0 +1,279 @@
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+#                                   NIH Clinical Center 
+#                             Department of Rehabilitation 
+#                        Epidemiology and Biostatistics Branch 
+#                                         2019
+#    
+#  This work is licensed under the Creative Commons Attribution 4.0 International License. 
+#  
+#  This license allows you to use, share and  adapt for any purpose, provided:
+#     Provide attribution to the creators of this work within your work.
+#     Indicate if changes were made to this work.
+#     No claim to merchantability, implied warranty, or liability can be made.
+#     
+#   When attributing this code, please make reference to
+#    [citation/url here] .  
+#    
+#     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
+#  
+#  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+#-------------------------------------------------------------------------------
+# ---------------------------------------------------------------
+#List of ambigous acronyms and abbreviations
+#  --- Copyright Notice: --------------------------------------------------
+# 
+#  Copyright 2012 United States Department of Veterans Affairs, 
+#                 Health Services Research & Development Service
+# 
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+# 
+#       http://www.apache.org/licenses/LICENSE-2.0
+# 
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License. 
+#  
+#  --- End Copyright Notice: ----------------------------------------------
+# 
+#(for sentence boundary detection) 
+#
+#List taken from the set outlined in
+#What is a word, What is a sentence
+#Problems of Tokenization by G. Grefenstette,
+#P. Tapanainen, Rank Xerox, Fr.
+# ---------------------------------------------------------------
+
+#-------------
+#State and Nation names
+#-------------
+U.S.
+US.
+
+#----------
+#Titles
+#----------
+
+Mrs.
+Mr.
+Ms.
+Prof.
+Dr.
+Gen.
+Rep.
+Sen.
+Ret.
+St.
+Sr.
+Jr.
+JR.
+SR.
+Ph.D.
+PH.D.
+PH.D
+PhD.
+M.A.
+M.B.A.
+D.D.
+J.D.
+B.S.
+B.A.
+MD.
+M.D.
+Prof.
+Col.
+Rev.
+Hon.
+Sgt.
+Msgr.
+
+
+#----------
+#measurements 
+#----------
+Msec.
+cf.
+cm.
+cu.
+dia.
+ed.
+cc.
+ft.
+gm.
+hp.
+hr.
+l.
+lb.
+lbs.
+mEq.
+mc.
+mg.
+mil.
+oz.
+sec.
+yd.
+yrs.
+
+#----------
+Others 
+#----------
+Assn.
+Av.
+Ave.
+Bldg.
+Cf.
+Co.
+Corp.
+Ct.
+Dept.
+Dist.
+e.g.
+Eq.
+Fig.
+Figs.
+Inc.
+Jas.
+Jr.
+Ltd.
+Mfg.
+Mt.
+Mts.
+No.
+Op.
+Rd.
+Rte.
+Sr.
+St.
+Stat.
+Tech.
+USN.
+Vol.
+Vs.
+Yo.
+a.
+al.
+ca.
+eqn.
+eqns.
+etc.
+fig.
+figs.
+kc.
+min.
+mm.
+mos.
+nw.
+p.
+pl.
+pp.
+prop.
+sq.
+v.
+var.
+viz.
+vs.
+Rm.
+N.
+S.
+E.
+W.
+NW.
+NE.
+SE.
+SW.
+
+# ----------------------
+# From Hitex
+# ----------------------
+ekg.
+rel.
+neg.
+chf.
+ra.
+pm.
+bid.
+rel.
+sob.
+qd.
+mi.
+cm.
+mg.
+pt.
+sat.
+lbs.
+no.
+AG.
+APR.
+AUG.
+Adm.
+Brig.
+CO.
+CORP.
+Capt.
+Cmdr.
+Co.
+Col.
+Comdr.
+DEC.
+DR.
+DRs.
+FEB.
+Fig.
+FRI.
+GMBH.
+Gen.
+Gov.
+INC.
+JAN.
+JUL.
+JUN.
+LTD.
+Lt.
+Ltd.
+MAR.
+MON.
+MP.
+Maj.
+Mr.
+Mrs.
+Ms.
+NA.
+NOV.
+NV.
+OCT.
+Oy.
+PLC.
+Prof.
+Rep.
+SA.
+SAT.
+SEP.
+SIR.
+SR.
+SUN.
+Sen.
+Sgt.
+SpA.
+St.
+THU.
+THUR.
+TUE.
+VP.
+WED.
+ad.
+al.
+ed.
+eds.
+eg.
+et.
+usu.
+vs.
+yr.
+yrs.
+m.d.
+ph.d.
+q.

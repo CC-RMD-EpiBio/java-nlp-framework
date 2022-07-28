@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <!-- =================================================== -->
+    <!--          vtt                                        -->
+    <!-- =================================================== -->
+  <groupId>gov.nih.nlm.nls</groupId>
+  <artifactId>vtt</artifactId>
+  <packaging>jar</packaging>
+  <version>2015.8</version>
+  <name>${project.groupId}: ${project.artifactId}</name>
+  <description>Vtt is an annotation tool developed by NLM</description>
+
+    <!-- ======================================================= -->
+    <!--   Parent Pom - look here for global framework settings  -->
+    <!--   including                                             -->
+    <!--      Distribution Managment                             -->
+    <!--      Java versions                                      -->
+    <!--      Plugin Management and plugins                      -->
+    <!--      Dependencies                                       -->
+    <!-- ======================================================= -->
+  <parent>
+    <groupId>gov.nih.cc.rmd.framework</groupId>
+    <artifactId>00-nlp-parent</artifactId>
+    <version>2021.02.0</version>
+    <relativePath></relativePath>
+  </parent>
+
+  <!-- =================================================== -->
+  <!-- SCM                                                 -->
+  <!-- =================================================== -->
+  <scm>
+    <connection>scm:git:http://v3nlp.bmi.utah.edu/gitblit/git/framework/thirdParty.git/</connection>
+    <url>http://v3nlp.bmi.utah.edu/gitblit/git/framework/thirdParty.git/</url>  
+  </scm>
+
+    <!-- =================================================== -->
+    <!--  Properties - The global stuff                      -->
+    <!-- =================================================== -->
+    <properties>
+        <build-final-name>vtt</build-final-name>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- =================================================== -->
+    <!-- Dependencies now specified in parent pom            -->
+    <!--    groupId                      artifactId          -->
+    <!--    =======                      ==========          -->
+    <!-- =================================================== -->
+    <dependencies>
+      <dependency> <groupId>gov.nih.ncbi              </groupId> <artifactId>bioC_Java               </artifactId> <version>1.0 </version> </dependency>
+      <dependency> <groupId>commons-io                </groupId> <artifactId>commons-io              </artifactId> </dependency>
+      <dependency> <groupId>org.apache.poi            </groupId> <artifactId>poi                     </artifactId> </dependency>
+      <dependency> <groupId>dom4j                     </groupId> <artifactId>dom4j                   </artifactId> </dependency>
+      <dependency> <groupId>junit                     </groupId> <artifactId>junit                   </artifactId> </dependency>
+      <dependency> <groupId>stax                      </groupId> <artifactId>stax-api                </artifactId> </dependency>
+      <dependency> <groupId>org.apache.xmlbeans       </groupId> <artifactId>xmlbeans                </artifactId> </dependency>
+      <dependency> <groupId>org.apache.poi            </groupId> <artifactId>poi-ooxml               </artifactId> </dependency>
+
+    </dependencies>
+
+    <!-- =================================================== -->
+    <!-- Build Phase                                         -->
+    <!-- =================================================== -->
+    <build>
+      <resources>
+         <resource>
+           <directory>src/main/resources</directory>
+           <includes>
+              <include>**/vtt.properties</include>
+              <include>**/*.data</include>
+           </includes>
+         </resource>
+      </resources>
+
+        <!-- =================================================== -->
+        <!-- Build Plugin's                                      -->
+        <!-- =================================================== -->
+        <plugins> 
+
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-compiler-plugin</artifactId>
+               <version>3.5.1</version>
+               <configuration>
+                 <release>11</release>
+               </configuration>
+            </plugin>
+        
+         <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-javadoc-plugin</artifactId>
+               <configuration>
+                   <skip>true</skip>
+               </configuration>
+         </plugin>
+
+            <!-- ##################################################################### -->
+            <!-- Build an executable jar for main application                          -->
+            <!-- ##################################################################### -->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.4</version>
+              <executions>
+               <execution>
+                <id>executable_1</id>
+                  <configuration>
+                     <archive>
+                        <manifest>
+                            <mainClass>gov.nih.nlm.nls.vtt.tools.Vtt</mainClass>
+                        </manifest>
+                     </archive>
+                     <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                     </descriptorRefs>
+                     <finalName>${project.artifactId}</finalName>
+                     <outputDirectory>${project.build.directory}/bin</outputDirectory>
+                     <dependencies>
+                       <dependency><groupId>gov.va.vinci.nlp.framework</groupId><artifactId>${project.artifactId}</artifactId></dependency>
+                     </dependencies>
+                  </configuration>
+                  <phase>package</phase>
+                  <goals>
+                    <goal>single</goal>
+                  </goals>
+               </execution>
+              </executions>
+            </plugin>
+        </plugins>
+
+    </build>
+
+            
+
+</project>
