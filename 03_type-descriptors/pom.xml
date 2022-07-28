@@ -28,7 +28,7 @@
   <!-- =================================================== -->
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>03-nlp-type-descriptors</artifactId>
-  <version>2021.02.0</version>
+  <version>2022.09.0</version>
   <packaging>jar</packaging>
   <description>framework type descriptor mojo generation </description>
 
@@ -38,7 +38,7 @@
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
   </parent>
 
   <!-- =================================================== -->

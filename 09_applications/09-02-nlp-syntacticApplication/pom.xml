@@ -28,7 +28,7 @@
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>09-02-nlp-syntacticApplication</artifactId>
   <packaging>jar</packaging>
-  <version>2021.02.0    </version>
+  <version>2022.09.0    </version>
 
   <description>syntacticApplication runs the syntactic pipeline </description>
 
@@ -43,7 +43,7 @@
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
     <relativePath />
   </parent>
 

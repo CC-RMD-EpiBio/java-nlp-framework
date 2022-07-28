@@ -28,7 +28,7 @@
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>09-00-nlp-NoOpApplication </artifactId>
   <packaging>jar</packaging>
-  <version>2021.02.0</version>
+  <version>2022.09.0</version>
 
   <description>framework noOp application  builds a noOp application  around framework components</description>
 
@@ -43,7 +43,7 @@
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
     <relativePath />
   </parent>
 

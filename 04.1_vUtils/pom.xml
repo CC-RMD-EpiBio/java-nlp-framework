@@ -27,7 +27,7 @@
   <!-- ====================================================== -->
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>04.1-nlp-vUtil</artifactId>
-  <version>2021.02.0</version>
+  <version>2022.09.0</version>
   <packaging>jar</packaging>
   <description>These are utilities that build upon the uima and type descriptor dependencies</description>
 
@@ -37,7 +37,7 @@
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
   </parent>
 
   <!-- ======================================================= -->

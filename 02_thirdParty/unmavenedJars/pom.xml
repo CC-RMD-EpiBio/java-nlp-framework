@@ -8,14 +8,14 @@
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>unmavenedJars</artifactId>
   <packaging>jar</packaging>
-  <version>2021.02.0</version>
+  <version>2022.09.0</version>
 
   <description> Unmavened jars installs local 3rd party jars that are not in a nexus server </description>
 
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
   </parent>
 
 

@@ -23,7 +23,7 @@
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2021.02.0</version>
+    <version>2022.09.0</version>
     <relativePath></relativePath>
   </parent>
 
