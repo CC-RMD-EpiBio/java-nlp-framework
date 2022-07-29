@@ -8,7 +8,7 @@ This framework works specifically with the text part of clinical records.  Clini
 The niche that Framework Legacy addresses is attention paid to Document Decomposition into finer grained entities that then can be processed using traditional means.  Document Decomposition includes identifying structures within documents like page headers and footers, section names, section zones along with paragraphs.  Additional structures are also identified including sentences, phrases, terms,  and tokens.
 
 # The Framework
-The "Framework" is the notion of stringing along or piping methods or functions that work on a document, where the output of one method becomes the input to the next.  In traditional parlance, these methods are called (machine) annotators, and the sequence of annotators is a pipeline.
+The *Framework* is the notion of stringing along or piping methods or functions that work on a document, where the output of one method becomes the input to the next.  In traditional parlance, these methods are called (machine) annotators, and the sequence of annotators is a pipeline.
 
 This notion of an NLP pipeline is not new, and the Framework is not unique, as Framework Legacy, is built upon   components of the Apache project Unstructured Information Management applications (UIMA).  As there is/was a large learning curve to using UIMA and UIMA includes many, many moving parts, Framework-Legacy was developed initially to simplify building NLP pipelines. 
 
@@ -18,9 +18,10 @@ Another notion that defines this framework is that an application is built from 
 
 Framework Legacy includes some useful readers and writers beyond what is Distributed with UIMA.
 
-One last notion about this framework: Labels. A label, or Type Descriptor in UIMA, is a definition of an annotation entity that is "typed" or categorized.  These are the Named Entities that a system will find, be it "Sentence" or "Symptom" or "Token" or "Protein".  Within Framework-Legacy and UIMA, Label definitions are described within one or more type descriptor xml files.  Knowing about where and what type descriptors are specified and used is an important framework component.
+One last notion about this framework: Labels. A label, or Type Descriptor in UIMA, is a definition of an annotation entity that is *typed* or categorized.  These are the Named Entities that a system will find, be it *Sentence* or *Symptom* or *Token* or *Protein*.  Within Framework-Legacy and UIMA, Label definitions are described within one or more type descriptor xml files.  Knowing about where and what type descriptors are specified and used is an important framework component.
 
 ### Framework Summary: ###
+![Summary Picture of Framework Components [1]](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/10_documentation/00_pictures/FrameworkLegacySummary.PNG)
 	- Reader
 	- Type Descriptor
 	- Pipeline
@@ -58,7 +59,18 @@ Many of the framework annotators and applications rely on term lookup using dict
 	The dictionaries themselves are found in and are handled at each specific application built from
 	the framework.
 
-# Built Using Maven
+# Built Using Maven #
+Framework-Legacy is built using Maven.  Maven is a common way to define and control how Java programs are built and distributed.  Maven *pom.xml* files are equivalent to *MakeFiles* for building *C* programs.  
+
+### The Reactor Pom ###
+There is a Top level reactor pom file that calls all subsequent framework-legacy pom files to build all the pieces.  
+
+### Parent Pom ###
+Framework-Legacy includes a parent pom which, among other things, defines the Java compiler version used, the structure of how the man pages should be, and the various dependency plug-ins needed.  Most importantly, the parent pom holds the <version> </version> for each dependency which could be shared across components.  Note that framework-legacy has it's maven configuration set up to have these <version></version> defined in the parent pom and not in the subsequent children pom files.  This aids in making sure there are not competing versions used across an application that uses several components. 
+
+#### Chicken and the Egg ####
+The parent pom has to be installed first before the reactor pom can run, because the reactor pom references the parent pom.  As such, there is a necessary first and separate step to install the parent pom, even though it is also called from reactor pom.  
+
 
 # Components
 
@@ -91,5 +103,9 @@ tUtil
 # Acknowledgments 
 
 # License
+
+# Contact
+
+# History
 
 # Related Projects
