@@ -28,17 +28,6 @@
   <!-- Where to pick up the parent poms -->
   <!-- ======================================================= -->
   <repositories>
- <!--
-    <repository>
-      <id>inlp-nexus</id>
-      <name>inlp Nexus</name>
-          <        url>http://inlp.bmi.utah.edu/nexus/content/groups/public</url   >
-      <url>https://qtzeng.smhs.gwu.edu/nexus/content/groups/public</url> 
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </repository>
--->
     <repository>
       <id>central repository-nexus</id>
       <name>central repo Nexus</name>
@@ -49,56 +38,12 @@
     </repository>
   </repositories>
   <pluginRepositories>
- <!--
-    <pluginRepository>
-      <id>inlp-nexus</id>
-      <name>inlp Nexus</name>
-      <    url>http://inlp.bmi.utah.edu/nexus/content/groups/public</url   >
-      <url>https://qtzeng.smhs.gwu.edu/nexus/content/groups/public</url>
-      <releases>
-	<enabled>true></enabled>
-	<updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
--->
+
   </pluginRepositories>
 
   <!-- =================================================== -->
   <!-- Distribution Management -->
   <!-- =================================================== -->
-  <distributionManagement>
-
-    <site>
-      <id>inlp</id>
-      <name>Deployment Server</name>
-      <!-- url>scp://inlp.bmi.utah.edu/var/www/html/sites/${project.groupId}/${project.artifactId}/${project.version}/</url -->
-    </site>
-
-    <repository>
-      <id>nexus</id>
-      <name>Nexus Staging Repo</name>
-      <!-- url>http://inlp.bmi.utah.edu/nexus/service/local/repositories/releases/content</url -->
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </repository>
-
-    <!--
-       <repository>
-      <id>mavenCentral</id>
-      <name>Nexus Main Repo</name>
-      <url>https://repo1.maven.org/maven2/</url>
-    </repository>
-    -->
-
-    <snapshotRepository>
-       <id>nexus_snapshots</id>
-       <name>Nexus Snapshot Repo</name>
-       <url>http://inlp.bmi.utah.edu/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-
-  </distributionManagement>
-
 
   <!-- =================================================== -->
   <!-- Module Dependency Versions -->

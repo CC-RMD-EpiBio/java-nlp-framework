@@ -410,3 +410,10 @@ tags
 *.old
 *.obsolete
 *#
+*.refactor
+*.obs
+*.toonew
+*.needswork
+*.org
+*.bad
+*.pack
