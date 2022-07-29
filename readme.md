@@ -1,4 +1,7 @@
-# Framework Legacy
+# Framework Legacy: A Framework to Build cNLP Applications from Common Components
+
+Last Edited: 2022-07-29 </p>
+Author: Guy Divita
 
 # Introduction
 Framework Legacy is a suite of components made available to build Java-based clinical Natural Language Processing (cNLP) applications and functionalities. Applications built using these tools include Named Entity Recognition (NER) tools for Symptom Extraction within Clinical Records, Military Sexual Trauma Mention extraction within Clinical Records, Finding Evidence of Homelessness in Clinical Records, and Body Function Extraction within Clinical Records.  
@@ -93,8 +96,6 @@ This project also include a few jars that the jar was available in some other wa
  
 This project includes the statistical machine learned sectionizer obSecAn from Thuy Tran Lee.  This sectionizer was part of the V3NLP tools developed for finding symptoms within VA clinical notes. A paper about this sectionizer was  published and the sectionizer became part of v3NLP (the predisessor to this framework) but she never posted the source code anywhere that could be accessed.  The sectionizer still provides some useful sectionizing evidence it is still employed, but not as the only mechanism to find sections.   
  
-## Readers And Writers ##
-marshallers
 
 ## Type Descriptors ##
 This project includes UIMA type descriptors for a number of projects and general type descriptors that are used everywhere.  UIMA type descriptors can import other type descriptors.  As such there is a hierarchy of types that the framework-legacy uses. 
@@ -119,20 +120,38 @@ There are a bunch of utilities that work on or with UIMA annotations.  These inc
 (The V in the VUtils stood for the VINCI specific functions)  
 
 
-## Pipeline Utilities ##
-pUtils
-
 ## Term, Dictionary, Token Utilities
 tUtil 
 
 
-# Dependencies
+## Annotators ##
 
-# Compiled Jars
+
+## Marshallers (Readers and Writers) ##
+
+
+## Pipeline Utilities ##
+pUtils
+
+
+## Common Pipelines ##
+
+## Example Applications ##
+
+
+## General Dependencies ##
+1. Java 1.8
+2. Maven
+3. UIMA
+4. UIMA-FIT
+
+
+
+## The Jars Compiled, distributed and used by other CC-RMD Projects
 
 # Building
 
-# Version
+# Latest Version
 
 # Acknowledgments 
 
