@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-
-<schema xmlns="http://www.w3.org/2000/10/XMLSchema">
-  <include schemaLocation="Sectionizing-Schemas.xml" />
-  <include schemaLocation="Sentence.xml" />
-  <include schemaLocation="Utterance.xml"/>
-  
-</schema>

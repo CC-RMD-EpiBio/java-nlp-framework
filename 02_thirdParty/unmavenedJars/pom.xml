@@ -44,28 +44,12 @@
                     </goals>
                     <configuration>
                         <createChecksum>true</createChecksum> 
+                        <!-- needed for GATE functionality to compile at one point -->
                         <!-- config for file 01 -->
                         <file>lib/com.springsource.edu.emory.mathcs.backport-3.1.0.jar</file>
                         <groupId>edu.emory.mathcs.backport</groupId>
                         <artifactId>com.springsource.edu.emory.mathcs.backport</artifactId>
                         <version>3.1.0</version>
-                        <packaging>jar</packaging>
-                    </configuration>
-                </execution>
-
-                <execution>
-                    <id>inst_03</id>
-                    <phase>initialize</phase>
-                    <goals>
-                        <goal>install-file</goal>
-                    </goals>
-                    <configuration>
-                        <createChecksum>true</createChecksum> 
-                        <!-- config for file 01 -->
-                        <file>lib/nashorn-0.1.0.2013020801.jar</file>
-                        <groupId>org.bodil.openjdk</groupId>
-                        <artifactId>nashorn</artifactId>
-                        <version>0.1.0.2013020801</version>
                         <packaging>jar</packaging>
                     </configuration>
                 </execution>

@@ -76,17 +76,51 @@ The parent pom has to be installed first before the reactor pom can run, because
 
 ## General Utilities ##
 
+## 01 Resources
+
+The Resources Project includes lists, regular expressions and dictionaries for the annotators that are part of the framework-legacy package.  These include dictionaries for addresses, anatomical parts, diarrhea, gene terms, homelessness evidence, institution names, location terms, terms found within medication sections (that are not themselves medications), military sexual trauma terminology, number words, person words, CCDA section names, the SPECIALIST Lexicon, UCUM terms, and vitals.  
+
+The resources project also includes part of speech and phrasal boundary models. (These are re-distributions of the cTAKES models). 
+
+The resources project also includes regular expressions and patterns needed for finding dates and times, and for finding ConTEXT assertions.  
+
+All of the above are bundled into one jar file so that it is available within the classpath of any application that does term lookup. I.e., this one dependency covers a lot. 
+
+## Third Party Software
+The contents of this directory includes dependencies relied upon that are open source, but not available through a maven nexus distribution.  Among these are two NLM projects,  BioC, the Java version of a common annotation format from NCBI, and the VTT annotation editing tool from NCBC.
+
+This project also include a few jars that the jar was available in some other way than a nexus server, but the source was either no-longer available or was never directly available, These include two jars the cTAKES components have as dependencies (maxent, and opennlp-tools which got altered in one way to enable it to compile to work in this environment).  Also emory mathcs backport, a dependency that the GATE dependency relied upon. 
+ 
+This project includes the statistical machine learned sectionizer obSecAn from Thuy Tran Lee.  This sectionizer was part of the V3NLP tools developed for finding symptoms within VA clinical notes. A paper about this sectionizer was  published and the sectionizer became part of v3NLP (the predisessor to this framework) but she never posted the source code anywhere that could be accessed.  The sectionizer still provides some useful sectionizing evidence it is still employed, but not as the only mechanism to find sections.   
+ 
 ## Readers And Writers ##
 marshallers
 
 ## Type Descriptors ##
-type-descriptors
+This project includes UIMA type descriptors for a number of projects and general type descriptors that are used everywhere.  UIMA type descriptors can import other type descriptors.  As such there is a hierarchy of types that the framework-legacy uses. 
+
+The sources to the type descriptors are within xml files in the *src/main/resources* directory.  These are straight-up UIMA Type descriptors.  The UIMA tool *JCasGen* is used to convert the type descriptor definitions into Java Classes (Mojos) which get placed in the src/main/java directory.
+
+Note: While the src/main/java classes are critical to the framework-legacy functionality, these sources and classes are not saved within the git repos.  They are generated via the *jcasgen* tool/plugin as part of the *mvn install* step when building from sources.  This insures the classes reflect the definitions in the type descriptor xml files.  
+
+ The most basic are the VA CHIR type descriptors.  (CHIR was the name of the funding project at the VA that paid for the initial V3NLP development.) These include the general document decomposition types that included Sentence, Phrase, Token and such.  There was an effort within the VA within CHIR participating projects to standardize the nomenclature via an interoperability initiative.  The CHIR type descriptors were the standardized nomenclature for those entities. The VA VINCI type descriptors was the next layer, which include types that were not uniform across the VA systems, but necessary for our work.  These included the notion of a clinical concept, with Symptoms and diarrhea being more children types of such.  The assertion annotation types are found within the VINCI type descriptors.  (VINCI was the name of the entity that did NLP work for the Salt Lake City VA). Most of the Document Decomposition labels come from these two sets of type descriptors.
+
+ Additional generalized types and some project specific types have been added within the NIH/CC/RMD name-space. These include labels to describe Section Zones, person, and shapes. Mobility type descriptors are included as are labels that map between cTAKES type descriptors and the CHIR/VINCI type descriptors.  (Some of the older code still uses the Framework-cTAKES type descriptor because it was pretty encompassing).
+
+Note: Project specific type descriptors found in the other project specific git repos use the overlapping NIH/CC/RMD name-space to build upon the legacy functionality, to insure the type descriptors are found within the classpath without having to add additional classpaths. 
+
+
+## General Utilities ##
+The are a bunch of general (java) utilities the framework relies upon, including parsing through and splitting pipe delimited lines into columns; command line option parsing utilities; logging aids, to output formatting aids. These general utilities rely on no other dependencies, but most of the other projects do rely on this project.  This gets built first.
+
+
+## Type Descriptor Specific Utilities ##
+There are a bunch of utilities that work on or with UIMA annotations.  These include many UIMA shortcuts to finding annotations within the sets/indexes of annotations within UIMA CAS structures. Beyond those utilities, are utilities that work on (type descriptor) types that are specific to this framework. That is, they have reference attributes that are defined in types that come from the CHIR or VINCI inherited types.  For instance, there are functions that retrieve meta-document information (the path to the document, the file name and the like) which rely on calling these functions on types that have (CHIR) document header types as a component.  
+(The V in the VUtils stood for the VINCI specific functions)  
+
 
 ## Pipeline Utilities ##
 pUtils
-
-## Type Descriptor Specific Utilities ##
-vUtils
 
 ## Term, Dictionary, Token Utilities
 tUtil 
