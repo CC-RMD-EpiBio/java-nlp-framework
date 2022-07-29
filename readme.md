@@ -22,11 +22,11 @@ One last notion about this framework: Labels. A label, or Type Descriptor in UIM
 
 ### Framework Summary: ###
 ![Summary Picture of Framework Components [1]](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/10_documentation/00_pictures/FrameworkLegacySummary.PNG)
-	- Reader
-	- Type Descriptor
-	- Pipeline
-	- Annotator(s)
-	- Writer(s)
+	
+See figure 1. Framework components that make up an application.
+
+![Example of an NER NLP Pipeline maded up of Annotators](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/10_documentation/00_pictures/MentalFunctioningPipelineExample.PNG)
+See figure 2. An example Framework Pipeline, made up of Annotators. Reader is shown in this picture. 
 
 # Beyond UIMA
 Developers define pipelines within (xml) configuration files.  Developers define the parameters to each annotator with (xml) configuration files.  Developers define the labels to be used and referenced as configuration files. The development environment becomes a mass of confusing configuration files.  This is UIMA's Achilles heel. 
