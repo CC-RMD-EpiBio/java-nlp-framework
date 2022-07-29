@@ -30,10 +30,6 @@
 // =================================================
 package gov.nih.cc.rmd.nlp.framework.pipeline.applications;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.List;
-
 import org.apache.uima.jcas.JCas;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
@@ -43,7 +39,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
-import gov.nih.cc.rmd.nlp.framework.utils.U;
 import gov.nih.cc.rmd.nlp.framework.utils.uima.FrameworkTestUtilities;
 
 /**

@@ -122,6 +122,7 @@
                     </configuration>
                 </execution>
 
+
                 <execution>
                     <id>inst_08</id>
                     <phase>initialize</phase>
@@ -139,42 +140,6 @@
                     </configuration>
                 </execution>
 
-
-                <execution>
-                    <id>inst_10</id>
-                    <phase>initialize</phase>
-                    <goals>
-                        <goal>install-file</goal>
-                    </goals>
-                    <configuration>
-                        <createChecksum>true</createChecksum> 
-                        <!-- MIT's JverbNet--> 
-                        <file>lib/edu.mit.jverbnet-1.2.0.jar</file>
-                        <packaging>jar</packaging>
-			<groupId>edu.mit</groupId>
-  			<artifactId>jverbnet</artifactId>
-  			<version>1.2.0</version>
-  			<packaging>jar</packaging>
-                    </configuration>
-                </execution>
-
-                <execution>
-                    <id>inst_11</id>
-                    <phase>initialize</phase>
-                    <goals>
-                        <goal>install-file</goal>
-                    </goals>
-                    <configuration>
-                        <createChecksum>true</createChecksum> 
-                        <!-- NLM's lvg 2022 version --> 
-                        <file>lib/lvg2022dist.jar</file>
-                        <packaging>jar</packaging>
-			<groupId>gov.nih.nlm.nls.lvg</groupId>
-  			<artifactId>lvgdist</artifactId>
-  			<version>2022.0</version>
-  			<packaging>jar</packaging>
-                    </configuration>
-                </execution>
             </executions>
 
 

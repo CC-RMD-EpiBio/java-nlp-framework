@@ -186,7 +186,7 @@ import gov.nih.cc.rmd.nlp.framework.utils.U;
      + "resources/vinciNLPFramework/sections/ccdaSectionHeaders.lragr" + ":"
      + "resources/vinciNLPFramework/sections/pageHeaderPageFooterEvidence.lragr" + ":"
      + "resources/vinciNLPFramework/geneObservations/geneObservations.lragr" + ":"
-     + "resources/vinciNLPFramework/localTerminology/localTerminology.LRAGR" + ":"
+   
      + AssertionAnnotator.EvidenceLRAGRFiles; // <---
                                                // needed
 

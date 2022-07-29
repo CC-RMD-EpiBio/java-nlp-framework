@@ -102,8 +102,8 @@ public class SyntaticApplication {
       // application.addWriter(FrameworkBaselineApplication.VTT_WRITER, args);
       application.addWriter(FrameworkBaselineApplication.STATS_WRITER, args);
       application.addWriter(FrameworkBaselineApplication.XMI_WRITER, args);
-     // application.addWriter(FrameworkBaselineApplication.COMMON_MODEL_WRITER, args);
-
+      application.addWriter(FrameworkBaselineApplication.GATE_WRITER, args);
+    
       meter.mark("Finished Initialization");
 
       // ------------------
