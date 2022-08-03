@@ -168,23 +168,25 @@ For reference sake, $FRAMEWORK_HOME equates to where this repo got cloned out to
 Install the parent pom first.  This is the pom in $FRAMEWORK_HOME/00_parent.
 Once the parent pom has been installed, go back and build the set of projects.  There is a reactor pom in the $FRAMEWORK_HOME directory that refers to each project to be built.
  
-Example Build from the command line:
+### Example Build from the command line:
+<pre>
+> cd $FRAMEWORK_HOME/00_parent
+> mvn install
 
-cd $FRAMEWORK_HOME/00_parent
-mvn install
+> cd $FRAMEWORK_HOME
+> mvn install
 
-cd $FRAMEWORK_HOME
-mvn install
-
+> mvn eclipse:eclipse
+</pre>
 
 # Latest Version
 2022-09-0
 
 # Acknowledgments 
-See the [Acknowledgments](acknowledgments.md)  page.
+See the [Acknowledgments](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/acknowldgements.md)  page.
 
 # License
-See the [License](license.md) page.
+See the [License](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD) page.
 
 # Contact
  Guy dot Divita  at   n i h  . gov
@@ -195,3 +197,4 @@ See the [License](license.md) page.
 # Related Projects
 
 - [Body Function (Strength, Range of Motion, Reflex) Project](https://github.com/CC-RMD-EpiBio/bodyFunction)
+- 
