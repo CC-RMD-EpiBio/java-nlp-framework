@@ -176,8 +176,40 @@ Once the parent pom has been installed, go back and build the set of projects.  
 > cd $FRAMEWORK_HOME
 > mvn install
 
+</pre>
+When the process is complete, the output from the process should like like this:
+<pre>
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for 000-top 2022.09.0:
+[INFO]
+[INFO] gov.nih.cc.rmd.framework: 00-nlp-parent ............ SUCCESS [  1.988 s]
+[INFO] 01-nlp-resources ................................... SUCCESS [  4.355 s]
+[INFO] unmavenedJars ...................................... SUCCESS [  1.786 s]
+[INFO] 02-thirdParty ...................................... SUCCESS [  0.060 s]
+[INFO] 03-nlp-type-descriptors ............................ SUCCESS [ 22.214 s]
+[INFO] 04.0-nlp-util ...................................... SUCCESS [  2.899 s]
+[INFO] 04.1-nlp-vUtil ..................................... SUCCESS [  0.772 s]
+[INFO] 04.2-nlp-tUtil ..................................... SUCCESS [  2.892 s]
+[INFO] 05-nlp-annotators .................................. SUCCESS [  3.247 s]
+[INFO] 06-nlp-marshallers ................................. SUCCESS [  4.324 s]
+[INFO] 07.0-nlp-pUtils .................................... SUCCESS [  0.904 s]
+[INFO] 08-nlp-pipelines ................................... SUCCESS [  1.184 s]
+[INFO] 09-00-nlp-NoOpApplication .......................... SUCCESS [ 27.119 s]
+[INFO] 09-02-nlp-syntacticApplication ..................... SUCCESS [01:14 min]
+[INFO] 09-nlp-applications ................................ SUCCESS [  0.057 s]
+[INFO] 000-top ............................................ SUCCESS [  0.053 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:28 min
+[INFO] Finished at: 2022-08-03T11:42:48-04:00
+[INFO] ------------------------------------------------------------------------
+</pre>
+
 > mvn eclipse:eclipse
 </pre>
+
+
 
 # Latest Version
 2022-09-0
