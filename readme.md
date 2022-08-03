@@ -77,9 +77,8 @@ The parent pom has to be installed first before the reactor pom can run, because
 
 # Components
 
-## General Utilities ##
 
-## 01 Resources
+## Resources
 
 The Resources Project includes lists, regular expressions and dictionaries for the annotators that are part of the framework-legacy package.  These include dictionaries for addresses, anatomical parts, diarrhea, gene terms, homelessness evidence, institution names, location terms, terms found within medication sections (that are not themselves medications), military sexual trauma terminology, number words, person words, CCDA section names, the SPECIALIST Lexicon, UCUM terms, and vitals.  
 
@@ -121,44 +120,78 @@ There are a bunch of utilities that work on or with UIMA annotations.  These inc
 
 
 ## Term, Dictionary, Token Utilities
-tUtil 
+The tUtilities keeps those functions that have to do with term look-up.  Included are acronym expansion and acronym look-up, functionality that handles lexical variations with wrappers around LVG. Also included are functions around the UMLS Metatheaurus MR tables.  These are functions that read in the Metathesaurus tables like MRCONSO, MREL, MRHIER, index the fields and have lookup functions on them. The functions rely on having the locations of the tables as input parameters.  The tables themselves are not distributed. 
 
 
 ## Annotators ##
+Annotators are the atomic units of function within the framework.  This project includes annotators for document decomposition (token, phrase, sentence, section, slot value), along with annotators to recognize date and time, event dates, family members, gene observations, labs, medications, procedures, vitals just to name a few.  At last count there were 150 annotators in this collection. 
 
 
 ## Marshallers (Readers and Writers) ##
+Marshallers are functions that *marshall* from one format to another.  This is the project where the functions that transform from input formats like text, GATE, UIMA and CSV are transformed into framework's internal format (CAS's), and where CAS's are transformed into output formats like UIMA's XMI, GATE's XML and Serial Datastore, and CSV formats rest. Beyond GATE, UIMA and CSV, there are also marshallers for Knowtator and eHOST annotation types. 
 
 
 ## Pipeline Utilities ##
-pUtils
+The pipeline utilities project includes wrappers around UIMA-FIT, and the structures needed to stitch together a reader, a type descriptor, a pipeline definition, and writers. 
 
 
 ## Common Pipelines ##
+Pipelines included in this project have been referenced elsewhere either as examples in other documentation such as the noOp (no operation) pipeline and the Line Pipeline or are called by other pipelines (yes you can do that), such as the Sentence and Syntactic pipelines.  
 
 ## Example Applications ##
+Pipeline Applications included in this project have been referenced by either as examples in other documentation such as the noOp (no operation) application and the Line application or are fundamental applications such as term lookup, or Sophia applications. 
+[Note to self - take out applications that should not be distributed]  
 
 
 ## General Dependencies ##
+
 1. Java 1.8
 2. Maven
 3. UIMA
 4. UIMA-FIT
+5. 
+This framework is all java code.  As such, it has to be built using Java 1.8 or later compilers. Note, until I update UIMA-FIT, The code compliance set within Maven or eclipse has to be Java 1.8's defintions.  There is an issues with the version of UIMA-FIT that is employed that prevents compilation beyond 1.8, with a conflict between what is referenced and what got migrated into Java 9 (and beyond) core functionality.  Other than the UIMA-FIT conflict, the rest of the code base can be compiled from 1.8 thru Java 18.
+
+This framework relies on Maven 3.x to build.  
+
+This framework is built upon the UIMA version 2.9.  It also can be build with 2.10, but has not (yet) migrated to UIMA 3.X.  
+
+This framework relies upon UIMA-FIT version 2.4 to simplify development. UIMA-FIT has newer versions that are based on UIMA 3.  As such, until the rest of the Framework code base is updated to UIMA 3, Framework using UIMA-FIT 3 will not work.
 
 
 
 ## The Jars Compiled, distributed and used by other CC-RMD Projects
+The following jars have been compiled using the above code, and are dependencies for 
 
 # Building
+For reference sake, $FRAMEWORK_HOME equates to where this repo got cloned out to.
+Install the parent pom first.  This is the pom in $FRAMEWORK_HOME/00_parent.
+Once the parent pom has been installed, go back and build the set of projects.  There is a reactor pom in the $FRAMEWORK_HOME directory that refers to each project to be built.
+ 
+Example Build from the command line:
+
+cd $FRAMEWORK_HOME/00_parent
+mvn install
+
+cd $FRAMEWORK_HOME
+mvn install
+
 
 # Latest Version
+2022-09-0
 
 # Acknowledgments 
+See the [Acknowledgments](acknowledgments.md)  page.
 
 # License
+See the [License](license.md) page.
 
 # Contact
+ Guy dot Divita  at   n i h  . gov
 
 # History
+2022.09.0 - Initial release version.
 
 # Related Projects
+
+- [Body Function (Strength, Range of Motion, Reflex) Project](https://github.com/CC-RMD-EpiBio/bodyFunction)
