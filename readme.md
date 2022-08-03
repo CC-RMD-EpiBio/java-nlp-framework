@@ -221,7 +221,7 @@ See the [Acknowledgments](https://github.com/CC-RMD-EpiBio/java-nlp-framework/bl
 See the [License](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD) page.
 
 # Paper(s) to Reference
-  See [referenceTheseCitations.md](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/referenceTheseCitations.md) page.
+  See [reference These Citations](https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/referenceTheseCitations.md) page.
 
 # Contact
  Guy dot Divita  at   n i h  . gov
