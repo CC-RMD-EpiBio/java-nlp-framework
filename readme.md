@@ -63,7 +63,9 @@ Many of the framework annotators and applications rely on term lookup using dict
 	the framework.
 
 # Built Using Maven #
-Framework-Legacy is built using Maven.  Maven is a common way to define and control how Java programs are built and distributed.  Maven *pom.xml* files are equivalent to *MakeFiles* for building *C* programs.  
+Framework-Legacy is built using Maven.  Maven is a common way to define and control how Java programs are built and distributed.  Maven *pom.xml* files are equivalent to *MakeFiles* for building *C* programs. 
+
+But ... there is no nexus server we can deploy to.  All these packages have to be cloned and built into your local maven (.m2) environment.   
 
 ### The Reactor Pom ###
 There is a Top level reactor pom file that calls all subsequent framework-legacy pom files to build all the pieces.  

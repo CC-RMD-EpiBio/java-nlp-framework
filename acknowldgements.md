@@ -37,6 +37,9 @@ The Apache Open Lucene software is used under the  [Apache License v2](https://u
 ## LVG Version 2022 ##
   Lvg software is used under the [Terms and Conditions for use of the SPECIALIST NLP Tools](https://lhncbc.nlm.nih.gov/LSG/Projects/lvg/current/web/termsAndConditions.html)  
 
+## SPECIALIST Lexicon (2020AA) ##
+  The LRAGR file is used under [Terms and Conditions for use of the SPECIALIST NLP Tools](https://lhncbc.nlm.nih.gov/LSG/Projects/lvg/current/web/termsAndConditions.html)  
+
 ## VTT 2010 Version ##
   VTT software is used under the [Terms and Conditions for use of the SPECIALIST NLP Tools](https://lhncbc.nlm.nih.gov/LSG/Projects/lvg/current/web/termsAndConditions.html)  
 
