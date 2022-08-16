@@ -127,7 +127,7 @@ public class StripCopyright {
   // ================================================= 
  private static String replaceCopyright(String[] oldBuff, int ptr) { 
     
-   String[] buff = new String[ oldBuff.length - 20]; 
+   String[] buff = new String[ oldBuff.length - 21]; 
    String returnVal = null; 
     
    // copy the stuff before line ptr - 7 into buff 
@@ -144,8 +144,10 @@ public class StripCopyright {
    for ( int i = 0;  i < buff.length; i++) 
      newBuff.append( buff[i] + '\n'); 
     
+  
     returnVal = newBuff.toString(); 
-   
+     
+    
    return returnVal; 
      
   } // end Method replaceCopyright() ---------- 
@@ -181,4 +183,3 @@ public class StripCopyright {
   // Global Variables 
   
 } // end Class StripCopyright() -------------------- 
-

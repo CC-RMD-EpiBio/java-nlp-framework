@@ -214,4 +214,3 @@ public static String getHelp( String pClassName) {
 
 
 } // End of the Class Use
-null

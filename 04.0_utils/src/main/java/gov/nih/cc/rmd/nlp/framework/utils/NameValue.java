@@ -98,4 +98,3 @@ public class NameValue {
   private String value = null;
   
 } // end Class NameValue() -----------------------
-null

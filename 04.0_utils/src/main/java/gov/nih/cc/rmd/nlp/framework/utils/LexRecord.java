@@ -684,4 +684,3 @@ public class LexRecord {
   public final static int SEMANTIC_TYPE = 6;
 
 } // end Class LexRecord() -------------------
-null

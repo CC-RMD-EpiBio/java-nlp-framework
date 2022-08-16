@@ -46,4 +46,3 @@ public class PatternMatch {
 		this.str = str;
 	}
 }
-null

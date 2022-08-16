@@ -75,4 +75,3 @@ public class RegExMatcher {
 		return rules;
 	}
 }
-null

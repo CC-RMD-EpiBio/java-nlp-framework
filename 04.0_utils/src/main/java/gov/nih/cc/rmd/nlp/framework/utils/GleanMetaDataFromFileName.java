@@ -140,4 +140,3 @@ public class GleanMetaDataFromFileName {
   static final Pattern pageNoPattern = Pattern.compile("[p|P]age.(\\d)");
 
 } // end Class GleanMetaDataFromFilename() -----
-null

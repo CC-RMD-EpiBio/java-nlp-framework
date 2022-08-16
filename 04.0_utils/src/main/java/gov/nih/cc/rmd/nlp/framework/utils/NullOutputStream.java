@@ -19,4 +19,3 @@ import java.io.OutputStream;
         //do nothing
     }
 }
-null

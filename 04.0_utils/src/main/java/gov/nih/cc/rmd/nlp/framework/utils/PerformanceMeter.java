@@ -609,4 +609,3 @@ public class PerformanceMeter {
   } // End Method stopCounter() ======================
 
 } // end Class PerformanceMeter
-null

@@ -18,4 +18,3 @@ package gov.nih.cc.rmd.nlp.framework.utils;
 public class TimerToken {
 
 }
-null

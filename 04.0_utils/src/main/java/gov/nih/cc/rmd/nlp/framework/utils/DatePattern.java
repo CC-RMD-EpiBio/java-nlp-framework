@@ -104,4 +104,3 @@ public class DatePattern {
 		return matches;
 	}
 }
-null

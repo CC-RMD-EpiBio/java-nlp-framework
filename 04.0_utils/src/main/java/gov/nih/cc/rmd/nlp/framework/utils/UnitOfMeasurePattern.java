@@ -61,4 +61,3 @@ public class UnitOfMeasurePattern {
 		return matches;
 	}
 }
-null

@@ -226,4 +226,3 @@ public final void setInputDir(String inputDir) {
   
 
 } // end Class DirTools
-null

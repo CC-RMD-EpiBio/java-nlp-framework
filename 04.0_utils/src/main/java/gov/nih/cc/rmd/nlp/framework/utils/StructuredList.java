@@ -258,4 +258,3 @@ public class StructuredList {
 
   
 } // End StructuredList Class -------------------------------
-null

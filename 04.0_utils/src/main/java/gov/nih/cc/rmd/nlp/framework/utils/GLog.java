@@ -966,4 +966,3 @@ public final class GLog {
   } // End Method setArgs() -----------------------
 
 } // end Class GLog
-null
