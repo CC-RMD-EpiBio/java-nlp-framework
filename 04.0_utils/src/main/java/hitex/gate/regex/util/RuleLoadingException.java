@@ -108,4 +108,4 @@ public class RuleLoadingException extends ConceptFinderException {
   }
 
 }
-null
+
