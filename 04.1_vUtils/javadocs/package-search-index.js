@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"gov.nih.cc.rmd.nlp.framework.utils.framework.uima"},{"l":"gov.nih.cc.rmd.nlp.framework.utils.uima"},{"l":"gov.nih.cc.rmd.nlp.framework.utils.umls"}];updateSearchResults();
