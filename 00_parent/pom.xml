@@ -280,6 +280,8 @@
               <aggregate>true</aggregate>
               <includeDependencySources>false</includeDependencySources>
               <detectJavaApiLink>false</detectJavaApiLink>
+ 	      <reportOutputDirectory>${project.reporting.outputDirectory}/../../</reportOutputDirectory>
+              <destDir>javadocs</destDir>
             </configuration>
 
         <executions>
