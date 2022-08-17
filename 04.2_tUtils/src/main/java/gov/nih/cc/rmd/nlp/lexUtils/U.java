@@ -207,8 +207,7 @@ public class U {
     
     if ( !Character.isWhitespace( pChar) &&
          !Character.isLetterOrDigit(pChar) )
-    //if ("~`„—§!@#$%^&\\*\\(\\)_\\-\\+={}\\[\\]\\|\\\\:;'<>\\?\\/,\\.\""
-     //   .indexOf(pChar) > -1)
+    
       returnValue = true;
 
     return returnValue;
