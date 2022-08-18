@@ -1,6 +1,13 @@
-# License Information 
+
+-----------
+<p align="center"> 
+NIH Clinical Center<br>
+Department of Rehabilitation Medicine<br>
+Epidemiology and Biostatistics Branch<br>
+2022</p>
 -----------
 
+# License Information 
 ## Copyright Notice ##
 This software was developed and funded by the National Institutes of Health
 Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
