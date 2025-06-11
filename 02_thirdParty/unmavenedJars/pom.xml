@@ -8,14 +8,14 @@
   <groupId>gov.nih.cc.rmd.framework</groupId>
   <artifactId>unmavenedJars</artifactId>
   <packaging>jar</packaging>
-  <version>2022.09.0</version>
+  <version>2021.02.0</version>
 
   <description> Unmavened jars installs local 3rd party jars that are not in a nexus server </description>
 
   <parent>
     <groupId>gov.nih.cc.rmd.framework</groupId>
     <artifactId>00-nlp-parent</artifactId>
-    <version>2022.09.0</version>
+    <version>2021.02.0</version>
   </parent>
 
 
@@ -35,6 +35,24 @@
             <artifactId>maven-install-plugin</artifactId>
             <version>2.4</version>
             <executions>
+                <execution>
+                    <id>inst_01</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- config for file 01 -->
+                        <file>lib/LibSVM-1.0.10.jar</file>
+
+                        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/LibSVM -->
+                        <groupId>nz.ac.waikato.cms.weka</groupId>
+                        <artifactId>LibSVM</artifactId>
+                        <version>1.0.10</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
 
                 <execution>
                     <id>inst_02</id>
@@ -44,7 +62,6 @@
                     </goals>
                     <configuration>
                         <createChecksum>true</createChecksum> 
-                        <!-- needed for GATE functionality to compile at one point -->
                         <!-- config for file 01 -->
                         <file>lib/com.springsource.edu.emory.mathcs.backport-3.1.0.jar</file>
                         <groupId>edu.emory.mathcs.backport</groupId>
@@ -54,6 +71,39 @@
                     </configuration>
                 </execution>
 
+                <execution>
+                    <id>inst_03</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- config for file 01 -->
+                        <file>lib/nashorn-0.1.0.2013020801.jar</file>
+                        <groupId>org.bodil.openjdk</groupId>
+                        <artifactId>nashorn</artifactId>
+                        <version>0.1.0.2013020801</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_04</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- These are ctakes ae descriptors that don't usually get bundled up into jars-->
+                        <file>lib/ctakes4.0.desc.jar</file>
+                        <groupId>org.apache.ctakes</groupId>
+                        <artifactId>ctakes-desc</artifactId>
+                        <version>4.0</version>
+                        <packaging>jar</packaging>
+                    </configuration>
+                </execution>
 
                 <execution>
                     <id>inst_05</id>
@@ -106,7 +156,6 @@
                     </configuration>
                 </execution>
 
-
                 <execution>
                     <id>inst_08</id>
                     <phase>initialize</phase>
@@ -124,6 +173,59 @@
                     </configuration>
                 </execution>
 
+                <execution>
+                    <id>inst_09</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- Bret South's eHOST --> 
+                        <file>lib/eHOST-2017.07.2.jar</file>
+                        <packaging>jar</packaging>
+			<groupId>gov.va</groupId>
+  			<artifactId>eHOST</artifactId>
+  			<version>2017.07.2 </version>
+  			<packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_10</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- MIT's JverbNet--> 
+                        <file>lib/edu.mit.jverbnet-1.2.0.jar</file>
+                        <packaging>jar</packaging>
+			<groupId>edu.mit</groupId>
+  			<artifactId>jverbnet</artifactId>
+  			<version>1.2.0</version>
+  			<packaging>jar</packaging>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>inst_11</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>install-file</goal>
+                    </goals>
+                    <configuration>
+                        <createChecksum>true</createChecksum> 
+                        <!-- NLM's lvg 2022 version --> 
+                        <file>lib/lvg2022dist.jar</file>
+                        <packaging>jar</packaging>
+			<groupId>gov.nih.nlm.nls.lvg</groupId>
+  			<artifactId>lvgdist</artifactId>
+  			<version>2022.0</version>
+  			<packaging>jar</packaging>
+                    </configuration>
+                </execution>
             </executions>
 
 
