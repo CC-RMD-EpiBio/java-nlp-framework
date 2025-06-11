@@ -266,18 +266,22 @@
       <!-- ======================================================== -->
       <!-- Maven javadoc distribution plugin -->
       <!-- ======================================================== -->
-      <!-- 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <!-  Keep this javadoc plugin version, later ones like 3.1.0 lead to failures   was using 2.10.3   ->
-        <version>3.0.0</version>
+        <!--  Keep this javadoc plugin version, later ones like 3.1.0 lead to failures   was using 2.10.3   -->
+        <version>3.4.1</version>
             <configuration>
+              <source>8</source>
+              <failOnError>false</failOnError>
               <javadocVersion>1.7</javadocVersion>
               <doclint>none</doclint>
               <additionalJOption>-Xdoclint:none</additionalJOption>
               <aggregate>true</aggregate>
               <includeDependencySources>false</includeDependencySources>
+              <detectJavaApiLink>false</detectJavaApiLink>
+ 	      <reportOutputDirectory>${project.reporting.outputDirectory}/../../</reportOutputDirectory>
+              <destDir>javadocs</destDir>
             </configuration>
 
         <executions>
@@ -295,7 +299,6 @@
           </execution>
         </executions>
       </plugin>
-     -->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

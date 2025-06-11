@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"gov.nih.cc.rmd.nlp.framework.utils"},{"l":"hitex.gate.regex"},{"l":"hitex.gate.regex.util"}];updateSearchResults();

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"gov.cc.rmd.nlp.framework.pipeline.applications","l":"NoOpAPI"},{"p":"gov.cc.rmd.nlp.framework.pipeline.applications","l":"NoOpApplication"},{"p":"gov.cc.rmd.nlp.framework.pipeline.applications","l":"NoOpBaselineApplication"}];updateSearchResults();

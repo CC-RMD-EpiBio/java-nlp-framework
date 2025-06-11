@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"gov.nih.cc.rmd"},{"l":"gov.nih.cc.rmd.framework"},{"l":"gov.nih.cc.rmd.framework.model"},{"l":"gov.nih.cc.rmd.model"},{"l":"gov.va.chir.model"},{"l":"gov.va.vinci.model"},{"l":"gov.va.vinci.model.temporal"},{"l":"gov.va.vinci.vitals"},{"l":"org.apache.uima.examples"}];updateSearchResults();
