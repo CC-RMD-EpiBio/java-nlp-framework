@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>gov.nih.cc.rmd.nlp.framework.annotator.Sections.CCDASectionHeaderAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>CCDASectionHeaderAnnotator</name>
+    <description>CCDASectionHeader sections identifies the section(zones) that we are interested in:
+ * 
+ *   Demographics (gender/age/address/email/phone/Ethnicity/Race)
+ *   Chief Complaint/Active Problems
+ *   Social History (Smoking Status/Tobacco Use/Alchohol Use/Canabnoid Use)
+ *   Allergies
+ *   Medications (active/current/Ordered/Expired)
+ *   Family History
+ *   Vitals
+ *   Labs (Results)
+ *   Assessment/Plan
+ *   Instructions
+ *   Diagnosis
+ *   Providers  &lt;---- useful for patient
+ *   
+This is a  riff off of the sectionizer that we've got - look for  section headings for these .    
+ *     find one - zone til the next indication we are out of  that section - 
+
+This annotator makes the section names, the CCDASectionsAnnotator makes the section zones.   
+
+This annotator relies on the resource resources/vinciNLPFramework/sections/ccdaSectionHeaders.lragr</description>
+    <version>2019.09.21</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>args</name>
+        <description>The args parameter passes parameters into the this annotator. 
+
+Since this is a cross between traditional uima and uima-fit and framework annotators, the annotators are looking for parameters that are on the "args" parameter, one parameter per multi-valued element. This would be the equivelant to passing POSIX "args" thru the command line, where each element would consist of "key=value"
+
+
+Optional logging arguments that could be passed in include:
+--profilePerformanceLogging=true|false   (as a string)   default == false
+--logDir=/some/log/dir   (default == ./ )
+--printToLog=true|false  (as a string)   default == false</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>args</name>
+        <value>
+          <array>
+            <string>--logDir=./</string>
+            <string>--printToLog=false</string>
+            <string>--profilePerformanceLogging=false</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

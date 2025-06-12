@@ -1,64 +1,3 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
 // =================================================
 /**
  * DateAndTimeAnnotator identifies date and time parts
@@ -86,6 +25,7 @@ import gov.nih.cc.rmd.framework.model.Number;
 import gov.nih.cc.rmd.nlp.framework.annotator.RedCatAnnotator;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.U;
 import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
 import gov.va.chir.model.Line;
 import gov.va.chir.model.Token;
@@ -110,6 +50,8 @@ public class DateAndTimeAnnotator extends RedCatAnnotator {
   public void process(JCas pJCas) throws AnalysisEngineProcessException {
    
     this.performanceMeter.startCounter();
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " Start " + this.getClass().getSimpleName());
+    
     try {
          
       datesByRegularExpression(pJCas);
@@ -119,7 +61,7 @@ public class DateAndTimeAnnotator extends RedCatAnnotator {
       GLog.println(GLog.ERROR_LEVEL,"Issue in DateAndTime Annotator " + e.toString());
     }
     
-    
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " End " + this.getClass().getSimpleName());
     this.performanceMeter.stopCounter();     
     
   } // end Method process() ----------------
@@ -180,7 +122,10 @@ public class DateAndTimeAnnotator extends RedCatAnnotator {
    
    if (pConcepts != null && !pConcepts.isEmpty()) {
      for ( Annotation concept: pConcepts ) {
-       Annotation date = createDate( pJCas, concept);
+      // if ( !badYear( concept ) ) {
+         Annotation date = createDate( pJCas, concept);
+      // }
+       
        concept.removeFromIndexes(pJCas);
       
      }
@@ -189,7 +134,70 @@ public class DateAndTimeAnnotator extends RedCatAnnotator {
   } // end Method transformConceptsToDateConcepts() ----
 
 
- //-----------------------------------------
+ // =================================================
+  /**
+   * badYear checks if the year is within the range of 19xx or 20xx
+   * if it is, returns false (it's a bad year)
+   * 
+   * @param pConcept
+   * @return boolean
+  */
+  // =================================================
+ private boolean badYear(Annotation pConcept) {
+   boolean returnVal = true;
+   
+   String dateString = pConcept.getCoveredText();
+   try {
+     int year = getYear( dateString );
+    
+     if ( ( year >= 1800 && year <= 2071 ))
+       returnVal = false;
+   } catch (Exception e) {}
+   
+   return returnVal;
+  } // end Method badYear() -------------------
+
+
+
+// =================================================
+/**
+ * getYear returns the year part of the string
+ * 
+ * @param pDateString
+ * @return int
+*/
+// =================================================
+ private int getYear(String pDateString) {
+ 
+   int returnVal = 0;
+   String yearString = "";
+   
+   try {
+   // assuming the date is the last part of the string
+   if ( pDateString != null && (pDateString.contains("/") || pDateString.contains(".")) && !U.containsLetters(pDateString)) {
+     pDateString = pDateString.replace('.', '/');
+      yearString = pDateString.substring( pDateString.lastIndexOf("/")+1);
+     if ( yearString.length() == 2)
+       yearString = "20" + yearString;
+     returnVal = Integer.valueOf(yearString);
+   } else if ( pDateString != null && !U.containsLetters(pDateString)) 
+     returnVal = Integer.valueOf(pDateString);
+   else if ( pDateString != null && U.containsLetters(pDateString) && pDateString.lastIndexOf(',') > 0) {
+     int lastIndxOfComma = pDateString.lastIndexOf(',');
+      yearString = pDateString.substring( lastIndxOfComma + 1).trim();
+     returnVal = Integer.valueOf(yearString);
+   }
+   } catch (Exception e) { 
+     // e.printStackTrace();
+     GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "getYear ", "Not able to get year from |" + pDateString + "|" + yearString);
+     }
+   
+  return returnVal;
+} // end Method getYear() -----------------
+
+
+
+//-----------------------------------------
  /**
   * createDate
   * 

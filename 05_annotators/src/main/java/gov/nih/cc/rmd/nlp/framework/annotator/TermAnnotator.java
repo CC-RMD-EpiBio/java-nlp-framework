@@ -1,64 +1,3 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
 // =================================================
 /**
  * TermAnnotator identifies single and multi-word terms within text. 
@@ -106,11 +45,14 @@ import org.apache.uima.util.Level;
 import gov.va.chir.model.ContentHeading;
 import gov.va.chir.model.DependentContent;
 import gov.va.chir.model.LexicalElement;
+import gov.va.chir.model.Line;
 import gov.va.chir.model.PartOfSpeech;
+import gov.va.chir.model.Sentence;
 import gov.va.chir.model.Token;
 import gov.va.chir.model.Utterance;
 import gov.va.chir.model.VAnnotation;
 import gov.va.chir.model.WordToken;
+import gov.va.vinci.model.temporal.AbsoluteDate;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 
 import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
@@ -140,6 +82,10 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     	
       try {
       this.performanceMeter.startCounter();
+      String msg = " Start " + this.getClass().getSimpleName();
+      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", msg);
+      
+     
       
       if ( this.processMe ) {
       
@@ -157,15 +103,17 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
       // ------------------------------------------------------
       for (Annotation aSentence : sentences ) {
        
-          //if ( ((Utterance)aSentence).getProcessMe() ) {
-    	  {
+        {
             try {
          
               // Check to see if the utterance has not already been covered.  I.e., sentence that had an embedded list element in it
               List<Annotation> terms = UIMAUtil.getAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, aSentence.getBegin(), aSentence.getEnd(),false);
 
+             
               if ( terms == null || terms.isEmpty() )
                 termTokenizeSentence(pJCas, (Utterance) aSentence);
+              
+            
            
             } catch (Exception e) {
               e.printStackTrace();
@@ -179,7 +127,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
       } // end loop through the sentences of the document
     } // end if there are any sentences
   
-    
+   
     // ---------------------------------------------
     // Process the content headings of those slot:values and questions that are asserted
     // ---------------------------------------------
@@ -259,6 +207,9 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     // ----------------------------------
     
       }
+      msg = " End " + this.getClass().getSimpleName();
+      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", msg);
+     
     this.performanceMeter.stopCounter();
     
       } catch (Exception e) {
@@ -370,12 +321,82 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
       List<?> terms = null;
       List<Annotation> tokens = UIMAUtil.getAnnotationsBySpan(pJCas, WordToken.typeIndexID, pSentence.getBegin(), pSentence.getEnd());
   
+      // GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "termTokenizeSentence",  "looking at sentence |" + U.extremeNormalize( pSentence.getCoveredText()));
       if ( tokens != null ) {
-        terms =  termTokenizeSentence( pJCas, pSentence, tokens);
+  
+        // Some sentences are too big to process so process by line instead
+        
+        if ( tokens.size() > this.sentenceSizeThreshold ) {
+          GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "termTokenizeSentence",  "sentence tooooo big turning into line sentences|" + this.sentenceSizeThreshold + "|" + tokens.size()); 
+          terms = termTokenizeSentenceByLine( pJCas, pSentence, tokens);
+        } else {
+          terms =  termTokenizeSentence( pJCas, pSentence, tokens);
+        }
       } // end if there are any tokens in this utterance
       
       return terms;
     } // end Method termTokenizeSentence() -----
+
+    // =================================================
+    /**
+     * termTokenizeSentenceByLine break this sentence into lines
+     * and process each line
+     * 
+     * @param pJCas
+     * @param pSentence
+     * @param tokens
+     * @return terms
+     * @throws Exception 
+    */
+    // =================================================
+    private List<LexicalElement> termTokenizeSentenceByLine(JCas pJCas, Utterance pSentence, List<Annotation> tokens) throws Exception {
+      ArrayList<LexicalElement> returnVal = null;
+      
+      // ignore the tokens passed in
+      List<Annotation> lines = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, Line.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), false );
+      
+      if ( lines != null && !lines.isEmpty()) {
+        returnVal = new ArrayList<LexicalElement>();
+        for ( Annotation aLine: lines ) {
+          List<Annotation>  someTokens = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, WordToken.typeIndexID, aLine.getBegin(), aLine.getEnd(), false );
+          Utterance aLineSentence = convertLineToSentence( pJCas, aLine, someTokens);
+          GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "termTokenizeSentenceByLine",  "looking at sentence |" + U.extremeNormalize( aLineSentence.getCoveredText()));
+          
+          boolean reTokenize = termTokenizeSentenceAux(pJCas, someTokens, returnVal, false );
+          if (( returnVal != null ) && ( returnVal.size() > 0)) {
+            FSArray termz = UIMAUtil.list2FsArray(pJCas, returnVal);
+            aLineSentence.setUtteranceLexicalElements(termz);
+          }
+           
+        }
+      }
+      
+      return returnVal;
+      
+    } // end Method termTokenizeSentenceByLine() --------
+
+    // =================================================
+    /**
+     * convertLineToSentence
+     * 
+     * @param pJCas
+     * @param pLine
+     * @param pTokens
+     * @return Utternace
+    */
+    // =================================================
+    private Utterance convertLineToSentence(JCas pJCas, Annotation pLine, List<Annotation> pTokens) {
+      
+      Sentence returnVal =  new Sentence ( pJCas);
+      returnVal.setBegin(pLine.getBegin());
+      returnVal.setEnd(pLine.getEnd());
+      returnVal.setId("Term:convertLineToSentence_" + this.annotationCounter++);
+      returnVal.addToIndexes();
+      FSArray someTokens = UIMAUtil.list2FsArray(pJCas, pTokens);
+      returnVal.setUtteranceTokens( someTokens);
+      
+      return returnVal;
+    } // end Method convertLineToSentence() ----
 
     // -----------------------------------------
     /**
@@ -399,7 +420,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
       // if the tokens contained token splitting chars that were not part of known terms
       //  re-tokenize breaking on these, and do the term lookup again
    
-      
+     
       if ( reTokenize  ) {
         boolean breakOnBreakChars = true;
       
@@ -407,6 +428,10 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
         List<Annotation> oldTokens = pTokens;
         FSArray oldTokenz = pSentence.getUtteranceTokens();
         if ( oldTokenz != null ) {
+          for ( Annotation t : oldTokens) {
+           
+          }
+          
           oldTokenz.removeFromIndexes(pJCas);
           UIMAUtil.removeAnnotations(pJCas, oldTokens);
         }
@@ -423,7 +448,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
         terms = new ArrayList<LexicalElement>(terms.size());
         termTokenizeSentenceAux( pJCas, reTokens, terms, true);
 
-      }
+      } // end of re-tokenizing needed
       
       
       
@@ -507,13 +532,24 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
         continue;
       }
     
+      // look up the key directly 
       String lastWord = aToken.getCoveredText();
+     
       
-      String key = normalize(lastWord);
+      String key = lastWord;
       found = false;
         
       List<LexRecord> lexItems = this.lexicalLookup.get(1, key);
       
+      if ( lexItems == null ) {
+       
+        key = normalize(lastWord);
+        found = false;
+          
+         lexItems = this.lexicalLookup.get(1, key);
+        
+      }      
+     
       if ( lexItems == null) {
         
         String newKey = key;
@@ -540,7 +576,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
         // -----------------------------------
         // re-tokenize and look for the pieces around +/-\: (only do this once)
         // -----------------------------------
-        if ( !pReTokenized && containsBreakChars( aToken.getCoveredText()) ) { 
+        if ( !pReTokenized && containsBreakChars( aToken.getCoveredText()) && !isPeriodOnlyBreakChars( aToken.getCoveredText()) ) { 
          returnVal = true;
          break;
          
@@ -570,15 +606,50 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
       Collections.reverse(coveredLexItems);    
    
       
+      
      return returnVal;
       
    
-    } // end Method lookup() -------------------
+    } // end Method termTokenizeSentenceAux() -------------------
 
 
 
 
     
+
+    // =================================================
+    /**
+     * isPeriodOnlyBreakChars returns true if the breakChars 
+     * are only periods
+     * 
+     * @param pTokenString
+     * @return boolean
+    */
+    // =================================================
+   private final boolean isPeriodOnlyBreakChars(String pTokenString) {
+     
+     boolean returnVal = true;
+     
+     if ( pTokenString != null && pTokenString.length() > 0) {
+       
+       if        ( U.isOnlyPunctuation(pTokenString) ) 
+         returnVal = false;
+       
+       else {
+         
+         char[] buff = pTokenString.toCharArray();
+         for ( int i = 0; i < buff.length; i++ )  {
+           if ( U.isSentenceBreakChar( buff[i]) && buff[i] != '.') {
+             returnVal = false; 
+             break;
+           }
+         }
+       
+       }
+     }
+  
+     return returnVal;
+    } // end Method isPeriodOnlyBreakChars() --------
 
     // =======================================================
     /**
@@ -647,7 +718,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     LexicalElement aTerm  = null;
     boolean found = false;
     List<String> lookAheadKeys = generateLookAheadKeys(pSentenceTokens, iCtr, lookAhead);
-   
+
     if ((lookAheadKeys == null) || (lookAheadKeys.size() < 1)) {
       found = true;
      
@@ -678,6 +749,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
             }
           }
           if ( !isOrphan( terms )) {
+           
             aTerm = createTerm(pJCas, pCoveredTokens, terms);
             pTerms.add(aTerm);
             // -------------------------------
@@ -929,55 +1001,59 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
      */
     // -----------------------------------------
     private LexicalElement createTerm(JCas pJCas, ArrayList<Annotation> pTokens, List<LexRecord> pLexItems) {
-      
-     
+
       LexicalElement aTerm = null;
-    
+
       int begin = pTokens.get(0).getBegin();
-      int  zEnd = pTokens.get(pTokens.size() -1).getEnd();
-     
+      int zEnd = pTokens.get(pTokens.size() - 1).getEnd();
+
       // ---------------------
       // Check to see if this span has not already been consumed by another term
-      if ( (aTerm = coveredByOtherTerm( pJCas, begin, zEnd)) == null) {
-    
-        aTerm = new LexicalElement( pJCas);
-      
-      aTerm.setBegin(begin);
-      aTerm.setEnd( zEnd );
-     // aTerm.setDisplayString( aTerm.getCoveredText()  );
-      aTerm.setId( "TermAnnotator_" + this.annotationCounter++);
-      aTerm.setProcessMe(true);
-    
-      aTerm.addToIndexes();   // 1
-      
-     
-      
-      FSArray tokens = UIMAUtil.list2FsArray( pJCas, pTokens);
-      aTerm.setTokens( tokens);
-      
-     String p = null;
-      try {
-       p = aTerm.getCoveredText();
-      } catch (Exception e) {
-        e.printStackTrace();
-        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm","issue with this term in the termAnnotator - the offets are messed up because the tokens are not in order |" + begin + "|" + zEnd);
-        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm","------------------------------------------------------");
-        System.err.print(pJCas.getDocumentText());
-        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm","-------------------------------------------------------");
+      aTerm = coveredByOtherTerm(pJCas, begin, zEnd);
+      ;;
+      if ((aTerm == null) || (  aTerm.getClass().getName().contains("Number"))) {
+
+       
+          aTerm = new LexicalElement(pJCas);
+
+          aTerm.setBegin(begin);
+          aTerm.setEnd(zEnd);
+          // aTerm.setDisplayString( aTerm.getCoveredText() );
+          aTerm.setId("TermAnnotator_" + this.annotationCounter++);
+          aTerm.setProcessMe(true);
+
+          aTerm.addToIndexes(); // 1
+
+          FSArray tokens = UIMAUtil.list2FsArray(pJCas, pTokens);
+          aTerm.setTokens(tokens);
+
+          String p = null;
+          try {
+            p = aTerm.getCoveredText();
+          } catch (Exception e) {
+            e.printStackTrace();
+            GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm",
+                "issue with this term in the termAnnotator - the offets are messed up because the tokens are not in order |"
+                    + begin + "|" + zEnd);
+            GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm",
+                "------------------------------------------------------");
+            System.err.print(pJCas.getDocumentText());
+            GLog.println(GLog.ERROR_LEVEL, this.getClass(), "createTerm",
+                "-------------------------------------------------------");
+
+          }
+          List<LexRecord> finalCandidates = filterCandidatesByCase(pLexItems, p);
+
+          updateTermWithLexRecords(pJCas, aTerm, finalCandidates);
+
+          // ------------------------------------------------
+          // create a stemmedKey here
+          // ------------------------------------------------
+          createStemmedKey(aTerm);
+          String sectionName = VUIMAUtil.deriveSectionName(aTerm);
+          aTerm.setSectionName(sectionName);
+
         
-      }
-      List<LexRecord> finalCandidates = filterCandidatesByCase( pLexItems, p);
-      
-      updateTermWithLexRecords( pJCas, aTerm, finalCandidates );
-     
-      
-      // ------------------------------------------------
-      // create a stemmedKey here
-      // ------------------------------------------------
-      createStemmedKey( aTerm );
-      String sectionName = VUIMAUtil.deriveSectionName(aTerm);
-      aTerm.setSectionName(sectionName);
-      
       }
       return aTerm;
     } // end Method createTerm() ---------------
@@ -1237,20 +1313,21 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     
     // =======================================================
     /**
-     * coveredByOtherTerm [Summary here]
+     * coveredByOtherTerm returns the covered term
      * 
      * @param pJCas
      * @param pStart
      * @param pEnd
-     * @return LexicalElement
+     * @return LexicalElement  (null if not)
      */
     // =======================================================
     private LexicalElement coveredByOtherTerm(JCas pJCas, int pStart, int pEnd) {
       
     LexicalElement term = null;
     
-    List<Annotation> terms = UIMAUtil.getAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pStart, pEnd);
+    List<Annotation> terms = UIMAUtil.getAnnotationsBySpan(pJCas, LexicalElement.typeIndexID, pStart, pEnd, false);
       
+    
     if ( terms != null && terms.size() > 0 )
       term = (LexicalElement)  terms.get(0);
       
@@ -1372,6 +1449,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     
       this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
       
+      this.sentenceSizeThreshold = Integer.parseInt(U.getOption( pArgs,  "--sentenceSizeThreshold=", "100"));
       
       if ( pArgs != null && pArgs.length > 0 ) {
         localTerminologyFilez = U.getOption(pArgs, "--localTerminologyFiles=", "");
@@ -1528,6 +1606,7 @@ public class TermAnnotator extends JCasAnnotator_ImplBase {
     private ProfilePerformanceMeter       performanceMeter = null;
     private PorterStemmer            porterStemmer = null;
     private boolean processMe = true;
+    private int            sentenceSizeThreshold = 100000;
     
     
 } // end Class TermAnnotator() -----------

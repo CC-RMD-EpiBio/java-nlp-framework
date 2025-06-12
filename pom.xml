@@ -33,6 +33,7 @@
     <module>     04.1_vUtils          </module>
     <module>     04.2_tUtils          </module>
     <module>     05_annotators        </module>
+    <module>     05.1-pos_annotators  </module>
     <module>     06_marshallers       </module>
     <module>     07.0_pUtils          </module>
     <module>     08_pipelines         </module>

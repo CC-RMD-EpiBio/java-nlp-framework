@@ -1,64 +1,3 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
 // =================================================
 /**
  * CityState annotator turns lexical elements that
@@ -75,6 +14,7 @@
 // ================================================
 package gov.nih.cc.rmd.nlp.framework.annotator;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.uima.UimaContext;
@@ -89,8 +29,10 @@ import gov.nih.cc.rmd.framework.SectionZone;
 import gov.nih.cc.rmd.framework.model.Location;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
+import gov.nih.cc.rmd.nlp.framework.utils.U;
 import gov.nih.cc.rmd.nlp.framework.utils.uima.UIMAUtil;
 import gov.va.chir.model.LexicalElement;
+import gov.va.chir.model.Utterance;
 
 
 
@@ -109,7 +51,7 @@ public class CityStateAnnotator extends JCasAnnotator_ImplBase {
       try {
       this.performanceMeter.startCounter();
       
-     
+      List<Annotation> someLocations = new ArrayList<Annotation>();
       List<Annotation> terms = UIMAUtil.getAnnotations(pJCas, LexicalElement.typeIndexID, true);
 
       if (terms != null && !terms.isEmpty()) {
@@ -119,24 +61,133 @@ public class CityStateAnnotator extends JCasAnnotator_ImplBase {
         // are contentHeaders, and not slotValue's.
         // ------------------------------------------------------
         for (Annotation aTerm : terms )  {
+        
           String sectionName = getSectionName(pJCas, aTerm);
           String semanticTypes = ((LexicalElement) aTerm).getSemanticTypes();
-          if ( isALocation(semanticTypes ))
-            createLocation(pJCas, (LexicalElement) aTerm, sectionName);
+         
+          if ( isALocation(semanticTypes )) 
+            someLocations.add( createLocation(pJCas, (LexicalElement) aTerm, sectionName));
         }
       } // end if there are any terms
+      
+      // weed out weak locations 
+      //    only one address location in a phrase
+      //    and lowercase
+      weedOutWeakLocations( pJCas, someLocations);
+      
   
      } catch (Exception e) {
         e.printStackTrace();
         GLog.println(GLog.ERROR_LEVEL,"Issue with term tokenizing " + e.toString());
      }
-      
+     
+     
       this.performanceMeter.stopCounter();
     
     } // end Method process() ------------------
 
     
    
+
+    // =================================================
+    /**
+     * weedOutWeakLocations prunes out locations that are likely false positives
+     * 
+     * @param pJCas
+     * @param pSomeLocations
+    */
+    // =================================================
+    private void weedOutWeakLocations(JCas pJCas, List<Annotation> pSomeLocations) {
+      
+      if ( pSomeLocations != null && !pSomeLocations.isEmpty())
+        for ( Annotation aLocation : pSomeLocations) {
+          
+          if ( isOnlyLocationInSentence( pJCas, aLocation) )
+            if ( !isInitialCapitalized( aLocation ))
+              aLocation.removeFromIndexes(pJCas);
+        }
+      
+    } // end Method weedOutWeakLocations() -------------
+
+
+
+
+    // =================================================
+    /**
+     * isOnlyLocationInSentence returns true if this is the only
+     * location in the surrounding phrase
+     * 
+     * @param pJCas
+     * @param pLocation
+     * @return
+    */
+    // =================================================
+    private boolean isOnlyLocationInSentence(JCas pJCas, Annotation pLocation) {
+     
+      boolean returnVal = false;
+      
+      List<Annotation> someSentences = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, Utterance.typeIndexID, pLocation.getBegin(), pLocation.getEnd(), true );
+      if ( someSentences != null )
+        for ( Annotation aSentence : someSentences)
+          if ( isOnlyLocationInSentence( pJCas, pLocation, aSentence) ) {
+            returnVal = true;
+            break;
+          }
+      
+      return returnVal;
+      
+    } // end Method isOnlyLocationInSentence() ---------
+
+
+
+
+    // =================================================
+    /**
+     * isOnlyLocationInSentence returns true if there is only one
+     * location annotation in this sentence
+     * 
+     * @param pJCas
+     * @param pLocation
+     * @param aSentence
+     * @return boolean
+    */
+    // =================================================
+    private final boolean isOnlyLocationInSentence(JCas pJCas, Annotation pLocation, Annotation pSentence) {
+      boolean returnVal = true;
+      
+      List<Annotation> someLocations = UIMAUtil.fuzzyFindAnnotationsBySpan(pJCas, Location.typeIndexID, pSentence.getBegin(), pSentence.getEnd(), true );
+     
+      if ( someLocations != null && !someLocations.isEmpty() )
+        if ( someLocations.size() > 1)
+          returnVal = true;
+      
+      return returnVal;
+        
+    } // end Method isOnlyLocationInSentence() ----------
+
+
+
+
+    // =================================================
+    /**
+     * isInitialCapitalized returns true if this 
+     * 
+     * @param pLocation
+     * @return boolean
+    */
+    // =================================================
+    private boolean isInitialCapitalized(Annotation pLocation) {
+      boolean returnVal = false;
+      
+      String mention = pLocation.getCoveredText();
+      if ( U.isInitialCap(mention))
+        returnVal = true;
+      
+      return returnVal;
+    } // end Method isInitialCapitalized() --------------------
+
+
+
 
     // =================================================
     /**
@@ -171,9 +222,10 @@ public class CityStateAnnotator extends JCasAnnotator_ImplBase {
      * @param pTerm
      * @param codedEntries
      * @param pSectionZone
+     * @return Annotation
     */
     // =================================================
-    private final void createLocation(JCas pJCas, LexicalElement pTerm, String pSectionName) {
+    private final Annotation createLocation(JCas pJCas, LexicalElement pTerm, String pSectionName) {
    
       Location statement = new Location(pJCas);
       
@@ -187,6 +239,7 @@ public class CityStateAnnotator extends JCasAnnotator_ImplBase {
       statement.setOtherFeatures( pTerm.getOtherFeatures() );
       statement.addToIndexes();
       
+      return statement;
     } // end Method createClinicalStatement() ----------
 
 
@@ -306,3 +359,4 @@ public class CityStateAnnotator extends JCasAnnotator_ImplBase {
    
     
 } // end Class TermToConceptAnnotator() -----------
+

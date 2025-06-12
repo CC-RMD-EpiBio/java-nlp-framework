@@ -1,64 +1,3 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
 // =================================================
 /**
  * Shapes Annotator finds terms from regular expression like
@@ -95,12 +34,12 @@ import org.apache.uima.resource.ResourceInitializationException;
 import gov.nih.cc.rmd.framework.PageNumber;
 import gov.nih.cc.rmd.framework.model.Email;
 import gov.nih.cc.rmd.framework.model.Identifier;
-import gov.nih.cc.rmd.framework.model.Number;
 import gov.nih.cc.rmd.framework.model.Person;
 import gov.nih.cc.rmd.framework.model.PhoneNumber;
 import gov.nih.cc.rmd.framework.model.PotentialNumber;
 import gov.nih.cc.rmd.framework.model.SSN;
 import gov.nih.cc.rmd.framework.model.Shape;
+import gov.nih.cc.rmd.framework.model.URL;
 import gov.nih.cc.rmd.framework.model.Zipcode;
 import gov.nih.cc.rmd.nlp.framework.utils.GLog;
 import gov.nih.cc.rmd.nlp.framework.utils.ProfilePerformanceMeter;
@@ -133,6 +72,8 @@ public class RegexShapeAnnotator extends JCasAnnotator_ImplBase {
    
     try {
       this.performanceMeter.startCounter();
+      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " Start " + this.getClass().getSimpleName());
+      
 
       List<Annotation> lines = UIMAUtil.getAnnotations( pJCas, Line.typeIndexID); 
    
@@ -149,6 +90,7 @@ public class RegexShapeAnnotator extends JCasAnnotator_ImplBase {
              if ( tabbedColumns != null && tabbedColumns.length > 0 ) 
                for ( int i = 0; i < tabbedColumns.length; i++ ) {
                  findShapesInColumn ( pJCas, tabbedColumns[i], offset, offset + tabbedColumns[i].length() ) ;
+                 findZipCodes( pJCas, tabbedColumns[i], offset, offset + tabbedColumns[i].length());
                  offset+= tabbedColumns[i].length() + 1; // +1 for each tab
                }
            } // if line isn't empty
@@ -164,13 +106,42 @@ public class RegexShapeAnnotator extends JCasAnnotator_ImplBase {
         String msg = "Issue with one of the shapes " + e.toString();
         GLog.println(GLog.ERROR_LEVEL, this.getClass(), "process", msg);
       }
-        
+    int i = 3;
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " End " + this.getClass().getSimpleName());
+    this.performanceMeter.stopCounter();   
     
   
   } // end Method process() ----------------
    
   
   
+  // =================================================
+  /**
+   * findZipCodes 
+   * 
+   * @param pJCas
+   * @param pLine
+   * @param offset
+   * @param i
+  */
+  // =================================================
+  private void findZipCodes(JCas pJCas, String pLine, int pLineffset, int pColumnOffset) {
+    
+    
+     Pattern digits = Pattern.compile("\\D*(\\d{5})\\D*|\\D*(\\d{5}\\-\\d{4})\\D*");
+       
+     if ( pLine != null && pLine.trim().length() > 0  &&  digits.matcher(pLine).matches()){
+    
+     // System.err.println( "----> " + pLine);
+      
+      
+    
+    }
+    
+  } // end Method findZipCodes() ---------------------
+
+
+
   // =================================================
   /**
    * findShapesInColumn
@@ -188,15 +159,15 @@ public class RegexShapeAnnotator extends JCasAnnotator_ImplBase {
 
     findShape( pJCas, this.personRegEx,  Person.class, pColumn, pBeginOffset);
     findShape( pJCas, this.emailRegEx, Email.class, pColumn, pBeginOffset);
-   // findShape(pJCas,  this.urlRegEx, URL.class, pColumn, pBeginOffset);
+    findShape(pJCas,  this.pageNoRegEx,  PageNumber.class,  pColumn, pBeginOffset);
+    
+    findShape(pJCas,  this.urlRegEx, URL.class, pColumn, pBeginOffset);
     findShape(pJCas,  this.phoneRegex, PhoneNumber.class, pColumn, pBeginOffset);
     findShape(pJCas,  this.zipCodeRegex, Zipcode.class, pColumn, pBeginOffset);
     findShape(pJCas,  this.numberRegEx,  PotentialNumber.class,  pColumn, pBeginOffset);
     findShape(pJCas,  this.ssnRegEx,  SSN.class,  pColumn, pBeginOffset);
-    findShape(pJCas,  this.pageNoRegEx,  PageNumber.class,  pColumn, pBeginOffset);
     findShape(pJCas,  this.identifierRegEx,  Identifier.class,  pColumn, pBeginOffset);
     
-  
     /* now done in TermShapeAnnotator() 
     
     if (foundNumber) {
@@ -384,15 +355,29 @@ public void destroy() {
        
     this.performanceMeter = new ProfilePerformanceMeter( pArgs, this.getClass().getSimpleName() );
     
+    
+    this.zipCodeRegex = Pattern.compile(_zipCodeRegex, Pattern.CASE_INSENSITIVE); 
+    
     this.emailRegEx = Pattern.compile( _emailRegEx, Pattern.CASE_INSENSITIVE);
-    this.numberRegEx = Pattern.compile(_numberRegex, Pattern.CASE_INSENSITIVE );
-    this.zipCodeRegex = Pattern.compile(_zipCodeRegex, Pattern.CASE_INSENSITIVE);
+   
+
     this.phoneRegex = Pattern.compile(_phoneRegEx, Pattern.CASE_INSENSITIVE);
     this.urlRegEx = Pattern.compile( _urlRegEx, Pattern.CASE_INSENSITIVE);
+    this.numberRegEx = Pattern.compile(_numberRegex, Pattern.CASE_INSENSITIVE );
     this.personRegEx = Pattern.compile( _personRegEx, Pattern.CASE_INSENSITIVE);
     this.ssnRegEx = Pattern.compile( _ssnRegEx, Pattern.CASE_INSENSITIVE);
     this.pageNoRegEx = Pattern.compile( _pageNoRegEx, Pattern.CASE_INSENSITIVE);
+    
+ 
+    
+    
+    
+    
+    
+    
+    
     this.identifierRegEx = Pattern.compile( _identifierRegEx, Pattern.CASE_INSENSITIVE);
+    
    
   } // end Method initialize() -------
   
@@ -415,7 +400,10 @@ public void destroy() {
   
   
   
-  private static final String _zipCodeRegex = "^[0-9]{5}(?:-[0-9]{4})?$";
+  private static final String _zipCodeRegex_obs = "\\b[0-9]{5}(?:-[0-9]{4})?\\b";
+  private static final String _zipCodeRegex_obs2 = "\\b\\d{5}(?:[-\\s]\\d{4})?\\b";
+  private static final String _zipCodeRegex = "\\D*(\\d{5})\\D*|\\D*(\\d{5}\\-\\d{4})\\D*";
+  
   private static final String _numberRegex = 
       
                                "\\b(\\d+\\.\\d+)[A-z]{1,4}\\b|" +   // 1.30MG 
@@ -448,16 +436,19 @@ public void destroy() {
   
   
   
-  private static final String _ssnRegEx =  "^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$";
+  private static final String _ssnRegEx_obs =  "^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$";
+  private static final String _ssnRegEx =  "^(?!0{3})(?!6{3})[0-8]\\d{2}-(?!0{2})\\d{2}-(?!0{4})\\d{4}$";
   
   private static final String _emailRegEx = "([A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6})";
   
-  private static final String _urlRegEx = "((http://|https://)?(www.)?([a-zA-Z0-9]+).[a-zA-Z0-9]*.[a-z]{3}.?([a-z]+)?)";
+  private static final String _urlRegEx_obs = "((http://|https://)?(www.)?([a-zA-Z0-9]+).[a-zA-Z0-9]*.[a-z]{3}.?([a-z]+)?)";
+  private static final String _urlRegEx = "(https:\\/\\/www\\.|http:\\/\\/www\\.|https:\\/\\/|http:\\/\\/)?[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})(\\.[a-zA-Z]{2,})?\\/[a-zA-Z0-9]{2,}|((https:\\/\\/www\\.|http:\\/\\/www\\.|https:\\/\\/|http:\\/\\/)?[a-zA-Z]{2,}(\\.[a-zA-Z]{2,})(\\.[a-zA-Z]{2,})?)|(https:\\/\\/www\\.|http:\\/\\/www\\.|https:\\/\\/|http:\\/\\/)?[a-zA-Z0-9]{2,}\\.[a-zA-Z0-9]{2,}\\.[a-zA-Z0-9]{2,}(\\.[a-zA-Z0-9]{2,})?"; 
   
   private static final String _personRegEx1  = "(\\[\\s*First Name = \\(\\d+ - Subject \\d+ \\) \\])";
   private static final String _personRegEx2  = "(\\[\\s*Last Name = \\(\\d+ - Subject \\d+ \\) \\])";
   private static final String _personRegEx3  = "(\\[\\s*Nickname = \\(\\d+ - Subject \\d+ \\) \\])";
   
+
   private static final String _pageNoRegEx1a = "(\\bpage\\s+\\d+\\s+\\bof\\s+\\d+)";
   private static final String _pageNoRegEx1b = "(\\bpg\\s+\\d+\\s+\\bof\\s+\\d+)";
   private static final String _pageNoRegEx1c = "(\\bexhibit\\s+\\d+\\s+\\bof\\s+\\d+)";  

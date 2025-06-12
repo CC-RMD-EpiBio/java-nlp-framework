@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>gov.nih.cc.rmd.nlp.framework.annotator.AssertionEvidenceAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>AssertionEvidenceAnnotator</name>
+    <description>AssertionEvidenceAnnotator creates negative, asserted, historical, conditional, and subject/other evidence annotations based on terms found from the assertion dictionaries.  The terms in the dictionary are based on conTEXT.
+
+These pieces of evidence (annotations) are used downstream with an assertion annotator that sets  the assertion attributes of entities based on the proximity to the evidence found within a sentence window.
+
+This annotator can take the argument --historyIsAsserted=false to turn off history of pieces of evidence. </description>
+    <version>2019.09.21</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>args</name>
+        <description>The args parameter passes parameters into the this annotator. 
+
+Since this is a cross between traditional uima and uima-fit and framework annotators, the annotators are looking for parameters that are on the "args" parameter, one parameter per multi-valued element. This would be the equivelant to passing POSIX "args" thru the command line, where each element would consist of "key=value"
+
+This annotator can take the parameter  --historyIsAsserted=false   (it's true by default) to ignore the history of evidence.
+
+Optional logging arguments that could be passed in include:
+--profilePerformanceLogging=true|false   (as a string)   default == false
+--logDir=/some/log/dir   (default == ./ )
+--printToLog=true|false  (as a string)   default == false</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>args</name>
+        <value>
+          <array>
+            <string>--logDir=./</string>
+            <string>--printToLog=false</string>
+            <string>--profilePerformanceLogging=false</string>
+          <string> --historyIsAsserted=true</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>gov.nih.cc.rmd.nlp.framework.annotator.LineAnnotatorWithBlankLines</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>LIneAnnotatorWithBlankLines</name>
+    <description>Labels Lines within text.  This version works with blank lines.</description>
+    <version>2019.09.21</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>args</name>
+        <description>The args parameter passes parameters into the this annotator. 
+
+Since this is a cross between traditional uima and uima-fit and framework annotators, the annotators are looking for parameters that are on the "args" parameter, one parameter per multi-valued element. This would be the equivelant to passing POSIX "args" thru the command line, where each element would consist of "key=value"
+
+
+Optional logging arguments that could be passed in include:
+--profilePerformanceLogging=true|false   (as a string)   default == false
+--logDir=/some/log/dir   (default == ./ )
+--printToLog=true|false  (as a string)   default == false</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>args</name>
+        <value>
+          <array>
+            <string>--logDir=./</string>
+            <string>--printToLog=false</string>
+            <string>--profilePerformanceLogging=false</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

@@ -1,64 +1,24 @@
 /*******************************************************************************
+ * ---------------------------------------------------------------------------
  *                                   NIH Clinical Center 
  *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
+ *                        Epidemiology and Biostatistics Branch 
+ *                                         2019
+ *    
+ *  This work is licensed under the Creative Commons Attribution 4.0 International License. 
  *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
+ *  This license allows you to use, share and  adapt for any purpose, provided:
+ *     Provide attribution to the creators of this work within your work.
+ *     Indicate if changes were made to this work.
+ *     No claim to merchantability, implied warranty, or liability can be made.
+ *     
+ *   When attributing this code, please make reference to
+ *    [citation/url here] .  
+ *    
+ *     In the absence of a specific paper or url listed above, reference http://clinicalcenter.nih.gov/rmd/eb/nlp
  *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
+ *  To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+ ******************************************************************************/
 // =================================================
 /**
  * SentenceAnnotator segments a document into
@@ -127,6 +87,8 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
     
     try {
     this.performanceMeter.startCounter();
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " Start " + this.getClass().getSimpleName());
+     
     this.sentenceNumber = 0;
     
     
@@ -155,10 +117,10 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
       
       ArrayList<Token> sentenceTokens = new ArrayList<Token>();
       for (int i = 0; i < tokens.length; i++) {
-        // GLog.println(GLog.ERROR_LEVEL,"               Looking at token |" + tokens[i].getCoveredText() + "|");
+         GLog.println(GLog.ERROR_LEVEL, this.getClass(), "process", "               Looking at token |" + tokens[i].getCoveredText() + "|");
         if ( tokens[i].getCoveredText().indexOf('\n') > -1 ) {
           lastNewLine = i;
-          // GLog.println(GLog.ERROR_LEVEL,"Newline hit i =" + i);
+          GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Newline hit i =" + i);
           newlineSeen = true;
           newlineCtr++;
           listJustStarted = false;
@@ -178,7 +140,7 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
           if (tokens[i].getTypeIndexID() == WhitespaceToken.typeIndexID) {
             // sentenceTokens.add(tokens[i]);
             if (((WhitespaceToken) tokens[i]).getEmptyLine()) {
-              // GLog.println(GLog.ERROR_LEVEL,"Making sentence because of empty lines hit");
+               GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Making sentence because of empty lines hit");
               createSentence(pJCas, sentenceTokens);
               structuredList = null;
               sentenceTokens = new ArrayList<Token>();
@@ -257,14 +219,14 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
               listElement.addToken( tokens[i] );
               listElement.setListContent( getListContent( pJCas,(List<Token> )listElement.getTokens()) ); 
             }
-            // GLog.println(GLog.ERROR_LEVEL,"StructuredListIndentation = " + structuredList.getInitialIndentation() + "| current indentation|" + indentation + "|"  + "Token|" + tokens[i].getCoveredText() );
+            GLog.println(GLog.ERROR_LEVEL, this.getClass(), "process", "StructuredListIndentation = " + structuredList.getInitialIndentation() + "| current indentation|" + indentation + "|"  + "Token|" + tokens[i].getCoveredText() );
             if ( listElement != null  && listElement.getTokens() != null && listElement.getTokens().size() > 1 && !listJustStarted &&
                   indentation < structuredList.getInitialIndentation() && 
                   (tokens[i].getInitialCapitalization() || tokens[i].getAllCapitalization() || tokens[i].getPunctuationOnly() || newlineCtr>0) &&
                   sentenceTokens.size() > 0 ) {
          
              
-                //  GLog.println(GLog.ERROR_LEVEL,"Making sentence because a line with undented Initial capitalized word was hit");
+                 GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Making sentence because a line with undented Initial capitalized word was hit");
                 sentenceTokens.remove( sentenceTokens.size() -1);
                 createSentence( pJCas, sentenceTokens );
                 sentenceTokens = new ArrayList<Token>();  
@@ -288,8 +250,8 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
                             newlineCtr > 0 )               &&
                         sentenceTokens.size() > 1 ) {
               
-              // GLog.println(GLog.ERROR_LEVEL,"Making sentence because a line with indented Initial capitalized word was hit");
-              // GLog.println(GLog.ERROR_LEVEL,"|" + tokens[i].getCoveredText() + "|" + tokens[i].getInitialCapitalization() + "|" + tokens[i].getAllCapitalization() + "|" + tokens[i].getPunctuationOnly());
+              GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Making sentence because a line with indented Initial capitalized word was hit");
+              GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "|" + tokens[i].getCoveredText() + "|" + tokens[i].getInitialCapitalization() + "|" + tokens[i].getAllCapitalization() + "|" + tokens[i].getPunctuationOnly());
               if ( sentenceTokens.size() == 1) {
                  GLog.println(GLog.ERROR_LEVEL,"What the ? ====> |" + sentenceTokens.get(0).getCoveredText() + "|");
                 
@@ -305,13 +267,15 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
         } else { // end if this token is not already part of another utterance.
           structuredList = null;
           if ((sentenceTokens != null) && (sentenceTokens.size() > 0)) {
-            // GLog.println(GLog.ERROR_LEVEL,"Making sentence because too many tokens have been put into one sentence");
+             GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Making sentence because too many tokens have been put into one sentence");
             createSentence(pJCas, sentenceTokens);
             sentenceTokens = new ArrayList<Token>();
           }
 
         }
        
+        GLog.println(GLog.ERROR_LEVEL, this.getClass(), "process", "               finished with token |" + tokens[i].getCoveredText() + "|");
+        
       } // end Loop through the annotations
 
       if ((sentenceTokens != null) && (sentenceTokens.size() > 0))
@@ -329,13 +293,16 @@ public class SentenceAnnotator extends JCasAnnotator_ImplBase {
     // -----------------------------------
     removeListDelimeterSentences(pJCas);
     
-    this.performanceMeter.stopCounter();
     
     } catch (Exception e) {
       e.printStackTrace();
-      GLog.println(GLog.ERROR_LEVEL,"Issue with " + this.getClass().getName() + " " + e.toString());
+      GLog.println(GLog.ERROR_LEVEL,this.getClass(), "process", "Issue with " + this.getClass().getName() + " " + e.toString());
       // throw new AnalysisEngineProcessException();
     }
+    
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " End " + this.getClass().getSimpleName());
+    this.performanceMeter.stopCounter();
+   
   } // end Method process() -------------------
   
  
@@ -640,11 +607,11 @@ try {
       int zz = endd - beg;
       if (zz > 4000) {
 
-        GLog.println(GLog.ERROR_LEVEL,"Super long sentence " +  beg + "|" + endd + "|" + zz + "|>" + buff.toString() + "<|");
+        GLog.println(GLog.ERROR_LEVEL,this.getClass(), "createSentence", "Super long sentence " +  beg + "|" + endd + "|" + zz + "|>" + buff.toString() + "<|");
         // throw new RuntimeException( "issue with new sentence");
       } else if ((pSentenceTokens != null) && (pSentenceTokens.size() > 0) && (buff.toString().trim().length() > 0)) {
         sentenceAnnotation = new Sentence(pCAS);
-        sentenceAnnotation.setId("Sentnece_" + this.annotationCounter++);
+        sentenceAnnotation.setId("Sentence_" + this.annotationCounter++);
 
        // VUIMAUtil.setProvenance(pCAS, sentenceAnnotation, this.getClass().getName());
         sentenceAnnotation.setBegin(pSentenceTokens.get(0).getBegin());

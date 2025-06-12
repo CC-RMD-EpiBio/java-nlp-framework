@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>  <annotatorImplementationName>gov.nih.cc.rmd.nlp.framework.annotator.CheckBoxAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>CheckBoxAnnotator</name>
+    <description>CheckBox annotator looks for patterns that are of the form
+ *   [ x ] smoking
+ *   (-) pain
+ *   (+) depression
+ *   
+ *   Finding the brackets is necessary
+ *   Finding that there is one character or no characters between the 
+ *   brackets is needed to not confuse (03/02/2015) parenthical expressions
+ *   from being marked as checkboxes.
+ </description>
+    <version>2019.09.21</version>
+    <vendor/>
+    <configurationParameters>
+      <configurationParameter>
+        <name>args</name>
+        <description>The args parameter passes parameters into the this annotator. 
+
+Since this is a cross between traditional uima and uima-fit and framework annotators, the annotators are looking for parameters that are on the "args" parameter, one parameter per multi-valued element. This would be the equivelant to passing POSIX "args" thru the command line, where each element would consist of "key=value"
+
+One of the (obsolete) options that this annotator could use is 
+--useProcessMe=  which, by default is set to false.  
+This is an obsolete parameter that is paired with a "processMe" attribute on annotations, that in some itteration could be set to false to have annotations be ignored.  It was a requirement from an early version of the software that was not uniformly used, and has largely now been ignored.
+
+
+Optional logging arguments that could be passed in include:
+--profilePerformanceLogging=true|false   (as a string)   default == false
+--logDir=/some/log/dir   (default == ./ )
+--printToLog=true|false  (as a string)   default == false</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>false</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>args</name>
+        <value>
+          <array>
+            <string>--logDir=./</string>
+            <string>--printToLog=false</string>
+            <string>--profilePerformanceLogging=false</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import name="gov.va.vinci.Model"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

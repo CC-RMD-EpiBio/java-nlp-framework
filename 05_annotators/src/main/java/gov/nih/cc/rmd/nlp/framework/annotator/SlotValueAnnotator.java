@@ -1,64 +1,4 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
+
 // =================================================
 /**
  * SlotValue is an annotator that identifies simple 
@@ -134,7 +74,7 @@ public class SlotValueAnnotator extends JCasAnnotator_ImplBase {
   
   
   @Override
-  // -----------------------------------------
+  // -------------------k----------------------
   /**
    * process finds slotValues in the whole document
    * 
@@ -149,6 +89,8 @@ public class SlotValueAnnotator extends JCasAnnotator_ImplBase {
     if ( !this.termProcessing ) {
     try {
     this.performanceMeter.startCounter();
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " Start " + this.getClass().getSimpleName());
+    
    
     List<Annotation> lines = UIMAUtil.getAnnotations(pJCas, Line.typeIndexID);
     
@@ -166,12 +108,12 @@ public class SlotValueAnnotator extends JCasAnnotator_ImplBase {
     }
     else {
       String id = VUIMAUtil.getDocumentId(pJCas);
-      GLog.println(GLog.ERROR_LEVEL, "wtf - no tokens? " + id);
+      GLog.println(GLog.ERROR_LEVEL, "wtf - no lines? " + id);
       // throw new AnalysisEngineProcessException();
     }
     
    
-    
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " End " + this.getClass().getSimpleName());
     this.performanceMeter.stopCounter();
     
     } catch (Exception e) {
@@ -179,6 +121,8 @@ public class SlotValueAnnotator extends JCasAnnotator_ImplBase {
       GLog.println(GLog.ERROR_LEVEL,"Issue with " + this.getClass().getName() + " " + e.toString());
      // throw new AnalysisEngineProcessException();
     }
+    
+   
     }
   } // end Method process
       
@@ -697,6 +641,8 @@ return returnVal;
    */
   // -----------------------------------------
   private int[]  containsSlot(JCas pJCas, List<Token> pTokens) {
+   
+    GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "containsSlot", "entering containsSlot");
     int[] returnValue = new int[3];
     returnValue[0] = FALSE;
     
@@ -707,7 +653,7 @@ return returnVal;
     returnValue[2] = delimiter;
     
     if (delimiter > -1) {
-     // GLog.println(GLog.ERROR_LEVEL,"Delimiter found " + delimiter + " in the line |" + key2 + "|");
+     
       returnValue[0] = SLOT;
       ArrayList<Token> tokensBeforeDelimiter = new ArrayList<Token>(delimiter);
       ArrayList<Token> tokensAfterDelimiter = new ArrayList<Token>(pTokens.size());
@@ -718,11 +664,13 @@ return returnVal;
       for (int i = delimiter + 1; i< pTokens.size(); i++) 
         tokensAfterDelimiter.add( pTokens.get(i));
 
+      String  fullBuff = getContentFromTokens(pJCas,pTokens);
       String  buff = getContentFromTokens(pJCas,tokensBeforeDelimiter);
       String rBuff = getContentFromTokens(pJCas, tokensAfterDelimiter);
       
       
       if (buff != null) {
+        GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "containsSlot", "Delimiter found " + delimiter + " in the line |" + fullBuff );
         String notTouchedBuff = buff;
         buff = buff.toLowerCase();
         
@@ -787,7 +735,7 @@ return returnVal;
           // A known slot was found
           // -----------------------------------
         } else {
-         // GLog.println(GLog.ERROR_LEVEL,"something on the right hand side of the delimiter is saying heading from the known slots |" + buff + "|");
+          GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "containsSlot", "something on the right hand side of the delimiter is saying heading from the known slots |" + buff + "|");
           returnValue[0] = rows[0];
           returnValue[1] = rows[1];
 
@@ -809,11 +757,8 @@ return returnVal;
     }
     }   
     
-   //switch ( returnValue[0]) {
-     // case HEADING : GLog.println(GLog.ERROR_LEVEL," 000000> HEADING"); break;
-     // case SLOT    : GLog.println(GLog.ERROR_LEVEL," 000000> SLOT");    break;
-      //case FALSE   : GLog.println(GLog.ERROR_LEVEL," 000000> FALSE");   break;
-   // }
+   GLog.println(GLog.DEBUG_LEVEL,this.getClass(), "containsSlot", "Returning with something");
+    
     
     return returnValue;
   } // end Method containsSlot() -------------
@@ -1594,8 +1539,12 @@ public void assertQuestionAnswer(JCas pJCas, SlotValue questionAndAnswer) {
     if ( sentenceTokens != null && sentenceTokens.size() > 0 )
       for ( Token token :  sentenceTokens ) {
          if ( token.getListDelimiter()  ) {
-          returnVal = true;
-          break;
+           
+          String t = token.getCoveredText();
+          if ( !Character.isLetter(t.trim().charAt(0))) {
+            returnVal = true;
+            break;
+          }
         }
       }
     return returnVal;

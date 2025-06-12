@@ -1,64 +1,3 @@
-/*******************************************************************************
- *                                   NIH Clinical Center 
- *                             Department of Rehabilitation 
- *                       Epidemiology and Biostatistics Branch 
- *                                            2019 - 2022
- *   ---------------------------------------------------------------------------
- *   Copyright Notice:
- *   This software was developed and funded by the National Institutes of Health
- *   Clinical Center (NIHCC), part of the National Institutes of Health (NIH),
- *   and agency of the United States Department of Health and Human Services,
- *   which is making the software available to the public for any commercial
- *   or non-commercial purpose under the following open-source BSD license.
- *  
- *   Government Usage Rights Notice:
- *   The U.S. Government retains unlimited, royalty-free usage rights to this 
- *   software, but not ownership, as provided by Federal law. Redistribution 
- *   and use in source and binary forms, with or without modification, 
- *   are permitted provided that the following conditions are met:
- *      1. Redistributions of source code must retain the above copyright
- *         and government usage rights notice, this list of conditions and the 
- *         following disclaimer.
- *  
- *      2. Redistributions in binary form must reproduce the above copyright
- *         notice, this list of conditions and the following disclaimer in the
- *         documentation and/or other materials provided with the distribution.
- *        
- *      3. Neither the names of the National Institutes of Health Clinical
- *         Center, the National Institutes of Health, the U.S. Department of
- *         Health and Human Services, nor the names of any of the software
- *         developers may be used to endorse or promote products derived from
- *         this software without specific prior written permission.
- *   
- *      4. The U.S. Government retains an unlimited, royalty-free right to
- *         use, distribute or modify the software.
- *   
- *      5. Please acknowledge NIH CC as the source of this software by including
- *         the phrase: "Courtesy of the U.S. National Institutes of Health Clinical Center"
- *          or 
- *                     "Source: U.S. National Institutes of Health Clinical Center."
- *  
- *     THIS SOFTWARE IS PROVIDED BY THE U.S. GOVERNMENT AND CONTRIBUTORS "AS
- *     IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
- *     TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
- *     PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE U.S. GOVERNMENT
- *     OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- *     EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- *     PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
- *     PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- *     LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- *     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *  
- *     When attributing this code, please make reference to:
- *        Divita G, Carter ME, Tran LT, Redd D, Zeng QT, Duvall S, Samore MH, Gundlapalli AV. 
- *        v3NLP Framework: tools to build applications for extracting concepts from clinical text. 
- *        eGEMs. 2016;4(3). 
- *      
- *     In the absence of a specific paper or url listed above, reference https://github.com/CC-RMD-EpiBio/java-nlp-framework
- *   
- *     To view a copy of this license, visit https://github.com/CC-RMD-EpiBio/java-nlp-framework/blob/main/LICENSE.MD
- *******************************************************************************/
 // =================================================
 /**
  * Person annotator turns lexical elements that
@@ -87,6 +26,7 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.cas.StringArray;
 import org.apache.uima.jcas.tcas.Annotation;
 import org.apache.uima.resource.ResourceInitializationException;
+import org.junit.experimental.categories.Categories;
 
 import gov.nih.cc.rmd.framework.SectionZone;
 import gov.nih.cc.rmd.framework.model.Person;
@@ -117,6 +57,8 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
     
       try {
       this.performanceMeter.startCounter();
+      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " Start " + this.getClass().getSimpleName());
+      
       
       
       List<Annotation >personPieces = findPersonComponents( pJCas);
@@ -129,6 +71,7 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
         GLog.println(GLog.ERROR_LEVEL,"Issue with term tokenizing " + e.toString());
      }
       
+      GLog.println(GLog.DEBUG_LEVEL, this.getClass(), "process", " End " + this.getClass().getSimpleName());
       this.performanceMeter.stopCounter();
     
     } // end Method process() ------------------
@@ -251,12 +194,46 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
       statement.setBegin( pTerm1.getBegin());
       statement.setEnd(   pTerm2.getEnd());
       statement.setId("PersonAnnotator_" + annotationCounter );
+      if ( hasPii (pTerm1) ||  hasPii( pTerm2) )
+        statement.setPii(true); 
+    
       statement.setSemanticTypes( "person");
       statement.addToIndexes();
      
       
     } // end Method combineAnnotations()  --------------
     
+
+
+
+
+    // =================================================
+    /**
+     * hasPii returns true if this is a shape and getPII is true
+     * or lexical element with a semantic type of phi or pii
+     * 
+     * @param pMention
+     * @return boolean
+    */
+    // =================================================
+    private boolean hasPii(Annotation pMention) {
+      boolean returnVal = false;
+      
+      String className = pMention.getClass().getCanonicalName();
+      if( className.contains("LexicalElement")) {
+        String semanticTypeS = ((LexicalElement)pMention).getSemanticTypes();
+        if ( semanticTypeS != null && !semanticTypeS.isEmpty()) {
+           String semanticTypes = semanticTypeS.toLowerCase();
+           if ( semanticTypes.contains("pii") || semanticTypes.contains("phi"))
+             returnVal = true;
+        }
+      } else if ( className.contains("Shape")) {
+        if ( ((Shape) pMention).getPii() || ((Shape) pMention).getPhi() )
+          returnVal = true;
+      }
+        
+      return returnVal;
+    } // end Method hasPii() -------------------
 
 
 
@@ -318,7 +295,11 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
         
         if ( pSemanticTypes.contains("PersonName") ||
              pSemanticTypes.contains("personPrefix") ||
-             pSemanticTypes.contains("personSuffix") )
+             pSemanticTypes.contains("personSuffix") ||
+             pSemanticTypes.equals("person") ||   //  there are other semantic types that could also 
+             pSemanticTypes.contains("person:") ||    // get caught here Person Factors, Personal Background
+             pSemanticTypes.contains(":person|") 
+             )
           returnVal = true;
       }
       return returnVal;
@@ -344,11 +325,17 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
       Shape statement = null;
       
       
-      if      (pClass.contains("PersonName"))   statement = new Person( pJCas); 
-      else if (pClass.contains("personPrefix")) statement = new PersonNamePrefix( pJCas); 
-      else if (pClass.contains("personSuffix")) statement = new PersonNameSuffix( pJCas); 
+      if      (pClass.contains("PersonName"))  {  statement = new Person( pJCas);            }
+      else if (pClass.contains("personPrefix")) { statement = new PersonNamePrefix( pJCas);  }
+      else if (pClass.contains("personSuffix")) { statement = new PersonNameSuffix( pJCas);  } 
+      else if (pClass.contains("person"))       statement = new Person( pJCas); 
       
       
+      String categories = ((LexicalElement)pTerm).getSemanticTypes();
+      if ( categories != null && categories.trim().length() > 0 ) {
+        if ( categories.toLowerCase().contains("pii") ) statement.setPii(true);
+        if ( categories.toLowerCase().contains("phi") ) statement.setPhi(true);
+      }
       
       
       statement.setBegin( pTerm.getBegin());
@@ -490,3 +477,4 @@ public class PersonAnnotator extends JCasAnnotator_ImplBase {
    
     
 } // end Class TermToConceptAnnotator() -----------
+
